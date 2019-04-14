@@ -1,0 +1,20 @@
+{
+	"template": "go/struct.hbs",
+	"name": "struct_name",
+	"description": "",
+	"properties": [
+		/* { "name": "", "type": "", "description": "" }, */
+	],
+	"methods": [
+		/* {
+			"name": "", 
+			"parameters": [
+				{ "name": "", "type": "" }
+			],
+			"type": ""
+		}, */
+	],
+	"post_re": [
+		{ "search": ",\\)", "replace": " )", "flags": "gm" }
+	]
+}

@@ -1,0 +1,38 @@
+/**
+* @fn {{name}}
+* @brief {{& description}}
+{{#asynchronous}}
+* @async {{asynchronous}}
+{{/asynchronous}}
+{{#arguments}}
+* @param {{name}}
+*	@type {{type}}
+*	@brief {{& description}}
+*	@default {{& default}}
+{{/arguments}}
+* @return <ARRAY>
+*	@entry 0 
+*		@retval 1 premature return.
+*		@retval 0 on success.
+*		@retval <0 on failure.
+*	@entry 1
+*		@retval <object> on success
+*		@retval <error_message> on failure.
+*/
+{{#asynchronous}}async {{/asynchronous}}function {{name}}({{#arguments}} {{name}},{{/arguments}}){
+	var _return = [1,null];
+	const FUNCTION_NAME = '{{name}}';
+	//Variables
+
+	Log.log(PROCESS_NAME,MODULE_NAME,FILENAME,FUNCTION_NAME,'debug','received: '+arguments.toString());
+	//Parametre checks
+{{#arguments}}
+	if({{name}} == undefined) {{name}} = {{& default}};
+{{/arguments}}
+	
+	//Function
+
+	//Return
+	Log.log(PROCESS_NAME,MODULE_NAME,FILENAME,FUNCTION_NAME,'debug','returned: '+_return.toString());
+	return _return;
+}

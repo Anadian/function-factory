@@ -1,0 +1,27 @@
+/**
+* @fn {{name}}
+* @brief {{& description}}
+{{#preceding_struct}}* @struct {{preceding_struct}}
+{{/preceding_struct}}{{#parameters}}* @param {{name}} {{type}} [{{flow}}] {{& description}}
+{{/parameters}}{{#prereq}}{{#prereqs}}* @pre {{define}} {{necessity}}
+{{/prereqs}}{{/prereq}}* @return {{type}}
+{{#return_values}}
+* @retval {{& value}} {{& description}}
+{{/return_values}}*/
+func {{#precedeing_struct}}({{preceding_struct}}){{/preceding_struct}} {{name}}({{#argument}}{{#arguments}} {{name}} {{type}},{{/arguments}}{{/argument}}) {{type}}{
+	var _return {{type}} = nil;
+	/* Variables */
+	
+{{#argument}}
+	/* Arguments */
+
+{{/argument}}
+{{#prereq}}#if{{#prereqs}} {{define}}{{/prereqs}}{{/prereq}}
+	/* Function */
+	
+{{#prereq}}#else
+	_return += 1;
+#endif /*{{#prereqs}} {{define}}{{/prereqs}} */{{/prereq}}
+	/* Return */
+	return _return;
+}

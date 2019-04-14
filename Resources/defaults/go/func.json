@@ -1,0 +1,16 @@
+{
+	"template": "go/func.hbs",
+	"name": "function_name",
+	"description": "",
+	"preceding_struct": null,
+	"type": null,
+	"parameters": [
+		/* { "name": "", "type": "", "flow": "in", "description": "" }, */
+	],
+	"return_values": [
+		/* { "value": null, "description": "" }, */
+	],
+	"post_re": [
+		{ "search": ",\\)", "replace": " )", "flags": "gm" }
+	]
+}

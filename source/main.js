@@ -23,6 +23,7 @@ OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 //Dependencies
 	//Internal
+	const ApplicationLog = require('./application-log.js');
 	//Standard
 	const FileSystem = require('fs');
 	const Path = require('path');
@@ -56,6 +57,20 @@ var ConfigObject = {
 
 
 //Functions
+function Safe_Directory_Create_Sync( directory_path ){
+	var _return = [1,null];
+	if( directory_path != null && typeof(directory_path) === 'string' ){
+		try{
+			FileSystem.mkdirSync( directory_path, { recursive: true } );
+			_return = [0,null];
+		} catch(error){
+			_return = [-3, Utility.format('Warn: %s', error)];
+		}
+	} else{
+		_return = [-2, Utility.format('Error: directory_path is either null or not a string: %o', directory_path)];
+	}
+	return _return;
+}
 function ConfigObject_Load( config_filename ){
 	var _return = [1,null];
 	var function_return = [1,null];
@@ -117,6 +132,7 @@ function ConfigObject_Save( config_filename ){
 function DefaultInputDataFromPath( path ){
 	var _return = [1,null];
 	var function_return = [1,null];
+	console.log('DefaultInputDataFromPath received: %s', path);
 	if( path != null && typeof(path) === "string" ){
 		try{
 			FileSystem.accessSync( path, (FileSystem.constants.R_OK) );
@@ -125,31 +141,38 @@ function DefaultInputDataFromPath( path ){
 			function_return = [-3, Utility.format('Error: default input file "%s" cannot be read: %o', path, error)];
 		}
 		if( function_return[0] === 0 ){
-				var file_data = FileSystem.readFileSync( path, 'utf8' );
-				if( file_data != null ){
-					var stripped_file_data = StripJSONComments(file_data);
-					if( stripped_file_data != null ){
-						var json_object = ParseJSON(stripped_file_data);
-						if( json_object != null ){
-							_return = [0,json_object];
+			var file_data = FileSystem.readFileSync( path, 'utf8' );
+			if( file_data != null ){
+				var stripped_file_data = StripJSONComments(file_data);
+				if( stripped_file_data != null ){
+					var json_object = ParseJSON(stripped_file_data);
+					if( json_object != null ){
+						var json_string = JSON.stringify(json_object, null, '\t');
+						if( json_string != null ){
+							_return = [0,json_string];
 						} else{
-							_return = [-16, Utility.format('Error: couldn\'t parse stripped_file_data "%s": %o', stripped_file_data, json_object)];
+							_return = [-32, Utility.format('Error: stringify json_object %o: %s', json_object, json_string)];
 						}
 					} else{
-						_return = [-8, Utility.format('Error: couldn\'t strip comments from file_data "%s": %o', file_data, stripped_file_data)];
+						_return = [-16, Utility.format('Error: couldn\'t parse stripped_file_data "%s": %o', stripped_file_data, json_object)];
 					}
 				} else{
-					_return = [-4, Utility.format('Error: couldn\'t read file path "%s": %o', path, file_data)];
+					_return = [-8, Utility.format('Error: couldn\'t strip comments from file_data "%s": %o', file_data, stripped_file_data)];
 				}
+			} else{
+				_return = [-4, Utility.format('Error: couldn\'t read file path "%s": %o', path, file_data)];
+			}
 		}
 	} else{
 		_return = [-2, Utility.format('Error: path is either null or not a string: %o', path)];
 	}
+	console.log('DefaultInputDataFromPath returned: %o', _return);
 	return _return;
 }
 function DefaultInputDataFromNameLiteral( name_literal ){
 	var _return = [1,null];
 	var function_return = [1,null];
+	console.log('DefaultInputDataFromNameLiteral received: %s', name_literal);
 	if( name_literal != null && typeof(name_literal) === "string" ){
 		function_return = DefaultInputDataFromPath( name_literal );
 		if( function_return[0] === 0 ){
@@ -172,12 +195,14 @@ function DefaultInputDataFromNameLiteral( name_literal ){
 	} else{
 		_return = [-2, Utility.format('Error: name_literal is either null or not a string "%o": %o', name_literal, function_return)];
 	}
+	console.log('DefaultInputDataFromNameLiteral returned: %o', _return);
 	return _return;
 }
 
 function DefaultInputDataFromGenericName( generic_name ){
 	var _return = [1,null];
 	var function_return = [1,null];
+	console.log('DefaultInputDataFromGenericName received: %s', generic_name);
 	if( generic_name != null && typeof(generic_name) === "string" ){
 		var new_name = generic_name.replace( /[/\\]/g, ' ');
 		var name_parts_array = new_name.split(' ');
@@ -197,6 +222,7 @@ function DefaultInputDataFromGenericName( generic_name ){
 	} else{
 		_return = [-2, Utility.format('Error: generic_name is either null or not a string: "%s"', generic_name)];
 	}
+	console.log('DefaultInputDataFromGenericName returned: %o', _return);
 	return _return;
 }
 
@@ -305,6 +331,7 @@ function OutputApplyPostRE( template_output, post_re ){
 function OutputFromInput( input_context, template_function ){
 	var _return = [1,null];
 	var function_return = [1,null];
+	console.log('OuputputFromInput received: %s %o', input_context, template_function);
 	if( input_context != null && typeof(input_context) === "object"){
 		if( typeof(template_function) === "function" ){
 			_return = [0,template_function(input_context)];
@@ -343,11 +370,13 @@ function OutputFromInput( input_context, template_function ){
 	if( _return[0] !== 0 ){
 		console.error(_return);
 	}
+	console.log('OutputFromInput returned: %o', _return);
 	return _return;
 }
 function OutputFromInquirerEditorAnswer( answer ){
 	var _return = [1,null];
 	var function_return = [1,null];
+	console.log('OutputFromInquirerEditorAnswer received: %o', answer);
 	if( answer.editor_input != null ){
 		function_return = OutputFromInput(answer.editor_input);
 		if( function_return[0] === 0 ){
@@ -358,6 +387,7 @@ function OutputFromInquirerEditorAnswer( answer ){
 	} else{
 		_return = [-2, Utility.format('Error: answer invalid: %o', answer)];
 	}
+	console.log('OutputFromInquirerEditorAnswer returned: %o', _return);
 	return _return;
 }
 function ProduceOutput( output, options ){
@@ -399,6 +429,7 @@ function ProduceOutput( output, options ){
 async function Input_Inquirer_Editor( options ){
 	var _return = [1,null];
 	var function_return = [1,null];
+	console.log('Input_Inquirer_Editor received: %o', options);
 	if( options != null && typeof(options) === "object" ){
 		var default_input_data = null;
 		if( options.edit != null ){
@@ -431,7 +462,7 @@ async function Input_Inquirer_Editor( options ){
 				_return = [-8, Utility.format('Error: couldn\'t construct output from inquirer_editor_answer %o: %o', answer, function_return)];
 			}
 		} catch(error){
-			_return = [-4, Utility.format('Error: inquirer_questions %o cause Inquirer.prompt to throw an error: "%s"', inquirer_question, error)];
+			_return = [-4, Utility.format('Error: inquirer_questions %o causes Inquirer.prompt to throw an error: "%s"', inquirer_questions, error)];
 		}
 	} else{
 		_return = [-2, Utility.format('Error: options is either null or not an object: %o', options)];
@@ -440,17 +471,25 @@ async function Input_Inquirer_Editor( options ){
 		console.error(_return);
 	}
 	process.exitCode = _return[0];
+	console.log('Input_Inquirer_Editor returned: %o', _return);
 	return _return;
 }
 
 //Exports and Execution
 if(require.main === module){
-	var _return = [-1, null];
+	var _return = [1, null];
+	const FUNCTION_NAME = 'MainExecutionFunction';
 	const CommandLineArguments = require('command-line-args');
 	const CommandLineUsage = require('command-line-usage');
 	const EnvPaths = require('env-paths');
 
 	const EnvironmentPaths = EnvPaths('function-factory');
+	ApplicationLog.init(EnvironmentPaths.log);
+	if( ApplicationLog.transports.length === 0 ){
+		ApplicationLog.addTransport( true, 'directory', 'debug', 'log_debug', EnvironmentPaths.log, true, null, null, false, null );
+		ApplicationLog.addTransport( true, 'stream', 'debug', 'stderr', null, false, null, null, true, null );
+	}
+	ApplicationLog.log(PROCESS_NAME,MODULE_NAME,FILENAME,FUNCTION_NAME,'debug','Start of execution block.');
 
 	const OptionDefinitions = [
 		{ name: 'help', alias: 'h', type: Boolean, description: 'Writes this help text to stdout.' },
@@ -483,7 +522,7 @@ if(require.main === module){
 		if( function_return[0] !== 0 ){
 			function_return = ConfigObject_Save( config_filename );
 			if( function_return[0] !== 0 ){
-				console.error('Error: writing config_filename "%s": %o', config_filename, function_return);
+				ApplicationLog.log(PROCESS_NAME,MODULE_NAME,FILENAME,FUNCTION_NAME,'error',Utility.format('Error: writing config_filename "%s": %o', config_filename, function_return));
 			}
 		}
 	}
@@ -536,6 +575,7 @@ if(require.main === module){
 					console.error('Critical: $EDITOR child process failed with status %d signal %s and error "%s"', function_return.status, function_return.signal, function_return.error);
 				}
 			}*/
+			console.log('In edit.');
 			_return = Input_Inquirer_Editor( Options );
 		} /*else if( Options.ask !== undefined ){
 			
@@ -576,6 +616,7 @@ if(require.main === module){
 	}
 	process.exitCode = _return[0];*/
 	}
+	console.log('End of execution block.');
 } else{
 	
 }

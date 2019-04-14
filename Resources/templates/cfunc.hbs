@@ -1,0 +1,26 @@
+/**
+* @fn {{name}}
+* @brief {{& description}}
+{{#argument}}{{#arguments}}* @param {{type}} {{name}} [{{flow}}] {{& description}}
+{{/arguments}}{{/argument}}{{#prereq}}{{#prereqs}}* @pre {{define}} {{necessity}}
+{{/prereqs}}{{/prereq}}* @return {{type}}
+{{#return_values}}
+* @retval {{& value}} {{description}}
+{{/return_values}}*/
+{{type}} {{name}}({{#argument}}{{#arguments}} {{type}} {{name}},{{/arguments}}{{/argument}}){
+	{{type}} _return = 1;
+	/* Variables */
+	
+{{#argument}}
+	/* Arguments */
+
+{{/argument}}
+{{#prereq}}#if{{#prereqs}} {{define}}{{/prereqs}}{{/prereq}}
+	/* Function */
+	
+{{#prereq}}#else
+	_return += 1;
+#endif /*{{#prereqs}} {{define}}{{/prereqs}} */{{/prereq}}
+	/* Return */
+	return _return;
+}
