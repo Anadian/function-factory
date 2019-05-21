@@ -1,0 +1,33 @@
+#!/usr/local/bin/node
+{{#strict}}'use strict';
+{{/strict}}
+/**
+* @file {{filename}}
+* @brief {{& description}}
+* @author Anadian
+* @copyright MITlicensetm(2019,Canosw)
+*/
+
+//Dependencies
+	//Internal
+	//Standard
+	//External
+
+//Constants
+const FILENAME = '{{filename}}';
+const MODULE_NAME = '{{modulename}}';
+var PROCESS_NAME = '';
+if(require.main === module){
+	PROCESS_NAME = '{{processname}}';
+} else{
+	PROCESS_NAME = process.argv0;
+}
+
+//Functions
+
+//Exports and Execution
+if(require.main === module){
+	
+} else{
+	
+}

@@ -23,18 +23,19 @@ OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 //Dependencies
 	//Internal
-	const ApplicationLog = require('./application-log.js');
+	const JSONICParse = require('./jsonic-parse.js');
+	const ApplicationLogStandard = require('./application-log-standard.js');
 	//Standard
 	const FileSystem = require('fs');
 	const Path = require('path');
-	const ChildProcess = require('child_process');
+	//const ChildProcess = require('child_process');
 	const Utility = require('util');
 	//External
 	const HandleBars = require('handlebars');
-	const StripJSONComments = require('strip-json-comments');
-	const ParseJSON = require('parse-json');
 	const Inquirer = require('inquirer');
 	const Clipboardy = require('clipboardy');
+	const LogForm = require('logform');
+	const Winston = require('winston');
 
 //Constants
 const FILENAME = 'function-factory.js';
@@ -55,8 +56,30 @@ var ConfigObject = {
 	]
 };
 
+var Logger = null;
 
 //Functions
+function Logger_Set( logger ){
+	var _return = [1,null];
+	const FUNCTION_NAME = 'Logger_Set';
+	//Variables
+	var function_return = [1,null];
+
+	//Parametre checks
+	if( logger == undefined || typeof(logger) !== 'object' ){
+		_return = [-2,'Error: parametre "logger" is either null or not an object.'];
+	}
+
+	//Function
+	if( _return[0] === 1 ){
+		Logger = logger;
+		_return = [0,null];
+	}
+
+	//Return
+	return _return;
+}
+
 function Safe_Directory_Create_Sync( directory_path ){
 	var _return = [1,null];
 	if( directory_path != null && typeof(directory_path) === 'string' ){
@@ -131,8 +154,9 @@ function ConfigObject_Save( config_filename ){
 	
 function DefaultInputDataFromPath( path ){
 	var _return = [1,null];
+	const FUNCTION_NAME = 'DefaultInputDataFromPath';
 	var function_return = [1,null];
-	console.log('DefaultInputDataFromPath received: %s', path);
+	//ApplicationLog.log(PROCESS_NAME,MODULE_NAME,FILENAME,FUNCTION_NAME,'debug',Utility.format('DefaultInputDataFromPath received: %s', path));
 	if( path != null && typeof(path) === "string" ){
 		try{
 			FileSystem.accessSync( path, (FileSystem.constants.R_OK) );
@@ -166,13 +190,14 @@ function DefaultInputDataFromPath( path ){
 	} else{
 		_return = [-2, Utility.format('Error: path is either null or not a string: %o', path)];
 	}
-	console.log('DefaultInputDataFromPath returned: %o', _return);
+	//ApplicationLog.log(PROCESS_NAME,MODULE_NAME,FILENAME,FUNCTION_NAME,'debug',Utility.format('DefaultInputDataFromPath returned: %o', _return));
 	return _return;
 }
 function DefaultInputDataFromNameLiteral( name_literal ){
 	var _return = [1,null];
+	const FUNCTION_NAME = 'DefaultInputDataFromNameLiteral';
 	var function_return = [1,null];
-	console.log('DefaultInputDataFromNameLiteral received: %s', name_literal);
+	//ApplicationLog.log(PROCESS_NAME,MODULE_NAME,FILENAME,FUNCTION_NAME,'debug',Utility.format('DefaultInputDataFromNameLiteral received: %s', name_literal));
 	if( name_literal != null && typeof(name_literal) === "string" ){
 		function_return = DefaultInputDataFromPath( name_literal );
 		if( function_return[0] === 0 ){
@@ -195,14 +220,15 @@ function DefaultInputDataFromNameLiteral( name_literal ){
 	} else{
 		_return = [-2, Utility.format('Error: name_literal is either null or not a string "%o": %o', name_literal, function_return)];
 	}
-	console.log('DefaultInputDataFromNameLiteral returned: %o', _return);
+	//ApplicationLog.log(PROCESS_NAME,MODULE_NAME,FILENAME,FUNCTION_NAME,'debug',Utility.format('DefaultInputDataFromNameLiteral returned: %o', _return));
 	return _return;
 }
 
 function DefaultInputDataFromGenericName( generic_name ){
 	var _return = [1,null];
+	const FUNCTION_NAME = 'DefaultInputDataFromGenericName';
 	var function_return = [1,null];
-	console.log('DefaultInputDataFromGenericName received: %s', generic_name);
+	//ApplicationLog.log(PROCESS_NAME,MODULE_NAME,FILENAME,FUNCTION_NAME,'debug',Utility.format('DefaultInputDataFromGenericName received: %s', generic_name));
 	if( generic_name != null && typeof(generic_name) === "string" ){
 		var new_name = generic_name.replace( /[/\\]/g, ' ');
 		var name_parts_array = new_name.split(' ');
@@ -222,7 +248,7 @@ function DefaultInputDataFromGenericName( generic_name ){
 	} else{
 		_return = [-2, Utility.format('Error: generic_name is either null or not a string: "%s"', generic_name)];
 	}
-	console.log('DefaultInputDataFromGenericName returned: %o', _return);
+	//ApplicationLog.log(PROCESS_NAME,MODULE_NAME,FILENAME,FUNCTION_NAME,'debug',Utility.format('DefaultInputDataFromGenericName returned: %o', _return));
 	return _return;
 }
 
@@ -331,7 +357,7 @@ function OutputApplyPostRE( template_output, post_re ){
 function OutputFromInput( input_context, template_function ){
 	var _return = [1,null];
 	var function_return = [1,null];
-	console.log('OuputputFromInput received: %s %o', input_context, template_function);
+	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'OuputputFromInput received: %s %o', input_context, template_function});
 	if( input_context != null && typeof(input_context) === "object"){
 		if( typeof(template_function) === "function" ){
 			_return = [0,template_function(input_context)];
@@ -368,15 +394,15 @@ function OutputFromInput( input_context, template_function ){
 		}
 	} 
 	if( _return[0] !== 0 ){
-		console.error(_return);
+		//ApplicationLog.log(PROCESS_NAME,MODULE_NAME,FILENAME,FUNCTION_NAME,'error',Utility.format(_return));
 	}
-	console.log('OutputFromInput returned: %o', _return);
+	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'OutputFromInput returned: %o', _return});
 	return _return;
 }
 function OutputFromInquirerEditorAnswer( answer ){
 	var _return = [1,null];
 	var function_return = [1,null];
-	console.log('OutputFromInquirerEditorAnswer received: %o', answer);
+	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'OutputFromInquirerEditorAnswer received: %o', answer});
 	if( answer.editor_input != null ){
 		function_return = OutputFromInput(answer.editor_input);
 		if( function_return[0] === 0 ){
@@ -387,7 +413,7 @@ function OutputFromInquirerEditorAnswer( answer ){
 	} else{
 		_return = [-2, Utility.format('Error: answer invalid: %o', answer)];
 	}
-	console.log('OutputFromInquirerEditorAnswer returned: %o', _return);
+	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'OutputFromInquirerEditorAnswer returned: %o', _return});
 	return _return;
 }
 function ProduceOutput( output, options ){
@@ -428,8 +454,9 @@ function ProduceOutput( output, options ){
 }
 async function Input_Inquirer_Editor( options ){
 	var _return = [1,null];
+	const FUNCTION_NAME = 'Input_Inquirer_Editor';
 	var function_return = [1,null];
-	console.log('Input_Inquirer_Editor received: %o', options);
+	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Input_Inquirer_Editor received: %o', options});
 	if( options != null && typeof(options) === "object" ){
 		var default_input_data = null;
 		if( options.edit != null ){
@@ -437,7 +464,7 @@ async function Input_Inquirer_Editor( options ){
 			if( function_return[0] === 0 ){
 				default_input_data = function_return[1];
 			} else{
-				console.error(function_return);
+				jserrorlog('DefaultInputDataFromGenericName: %o',function_return);
 			}
 		}
 		var inquirer_questions = [
@@ -468,10 +495,10 @@ async function Input_Inquirer_Editor( options ){
 		_return = [-2, Utility.format('Error: options is either null or not an object: %o', options)];
 	}
 	if( _return[0] !== 0 ){
-		console.error(_return);
+		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: '%o',_return});
 	}
 	process.exitCode = _return[0];
-	console.log('Input_Inquirer_Editor returned: %o', _return);
+	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Input_Inquirer_Editor returned: %o', _return});
 	return _return;
 }
 
@@ -484,27 +511,64 @@ if(require.main === module){
 	const EnvPaths = require('env-paths');
 
 	const EnvironmentPaths = EnvPaths('function-factory');
-	ApplicationLog.init(EnvironmentPaths.log);
-	if( ApplicationLog.transports.length === 0 ){
-		ApplicationLog.addTransport( true, 'directory', 'debug', 'log_debug', EnvironmentPaths.log, true, null, null, false, null );
-		ApplicationLog.addTransport( true, 'stream', 'debug', 'stderr', null, false, null, null, true, null );
-	}
-	ApplicationLog.log(PROCESS_NAME,MODULE_NAME,FILENAME,FUNCTION_NAME,'debug','Start of execution block.');
+
+	var function_return = [1,null];
+	function_return = Logger_Set( Winston.createLogger({
+		level: 'debug',
+		levels: ApplicationLogStandard.levels,
+		transports: [
+			new Winston.transports.Console({
+				level: 'debug',
+				format: LogForm.format.combine(
+					LogForm.format.colorize({
+						all: true,
+						colors: ApplicationLogStandard.colors
+					}),
+					LogForm.format.splat(),
+					LogForm.format.printf((info) => {
+						return `${info.level}: ${info.message}`;
+					})
+				),
+				stderrLevels: ['emerg','alert','crit','error','warn','note','info','debug'],
+				warnLevels: ['warn','note']
+			}),
+			new Winston.transports.File({
+				level: 'debug',
+				format: LogForm.format.combine(
+					LogForm.format.timestamp(),
+					LogForm.format.splat(),
+					LogForm.format.printf((info) => {
+						return `${info.timestamp} ${info.process?info.process+':':''}${info.module?info.module+':':''}${info.file?info.file+':':""}${info.function?info.function+':':''}${info.level}: ${info.message}${(info.meta)?' '+info.meta:''}`;
+					})
+				),
+				eol: '\n',
+				filename: 'log_debug.log',
+				maxsize: 1048576,
+				maxFiles: 4
+			})
+		]
+	}) );
+
+	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});
 
 	const OptionDefinitions = [
+		//UI
 		{ name: 'help', alias: 'h', type: Boolean, description: 'Writes this help text to stdout.' },
 		{ name: 'verbose', alias: 'v', type: Boolean, description: 'Verbose output to stderr.' },
+		//Input
 		{ name: 'stdin', alias: 'i', type: Boolean, description: 'Read input from stdin.' },
 		{ name: 'input', alias: 'I', type: String, description: 'The name of a JSON file to be used as input for the template.'},
 		{ name: 'edit', alias: 'e', type: String, description: 'Edit the input in $EDITOR, optionally specifying a file in the "defaults" directory to use as a base.'},
 		{ name: 'ask', alias: 'a', type: String, description: 'Interactively prompt for input properties, optionally specifying a file in the "defaults" directory to use as a base.'},
+		{ name: 'do', alias: 'D', type: String, defaultOption: true, description: 'Select a default input file and an output template based on a signle string.' },
+		//Output
 		{ name: 'stdout', alias: 'o', type: Boolean, description: 'Write output to stdout.' },
 		{ name: 'output', alias: 'O', type: String, description: 'The name of the file to write output to.' },
 		{ name: 'pasteboard', alias: 'p', type: Boolean, description: 'Copy output to pasteboard (clipboard).'},
+		//Config
 		{ name: 'config', alias: 'c', type: Boolean, description: 'Print configuration values and information to stdout.' },
 		{ name: 'config-file', alias: 'C', type: String, description: 'Use the given config file instead of the default.' },
 		{ name: 'defaults', alias: 'd', type: Boolean, description: 'Print a list of the "defaults" files.' },
-		{ name: 'do', alias: 'D', type: String, defaultOption: true, description: 'Select a default input file and an output template based on a signle string.' },
 		{ name: 'templates', alias: 't', type: Boolean, description: 'Print a list of available templates to stdout.' },
 		{ name: 'template-override', alias: 'T', type: String, description: 'Override the template to the file specified.' }
 	];
@@ -522,7 +586,7 @@ if(require.main === module){
 		if( function_return[0] !== 0 ){
 			function_return = ConfigObject_Save( config_filename );
 			if( function_return[0] !== 0 ){
-				ApplicationLog.log(PROCESS_NAME,MODULE_NAME,FILENAME,FUNCTION_NAME,'error',Utility.format('Error: writing config_filename "%s": %o', config_filename, function_return));
+				Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: Utility.format('Error: writing config_filename "%s": %o', config_filename, function_return)});
 			}
 		}
 	}
@@ -551,31 +615,7 @@ if(require.main === module){
 
 	if( _return[0] === 1 ){
 		if( Options.edit !== undefined ){
-			/*var temp_filename = Path.join(EnvironmentPaths.temp, 'function-factory_input.temp');
-			var default_input_filename = null;
-			if( Options.edit != null ){
-				default_input_filename = LookupInputDefaultsFile( Options.edit );
-			}
-			var temp_filedata = FileSystem.readFileSync(default_input_filename, 'utf8');
-			if( temp_filedata == null ){
-				temp_filedata = ' ';
-			}
-			try{
-				FileSystem.writeFileSync( temp_filename, temp_filedata, 'utf8' );
-				function_return = 0;
-			} catch(error){
-				console.error('Error: can\'t create temporary file "%s": "%s"', temp_filename, error);
-				function_return = -1;
-			}
-			if( function_return === 0 ){
-				function_return = ChildProcess.spawnSync('$EDITOR', temp_filename);
-				if( function_return.status === 0 && function_return.error == null ){
-					input_data = FileSystem.readFileSync( temp_filename, 'utf8' );
-				} else{
-					console.error('Critical: $EDITOR child process failed with status %d signal %s and error "%s"', function_return.status, function_return.signal, function_return.error);
-				}
-			}*/
-			console.log('In edit.');
+			Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'In editor mode.'});
 			_return = Input_Inquirer_Editor( Options );
 		} /*else if( Options.ask !== undefined ){
 			
@@ -616,7 +656,7 @@ if(require.main === module){
 	}
 	process.exitCode = _return[0];*/
 	}
-	console.log('End of execution block.');
+	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});
 } else{
 	
 }

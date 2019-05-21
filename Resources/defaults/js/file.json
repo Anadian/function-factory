@@ -1,0 +1,7 @@
+{
+	"templatename": "Resources/templates/jsfile.hbs",
+	"filename": "jsonic-parse.js",
+	"description": "Parse a JSONIC (JavaScript Object Notation Including Comments) file.",
+	"modulename": "JSONICParse",
+	"processname": "jsonic-parse"
+}

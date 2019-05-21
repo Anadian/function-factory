@@ -1,0 +1,18 @@
+
+{
+	"template": "js class",
+	"name": "JSONIC_Parse_FileData",
+	"description": "Parse JSONIC-format file_data.",
+	"extends": "",
+	"constructor_params": [
+			{"type": "String", "name": "file_data", "default": "null", "description": "The filedata to be parsed."}
+	],
+	"methods": [
+		{"name": "", "description": "", "asynchronous": true, "static": false, "params": [
+			{"type": "String", "name": "", "default": "null", "description": ""}
+		]}
+	],
+	"post_re": [
+		{"search": ",\\)", "replace": " )", "flags": "gm"}
+	]
+}
