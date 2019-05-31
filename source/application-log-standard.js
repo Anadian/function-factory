@@ -83,7 +83,7 @@ const Logger = Winston.createLogger({
 				}),
 				LogForm.format.splat(),
 				LogForm.format.printf((info) => {
-					return `${info.level}: ${info.message}`;
+					return `${info.level}: ${info.function?info.function+':':''} ${info.message}`;
 				})
 			),
 			stderrLevels: ['emerg','alert','crit','error','warn','note','info','debug'],
@@ -93,7 +93,7 @@ const Logger = Winston.createLogger({
 			level: 'debug',
 			format: LogForm.format.combine(
 				LogForm.format.timestamp(),
-				LogForm.splat(),
+				LogForm.format.splat(),
 				LogForm.format.printf((info) => {
 					return `${info.timestamp} ${info.process?info.process+':':''}${info.module?info.module+':':''}${info.file?info.file+':':""}${info.function?info.function+':':''}${info.level}: ${info.message}${(info.meta)?' '+info.meta:''}`;
 				})

@@ -96,6 +96,8 @@ function Safe_Directory_Create_Sync( directory_path ){
 }
 function ConfigObject_Load( config_filename ){
 	var _return = [1,null];
+	const FUNCTION_NAME = 'ConfigObject_Load';
+	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('ConfigObject_Load received: %o', arguments)});
 	var function_return = [1,null];
 	if( config_filename != null && typeof(config_filename) === "string" ){
 		try{
@@ -105,26 +107,17 @@ function ConfigObject_Load( config_filename ){
 			_return = [-3, Utility.format('Error: can\'t access config file "%s": "%s"', config_filename, error)];
 		}
 		if( function_return[0] === 0 ){
-			function_return = FileSystem.readFileSync( config_filename, 'utf8' );
-			if( function_return != null ){
-				function_return = StripJSONComments( function_return );
-				if( function_return != null ){
-					function_return = ParseJSON( function_return );
-					if( function_return != null ){
-						config_object = function_return;
-					} else{ //Error parsing given config-file JSON.
-						_return = [-16, Utility.format('Error: parsing JSON data: %s', function_return)];
-					}
-				} else{ //Error stripping JSON comments from given config file.
-					_return = [-8, Utility.format('Error: stripping comments from file data: %s', function_return)];
-				}
-			} else{ //Error reading given config file.
-				_return = [-4, Utility.format('Error: couldn\'t read config_filename "%s": %o', config_filename, function_return)];
+			function_return = JSONICParse.ParseFilePath(config_filename);
+			if( function_return[0] === 0 ){
+				ConfigObject = function_return[1];
+			} else{
+				_return = [function_return[0], 'JSONIC.ParseFilePath: '+function_return[1]];
 			}
 		}
 	} else{
 		_return = [-2, Utility.format('Error: config_filename is either null or not a string: %o', config_filename)];
 	}
+	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('ConfigObject_Load returned: %o', _return)});
 	return _return;
 }
 function ConfigObject_Save( config_filename ){
@@ -526,7 +519,7 @@ if(require.main === module){
 					}),
 					LogForm.format.splat(),
 					LogForm.format.printf((info) => {
-						return `${info.level}: ${info.message}`;
+						return `${info.level}: ${info.function} ${info.message}`;
 					})
 				),
 				stderrLevels: ['emerg','alert','crit','error','warn','note','info','debug'],
