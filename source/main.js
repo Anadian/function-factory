@@ -28,14 +28,13 @@ OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 	//Standard
 	const FileSystem = require('fs');
 	const Path = require('path');
-	//const ChildProcess = require('child_process');
 	const Utility = require('util');
 	//External
 	const HandleBars = require('handlebars');
 	const Inquirer = require('inquirer');
 	const Clipboardy = require('clipboardy');
-	const LogForm = require('logform');
-	const Winston = require('winston');
+	/*const LogForm = require('logform');
+	const Winston = require('winston');*/
 
 //Constants
 const FILENAME = 'function-factory.js';
@@ -520,41 +519,10 @@ if(require.main === module){
 	//Variables
 	var function_return = [1,null];
 	//Logger
-	function_return = Logger_Set( Winston.createLogger({
-		level: 'debug',
-		levels: ApplicationLogStandard.levels,
-		transports: [
-			new Winston.transports.Console({
-				level: 'debug',
-				format: LogForm.format.combine(
-					LogForm.format.colorize({
-						all: true,
-						colors: ApplicationLogStandard.colors
-					}),
-					LogForm.format.splat(),
-					LogForm.format.printf((info) => {
-						return `${info.level}: ${info.function?info.function+':':''} ${info.message}`;
-					})
-				),
-				stderrLevels: ['emerg','alert','crit','error','warn','note','info','debug'],
-				warnLevels: ['warn','note']
-			}),
-			new Winston.transports.File({
-				level: 'debug',
-				format: LogForm.format.combine(
-					LogForm.format.timestamp(),
-					LogForm.format.splat(),
-					LogForm.format.printf((info) => {
-						return `${info.timestamp} ${info.process?info.process+':':''}${info.module?info.module+':':''}${info.file?info.file+':':""}${info.function?info.function+':':''}${info.level}: ${info.message}${(info.meta)?' '+info.meta:''}`;
-					})
-				),
-				eol: '\n',
-				filename: 'log_debug.log',
-				maxsize: 1048576,
-				maxFiles: 4
-			})
-		]
-	}) );
+	function_return = ApplicationLogStandard.InitLogger( 'log_debug.log', EnvironmentPaths.log, 'info' );
+	if( function_return[0] === 0 ){
+		function_return = Logger_Set( function_return[1] );
+	}
 
 	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});
 	//Options
@@ -562,6 +530,7 @@ if(require.main === module){
 		//UI
 		{ name: 'help', alias: 'h', type: Boolean, description: 'Writes this help text to stdout.' },
 		{ name: 'verbose', alias: 'v', type: Boolean, description: 'Verbose output to stderr.' },
+		{ name: 'Version', alias: 'V', type: Boolean, description: 'Writes version information to stdout.'},
 		//Input
 		{ name: 'stdin', alias: 'i', type: Boolean, description: 'Read input from stdin.' },
 		{ name: 'input', alias: 'I', type: String, description: 'The name of a JSON file to be used as input for the template.'},
@@ -597,6 +566,8 @@ if(require.main === module){
 		}
 	}
 
+	if(Options.version === true){
+	}
 	if(Options.help === true){
 		const help_sections_array = [
 			{
@@ -617,6 +588,11 @@ if(require.main === module){
 	if(Options.defaults === true){
 	}
 	if(Options.templates === true){
+	}
+
+	if(Options.verbose === true){
+		Logger.real_transports.console_stderr.level = 'debug';
+		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'note', message: Utility.format('Logger: console_stderr transport log level is now: %s', Logger.real_transports.console_stderr.level)});
 	}
 
 	if( _return[0] === 1 ){
