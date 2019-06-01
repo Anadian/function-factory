@@ -23,11 +23,44 @@ if(require.main === module){
 	PROCESS_NAME = process.argv0;
 }
 
+//Global Variables
+{{#logger}}var Logger = null;{{/logger}}
 //Functions
+{{#logger}}function Logger_Set( logger ){
+	var _return = [1,null];
+	const FUNCTION_NAME = 'Logger_Set';
+	//Variables
+	var function_return = [1,null];
+
+	//Parametre checks
+	if( logger == undefined || typeof(logger) !== 'object' ){
+		_return = [-2,'Error: param "logger" is either null or not an object.'];
+	}
+
+	//Function
+	if( _return[0] === 1 ){
+		Logger = logger;
+		_return = [0,null];
+	}
+
+	//Return
+	return _return;
+}{{/logger}}
 
 //Exports and Execution
 if(require.main === module){
-	
+	var _return = [1,null];
+	const FUNCTION_NAME = 'MainExecutionFunction';
+	//Dependencies
+		//Internal
+		//Standard
+		//External
+	//Constants
+	//Variables
+	{{#logger}}//Logger{{/logger}}
+	//Options
+	//Config
+	//Main
 } else{
 	
 }

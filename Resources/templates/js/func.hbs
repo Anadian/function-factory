@@ -4,12 +4,12 @@
 {{#asynchronous}}
 * @async {{asynchronous}}
 {{/asynchronous}}
-{{#arguments}}
+{{#params}}
 * @param {{name}}
 *	@type {{type}}
 *	@brief {{& description}}
 *	@default {{& default}}
-{{/arguments}}
+{{/params}}
 * @return <ARRAY>
 *	@entry 0 
 *		@retval 1 premature return.
@@ -19,20 +19,20 @@
 *		@retval <object> on success
 *		@retval <error_message> on failure.
 */
-{{#asynchronous}}async {{/asynchronous}}function {{name}}({{#arguments}} {{name}},{{/arguments}}){
+{{#asynchronous}}async {{/asynchronous}}function {{name}}({{#params}} {{name}},{{/params}}){
 	var _return = [1,null];
 	const FUNCTION_NAME = '{{name}}';
 	//Variables
 
-	Log.log(PROCESS_NAME,MODULE_NAME,FILENAME,FUNCTION_NAME,'debug','received: '+arguments.toString());
+	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('received: ', arguments));
 	//Parametre checks
-{{#arguments}}
+{{#params}}
 	if({{name}} == undefined) {{name}} = {{& default}};
-{{/arguments}}
+{{/params}}
 	
 	//Function
 
 	//Return
-	Log.log(PROCESS_NAME,MODULE_NAME,FILENAME,FUNCTION_NAME,'debug','returned: '+_return.toString());
+	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('returned: ', _return)});
 	return _return;
 }

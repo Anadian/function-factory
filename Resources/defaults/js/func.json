@@ -1,11 +1,12 @@
 {
-	"templatename": "Resources/templates/jsfunc.hbs",
-	"name": "JSONIC_Parse_FileData",
-	"description": "Parse JSONIC-format file_data.",
-	"arguments": [
-			{"type": "String", "name": "file_data", "default": "null", "description": "The filedata to be parsed."}
+	//"templatename": "Resources/templates/jsfunc.hbs",
+	"template": "js func",
+	"name": "FunctionName",
+	"description": "Brief description.",
+	"params": [
+			{"type": "ArgumentType", "name": "parametre_name", "default": "null", "description": "Brief parametre description."}
 	],
-	"asynchronous": true,
+	"asynchronous": false,
 	"post_re": [
 		{"search": ",\\)", "replace": " )", "flags": "gm"}
 	]

@@ -1,7 +1,10 @@
 {
-	"templatename": "Resources/templates/jsfile.hbs",
-	"filename": "jsonic-parse.js",
-	"description": "Parse a JSONIC (JavaScript Object Notation Including Comments) file.",
-	"modulename": "JSONICParse",
-	"processname": "jsonic-parse"
+	//"templatename": "Resources/templates/jsfile.hbs",
+	"template": "js file",
+	"filename": "filename.js",
+	"description": "Brief description.",
+	"modulename": "ModuleName",
+	"processname": "process-name",
+	"strict": true,
+	"logger": true
 }
