@@ -9013,3 +9013,564 @@
   [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
 2019-06-01T23:20:46.213Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
 2019-06-01T23:20:46.213Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-06-01T23:57:04.267Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-06-01T23:57:04.301Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0':
+   '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]:
+   { [Function: ConfigObject_Load]
+     [length]: 1,
+     [name]: 'ConfigObject_Load',
+     [arguments]:
+      [Arguments] {
+        '0':
+         '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+        [length]: 1,
+        [callee]: [Circular],
+        [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } },
+     [caller]:
+      { [Function]
+        [length]: 5,
+        [name]: '',
+        [arguments]:
+         [Arguments] {
+           '0': {},
+           '1':
+            { [Function: require]
+              [length]: 1,
+              [name]: 'require',
+              [prototype]: [require],
+              resolve: [Function],
+              main: [Module],
+              extensions: [Object],
+              cache: [Object] },
+           '2':
+            Module {
+              id: '.',
+              path: '/Users/cameron/dev/function-factory/source',
+              exports: {},
+              parent: null,
+              filename: '/Users/cameron/dev/function-factory/source/main.js',
+              loaded: false,
+              children: [Array],
+              paths: [Array] },
+           '3': '/Users/cameron/dev/function-factory/source/main.js',
+           '4': '/Users/cameron/dev/function-factory/source',
+           [length]: 5,
+           [callee]: [Circular],
+           [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } },
+        [caller]: null,
+        [prototype]: { [constructor]: [Circular] } },
+     [prototype]: ConfigObject_Load { [constructor]: [Circular] } },
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-01T23:57:04.344Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories:
+     [ 'Resources/templates',
+       '/Users/cameron/Library/Application Support/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories:
+     [ 'Resources/defaults',
+       '/Users/cameron/Library/Application Support/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-06-01T23:57:04.344Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-06-01T23:57:04.363Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { edit: 'js file', pasteboard: true }
+2019-06-01T23:57:04.364Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: [Arguments] {
+  '0': 'js file',
+  [length]: 1,
+  [callee]:
+   { [Function: DefaultInputDataFromGenericName]
+     [length]: 1,
+     [name]: 'DefaultInputDataFromGenericName',
+     [arguments]:
+      [Arguments] {
+        '0': 'js file',
+        [length]: 1,
+        [callee]: [Circular],
+        [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } },
+     [caller]:
+      { [AsyncFunction: Input_Inquirer_Editor] [length]: 1, [name]: 'Input_Inquirer_Editor' },
+     [prototype]:
+      DefaultInputDataFromGenericName { [constructor]: [Circular] } },
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-01T23:57:04.365Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/file.json',
+  [length]: 1,
+  [callee]:
+   { [Function: DefaultInputDataFromNameLiteral]
+     [length]: 1,
+     [name]: 'DefaultInputDataFromNameLiteral',
+     [arguments]:
+      [Arguments] {
+        '0': 'js/file.json',
+        [length]: 1,
+        [callee]: [Circular],
+        [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } },
+     [caller]:
+      { [Function: DefaultInputDataFromGenericName]
+        [length]: 1,
+        [name]: 'DefaultInputDataFromGenericName',
+        [arguments]:
+         [Arguments] {
+           '0': 'js file',
+           [length]: 1,
+           [callee]: [Circular],
+           [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } },
+        [caller]:
+         { [AsyncFunction: Input_Inquirer_Editor] [length]: 1, [name]: 'Input_Inquirer_Editor' },
+        [prototype]:
+         DefaultInputDataFromGenericName { [constructor]: [Circular] } },
+     [prototype]:
+      DefaultInputDataFromNameLiteral { [constructor]: [Circular] } },
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-01T23:57:04.366Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'js/file.json',
+  [length]: 1,
+  [callee]:
+   { [Function: DefaultInputDataFromPath]
+     [length]: 1,
+     [name]: 'DefaultInputDataFromPath',
+     [arguments]:
+      [Arguments] {
+        '0': 'js/file.json',
+        [length]: 1,
+        [callee]: [Circular],
+        [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } },
+     [caller]:
+      { [Function: DefaultInputDataFromNameLiteral]
+        [length]: 1,
+        [name]: 'DefaultInputDataFromNameLiteral',
+        [arguments]:
+         [Arguments] {
+           '0': 'js/file.json',
+           [length]: 1,
+           [callee]: [Circular],
+           [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } },
+        [caller]:
+         { [Function: DefaultInputDataFromGenericName]
+           [length]: 1,
+           [name]: 'DefaultInputDataFromGenericName',
+           [arguments]:
+            [Arguments] {
+              '0': 'js file',
+              [length]: 1,
+              [callee]: [Circular],
+              [Symbol(Symbol.iterator)]: [Function] },
+           [caller]:
+            { [AsyncFunction: Input_Inquirer_Editor] [length]: 1, [name]: 'Input_Inquirer_Editor' },
+           [prototype]:
+            DefaultInputDataFromGenericName { [constructor]: [Circular] } },
+        [prototype]:
+         DefaultInputDataFromNameLiteral { [constructor]: [Circular] } },
+     [prototype]: DefaultInputDataFromPath { [constructor]: [Circular] } },
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-01T23:57:04.367Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  `JSONICParse.ParseFilePath: Error: reading file "js/file.json": Error: ENOENT: no such file or directory, open 'js/file.json'`,
+  [length]: 2 ]
+2019-06-01T23:57:04.368Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'Resources/defaults/js/file.json',
+  [length]: 1,
+  [callee]:
+   { [Function: DefaultInputDataFromPath]
+     [length]: 1,
+     [name]: 'DefaultInputDataFromPath',
+     [arguments]:
+      [Arguments] {
+        '0': 'Resources/defaults/js/file.json',
+        [length]: 1,
+        [callee]: [Circular],
+        [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } },
+     [caller]:
+      { [Function: DefaultInputDataFromNameLiteral]
+        [length]: 1,
+        [name]: 'DefaultInputDataFromNameLiteral',
+        [arguments]:
+         [Arguments] {
+           '0': 'js/file.json',
+           [length]: 1,
+           [callee]: [Circular],
+           [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } },
+        [caller]:
+         { [Function: DefaultInputDataFromGenericName]
+           [length]: 1,
+           [name]: 'DefaultInputDataFromGenericName',
+           [arguments]:
+            [Arguments] {
+              '0': 'js file',
+              [length]: 1,
+              [callee]: [Circular],
+              [Symbol(Symbol.iterator)]: [Function] },
+           [caller]:
+            { [AsyncFunction: Input_Inquirer_Editor] [length]: 1, [name]: 'Input_Inquirer_Editor' },
+           [prototype]:
+            DefaultInputDataFromGenericName { [constructor]: [Circular] } },
+        [prototype]:
+         DefaultInputDataFromNameLiteral { [constructor]: [Circular] } },
+     [prototype]: DefaultInputDataFromPath { [constructor]: [Circular] } },
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-01T23:57:04.401Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": "Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": "process-name",\n\t"strict": true,\n\t"logger": true\n}',
+  [length]: 2 ]
+2019-06-01T23:57:04.402Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": "Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": "process-name",\n\t"strict": true,\n\t"logger": true\n}',
+  [length]: 2 ]
+2019-06-01T23:57:04.402Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": "Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": "process-name",\n\t"strict": true,\n\t"logger": true\n}',
+  [length]: 2 ]
+2019-06-01T23:57:04.446Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-06-01T23:59:11.461Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input:
+   `{\n\t"template": "js file",\n\t"filename": "js-get.js",\n\t"description": "Simple, reusable functions for HTTP-Get'ing url and the likes. Mainly an idiomatic wrapper around Request.",\n\t"modulename": "JSGet",\n\t"processname": "js-get",\n\t"strict": true,\n\t"logger": true\n}\n` }
+2019-06-01T23:59:11.462Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: [Arguments] {
+  '0':
+   { editor_input:
+      `{\n\t"template": "js file",\n\t"filename": "js-get.js",\n\t"description": "Simple, reusable functions for HTTP-Get'ing url and the likes. Mainly an idiomatic wrapper around Request.",\n\t"modulename": "JSGet",\n\t"processname": "js-get",\n\t"strict": true,\n\t"logger": true\n}\n` },
+  [length]: 1,
+  [callee]:
+   { [Function: OutputFromInquirerEditorAnswer]
+     [length]: 1,
+     [name]: 'OutputFromInquirerEditorAnswer',
+     [arguments]:
+      [Arguments] {
+        '0':
+         { editor_input:
+            `{\n\t"template": "js file",\n\t"filename": "js-get.js",\n\t"description": "Simple, reusable functions for HTTP-Get'ing url and the likes. Mainly an idiomatic wrapper around Request.",\n\t"modulename": "JSGet",\n\t"processname": "js-get",\n\t"strict": true,\n\t"logger": true\n}\n` },
+        [length]: 1,
+        [callee]: [Circular],
+        [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } },
+     [caller]:
+      { [AsyncFunction: Input_Inquirer_Editor] [length]: 1, [name]: 'Input_Inquirer_Editor' },
+     [prototype]: OutputFromInquirerEditorAnswer { [constructor]: [Circular] } },
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-01T23:59:11.463Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'js file',
+  filename: 'js-get.js',
+  description:
+   "Simple, reusable functions for HTTP-Get'ing url and the likes. Mainly an idiomatic wrapper around Request.",
+  modulename: 'JSGet',
+  processname: 'js-get',
+  strict: true,
+  logger: true } undefined
+2019-06-01T23:59:11.464Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: [Arguments] {
+  '0': 'js file',
+  [length]: 1,
+  [callee]:
+   { [Function: TemplateFunctionFromGenericName]
+     [length]: 1,
+     [name]: 'TemplateFunctionFromGenericName',
+     [arguments]:
+      [Arguments] {
+        '0': 'js file',
+        [length]: 1,
+        [callee]: [Circular],
+        [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } },
+     [caller]:
+      { [Function: OutputFromInput]
+        [length]: 2,
+        [name]: 'OutputFromInput',
+        [arguments]:
+         [Arguments] {
+           '0':
+            { template: 'js file',
+              filename: 'js-get.js',
+              description:
+               "Simple, reusable functions for HTTP-Get'ing url and the likes. Mainly an idiomatic wrapper around Request.",
+              modulename: 'JSGet',
+              processname: 'js-get',
+              strict: true,
+              logger: true },
+           [length]: 1,
+           [callee]: [Circular],
+           [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } },
+        [caller]:
+         { [Function: OutputFromInquirerEditorAnswer]
+           [length]: 1,
+           [name]: 'OutputFromInquirerEditorAnswer',
+           [arguments]:
+            [Arguments] {
+              '0': [Object],
+              [length]: 1,
+              [callee]: [Circular],
+              [Symbol(Symbol.iterator)]: [Function] },
+           [caller]:
+            { [AsyncFunction: Input_Inquirer_Editor] [length]: 1, [name]: 'Input_Inquirer_Editor' },
+           [prototype]: OutputFromInquirerEditorAnswer { [constructor]: [Circular] } },
+        [prototype]: OutputFromInput { [constructor]: [Circular] } },
+     [prototype]:
+      TemplateFunctionFromGenericName { [constructor]: [Circular] } },
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-01T23:59:11.465Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/file.hbs',
+  [length]: 1,
+  [callee]:
+   { [Function: TemplateFunctionFromNameLiteral]
+     [length]: 1,
+     [name]: 'TemplateFunctionFromNameLiteral',
+     [arguments]:
+      [Arguments] {
+        '0': 'js/file.hbs',
+        [length]: 1,
+        [callee]: [Circular],
+        [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } },
+     [caller]:
+      { [Function: TemplateFunctionFromGenericName]
+        [length]: 1,
+        [name]: 'TemplateFunctionFromGenericName',
+        [arguments]:
+         [Arguments] {
+           '0': 'js file',
+           [length]: 1,
+           [callee]: [Circular],
+           [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } },
+        [caller]:
+         { [Function: OutputFromInput]
+           [length]: 2,
+           [name]: 'OutputFromInput',
+           [arguments]:
+            [Arguments] {
+              '0': [Object],
+              [length]: 1,
+              [callee]: [Circular],
+              [Symbol(Symbol.iterator)]: [Function] },
+           [caller]:
+            { [Function: OutputFromInquirerEditorAnswer]
+              [length]: 1,
+              [name]: 'OutputFromInquirerEditorAnswer',
+              [arguments]: [Object],
+              [caller]: [AsyncFunction],
+              [prototype]: [OutputFromInquirerEditorAnswer] },
+           [prototype]: OutputFromInput { [constructor]: [Circular] } },
+        [prototype]:
+         TemplateFunctionFromGenericName { [constructor]: [Circular] } },
+     [prototype]:
+      TemplateFunctionFromNameLiteral { [constructor]: [Circular] } },
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-01T23:59:11.466Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'js/file.hbs',
+  [length]: 1,
+  [callee]:
+   { [Function: TemplateFunctionFromPath]
+     [length]: 1,
+     [name]: 'TemplateFunctionFromPath',
+     [arguments]:
+      [Arguments] {
+        '0': 'js/file.hbs',
+        [length]: 1,
+        [callee]: [Circular],
+        [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } },
+     [caller]:
+      { [Function: TemplateFunctionFromNameLiteral]
+        [length]: 1,
+        [name]: 'TemplateFunctionFromNameLiteral',
+        [arguments]:
+         [Arguments] {
+           '0': 'js/file.hbs',
+           [length]: 1,
+           [callee]: [Circular],
+           [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } },
+        [caller]:
+         { [Function: TemplateFunctionFromGenericName]
+           [length]: 1,
+           [name]: 'TemplateFunctionFromGenericName',
+           [arguments]:
+            [Arguments] {
+              '0': 'js file',
+              [length]: 1,
+              [callee]: [Circular],
+              [Symbol(Symbol.iterator)]: [Function] },
+           [caller]:
+            { [Function: OutputFromInput]
+              [length]: 2,
+              [name]: 'OutputFromInput',
+              [arguments]: [Object],
+              [caller]: [Function],
+              [prototype]: [OutputFromInput] },
+           [prototype]:
+            TemplateFunctionFromGenericName { [constructor]: [Circular] } },
+        [prototype]:
+         TemplateFunctionFromNameLiteral { [constructor]: [Circular] } },
+     [prototype]: TemplateFunctionFromPath { [constructor]: [Circular] } },
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-01T23:59:11.466Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  `Error: template "js/file.hbs" cannot be read: Error: ENOENT: no such file or directory, access 'js/file.hbs'`,
+  [length]: 2 ]
+2019-06-01T23:59:11.467Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'Resources/templates/js/file.hbs',
+  [length]: 1,
+  [callee]:
+   { [Function: TemplateFunctionFromPath]
+     [length]: 1,
+     [name]: 'TemplateFunctionFromPath',
+     [arguments]:
+      [Arguments] {
+        '0': 'Resources/templates/js/file.hbs',
+        [length]: 1,
+        [callee]: [Circular],
+        [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } },
+     [caller]:
+      { [Function: TemplateFunctionFromNameLiteral]
+        [length]: 1,
+        [name]: 'TemplateFunctionFromNameLiteral',
+        [arguments]:
+         [Arguments] {
+           '0': 'js/file.hbs',
+           [length]: 1,
+           [callee]: [Circular],
+           [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } },
+        [caller]:
+         { [Function: TemplateFunctionFromGenericName]
+           [length]: 1,
+           [name]: 'TemplateFunctionFromGenericName',
+           [arguments]:
+            [Arguments] {
+              '0': 'js file',
+              [length]: 1,
+              [callee]: [Circular],
+              [Symbol(Symbol.iterator)]: [Function] },
+           [caller]:
+            { [Function: OutputFromInput]
+              [length]: 2,
+              [name]: 'OutputFromInput',
+              [arguments]: [Object],
+              [caller]: [Function],
+              [prototype]: [OutputFromInput] },
+           [prototype]:
+            TemplateFunctionFromGenericName { [constructor]: [Circular] } },
+        [prototype]:
+         TemplateFunctionFromNameLiteral { [constructor]: [Circular] } },
+     [prototype]: TemplateFunctionFromPath { [constructor]: [Circular] } },
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-01T23:59:11.513Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup:
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child:
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-06-01T23:59:11.514Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup:
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child:
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-06-01T23:59:11.514Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup:
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child:
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-06-01T23:59:11.567Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: [Arguments] {
+  '0':
+   `#!/usr/local/bin/node\n'use strict';\n/**\n* @file js-get.js\n* @brief Simple, reusable functions for HTTP-Get'ing url and the likes. Mainly an idiomatic wrapper around Request.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\t//External\n\n//Constants\nconst FILENAME = 'js-get.js';\nconst MODULE_NAME = 'JSGet';\nvar PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = 'js-get';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = null;\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( logger == undefined || typeof(logger) !== 'object' ){\n\t\t_return = [-2,'Error: param "logger" is either null or not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t//Constants\n\t//Variables\n\t//Logger\n\t//Options\n\t//Config\n\t//Main\n} else{\n\t\n}\n`,
+  '1': undefined,
+  [length]: 2,
+  [callee]:
+   { [Function: OutputApplyPostRE]
+     [length]: 2,
+     [name]: 'OutputApplyPostRE',
+     [arguments]:
+      [Arguments] {
+        '0':
+         `#!/usr/local/bin/node\n'use strict';\n/**\n* @file js-get.js\n* @brief Simple, reusable functions for HTTP-Get'ing url and the likes. Mainly an idiomatic wrapper around Request.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\t//External\n\n//Constants\nconst FILENAME = 'js-get.js';\nconst MODULE_NAME = 'JSGet';\nvar PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = 'js-get';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = null;\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( logger == undefined || typeof(logger) !== 'object' ){\n\t\t_return = [-2,'Error: param "logger" is either null or not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t//Constants\n\t//Variables\n\t//Logger\n\t//Options\n\t//Config\n\t//Main\n} else{\n\t\n}\n`,
+        '1': undefined,
+        [length]: 2,
+        [callee]: [Circular],
+        [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } },
+     [caller]:
+      { [Function: OutputFromInput]
+        [length]: 2,
+        [name]: 'OutputFromInput',
+        [arguments]:
+         [Arguments] {
+           '0':
+            { template: 'js file',
+              filename: 'js-get.js',
+              description:
+               "Simple, reusable functions for HTTP-Get'ing url and the likes. Mainly an idiomatic wrapper around Request.",
+              modulename: 'JSGet',
+              processname: 'js-get',
+              strict: true,
+              logger: true },
+           [length]: 1,
+           [callee]: [Circular],
+           [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } },
+        [caller]:
+         { [Function: OutputFromInquirerEditorAnswer]
+           [length]: 1,
+           [name]: 'OutputFromInquirerEditorAnswer',
+           [arguments]:
+            [Arguments] {
+              '0': [Object],
+              [length]: 1,
+              [callee]: [Circular],
+              [Symbol(Symbol.iterator)]: [Function] },
+           [caller]:
+            { [AsyncFunction: Input_Inquirer_Editor] [length]: 1, [name]: 'Input_Inquirer_Editor' },
+           [prototype]: OutputFromInquirerEditorAnswer { [constructor]: [Circular] } },
+        [prototype]: OutputFromInput { [constructor]: [Circular] } },
+     [prototype]: OutputApplyPostRE { [constructor]: [Circular] } },
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-01T23:59:11.567Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2019-06-01T23:59:11.568Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  `#!/usr/local/bin/node\n'use strict';\n/**\n* @file js-get.js\n* @brief Simple, reusable functions for HTTP-Get'ing url and the likes. Mainly an idiomatic wrapper around Request.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\t//External\n\n//Constants\nconst FILENAME = 'js-get.js';\nconst MODULE_NAME = 'JSGet';\nvar PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = 'js-get';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = null;\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( logger == undefined || typeof(logger) !== 'object' ){\n\t\t_return = [-2,'Error: param "logger" is either null or not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t//Constants\n\t//Variables\n\t//Logger\n\t//Options\n\t//Config\n\t//Main\n} else{\n\t\n}\n`,
+  [length]: 2 ]
+2019-06-01T23:59:11.568Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  `#!/usr/local/bin/node\n'use strict';\n/**\n* @file js-get.js\n* @brief Simple, reusable functions for HTTP-Get'ing url and the likes. Mainly an idiomatic wrapper around Request.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\t//External\n\n//Constants\nconst FILENAME = 'js-get.js';\nconst MODULE_NAME = 'JSGet';\nvar PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = 'js-get';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = null;\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( logger == undefined || typeof(logger) !== 'object' ){\n\t\t_return = [-2,'Error: param "logger" is either null or not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t//Constants\n\t//Variables\n\t//Logger\n\t//Options\n\t//Config\n\t//Main\n} else{\n\t\n}\n`,
+  [ 0,
+    `#!/usr/local/bin/node\n'use strict';\n/**\n* @file js-get.js\n* @brief Simple, reusable functions for HTTP-Get'ing url and the likes. Mainly an idiomatic wrapper around Request.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\t//External\n\n//Constants\nconst FILENAME = 'js-get.js';\nconst MODULE_NAME = 'JSGet';\nvar PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = 'js-get';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = null;\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( logger == undefined || typeof(logger) !== 'object' ){\n\t\t_return = [-2,'Error: param "logger" is either null or not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t//Constants\n\t//Variables\n\t//Logger\n\t//Options\n\t//Config\n\t//Main\n} else{\n\t\n}\n`,
+    [length]: 2 ],
+  [length]: 3 ]
+2019-06-01T23:59:11.568Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  `#!/usr/local/bin/node\n'use strict';\n/**\n* @file js-get.js\n* @brief Simple, reusable functions for HTTP-Get'ing url and the likes. Mainly an idiomatic wrapper around Request.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\t//External\n\n//Constants\nconst FILENAME = 'js-get.js';\nconst MODULE_NAME = 'JSGet';\nvar PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = 'js-get';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = null;\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( logger == undefined || typeof(logger) !== 'object' ){\n\t\t_return = [-2,'Error: param "logger" is either null or not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t//Constants\n\t//Variables\n\t//Logger\n\t//Options\n\t//Config\n\t//Main\n} else{\n\t\n}\n`,
+  [length]: 2 ]
+2019-06-01T23:59:11.569Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: [Arguments] {
+  '0':
+   `#!/usr/local/bin/node\n'use strict';\n/**\n* @file js-get.js\n* @brief Simple, reusable functions for HTTP-Get'ing url and the likes. Mainly an idiomatic wrapper around Request.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\t//External\n\n//Constants\nconst FILENAME = 'js-get.js';\nconst MODULE_NAME = 'JSGet';\nvar PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = 'js-get';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = null;\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( logger == undefined || typeof(logger) !== 'object' ){\n\t\t_return = [-2,'Error: param "logger" is either null or not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t//Constants\n\t//Variables\n\t//Logger\n\t//Options\n\t//Config\n\t//Main\n} else{\n\t\n}\n`,
+  '1': { edit: 'js file', pasteboard: true },
+  [length]: 2,
+  [callee]:
+   { [Function: ProduceOutput]
+     [length]: 2,
+     [name]: 'ProduceOutput',
+     [arguments]:
+      [Arguments] {
+        '0':
+         `#!/usr/local/bin/node\n'use strict';\n/**\n* @file js-get.js\n* @brief Simple, reusable functions for HTTP-Get'ing url and the likes. Mainly an idiomatic wrapper around Request.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\t//External\n\n//Constants\nconst FILENAME = 'js-get.js';\nconst MODULE_NAME = 'JSGet';\nvar PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = 'js-get';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = null;\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( logger == undefined || typeof(logger) !== 'object' ){\n\t\t_return = [-2,'Error: param "logger" is either null or not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t//Constants\n\t//Variables\n\t//Logger\n\t//Options\n\t//Config\n\t//Main\n} else{\n\t\n}\n`,
+        '1': { edit: 'js file', pasteboard: true },
+        [length]: 2,
+        [callee]: [Circular],
+        [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } },
+     [caller]:
+      { [AsyncFunction: Input_Inquirer_Editor] [length]: 1, [name]: 'Input_Inquirer_Editor' },
+     [prototype]: ProduceOutput { [constructor]: [Circular] } },
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-01T23:59:12.664Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-06-01T23:59:12.664Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
