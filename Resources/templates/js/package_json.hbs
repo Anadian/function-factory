@@ -1,0 +1,26 @@
+{
+  "name": "{{name}}",
+  "version": "{{version}}",
+  "description": "{{& description}}",
+  "main": "{{main}}",
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "./source/main.js"
+  },
+  "repository": {
+    "type": "{{repository.type}}",
+    "url": "git+{{repository.url}}"
+  },
+  "keywords": [
+{{#each keywords}}	"{{this}}",
+{{/each}}
+  ],
+  "author": "{{author.name}}",
+  "license": "{{license}}",
+  "bugs": {
+    "url": "{{repository.url}}/issues"
+  },
+  "homepage": "{{repository.url}}#readme"
+}

@@ -1,4 +1,5 @@
 #!/usr/local/bin/node
+'use strict';
 
 /**
 * @file function-factory.js
@@ -32,6 +33,7 @@ OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 	//External
 	const HandleBars = require('handlebars');
 	const Inquirer = require('inquirer');
+	const GetStream = require('get-stream');
 	const Clipboardy = require('clipboardy');
 	/*const LogForm = require('logform');
 	const Winston = require('winston');*/
@@ -502,6 +504,48 @@ async function Input_Inquirer_Editor( options ){
 	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('Input_Inquirer_Editor returned: %o', _return)});
 	return _return;
 }
+async function Input_STDIN( options ){
+	var _return = [1,null];
+	const FUNCTION_NAME = 'Input_STDIN';
+	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('Input_STDIN received: %o', options)});
+	var function_return = [1,null];
+	var output = null;
+	if( options != null && typeof(options) === "object" ){
+		try{
+			f\r = [0,await GetStream(process.stdin)];
+		} catch(error){
+			f\r = [-4, 'GetStream threw: '+error];
+		}
+		if( f\r[0] === 0 ){
+			f\r = JSONICParse.ParseFileData( f\r[1] );
+			if( f\r[0] === 0 ){
+				f\r = OutputFromInput(f\r[1]);
+				if( f\r[0] === 0 ){
+					f\r = ProduceOutput(f\r[1], Options);
+					if( f\r[0] === 0 ){
+						_return = [0,null];
+					} else{
+						_return = [f\r[0], 'ProduceOutput: '+f\r[1]];
+					}
+				} else{
+					_return = [f\r[0], 'OutputFromInput: '+f\r[1]];
+				}
+			} else{
+				_return = [f\r[0], 'JSONICParse.ParseFileData: '+f\r[1]];
+			}
+		} else{
+			_return = f\r;
+		}
+	} else{
+		_return = [-2, Utility.format('Error: options is either null or not an object: %o', options)];
+	}
+	if( _return[0] !== 0 ){
+		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: Utility.format('%o',_return)});
+	}
+	process.exitCode = _return[0];
+	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('Input_STDIN returned: %o', _return)});
+	return _return;
+}
 
 //Exports and Execution
 if(require.main === module){
@@ -599,8 +643,43 @@ if(require.main === module){
 		if( Options.edit !== undefined ){
 			Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'In editor mode.'});
 			_return = Input_Inquirer_Editor( Options );
-		} /*else if( Options.ask !== undefined ){
-			
+		} else if( Options.stdin !== undefined ){
+			jsinfolog('In stdin mode.')
+			_return = Input_STDIN( Options );
+		} else if( Options.input !== undefined ){
+			jsinfolog('In file input mode.')
+			if( typeof(Options.input) === 'string' ){
+				f\r = JSONICParse.ParseFilePath( Options.input );
+				if( f\r[0] === 0 ){
+					f\r = OutputFromInput(f\r[1]);
+					if( f\r[0] === 0 ){
+						f\r = ProduceOutput(f\r[1], Options);
+						if( f\r[0] === 0 ){
+							_return = [0,null];
+						} else{
+							_return = [f\r[0], 'ProduceOutput: '+f\r[1]];
+						}
+					} else{
+						_return = [f\r[0], 'OutputFromInput: '+f\r[1]];
+					}
+				} else{
+					_return = [f\r[0], 'JSONICParse.ParseFilePath: '+f\r[1]];
+				}
+			} else{
+				_return = [-4, 'Error: "input" isn\'t a string.'];
+			}
+			process.exitCode = _return[0];
+			if( _return[0] !== 0 ){
+				jserrorlog(Util\fmt('%o',_return))
+			}
+		} else{
+			_return = [-2, 'Error: no input option specified.'];
+			process.exitCode = _return[0];
+			jserrorlog(Util\fmt('%o',_return);
+		}
+
+
+					
 
 		var input_filename = './input.json';
 		if(Options.input != null) input_filename = Options.input;
