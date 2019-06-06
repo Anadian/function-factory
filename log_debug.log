@@ -9574,3 +9574,136 @@
   [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
 2019-06-01T23:59:12.664Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
 2019-06-01T23:59:12.664Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-06-05T21:20:10.341Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-06-05T21:20:10.414Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0':
+   '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-05T21:20:10.479Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories:
+     [ 'Resources/templates',
+       '/Users/cameron/Library/Application Support/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories:
+     [ 'Resources/defaults',
+       '/Users/cameron/Library/Application Support/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-06-05T21:20:10.772Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:error: [ -2, 'Error: no input option specified.', [length]: 2 ]
+2019-06-05T21:20:10.774Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-06-06T02:23:23.324Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-06-06T02:23:23.397Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0':
+   '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-06T02:23:23.451Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories:
+     [ 'Resources/templates',
+       '/Users/cameron/Library/Application Support/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories:
+     [ 'Resources/defaults',
+       '/Users/cameron/Library/Application Support/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-06-06T02:23:23.451Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In stdin mode.
+2019-06-06T02:23:23.499Z function-factory:FunctionFactory:function-factory.js:Input_STDIN:debug: Input_STDIN received: { stdin: true, stdout: true }
+2019-06-06T02:23:23.502Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-06-06T02:24:15.390Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-06-06T02:24:15.405Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0':
+   '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-06T02:24:15.431Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories:
+     [ 'Resources/templates',
+       '/Users/cameron/Library/Application Support/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories:
+     [ 'Resources/defaults',
+       '/Users/cameron/Library/Application Support/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-06-06T02:24:15.431Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In stdin mode.
+2019-06-06T02:24:15.435Z function-factory:FunctionFactory:function-factory.js:Input_STDIN:debug: Input_STDIN received: { stdin: true, stdout: true }
+2019-06-06T02:24:15.441Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-06-06T02:24:15.455Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { name: 'package-name',
+  version: 'semver',
+  description: 'Package description.',
+  main: './source/main.js',
+  dependencies: {},
+  devDependencies: {},
+  scripts: { test: './source/main.js' },
+  repository:
+   { type: 'git', url: 'https://github.com/Anadian/Pacter.git' },
+  keywords: [ 'libre', 'free', 'open', [length]: 3 ],
+  author: { name: 'Anadian' },
+  license: 'MIT',
+  bugs: { url: 'https://github.com/Anadian/Pacter/issues' },
+  homepage: '{{repository.url}}#readme' } undefined
+2019-06-06T02:24:15.455Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: Error: [ -4,
+  "Error: neither templatename nor template is specified in the given input_context { name: 'package-name',\n  version: 'semver',\n  description: 'Package description.',\n  main: './source/main.js',\n  dependencies: {},\n  devDependencies: {},\n  scripts: { test: './source/main.js' },\n  repository:\n   { type: 'git', url: 'https://github.com/Anadian/Pacter.git' },\n  keywords: [ 'libre', 'free', 'open', [length]: 3 ],\n  author: { name: 'Anadian' },\n  license: 'MIT',\n  bugs: { url: 'https://github.com/Anadian/Pacter/issues' },\n  homepage: '{{repository.url}}#readme' }",
+  [length]: 2 ]
+2019-06-06T02:24:15.455Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ -4,
+  "Error: neither templatename nor template is specified in the given input_context { name: 'package-name',\n  version: 'semver',\n  description: 'Package description.',\n  main: './source/main.js',\n  dependencies: {},\n  devDependencies: {},\n  scripts: { test: './source/main.js' },\n  repository:\n   { type: 'git', url: 'https://github.com/Anadian/Pacter.git' },\n  keywords: [ 'libre', 'free', 'open', [length]: 3 ],\n  author: { name: 'Anadian' },\n  license: 'MIT',\n  bugs: { url: 'https://github.com/Anadian/Pacter/issues' },\n  homepage: '{{repository.url}}#readme' }",
+  [length]: 2 ]
+2019-06-06T02:24:15.456Z function-factory:FunctionFactory:function-factory.js:Input_STDIN:error: [ -4,
+  "OutputFromInput: Error: neither templatename nor template is specified in the given input_context { name: 'package-name',\n  version: 'semver',\n  description: 'Package description.',\n  main: './source/main.js',\n  dependencies: {},\n  devDependencies: {},\n  scripts: { test: './source/main.js' },\n  repository:\n   { type: 'git', url: 'https://github.com/Anadian/Pacter.git' },\n  keywords: [ 'libre', 'free', 'open', [length]: 3 ],\n  author: { name: 'Anadian' },\n  license: 'MIT',\n  bugs: { url: 'https://github.com/Anadian/Pacter/issues' },\n  homepage: '{{repository.url}}#readme' }",
+  [length]: 2 ]
+2019-06-06T02:24:15.456Z function-factory:FunctionFactory:function-factory.js:Input_STDIN:debug: Input_STDIN returned: [ -4,
+  "OutputFromInput: Error: neither templatename nor template is specified in the given input_context { name: 'package-name',\n  version: 'semver',\n  description: 'Package description.',\n  main: './source/main.js',\n  dependencies: {},\n  devDependencies: {},\n  scripts: { test: './source/main.js' },\n  repository:\n   { type: 'git', url: 'https://github.com/Anadian/Pacter.git' },\n  keywords: [ 'libre', 'free', 'open', [length]: 3 ],\n  author: { name: 'Anadian' },\n  license: 'MIT',\n  bugs: { url: 'https://github.com/Anadian/Pacter/issues' },\n  homepage: '{{repository.url}}#readme' }",
+  [length]: 2 ]
+2019-06-06T02:25:11.027Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-06-06T02:25:11.041Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0':
+   '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-06T02:25:11.067Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories:
+     [ 'Resources/templates',
+       '/Users/cameron/Library/Application Support/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories:
+     [ 'Resources/defaults',
+       '/Users/cameron/Library/Application Support/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-06-06T02:25:11.067Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In stdin mode.
+2019-06-06T02:25:11.071Z function-factory:FunctionFactory:function-factory.js:Input_STDIN:debug: Input_STDIN received: { stdin: true,
+  stdout: true,
+  'template-override': 'js package_json' }
+2019-06-06T02:25:11.075Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-06-06T02:25:11.088Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { name: 'package-name',
+  version: 'semver',
+  description: 'Package description.',
+  main: './source/main.js',
+  dependencies: {},
+  devDependencies: {},
+  scripts: { test: './source/main.js' },
+  repository:
+   { type: 'git', url: 'https://github.com/Anadian/Pacter.git' },
+  keywords: [ 'libre', 'free', 'open', [length]: 3 ],
+  author: { name: 'Anadian' },
+  license: 'MIT',
+  bugs: { url: 'https://github.com/Anadian/Pacter/issues' },
+  homepage: '{{repository.url}}#readme' } undefined
+2019-06-06T02:25:11.088Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: Error: [ -4,
+  "Error: neither templatename nor template is specified in the given input_context { name: 'package-name',\n  version: 'semver',\n  description: 'Package description.',\n  main: './source/main.js',\n  dependencies: {},\n  devDependencies: {},\n  scripts: { test: './source/main.js' },\n  repository:\n   { type: 'git', url: 'https://github.com/Anadian/Pacter.git' },\n  keywords: [ 'libre', 'free', 'open', [length]: 3 ],\n  author: { name: 'Anadian' },\n  license: 'MIT',\n  bugs: { url: 'https://github.com/Anadian/Pacter/issues' },\n  homepage: '{{repository.url}}#readme' }",
+  [length]: 2 ]
+2019-06-06T02:25:11.088Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ -4,
+  "Error: neither templatename nor template is specified in the given input_context { name: 'package-name',\n  version: 'semver',\n  description: 'Package description.',\n  main: './source/main.js',\n  dependencies: {},\n  devDependencies: {},\n  scripts: { test: './source/main.js' },\n  repository:\n   { type: 'git', url: 'https://github.com/Anadian/Pacter.git' },\n  keywords: [ 'libre', 'free', 'open', [length]: 3 ],\n  author: { name: 'Anadian' },\n  license: 'MIT',\n  bugs: { url: 'https://github.com/Anadian/Pacter/issues' },\n  homepage: '{{repository.url}}#readme' }",
+  [length]: 2 ]
+2019-06-06T02:25:11.089Z function-factory:FunctionFactory:function-factory.js:Input_STDIN:error: [ -4,
+  "OutputFromInput: Error: neither templatename nor template is specified in the given input_context { name: 'package-name',\n  version: 'semver',\n  description: 'Package description.',\n  main: './source/main.js',\n  dependencies: {},\n  devDependencies: {},\n  scripts: { test: './source/main.js' },\n  repository:\n   { type: 'git', url: 'https://github.com/Anadian/Pacter.git' },\n  keywords: [ 'libre', 'free', 'open', [length]: 3 ],\n  author: { name: 'Anadian' },\n  license: 'MIT',\n  bugs: { url: 'https://github.com/Anadian/Pacter/issues' },\n  homepage: '{{repository.url}}#readme' }",
+  [length]: 2 ]
+2019-06-06T02:25:11.089Z function-factory:FunctionFactory:function-factory.js:Input_STDIN:debug: Input_STDIN returned: [ -4,
+  "OutputFromInput: Error: neither templatename nor template is specified in the given input_context { name: 'package-name',\n  version: 'semver',\n  description: 'Package description.',\n  main: './source/main.js',\n  dependencies: {},\n  devDependencies: {},\n  scripts: { test: './source/main.js' },\n  repository:\n   { type: 'git', url: 'https://github.com/Anadian/Pacter.git' },\n  keywords: [ 'libre', 'free', 'open', [length]: 3 ],\n  author: { name: 'Anadian' },\n  license: 'MIT',\n  bugs: { url: 'https://github.com/Anadian/Pacter/issues' },\n  homepage: '{{repository.url}}#readme' }",
+  [length]: 2 ]

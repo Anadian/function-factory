@@ -512,29 +512,29 @@ async function Input_STDIN( options ){
 	var output = null;
 	if( options != null && typeof(options) === "object" ){
 		try{
-			f\r = [0,await GetStream(process.stdin)];
+			function_return = [0,await GetStream(process.stdin)];
 		} catch(error){
-			f\r = [-4, 'GetStream threw: '+error];
+			function_return = [-4, 'GetStream threw: '+error];
 		}
-		if( f\r[0] === 0 ){
-			f\r = JSONICParse.ParseFileData( f\r[1] );
-			if( f\r[0] === 0 ){
-				f\r = OutputFromInput(f\r[1]);
-				if( f\r[0] === 0 ){
-					f\r = ProduceOutput(f\r[1], Options);
-					if( f\r[0] === 0 ){
+		if( function_return[0] === 0 ){
+			function_return = JSONICParse.ParseFileData( function_return[1] );
+			if( function_return[0] === 0 ){
+				function_return = OutputFromInput(function_return[1]);
+				if( function_return[0] === 0 ){
+					function_return = ProduceOutput(function_return[1], Options);
+					if( function_return[0] === 0 ){
 						_return = [0,null];
 					} else{
-						_return = [f\r[0], 'ProduceOutput: '+f\r[1]];
+						_return = [function_return[0], 'ProduceOutput: '+function_return[1]];
 					}
 				} else{
-					_return = [f\r[0], 'OutputFromInput: '+f\r[1]];
+					_return = [function_return[0], 'OutputFromInput: '+function_return[1]];
 				}
 			} else{
-				_return = [f\r[0], 'JSONICParse.ParseFileData: '+f\r[1]];
+				_return = [function_return[0], 'JSONICParse.ParseFileData: '+function_return[1]];
 			}
 		} else{
-			_return = f\r;
+			_return = function_return;
 		}
 	} else{
 		_return = [-2, Utility.format('Error: options is either null or not an object: %o', options)];
@@ -644,79 +644,41 @@ if(require.main === module){
 			Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'In editor mode.'});
 			_return = Input_Inquirer_Editor( Options );
 		} else if( Options.stdin !== undefined ){
-			jsinfolog('In stdin mode.')
+			Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'In stdin mode.'});
 			_return = Input_STDIN( Options );
 		} else if( Options.input !== undefined ){
-			jsinfolog('In file input mode.')
+			Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'In file input mode.'});
 			if( typeof(Options.input) === 'string' ){
-				f\r = JSONICParse.ParseFilePath( Options.input );
-				if( f\r[0] === 0 ){
-					f\r = OutputFromInput(f\r[1]);
-					if( f\r[0] === 0 ){
-						f\r = ProduceOutput(f\r[1], Options);
-						if( f\r[0] === 0 ){
+				function_return = JSONICParse.ParseFilePath( Options.input );
+				if( function_return[0] === 0 ){
+					function_return = OutputFromInput(function_return[1]);
+					if( function_return[0] === 0 ){
+						function_return = ProduceOutput(function_return[1], Options);
+						if( function_return[0] === 0 ){
 							_return = [0,null];
 						} else{
-							_return = [f\r[0], 'ProduceOutput: '+f\r[1]];
+							_return = [function_return[0], 'ProduceOutput: '+function_return[1]];
 						}
 					} else{
-						_return = [f\r[0], 'OutputFromInput: '+f\r[1]];
+						_return = [function_return[0], 'OutputFromInput: '+function_return[1]];
 					}
 				} else{
-					_return = [f\r[0], 'JSONICParse.ParseFilePath: '+f\r[1]];
+					_return = [function_return[0], 'JSONICParse.ParseFilePath: '+function_return[1]];
 				}
 			} else{
 				_return = [-4, 'Error: "input" isn\'t a string.'];
 			}
 			process.exitCode = _return[0];
 			if( _return[0] !== 0 ){
-				jserrorlog(Util\fmt('%o',_return))
+				Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: Utility.format('%o',_return)});
 			}
 		} else{
 			_return = [-2, 'Error: no input option specified.'];
 			process.exitCode = _return[0];
-			jserrorlog(Util\fmt('%o',_return);
+			Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: Utility.format('%o',_return)});
 		}
-
-
-					
-
-		var input_filename = './input.json';
-		if(Options.input != null) input_filename = Options.input;
-		var input_data = FileSystem.readFileSync(input_filename, 'utf8');
-		if(input_data != null){
-			var json_input = StripJSONComments(input_data);
-			if(json_input != null){
-				var json_object = ParseJSON(json_input);
-				if(json_object != null){
-					var template_filename = json_object.templatename;
-					if(json_object.template != null) template_filename = Path.join( template_directory, json_object.template );
-					if(Options.template != null) template_filename = Options.template;
-					if(template_filename != null){
-						var template_data = FileSystem.readFileSync(template_filename, 'utf8');
-						if(template_data != null){
-							var template_function = HandleBars.compile(template_data);
-							if(template_function != null){
-								var output_data = template_function(json_object);
-								if(output_data != null){
-									if(json_object.post_re != null){
-										var regex = new RegExp(json_object.post_re[0].search,json_object.post_re[0].flags);
-										output_data = output_data.replace(regex,json_object.post_re[0].replace);
-									}
-									var output_filename = 'output';
-									if(Options.output != null) output_filename = Options.output;
-									FileSystem.writeFileSync(output_filename, output_data);
-								} else _return = [1,'Problem with template_function.'];
-							} else _return = [1,'Problem with compiling template_data: '+template_data];
-						} else _return = [1,'Problem couldn\'t open template_filename: '+template_filename];
-					} else _return = [1,'Property \'templatename\' invalid: '+json_object.toString()];
-				} else _return = [1,'Problem with parsing json_input: '+json_input];
-			} else _return = [1,'Problem with stripping JSON comments: '+input_data];
-		} else _return = [1,'Couldn\'t open input file: '+input_filename];
-		console.log(_return[1]);
 	}
-	process.exitCode = _return[0];*/
-	}
+	process.exitCode = _return[0];
 	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});
 } else{
 	

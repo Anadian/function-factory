@@ -1,0 +1,29 @@
+{
+  "name": "package-name",
+  "version": "semver",
+  "description": "Package description.",
+  "main": "./source/main.js",
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "./source/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Anadian/Pacter.git"
+  },
+  "keywords": [
+	  "libre",
+	  "free",
+	  "open"
+  ],
+  "author": {
+		"name": "Anadian"
+	},
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Anadian/Pacter/issues"
+  },
+  "homepage": "{{repository.url}}#readme"
+}
