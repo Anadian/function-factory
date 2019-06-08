@@ -458,15 +458,19 @@ async function Input_Inquirer_Editor( options ){
 	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('Input_Inquirer_Editor received: %o', options)});
 	var function_return = [1,null];
 	var output = null;
+	var template_lookup = null;
 	if( options != null && typeof(options) === "object" ){
 		var default_input_data = null;
-		if( options.edit != null ){
-			function_return = DefaultInputDataFromGenericName( options.edit );
-			if( function_return[0] === 0 ){
-				default_input_data = function_return[1];
-			} else{
-				Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'warn', message: Utility.format('DefaultInputDataFromGenericName: %o',function_return)});
-			}
+		if( options['template-override'] != null && typeof(options['template-override']) === 'string' ){
+			template_lookup = options['template-override'];
+		} else if( options.edit != null && typeof(options.edit) === 'string' ){
+			template_lookup = options.edit;
+		}
+		function_return = DefaultInputDataFromGenericName( options.edit );
+		if( function_return[0] === 0 ){
+			default_input_data = function_return[1];
+		} else{
+			Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'warn', message: Utility.format('DefaultInputDataFromGenericName: %o',function_return)});
 		}
 		var inquirer_questions = [
 			{

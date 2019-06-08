@@ -6,5 +6,6 @@
 	"modulename": "ModuleName",
 	"processname": "process-name",
 	"strict": true,
+	"main": true,
 	"logger": true
 }

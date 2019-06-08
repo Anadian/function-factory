@@ -5,7 +5,21 @@
 * @file {{filename}}
 * @brief {{& description}}
 * @author Anadian
-* @copyright MITlicensetm(2019,Canosw)
+* @copyright 	Copyright 2019 Canosw
+	Permission is hereby granted, free of charge, to any person obtaining a copy of this 
+software and associated documentation files (the "Software"), to deal in the Software 
+without restriction, including without limitation the rights to use, copy, modify, 
+merge, publish, distribute, sublicense, and/or sell copies of the Software, and to 
+permit persons to whom the Software is furnished to do so, subject to the following 
+conditions:
+	The above copyright notice and this permission notice shall be included in all copies 
+or substantial portions of the Software.
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT 
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF 
+CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE 
+OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
 //Dependencies
@@ -24,7 +38,11 @@ if(require.main === module){
 }
 
 //Global Variables
-{{#logger}}var Logger = null;{{/logger}}
+{{#logger}}var Logger = { 
+	log: () => {
+		return null;
+	}
+};{{/logger}}
 //Functions
 {{#logger}}function Logger_Set( logger ){
 	var _return = [1,null];
@@ -33,8 +51,16 @@ if(require.main === module){
 	var function_return = [1,null];
 
 	//Parametre checks
-	if( logger == undefined || typeof(logger) !== 'object' ){
-		_return = [-2,'Error: param "logger" is either null or not an object.'];
+	if( typeof(logger) === 'object' ){
+		if( logger === null ){
+			logger = { 
+				log: () => {
+					return null;
+				}
+			};
+		}
+	} else{
+		_return = [-2,'Error: param "logger" is not an object.'];
 	}
 
 	//Function
@@ -49,18 +75,31 @@ if(require.main === module){
 
 //Exports and Execution
 if(require.main === module){
-	var _return = [1,null];
+{{#main}}	var _return = [1,null];
 	const FUNCTION_NAME = 'MainExecutionFunction';
 	//Dependencies
 		//Internal
 		//Standard
 		//External
+{{#logger}}		const ApplicationLogWinstonInterface = require('application-log-winston-interface');
+{{/logger}}		const EnvPaths = require('env-paths');
 	//Constants
+	const EnvironmentPaths = EnvPaths( PROCESS_NAME );
 	//Variables
-	{{#logger}}//Logger{{/logger}}
-	//Options
+	var function_return = [1,null];
+{{#logger}}	//Logger
+	function_return = ApplicationLogWinstonInterface.InitLogger('debug.log', EnvironmentPaths.log);
+	if( function_return[0] === 0 ){
+		Logger_Set( function_return[1] );
+	}
+	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});
+{{/logger}}	//Options
 	//Config
 	//Main
+{{#logger}}	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});
+{{/logger}}
+{{/main}}
 } else{
-	
+{{#logger}}	exports.SetLogger = Set_Logger;
+{{/logger}}	
 }
