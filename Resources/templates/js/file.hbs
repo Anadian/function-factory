@@ -25,7 +25,8 @@ OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //Dependencies
 	//Internal
 	//Standard
-	//External
+{{#logger}}	const Utility = require('util');
+{{/logger}}	//External
 
 //Constants
 const FILENAME = '{{filename}}';
@@ -81,13 +82,18 @@ if(require.main === module){
 		//Internal
 		//Standard
 		//External
-{{#logger}}		const ApplicationLogWinstonInterface = require('application-log-winston-interface');
+{{#logger}}		const SafeRecursiveMKDIR = require('safe-recursive-mkdir');
+		const ApplicationLogWinstonInterface = require('application-log-winston-interface');
 {{/logger}}		const EnvPaths = require('env-paths');
 	//Constants
 	const EnvironmentPaths = EnvPaths( PROCESS_NAME );
 	//Variables
 	var function_return = [1,null];
 {{#logger}}	//Logger
+	function_return = SafeRecursiveMKDIR.mkdirSyncRecursiveSafe( EnvironmentPaths.log );
+	if( function_return[0] !== 0 ){
+		console.error('SafeRecursiveMKDIR.mkdirSyncRecursiveSafe(%s) returned: %o', EnvironmentPaths.log, _return);
+	}
 	function_return = ApplicationLogWinstonInterface.InitLogger('debug.log', EnvironmentPaths.log);
 	if( function_return[0] === 0 ){
 		Logger_Set( function_return[1] );
@@ -100,6 +106,6 @@ if(require.main === module){
 {{/logger}}
 {{/main}}
 } else{
-{{#logger}}	exports.SetLogger = Set_Logger;
+{{#logger}}	exports.SetLogger = Logger_Set;
 {{/logger}}	
 }
