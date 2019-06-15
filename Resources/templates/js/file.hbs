@@ -82,27 +82,62 @@ if(require.main === module){
 		//Internal
 		//Standard
 		//External
-{{#logger}}		const SafeRecursiveMKDIR = require('safe-recursive-mkdir');
+{{#logger}}		const MakeDir = require('make-dir');
 		const ApplicationLogWinstonInterface = require('application-log-winston-interface');
 {{/logger}}		const EnvPaths = require('env-paths');
-	//Constants
+{{#cli}}		const CommandLineArgs = require('command-line-args');
+		const CommandLineUsage = require('command-line-usage');
+{{/cli}}	//Constants
 	const EnvironmentPaths = EnvPaths( PROCESS_NAME );
-	//Variables
+{{#cli}}	const OptionDefinitions = [
+		//UI
+		{ name: 'help', alias: 'h', type: Boolean, description: 'Writes this help text to stdout.' },
+		{ name: 'noop', alias: 'n', type: Boolean, description: 'Show what would be done without actually doing it.' },
+		{ name: 'verbose', alias: 'v', type: Boolean, description: 'Verbose output to stderr.' },
+		{ name: 'Version', alias: 'V', type: Boolean, description: 'Writes version information to stdout.'},
+		//Input
+		{ name: 'stdin', alias: 'i', type: Boolean, description: 'Read input from stdin.' },
+		{ name: 'input', alias: 'I', type: String, description: 'The path to the file to read input from.'},
+		//Output
+		{ name: 'stdout', alias: 'o', type: Boolean, description: 'Write output to stdout.' },
+		{ name: 'output', alias: 'O', type: String, description: 'The name of the file to write output to.' },
+		{ name: 'pasteboard', alias: 'p', type: Boolean, description: 'Copy output to pasteboard (clipboard).'},
+		//Config
+		{ name: 'config', alias: 'c', type: Boolean, description: 'Print configuration values and information to stdout.' },
+		{ name: 'config-file', alias: 'C', type: String, description: 'Use the given config file instead of the default.' },
+	];
+{{/cli}}	//Variables
 	var function_return = [1,null];
 {{#logger}}	//Logger
-	function_return = SafeRecursiveMKDIR.mkdirSyncRecursiveSafe( EnvironmentPaths.log );
-	if( function_return[0] !== 0 ){
-		console.error('SafeRecursiveMKDIR.mkdirSyncRecursiveSafe(%s) returned: %o', EnvironmentPaths.log, _return);
+	try{ 
+		MakeDir.sync( EnvironmentPaths.log );
+	} catch(error){
+		console.error('MakeDir.sync threw: %s', error);
 	}
 	function_return = ApplicationLogWinstonInterface.InitLogger('debug.log', EnvironmentPaths.log);
 	if( function_return[0] === 0 ){
 		Logger_Set( function_return[1] );
 	}
 	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});
-{{/logger}}	//Options
-	//Config
+{{/logger}}{{#cli}}	//Options
+	var Options = CommandLineArguments( OptionDefinitions );
+{{/cli}}	//Config
 	//Main
-{{#logger}}	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});
+{{#cli}}	if(Options.help === true){
+		const help_sections_array = [
+			{
+				header: '{{processname}}',
+				content: '{{description}}',
+			},
+			{
+				header: 'Options',
+				optionList: OptionDefinitions
+			}
+		]
+		const help_message = CommandLineUsage(help_sections_array);
+		console.log(help_message);
+	}
+{{/cli}}{{#logger}}	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});
 {{/logger}}
 {{/main}}
 } else{

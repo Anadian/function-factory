@@ -7,5 +7,6 @@
 	"processname": "process-name",
 	"strict": true,
 	"main": true,
-	"logger": true
+	"logger": true,
+	"cli": true
 }

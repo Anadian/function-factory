@@ -10892,3 +10892,700 @@
   [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
 2019-06-08T22:09:22.502Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
 2019-06-08T22:09:22.502Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-06-14T05:03:41.621Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-06-14T05:03:41.635Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0':
+   '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T05:03:41.680Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories:
+     [ 'Resources/templates',
+       '/Users/cameron/Library/Application Support/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories:
+     [ 'Resources/defaults',
+       '/Users/cameron/Library/Application Support/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-06-14T05:03:41.680Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-06-14T05:03:41.684Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { edit: 'js file', pasteboard: true }
+2019-06-14T05:03:41.684Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: [Arguments] {
+  '0': 'js file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T05:03:41.685Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T05:03:41.685Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T05:03:41.709Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  `JSONICParse.ParseFilePath: Error: reading file "js/file.json": Error: ENOENT: no such file or directory, open 'js/file.json'`,
+  [length]: 2 ]
+2019-06-14T05:03:41.710Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'Resources/defaults/js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T05:03:41.752Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": "Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": "process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true\n}',
+  [length]: 2 ]
+2019-06-14T05:03:41.752Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": "Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": "process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true\n}',
+  [length]: 2 ]
+2019-06-14T05:03:41.752Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": "Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": "process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true\n}',
+  [length]: 2 ]
+2019-06-14T05:03:41.782Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-06-14T05:05:54.398Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input:
+   '{\n\t"template": "js file",\n\t"filename": "move-list.js",\n\t"description": "Move files in a list from one filesystem path to another.",\n\t"modulename": "MoveList",\n\t"processname": "move-list",\n\t"strict": true,\n\t"main": true,\n\t"logger": true\n}\n' }
+2019-06-14T05:05:54.399Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: [Arguments] {
+  '0':
+   { editor_input:
+      '{\n\t"template": "js file",\n\t"filename": "move-list.js",\n\t"description": "Move files in a list from one filesystem path to another.",\n\t"modulename": "MoveList",\n\t"processname": "move-list",\n\t"strict": true,\n\t"main": true,\n\t"logger": true\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T05:05:54.399Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'js file',
+  filename: 'move-list.js',
+  description: 'Move files in a list from one filesystem path to another.',
+  modulename: 'MoveList',
+  processname: 'move-list',
+  strict: true,
+  main: true,
+  logger: true } undefined
+2019-06-14T05:05:54.400Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: [Arguments] {
+  '0': 'js file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T05:05:54.400Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T05:05:54.401Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T05:05:54.401Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  `Error: template "js/file.hbs" cannot be read: Error: ENOENT: no such file or directory, access 'js/file.hbs'`,
+  [length]: 2 ]
+2019-06-14T05:05:54.402Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'Resources/templates/js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T05:05:54.485Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup:
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child:
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-06-14T05:05:54.485Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup:
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child:
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-06-14T05:05:54.486Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup:
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child:
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-06-14T05:05:54.539Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: [Arguments] {
+  '0':
+   `#!/usr/local/bin/node\n'use strict';\n/**\n* @file move-list.js\n* @brief Move files in a list from one filesystem path to another.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\nconst FILENAME = 'move-list.js';\nconst MODULE_NAME = 'MoveList';\nvar PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = 'move-list';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param "logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst SafeRecursiveMKDIR = require('safe-recursive-mkdir');\n\t\tconst ApplicationLogWinstonInterface = require('application-log-winston-interface');\n\t\tconst EnvPaths = require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\tfunction_return = SafeRecursiveMKDIR.mkdirSyncRecursiveSafe( EnvironmentPaths.log );\n\tif( function_return[0] !== 0 ){\n\t\tconsole.error('SafeRecursiveMKDIR.mkdirSyncRecursiveSafe(%s) returned: %o', EnvironmentPaths.log, _return);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger('debug.log', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});\n\t//Options\n\t//Config\n\t//Main\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n`,
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T05:05:54.539Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2019-06-14T05:05:54.540Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  `#!/usr/local/bin/node\n'use strict';\n/**\n* @file move-list.js\n* @brief Move files in a list from one filesystem path to another.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\nconst FILENAME = 'move-list.js';\nconst MODULE_NAME = 'MoveList';\nvar PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = 'move-list';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param "logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst SafeRecursiveMKDIR = require('safe-recursive-mkdir');\n\t\tconst ApplicationLogWinstonInterface = require('application-log-winston-interface');\n\t\tconst EnvPaths = require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\tfunction_return = SafeRecursiveMKDIR.mkdirSyncRecursiveSafe( EnvironmentPaths.log );\n\tif( function_return[0] !== 0 ){\n\t\tconsole.error('SafeRecursiveMKDIR.mkdirSyncRecursiveSafe(%s) returned: %o', EnvironmentPaths.log, _return);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger('debug.log', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});\n\t//Options\n\t//Config\n\t//Main\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n`,
+  [length]: 2 ]
+2019-06-14T05:05:54.540Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  `#!/usr/local/bin/node\n'use strict';\n/**\n* @file move-list.js\n* @brief Move files in a list from one filesystem path to another.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\nconst FILENAME = 'move-list.js';\nconst MODULE_NAME = 'MoveList';\nvar PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = 'move-list';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param "logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst SafeRecursiveMKDIR = require('safe-recursive-mkdir');\n\t\tconst ApplicationLogWinstonInterface = require('application-log-winston-interface');\n\t\tconst EnvPaths = require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\tfunction_return = SafeRecursiveMKDIR.mkdirSyncRecursiveSafe( EnvironmentPaths.log );\n\tif( function_return[0] !== 0 ){\n\t\tconsole.error('SafeRecursiveMKDIR.mkdirSyncRecursiveSafe(%s) returned: %o', EnvironmentPaths.log, _return);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger('debug.log', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});\n\t//Options\n\t//Config\n\t//Main\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n`,
+  [ 0,
+    `#!/usr/local/bin/node\n'use strict';\n/**\n* @file move-list.js\n* @brief Move files in a list from one filesystem path to another.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\nconst FILENAME = 'move-list.js';\nconst MODULE_NAME = 'MoveList';\nvar PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = 'move-list';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param "logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst SafeRecursiveMKDIR = require('safe-recursive-mkdir');\n\t\tconst ApplicationLogWinstonInterface = require('application-log-winston-interface');\n\t\tconst EnvPaths = require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\tfunction_return = SafeRecursiveMKDIR.mkdirSyncRecursiveSafe( EnvironmentPaths.log );\n\tif( function_return[0] !== 0 ){\n\t\tconsole.error('SafeRecursiveMKDIR.mkdirSyncRecursiveSafe(%s) returned: %o', EnvironmentPaths.log, _return);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger('debug.log', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});\n\t//Options\n\t//Config\n\t//Main\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n`,
+    [length]: 2 ],
+  [length]: 3 ]
+2019-06-14T05:05:54.541Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  `#!/usr/local/bin/node\n'use strict';\n/**\n* @file move-list.js\n* @brief Move files in a list from one filesystem path to another.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\nconst FILENAME = 'move-list.js';\nconst MODULE_NAME = 'MoveList';\nvar PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = 'move-list';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param "logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst SafeRecursiveMKDIR = require('safe-recursive-mkdir');\n\t\tconst ApplicationLogWinstonInterface = require('application-log-winston-interface');\n\t\tconst EnvPaths = require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\tfunction_return = SafeRecursiveMKDIR.mkdirSyncRecursiveSafe( EnvironmentPaths.log );\n\tif( function_return[0] !== 0 ){\n\t\tconsole.error('SafeRecursiveMKDIR.mkdirSyncRecursiveSafe(%s) returned: %o', EnvironmentPaths.log, _return);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger('debug.log', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});\n\t//Options\n\t//Config\n\t//Main\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n`,
+  [length]: 2 ]
+2019-06-14T05:05:54.541Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: [Arguments] {
+  '0':
+   `#!/usr/local/bin/node\n'use strict';\n/**\n* @file move-list.js\n* @brief Move files in a list from one filesystem path to another.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\nconst FILENAME = 'move-list.js';\nconst MODULE_NAME = 'MoveList';\nvar PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = 'move-list';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param "logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst SafeRecursiveMKDIR = require('safe-recursive-mkdir');\n\t\tconst ApplicationLogWinstonInterface = require('application-log-winston-interface');\n\t\tconst EnvPaths = require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\tfunction_return = SafeRecursiveMKDIR.mkdirSyncRecursiveSafe( EnvironmentPaths.log );\n\tif( function_return[0] !== 0 ){\n\t\tconsole.error('SafeRecursiveMKDIR.mkdirSyncRecursiveSafe(%s) returned: %o', EnvironmentPaths.log, _return);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger('debug.log', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});\n\t//Options\n\t//Config\n\t//Main\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n`,
+  '1': { edit: 'js file', pasteboard: true },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T05:05:55.702Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-06-14T05:05:55.703Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-06-14T05:43:16.981Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-06-14T05:43:17.044Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0':
+   '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T05:43:17.076Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories:
+     [ 'Resources/templates',
+       '/Users/cameron/Library/Application Support/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories:
+     [ 'Resources/defaults',
+       '/Users/cameron/Library/Application Support/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-06-14T05:43:17.076Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-06-14T05:43:17.094Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { edit: 'js file', pasteboard: true }
+2019-06-14T05:43:17.095Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: [Arguments] {
+  '0': 'js file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T05:43:17.095Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T05:43:17.096Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T05:43:17.100Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  `JSONICParse.ParseFilePath: Error: reading file "js/file.json": Error: ENOENT: no such file or directory, open 'js/file.json'`,
+  [length]: 2 ]
+2019-06-14T05:43:17.101Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'Resources/defaults/js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T05:43:17.121Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": "Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": "process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": true\n}',
+  [length]: 2 ]
+2019-06-14T05:43:17.121Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": "Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": "process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": true\n}',
+  [length]: 2 ]
+2019-06-14T05:43:17.121Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": "Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": "process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": true\n}',
+  [length]: 2 ]
+2019-06-14T05:43:17.189Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-06-14T05:44:57.875Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input:
+   '{\n\t"template": "js file",\n\t"filename": "move-files-array.js",\n\t"description": "Moves files listed in an array from one filesystem path to another.",\n\t"modulename": "MoveFilesArray",\n\t"processname": "move-files-array",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": true\n}\n' }
+2019-06-14T05:44:57.875Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: [Arguments] {
+  '0':
+   { editor_input:
+      '{\n\t"template": "js file",\n\t"filename": "move-files-array.js",\n\t"description": "Moves files listed in an array from one filesystem path to another.",\n\t"modulename": "MoveFilesArray",\n\t"processname": "move-files-array",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": true\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T05:44:57.876Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'js file',
+  filename: 'move-files-array.js',
+  description:
+   'Moves files listed in an array from one filesystem path to another.',
+  modulename: 'MoveFilesArray',
+  processname: 'move-files-array',
+  strict: true,
+  main: true,
+  logger: true,
+  cli: true } undefined
+2019-06-14T05:44:57.876Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: [Arguments] {
+  '0': 'js file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T05:44:57.877Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T05:44:57.877Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T05:44:57.878Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  `Error: template "js/file.hbs" cannot be read: Error: ENOENT: no such file or directory, access 'js/file.hbs'`,
+  [length]: 2 ]
+2019-06-14T05:44:57.878Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'Resources/templates/js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T05:44:57.916Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup:
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child:
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-06-14T05:44:57.916Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup:
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child:
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-06-14T05:44:57.917Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup:
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child:
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-06-14T05:44:57.995Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: [Arguments] {
+  '0':
+   `#!/usr/local/bin/node\n'use strict';\n/**\n* @file move-files-array.js\n* @brief Moves files listed in an array from one filesystem path to another.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\nconst FILENAME = 'move-files-array.js';\nconst MODULE_NAME = 'MoveFilesArray';\nvar PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = 'move-files-array';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param "logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = require('application-log-winston-interface');\n\t\tconst EnvPaths = require('env-paths');\n\tconst CommandLineArgs = require('command-line-args');\n\tconst CommandLineUsage = require('command-line-usage');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: 'help', alias: 'h', type: Boolean, description: 'Writes this help text to stdout.' },\n\t\t{ name: 'verbose', alias: 'v', type: Boolean, description: 'Verbose output to stderr.' },\n\t\t{ name: 'Version', alias: 'V', type: Boolean, description: 'Writes version information to stdout.'},\n\t\t//Input\n\t\t{ name: 'stdin', alias: 'i', type: Boolean, description: 'Read input from stdin.' },\n\t\t{ name: 'input', alias: 'I', type: String, description: 'The path to the file to read input from.'},\n\t\t//Output\n\t\t{ name: 'stdout', alias: 'o', type: Boolean, description: 'Write output to stdout.' },\n\t\t{ name: 'output', alias: 'O', type: String, description: 'The name of the file to write output to.' },\n\t\t{ name: 'pasteboard', alias: 'p', type: Boolean, description: 'Copy output to pasteboard (clipboard).'},\n\t\t//Config\n\t\t{ name: 'config', alias: 'c', type: Boolean, description: 'Print configuration values and information to stdout.' },\n\t\t{ name: 'config-file', alias: 'C', type: String, description: 'Use the given config file instead of the default.' },\n\t];\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger('debug.log', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});\n\t//Options\n\tvar Options = CommandLineArguments( OptionDefinitions );\n\t//Config\n\t//Main\n\tif(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\theader: 'move-files-array',\n\t\t\t\tcontent: 'Moves files listed in an array from one filesystem path to another.',\n\t\t\t},\n\t\t\t{\n\t\t\t\theader: 'Options',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst help_message = CommandLineUsage(help_sections_array);\n\t\tconsole.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n`,
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T05:44:57.995Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2019-06-14T05:44:57.996Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  `#!/usr/local/bin/node\n'use strict';\n/**\n* @file move-files-array.js\n* @brief Moves files listed in an array from one filesystem path to another.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\nconst FILENAME = 'move-files-array.js';\nconst MODULE_NAME = 'MoveFilesArray';\nvar PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = 'move-files-array';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param "logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = require('application-log-winston-interface');\n\t\tconst EnvPaths = require('env-paths');\n\tconst CommandLineArgs = require('command-line-args');\n\tconst CommandLineUsage = require('command-line-usage');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: 'help', alias: 'h', type: Boolean, description: 'Writes this help text to stdout.' },\n\t\t{ name: 'verbose', alias: 'v', type: Boolean, description: 'Verbose output to stderr.' },\n\t\t{ name: 'Version', alias: 'V', type: Boolean, description: 'Writes version information to stdout.'},\n\t\t//Input\n\t\t{ name: 'stdin', alias: 'i', type: Boolean, description: 'Read input from stdin.' },\n\t\t{ name: 'input', alias: 'I', type: String, description: 'The path to the file to read input from.'},\n\t\t//Output\n\t\t{ name: 'stdout', alias: 'o', type: Boolean, description: 'Write output to stdout.' },\n\t\t{ name: 'output', alias: 'O', type: String, description: 'The name of the file to write output to.' },\n\t\t{ name: 'pasteboard', alias: 'p', type: Boolean, description: 'Copy output to pasteboard (clipboard).'},\n\t\t//Config\n\t\t{ name: 'config', alias: 'c', type: Boolean, description: 'Print configuration values and information to stdout.' },\n\t\t{ name: 'config-file', alias: 'C', type: String, description: 'Use the given config file instead of the default.' },\n\t];\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger('debug.log', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});\n\t//Options\n\tvar Options = CommandLineArguments( OptionDefinitions );\n\t//Config\n\t//Main\n\tif(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\theader: 'move-files-array',\n\t\t\t\tcontent: 'Moves files listed in an array from one filesystem path to another.',\n\t\t\t},\n\t\t\t{\n\t\t\t\theader: 'Options',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst help_message = CommandLineUsage(help_sections_array);\n\t\tconsole.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n`,
+  [length]: 2 ]
+2019-06-14T05:44:57.997Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  `#!/usr/local/bin/node\n'use strict';\n/**\n* @file move-files-array.js\n* @brief Moves files listed in an array from one filesystem path to another.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\nconst FILENAME = 'move-files-array.js';\nconst MODULE_NAME = 'MoveFilesArray';\nvar PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = 'move-files-array';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param "logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = require('application-log-winston-interface');\n\t\tconst EnvPaths = require('env-paths');\n\tconst CommandLineArgs = require('command-line-args');\n\tconst CommandLineUsage = require('command-line-usage');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: 'help', alias: 'h', type: Boolean, description: 'Writes this help text to stdout.' },\n\t\t{ name: 'verbose', alias: 'v', type: Boolean, description: 'Verbose output to stderr.' },\n\t\t{ name: 'Version', alias: 'V', type: Boolean, description: 'Writes version information to stdout.'},\n\t\t//Input\n\t\t{ name: 'stdin', alias: 'i', type: Boolean, description: 'Read input from stdin.' },\n\t\t{ name: 'input', alias: 'I', type: String, description: 'The path to the file to read input from.'},\n\t\t//Output\n\t\t{ name: 'stdout', alias: 'o', type: Boolean, description: 'Write output to stdout.' },\n\t\t{ name: 'output', alias: 'O', type: String, description: 'The name of the file to write output to.' },\n\t\t{ name: 'pasteboard', alias: 'p', type: Boolean, description: 'Copy output to pasteboard (clipboard).'},\n\t\t//Config\n\t\t{ name: 'config', alias: 'c', type: Boolean, description: 'Print configuration values and information to stdout.' },\n\t\t{ name: 'config-file', alias: 'C', type: String, description: 'Use the given config file instead of the default.' },\n\t];\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger('debug.log', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});\n\t//Options\n\tvar Options = CommandLineArguments( OptionDefinitions );\n\t//Config\n\t//Main\n\tif(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\theader: 'move-files-array',\n\t\t\t\tcontent: 'Moves files listed in an array from one filesystem path to another.',\n\t\t\t},\n\t\t\t{\n\t\t\t\theader: 'Options',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst help_message = CommandLineUsage(help_sections_array);\n\t\tconsole.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n`,
+  [ 0,
+    `#!/usr/local/bin/node\n'use strict';\n/**\n* @file move-files-array.js\n* @brief Moves files listed in an array from one filesystem path to another.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\nconst FILENAME = 'move-files-array.js';\nconst MODULE_NAME = 'MoveFilesArray';\nvar PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = 'move-files-array';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param "logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = require('application-log-winston-interface');\n\t\tconst EnvPaths = require('env-paths');\n\tconst CommandLineArgs = require('command-line-args');\n\tconst CommandLineUsage = require('command-line-usage');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: 'help', alias: 'h', type: Boolean, description: 'Writes this help text to stdout.' },\n\t\t{ name: 'verbose', alias: 'v', type: Boolean, description: 'Verbose output to stderr.' },\n\t\t{ name: 'Version', alias: 'V', type: Boolean, description: 'Writes version information to stdout.'},\n\t\t//Input\n\t\t{ name: 'stdin', alias: 'i', type: Boolean, description: 'Read input from stdin.' },\n\t\t{ name: 'input', alias: 'I', type: String, description: 'The path to the file to read input from.'},\n\t\t//Output\n\t\t{ name: 'stdout', alias: 'o', type: Boolean, description: 'Write output to stdout.' },\n\t\t{ name: 'output', alias: 'O', type: String, description: 'The name of the file to write output to.' },\n\t\t{ name: 'pasteboard', alias: 'p', type: Boolean, description: 'Copy output to pasteboard (clipboard).'},\n\t\t//Config\n\t\t{ name: 'config', alias: 'c', type: Boolean, description: 'Print configuration values and information to stdout.' },\n\t\t{ name: 'config-file', alias: 'C', type: String, description: 'Use the given config file instead of the default.' },\n\t];\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger('debug.log', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});\n\t//Options\n\tvar Options = CommandLineArguments( OptionDefinitions );\n\t//Config\n\t//Main\n\tif(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\theader: 'move-files-array',\n\t\t\t\tcontent: 'Moves files listed in an array from one filesystem path to another.',\n\t\t\t},\n\t\t\t{\n\t\t\t\theader: 'Options',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst help_message = CommandLineUsage(help_sections_array);\n\t\tconsole.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n`,
+    [length]: 2 ],
+  [length]: 3 ]
+2019-06-14T05:44:57.997Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  `#!/usr/local/bin/node\n'use strict';\n/**\n* @file move-files-array.js\n* @brief Moves files listed in an array from one filesystem path to another.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\nconst FILENAME = 'move-files-array.js';\nconst MODULE_NAME = 'MoveFilesArray';\nvar PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = 'move-files-array';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param "logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = require('application-log-winston-interface');\n\t\tconst EnvPaths = require('env-paths');\n\tconst CommandLineArgs = require('command-line-args');\n\tconst CommandLineUsage = require('command-line-usage');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: 'help', alias: 'h', type: Boolean, description: 'Writes this help text to stdout.' },\n\t\t{ name: 'verbose', alias: 'v', type: Boolean, description: 'Verbose output to stderr.' },\n\t\t{ name: 'Version', alias: 'V', type: Boolean, description: 'Writes version information to stdout.'},\n\t\t//Input\n\t\t{ name: 'stdin', alias: 'i', type: Boolean, description: 'Read input from stdin.' },\n\t\t{ name: 'input', alias: 'I', type: String, description: 'The path to the file to read input from.'},\n\t\t//Output\n\t\t{ name: 'stdout', alias: 'o', type: Boolean, description: 'Write output to stdout.' },\n\t\t{ name: 'output', alias: 'O', type: String, description: 'The name of the file to write output to.' },\n\t\t{ name: 'pasteboard', alias: 'p', type: Boolean, description: 'Copy output to pasteboard (clipboard).'},\n\t\t//Config\n\t\t{ name: 'config', alias: 'c', type: Boolean, description: 'Print configuration values and information to stdout.' },\n\t\t{ name: 'config-file', alias: 'C', type: String, description: 'Use the given config file instead of the default.' },\n\t];\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger('debug.log', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});\n\t//Options\n\tvar Options = CommandLineArguments( OptionDefinitions );\n\t//Config\n\t//Main\n\tif(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\theader: 'move-files-array',\n\t\t\t\tcontent: 'Moves files listed in an array from one filesystem path to another.',\n\t\t\t},\n\t\t\t{\n\t\t\t\theader: 'Options',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst help_message = CommandLineUsage(help_sections_array);\n\t\tconsole.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n`,
+  [length]: 2 ]
+2019-06-14T05:44:57.998Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: [Arguments] {
+  '0':
+   `#!/usr/local/bin/node\n'use strict';\n/**\n* @file move-files-array.js\n* @brief Moves files listed in an array from one filesystem path to another.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\nconst FILENAME = 'move-files-array.js';\nconst MODULE_NAME = 'MoveFilesArray';\nvar PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = 'move-files-array';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param "logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = require('application-log-winston-interface');\n\t\tconst EnvPaths = require('env-paths');\n\tconst CommandLineArgs = require('command-line-args');\n\tconst CommandLineUsage = require('command-line-usage');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: 'help', alias: 'h', type: Boolean, description: 'Writes this help text to stdout.' },\n\t\t{ name: 'verbose', alias: 'v', type: Boolean, description: 'Verbose output to stderr.' },\n\t\t{ name: 'Version', alias: 'V', type: Boolean, description: 'Writes version information to stdout.'},\n\t\t//Input\n\t\t{ name: 'stdin', alias: 'i', type: Boolean, description: 'Read input from stdin.' },\n\t\t{ name: 'input', alias: 'I', type: String, description: 'The path to the file to read input from.'},\n\t\t//Output\n\t\t{ name: 'stdout', alias: 'o', type: Boolean, description: 'Write output to stdout.' },\n\t\t{ name: 'output', alias: 'O', type: String, description: 'The name of the file to write output to.' },\n\t\t{ name: 'pasteboard', alias: 'p', type: Boolean, description: 'Copy output to pasteboard (clipboard).'},\n\t\t//Config\n\t\t{ name: 'config', alias: 'c', type: Boolean, description: 'Print configuration values and information to stdout.' },\n\t\t{ name: 'config-file', alias: 'C', type: String, description: 'Use the given config file instead of the default.' },\n\t];\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger('debug.log', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});\n\t//Options\n\tvar Options = CommandLineArguments( OptionDefinitions );\n\t//Config\n\t//Main\n\tif(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\theader: 'move-files-array',\n\t\t\t\tcontent: 'Moves files listed in an array from one filesystem path to another.',\n\t\t\t},\n\t\t\t{\n\t\t\t\theader: 'Options',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst help_message = CommandLineUsage(help_sections_array);\n\t\tconsole.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n`,
+  '1': { edit: 'js file', pasteboard: true },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T05:44:58.569Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-06-14T05:44:58.569Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-06-14T20:07:51.644Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-06-14T20:07:51.678Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0':
+   '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T20:07:51.727Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories:
+     [ 'Resources/templates',
+       '/Users/cameron/Library/Application Support/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories:
+     [ 'Resources/defaults',
+       '/Users/cameron/Library/Application Support/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-06-14T20:07:51.727Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-06-14T20:07:51.731Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { edit: 'js func', pasteboard: true }
+2019-06-14T20:07:51.732Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T20:07:51.732Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T20:07:51.733Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T20:07:51.758Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  `JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ENOENT: no such file or directory, open 'js/func.json'`,
+  [length]: 2 ]
+2019-06-14T20:07:51.758Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T20:07:51.787Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-06-14T20:07:51.787Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-06-14T20:07:51.787Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-06-14T20:07:51.815Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-06-14T20:11:47.746Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input:
+   '{\n\t"template": "js func",\n\t"name": "FilesArrayFromInputData",\n\t"description": "Create an array of filepaths from a string, listing line-separated files.",\n\t"params": [\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": "input_string",\n\t\t\t"default": "null",\n\t\t\t"description": "The string of files, separated by line."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2019-06-14T20:11:47.747Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: [Arguments] {
+  '0':
+   { editor_input:
+      '{\n\t"template": "js func",\n\t"name": "FilesArrayFromInputData",\n\t"description": "Create an array of filepaths from a string, listing line-separated files.",\n\t"params": [\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": "input_string",\n\t\t\t"default": "null",\n\t\t\t"description": "The string of files, separated by line."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T20:11:47.747Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'js func',
+  name: 'FilesArrayFromInputData',
+  description:
+   'Create an array of filepaths from a string, listing line-separated files.',
+  params:
+   [ { type: 'String',
+       name: 'input_string',
+       default: 'null',
+       description: 'The string of files, separated by line.' },
+     [length]: 1 ],
+  asynchronous: false,
+  post_re:
+   [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ] } undefined
+2019-06-14T20:11:47.748Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T20:11:47.748Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T20:11:47.749Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T20:11:47.749Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  `Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access 'js/func.hbs'`,
+  [length]: 2 ]
+2019-06-14T20:11:47.749Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T20:11:47.801Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup:
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child:
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-06-14T20:11:47.802Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup:
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child:
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-06-14T20:11:47.802Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup:
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child:
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-06-14T20:11:47.878Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: [Arguments] {
+  '0':
+   "/**\n* @fn FilesArrayFromInputData\n* @brief Create an array of filepaths from a string, listing line-separated files.\n* @param input_string\n*\t@type String\n*\t@brief The string of files, separated by line.\n*\t@default null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction FilesArrayFromInputData( input_string,){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'FilesArrayFromInputData';\n\t//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif(input_string == undefined) input_string = null;\n\t\n\t//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  '1':
+   [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T20:11:47.878Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  "/**\n* @fn FilesArrayFromInputData\n* @brief Create an array of filepaths from a string, listing line-separated files.\n* @param input_string\n*\t@type String\n*\t@brief The string of files, separated by line.\n*\t@default null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction FilesArrayFromInputData( input_string ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'FilesArrayFromInputData';\n\t//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif(input_string == undefined) input_string = null;\n\t\n\t//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [length]: 2 ]
+2019-06-14T20:11:47.878Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  "/**\n* @fn FilesArrayFromInputData\n* @brief Create an array of filepaths from a string, listing line-separated files.\n* @param input_string\n*\t@type String\n*\t@brief The string of files, separated by line.\n*\t@default null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction FilesArrayFromInputData( input_string ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'FilesArrayFromInputData';\n\t//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif(input_string == undefined) input_string = null;\n\t\n\t//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [ 0,
+    "/**\n* @fn FilesArrayFromInputData\n* @brief Create an array of filepaths from a string, listing line-separated files.\n* @param input_string\n*\t@type String\n*\t@brief The string of files, separated by line.\n*\t@default null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction FilesArrayFromInputData( input_string ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'FilesArrayFromInputData';\n\t//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif(input_string == undefined) input_string = null;\n\t\n\t//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+    [length]: 2 ],
+  [length]: 3 ]
+2019-06-14T20:11:47.878Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  "/**\n* @fn FilesArrayFromInputData\n* @brief Create an array of filepaths from a string, listing line-separated files.\n* @param input_string\n*\t@type String\n*\t@brief The string of files, separated by line.\n*\t@default null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction FilesArrayFromInputData( input_string ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'FilesArrayFromInputData';\n\t//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif(input_string == undefined) input_string = null;\n\t\n\t//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [length]: 2 ]
+2019-06-14T20:11:47.879Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: [Arguments] {
+  '0':
+   "/**\n* @fn FilesArrayFromInputData\n* @brief Create an array of filepaths from a string, listing line-separated files.\n* @param input_string\n*\t@type String\n*\t@brief The string of files, separated by line.\n*\t@default null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction FilesArrayFromInputData( input_string ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'FilesArrayFromInputData';\n\t//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif(input_string == undefined) input_string = null;\n\t\n\t//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  '1': { edit: 'js func', pasteboard: true },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T20:11:48.541Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-06-14T20:11:48.542Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-06-14T20:20:41.078Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-06-14T20:20:41.092Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0':
+   '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T20:20:41.123Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories:
+     [ 'Resources/templates',
+       '/Users/cameron/Library/Application Support/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories:
+     [ 'Resources/defaults',
+       '/Users/cameron/Library/Application Support/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-06-14T20:20:41.123Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-06-14T20:20:41.127Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { edit: 'js func', pasteboard: true }
+2019-06-14T20:20:41.127Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T20:20:41.128Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T20:20:41.128Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T20:20:41.129Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  `JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ENOENT: no such file or directory, open 'js/func.json'`,
+  [length]: 2 ]
+2019-06-14T20:20:41.130Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T20:20:41.150Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-06-14T20:20:41.150Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-06-14T20:20:41.150Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-06-14T20:20:41.181Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-06-14T20:28:56.166Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input:
+   `{\n\t"template": "js func",\n\t"name": "MoveFilesArray",\n\t"description": "Moves each file in the array from <source-prefix>/<array[index]:filename> to <destination-directory>/<array[index]:filename>",\n\t"params": [\n\t\t{\n\t\t\t"type": "Array",\n\t\t\t"name": "files_array",\n\t\t\t"default": "null",\n\t\t\t"description": "The array of filepaths to be moved."\n\t\t},\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": "source_prefix",\n\t\t\t"default": "null",\n\t\t\t"description": "The directory the 'files_array' files are currently relative to."\n\t\t},\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": "destination_directory",\n\t\t\t"default": "null",\n\t\t\t"description": "The directory the files will be moved to."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n` }
+2019-06-14T20:28:56.167Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: [Arguments] {
+  '0':
+   { editor_input:
+      `{\n\t"template": "js func",\n\t"name": "MoveFilesArray",\n\t"description": "Moves each file in the array from <source-prefix>/<array[index]:filename> to <destination-directory>/<array[index]:filename>",\n\t"params": [\n\t\t{\n\t\t\t"type": "Array",\n\t\t\t"name": "files_array",\n\t\t\t"default": "null",\n\t\t\t"description": "The array of filepaths to be moved."\n\t\t},\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": "source_prefix",\n\t\t\t"default": "null",\n\t\t\t"description": "The directory the 'files_array' files are currently relative to."\n\t\t},\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": "destination_directory",\n\t\t\t"default": "null",\n\t\t\t"description": "The directory the files will be moved to."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n` },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T20:28:56.168Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'js func',
+  name: 'MoveFilesArray',
+  description:
+   'Moves each file in the array from <source-prefix>/<array[index]:filename> to <destination-directory>/<array[index]:filename>',
+  params:
+   [ { type: 'Array',
+       name: 'files_array',
+       default: 'null',
+       description: 'The array of filepaths to be moved.' },
+     { type: 'String',
+       name: 'source_prefix',
+       default: 'null',
+       description:
+        "The directory the 'files_array' files are currently relative to." },
+     { type: 'String',
+       name: 'destination_directory',
+       default: 'null',
+       description: 'The directory the files will be moved to.' },
+     [length]: 3 ],
+  asynchronous: false,
+  post_re:
+   [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ] } undefined
+2019-06-14T20:28:56.169Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T20:28:56.170Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T20:28:56.170Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T20:28:56.171Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  `Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access 'js/func.hbs'`,
+  [length]: 2 ]
+2019-06-14T20:28:56.171Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T20:28:56.220Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup:
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child:
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-06-14T20:28:56.220Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup:
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child:
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-06-14T20:28:56.221Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup:
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child:
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-06-14T20:28:56.297Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: [Arguments] {
+  '0':
+   "/**\n* @fn MoveFilesArray\n* @brief Moves each file in the array from <source-prefix>/<array[index]:filename> to <destination-directory>/<array[index]:filename>\n* @param files_array\n*\t@type Array\n*\t@brief The array of filepaths to be moved.\n*\t@default null\n* @param source_prefix\n*\t@type String\n*\t@brief The directory the 'files_array' files are currently relative to.\n*\t@default null\n* @param destination_directory\n*\t@type String\n*\t@brief The directory the files will be moved to.\n*\t@default null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction MoveFilesArray( files_array, source_prefix, destination_directory,){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'MoveFilesArray';\n\t//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif(files_array == undefined) files_array = null;\n\tif(source_prefix == undefined) source_prefix = null;\n\tif(destination_directory == undefined) destination_directory = null;\n\t\n\t//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  '1':
+   [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T20:28:56.298Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  "/**\n* @fn MoveFilesArray\n* @brief Moves each file in the array from <source-prefix>/<array[index]:filename> to <destination-directory>/<array[index]:filename>\n* @param files_array\n*\t@type Array\n*\t@brief The array of filepaths to be moved.\n*\t@default null\n* @param source_prefix\n*\t@type String\n*\t@brief The directory the 'files_array' files are currently relative to.\n*\t@default null\n* @param destination_directory\n*\t@type String\n*\t@brief The directory the files will be moved to.\n*\t@default null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction MoveFilesArray( files_array, source_prefix, destination_directory ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'MoveFilesArray';\n\t//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif(files_array == undefined) files_array = null;\n\tif(source_prefix == undefined) source_prefix = null;\n\tif(destination_directory == undefined) destination_directory = null;\n\t\n\t//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [length]: 2 ]
+2019-06-14T20:28:56.298Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  "/**\n* @fn MoveFilesArray\n* @brief Moves each file in the array from <source-prefix>/<array[index]:filename> to <destination-directory>/<array[index]:filename>\n* @param files_array\n*\t@type Array\n*\t@brief The array of filepaths to be moved.\n*\t@default null\n* @param source_prefix\n*\t@type String\n*\t@brief The directory the 'files_array' files are currently relative to.\n*\t@default null\n* @param destination_directory\n*\t@type String\n*\t@brief The directory the files will be moved to.\n*\t@default null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction MoveFilesArray( files_array, source_prefix, destination_directory ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'MoveFilesArray';\n\t//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif(files_array == undefined) files_array = null;\n\tif(source_prefix == undefined) source_prefix = null;\n\tif(destination_directory == undefined) destination_directory = null;\n\t\n\t//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [ 0,
+    "/**\n* @fn MoveFilesArray\n* @brief Moves each file in the array from <source-prefix>/<array[index]:filename> to <destination-directory>/<array[index]:filename>\n* @param files_array\n*\t@type Array\n*\t@brief The array of filepaths to be moved.\n*\t@default null\n* @param source_prefix\n*\t@type String\n*\t@brief The directory the 'files_array' files are currently relative to.\n*\t@default null\n* @param destination_directory\n*\t@type String\n*\t@brief The directory the files will be moved to.\n*\t@default null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction MoveFilesArray( files_array, source_prefix, destination_directory ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'MoveFilesArray';\n\t//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif(files_array == undefined) files_array = null;\n\tif(source_prefix == undefined) source_prefix = null;\n\tif(destination_directory == undefined) destination_directory = null;\n\t\n\t//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+    [length]: 2 ],
+  [length]: 3 ]
+2019-06-14T20:28:56.298Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  "/**\n* @fn MoveFilesArray\n* @brief Moves each file in the array from <source-prefix>/<array[index]:filename> to <destination-directory>/<array[index]:filename>\n* @param files_array\n*\t@type Array\n*\t@brief The array of filepaths to be moved.\n*\t@default null\n* @param source_prefix\n*\t@type String\n*\t@brief The directory the 'files_array' files are currently relative to.\n*\t@default null\n* @param destination_directory\n*\t@type String\n*\t@brief The directory the files will be moved to.\n*\t@default null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction MoveFilesArray( files_array, source_prefix, destination_directory ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'MoveFilesArray';\n\t//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif(files_array == undefined) files_array = null;\n\tif(source_prefix == undefined) source_prefix = null;\n\tif(destination_directory == undefined) destination_directory = null;\n\t\n\t//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [length]: 2 ]
+2019-06-14T20:28:56.299Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: [Arguments] {
+  '0':
+   "/**\n* @fn MoveFilesArray\n* @brief Moves each file in the array from <source-prefix>/<array[index]:filename> to <destination-directory>/<array[index]:filename>\n* @param files_array\n*\t@type Array\n*\t@brief The array of filepaths to be moved.\n*\t@default null\n* @param source_prefix\n*\t@type String\n*\t@brief The directory the 'files_array' files are currently relative to.\n*\t@default null\n* @param destination_directory\n*\t@type String\n*\t@brief The directory the files will be moved to.\n*\t@default null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction MoveFilesArray( files_array, source_prefix, destination_directory ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'MoveFilesArray';\n\t//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif(files_array == undefined) files_array = null;\n\tif(source_prefix == undefined) source_prefix = null;\n\tif(destination_directory == undefined) destination_directory = null;\n\t\n\t//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  '1': { edit: 'js func', pasteboard: true },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-06-14T20:28:56.825Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-06-14T20:28:56.825Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
