@@ -11589,3 +11589,697 @@
   [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
 2019-06-14T20:28:56.825Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
 2019-06-14T20:28:56.825Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-06-17T00:49:29.427Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-06-17T00:49:30.360Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0': '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-17T00:49:31.054Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [
+  0,
+  {
+    template_directories: [
+      'Resources/templates',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/templates',
+      [length]: 2
+    ],
+    defaults_directories: [
+      'Resources/defaults',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/defaults',
+      [length]: 2
+    ]
+  },
+  [length]: 2
+]
+2019-06-17T00:49:31.054Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-06-17T00:49:31.235Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { edit: 'js file', pasteboard: true }
+2019-06-17T00:49:31.297Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: [Arguments] {
+  '0': 'js file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-17T00:49:31.298Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-17T00:49:31.298Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-17T00:49:31.794Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/file.json": Error: ' +
+    "ENOENT: no such file or directory, open 'js/file.json'\n    at " +
+    'Object.openSync (fs.js:447:3)\n    at Object.readFileSync (fs.js:349:35)\n ' +
+    '   at Object.JSONIC_Parse_FilePath [as ParseFilePath] ' +
+    '(/Users/cameron/dev/function-factory/source/jsonic-parse.js:146:27)\n    ' +
+    'at DefaultInputDataFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:156:33)\n    at ' +
+    'DefaultInputDataFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:179:21)\n    at ' +
+    'DefaultInputDataFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:219:21)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:469:21)\n    at ' +
+    'Object.<anonymous> ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:649:14)\n    at ' +
+    'Module._compile (internal/modules/cjs/loader.js:774:30)\n    at ' +
+    'Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10) {\n ' +
+    " errno: -2,\n  syscall: 'open',\n  code: 'ENOENT',\n  path: 'js/file.json'\n" +
+    '}',
+  [length]: 2
+]
+2019-06-17T00:49:31.795Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'Resources/defaults/js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-17T00:49:32.293Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": ' +
+    '"Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": ' +
+    '"process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": ' +
+    'true\n}',
+  [length]: 2
+]
+2019-06-17T00:49:32.293Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [
+  0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": ' +
+    '"Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": ' +
+    '"process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": ' +
+    'true\n}',
+  [length]: 2
+]
+2019-06-17T00:49:32.293Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [
+  0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": ' +
+    '"Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": ' +
+    '"process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": ' +
+    'true\n}',
+  [length]: 2
+]
+2019-06-17T00:49:32.941Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-06-17T00:51:13.164Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: {
+  editor_input: '{\n\t"template": "js file",\n\t"filename": ' +
+    '"encrypt-notes.js",\n\t"description": "Encrypts the ' +
+    'notes.",\n\t"modulename": "EncryptNotes",\n\t"processname": ' +
+    '"encrypt-notes",\n\t"strict": true,\n\t"main": true,\n\t' +
+    '"logger": true,\n\t"cli": true\n}\n'
+}
+2019-06-17T00:51:13.164Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: [Arguments] {
+  '0': {
+    editor_input: '{\n\t"template": "js file",\n\t"filename": ' +
+      '"encrypt-notes.js",\n\t"description": "Encrypts the ' +
+      'notes.",\n\t"modulename": "EncryptNotes",\n\t"processname": ' +
+      '"encrypt-notes",\n\t"strict": true,\n\t"main": true,\n\t' +
+      '"logger": true,\n\t"cli": true\n}\n'
+  },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-17T00:51:13.165Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: {
+  template: 'js file',
+  filename: 'encrypt-notes.js',
+  description: 'Encrypts the notes.',
+  modulename: 'EncryptNotes',
+  processname: 'encrypt-notes',
+  strict: true,
+  main: true,
+  logger: true,
+  cli: true
+} undefined
+2019-06-17T00:51:13.166Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: [Arguments] {
+  '0': 'js file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-17T00:51:13.166Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-17T00:51:13.166Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-17T00:51:13.167Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  -3,
+  'Error: template "js/file.hbs" cannot be read: Error: ENOENT: no such ' +
+    "file or directory, access 'js/file.hbs'\n    at Object.accessSync " +
+    '(fs.js:202:3)\n    at TemplateFunctionFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:239:15)\n    at ' +
+    'TemplateFunctionFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:269:21)\n    at ' +
+    'TemplateFunctionFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:308:21)\n    at ' +
+    'OutputFromInput ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:364:23)\n    at ' +
+    'OutputFromInquirerEditorAnswer ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:401:22)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:486:22)\n    at ' +
+    'processTicksAndRejections (internal/process/task_queues.js:89:5) {\n  ' +
+    "errno: -2,\n  syscall: 'access',\n  code: 'ENOENT',\n  path: 'js/file.hbs'\n" +
+    '}',
+  [length]: 2
+]
+2019-06-17T00:51:13.167Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'Resources/templates/js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-17T00:51:13.414Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-17T00:51:13.414Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-17T00:51:13.415Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-17T00:51:13.518Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: [Arguments] {
+  '0': "#!/usr/local/bin/node\n'use strict';\n/**\n* @file encrypt-notes.js\n* @brief " +
+    'Encrypts the notes.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\t' +
+    'Permission is hereby granted, free of charge, to any person obtaining a ' +
+    'copy of this \nsoftware and associated documentation files (the ' +
+    '"Software"), to deal in the Software \nwithout restriction, including ' +
+    'without limitation the rights to use, copy, modify, \nmerge, publish, ' +
+    'distribute, sublicense, and/or sell copies of the Software, and to \npermit ' +
+    'persons to whom the Software is furnished to do so, subject to the ' +
+    'following \nconditions:\n\tThe above copyright notice and this permission ' +
+    'notice shall be included in all copies \nor substantial portions of the ' +
+    'Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, ' +
+    'EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF ' +
+    'MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN ' +
+    'NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, ' +
+    'DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR ' +
+    'OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE ' +
+    'USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+    "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+    "const FILENAME = 'encrypt-notes.js';\nconst MODULE_NAME = 'EncryptNotes';\n" +
+    "var PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = " +
+    "'encrypt-notes';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global " +
+    'Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\n' +
+    'function Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = " +
+    "[1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === 'object' ){\n\t\tif( " +
+    'logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n' +
+    `\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param "logger" is not an ` +
+    "object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t" +
+    '_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and ' +
+    'Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t" +
+    "//Standard\n\t\t//External\n\t\tconst MakeDir = require('make-dir');\n\t\tconst " +
+    'ApplicationLogWinstonInterface = ' +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t\tconst CommandLineArgs = " +
+    "require('command-line-args');\n\t\tconst CommandLineUsage = " +
+    "require('command-line-usage');\n\t//Constants\n\tconst EnvironmentPaths = " +
+    'EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: ' +
+    "'help', alias: 'h', type: Boolean, description: 'Writes this help text to " +
+    "stdout.' },\n\t\t{ name: 'noop', alias: 'n', type: Boolean, description: " +
+    "'Show what would be done without actually doing it.' },\n\t\t{ name: " +
+    "'verbose', alias: 'v', type: Boolean, description: 'Verbose output to " +
+    "stderr.' },\n\t\t{ name: 'Version', alias: 'V', type: Boolean, description: " +
+    "'Writes version information to stdout.'},\n\t\t//Input\n\t\t{ name: 'stdin', " +
+    "alias: 'i', type: Boolean, description: 'Read input from stdin.' },\n\t\t{ " +
+    "name: 'input', alias: 'I', type: String, description: 'The path to the " +
+    "file to read input from.'},\n\t\t//Output\n\t\t{ name: 'stdout', alias: 'o', " +
+    "type: Boolean, description: 'Write output to stdout.' },\n\t\t{ name: " +
+    "'output', alias: 'O', type: String, description: 'The name of the file to " +
+    "write output to.' },\n\t\t{ name: 'pasteboard', alias: 'p', type: Boolean, " +
+    "description: 'Copy output to pasteboard (clipboard).'},\n\t\t//Config\n\t\t{ " +
+    "name: 'config', alias: 'c', type: Boolean, description: 'Print " +
+    "configuration values and information to stdout.' },\n\t\t{ name: " +
+    "'config-file', alias: 'C', type: String, description: 'Use the given " +
+    "config file instead of the default.' },\n\t];\n\t//Variables\n\tvar " +
+    'function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( ' +
+    "EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error('MakeDir.sync " +
+    "threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Options\n\tvar Options = " +
+    'CommandLineArguments( OptionDefinitions );\n\t//Config\n\t//Main\n\t' +
+    'if(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\t' +
+    "header: 'encrypt-notes',\n\t\t\t\tcontent: 'Encrypts the notes.',\n\t\t\t},\n\t\t\t{\n\t\t\t" +
+    "\theader: 'Options',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst " +
+    'help_message = CommandLineUsage(help_sections_array);\n\t\t' +
+    'console.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'End of execution block.'});\n} else{\n\texports.SetLogger = " +
+    'Logger_Set;\n}\n',
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-17T00:51:13.518Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2019-06-17T00:51:13.522Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [
+  0,
+  "#!/usr/local/bin/node\n'use strict';\n/**\n* @file encrypt-notes.js\n* @brief " +
+    'Encrypts the notes.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\t' +
+    'Permission is hereby granted, free of charge, to any person obtaining a ' +
+    'copy of this \nsoftware and associated documentation files (the ' +
+    '"Software"), to deal in the Software \nwithout restriction, including ' +
+    'without limitation the rights to use, copy, modify, \nmerge, publish, ' +
+    'distribute, sublicense, and/or sell copies of the Software, and to \npermit ' +
+    'persons to whom the Software is furnished to do so, subject to the ' +
+    'following \nconditions:\n\tThe above copyright notice and this permission ' +
+    'notice shall be included in all copies \nor substantial portions of the ' +
+    'Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, ' +
+    'EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF ' +
+    'MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN ' +
+    'NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, ' +
+    'DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR ' +
+    'OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE ' +
+    'USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+    "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+    "const FILENAME = 'encrypt-notes.js';\nconst MODULE_NAME = 'EncryptNotes';\n" +
+    "var PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = " +
+    "'encrypt-notes';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global " +
+    'Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\n' +
+    'function Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = " +
+    "[1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === 'object' ){\n\t\tif( " +
+    'logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n' +
+    `\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param "logger" is not an ` +
+    "object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t" +
+    '_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and ' +
+    'Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t" +
+    "//Standard\n\t\t//External\n\t\tconst MakeDir = require('make-dir');\n\t\tconst " +
+    'ApplicationLogWinstonInterface = ' +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t\tconst CommandLineArgs = " +
+    "require('command-line-args');\n\t\tconst CommandLineUsage = " +
+    "require('command-line-usage');\n\t//Constants\n\tconst EnvironmentPaths = " +
+    'EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: ' +
+    "'help', alias: 'h', type: Boolean, description: 'Writes this help text to " +
+    "stdout.' },\n\t\t{ name: 'noop', alias: 'n', type: Boolean, description: " +
+    "'Show what would be done without actually doing it.' },\n\t\t{ name: " +
+    "'verbose', alias: 'v', type: Boolean, description: 'Verbose output to " +
+    "stderr.' },\n\t\t{ name: 'Version', alias: 'V', type: Boolean, description: " +
+    "'Writes version information to stdout.'},\n\t\t//Input\n\t\t{ name: 'stdin', " +
+    "alias: 'i', type: Boolean, description: 'Read input from stdin.' },\n\t\t{ " +
+    "name: 'input', alias: 'I', type: String, description: 'The path to the " +
+    "file to read input from.'},\n\t\t//Output\n\t\t{ name: 'stdout', alias: 'o', " +
+    "type: Boolean, description: 'Write output to stdout.' },\n\t\t{ name: " +
+    "'output', alias: 'O', type: String, description: 'The name of the file to " +
+    "write output to.' },\n\t\t{ name: 'pasteboard', alias: 'p', type: Boolean, " +
+    "description: 'Copy output to pasteboard (clipboard).'},\n\t\t//Config\n\t\t{ " +
+    "name: 'config', alias: 'c', type: Boolean, description: 'Print " +
+    "configuration values and information to stdout.' },\n\t\t{ name: " +
+    "'config-file', alias: 'C', type: String, description: 'Use the given " +
+    "config file instead of the default.' },\n\t];\n\t//Variables\n\tvar " +
+    'function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( ' +
+    "EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error('MakeDir.sync " +
+    "threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Options\n\tvar Options = " +
+    'CommandLineArguments( OptionDefinitions );\n\t//Config\n\t//Main\n\t' +
+    'if(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\t' +
+    "header: 'encrypt-notes',\n\t\t\t\tcontent: 'Encrypts the notes.',\n\t\t\t},\n\t\t\t{\n\t\t\t" +
+    "\theader: 'Options',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst " +
+    'help_message = CommandLineUsage(help_sections_array);\n\t\t' +
+    'console.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'End of execution block.'});\n} else{\n\texports.SetLogger = " +
+    'Logger_Set;\n}\n',
+  [length]: 2
+]
+2019-06-17T00:51:13.524Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [
+  0,
+  "#!/usr/local/bin/node\n'use strict';\n/**\n* @file encrypt-notes.js\n* @brief " +
+    'Encrypts the notes.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\t' +
+    'Permission is hereby granted, free of charge, to any person obtaining a ' +
+    'copy of this \nsoftware and associated documentation files (the ' +
+    '"Software"), to deal in the Software \nwithout restriction, including ' +
+    'without limitation the rights to use, copy, modify, \nmerge, publish, ' +
+    'distribute, sublicense, and/or sell copies of the Software, and to \npermit ' +
+    'persons to whom the Software is furnished to do so, subject to the ' +
+    'following \nconditions:\n\tThe above copyright notice and this permission ' +
+    'notice shall be included in all copies \nor substantial portions of the ' +
+    'Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, ' +
+    'EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF ' +
+    'MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN ' +
+    'NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, ' +
+    'DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR ' +
+    'OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE ' +
+    'USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+    "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+    "const FILENAME = 'encrypt-notes.js';\nconst MODULE_NAME = 'EncryptNotes';\n" +
+    "var PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = " +
+    "'encrypt-notes';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global " +
+    'Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\n' +
+    'function Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = " +
+    "[1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === 'object' ){\n\t\tif( " +
+    'logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n' +
+    `\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param "logger" is not an ` +
+    "object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t" +
+    '_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and ' +
+    'Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t" +
+    "//Standard\n\t\t//External\n\t\tconst MakeDir = require('make-dir');\n\t\tconst " +
+    'ApplicationLogWinstonInterface = ' +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t\tconst CommandLineArgs = " +
+    "require('command-line-args');\n\t\tconst CommandLineUsage = " +
+    "require('command-line-usage');\n\t//Constants\n\tconst EnvironmentPaths = " +
+    'EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: ' +
+    "'help', alias: 'h', type: Boolean, description: 'Writes this help text to " +
+    "stdout.' },\n\t\t{ name: 'noop', alias: 'n', type: Boolean, description: " +
+    "'Show what would be done without actually doing it.' },\n\t\t{ name: " +
+    "'verbose', alias: 'v', type: Boolean, description: 'Verbose output to " +
+    "stderr.' },\n\t\t{ name: 'Version', alias: 'V', type: Boolean, description: " +
+    "'Writes version information to stdout.'},\n\t\t//Input\n\t\t{ name: 'stdin', " +
+    "alias: 'i', type: Boolean, description: 'Read input from stdin.' },\n\t\t{ " +
+    "name: 'input', alias: 'I', type: String, description: 'The path to the " +
+    "file to read input from.'},\n\t\t//Output\n\t\t{ name: 'stdout', alias: 'o', " +
+    "type: Boolean, description: 'Write output to stdout.' },\n\t\t{ name: " +
+    "'output', alias: 'O', type: String, description: 'The name of the file to " +
+    "write output to.' },\n\t\t{ name: 'pasteboard', alias: 'p', type: Boolean, " +
+    "description: 'Copy output to pasteboard (clipboard).'},\n\t\t//Config\n\t\t{ " +
+    "name: 'config', alias: 'c', type: Boolean, description: 'Print " +
+    "configuration values and information to stdout.' },\n\t\t{ name: " +
+    "'config-file', alias: 'C', type: String, description: 'Use the given " +
+    "config file instead of the default.' },\n\t];\n\t//Variables\n\tvar " +
+    'function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( ' +
+    "EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error('MakeDir.sync " +
+    "threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Options\n\tvar Options = " +
+    'CommandLineArguments( OptionDefinitions );\n\t//Config\n\t//Main\n\t' +
+    'if(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\t' +
+    "header: 'encrypt-notes',\n\t\t\t\tcontent: 'Encrypts the notes.',\n\t\t\t},\n\t\t\t{\n\t\t\t" +
+    "\theader: 'Options',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst " +
+    'help_message = CommandLineUsage(help_sections_array);\n\t\t' +
+    'console.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'End of execution block.'});\n} else{\n\texports.SetLogger = " +
+    'Logger_Set;\n}\n',
+  [
+    0,
+    "#!/usr/local/bin/node\n'use strict';\n/**\n* @file encrypt-notes.js\n* " +
+      '@brief Encrypts the notes.\n* @author Anadian\n* @copyright \tCopyright ' +
+      '2019 Canosw\n\tPermission is hereby granted, free of charge, to any person ' +
+      'obtaining a copy of this \nsoftware and associated documentation files ' +
+      '(the "Software"), to deal in the Software \nwithout restriction, ' +
+      'including without limitation the rights to use, copy, modify, \nmerge, ' +
+      'publish, distribute, sublicense, and/or sell copies of the Software, and ' +
+      'to \npermit persons to whom the Software is furnished to do so, subject ' +
+      'to the following \nconditions:\n\tThe above copyright notice and this ' +
+      'permission notice shall be included in all copies \nor substantial ' +
+      'portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT ' +
+      'WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO ' +
+      'THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND ' +
+      'NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE ' +
+      'LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION ' +
+      'OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION ' +
+      'WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n' +
+      "//Dependencies\n\t//Internal\n\t//Standard\n\tconst Utility = require('util');\n" +
+      "\t//External\n\n//Constants\nconst FILENAME = 'encrypt-notes.js';\nconst " +
+      "MODULE_NAME = 'EncryptNotes';\nvar PROCESS_NAME = '';\nif(require.main === " +
+      "module){\n\tPROCESS_NAME = 'encrypt-notes';\n} else{\n\tPROCESS_NAME = " +
+      'process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: () => {\n\t\t' +
+      'return null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\tvar ' +
+      "_return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\t" +
+      'var function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) ' +
+      "=== 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n" +
+      "\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param " +
+      `"logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\t` +
+      'Logger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n' +
+      '//Exports and Execution\nif(require.main === module){\n\tvar _return = ' +
+      "[1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t" +
+      '//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = ' +
+      "require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = " +
+      "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+      "require('env-paths');\n\t\tconst CommandLineArgs = " +
+      "require('command-line-args');\n\t\tconst CommandLineUsage = " +
+      "require('command-line-usage');\n\t//Constants\n\tconst EnvironmentPaths = " +
+      'EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: ' +
+      "'help', alias: 'h', type: Boolean, description: 'Writes this help text " +
+      "to stdout.' },\n\t\t{ name: 'noop', alias: 'n', type: Boolean, description: " +
+      "'Show what would be done without actually doing it.' },\n\t\t{ name: " +
+      "'verbose', alias: 'v', type: Boolean, description: 'Verbose output to " +
+      "stderr.' },\n\t\t{ name: 'Version', alias: 'V', type: Boolean, description: " +
+      "'Writes version information to stdout.'},\n\t\t//Input\n\t\t{ name: 'stdin', " +
+      "alias: 'i', type: Boolean, description: 'Read input from stdin.' },\n\t\t{ " +
+      "name: 'input', alias: 'I', type: String, description: 'The path to the " +
+      "file to read input from.'},\n\t\t//Output\n\t\t{ name: 'stdout', alias: 'o', " +
+      "type: Boolean, description: 'Write output to stdout.' },\n\t\t{ name: " +
+      "'output', alias: 'O', type: String, description: 'The name of the file " +
+      "to write output to.' },\n\t\t{ name: 'pasteboard', alias: 'p', type: " +
+      "Boolean, description: 'Copy output to pasteboard (clipboard).'},\n\t\t" +
+      "//Config\n\t\t{ name: 'config', alias: 'c', type: Boolean, description: " +
+      "'Print configuration values and information to stdout.' },\n\t\t{ name: " +
+      "'config-file', alias: 'C', type: String, description: 'Use the given " +
+      "config file instead of the default.' },\n\t];\n\t//Variables\n\tvar " +
+      'function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( ' +
+      "EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error('MakeDir.sync " +
+      "threw: %s', error);\n\t}\n\tfunction_return = " +
+      "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+      'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+      'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+      "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+      "message: 'Start of execution block.'});\n\t//Options\n\tvar Options = " +
+      'CommandLineArguments( OptionDefinitions );\n\t//Config\n\t//Main\n\t' +
+      'if(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\t' +
+      "header: 'encrypt-notes',\n\t\t\t\tcontent: 'Encrypts the notes.',\n\t\t\t},\n\t\t\t{\n\t" +
+      "\t\t\theader: 'Options',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst " +
+      'help_message = CommandLineUsage(help_sections_array);\n\t\t' +
+      'console.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, ' +
+      'module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: ' +
+      "'debug', message: 'End of execution block.'});\n} else{\n\t" +
+      'exports.SetLogger = Logger_Set;\n}\n',
+    [length]: 2
+  ],
+  [length]: 3
+]
+2019-06-17T00:51:13.525Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [
+  0,
+  "#!/usr/local/bin/node\n'use strict';\n/**\n* @file encrypt-notes.js\n* @brief " +
+    'Encrypts the notes.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\t' +
+    'Permission is hereby granted, free of charge, to any person obtaining a ' +
+    'copy of this \nsoftware and associated documentation files (the ' +
+    '"Software"), to deal in the Software \nwithout restriction, including ' +
+    'without limitation the rights to use, copy, modify, \nmerge, publish, ' +
+    'distribute, sublicense, and/or sell copies of the Software, and to \npermit ' +
+    'persons to whom the Software is furnished to do so, subject to the ' +
+    'following \nconditions:\n\tThe above copyright notice and this permission ' +
+    'notice shall be included in all copies \nor substantial portions of the ' +
+    'Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, ' +
+    'EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF ' +
+    'MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN ' +
+    'NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, ' +
+    'DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR ' +
+    'OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE ' +
+    'USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+    "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+    "const FILENAME = 'encrypt-notes.js';\nconst MODULE_NAME = 'EncryptNotes';\n" +
+    "var PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = " +
+    "'encrypt-notes';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global " +
+    'Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\n' +
+    'function Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = " +
+    "[1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === 'object' ){\n\t\tif( " +
+    'logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n' +
+    `\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param "logger" is not an ` +
+    "object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t" +
+    '_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and ' +
+    'Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t" +
+    "//Standard\n\t\t//External\n\t\tconst MakeDir = require('make-dir');\n\t\tconst " +
+    'ApplicationLogWinstonInterface = ' +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t\tconst CommandLineArgs = " +
+    "require('command-line-args');\n\t\tconst CommandLineUsage = " +
+    "require('command-line-usage');\n\t//Constants\n\tconst EnvironmentPaths = " +
+    'EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: ' +
+    "'help', alias: 'h', type: Boolean, description: 'Writes this help text to " +
+    "stdout.' },\n\t\t{ name: 'noop', alias: 'n', type: Boolean, description: " +
+    "'Show what would be done without actually doing it.' },\n\t\t{ name: " +
+    "'verbose', alias: 'v', type: Boolean, description: 'Verbose output to " +
+    "stderr.' },\n\t\t{ name: 'Version', alias: 'V', type: Boolean, description: " +
+    "'Writes version information to stdout.'},\n\t\t//Input\n\t\t{ name: 'stdin', " +
+    "alias: 'i', type: Boolean, description: 'Read input from stdin.' },\n\t\t{ " +
+    "name: 'input', alias: 'I', type: String, description: 'The path to the " +
+    "file to read input from.'},\n\t\t//Output\n\t\t{ name: 'stdout', alias: 'o', " +
+    "type: Boolean, description: 'Write output to stdout.' },\n\t\t{ name: " +
+    "'output', alias: 'O', type: String, description: 'The name of the file to " +
+    "write output to.' },\n\t\t{ name: 'pasteboard', alias: 'p', type: Boolean, " +
+    "description: 'Copy output to pasteboard (clipboard).'},\n\t\t//Config\n\t\t{ " +
+    "name: 'config', alias: 'c', type: Boolean, description: 'Print " +
+    "configuration values and information to stdout.' },\n\t\t{ name: " +
+    "'config-file', alias: 'C', type: String, description: 'Use the given " +
+    "config file instead of the default.' },\n\t];\n\t//Variables\n\tvar " +
+    'function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( ' +
+    "EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error('MakeDir.sync " +
+    "threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Options\n\tvar Options = " +
+    'CommandLineArguments( OptionDefinitions );\n\t//Config\n\t//Main\n\t' +
+    'if(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\t' +
+    "header: 'encrypt-notes',\n\t\t\t\tcontent: 'Encrypts the notes.',\n\t\t\t},\n\t\t\t{\n\t\t\t" +
+    "\theader: 'Options',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst " +
+    'help_message = CommandLineUsage(help_sections_array);\n\t\t' +
+    'console.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'End of execution block.'});\n} else{\n\texports.SetLogger = " +
+    'Logger_Set;\n}\n',
+  [length]: 2
+]
+2019-06-17T00:51:13.526Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: [Arguments] {
+  '0': "#!/usr/local/bin/node\n'use strict';\n/**\n* @file encrypt-notes.js\n* @brief " +
+    'Encrypts the notes.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\t' +
+    'Permission is hereby granted, free of charge, to any person obtaining a ' +
+    'copy of this \nsoftware and associated documentation files (the ' +
+    '"Software"), to deal in the Software \nwithout restriction, including ' +
+    'without limitation the rights to use, copy, modify, \nmerge, publish, ' +
+    'distribute, sublicense, and/or sell copies of the Software, and to \npermit ' +
+    'persons to whom the Software is furnished to do so, subject to the ' +
+    'following \nconditions:\n\tThe above copyright notice and this permission ' +
+    'notice shall be included in all copies \nor substantial portions of the ' +
+    'Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, ' +
+    'EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF ' +
+    'MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN ' +
+    'NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, ' +
+    'DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR ' +
+    'OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE ' +
+    'USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+    "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+    "const FILENAME = 'encrypt-notes.js';\nconst MODULE_NAME = 'EncryptNotes';\n" +
+    "var PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = " +
+    "'encrypt-notes';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global " +
+    'Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\n' +
+    'function Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = " +
+    "[1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === 'object' ){\n\t\tif( " +
+    'logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n' +
+    `\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param "logger" is not an ` +
+    "object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t" +
+    '_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and ' +
+    'Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t" +
+    "//Standard\n\t\t//External\n\t\tconst MakeDir = require('make-dir');\n\t\tconst " +
+    'ApplicationLogWinstonInterface = ' +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t\tconst CommandLineArgs = " +
+    "require('command-line-args');\n\t\tconst CommandLineUsage = " +
+    "require('command-line-usage');\n\t//Constants\n\tconst EnvironmentPaths = " +
+    'EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: ' +
+    "'help', alias: 'h', type: Boolean, description: 'Writes this help text to " +
+    "stdout.' },\n\t\t{ name: 'noop', alias: 'n', type: Boolean, description: " +
+    "'Show what would be done without actually doing it.' },\n\t\t{ name: " +
+    "'verbose', alias: 'v', type: Boolean, description: 'Verbose output to " +
+    "stderr.' },\n\t\t{ name: 'Version', alias: 'V', type: Boolean, description: " +
+    "'Writes version information to stdout.'},\n\t\t//Input\n\t\t{ name: 'stdin', " +
+    "alias: 'i', type: Boolean, description: 'Read input from stdin.' },\n\t\t{ " +
+    "name: 'input', alias: 'I', type: String, description: 'The path to the " +
+    "file to read input from.'},\n\t\t//Output\n\t\t{ name: 'stdout', alias: 'o', " +
+    "type: Boolean, description: 'Write output to stdout.' },\n\t\t{ name: " +
+    "'output', alias: 'O', type: String, description: 'The name of the file to " +
+    "write output to.' },\n\t\t{ name: 'pasteboard', alias: 'p', type: Boolean, " +
+    "description: 'Copy output to pasteboard (clipboard).'},\n\t\t//Config\n\t\t{ " +
+    "name: 'config', alias: 'c', type: Boolean, description: 'Print " +
+    "configuration values and information to stdout.' },\n\t\t{ name: " +
+    "'config-file', alias: 'C', type: String, description: 'Use the given " +
+    "config file instead of the default.' },\n\t];\n\t//Variables\n\tvar " +
+    'function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( ' +
+    "EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error('MakeDir.sync " +
+    "threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Options\n\tvar Options = " +
+    'CommandLineArguments( OptionDefinitions );\n\t//Config\n\t//Main\n\t' +
+    'if(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\t' +
+    "header: 'encrypt-notes',\n\t\t\t\tcontent: 'Encrypts the notes.',\n\t\t\t},\n\t\t\t{\n\t\t\t" +
+    "\theader: 'Options',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst " +
+    'help_message = CommandLineUsage(help_sections_array);\n\t\t' +
+    'console.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'End of execution block.'});\n} else{\n\texports.SetLogger = " +
+    'Logger_Set;\n}\n',
+  '1': { edit: 'js file', pasteboard: true },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-17T00:51:16.224Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-06-17T00:51:16.224Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
