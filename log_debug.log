@@ -12283,3 +12283,1401 @@
 }
 2019-06-17T00:51:16.224Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
 2019-06-17T00:51:16.224Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-06-18T02:53:48.639Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-06-18T02:53:48.650Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0': '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T02:53:48.680Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [
+  0,
+  {
+    template_directories: [
+      'Resources/templates',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/templates',
+      [length]: 2
+    ],
+    defaults_directories: [
+      'Resources/defaults',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/defaults',
+      [length]: 2
+    ]
+  },
+  [length]: 2
+]
+2019-06-18T02:53:48.680Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-06-18T02:53:48.685Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { edit: 'js func', pasteboard: true }
+2019-06-18T02:53:48.686Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T02:53:48.687Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T02:53:48.687Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T02:53:48.723Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ' +
+    "ENOENT: no such file or directory, open 'js/func.json'\n    at " +
+    'Object.openSync (fs.js:447:3)\n    at Object.readFileSync (fs.js:349:35)\n ' +
+    '   at Object.JSONIC_Parse_FilePath [as ParseFilePath] ' +
+    '(/Users/cameron/dev/function-factory/source/jsonic-parse.js:146:27)\n    ' +
+    'at DefaultInputDataFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:156:33)\n    at ' +
+    'DefaultInputDataFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:179:21)\n    at ' +
+    'DefaultInputDataFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:219:21)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:469:21)\n    at ' +
+    'Object.<anonymous> ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:649:14)\n    at ' +
+    'Module._compile (internal/modules/cjs/loader.js:774:30)\n    at ' +
+    'Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10) {\n ' +
+    " errno: -2,\n  syscall: 'open',\n  code: 'ENOENT',\n  path: 'js/func.json'\n" +
+    '}',
+  [length]: 2
+]
+2019-06-18T02:53:48.723Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T02:53:48.751Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-06-18T02:53:48.752Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-06-18T02:53:48.753Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-06-18T02:53:48.783Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-06-18T02:55:29.847Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: {
+  editor_input: '{\n\t"template": "js func",\n\t"name": "Input_InquirerPassword_Async",\n\t' +
+    '"description": "Handle the Inquirer prompt for the password ' +
+    'asynchronously.",\n\t/*"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],*/\n\t"asynchronous": true,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}\n'
+}
+2019-06-18T02:55:29.848Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: [Arguments] {
+  '0': {
+    editor_input: '{\n\t"template": "js func",\n\t"name": "Input_InquirerPassword_Async",\n\t' +
+      '"description": "Handle the Inquirer prompt for the password ' +
+      'asynchronously.",\n\t/*"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+      '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+      '"Brief parametre description."\n\t\t}\n\t],*/\n\t"asynchronous": true,\n\t' +
+      '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+      '"gm"\n\t\t}\n\t]\n}\n'
+  },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T02:55:29.882Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: {
+  template: 'js func',
+  name: 'Input_InquirerPassword_Async',
+  description: 'Handle the Inquirer prompt for the password asynchronously.',
+  asynchronous: true,
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ]
+} undefined
+2019-06-18T02:55:29.883Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T02:55:29.884Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T02:55:29.885Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T02:55:29.886Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  -3,
+  'Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such ' +
+    "file or directory, access 'js/func.hbs'\n    at Object.accessSync " +
+    '(fs.js:202:3)\n    at TemplateFunctionFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:239:15)\n    at ' +
+    'TemplateFunctionFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:269:21)\n    at ' +
+    'TemplateFunctionFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:308:21)\n    at ' +
+    'OutputFromInput ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:364:23)\n    at ' +
+    'OutputFromInquirerEditorAnswer ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:401:22)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:486:22)\n    at ' +
+    'processTicksAndRejections (internal/process/task_queues.js:89:5) {\n  ' +
+    "errno: -2,\n  syscall: 'access',\n  code: 'ENOENT',\n  path: 'js/func.hbs'\n" +
+    '}',
+  [length]: 2
+]
+2019-06-18T02:55:29.886Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T02:55:29.947Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-18T02:55:29.948Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-18T02:55:29.948Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-18T02:55:29.985Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: [Arguments] {
+  '0': '/**\n* @fn Input_InquirerPassword_Async\n* @brief Handle the Inquirer ' +
+    'prompt for the password asynchronously.\n* @async true\n* @return <ARRAY>\n' +
+    '*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nasync function ' +
+    'Input_InquirerPassword_Async(){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'Input_InquirerPassword_Async';\n\t//Variables\n\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t\n\t" +
+    '//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T02:55:29.985Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [
+  0,
+  '/**\n* @fn Input_InquirerPassword_Async\n* @brief Handle the Inquirer ' +
+    'prompt for the password asynchronously.\n* @async true\n* @return <ARRAY>\n' +
+    '*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nasync function ' +
+    'Input_InquirerPassword_Async(){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'Input_InquirerPassword_Async';\n\t//Variables\n\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t\n\t" +
+    '//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [length]: 2
+]
+2019-06-18T02:55:29.985Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [
+  0,
+  '/**\n* @fn Input_InquirerPassword_Async\n* @brief Handle the Inquirer ' +
+    'prompt for the password asynchronously.\n* @async true\n* @return <ARRAY>\n' +
+    '*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nasync function ' +
+    'Input_InquirerPassword_Async(){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'Input_InquirerPassword_Async';\n\t//Variables\n\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t\n\t" +
+    '//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [
+    0,
+    '/**\n* @fn Input_InquirerPassword_Async\n* @brief Handle the Inquirer ' +
+      'prompt for the password asynchronously.\n* @async true\n* @return <ARRAY>\n' +
+      '*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+      '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+      '@retval <error_message> on failure.\n*/\nasync function ' +
+      'Input_InquirerPassword_Async(){\n\tvar _return = [1,null];\n\tconst ' +
+      "FUNCTION_NAME = 'Input_InquirerPassword_Async';\n\t//Variables\n\n\t" +
+      'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+      "function: FUNCTION_NAME, level: 'debug', message: " +
+      "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t\n\t" +
+      '//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: ' +
+      "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+      "message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+    [length]: 2
+  ],
+  [length]: 3
+]
+2019-06-18T02:55:29.986Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [
+  0,
+  '/**\n* @fn Input_InquirerPassword_Async\n* @brief Handle the Inquirer ' +
+    'prompt for the password asynchronously.\n* @async true\n* @return <ARRAY>\n' +
+    '*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nasync function ' +
+    'Input_InquirerPassword_Async(){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'Input_InquirerPassword_Async';\n\t//Variables\n\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t\n\t" +
+    '//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [length]: 2
+]
+2019-06-18T02:55:29.986Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: [Arguments] {
+  '0': '/**\n* @fn Input_InquirerPassword_Async\n* @brief Handle the Inquirer ' +
+    'prompt for the password asynchronously.\n* @async true\n* @return <ARRAY>\n' +
+    '*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nasync function ' +
+    'Input_InquirerPassword_Async(){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'Input_InquirerPassword_Async';\n\t//Variables\n\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t\n\t" +
+    '//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  '1': { edit: 'js func', pasteboard: true },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T02:55:31.034Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-06-18T02:55:31.034Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-06-18T03:25:41.663Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-06-18T03:25:41.675Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0': '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T03:25:41.709Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [
+  0,
+  {
+    template_directories: [
+      'Resources/templates',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/templates',
+      [length]: 2
+    ],
+    defaults_directories: [
+      'Resources/defaults',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/defaults',
+      [length]: 2
+    ]
+  },
+  [length]: 2
+]
+2019-06-18T03:25:41.709Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-06-18T03:25:41.714Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { edit: 'js file', pasteboard: true }
+2019-06-18T03:25:41.715Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: [Arguments] {
+  '0': 'js file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T03:25:41.716Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T03:25:41.716Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T03:25:41.726Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/file.json": Error: ' +
+    "ENOENT: no such file or directory, open 'js/file.json'\n    at " +
+    'Object.openSync (fs.js:447:3)\n    at Object.readFileSync (fs.js:349:35)\n ' +
+    '   at Object.JSONIC_Parse_FilePath [as ParseFilePath] ' +
+    '(/Users/cameron/dev/function-factory/source/jsonic-parse.js:146:27)\n    ' +
+    'at DefaultInputDataFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:156:33)\n    at ' +
+    'DefaultInputDataFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:179:21)\n    at ' +
+    'DefaultInputDataFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:219:21)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:469:21)\n    at ' +
+    'Object.<anonymous> ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:649:14)\n    at ' +
+    'Module._compile (internal/modules/cjs/loader.js:774:30)\n    at ' +
+    'Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10) {\n ' +
+    " errno: -2,\n  syscall: 'open',\n  code: 'ENOENT',\n  path: 'js/file.json'\n" +
+    '}',
+  [length]: 2
+]
+2019-06-18T03:25:41.726Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'Resources/defaults/js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T03:25:41.775Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": ' +
+    '"Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": ' +
+    '"process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": ' +
+    'true\n}',
+  [length]: 2
+]
+2019-06-18T03:25:41.775Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [
+  0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": ' +
+    '"Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": ' +
+    '"process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": ' +
+    'true\n}',
+  [length]: 2
+]
+2019-06-18T03:25:41.775Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [
+  0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": ' +
+    '"Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": ' +
+    '"process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": ' +
+    'true\n}',
+  [length]: 2
+]
+2019-06-18T03:25:41.800Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-06-18T03:34:07.163Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: {
+  editor_input: '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": ' +
+    '"Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": ' +
+    '"process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": ' +
+    'true\n}'
+}
+2019-06-18T03:34:07.164Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: [Arguments] {
+  '0': {
+    editor_input: '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": ' +
+      '"Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": ' +
+      '"process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": ' +
+      'true\n}'
+  },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T03:34:07.165Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: {
+  template: 'js file',
+  filename: 'filename.js',
+  description: 'Brief description.',
+  modulename: 'ModuleName',
+  processname: 'process-name',
+  strict: true,
+  main: true,
+  logger: true,
+  cli: true
+} undefined
+2019-06-18T03:34:07.165Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: [Arguments] {
+  '0': 'js file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T03:34:07.166Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T03:34:07.166Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T03:34:07.167Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  -3,
+  'Error: template "js/file.hbs" cannot be read: Error: ENOENT: no such ' +
+    "file or directory, access 'js/file.hbs'\n    at Object.accessSync " +
+    '(fs.js:202:3)\n    at TemplateFunctionFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:239:15)\n    at ' +
+    'TemplateFunctionFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:269:21)\n    at ' +
+    'TemplateFunctionFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:308:21)\n    at ' +
+    'OutputFromInput ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:364:23)\n    at ' +
+    'OutputFromInquirerEditorAnswer ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:401:22)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:486:22)\n    at ' +
+    'processTicksAndRejections (internal/process/task_queues.js:89:5) {\n  ' +
+    "errno: -2,\n  syscall: 'access',\n  code: 'ENOENT',\n  path: 'js/file.hbs'\n" +
+    '}',
+  [length]: 2
+]
+2019-06-18T03:34:07.167Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'Resources/templates/js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T03:34:07.262Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-18T03:34:07.262Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-18T03:34:07.263Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-18T03:34:07.306Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: [Arguments] {
+  '0': "#!/usr/local/bin/node\n'use strict';\n/**\n* @file filename.js\n* @brief Brief " +
+    'description.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\t' +
+    'Permission is hereby granted, free of charge, to any person obtaining a ' +
+    'copy of this \nsoftware and associated documentation files (the ' +
+    '"Software"), to deal in the Software \nwithout restriction, including ' +
+    'without limitation the rights to use, copy, modify, \nmerge, publish, ' +
+    'distribute, sublicense, and/or sell copies of the Software, and to \npermit ' +
+    'persons to whom the Software is furnished to do so, subject to the ' +
+    'following \nconditions:\n\tThe above copyright notice and this permission ' +
+    'notice shall be included in all copies \nor substantial portions of the ' +
+    'Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, ' +
+    'EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF ' +
+    'MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN ' +
+    'NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, ' +
+    'DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR ' +
+    'OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE ' +
+    'USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+    "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+    "const FILENAME = 'filename.js';\nconst MODULE_NAME = 'ModuleName';\nvar " +
+    "PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = " +
+    "'process-name';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global " +
+    'Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\n' +
+    'function Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = " +
+    "[1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === 'object' ){\n\t\tif( " +
+    'logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n' +
+    `\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param "logger" is not an ` +
+    "object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t" +
+    '_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and ' +
+    'Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t" +
+    "//Standard\n\t\t//External\n\t\tconst MakeDir = require('make-dir');\n\t\tconst " +
+    'ApplicationLogWinstonInterface = ' +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t\tconst CommandLineArgs = " +
+    "require('command-line-args');\n\t\tconst CommandLineUsage = " +
+    "require('command-line-usage');\n\t//Constants\n\tconst EnvironmentPaths = " +
+    'EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: ' +
+    "'help', alias: 'h', type: Boolean, description: 'Writes this help text to " +
+    "stdout.' },\n\t\t{ name: 'noop', alias: 'n', type: Boolean, description: " +
+    "'Show what would be done without actually doing it.' },\n\t\t{ name: " +
+    "'verbose', alias: 'v', type: Boolean, description: 'Verbose output to " +
+    "stderr.' },\n\t\t{ name: 'Version', alias: 'V', type: Boolean, description: " +
+    "'Writes version information to stdout.'},\n\t\t//Input\n\t\t{ name: 'stdin', " +
+    "alias: 'i', type: Boolean, description: 'Read input from stdin.' },\n\t\t{ " +
+    "name: 'input', alias: 'I', type: String, description: 'The path to the " +
+    "file to read input from.'},\n\t\t//Output\n\t\t{ name: 'stdout', alias: 'o', " +
+    "type: Boolean, description: 'Write output to stdout.' },\n\t\t{ name: " +
+    "'output', alias: 'O', type: String, description: 'The name of the file to " +
+    "write output to.' },\n\t\t{ name: 'pasteboard', alias: 'p', type: Boolean, " +
+    "description: 'Copy output to pasteboard (clipboard).'},\n\t\t//Config\n\t\t{ " +
+    "name: 'config', alias: 'c', type: Boolean, description: 'Print " +
+    "configuration values and information to stdout.' },\n\t\t{ name: " +
+    "'config-file', alias: 'C', type: String, description: 'Use the given " +
+    "config file instead of the default.' },\n\t];\n\t//Variables\n\tvar " +
+    'function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( ' +
+    "EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error('MakeDir.sync " +
+    "threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Options\n\tvar Options = " +
+    'CommandLineArguments( OptionDefinitions );\n\t//Config\n\t//Main\n\t' +
+    'if(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\t' +
+    "header: 'process-name',\n\t\t\t\tcontent: 'Brief description.',\n\t\t\t},\n\t\t\t{\n\t\t\t\t" +
+    "header: 'Options',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst " +
+    'help_message = CommandLineUsage(help_sections_array);\n\t\t' +
+    'console.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'End of execution block.'});\n} else{\n\texports.SetLogger = " +
+    'Logger_Set;\n}\n',
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T03:34:07.307Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2019-06-18T03:34:07.310Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [
+  0,
+  "#!/usr/local/bin/node\n'use strict';\n/**\n* @file filename.js\n* @brief Brief " +
+    'description.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\t' +
+    'Permission is hereby granted, free of charge, to any person obtaining a ' +
+    'copy of this \nsoftware and associated documentation files (the ' +
+    '"Software"), to deal in the Software \nwithout restriction, including ' +
+    'without limitation the rights to use, copy, modify, \nmerge, publish, ' +
+    'distribute, sublicense, and/or sell copies of the Software, and to \npermit ' +
+    'persons to whom the Software is furnished to do so, subject to the ' +
+    'following \nconditions:\n\tThe above copyright notice and this permission ' +
+    'notice shall be included in all copies \nor substantial portions of the ' +
+    'Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, ' +
+    'EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF ' +
+    'MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN ' +
+    'NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, ' +
+    'DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR ' +
+    'OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE ' +
+    'USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+    "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+    "const FILENAME = 'filename.js';\nconst MODULE_NAME = 'ModuleName';\nvar " +
+    "PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = " +
+    "'process-name';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global " +
+    'Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\n' +
+    'function Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = " +
+    "[1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === 'object' ){\n\t\tif( " +
+    'logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n' +
+    `\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param "logger" is not an ` +
+    "object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t" +
+    '_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and ' +
+    'Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t" +
+    "//Standard\n\t\t//External\n\t\tconst MakeDir = require('make-dir');\n\t\tconst " +
+    'ApplicationLogWinstonInterface = ' +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t\tconst CommandLineArgs = " +
+    "require('command-line-args');\n\t\tconst CommandLineUsage = " +
+    "require('command-line-usage');\n\t//Constants\n\tconst EnvironmentPaths = " +
+    'EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: ' +
+    "'help', alias: 'h', type: Boolean, description: 'Writes this help text to " +
+    "stdout.' },\n\t\t{ name: 'noop', alias: 'n', type: Boolean, description: " +
+    "'Show what would be done without actually doing it.' },\n\t\t{ name: " +
+    "'verbose', alias: 'v', type: Boolean, description: 'Verbose output to " +
+    "stderr.' },\n\t\t{ name: 'Version', alias: 'V', type: Boolean, description: " +
+    "'Writes version information to stdout.'},\n\t\t//Input\n\t\t{ name: 'stdin', " +
+    "alias: 'i', type: Boolean, description: 'Read input from stdin.' },\n\t\t{ " +
+    "name: 'input', alias: 'I', type: String, description: 'The path to the " +
+    "file to read input from.'},\n\t\t//Output\n\t\t{ name: 'stdout', alias: 'o', " +
+    "type: Boolean, description: 'Write output to stdout.' },\n\t\t{ name: " +
+    "'output', alias: 'O', type: String, description: 'The name of the file to " +
+    "write output to.' },\n\t\t{ name: 'pasteboard', alias: 'p', type: Boolean, " +
+    "description: 'Copy output to pasteboard (clipboard).'},\n\t\t//Config\n\t\t{ " +
+    "name: 'config', alias: 'c', type: Boolean, description: 'Print " +
+    "configuration values and information to stdout.' },\n\t\t{ name: " +
+    "'config-file', alias: 'C', type: String, description: 'Use the given " +
+    "config file instead of the default.' },\n\t];\n\t//Variables\n\tvar " +
+    'function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( ' +
+    "EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error('MakeDir.sync " +
+    "threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Options\n\tvar Options = " +
+    'CommandLineArguments( OptionDefinitions );\n\t//Config\n\t//Main\n\t' +
+    'if(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\t' +
+    "header: 'process-name',\n\t\t\t\tcontent: 'Brief description.',\n\t\t\t},\n\t\t\t{\n\t\t\t\t" +
+    "header: 'Options',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst " +
+    'help_message = CommandLineUsage(help_sections_array);\n\t\t' +
+    'console.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'End of execution block.'});\n} else{\n\texports.SetLogger = " +
+    'Logger_Set;\n}\n',
+  [length]: 2
+]
+2019-06-18T03:34:07.312Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [
+  0,
+  "#!/usr/local/bin/node\n'use strict';\n/**\n* @file filename.js\n* @brief Brief " +
+    'description.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\t' +
+    'Permission is hereby granted, free of charge, to any person obtaining a ' +
+    'copy of this \nsoftware and associated documentation files (the ' +
+    '"Software"), to deal in the Software \nwithout restriction, including ' +
+    'without limitation the rights to use, copy, modify, \nmerge, publish, ' +
+    'distribute, sublicense, and/or sell copies of the Software, and to \npermit ' +
+    'persons to whom the Software is furnished to do so, subject to the ' +
+    'following \nconditions:\n\tThe above copyright notice and this permission ' +
+    'notice shall be included in all copies \nor substantial portions of the ' +
+    'Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, ' +
+    'EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF ' +
+    'MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN ' +
+    'NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, ' +
+    'DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR ' +
+    'OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE ' +
+    'USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+    "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+    "const FILENAME = 'filename.js';\nconst MODULE_NAME = 'ModuleName';\nvar " +
+    "PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = " +
+    "'process-name';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global " +
+    'Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\n' +
+    'function Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = " +
+    "[1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === 'object' ){\n\t\tif( " +
+    'logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n' +
+    `\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param "logger" is not an ` +
+    "object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t" +
+    '_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and ' +
+    'Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t" +
+    "//Standard\n\t\t//External\n\t\tconst MakeDir = require('make-dir');\n\t\tconst " +
+    'ApplicationLogWinstonInterface = ' +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t\tconst CommandLineArgs = " +
+    "require('command-line-args');\n\t\tconst CommandLineUsage = " +
+    "require('command-line-usage');\n\t//Constants\n\tconst EnvironmentPaths = " +
+    'EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: ' +
+    "'help', alias: 'h', type: Boolean, description: 'Writes this help text to " +
+    "stdout.' },\n\t\t{ name: 'noop', alias: 'n', type: Boolean, description: " +
+    "'Show what would be done without actually doing it.' },\n\t\t{ name: " +
+    "'verbose', alias: 'v', type: Boolean, description: 'Verbose output to " +
+    "stderr.' },\n\t\t{ name: 'Version', alias: 'V', type: Boolean, description: " +
+    "'Writes version information to stdout.'},\n\t\t//Input\n\t\t{ name: 'stdin', " +
+    "alias: 'i', type: Boolean, description: 'Read input from stdin.' },\n\t\t{ " +
+    "name: 'input', alias: 'I', type: String, description: 'The path to the " +
+    "file to read input from.'},\n\t\t//Output\n\t\t{ name: 'stdout', alias: 'o', " +
+    "type: Boolean, description: 'Write output to stdout.' },\n\t\t{ name: " +
+    "'output', alias: 'O', type: String, description: 'The name of the file to " +
+    "write output to.' },\n\t\t{ name: 'pasteboard', alias: 'p', type: Boolean, " +
+    "description: 'Copy output to pasteboard (clipboard).'},\n\t\t//Config\n\t\t{ " +
+    "name: 'config', alias: 'c', type: Boolean, description: 'Print " +
+    "configuration values and information to stdout.' },\n\t\t{ name: " +
+    "'config-file', alias: 'C', type: String, description: 'Use the given " +
+    "config file instead of the default.' },\n\t];\n\t//Variables\n\tvar " +
+    'function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( ' +
+    "EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error('MakeDir.sync " +
+    "threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Options\n\tvar Options = " +
+    'CommandLineArguments( OptionDefinitions );\n\t//Config\n\t//Main\n\t' +
+    'if(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\t' +
+    "header: 'process-name',\n\t\t\t\tcontent: 'Brief description.',\n\t\t\t},\n\t\t\t{\n\t\t\t\t" +
+    "header: 'Options',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst " +
+    'help_message = CommandLineUsage(help_sections_array);\n\t\t' +
+    'console.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'End of execution block.'});\n} else{\n\texports.SetLogger = " +
+    'Logger_Set;\n}\n',
+  [
+    0,
+    "#!/usr/local/bin/node\n'use strict';\n/**\n* @file filename.js\n* @brief " +
+      'Brief description.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n' +
+      '\tPermission is hereby granted, free of charge, to any person obtaining a ' +
+      'copy of this \nsoftware and associated documentation files (the ' +
+      '"Software"), to deal in the Software \nwithout restriction, including ' +
+      'without limitation the rights to use, copy, modify, \nmerge, publish, ' +
+      'distribute, sublicense, and/or sell copies of the Software, and to \n' +
+      'permit persons to whom the Software is furnished to do so, subject to ' +
+      'the following \nconditions:\n\tThe above copyright notice and this ' +
+      'permission notice shall be included in all copies \nor substantial ' +
+      'portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT ' +
+      'WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO ' +
+      'THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND ' +
+      'NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE ' +
+      'LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION ' +
+      'OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION ' +
+      'WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n' +
+      "//Dependencies\n\t//Internal\n\t//Standard\n\tconst Utility = require('util');\n" +
+      "\t//External\n\n//Constants\nconst FILENAME = 'filename.js';\nconst " +
+      "MODULE_NAME = 'ModuleName';\nvar PROCESS_NAME = '';\nif(require.main === " +
+      "module){\n\tPROCESS_NAME = 'process-name';\n} else{\n\tPROCESS_NAME = " +
+      'process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: () => {\n\t\t' +
+      'return null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\tvar ' +
+      "_return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\t" +
+      'var function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) ' +
+      "=== 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n" +
+      "\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param " +
+      `"logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\t` +
+      'Logger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n' +
+      '//Exports and Execution\nif(require.main === module){\n\tvar _return = ' +
+      "[1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t" +
+      '//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = ' +
+      "require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = " +
+      "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+      "require('env-paths');\n\t\tconst CommandLineArgs = " +
+      "require('command-line-args');\n\t\tconst CommandLineUsage = " +
+      "require('command-line-usage');\n\t//Constants\n\tconst EnvironmentPaths = " +
+      'EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: ' +
+      "'help', alias: 'h', type: Boolean, description: 'Writes this help text " +
+      "to stdout.' },\n\t\t{ name: 'noop', alias: 'n', type: Boolean, description: " +
+      "'Show what would be done without actually doing it.' },\n\t\t{ name: " +
+      "'verbose', alias: 'v', type: Boolean, description: 'Verbose output to " +
+      "stderr.' },\n\t\t{ name: 'Version', alias: 'V', type: Boolean, description: " +
+      "'Writes version information to stdout.'},\n\t\t//Input\n\t\t{ name: 'stdin', " +
+      "alias: 'i', type: Boolean, description: 'Read input from stdin.' },\n\t\t{ " +
+      "name: 'input', alias: 'I', type: String, description: 'The path to the " +
+      "file to read input from.'},\n\t\t//Output\n\t\t{ name: 'stdout', alias: 'o', " +
+      "type: Boolean, description: 'Write output to stdout.' },\n\t\t{ name: " +
+      "'output', alias: 'O', type: String, description: 'The name of the file " +
+      "to write output to.' },\n\t\t{ name: 'pasteboard', alias: 'p', type: " +
+      "Boolean, description: 'Copy output to pasteboard (clipboard).'},\n\t\t" +
+      "//Config\n\t\t{ name: 'config', alias: 'c', type: Boolean, description: " +
+      "'Print configuration values and information to stdout.' },\n\t\t{ name: " +
+      "'config-file', alias: 'C', type: String, description: 'Use the given " +
+      "config file instead of the default.' },\n\t];\n\t//Variables\n\tvar " +
+      'function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( ' +
+      "EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error('MakeDir.sync " +
+      "threw: %s', error);\n\t}\n\tfunction_return = " +
+      "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+      'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+      'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+      "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+      "message: 'Start of execution block.'});\n\t//Options\n\tvar Options = " +
+      'CommandLineArguments( OptionDefinitions );\n\t//Config\n\t//Main\n\t' +
+      'if(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\t' +
+      "header: 'process-name',\n\t\t\t\tcontent: 'Brief description.',\n\t\t\t},\n\t\t\t{\n\t\t\t" +
+      "\theader: 'Options',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst " +
+      'help_message = CommandLineUsage(help_sections_array);\n\t\t' +
+      'console.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, ' +
+      'module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: ' +
+      "'debug', message: 'End of execution block.'});\n} else{\n\t" +
+      'exports.SetLogger = Logger_Set;\n}\n',
+    [length]: 2
+  ],
+  [length]: 3
+]
+2019-06-18T03:34:07.313Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [
+  0,
+  "#!/usr/local/bin/node\n'use strict';\n/**\n* @file filename.js\n* @brief Brief " +
+    'description.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\t' +
+    'Permission is hereby granted, free of charge, to any person obtaining a ' +
+    'copy of this \nsoftware and associated documentation files (the ' +
+    '"Software"), to deal in the Software \nwithout restriction, including ' +
+    'without limitation the rights to use, copy, modify, \nmerge, publish, ' +
+    'distribute, sublicense, and/or sell copies of the Software, and to \npermit ' +
+    'persons to whom the Software is furnished to do so, subject to the ' +
+    'following \nconditions:\n\tThe above copyright notice and this permission ' +
+    'notice shall be included in all copies \nor substantial portions of the ' +
+    'Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, ' +
+    'EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF ' +
+    'MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN ' +
+    'NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, ' +
+    'DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR ' +
+    'OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE ' +
+    'USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+    "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+    "const FILENAME = 'filename.js';\nconst MODULE_NAME = 'ModuleName';\nvar " +
+    "PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = " +
+    "'process-name';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global " +
+    'Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\n' +
+    'function Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = " +
+    "[1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === 'object' ){\n\t\tif( " +
+    'logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n' +
+    `\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param "logger" is not an ` +
+    "object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t" +
+    '_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and ' +
+    'Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t" +
+    "//Standard\n\t\t//External\n\t\tconst MakeDir = require('make-dir');\n\t\tconst " +
+    'ApplicationLogWinstonInterface = ' +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t\tconst CommandLineArgs = " +
+    "require('command-line-args');\n\t\tconst CommandLineUsage = " +
+    "require('command-line-usage');\n\t//Constants\n\tconst EnvironmentPaths = " +
+    'EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: ' +
+    "'help', alias: 'h', type: Boolean, description: 'Writes this help text to " +
+    "stdout.' },\n\t\t{ name: 'noop', alias: 'n', type: Boolean, description: " +
+    "'Show what would be done without actually doing it.' },\n\t\t{ name: " +
+    "'verbose', alias: 'v', type: Boolean, description: 'Verbose output to " +
+    "stderr.' },\n\t\t{ name: 'Version', alias: 'V', type: Boolean, description: " +
+    "'Writes version information to stdout.'},\n\t\t//Input\n\t\t{ name: 'stdin', " +
+    "alias: 'i', type: Boolean, description: 'Read input from stdin.' },\n\t\t{ " +
+    "name: 'input', alias: 'I', type: String, description: 'The path to the " +
+    "file to read input from.'},\n\t\t//Output\n\t\t{ name: 'stdout', alias: 'o', " +
+    "type: Boolean, description: 'Write output to stdout.' },\n\t\t{ name: " +
+    "'output', alias: 'O', type: String, description: 'The name of the file to " +
+    "write output to.' },\n\t\t{ name: 'pasteboard', alias: 'p', type: Boolean, " +
+    "description: 'Copy output to pasteboard (clipboard).'},\n\t\t//Config\n\t\t{ " +
+    "name: 'config', alias: 'c', type: Boolean, description: 'Print " +
+    "configuration values and information to stdout.' },\n\t\t{ name: " +
+    "'config-file', alias: 'C', type: String, description: 'Use the given " +
+    "config file instead of the default.' },\n\t];\n\t//Variables\n\tvar " +
+    'function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( ' +
+    "EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error('MakeDir.sync " +
+    "threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Options\n\tvar Options = " +
+    'CommandLineArguments( OptionDefinitions );\n\t//Config\n\t//Main\n\t' +
+    'if(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\t' +
+    "header: 'process-name',\n\t\t\t\tcontent: 'Brief description.',\n\t\t\t},\n\t\t\t{\n\t\t\t\t" +
+    "header: 'Options',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst " +
+    'help_message = CommandLineUsage(help_sections_array);\n\t\t' +
+    'console.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'End of execution block.'});\n} else{\n\texports.SetLogger = " +
+    'Logger_Set;\n}\n',
+  [length]: 2
+]
+2019-06-18T03:34:07.314Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: [Arguments] {
+  '0': "#!/usr/local/bin/node\n'use strict';\n/**\n* @file filename.js\n* @brief Brief " +
+    'description.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\t' +
+    'Permission is hereby granted, free of charge, to any person obtaining a ' +
+    'copy of this \nsoftware and associated documentation files (the ' +
+    '"Software"), to deal in the Software \nwithout restriction, including ' +
+    'without limitation the rights to use, copy, modify, \nmerge, publish, ' +
+    'distribute, sublicense, and/or sell copies of the Software, and to \npermit ' +
+    'persons to whom the Software is furnished to do so, subject to the ' +
+    'following \nconditions:\n\tThe above copyright notice and this permission ' +
+    'notice shall be included in all copies \nor substantial portions of the ' +
+    'Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, ' +
+    'EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF ' +
+    'MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN ' +
+    'NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, ' +
+    'DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR ' +
+    'OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE ' +
+    'USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+    "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+    "const FILENAME = 'filename.js';\nconst MODULE_NAME = 'ModuleName';\nvar " +
+    "PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = " +
+    "'process-name';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global " +
+    'Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\n' +
+    'function Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = " +
+    "[1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === 'object' ){\n\t\tif( " +
+    'logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n' +
+    `\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param "logger" is not an ` +
+    "object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t" +
+    '_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and ' +
+    'Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t" +
+    "//Standard\n\t\t//External\n\t\tconst MakeDir = require('make-dir');\n\t\tconst " +
+    'ApplicationLogWinstonInterface = ' +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t\tconst CommandLineArgs = " +
+    "require('command-line-args');\n\t\tconst CommandLineUsage = " +
+    "require('command-line-usage');\n\t//Constants\n\tconst EnvironmentPaths = " +
+    'EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: ' +
+    "'help', alias: 'h', type: Boolean, description: 'Writes this help text to " +
+    "stdout.' },\n\t\t{ name: 'noop', alias: 'n', type: Boolean, description: " +
+    "'Show what would be done without actually doing it.' },\n\t\t{ name: " +
+    "'verbose', alias: 'v', type: Boolean, description: 'Verbose output to " +
+    "stderr.' },\n\t\t{ name: 'Version', alias: 'V', type: Boolean, description: " +
+    "'Writes version information to stdout.'},\n\t\t//Input\n\t\t{ name: 'stdin', " +
+    "alias: 'i', type: Boolean, description: 'Read input from stdin.' },\n\t\t{ " +
+    "name: 'input', alias: 'I', type: String, description: 'The path to the " +
+    "file to read input from.'},\n\t\t//Output\n\t\t{ name: 'stdout', alias: 'o', " +
+    "type: Boolean, description: 'Write output to stdout.' },\n\t\t{ name: " +
+    "'output', alias: 'O', type: String, description: 'The name of the file to " +
+    "write output to.' },\n\t\t{ name: 'pasteboard', alias: 'p', type: Boolean, " +
+    "description: 'Copy output to pasteboard (clipboard).'},\n\t\t//Config\n\t\t{ " +
+    "name: 'config', alias: 'c', type: Boolean, description: 'Print " +
+    "configuration values and information to stdout.' },\n\t\t{ name: " +
+    "'config-file', alias: 'C', type: String, description: 'Use the given " +
+    "config file instead of the default.' },\n\t];\n\t//Variables\n\tvar " +
+    'function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( ' +
+    "EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error('MakeDir.sync " +
+    "threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Options\n\tvar Options = " +
+    'CommandLineArguments( OptionDefinitions );\n\t//Config\n\t//Main\n\t' +
+    'if(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\t' +
+    "header: 'process-name',\n\t\t\t\tcontent: 'Brief description.',\n\t\t\t},\n\t\t\t{\n\t\t\t\t" +
+    "header: 'Options',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst " +
+    'help_message = CommandLineUsage(help_sections_array);\n\t\t' +
+    'console.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'End of execution block.'});\n} else{\n\texports.SetLogger = " +
+    'Logger_Set;\n}\n',
+  '1': { edit: 'js file', pasteboard: true },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T03:34:07.761Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-06-18T03:34:07.762Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-06-18T03:37:00.688Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-06-18T03:37:00.725Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0': '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T03:37:00.741Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [
+  0,
+  {
+    template_directories: [
+      'Resources/templates',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/templates',
+      [length]: 2
+    ],
+    defaults_directories: [
+      'Resources/defaults',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/defaults',
+      [length]: 2
+    ]
+  },
+  [length]: 2
+]
+2019-06-18T03:37:00.742Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-06-18T03:37:00.745Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { edit: 'js func', pasteboard: true }
+2019-06-18T03:37:00.745Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T03:37:00.746Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T03:37:00.747Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T03:37:00.749Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ' +
+    "ENOENT: no such file or directory, open 'js/func.json'\n    at " +
+    'Object.openSync (fs.js:447:3)\n    at Object.readFileSync (fs.js:349:35)\n ' +
+    '   at Object.JSONIC_Parse_FilePath [as ParseFilePath] ' +
+    '(/Users/cameron/dev/function-factory/source/jsonic-parse.js:146:27)\n    ' +
+    'at DefaultInputDataFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:156:33)\n    at ' +
+    'DefaultInputDataFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:179:21)\n    at ' +
+    'DefaultInputDataFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:219:21)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:469:21)\n    at ' +
+    'Object.<anonymous> ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:649:14)\n    at ' +
+    'Module._compile (internal/modules/cjs/loader.js:774:30)\n    at ' +
+    'Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10) {\n ' +
+    " errno: -2,\n  syscall: 'open',\n  code: 'ENOENT',\n  path: 'js/func.json'\n" +
+    '}',
+  [length]: 2
+]
+2019-06-18T03:37:00.749Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T03:37:00.768Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-06-18T03:37:00.769Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-06-18T03:37:00.769Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-06-18T03:37:00.817Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-06-18T03:39:40.347Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: {
+  editor_input: '{\n\t"template": "js func",\n\t"name": "NewSaltFile",\n\t"description": ' +
+    '"Creates a new salt file at the given filepath.",\n\t"params": [\n\t\t{\n' +
+    '\t\t\t"type": "String",\n\t\t\t"name": "filepath",\n\t\t\t"default": ' +
+    '"~/.ssh/enc-notes-saltfile",\n\t\t\t"description": "The filepath of ' +
+    'the new salt file."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t' +
+    '\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t' +
+    ']\n}\n'
+}
+2019-06-18T03:39:40.348Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: [Arguments] {
+  '0': {
+    editor_input: '{\n\t"template": "js func",\n\t"name": "NewSaltFile",\n\t"description": ' +
+      '"Creates a new salt file at the given filepath.",\n\t"params": [\n\t\t{\n' +
+      '\t\t\t"type": "String",\n\t\t\t"name": "filepath",\n\t\t\t"default": ' +
+      '"~/.ssh/enc-notes-saltfile",\n\t\t\t"description": "The filepath of ' +
+      'the new salt file."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t' +
+      '\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t' +
+      ']\n}\n'
+  },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T03:39:40.349Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: {
+  template: 'js func',
+  name: 'NewSaltFile',
+  description: 'Creates a new salt file at the given filepath.',
+  params: [
+    {
+      type: 'String',
+      name: 'filepath',
+      default: '~/.ssh/enc-notes-saltfile',
+      description: 'The filepath of the new salt file.'
+    },
+    [length]: 1
+  ],
+  asynchronous: false,
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ]
+} undefined
+2019-06-18T03:39:40.349Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T03:39:40.350Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T03:39:40.350Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T03:39:40.351Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  -3,
+  'Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such ' +
+    "file or directory, access 'js/func.hbs'\n    at Object.accessSync " +
+    '(fs.js:202:3)\n    at TemplateFunctionFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:239:15)\n    at ' +
+    'TemplateFunctionFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:269:21)\n    at ' +
+    'TemplateFunctionFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:308:21)\n    at ' +
+    'OutputFromInput ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:364:23)\n    at ' +
+    'OutputFromInquirerEditorAnswer ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:401:22)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:486:22)\n    at ' +
+    'processTicksAndRejections (internal/process/task_queues.js:89:5) {\n  ' +
+    "errno: -2,\n  syscall: 'access',\n  code: 'ENOENT',\n  path: 'js/func.hbs'\n" +
+    '}',
+  [length]: 2
+]
+2019-06-18T03:39:40.351Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T03:39:40.435Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-18T03:39:40.435Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-18T03:39:40.436Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-18T03:39:40.475Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: [Arguments] {
+  '0': '/**\n* @fn NewSaltFile\n* @brief Creates a new salt file at the given ' +
+    'filepath.\n* @param filepath\n*\t@type String\n*\t@brief The filepath of the ' +
+    'new salt file.\n*\t@default ~/.ssh/enc-notes-saltfile\n* @return <ARRAY>\n*\t' +
+    '@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nfunction NewSaltFile( filepath,){\n\t' +
+    "var _return = [1,null];\n\tconst FUNCTION_NAME = 'NewSaltFile';\n\t//Variables\n" +
+    '\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(filepath == undefined) filepath = ~/.ssh/enc-notes-saltfile;\n\t\n\t' +
+    '//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T03:39:40.476Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [
+  0,
+  '/**\n* @fn NewSaltFile\n* @brief Creates a new salt file at the given ' +
+    'filepath.\n* @param filepath\n*\t@type String\n*\t@brief The filepath of the ' +
+    'new salt file.\n*\t@default ~/.ssh/enc-notes-saltfile\n* @return <ARRAY>\n*\t' +
+    '@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nfunction NewSaltFile( filepath ){\n\t' +
+    "var _return = [1,null];\n\tconst FUNCTION_NAME = 'NewSaltFile';\n\t//Variables\n" +
+    '\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(filepath == undefined) filepath = ~/.ssh/enc-notes-saltfile;\n\t\n\t' +
+    '//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [length]: 2
+]
+2019-06-18T03:39:40.476Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [
+  0,
+  '/**\n* @fn NewSaltFile\n* @brief Creates a new salt file at the given ' +
+    'filepath.\n* @param filepath\n*\t@type String\n*\t@brief The filepath of the ' +
+    'new salt file.\n*\t@default ~/.ssh/enc-notes-saltfile\n* @return <ARRAY>\n*\t' +
+    '@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nfunction NewSaltFile( filepath ){\n\t' +
+    "var _return = [1,null];\n\tconst FUNCTION_NAME = 'NewSaltFile';\n\t//Variables\n" +
+    '\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(filepath == undefined) filepath = ~/.ssh/enc-notes-saltfile;\n\t\n\t' +
+    '//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [
+    0,
+    '/**\n* @fn NewSaltFile\n* @brief Creates a new salt file at the given ' +
+      'filepath.\n* @param filepath\n*\t@type String\n*\t@brief The filepath of ' +
+      'the new salt file.\n*\t@default ~/.ssh/enc-notes-saltfile\n* @return ' +
+      '<ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on ' +
+      'success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on ' +
+      'success\n*\t\t@retval <error_message> on failure.\n*/\nfunction ' +
+      'NewSaltFile( filepath ){\n\tvar _return = [1,null];\n\tconst ' +
+      "FUNCTION_NAME = 'NewSaltFile';\n\t//Variables\n\n\tLogger.log({process: " +
+      'PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: ' +
+      "FUNCTION_NAME, level: 'debug', message: Utility.format('received: ', " +
+      'arguments)});\n\t//Parametre checks\n\tif(filepath == undefined) filepath ' +
+      '= ~/.ssh/enc-notes-saltfile;\n\t\n\t//Function\n\n\t//Return\n\t' +
+      'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: ' +
+      "FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+      "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+    [length]: 2
+  ],
+  [length]: 3
+]
+2019-06-18T03:39:40.477Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [
+  0,
+  '/**\n* @fn NewSaltFile\n* @brief Creates a new salt file at the given ' +
+    'filepath.\n* @param filepath\n*\t@type String\n*\t@brief The filepath of the ' +
+    'new salt file.\n*\t@default ~/.ssh/enc-notes-saltfile\n* @return <ARRAY>\n*\t' +
+    '@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nfunction NewSaltFile( filepath ){\n\t' +
+    "var _return = [1,null];\n\tconst FUNCTION_NAME = 'NewSaltFile';\n\t//Variables\n" +
+    '\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(filepath == undefined) filepath = ~/.ssh/enc-notes-saltfile;\n\t\n\t' +
+    '//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [length]: 2
+]
+2019-06-18T03:39:40.478Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: [Arguments] {
+  '0': '/**\n* @fn NewSaltFile\n* @brief Creates a new salt file at the given ' +
+    'filepath.\n* @param filepath\n*\t@type String\n*\t@brief The filepath of the ' +
+    'new salt file.\n*\t@default ~/.ssh/enc-notes-saltfile\n* @return <ARRAY>\n*\t' +
+    '@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nfunction NewSaltFile( filepath ){\n\t' +
+    "var _return = [1,null];\n\tconst FUNCTION_NAME = 'NewSaltFile';\n\t//Variables\n" +
+    '\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(filepath == undefined) filepath = ~/.ssh/enc-notes-saltfile;\n\t\n\t' +
+    '//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  '1': { edit: 'js func', pasteboard: true },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T03:39:41.266Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-06-18T03:39:41.267Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
