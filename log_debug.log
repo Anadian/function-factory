@@ -13681,3 +13681,901 @@
 }
 2019-06-18T03:39:41.266Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
 2019-06-18T03:39:41.267Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-06-18T04:21:24.853Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-06-18T04:21:24.864Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0': '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T04:21:24.897Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [
+  0,
+  {
+    template_directories: [
+      'Resources/templates',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/templates',
+      [length]: 2
+    ],
+    defaults_directories: [
+      'Resources/defaults',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/defaults',
+      [length]: 2
+    ]
+  },
+  [length]: 2
+]
+2019-06-18T04:21:24.897Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-06-18T04:21:24.900Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { edit: 'js func', pasteboard: true }
+2019-06-18T04:21:24.901Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T04:21:24.902Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T04:21:24.902Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T04:21:24.904Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ' +
+    "ENOENT: no such file or directory, open 'js/func.json'\n    at " +
+    'Object.openSync (fs.js:447:3)\n    at Object.readFileSync (fs.js:349:35)\n ' +
+    '   at Object.JSONIC_Parse_FilePath [as ParseFilePath] ' +
+    '(/Users/cameron/dev/function-factory/source/jsonic-parse.js:146:27)\n    ' +
+    'at DefaultInputDataFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:156:33)\n    at ' +
+    'DefaultInputDataFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:179:21)\n    at ' +
+    'DefaultInputDataFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:219:21)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:469:21)\n    at ' +
+    'Object.<anonymous> ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:649:14)\n    at ' +
+    'Module._compile (internal/modules/cjs/loader.js:774:30)\n    at ' +
+    'Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10) {\n ' +
+    " errno: -2,\n  syscall: 'open',\n  code: 'ENOENT',\n  path: 'js/func.json'\n" +
+    '}',
+  [length]: 2
+]
+2019-06-18T04:21:24.904Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T04:21:24.924Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-06-18T04:21:24.925Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-06-18T04:21:24.925Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-06-18T04:21:24.962Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-06-18T04:24:31.157Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: {
+  editor_input: '{\n\t"template": "js func",\n\t"name": "SaltFile_Load",\n\t"description": ' +
+    '"Loads the salt file at the given path a returns it as a buffer.",\n\t' +
+    '"params": [\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": "filepath",\n\t\t\t' +
+    '"default": "null",\n\t\t\t"description": "The filepath to load the salt ' +
+    'buffer from."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t' +
+    '"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n'
+}
+2019-06-18T04:24:31.160Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: [Arguments] {
+  '0': {
+    editor_input: '{\n\t"template": "js func",\n\t"name": "SaltFile_Load",\n\t"description": ' +
+      '"Loads the salt file at the given path a returns it as a buffer.",\n\t' +
+      '"params": [\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": "filepath",\n\t\t\t' +
+      '"default": "null",\n\t\t\t"description": "The filepath to load the salt ' +
+      'buffer from."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t' +
+      '"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n'
+  },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T04:24:31.162Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: {
+  template: 'js func',
+  name: 'SaltFile_Load',
+  description: 'Loads the salt file at the given path a returns it as a buffer.',
+  params: [
+    {
+      type: 'String',
+      name: 'filepath',
+      default: 'null',
+      description: 'The filepath to load the salt buffer from.'
+    },
+    [length]: 1
+  ],
+  asynchronous: false,
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ]
+} undefined
+2019-06-18T04:24:31.162Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T04:24:31.163Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T04:24:31.163Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T04:24:31.165Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  -3,
+  'Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such ' +
+    "file or directory, access 'js/func.hbs'\n    at Object.accessSync " +
+    '(fs.js:202:3)\n    at TemplateFunctionFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:239:15)\n    at ' +
+    'TemplateFunctionFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:269:21)\n    at ' +
+    'TemplateFunctionFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:308:21)\n    at ' +
+    'OutputFromInput ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:364:23)\n    at ' +
+    'OutputFromInquirerEditorAnswer ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:401:22)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:486:22)\n    at ' +
+    'processTicksAndRejections (internal/process/task_queues.js:89:5) {\n  ' +
+    "errno: -2,\n  syscall: 'access',\n  code: 'ENOENT',\n  path: 'js/func.hbs'\n" +
+    '}',
+  [length]: 2
+]
+2019-06-18T04:24:31.166Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T04:24:31.227Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-18T04:24:31.228Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-18T04:24:31.228Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-18T04:24:31.265Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: [Arguments] {
+  '0': '/**\n* @fn SaltFile_Load\n* @brief Loads the salt file at the given path a ' +
+    'returns it as a buffer.\n* @param filepath\n*\t@type String\n*\t@brief The ' +
+    'filepath to load the salt buffer from.\n*\t@default null\n* @return <ARRAY>\n' +
+    '*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nfunction SaltFile_Load( ' +
+    'filepath,){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = ' +
+    "'SaltFile_Load';\n\t//Variables\n\n\tLogger.log({process: PROCESS_NAME, " +
+    'module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: ' +
+    "'debug', message: Utility.format('received: ', arguments)});\n\t//Parametre " +
+    'checks\n\tif(filepath == undefined) filepath = null;\n\t\n\t//Function\n\n\t' +
+    '//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: ' +
+    "FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T04:24:31.266Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [
+  0,
+  '/**\n* @fn SaltFile_Load\n* @brief Loads the salt file at the given path a ' +
+    'returns it as a buffer.\n* @param filepath\n*\t@type String\n*\t@brief The ' +
+    'filepath to load the salt buffer from.\n*\t@default null\n* @return <ARRAY>\n' +
+    '*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nfunction SaltFile_Load( filepath ' +
+    "){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'SaltFile_Load';\n\t" +
+    '//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+    "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(filepath == undefined) filepath = null;\n\t\n\t//Function\n\n\t//Return\n\t' +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [length]: 2
+]
+2019-06-18T04:24:31.266Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [
+  0,
+  '/**\n* @fn SaltFile_Load\n* @brief Loads the salt file at the given path a ' +
+    'returns it as a buffer.\n* @param filepath\n*\t@type String\n*\t@brief The ' +
+    'filepath to load the salt buffer from.\n*\t@default null\n* @return <ARRAY>\n' +
+    '*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nfunction SaltFile_Load( filepath ' +
+    "){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'SaltFile_Load';\n\t" +
+    '//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+    "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(filepath == undefined) filepath = null;\n\t\n\t//Function\n\n\t//Return\n\t' +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [
+    0,
+    '/**\n* @fn SaltFile_Load\n* @brief Loads the salt file at the given ' +
+      'path a returns it as a buffer.\n* @param filepath\n*\t@type String\n*\t' +
+      '@brief The filepath to load the salt buffer from.\n*\t@default null\n* ' +
+      '@return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t' +
+      '@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t' +
+      '@retval <object> on success\n*\t\t@retval <error_message> on failure.\n' +
+      '*/\nfunction SaltFile_Load( filepath ){\n\tvar _return = [1,null];\n\t' +
+      "const FUNCTION_NAME = 'SaltFile_Load';\n\t//Variables\n\n\t" +
+      'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: ' +
+      "FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+      "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+      'if(filepath == undefined) filepath = null;\n\t\n\t//Function\n\n\t//Return\n\t' +
+      'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: ' +
+      "FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+      "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+    [length]: 2
+  ],
+  [length]: 3
+]
+2019-06-18T04:24:31.267Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [
+  0,
+  '/**\n* @fn SaltFile_Load\n* @brief Loads the salt file at the given path a ' +
+    'returns it as a buffer.\n* @param filepath\n*\t@type String\n*\t@brief The ' +
+    'filepath to load the salt buffer from.\n*\t@default null\n* @return <ARRAY>\n' +
+    '*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nfunction SaltFile_Load( filepath ' +
+    "){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'SaltFile_Load';\n\t" +
+    '//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+    "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(filepath == undefined) filepath = null;\n\t\n\t//Function\n\n\t//Return\n\t' +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [length]: 2
+]
+2019-06-18T04:24:31.267Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: [Arguments] {
+  '0': '/**\n* @fn SaltFile_Load\n* @brief Loads the salt file at the given path a ' +
+    'returns it as a buffer.\n* @param filepath\n*\t@type String\n*\t@brief The ' +
+    'filepath to load the salt buffer from.\n*\t@default null\n* @return <ARRAY>\n' +
+    '*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nfunction SaltFile_Load( filepath ' +
+    "){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'SaltFile_Load';\n\t" +
+    '//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+    "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(filepath == undefined) filepath = null;\n\t\n\t//Function\n\n\t//Return\n\t' +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  '1': { edit: 'js func', pasteboard: true },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T04:24:32.101Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-06-18T04:24:32.101Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-06-18T04:52:11.866Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-06-18T04:52:11.877Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0': '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T04:52:11.923Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [
+  0,
+  {
+    template_directories: [
+      'Resources/templates',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/templates',
+      [length]: 2
+    ],
+    defaults_directories: [
+      'Resources/defaults',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/defaults',
+      [length]: 2
+    ]
+  },
+  [length]: 2
+]
+2019-06-18T04:52:11.923Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-06-18T04:52:11.927Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { edit: 'js file', pasteboard: true }
+2019-06-18T04:52:11.928Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: [Arguments] {
+  '0': 'js file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T04:52:11.928Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T04:52:11.929Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T04:52:11.932Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/file.json": Error: ' +
+    "ENOENT: no such file or directory, open 'js/file.json'\n    at " +
+    'Object.openSync (fs.js:447:3)\n    at Object.readFileSync (fs.js:349:35)\n ' +
+    '   at Object.JSONIC_Parse_FilePath [as ParseFilePath] ' +
+    '(/Users/cameron/dev/function-factory/source/jsonic-parse.js:146:27)\n    ' +
+    'at DefaultInputDataFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:156:33)\n    at ' +
+    'DefaultInputDataFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:179:21)\n    at ' +
+    'DefaultInputDataFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:219:21)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:469:21)\n    at ' +
+    'Object.<anonymous> ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:649:14)\n    at ' +
+    'Module._compile (internal/modules/cjs/loader.js:774:30)\n    at ' +
+    'Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10) {\n ' +
+    " errno: -2,\n  syscall: 'open',\n  code: 'ENOENT',\n  path: 'js/file.json'\n" +
+    '}',
+  [length]: 2
+]
+2019-06-18T04:52:11.932Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'Resources/defaults/js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T04:52:11.957Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": ' +
+    '"Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": ' +
+    '"process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": ' +
+    'true\n}',
+  [length]: 2
+]
+2019-06-18T04:52:11.958Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [
+  0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": ' +
+    '"Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": ' +
+    '"process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": ' +
+    'true\n}',
+  [length]: 2
+]
+2019-06-18T04:52:11.958Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [
+  0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": ' +
+    '"Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": ' +
+    '"process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": ' +
+    'true\n}',
+  [length]: 2
+]
+2019-06-18T04:52:11.991Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-06-18T04:59:26.099Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: {
+  editor_input: '{\n\t"template": "js file",\n\t"filename": "salt-file.js",\n\t' +
+    '"description": "Creates, stores and retrieves salt files for ' +
+    'cryptographic modules.",\n\t"modulename": "SaltFile",\n\t' +
+    '"processname": "salt-file",\n\t"strict": true,\n\t"main": true,\n\t' +
+    '"logger": true,\n\t"cli": false\n}\n'
+}
+2019-06-18T04:59:26.101Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: [Arguments] {
+  '0': {
+    editor_input: '{\n\t"template": "js file",\n\t"filename": "salt-file.js",\n\t' +
+      '"description": "Creates, stores and retrieves salt files for ' +
+      'cryptographic modules.",\n\t"modulename": "SaltFile",\n\t' +
+      '"processname": "salt-file",\n\t"strict": true,\n\t"main": true,\n\t' +
+      '"logger": true,\n\t"cli": false\n}\n'
+  },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T04:59:26.101Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: {
+  template: 'js file',
+  filename: 'salt-file.js',
+  description: 'Creates, stores and retrieves salt files for cryptographic modules.',
+  modulename: 'SaltFile',
+  processname: 'salt-file',
+  strict: true,
+  main: true,
+  logger: true,
+  cli: false
+} undefined
+2019-06-18T04:59:26.102Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: [Arguments] {
+  '0': 'js file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T04:59:26.102Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T04:59:26.103Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T04:59:26.104Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  -3,
+  'Error: template "js/file.hbs" cannot be read: Error: ENOENT: no such ' +
+    "file or directory, access 'js/file.hbs'\n    at Object.accessSync " +
+    '(fs.js:202:3)\n    at TemplateFunctionFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:239:15)\n    at ' +
+    'TemplateFunctionFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:269:21)\n    at ' +
+    'TemplateFunctionFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:308:21)\n    at ' +
+    'OutputFromInput ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:364:23)\n    at ' +
+    'OutputFromInquirerEditorAnswer ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:401:22)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:486:22)\n    at ' +
+    'processTicksAndRejections (internal/process/task_queues.js:89:5) {\n  ' +
+    "errno: -2,\n  syscall: 'access',\n  code: 'ENOENT',\n  path: 'js/file.hbs'\n" +
+    '}',
+  [length]: 2
+]
+2019-06-18T04:59:26.104Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'Resources/templates/js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T04:59:26.179Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-18T04:59:26.179Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-18T04:59:26.180Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-18T04:59:26.227Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: [Arguments] {
+  '0': "#!/usr/local/bin/node\n'use strict';\n/**\n* @file salt-file.js\n* @brief " +
+    'Creates, stores and retrieves salt files for cryptographic modules.\n* ' +
+    '@author Anadian\n* @copyright \tCopyright 2019 Canosw\n\tPermission is hereby ' +
+    'granted, free of charge, to any person obtaining a copy of this \nsoftware ' +
+    'and associated documentation files (the "Software"), to deal in the ' +
+    'Software \nwithout restriction, including without limitation the rights to ' +
+    'use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell ' +
+    'copies of the Software, and to \npermit persons to whom the Software is ' +
+    'furnished to do so, subject to the following \nconditions:\n\tThe above ' +
+    'copyright notice and this permission notice shall be included in all ' +
+    'copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS ' +
+    'PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \n' +
+    'INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS ' +
+    'FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE ' +
+    'AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER ' +
+    'LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING ' +
+    'FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER ' +
+    'DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\t' +
+    "const Utility = require('util');\n\t//External\n\n//Constants\nconst FILENAME " +
+    "= 'salt-file.js';\nconst MODULE_NAME = 'SaltFile';\nvar PROCESS_NAME = '';\n" +
+    "if(require.main === module){\n\tPROCESS_NAME = 'salt-file';\n} else{\n\t" +
+    'PROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: ' +
+    '() => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\t' +
+    "var _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n" +
+    '\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) ' +
+    "=== 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t" +
+    "\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param " +
+    `"logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\t` +
+    'Logger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n' +
+    '//Exports and Execution\nif(require.main === module){\n\tvar _return = ' +
+    "[1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n" +
+    '\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = ' +
+    "require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = " +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( " +
+    'PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\t' +
+    'try{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\t' +
+    "console.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Config\n\t//Main\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: 'End of execution " +
+    "block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n",
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T04:59:26.227Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2019-06-18T04:59:26.228Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [
+  0,
+  "#!/usr/local/bin/node\n'use strict';\n/**\n* @file salt-file.js\n* @brief " +
+    'Creates, stores and retrieves salt files for cryptographic modules.\n* ' +
+    '@author Anadian\n* @copyright \tCopyright 2019 Canosw\n\tPermission is hereby ' +
+    'granted, free of charge, to any person obtaining a copy of this \nsoftware ' +
+    'and associated documentation files (the "Software"), to deal in the ' +
+    'Software \nwithout restriction, including without limitation the rights to ' +
+    'use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell ' +
+    'copies of the Software, and to \npermit persons to whom the Software is ' +
+    'furnished to do so, subject to the following \nconditions:\n\tThe above ' +
+    'copyright notice and this permission notice shall be included in all ' +
+    'copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS ' +
+    'PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \n' +
+    'INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS ' +
+    'FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE ' +
+    'AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER ' +
+    'LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING ' +
+    'FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER ' +
+    'DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\t' +
+    "const Utility = require('util');\n\t//External\n\n//Constants\nconst FILENAME " +
+    "= 'salt-file.js';\nconst MODULE_NAME = 'SaltFile';\nvar PROCESS_NAME = '';\n" +
+    "if(require.main === module){\n\tPROCESS_NAME = 'salt-file';\n} else{\n\t" +
+    'PROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: ' +
+    '() => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\t' +
+    "var _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n" +
+    '\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) ' +
+    "=== 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t" +
+    "\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param " +
+    `"logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\t` +
+    'Logger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n' +
+    '//Exports and Execution\nif(require.main === module){\n\tvar _return = ' +
+    "[1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n" +
+    '\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = ' +
+    "require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = " +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( " +
+    'PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\t' +
+    'try{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\t' +
+    "console.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Config\n\t//Main\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: 'End of execution " +
+    "block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n",
+  [length]: 2
+]
+2019-06-18T04:59:26.231Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [
+  0,
+  "#!/usr/local/bin/node\n'use strict';\n/**\n* @file salt-file.js\n* @brief " +
+    'Creates, stores and retrieves salt files for cryptographic modules.\n* ' +
+    '@author Anadian\n* @copyright \tCopyright 2019 Canosw\n\tPermission is hereby ' +
+    'granted, free of charge, to any person obtaining a copy of this \nsoftware ' +
+    'and associated documentation files (the "Software"), to deal in the ' +
+    'Software \nwithout restriction, including without limitation the rights to ' +
+    'use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell ' +
+    'copies of the Software, and to \npermit persons to whom the Software is ' +
+    'furnished to do so, subject to the following \nconditions:\n\tThe above ' +
+    'copyright notice and this permission notice shall be included in all ' +
+    'copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS ' +
+    'PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \n' +
+    'INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS ' +
+    'FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE ' +
+    'AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER ' +
+    'LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING ' +
+    'FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER ' +
+    'DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\t' +
+    "const Utility = require('util');\n\t//External\n\n//Constants\nconst FILENAME " +
+    "= 'salt-file.js';\nconst MODULE_NAME = 'SaltFile';\nvar PROCESS_NAME = '';\n" +
+    "if(require.main === module){\n\tPROCESS_NAME = 'salt-file';\n} else{\n\t" +
+    'PROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: ' +
+    '() => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\t' +
+    "var _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n" +
+    '\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) ' +
+    "=== 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t" +
+    "\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param " +
+    `"logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\t` +
+    'Logger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n' +
+    '//Exports and Execution\nif(require.main === module){\n\tvar _return = ' +
+    "[1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n" +
+    '\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = ' +
+    "require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = " +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( " +
+    'PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\t' +
+    'try{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\t' +
+    "console.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Config\n\t//Main\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: 'End of execution " +
+    "block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n",
+  [
+    0,
+    "#!/usr/local/bin/node\n'use strict';\n/**\n* @file salt-file.js\n* @brief " +
+      'Creates, stores and retrieves salt files for cryptographic modules.\n* ' +
+      '@author Anadian\n* @copyright \tCopyright 2019 Canosw\n\tPermission is ' +
+      'hereby granted, free of charge, to any person obtaining a copy of this \n' +
+      'software and associated documentation files (the "Software"), to deal ' +
+      'in the Software \nwithout restriction, including without limitation the ' +
+      'rights to use, copy, modify, \nmerge, publish, distribute, sublicense, ' +
+      'and/or sell copies of the Software, and to \npermit persons to whom the ' +
+      'Software is furnished to do so, subject to the following \nconditions:\n\t' +
+      'The above copyright notice and this permission notice shall be included ' +
+      'in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE ' +
+      'IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \n' +
+      'INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS ' +
+      'FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE ' +
+      'AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER ' +
+      'LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ' +
+      'ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR ' +
+      'OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+      "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+      "const FILENAME = 'salt-file.js';\nconst MODULE_NAME = 'SaltFile';\nvar " +
+      "PROCESS_NAME = '';\nif(require.main === module){\n\tPROCESS_NAME = " +
+      "'salt-file';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global " +
+      'Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n' +
+      '//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\t' +
+      "const FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar function_return = " +
+      "[1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === 'object' ){\n\t\t" +
+      'if( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn ' +
+      `null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param "logger" ` +
+      "is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger " +
+      '= logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n' +
+      '//Exports and Execution\nif(require.main === module){\n\tvar _return = ' +
+      "[1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t" +
+      '//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = ' +
+      "require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = " +
+      "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+      "require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( " +
+      'PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n' +
+      '\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\t' +
+      "console.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = " +
+      "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+      'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+      'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+      "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+      "message: 'Start of execution block.'});\n\t//Config\n\t//Main\n\t" +
+      'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+      "function: FUNCTION_NAME, level: 'debug', message: 'End of execution " +
+      "block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n",
+    [length]: 2
+  ],
+  [length]: 3
+]
+2019-06-18T04:59:26.232Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [
+  0,
+  "#!/usr/local/bin/node\n'use strict';\n/**\n* @file salt-file.js\n* @brief " +
+    'Creates, stores and retrieves salt files for cryptographic modules.\n* ' +
+    '@author Anadian\n* @copyright \tCopyright 2019 Canosw\n\tPermission is hereby ' +
+    'granted, free of charge, to any person obtaining a copy of this \nsoftware ' +
+    'and associated documentation files (the "Software"), to deal in the ' +
+    'Software \nwithout restriction, including without limitation the rights to ' +
+    'use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell ' +
+    'copies of the Software, and to \npermit persons to whom the Software is ' +
+    'furnished to do so, subject to the following \nconditions:\n\tThe above ' +
+    'copyright notice and this permission notice shall be included in all ' +
+    'copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS ' +
+    'PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \n' +
+    'INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS ' +
+    'FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE ' +
+    'AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER ' +
+    'LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING ' +
+    'FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER ' +
+    'DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\t' +
+    "const Utility = require('util');\n\t//External\n\n//Constants\nconst FILENAME " +
+    "= 'salt-file.js';\nconst MODULE_NAME = 'SaltFile';\nvar PROCESS_NAME = '';\n" +
+    "if(require.main === module){\n\tPROCESS_NAME = 'salt-file';\n} else{\n\t" +
+    'PROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: ' +
+    '() => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\t' +
+    "var _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n" +
+    '\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) ' +
+    "=== 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t" +
+    "\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param " +
+    `"logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\t` +
+    'Logger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n' +
+    '//Exports and Execution\nif(require.main === module){\n\tvar _return = ' +
+    "[1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n" +
+    '\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = ' +
+    "require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = " +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( " +
+    'PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\t' +
+    'try{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\t' +
+    "console.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Config\n\t//Main\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: 'End of execution " +
+    "block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n",
+  [length]: 2
+]
+2019-06-18T04:59:26.233Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: [Arguments] {
+  '0': "#!/usr/local/bin/node\n'use strict';\n/**\n* @file salt-file.js\n* @brief " +
+    'Creates, stores and retrieves salt files for cryptographic modules.\n* ' +
+    '@author Anadian\n* @copyright \tCopyright 2019 Canosw\n\tPermission is hereby ' +
+    'granted, free of charge, to any person obtaining a copy of this \nsoftware ' +
+    'and associated documentation files (the "Software"), to deal in the ' +
+    'Software \nwithout restriction, including without limitation the rights to ' +
+    'use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell ' +
+    'copies of the Software, and to \npermit persons to whom the Software is ' +
+    'furnished to do so, subject to the following \nconditions:\n\tThe above ' +
+    'copyright notice and this permission notice shall be included in all ' +
+    'copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS ' +
+    'PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \n' +
+    'INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS ' +
+    'FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE ' +
+    'AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER ' +
+    'LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING ' +
+    'FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER ' +
+    'DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\t' +
+    "const Utility = require('util');\n\t//External\n\n//Constants\nconst FILENAME " +
+    "= 'salt-file.js';\nconst MODULE_NAME = 'SaltFile';\nvar PROCESS_NAME = '';\n" +
+    "if(require.main === module){\n\tPROCESS_NAME = 'salt-file';\n} else{\n\t" +
+    'PROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: ' +
+    '() => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\t' +
+    "var _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n" +
+    '\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) ' +
+    "=== 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t" +
+    "\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param " +
+    `"logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\t` +
+    'Logger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n' +
+    '//Exports and Execution\nif(require.main === module){\n\tvar _return = ' +
+    "[1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n" +
+    '\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = ' +
+    "require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = " +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( " +
+    'PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\t' +
+    'try{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\t' +
+    "console.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Config\n\t//Main\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: 'End of execution " +
+    "block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n",
+  '1': { edit: 'js file', pasteboard: true },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-18T04:59:26.839Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-06-18T04:59:26.839Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
