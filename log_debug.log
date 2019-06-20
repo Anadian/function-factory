@@ -14579,3 +14579,842 @@
 }
 2019-06-18T04:59:26.839Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
 2019-06-18T04:59:26.839Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-06-19T05:24:08.940Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-06-19T05:24:08.997Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0': '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-19T05:24:09.108Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [
+  0,
+  {
+    template_directories: [
+      'Resources/templates',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/templates',
+      [length]: 2
+    ],
+    defaults_directories: [
+      'Resources/defaults',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/defaults',
+      [length]: 2
+    ]
+  },
+  [length]: 2
+]
+2019-06-19T05:24:09.108Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-06-19T05:24:09.140Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { edit: 'js func', pasteboard: true }
+2019-06-19T05:24:09.141Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-19T05:24:09.142Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-19T05:24:09.142Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-19T05:24:09.218Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ' +
+    "ENOENT: no such file or directory, open 'js/func.json'\n    at " +
+    'Object.openSync (fs.js:447:3)\n    at Object.readFileSync (fs.js:349:35)\n ' +
+    '   at Object.JSONIC_Parse_FilePath [as ParseFilePath] ' +
+    '(/Users/cameron/dev/function-factory/source/jsonic-parse.js:146:27)\n    ' +
+    'at DefaultInputDataFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:156:33)\n    at ' +
+    'DefaultInputDataFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:179:21)\n    at ' +
+    'DefaultInputDataFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:219:21)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:469:21)\n    at ' +
+    'Object.<anonymous> ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:649:14)\n    at ' +
+    'Module._compile (internal/modules/cjs/loader.js:774:30)\n    at ' +
+    'Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10) {\n ' +
+    " errno: -2,\n  syscall: 'open',\n  code: 'ENOENT',\n  path: 'js/func.json'\n" +
+    '}',
+  [length]: 2
+]
+2019-06-19T05:24:09.218Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-19T05:24:09.233Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-06-19T05:24:09.233Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-06-19T05:24:09.233Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-06-19T05:24:09.261Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-06-19T05:30:44.112Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: {
+  editor_input: '{\n\t"template": "js func",\n\t"name": "EncryptFile",\n\t"description": ' +
+    '"Encrypts the given file with the given secret key and writes the ' +
+    'encrypted file to the given target directory.",\n\t"params": [\n\t\t{\n\t\t\t' +
+    '"type": "SecretKey:Object",\n\t\t\t"name": "secret_key",\n\t\t\t"default": "null",\n' +
+    '\t\t\t"description": "The secret key to generate the cipher with."\n\t\t},\n\t\t{\n\t\t' +
+    '\t"type": "String",\n\t\t\t"name": "input_filepath",\n\t\t\t"default": "null",\n\t\t\t' +
+    '"description": "The file to be encrypted."\n\t\t},\n\t\t{\n\t\t\t"type": "String",\n\t\t' +
+    '\t"name": "output_directory",\n\t\t\t"default": "null",\n\t\t\t"description": "The ' +
+    'directory the encrypted file will be stored."\n\t\t}\n\t],\n\t"asynchronous": ' +
+    'false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t' +
+    '"flags": "gm"\n\t\t}\n\t]\n}\n'
+}
+2019-06-19T05:30:44.113Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: [Arguments] {
+  '0': {
+    editor_input: '{\n\t"template": "js func",\n\t"name": "EncryptFile",\n\t"description": ' +
+      '"Encrypts the given file with the given secret key and writes the ' +
+      'encrypted file to the given target directory.",\n\t"params": [\n\t\t{\n\t\t\t' +
+      '"type": "SecretKey:Object",\n\t\t\t"name": "secret_key",\n\t\t\t"default": ' +
+      '"null",\n\t\t\t"description": "The secret key to generate the cipher ' +
+      'with."\n\t\t},\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": "input_filepath",\n\t\t' +
+      '\t"default": "null",\n\t\t\t"description": "The file to be encrypted."\n\t\t' +
+      '},\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": "output_directory",\n\t\t\t' +
+      '"default": "null",\n\t\t\t"description": "The directory the encrypted ' +
+      'file will be stored."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n' +
+      '\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t' +
+      ']\n}\n'
+  },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-19T05:30:44.114Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: {
+  template: 'js func',
+  name: 'EncryptFile',
+  description: 'Encrypts the given file with the given secret key and ' +
+    'writes the encrypted file to the given target ' +
+    'directory.',
+  params: [
+    {
+      type: 'SecretKey:Object',
+      name: 'secret_key',
+      default: 'null',
+      description: 'The secret key to generate the cipher with.'
+    },
+    {
+      type: 'String',
+      name: 'input_filepath',
+      default: 'null',
+      description: 'The file to be encrypted.'
+    },
+    {
+      type: 'String',
+      name: 'output_directory',
+      default: 'null',
+      description: 'The directory the encrypted file will be stored.'
+    },
+    [length]: 3
+  ],
+  asynchronous: false,
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ]
+} undefined
+2019-06-19T05:30:44.115Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-19T05:30:44.115Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-19T05:30:44.116Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-19T05:30:44.116Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  -3,
+  'Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such ' +
+    "file or directory, access 'js/func.hbs'\n    at Object.accessSync " +
+    '(fs.js:202:3)\n    at TemplateFunctionFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:239:15)\n    at ' +
+    'TemplateFunctionFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:269:21)\n    at ' +
+    'TemplateFunctionFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:308:21)\n    at ' +
+    'OutputFromInput ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:364:23)\n    at ' +
+    'OutputFromInquirerEditorAnswer ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:401:22)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:486:22)\n    at ' +
+    'processTicksAndRejections (internal/process/task_queues.js:89:5) {\n  ' +
+    "errno: -2,\n  syscall: 'access',\n  code: 'ENOENT',\n  path: 'js/func.hbs'\n" +
+    '}',
+  [length]: 2
+]
+2019-06-19T05:30:44.117Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-19T05:30:44.199Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-19T05:30:44.199Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-19T05:30:44.200Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-19T05:30:44.237Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: [Arguments] {
+  '0': '/**\n* @fn EncryptFile\n* @brief Encrypts the given file with the given ' +
+    'secret key and writes the encrypted file to the given target directory.\n' +
+    '* @param secret_key\n*\t@type SecretKey:Object\n*\t@brief The secret key to ' +
+    'generate the cipher with.\n*\t@default null\n* @param input_filepath\n*\t' +
+    '@type String\n*\t@brief The file to be encrypted.\n*\t@default null\n* @param ' +
+    'output_directory\n*\t@type String\n*\t@brief The directory the encrypted ' +
+    'file will be stored.\n*\t@default null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t' +
+    '@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on ' +
+    'failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval ' +
+    '<error_message> on failure.\n*/\nfunction EncryptFile( secret_key, ' +
+    'input_filepath, output_directory,){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'EncryptFile';\n\t//Variables\n\n\tLogger.log({process: " +
+    'PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: ' +
+    "FUNCTION_NAME, level: 'debug', message: Utility.format('received: ', " +
+    'arguments)});\n\t//Parametre checks\n\tif(secret_key == undefined) ' +
+    'secret_key = null;\n\tif(input_filepath == undefined) input_filepath = ' +
+    'null;\n\tif(output_directory == undefined) output_directory = null;\n\t\n\t' +
+    '//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-19T05:30:44.237Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [
+  0,
+  '/**\n* @fn EncryptFile\n* @brief Encrypts the given file with the given ' +
+    'secret key and writes the encrypted file to the given target directory.\n' +
+    '* @param secret_key\n*\t@type SecretKey:Object\n*\t@brief The secret key to ' +
+    'generate the cipher with.\n*\t@default null\n* @param input_filepath\n*\t' +
+    '@type String\n*\t@brief The file to be encrypted.\n*\t@default null\n* @param ' +
+    'output_directory\n*\t@type String\n*\t@brief The directory the encrypted ' +
+    'file will be stored.\n*\t@default null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t' +
+    '@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on ' +
+    'failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval ' +
+    '<error_message> on failure.\n*/\nfunction EncryptFile( secret_key, ' +
+    'input_filepath, output_directory ){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'EncryptFile';\n\t//Variables\n\n\tLogger.log({process: " +
+    'PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: ' +
+    "FUNCTION_NAME, level: 'debug', message: Utility.format('received: ', " +
+    'arguments)});\n\t//Parametre checks\n\tif(secret_key == undefined) ' +
+    'secret_key = null;\n\tif(input_filepath == undefined) input_filepath = ' +
+    'null;\n\tif(output_directory == undefined) output_directory = null;\n\t\n\t' +
+    '//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [length]: 2
+]
+2019-06-19T05:30:44.238Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [
+  0,
+  '/**\n* @fn EncryptFile\n* @brief Encrypts the given file with the given ' +
+    'secret key and writes the encrypted file to the given target directory.\n' +
+    '* @param secret_key\n*\t@type SecretKey:Object\n*\t@brief The secret key to ' +
+    'generate the cipher with.\n*\t@default null\n* @param input_filepath\n*\t' +
+    '@type String\n*\t@brief The file to be encrypted.\n*\t@default null\n* @param ' +
+    'output_directory\n*\t@type String\n*\t@brief The directory the encrypted ' +
+    'file will be stored.\n*\t@default null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t' +
+    '@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on ' +
+    'failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval ' +
+    '<error_message> on failure.\n*/\nfunction EncryptFile( secret_key, ' +
+    'input_filepath, output_directory ){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'EncryptFile';\n\t//Variables\n\n\tLogger.log({process: " +
+    'PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: ' +
+    "FUNCTION_NAME, level: 'debug', message: Utility.format('received: ', " +
+    'arguments)});\n\t//Parametre checks\n\tif(secret_key == undefined) ' +
+    'secret_key = null;\n\tif(input_filepath == undefined) input_filepath = ' +
+    'null;\n\tif(output_directory == undefined) output_directory = null;\n\t\n\t' +
+    '//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [
+    0,
+    '/**\n* @fn EncryptFile\n* @brief Encrypts the given file with the given ' +
+      'secret key and writes the encrypted file to the given target directory.\n' +
+      '* @param secret_key\n*\t@type SecretKey:Object\n*\t@brief The secret key to ' +
+      'generate the cipher with.\n*\t@default null\n* @param input_filepath\n*\t' +
+      '@type String\n*\t@brief The file to be encrypted.\n*\t@default null\n* @param ' +
+      'output_directory\n*\t@type String\n*\t@brief The directory the encrypted ' +
+      'file will be stored.\n*\t@default null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t' +
+      '@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on ' +
+      'failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval ' +
+      '<error_message> on failure.\n*/\nfunction EncryptFile( secret_key, ' +
+      'input_filepath, output_directory ){\n\tvar _return = [1,null];\n\tconst ' +
+      "FUNCTION_NAME = 'EncryptFile';\n\t//Variables\n\n\tLogger.log({process: " +
+      'PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: ' +
+      "FUNCTION_NAME, level: 'debug', message: Utility.format('received: ', " +
+      'arguments)});\n\t//Parametre checks\n\tif(secret_key == undefined) ' +
+      'secret_key = null;\n\tif(input_filepath == undefined) input_filepath = ' +
+      'null;\n\tif(output_directory == undefined) output_directory = null;\n\t\n\t' +
+      '//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: ' +
+      "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+      "message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+    [length]: 2
+  ],
+  [length]: 3
+]
+2019-06-19T05:30:44.238Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [
+  0,
+  '/**\n* @fn EncryptFile\n* @brief Encrypts the given file with the given ' +
+    'secret key and writes the encrypted file to the given target directory.\n' +
+    '* @param secret_key\n*\t@type SecretKey:Object\n*\t@brief The secret key to ' +
+    'generate the cipher with.\n*\t@default null\n* @param input_filepath\n*\t' +
+    '@type String\n*\t@brief The file to be encrypted.\n*\t@default null\n* @param ' +
+    'output_directory\n*\t@type String\n*\t@brief The directory the encrypted ' +
+    'file will be stored.\n*\t@default null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t' +
+    '@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on ' +
+    'failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval ' +
+    '<error_message> on failure.\n*/\nfunction EncryptFile( secret_key, ' +
+    'input_filepath, output_directory ){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'EncryptFile';\n\t//Variables\n\n\tLogger.log({process: " +
+    'PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: ' +
+    "FUNCTION_NAME, level: 'debug', message: Utility.format('received: ', " +
+    'arguments)});\n\t//Parametre checks\n\tif(secret_key == undefined) ' +
+    'secret_key = null;\n\tif(input_filepath == undefined) input_filepath = ' +
+    'null;\n\tif(output_directory == undefined) output_directory = null;\n\t\n\t' +
+    '//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [length]: 2
+]
+2019-06-19T05:30:44.240Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: [Arguments] {
+  '0': '/**\n* @fn EncryptFile\n* @brief Encrypts the given file with the given ' +
+    'secret key and writes the encrypted file to the given target directory.\n' +
+    '* @param secret_key\n*\t@type SecretKey:Object\n*\t@brief The secret key to ' +
+    'generate the cipher with.\n*\t@default null\n* @param input_filepath\n*\t' +
+    '@type String\n*\t@brief The file to be encrypted.\n*\t@default null\n* @param ' +
+    'output_directory\n*\t@type String\n*\t@brief The directory the encrypted ' +
+    'file will be stored.\n*\t@default null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t' +
+    '@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on ' +
+    'failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval ' +
+    '<error_message> on failure.\n*/\nfunction EncryptFile( secret_key, ' +
+    'input_filepath, output_directory ){\n\tvar _return = [1,null];\n\tconst ' +
+    "FUNCTION_NAME = 'EncryptFile';\n\t//Variables\n\n\tLogger.log({process: " +
+    'PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: ' +
+    "FUNCTION_NAME, level: 'debug', message: Utility.format('received: ', " +
+    'arguments)});\n\t//Parametre checks\n\tif(secret_key == undefined) ' +
+    'secret_key = null;\n\tif(input_filepath == undefined) input_filepath = ' +
+    'null;\n\tif(output_directory == undefined) output_directory = null;\n\t\n\t' +
+    '//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  '1': { edit: 'js func', pasteboard: true },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-19T05:30:45.720Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-06-19T05:30:45.720Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-06-19T20:57:34.277Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-06-19T20:57:34.325Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0': '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-19T20:57:34.426Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [
+  0,
+  {
+    template_directories: [
+      'Resources/templates',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/templates',
+      [length]: 2
+    ],
+    defaults_directories: [
+      'Resources/defaults',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/defaults',
+      [length]: 2
+    ]
+  },
+  [length]: 2
+]
+2019-06-19T20:57:34.426Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-06-19T20:57:34.451Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { edit: 'js func', pasteboard: true }
+2019-06-19T20:57:34.452Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-19T20:57:34.452Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-19T20:57:34.453Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-19T20:57:34.514Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ' +
+    "ENOENT: no such file or directory, open 'js/func.json'\n    at " +
+    'Object.openSync (fs.js:447:3)\n    at Object.readFileSync (fs.js:349:35)\n ' +
+    '   at Object.JSONIC_Parse_FilePath [as ParseFilePath] ' +
+    '(/Users/cameron/dev/function-factory/source/jsonic-parse.js:146:27)\n    ' +
+    'at DefaultInputDataFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:156:33)\n    at ' +
+    'DefaultInputDataFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:179:21)\n    at ' +
+    'DefaultInputDataFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:219:21)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:469:21)\n    at ' +
+    'Object.<anonymous> ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:649:14)\n    at ' +
+    'Module._compile (internal/modules/cjs/loader.js:774:30)\n    at ' +
+    'Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10) {\n ' +
+    " errno: -2,\n  syscall: 'open',\n  code: 'ENOENT',\n  path: 'js/func.json'\n" +
+    '}',
+  [length]: 2
+]
+2019-06-19T20:57:34.515Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-19T20:57:34.557Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-06-19T20:57:34.557Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-06-19T20:57:34.558Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-06-19T20:57:34.645Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-06-19T21:04:07.438Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: {
+  editor_input: '{\n\t"template": "js func",\n\t"name": "EncryptDirectory",\n\t' +
+    '"description": "Encrypts the given input directory with the given ' +
+    'secret key.",\n\t"params": [\n\t\t{\n\t\t\t"type": "SecretKeyObject:Object",\n\t\t' +
+    '\t"name": "secret_keyobject",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"The secret keyobject to be used for the encryption."\n\t\t},\n\t\t{\n\t\t\t' +
+    '"type": "String",\n\t\t\t"name": "input_directory",\n\t\t\t"default": ' +
+    `"'unenc'",\n\t\t\t"description": "The directory to be read and ` +
+    'encrypted."\n\t\t},\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": ' +
+    `"output_directory",\n\t\t\t"default": "'enc'",\n\t\t\t"description": "The ` +
+    'directory the encrypted files will be written to."\n\t\t},\n\t\t{\n\t\t\t' +
+    '"type": "Boolean",\n\t\t\t"name": "recursive",\n\t\t\t"default": "false",\n\t\t\t' +
+    '"description": "Whether to recursive encrypt any sub-directories ' +
+    'encountered."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t' +
+    '"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n'
+}
+2019-06-19T21:04:07.439Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: [Arguments] {
+  '0': {
+    editor_input: '{\n\t"template": "js func",\n\t"name": "EncryptDirectory",\n\t' +
+      '"description": "Encrypts the given input directory with the given ' +
+      'secret key.",\n\t"params": [\n\t\t{\n\t\t\t"type": "SecretKeyObject:Object",\n\t\t' +
+      '\t"name": "secret_keyobject",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+      '"The secret keyobject to be used for the encryption."\n\t\t},\n\t\t{\n\t\t\t' +
+      '"type": "String",\n\t\t\t"name": "input_directory",\n\t\t\t"default": ' +
+      `"'unenc'",\n\t\t\t"description": "The directory to be read and ` +
+      'encrypted."\n\t\t},\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": ' +
+      `"output_directory",\n\t\t\t"default": "'enc'",\n\t\t\t"description": "The ` +
+      'directory the encrypted files will be written to."\n\t\t},\n\t\t{\n\t\t\t' +
+      '"type": "Boolean",\n\t\t\t"name": "recursive",\n\t\t\t"default": "false",\n\t\t\t' +
+      '"description": "Whether to recursive encrypt any sub-directories ' +
+      'encountered."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t' +
+      '"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n'
+  },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-19T21:04:07.440Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: {
+  template: 'js func',
+  name: 'EncryptDirectory',
+  description: 'Encrypts the given input directory with the given secret key.',
+  params: [
+    {
+      type: 'SecretKeyObject:Object',
+      name: 'secret_keyobject',
+      default: 'null',
+      description: 'The secret keyobject to be used for the encryption.'
+    },
+    {
+      type: 'String',
+      name: 'input_directory',
+      default: "'unenc'",
+      description: 'The directory to be read and encrypted.'
+    },
+    {
+      type: 'String',
+      name: 'output_directory',
+      default: "'enc'",
+      description: 'The directory the encrypted files will be written to.'
+    },
+    {
+      type: 'Boolean',
+      name: 'recursive',
+      default: 'false',
+      description: 'Whether to recursive encrypt any sub-directories encountered.'
+    },
+    [length]: 4
+  ],
+  asynchronous: false,
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ]
+} undefined
+2019-06-19T21:04:07.441Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-19T21:04:07.442Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-19T21:04:07.442Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-19T21:04:07.443Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  -3,
+  'Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such ' +
+    "file or directory, access 'js/func.hbs'\n    at Object.accessSync " +
+    '(fs.js:202:3)\n    at TemplateFunctionFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:239:15)\n    at ' +
+    'TemplateFunctionFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:269:21)\n    at ' +
+    'TemplateFunctionFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:308:21)\n    at ' +
+    'OutputFromInput ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:364:23)\n    at ' +
+    'OutputFromInquirerEditorAnswer ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:401:22)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:486:22)\n    at ' +
+    'processTicksAndRejections (internal/process/task_queues.js:89:5) {\n  ' +
+    "errno: -2,\n  syscall: 'access',\n  code: 'ENOENT',\n  path: 'js/func.hbs'\n" +
+    '}',
+  [length]: 2
+]
+2019-06-19T21:04:07.443Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-19T21:04:07.523Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-19T21:04:07.524Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-19T21:04:07.524Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-19T21:04:07.565Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: [Arguments] {
+  '0': '/**\n* @fn EncryptDirectory\n* @brief Encrypts the given input directory ' +
+    'with the given secret key.\n* @param secret_keyobject\n*\t@type ' +
+    'SecretKeyObject:Object\n*\t@brief The secret keyobject to be used for the ' +
+    'encryption.\n*\t@default null\n* @param input_directory\n*\t@type String\n*\t' +
+    "@brief The directory to be read and encrypted.\n*\t@default 'unenc'\n* " +
+    '@param output_directory\n*\t@type String\n*\t@brief The directory the ' +
+    "encrypted files will be written to.\n*\t@default 'enc'\n* @param recursive\n" +
+    '*\t@type Boolean\n*\t@brief Whether to recursive encrypt any ' +
+    'sub-directories encountered.\n*\t@default false\n* @return <ARRAY>\n*\t@entry ' +
+    '0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 ' +
+    'on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval ' +
+    '<error_message> on failure.\n*/\nfunction EncryptDirectory( ' +
+    'secret_keyobject, input_directory, output_directory, recursive,){\n\tvar ' +
+    "_return = [1,null];\n\tconst FUNCTION_NAME = 'EncryptDirectory';\n\t" +
+    '//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+    "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(secret_keyobject == undefined) secret_keyobject = null;\n\t' +
+    "if(input_directory == undefined) input_directory = 'unenc';\n\t" +
+    "if(output_directory == undefined) output_directory = 'enc';\n\t" +
+    'if(recursive == undefined) recursive = false;\n\t\n\t//Function\n\n\t//Return\n\t' +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-19T21:04:07.566Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [
+  0,
+  '/**\n* @fn EncryptDirectory\n* @brief Encrypts the given input directory ' +
+    'with the given secret key.\n* @param secret_keyobject\n*\t@type ' +
+    'SecretKeyObject:Object\n*\t@brief The secret keyobject to be used for the ' +
+    'encryption.\n*\t@default null\n* @param input_directory\n*\t@type String\n*\t' +
+    "@brief The directory to be read and encrypted.\n*\t@default 'unenc'\n* " +
+    '@param output_directory\n*\t@type String\n*\t@brief The directory the ' +
+    "encrypted files will be written to.\n*\t@default 'enc'\n* @param recursive\n" +
+    '*\t@type Boolean\n*\t@brief Whether to recursive encrypt any ' +
+    'sub-directories encountered.\n*\t@default false\n* @return <ARRAY>\n*\t@entry ' +
+    '0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 ' +
+    'on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval ' +
+    '<error_message> on failure.\n*/\nfunction EncryptDirectory( ' +
+    'secret_keyobject, input_directory, output_directory, recursive ){\n\tvar ' +
+    "_return = [1,null];\n\tconst FUNCTION_NAME = 'EncryptDirectory';\n\t" +
+    '//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+    "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(secret_keyobject == undefined) secret_keyobject = null;\n\t' +
+    "if(input_directory == undefined) input_directory = 'unenc';\n\t" +
+    "if(output_directory == undefined) output_directory = 'enc';\n\t" +
+    'if(recursive == undefined) recursive = false;\n\t\n\t//Function\n\n\t//Return\n\t' +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [length]: 2
+]
+2019-06-19T21:04:07.567Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [
+  0,
+  '/**\n* @fn EncryptDirectory\n* @brief Encrypts the given input directory ' +
+    'with the given secret key.\n* @param secret_keyobject\n*\t@type ' +
+    'SecretKeyObject:Object\n*\t@brief The secret keyobject to be used for the ' +
+    'encryption.\n*\t@default null\n* @param input_directory\n*\t@type String\n*\t' +
+    "@brief The directory to be read and encrypted.\n*\t@default 'unenc'\n* " +
+    '@param output_directory\n*\t@type String\n*\t@brief The directory the ' +
+    "encrypted files will be written to.\n*\t@default 'enc'\n* @param recursive\n" +
+    '*\t@type Boolean\n*\t@brief Whether to recursive encrypt any ' +
+    'sub-directories encountered.\n*\t@default false\n* @return <ARRAY>\n*\t@entry ' +
+    '0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 ' +
+    'on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval ' +
+    '<error_message> on failure.\n*/\nfunction EncryptDirectory( ' +
+    'secret_keyobject, input_directory, output_directory, recursive ){\n\tvar ' +
+    "_return = [1,null];\n\tconst FUNCTION_NAME = 'EncryptDirectory';\n\t" +
+    '//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+    "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(secret_keyobject == undefined) secret_keyobject = null;\n\t' +
+    "if(input_directory == undefined) input_directory = 'unenc';\n\t" +
+    "if(output_directory == undefined) output_directory = 'enc';\n\t" +
+    'if(recursive == undefined) recursive = false;\n\t\n\t//Function\n\n\t//Return\n\t' +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [
+    0,
+    '/**\n* @fn EncryptDirectory\n* @brief Encrypts the given input directory ' +
+      'with the given secret key.\n* @param secret_keyobject\n*\t@type ' +
+      'SecretKeyObject:Object\n*\t@brief The secret keyobject to be used for the ' +
+      'encryption.\n*\t@default null\n* @param input_directory\n*\t@type String\n*\t' +
+      "@brief The directory to be read and encrypted.\n*\t@default 'unenc'\n* " +
+      '@param output_directory\n*\t@type String\n*\t@brief The directory the ' +
+      "encrypted files will be written to.\n*\t@default 'enc'\n* @param recursive\n" +
+      '*\t@type Boolean\n*\t@brief Whether to recursive encrypt any ' +
+      'sub-directories encountered.\n*\t@default false\n* @return <ARRAY>\n*\t@entry ' +
+      '0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 ' +
+      'on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval ' +
+      '<error_message> on failure.\n*/\nfunction EncryptDirectory( ' +
+      'secret_keyobject, input_directory, output_directory, recursive ){\n\tvar ' +
+      "_return = [1,null];\n\tconst FUNCTION_NAME = 'EncryptDirectory';\n\t" +
+      '//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+      "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+      "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+      'if(secret_keyobject == undefined) secret_keyobject = null;\n\t' +
+      "if(input_directory == undefined) input_directory = 'unenc';\n\t" +
+      "if(output_directory == undefined) output_directory = 'enc';\n\t" +
+      'if(recursive == undefined) recursive = false;\n\t\n\t//Function\n\n\t//Return\n\t' +
+      'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+      "function: FUNCTION_NAME, level: 'debug', message: " +
+      "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+    [length]: 2
+  ],
+  [length]: 3
+]
+2019-06-19T21:04:07.569Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [
+  0,
+  '/**\n* @fn EncryptDirectory\n* @brief Encrypts the given input directory ' +
+    'with the given secret key.\n* @param secret_keyobject\n*\t@type ' +
+    'SecretKeyObject:Object\n*\t@brief The secret keyobject to be used for the ' +
+    'encryption.\n*\t@default null\n* @param input_directory\n*\t@type String\n*\t' +
+    "@brief The directory to be read and encrypted.\n*\t@default 'unenc'\n* " +
+    '@param output_directory\n*\t@type String\n*\t@brief The directory the ' +
+    "encrypted files will be written to.\n*\t@default 'enc'\n* @param recursive\n" +
+    '*\t@type Boolean\n*\t@brief Whether to recursive encrypt any ' +
+    'sub-directories encountered.\n*\t@default false\n* @return <ARRAY>\n*\t@entry ' +
+    '0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 ' +
+    'on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval ' +
+    '<error_message> on failure.\n*/\nfunction EncryptDirectory( ' +
+    'secret_keyobject, input_directory, output_directory, recursive ){\n\tvar ' +
+    "_return = [1,null];\n\tconst FUNCTION_NAME = 'EncryptDirectory';\n\t" +
+    '//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+    "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(secret_keyobject == undefined) secret_keyobject = null;\n\t' +
+    "if(input_directory == undefined) input_directory = 'unenc';\n\t" +
+    "if(output_directory == undefined) output_directory = 'enc';\n\t" +
+    'if(recursive == undefined) recursive = false;\n\t\n\t//Function\n\n\t//Return\n\t' +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [length]: 2
+]

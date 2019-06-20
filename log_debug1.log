@@ -1,0 +1,32 @@
+2019-06-19T21:04:07.570Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: [Arguments] {
+  '0': '/**\n* @fn EncryptDirectory\n* @brief Encrypts the given input directory ' +
+    'with the given secret key.\n* @param secret_keyobject\n*\t@type ' +
+    'SecretKeyObject:Object\n*\t@brief The secret keyobject to be used for the ' +
+    'encryption.\n*\t@default null\n* @param input_directory\n*\t@type String\n*\t' +
+    "@brief The directory to be read and encrypted.\n*\t@default 'unenc'\n* " +
+    '@param output_directory\n*\t@type String\n*\t@brief The directory the ' +
+    "encrypted files will be written to.\n*\t@default 'enc'\n* @param recursive\n" +
+    '*\t@type Boolean\n*\t@brief Whether to recursive encrypt any ' +
+    'sub-directories encountered.\n*\t@default false\n* @return <ARRAY>\n*\t@entry ' +
+    '0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 ' +
+    'on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval ' +
+    '<error_message> on failure.\n*/\nfunction EncryptDirectory( ' +
+    'secret_keyobject, input_directory, output_directory, recursive ){\n\tvar ' +
+    "_return = [1,null];\n\tconst FUNCTION_NAME = 'EncryptDirectory';\n\t" +
+    '//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+    "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(secret_keyobject == undefined) secret_keyobject = null;\n\t' +
+    "if(input_directory == undefined) input_directory = 'unenc';\n\t" +
+    "if(output_directory == undefined) output_directory = 'enc';\n\t" +
+    'if(recursive == undefined) recursive = false;\n\t\n\t//Function\n\n\t//Return\n\t' +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  '1': { edit: 'js func', pasteboard: true },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-19T21:04:08.971Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-06-19T21:04:08.971Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
