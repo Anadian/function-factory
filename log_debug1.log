@@ -2946,3 +2946,733 @@
 }
 2019-06-20T19:25:38.368Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
 2019-06-20T19:25:38.368Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-06-22T01:25:30.488Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-06-22T01:25:30.535Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0': '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-22T01:25:30.613Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [
+  0,
+  {
+    template_directories: [
+      'Resources/templates',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/templates',
+      [length]: 2
+    ],
+    defaults_directories: [
+      'Resources/defaults',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/defaults',
+      [length]: 2
+    ]
+  },
+  [length]: 2
+]
+2019-06-22T01:25:30.613Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-06-22T01:25:30.625Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { edit: 'js func', pasteboard: true }
+2019-06-22T01:25:30.626Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-22T01:25:30.626Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-22T01:25:30.627Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-22T01:25:30.713Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ' +
+    "ENOENT: no such file or directory, open 'js/func.json'\n    at " +
+    'Object.openSync (fs.js:447:3)\n    at Object.readFileSync (fs.js:349:35)\n ' +
+    '   at Object.JSONIC_Parse_FilePath [as ParseFilePath] ' +
+    '(/Users/cameron/dev/function-factory/source/jsonic-parse.js:146:27)\n    ' +
+    'at DefaultInputDataFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:156:33)\n    at ' +
+    'DefaultInputDataFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:179:21)\n    at ' +
+    'DefaultInputDataFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:219:21)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:469:21)\n    at ' +
+    'Object.<anonymous> ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:649:14)\n    at ' +
+    'Module._compile (internal/modules/cjs/loader.js:774:30)\n    at ' +
+    'Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10) {\n ' +
+    " errno: -2,\n  syscall: 'open',\n  code: 'ENOENT',\n  path: 'js/func.json'\n" +
+    '}',
+  [length]: 2
+]
+2019-06-22T01:25:30.714Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-22T01:25:30.755Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-06-22T01:25:30.756Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-06-22T01:25:30.756Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-06-22T01:25:30.874Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-06-22T01:27:35.287Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: {
+  editor_input: '{\n\t"template": "js func",\n\t"name": "EncNotes_CipheredObjectFromFile",\n' +
+    '\t"description": "Creates a CipheredObject from the encrypted file at ' +
+    'the given path.",\n\t"params": [\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": ' +
+    '"filepath",\n\t\t\t"default": "null",\n\t\t\t"description": "The path of the ' +
+    'encrypted file."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t' +
+    '"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n'
+}
+2019-06-22T01:27:35.287Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: [Arguments] {
+  '0': {
+    editor_input: '{\n\t"template": "js func",\n\t"name": "EncNotes_CipheredObjectFromFile",\n' +
+      '\t"description": "Creates a CipheredObject from the encrypted file at ' +
+      'the given path.",\n\t"params": [\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": ' +
+      '"filepath",\n\t\t\t"default": "null",\n\t\t\t"description": "The path of the ' +
+      'encrypted file."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t' +
+      '"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n'
+  },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-22T01:27:35.288Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: {
+  template: 'js func',
+  name: 'EncNotes_CipheredObjectFromFile',
+  description: 'Creates a CipheredObject from the encrypted file at the given path.',
+  params: [
+    {
+      type: 'String',
+      name: 'filepath',
+      default: 'null',
+      description: 'The path of the encrypted file.'
+    },
+    [length]: 1
+  ],
+  asynchronous: false,
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ]
+} undefined
+2019-06-22T01:27:35.288Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-22T01:27:35.289Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-22T01:27:35.289Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-22T01:27:35.290Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  -3,
+  'Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such ' +
+    "file or directory, access 'js/func.hbs'\n    at Object.accessSync " +
+    '(fs.js:202:3)\n    at TemplateFunctionFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:239:15)\n    at ' +
+    'TemplateFunctionFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:269:21)\n    at ' +
+    'TemplateFunctionFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:308:21)\n    at ' +
+    'OutputFromInput ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:364:23)\n    at ' +
+    'OutputFromInquirerEditorAnswer ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:401:22)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:486:22)\n    at ' +
+    'processTicksAndRejections (internal/process/task_queues.js:89:5) {\n  ' +
+    "errno: -2,\n  syscall: 'access',\n  code: 'ENOENT',\n  path: 'js/func.hbs'\n" +
+    '}',
+  [length]: 2
+]
+2019-06-22T01:27:35.290Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-22T01:27:35.519Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-22T01:27:35.520Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-22T01:27:35.520Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-22T01:27:35.558Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: [Arguments] {
+  '0': '/**\n* @fn EncNotes_CipheredObjectFromFile\n* @brief Creates a ' +
+    'CipheredObject from the encrypted file at the given path.\n* @param ' +
+    'filepath\n*\t@type String\n*\t@brief The path of the encrypted file.\n*\t' +
+    '@default null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature ' +
+    'return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t' +
+    '\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\n' +
+    'function EncNotes_CipheredObjectFromFile( filepath,){\n\tvar _return = ' +
+    "[1,null];\n\tconst FUNCTION_NAME = 'EncNotes_CipheredObjectFromFile';\n\t" +
+    '//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+    "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(filepath == undefined) filepath = null;\n\t\n\t//Function\n\n\t//Return\n\t' +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-22T01:27:35.559Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [
+  0,
+  '/**\n* @fn EncNotes_CipheredObjectFromFile\n* @brief Creates a ' +
+    'CipheredObject from the encrypted file at the given path.\n* @param ' +
+    'filepath\n*\t@type String\n*\t@brief The path of the encrypted file.\n*\t' +
+    '@default null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature ' +
+    'return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t' +
+    '\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\n' +
+    'function EncNotes_CipheredObjectFromFile( filepath ){\n\tvar _return = ' +
+    "[1,null];\n\tconst FUNCTION_NAME = 'EncNotes_CipheredObjectFromFile';\n\t" +
+    '//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+    "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(filepath == undefined) filepath = null;\n\t\n\t//Function\n\n\t//Return\n\t' +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [length]: 2
+]
+2019-06-22T01:27:35.559Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [
+  0,
+  '/**\n* @fn EncNotes_CipheredObjectFromFile\n* @brief Creates a ' +
+    'CipheredObject from the encrypted file at the given path.\n* @param ' +
+    'filepath\n*\t@type String\n*\t@brief The path of the encrypted file.\n*\t' +
+    '@default null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature ' +
+    'return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t' +
+    '\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\n' +
+    'function EncNotes_CipheredObjectFromFile( filepath ){\n\tvar _return = ' +
+    "[1,null];\n\tconst FUNCTION_NAME = 'EncNotes_CipheredObjectFromFile';\n\t" +
+    '//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+    "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(filepath == undefined) filepath = null;\n\t\n\t//Function\n\n\t//Return\n\t' +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [
+    0,
+    '/**\n* @fn EncNotes_CipheredObjectFromFile\n* @brief Creates a ' +
+      'CipheredObject from the encrypted file at the given path.\n* @param ' +
+      'filepath\n*\t@type String\n*\t@brief The path of the encrypted file.\n*\t' +
+      '@default null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature ' +
+      'return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t' +
+      '\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\n' +
+      'function EncNotes_CipheredObjectFromFile( filepath ){\n\tvar _return = ' +
+      "[1,null];\n\tconst FUNCTION_NAME = 'EncNotes_CipheredObjectFromFile';\n\t" +
+      '//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+      "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+      "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+      'if(filepath == undefined) filepath = null;\n\t\n\t//Function\n\n\t//Return\n\t' +
+      'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+      "function: FUNCTION_NAME, level: 'debug', message: " +
+      "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+    [length]: 2
+  ],
+  [length]: 3
+]
+2019-06-22T01:27:35.560Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [
+  0,
+  '/**\n* @fn EncNotes_CipheredObjectFromFile\n* @brief Creates a ' +
+    'CipheredObject from the encrypted file at the given path.\n* @param ' +
+    'filepath\n*\t@type String\n*\t@brief The path of the encrypted file.\n*\t' +
+    '@default null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature ' +
+    'return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t' +
+    '\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\n' +
+    'function EncNotes_CipheredObjectFromFile( filepath ){\n\tvar _return = ' +
+    "[1,null];\n\tconst FUNCTION_NAME = 'EncNotes_CipheredObjectFromFile';\n\t" +
+    '//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+    "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(filepath == undefined) filepath = null;\n\t\n\t//Function\n\n\t//Return\n\t' +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [length]: 2
+]
+2019-06-22T01:27:35.560Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: [Arguments] {
+  '0': '/**\n* @fn EncNotes_CipheredObjectFromFile\n* @brief Creates a ' +
+    'CipheredObject from the encrypted file at the given path.\n* @param ' +
+    'filepath\n*\t@type String\n*\t@brief The path of the encrypted file.\n*\t' +
+    '@default null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature ' +
+    'return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t' +
+    '\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\n' +
+    'function EncNotes_CipheredObjectFromFile( filepath ){\n\tvar _return = ' +
+    "[1,null];\n\tconst FUNCTION_NAME = 'EncNotes_CipheredObjectFromFile';\n\t" +
+    '//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+    "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(filepath == undefined) filepath = null;\n\t\n\t//Function\n\n\t//Return\n\t' +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  '1': { edit: 'js func', pasteboard: true },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-22T01:27:36.828Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-06-22T01:27:36.828Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-06-22T01:45:22.939Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-06-22T01:45:22.949Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0': '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-22T01:45:22.976Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [
+  0,
+  {
+    template_directories: [
+      'Resources/templates',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/templates',
+      [length]: 2
+    ],
+    defaults_directories: [
+      'Resources/defaults',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/defaults',
+      [length]: 2
+    ]
+  },
+  [length]: 2
+]
+2019-06-22T01:45:22.976Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-06-22T01:45:22.981Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { edit: 'js func', pasteboard: true }
+2019-06-22T01:45:22.981Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-22T01:45:22.982Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-22T01:45:22.982Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-22T01:45:22.985Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ' +
+    "ENOENT: no such file or directory, open 'js/func.json'\n    at " +
+    'Object.openSync (fs.js:447:3)\n    at Object.readFileSync (fs.js:349:35)\n ' +
+    '   at Object.JSONIC_Parse_FilePath [as ParseFilePath] ' +
+    '(/Users/cameron/dev/function-factory/source/jsonic-parse.js:146:27)\n    ' +
+    'at DefaultInputDataFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:156:33)\n    at ' +
+    'DefaultInputDataFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:179:21)\n    at ' +
+    'DefaultInputDataFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:219:21)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:469:21)\n    at ' +
+    'Object.<anonymous> ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:649:14)\n    at ' +
+    'Module._compile (internal/modules/cjs/loader.js:774:30)\n    at ' +
+    'Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10) {\n ' +
+    " errno: -2,\n  syscall: 'open',\n  code: 'ENOENT',\n  path: 'js/func.json'\n" +
+    '}',
+  [length]: 2
+]
+2019-06-22T01:45:22.985Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-22T01:45:23.003Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-06-22T01:45:23.010Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-06-22T01:45:23.010Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-06-22T01:45:23.063Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-06-22T01:47:01.112Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: {
+  editor_input: '{\n\t"template": "js func",\n\t"name": ' +
+    '"EncNotes_FileFromDecipheredObject",\n\t"description": "Writes a ' +
+    'DecipheredObject to a file.",\n\t"params": [\n\t\t{\n\t\t\t"type": ' +
+    '"String",\n\t\t\t"name": "filepath",\n\t\t\t"default": "null",\n\t\t\t' +
+    '"description": "The filepath to write the DecipheredObject to."\n\t\t' +
+    '}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ' +
+    '",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n'
+}
+2019-06-22T01:47:01.113Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: [Arguments] {
+  '0': {
+    editor_input: '{\n\t"template": "js func",\n\t"name": ' +
+      '"EncNotes_FileFromDecipheredObject",\n\t"description": "Writes a ' +
+      'DecipheredObject to a file.",\n\t"params": [\n\t\t{\n\t\t\t"type": ' +
+      '"String",\n\t\t\t"name": "filepath",\n\t\t\t"default": "null",\n\t\t\t' +
+      '"description": "The filepath to write the DecipheredObject to."\n\t\t' +
+      '}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ' +
+      '",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n'
+  },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-22T01:47:01.114Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: {
+  template: 'js func',
+  name: 'EncNotes_FileFromDecipheredObject',
+  description: 'Writes a DecipheredObject to a file.',
+  params: [
+    {
+      type: 'String',
+      name: 'filepath',
+      default: 'null',
+      description: 'The filepath to write the DecipheredObject to.'
+    },
+    [length]: 1
+  ],
+  asynchronous: false,
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ]
+} undefined
+2019-06-22T01:47:01.114Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-22T01:47:01.115Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-22T01:47:01.115Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-22T01:47:01.116Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  -3,
+  'Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such ' +
+    "file or directory, access 'js/func.hbs'\n    at Object.accessSync " +
+    '(fs.js:202:3)\n    at TemplateFunctionFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:239:15)\n    at ' +
+    'TemplateFunctionFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:269:21)\n    at ' +
+    'TemplateFunctionFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:308:21)\n    at ' +
+    'OutputFromInput ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:364:23)\n    at ' +
+    'OutputFromInquirerEditorAnswer ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:401:22)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:486:22)\n    at ' +
+    'processTicksAndRejections (internal/process/task_queues.js:89:5) {\n  ' +
+    "errno: -2,\n  syscall: 'access',\n  code: 'ENOENT',\n  path: 'js/func.hbs'\n" +
+    '}',
+  [length]: 2
+]
+2019-06-22T01:47:01.116Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-22T01:47:01.176Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-22T01:47:01.177Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-22T01:47:01.177Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-22T01:47:01.215Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: [Arguments] {
+  '0': '/**\n* @fn EncNotes_FileFromDecipheredObject\n* @brief Writes a ' +
+    'DecipheredObject to a file.\n* @param filepath\n*\t@type String\n*\t@brief ' +
+    'The filepath to write the DecipheredObject to.\n*\t@default null\n* ' +
+    '@return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 ' +
+    'on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on ' +
+    'success\n*\t\t@retval <error_message> on failure.\n*/\nfunction ' +
+    'EncNotes_FileFromDecipheredObject( filepath,){\n\tvar _return = [1,null];\n' +
+    "\tconst FUNCTION_NAME = 'EncNotes_FileFromDecipheredObject';\n\t" +
+    '//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+    "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(filepath == undefined) filepath = null;\n\t\n\t//Function\n\n\t//Return\n\t' +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-22T01:47:01.216Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [
+  0,
+  '/**\n* @fn EncNotes_FileFromDecipheredObject\n* @brief Writes a ' +
+    'DecipheredObject to a file.\n* @param filepath\n*\t@type String\n*\t@brief ' +
+    'The filepath to write the DecipheredObject to.\n*\t@default null\n* ' +
+    '@return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 ' +
+    'on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on ' +
+    'success\n*\t\t@retval <error_message> on failure.\n*/\nfunction ' +
+    'EncNotes_FileFromDecipheredObject( filepath ){\n\tvar _return = [1,null];\n' +
+    "\tconst FUNCTION_NAME = 'EncNotes_FileFromDecipheredObject';\n\t" +
+    '//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+    "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(filepath == undefined) filepath = null;\n\t\n\t//Function\n\n\t//Return\n\t' +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [length]: 2
+]
+2019-06-22T01:47:01.216Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [
+  0,
+  '/**\n* @fn EncNotes_FileFromDecipheredObject\n* @brief Writes a ' +
+    'DecipheredObject to a file.\n* @param filepath\n*\t@type String\n*\t@brief ' +
+    'The filepath to write the DecipheredObject to.\n*\t@default null\n* ' +
+    '@return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 ' +
+    'on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on ' +
+    'success\n*\t\t@retval <error_message> on failure.\n*/\nfunction ' +
+    'EncNotes_FileFromDecipheredObject( filepath ){\n\tvar _return = [1,null];\n' +
+    "\tconst FUNCTION_NAME = 'EncNotes_FileFromDecipheredObject';\n\t" +
+    '//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+    "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(filepath == undefined) filepath = null;\n\t\n\t//Function\n\n\t//Return\n\t' +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [
+    0,
+    '/**\n* @fn EncNotes_FileFromDecipheredObject\n* @brief Writes a ' +
+      'DecipheredObject to a file.\n* @param filepath\n*\t@type String\n*\t@brief ' +
+      'The filepath to write the DecipheredObject to.\n*\t@default null\n* ' +
+      '@return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 ' +
+      'on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on ' +
+      'success\n*\t\t@retval <error_message> on failure.\n*/\nfunction ' +
+      'EncNotes_FileFromDecipheredObject( filepath ){\n\tvar _return = [1,null];\n' +
+      "\tconst FUNCTION_NAME = 'EncNotes_FileFromDecipheredObject';\n\t" +
+      '//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+      "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+      "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+      'if(filepath == undefined) filepath = null;\n\t\n\t//Function\n\n\t//Return\n\t' +
+      'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+      "function: FUNCTION_NAME, level: 'debug', message: " +
+      "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+    [length]: 2
+  ],
+  [length]: 3
+]
+2019-06-22T01:47:01.217Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [
+  0,
+  '/**\n* @fn EncNotes_FileFromDecipheredObject\n* @brief Writes a ' +
+    'DecipheredObject to a file.\n* @param filepath\n*\t@type String\n*\t@brief ' +
+    'The filepath to write the DecipheredObject to.\n*\t@default null\n* ' +
+    '@return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 ' +
+    'on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on ' +
+    'success\n*\t\t@retval <error_message> on failure.\n*/\nfunction ' +
+    'EncNotes_FileFromDecipheredObject( filepath ){\n\tvar _return = [1,null];\n' +
+    "\tconst FUNCTION_NAME = 'EncNotes_FileFromDecipheredObject';\n\t" +
+    '//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+    "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(filepath == undefined) filepath = null;\n\t\n\t//Function\n\n\t//Return\n\t' +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [length]: 2
+]
+2019-06-22T01:47:01.217Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: [Arguments] {
+  '0': '/**\n* @fn EncNotes_FileFromDecipheredObject\n* @brief Writes a ' +
+    'DecipheredObject to a file.\n* @param filepath\n*\t@type String\n*\t@brief ' +
+    'The filepath to write the DecipheredObject to.\n*\t@default null\n* ' +
+    '@return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 ' +
+    'on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on ' +
+    'success\n*\t\t@retval <error_message> on failure.\n*/\nfunction ' +
+    'EncNotes_FileFromDecipheredObject( filepath ){\n\tvar _return = [1,null];\n' +
+    "\tconst FUNCTION_NAME = 'EncNotes_FileFromDecipheredObject';\n\t" +
+    '//Variables\n\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+    "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(filepath == undefined) filepath = null;\n\t\n\t//Function\n\n\t//Return\n\t' +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  '1': { edit: 'js func', pasteboard: true },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-22T01:47:01.975Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-06-22T01:47:01.975Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
