@@ -3676,3 +3676,1480 @@
 }
 2019-06-22T01:47:01.975Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
 2019-06-22T01:47:01.975Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-06-25T07:28:34.400Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-06-25T07:28:34.467Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0': '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T07:28:34.575Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [
+  0,
+  {
+    template_directories: [
+      'Resources/templates',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/templates',
+      [length]: 2
+    ],
+    defaults_directories: [
+      'Resources/defaults',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/defaults',
+      [length]: 2
+    ]
+  },
+  [length]: 2
+]
+2019-06-25T07:28:34.575Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-06-25T07:28:34.578Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { edit: 'js func', pasteboard: true }
+2019-06-25T07:28:34.579Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T07:28:34.580Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T07:28:34.580Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T07:28:34.613Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ' +
+    "ENOENT: no such file or directory, open 'js/func.json'\n    at " +
+    'Object.openSync (fs.js:447:3)\n    at Object.readFileSync (fs.js:349:35)\n ' +
+    '   at Object.JSONIC_Parse_FilePath [as ParseFilePath] ' +
+    '(/Users/cameron/dev/function-factory/source/jsonic-parse.js:146:27)\n    ' +
+    'at DefaultInputDataFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:156:33)\n    at ' +
+    'DefaultInputDataFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:179:21)\n    at ' +
+    'DefaultInputDataFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:219:21)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:469:21)\n    at ' +
+    'Object.<anonymous> ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:649:14)\n    at ' +
+    'Module._compile (internal/modules/cjs/loader.js:774:30)\n    at ' +
+    'Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10) {\n ' +
+    " errno: -2,\n  syscall: 'open',\n  code: 'ENOENT',\n  path: 'js/func.json'\n" +
+    '}',
+  [length]: 2
+]
+2019-06-25T07:28:34.614Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T07:28:34.656Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-06-25T07:28:34.657Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-06-25T07:28:34.657Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-06-25T07:28:34.687Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-06-25T07:32:28.818Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: {
+  editor_input: '{\n\t"template": "js func",\n\t"name": ' +
+    '"EncNotes_DecipheredObject_IVBuffer_Insert",\n\t"description": "Inserts the ' +
+    "IV Buffer into the beginning of the DecipheredObject's " +
+    'deciphered_data_buffer.",\n\t"params": [\n\t\t{\n\t\t\t"type": "Buffer:Object",\n\t\t\t' +
+    '"name": "iv_buffer",\n\t\t\t"default": "null",\n\t\t\t"description": "The IV ' +
+    'buffer to insert"\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t' +
+    '"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n'
+}
+2019-06-25T07:32:28.819Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: [Arguments] {
+  '0': {
+    editor_input: '{\n\t"template": "js func",\n\t"name": ' +
+      '"EncNotes_DecipheredObject_IVBuffer_Insert",\n\t"description": ' +
+      '"Inserts the IV Buffer into the beginning of the ' +
+      `DecipheredObject's deciphered_data_buffer.",\n\t"params": [\n\t\t{\n\t\t\t` +
+      '"type": "Buffer:Object",\n\t\t\t"name": "iv_buffer",\n\t\t\t"default": ' +
+      '"null",\n\t\t\t"description": "The IV buffer to insert"\n\t\t}\n\t],\n\t' +
+      '"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t' +
+      '"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n'
+  },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T07:32:28.820Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: {
+  template: 'js func',
+  name: 'EncNotes_DecipheredObject_IVBuffer_Insert',
+  description: 'Inserts the IV Buffer into the beginning of ' +
+    "the DecipheredObject's " +
+    'deciphered_data_buffer.',
+  params: [
+    {
+      type: 'Buffer:Object',
+      name: 'iv_buffer',
+      default: 'null',
+      description: 'The IV buffer to insert'
+    },
+    [length]: 1
+  ],
+  asynchronous: false,
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ]
+} undefined
+2019-06-25T07:32:28.821Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T07:32:28.821Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T07:32:28.822Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T07:32:28.823Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  -3,
+  'Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such ' +
+    "file or directory, access 'js/func.hbs'\n    at Object.accessSync " +
+    '(fs.js:202:3)\n    at TemplateFunctionFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:239:15)\n    at ' +
+    'TemplateFunctionFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:269:21)\n    at ' +
+    'TemplateFunctionFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:308:21)\n    at ' +
+    'OutputFromInput ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:364:23)\n    at ' +
+    'OutputFromInquirerEditorAnswer ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:401:22)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:486:22)\n    at ' +
+    'processTicksAndRejections (internal/process/task_queues.js:89:5) {\n  ' +
+    "errno: -2,\n  syscall: 'access',\n  code: 'ENOENT',\n  path: 'js/func.hbs'\n" +
+    '}',
+  [length]: 2
+]
+2019-06-25T07:32:28.823Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T07:32:28.877Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-25T07:32:28.878Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-25T07:32:28.878Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-25T07:32:28.939Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: [Arguments] {
+  '0': '/**\n* @fn EncNotes_DecipheredObject_IVBuffer_Insert\n* @brief Inserts ' +
+    "the IV Buffer into the beginning of the DecipheredObject's " +
+    'deciphered_data_buffer.\n* @param iv_buffer\n*\t@type Buffer:Object\n*\t' +
+    '@brief The IV buffer to insert\n*\t@default null\n* @return <ARRAY>\n*\t' +
+    '@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nfunction ' +
+    'EncNotes_DecipheredObject_IVBuffer_Insert( iv_buffer,){\n\tvar _return = ' +
+    '[1,null];\n\tconst FUNCTION_NAME = ' +
+    "'EncNotes_DecipheredObject_IVBuffer_Insert';\n\t//Variables\n\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: ' +
+    "FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(iv_buffer == undefined) iv_buffer = null;\n\t\n\t//Function\n\n\t//Return\n\t' +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: ' +
+    "FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T07:32:28.940Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [
+  0,
+  '/**\n* @fn EncNotes_DecipheredObject_IVBuffer_Insert\n* @brief Inserts ' +
+    "the IV Buffer into the beginning of the DecipheredObject's " +
+    'deciphered_data_buffer.\n* @param iv_buffer\n*\t@type Buffer:Object\n*\t' +
+    '@brief The IV buffer to insert\n*\t@default null\n* @return <ARRAY>\n*\t' +
+    '@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nfunction ' +
+    'EncNotes_DecipheredObject_IVBuffer_Insert( iv_buffer ){\n\tvar _return = ' +
+    '[1,null];\n\tconst FUNCTION_NAME = ' +
+    "'EncNotes_DecipheredObject_IVBuffer_Insert';\n\t//Variables\n\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: ' +
+    "FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(iv_buffer == undefined) iv_buffer = null;\n\t\n\t//Function\n\n\t//Return\n\t' +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: ' +
+    "FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [length]: 2
+]
+2019-06-25T07:32:28.940Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [
+  0,
+  '/**\n* @fn EncNotes_DecipheredObject_IVBuffer_Insert\n* @brief Inserts ' +
+    "the IV Buffer into the beginning of the DecipheredObject's " +
+    'deciphered_data_buffer.\n* @param iv_buffer\n*\t@type Buffer:Object\n*\t' +
+    '@brief The IV buffer to insert\n*\t@default null\n* @return <ARRAY>\n*\t' +
+    '@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nfunction ' +
+    'EncNotes_DecipheredObject_IVBuffer_Insert( iv_buffer ){\n\tvar _return = ' +
+    '[1,null];\n\tconst FUNCTION_NAME = ' +
+    "'EncNotes_DecipheredObject_IVBuffer_Insert';\n\t//Variables\n\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: ' +
+    "FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(iv_buffer == undefined) iv_buffer = null;\n\t\n\t//Function\n\n\t//Return\n\t' +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: ' +
+    "FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [
+    0,
+    '/**\n* @fn EncNotes_DecipheredObject_IVBuffer_Insert\n* @brief Inserts ' +
+      "the IV Buffer into the beginning of the DecipheredObject's " +
+      'deciphered_data_buffer.\n* @param iv_buffer\n*\t@type Buffer:Object\n*\t' +
+      '@brief The IV buffer to insert\n*\t@default null\n* @return <ARRAY>\n*\t' +
+      '@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+      '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+      '@retval <error_message> on failure.\n*/\nfunction ' +
+      'EncNotes_DecipheredObject_IVBuffer_Insert( iv_buffer ){\n\tvar _return = ' +
+      '[1,null];\n\tconst FUNCTION_NAME = ' +
+      "'EncNotes_DecipheredObject_IVBuffer_Insert';\n\t//Variables\n\n\t" +
+      'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: ' +
+      "FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+      "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+      'if(iv_buffer == undefined) iv_buffer = null;\n\t\n\t//Function\n\n\t//Return\n\t' +
+      'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: ' +
+      "FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+      "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+    [length]: 2
+  ],
+  [length]: 3
+]
+2019-06-25T07:32:28.941Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [
+  0,
+  '/**\n* @fn EncNotes_DecipheredObject_IVBuffer_Insert\n* @brief Inserts ' +
+    "the IV Buffer into the beginning of the DecipheredObject's " +
+    'deciphered_data_buffer.\n* @param iv_buffer\n*\t@type Buffer:Object\n*\t' +
+    '@brief The IV buffer to insert\n*\t@default null\n* @return <ARRAY>\n*\t' +
+    '@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nfunction ' +
+    'EncNotes_DecipheredObject_IVBuffer_Insert( iv_buffer ){\n\tvar _return = ' +
+    '[1,null];\n\tconst FUNCTION_NAME = ' +
+    "'EncNotes_DecipheredObject_IVBuffer_Insert';\n\t//Variables\n\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: ' +
+    "FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(iv_buffer == undefined) iv_buffer = null;\n\t\n\t//Function\n\n\t//Return\n\t' +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: ' +
+    "FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [length]: 2
+]
+2019-06-25T07:32:28.941Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: [Arguments] {
+  '0': '/**\n* @fn EncNotes_DecipheredObject_IVBuffer_Insert\n* @brief Inserts ' +
+    "the IV Buffer into the beginning of the DecipheredObject's " +
+    'deciphered_data_buffer.\n* @param iv_buffer\n*\t@type Buffer:Object\n*\t' +
+    '@brief The IV buffer to insert\n*\t@default null\n* @return <ARRAY>\n*\t' +
+    '@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nfunction ' +
+    'EncNotes_DecipheredObject_IVBuffer_Insert( iv_buffer ){\n\tvar _return = ' +
+    '[1,null];\n\tconst FUNCTION_NAME = ' +
+    "'EncNotes_DecipheredObject_IVBuffer_Insert';\n\t//Variables\n\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: ' +
+    "FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\t" +
+    'if(iv_buffer == undefined) iv_buffer = null;\n\t\n\t//Function\n\n\t//Return\n\t' +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: ' +
+    "FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  '1': { edit: 'js func', pasteboard: true },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T07:32:30.306Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-06-25T07:32:30.307Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-06-25T18:12:58.107Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-06-25T18:12:58.118Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0': '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T18:12:58.147Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [
+  0,
+  {
+    template_directories: [
+      'Resources/templates',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/templates',
+      [length]: 2
+    ],
+    defaults_directories: [
+      'Resources/defaults',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/defaults',
+      [length]: 2
+    ]
+  },
+  [length]: 2
+]
+2019-06-25T18:12:58.147Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-06-25T18:12:58.151Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { edit: 'js file', pasteboard: true }
+2019-06-25T18:12:58.152Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: [Arguments] {
+  '0': 'js file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T18:12:58.152Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T18:12:58.153Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T18:12:58.161Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/file.json": Error: ' +
+    "ENOENT: no such file or directory, open 'js/file.json'\n    at " +
+    'Object.openSync (fs.js:447:3)\n    at Object.readFileSync (fs.js:349:35)\n ' +
+    '   at Object.JSONIC_Parse_FilePath [as ParseFilePath] ' +
+    '(/Users/cameron/dev/function-factory/source/jsonic-parse.js:146:27)\n    ' +
+    'at DefaultInputDataFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:156:33)\n    at ' +
+    'DefaultInputDataFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:179:21)\n    at ' +
+    'DefaultInputDataFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:219:21)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:469:21)\n    at ' +
+    'Object.<anonymous> ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:649:14)\n    at ' +
+    'Module._compile (internal/modules/cjs/loader.js:774:30)\n    at ' +
+    'Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10) {\n ' +
+    " errno: -2,\n  syscall: 'open',\n  code: 'ENOENT',\n  path: 'js/file.json'\n" +
+    '}',
+  [length]: 2
+]
+2019-06-25T18:12:58.161Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'Resources/defaults/js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T18:12:58.225Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": ' +
+    '"Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": ' +
+    '"process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": ' +
+    'true\n}',
+  [length]: 2
+]
+2019-06-25T18:12:58.225Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [
+  0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": ' +
+    '"Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": ' +
+    '"process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": ' +
+    'true\n}',
+  [length]: 2
+]
+2019-06-25T18:12:58.225Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [
+  0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": ' +
+    '"Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": ' +
+    '"process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": ' +
+    'true\n}',
+  [length]: 2
+]
+2019-06-25T18:12:58.252Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-06-25T18:15:38.219Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: {
+  editor_input: '{\n\t"template": "js file",\n\t"filename": ' +
+    '"copy-file-to-multiple-paths.js",\n\t"description": "Copies a ' +
+    'single file to multiple destination paths.",\n\t"modulename": ' +
+    '"CopyFileToMultiplePaths",\n\t"processname": ' +
+    '"copy-file-to-multiple-paths",\n\t"strict": true,\n\t"main": ' +
+    'true,\n\t"logger": true,\n\t"cli": false\n}\n'
+}
+2019-06-25T18:15:38.219Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: [Arguments] {
+  '0': {
+    editor_input: '{\n\t"template": "js file",\n\t"filename": ' +
+      '"copy-file-to-multiple-paths.js",\n\t"description": "Copies a ' +
+      'single file to multiple destination paths.",\n\t"modulename": ' +
+      '"CopyFileToMultiplePaths",\n\t"processname": ' +
+      '"copy-file-to-multiple-paths",\n\t"strict": true,\n\t"main": ' +
+      'true,\n\t"logger": true,\n\t"cli": false\n}\n'
+  },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T18:15:38.220Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: {
+  template: 'js file',
+  filename: 'copy-file-to-multiple-paths.js',
+  description: 'Copies a single file to multiple destination paths.',
+  modulename: 'CopyFileToMultiplePaths',
+  processname: 'copy-file-to-multiple-paths',
+  strict: true,
+  main: true,
+  logger: true,
+  cli: false
+} undefined
+2019-06-25T18:15:38.220Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: [Arguments] {
+  '0': 'js file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T18:15:38.222Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T18:15:38.222Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T18:15:38.223Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  -3,
+  'Error: template "js/file.hbs" cannot be read: Error: ENOENT: no such ' +
+    "file or directory, access 'js/file.hbs'\n    at Object.accessSync " +
+    '(fs.js:202:3)\n    at TemplateFunctionFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:239:15)\n    at ' +
+    'TemplateFunctionFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:269:21)\n    at ' +
+    'TemplateFunctionFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:308:21)\n    at ' +
+    'OutputFromInput ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:364:23)\n    at ' +
+    'OutputFromInquirerEditorAnswer ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:401:22)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:486:22)\n    at ' +
+    'processTicksAndRejections (internal/process/task_queues.js:89:5) {\n  ' +
+    "errno: -2,\n  syscall: 'access',\n  code: 'ENOENT',\n  path: 'js/file.hbs'\n" +
+    '}',
+  [length]: 2
+]
+2019-06-25T18:15:38.223Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'Resources/templates/js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T18:15:38.262Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-25T18:15:38.262Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-25T18:15:38.263Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-25T18:15:38.308Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: [Arguments] {
+  '0': "#!/usr/local/bin/node\n'use strict';\n/**\n* @file " +
+    'copy-file-to-multiple-paths.js\n* @brief Copies a single file to multiple ' +
+    'destination paths.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\t' +
+    'Permission is hereby granted, free of charge, to any person obtaining a ' +
+    'copy of this \nsoftware and associated documentation files (the ' +
+    '"Software"), to deal in the Software \nwithout restriction, including ' +
+    'without limitation the rights to use, copy, modify, \nmerge, publish, ' +
+    'distribute, sublicense, and/or sell copies of the Software, and to \npermit ' +
+    'persons to whom the Software is furnished to do so, subject to the ' +
+    'following \nconditions:\n\tThe above copyright notice and this permission ' +
+    'notice shall be included in all copies \nor substantial portions of the ' +
+    'Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, ' +
+    'EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF ' +
+    'MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN ' +
+    'NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, ' +
+    'DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR ' +
+    'OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE ' +
+    'USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+    "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+    "const FILENAME = 'copy-file-to-multiple-paths.js';\nconst MODULE_NAME = " +
+    "'CopyFileToMultiplePaths';\nvar PROCESS_NAME = '';\nif(require.main === " +
+    "module){\n\tPROCESS_NAME = 'copy-file-to-multiple-paths';\n} else{\n\t" +
+    'PROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: ' +
+    '() => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\t' +
+    "var _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\t" +
+    'var function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) ' +
+    "=== 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t" +
+    "\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param " +
+    `"logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\t` +
+    'Logger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n' +
+    '//Exports and Execution\nif(require.main === module){\n\tvar _return = ' +
+    "[1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t" +
+    '\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = ' +
+    "require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = " +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( " +
+    'PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\t' +
+    'try{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\t' +
+    "console.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Config\n\t//Main\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: 'End of execution " +
+    "block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n",
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T18:15:38.308Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2019-06-25T18:15:38.309Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [
+  0,
+  "#!/usr/local/bin/node\n'use strict';\n/**\n* @file " +
+    'copy-file-to-multiple-paths.js\n* @brief Copies a single file to multiple ' +
+    'destination paths.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\t' +
+    'Permission is hereby granted, free of charge, to any person obtaining a ' +
+    'copy of this \nsoftware and associated documentation files (the ' +
+    '"Software"), to deal in the Software \nwithout restriction, including ' +
+    'without limitation the rights to use, copy, modify, \nmerge, publish, ' +
+    'distribute, sublicense, and/or sell copies of the Software, and to \npermit ' +
+    'persons to whom the Software is furnished to do so, subject to the ' +
+    'following \nconditions:\n\tThe above copyright notice and this permission ' +
+    'notice shall be included in all copies \nor substantial portions of the ' +
+    'Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, ' +
+    'EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF ' +
+    'MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN ' +
+    'NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, ' +
+    'DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR ' +
+    'OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE ' +
+    'USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+    "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+    "const FILENAME = 'copy-file-to-multiple-paths.js';\nconst MODULE_NAME = " +
+    "'CopyFileToMultiplePaths';\nvar PROCESS_NAME = '';\nif(require.main === " +
+    "module){\n\tPROCESS_NAME = 'copy-file-to-multiple-paths';\n} else{\n\t" +
+    'PROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: ' +
+    '() => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\t' +
+    "var _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\t" +
+    'var function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) ' +
+    "=== 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t" +
+    "\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param " +
+    `"logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\t` +
+    'Logger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n' +
+    '//Exports and Execution\nif(require.main === module){\n\tvar _return = ' +
+    "[1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t" +
+    '\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = ' +
+    "require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = " +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( " +
+    'PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\t' +
+    'try{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\t' +
+    "console.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Config\n\t//Main\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: 'End of execution " +
+    "block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n",
+  [length]: 2
+]
+2019-06-25T18:15:38.311Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [
+  0,
+  "#!/usr/local/bin/node\n'use strict';\n/**\n* @file " +
+    'copy-file-to-multiple-paths.js\n* @brief Copies a single file to multiple ' +
+    'destination paths.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\t' +
+    'Permission is hereby granted, free of charge, to any person obtaining a ' +
+    'copy of this \nsoftware and associated documentation files (the ' +
+    '"Software"), to deal in the Software \nwithout restriction, including ' +
+    'without limitation the rights to use, copy, modify, \nmerge, publish, ' +
+    'distribute, sublicense, and/or sell copies of the Software, and to \npermit ' +
+    'persons to whom the Software is furnished to do so, subject to the ' +
+    'following \nconditions:\n\tThe above copyright notice and this permission ' +
+    'notice shall be included in all copies \nor substantial portions of the ' +
+    'Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, ' +
+    'EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF ' +
+    'MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN ' +
+    'NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, ' +
+    'DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR ' +
+    'OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE ' +
+    'USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+    "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+    "const FILENAME = 'copy-file-to-multiple-paths.js';\nconst MODULE_NAME = " +
+    "'CopyFileToMultiplePaths';\nvar PROCESS_NAME = '';\nif(require.main === " +
+    "module){\n\tPROCESS_NAME = 'copy-file-to-multiple-paths';\n} else{\n\t" +
+    'PROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: ' +
+    '() => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\t' +
+    "var _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\t" +
+    'var function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) ' +
+    "=== 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t" +
+    "\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param " +
+    `"logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\t` +
+    'Logger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n' +
+    '//Exports and Execution\nif(require.main === module){\n\tvar _return = ' +
+    "[1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t" +
+    '\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = ' +
+    "require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = " +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( " +
+    'PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\t' +
+    'try{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\t' +
+    "console.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Config\n\t//Main\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: 'End of execution " +
+    "block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n",
+  [
+    0,
+    "#!/usr/local/bin/node\n'use strict';\n/**\n* @file " +
+      'copy-file-to-multiple-paths.js\n* @brief Copies a single file to ' +
+      'multiple destination paths.\n* @author Anadian\n* @copyright \tCopyright ' +
+      '2019 Canosw\n\tPermission is hereby granted, free of charge, to any ' +
+      'person obtaining a copy of this \nsoftware and associated documentation ' +
+      'files (the "Software"), to deal in the Software \nwithout restriction, ' +
+      'including without limitation the rights to use, copy, modify, \nmerge, ' +
+      'publish, distribute, sublicense, and/or sell copies of the Software, ' +
+      'and to \npermit persons to whom the Software is furnished to do so, ' +
+      'subject to the following \nconditions:\n\tThe above copyright notice and ' +
+      'this permission notice shall be included in all copies \nor substantial ' +
+      'portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT ' +
+      'WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO ' +
+      'THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE ' +
+      'AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \n' +
+      'HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN ' +
+      'AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN ' +
+      'CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE ' +
+      'SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\tconst Utility = ' +
+      "require('util');\n\t//External\n\n//Constants\nconst FILENAME = " +
+      "'copy-file-to-multiple-paths.js';\nconst MODULE_NAME = " +
+      "'CopyFileToMultiplePaths';\nvar PROCESS_NAME = '';\nif(require.main === " +
+      "module){\n\tPROCESS_NAME = 'copy-file-to-multiple-paths';\n} else{\n\t" +
+      'PROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\t' +
+      'log: () => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( ' +
+      "logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n" +
+      '\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( ' +
+      "typeof(logger) === 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t" +
+      '\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = ' +
+      `[-2,'Error: param "logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( ` +
+      '_return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t' +
+      '//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main ' +
+      '=== module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = ' +
+      "'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t" +
+      "//External\n\t\tconst MakeDir = require('make-dir');\n\t\tconst " +
+      'ApplicationLogWinstonInterface = ' +
+      "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+      "require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( " +
+      'PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n' +
+      '\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\t' +
+      "console.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = " +
+      "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+      'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+      'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+      "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+      "message: 'Start of execution block.'});\n\t//Config\n\t//Main\n\t" +
+      'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+      "function: FUNCTION_NAME, level: 'debug', message: 'End of execution " +
+      "block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n",
+    [length]: 2
+  ],
+  [length]: 3
+]
+2019-06-25T18:15:38.313Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [
+  0,
+  "#!/usr/local/bin/node\n'use strict';\n/**\n* @file " +
+    'copy-file-to-multiple-paths.js\n* @brief Copies a single file to multiple ' +
+    'destination paths.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\t' +
+    'Permission is hereby granted, free of charge, to any person obtaining a ' +
+    'copy of this \nsoftware and associated documentation files (the ' +
+    '"Software"), to deal in the Software \nwithout restriction, including ' +
+    'without limitation the rights to use, copy, modify, \nmerge, publish, ' +
+    'distribute, sublicense, and/or sell copies of the Software, and to \npermit ' +
+    'persons to whom the Software is furnished to do so, subject to the ' +
+    'following \nconditions:\n\tThe above copyright notice and this permission ' +
+    'notice shall be included in all copies \nor substantial portions of the ' +
+    'Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, ' +
+    'EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF ' +
+    'MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN ' +
+    'NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, ' +
+    'DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR ' +
+    'OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE ' +
+    'USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+    "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+    "const FILENAME = 'copy-file-to-multiple-paths.js';\nconst MODULE_NAME = " +
+    "'CopyFileToMultiplePaths';\nvar PROCESS_NAME = '';\nif(require.main === " +
+    "module){\n\tPROCESS_NAME = 'copy-file-to-multiple-paths';\n} else{\n\t" +
+    'PROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: ' +
+    '() => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\t' +
+    "var _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\t" +
+    'var function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) ' +
+    "=== 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t" +
+    "\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param " +
+    `"logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\t` +
+    'Logger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n' +
+    '//Exports and Execution\nif(require.main === module){\n\tvar _return = ' +
+    "[1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t" +
+    '\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = ' +
+    "require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = " +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( " +
+    'PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\t' +
+    'try{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\t' +
+    "console.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Config\n\t//Main\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: 'End of execution " +
+    "block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n",
+  [length]: 2
+]
+2019-06-25T18:15:38.314Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: [Arguments] {
+  '0': "#!/usr/local/bin/node\n'use strict';\n/**\n* @file " +
+    'copy-file-to-multiple-paths.js\n* @brief Copies a single file to multiple ' +
+    'destination paths.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\t' +
+    'Permission is hereby granted, free of charge, to any person obtaining a ' +
+    'copy of this \nsoftware and associated documentation files (the ' +
+    '"Software"), to deal in the Software \nwithout restriction, including ' +
+    'without limitation the rights to use, copy, modify, \nmerge, publish, ' +
+    'distribute, sublicense, and/or sell copies of the Software, and to \npermit ' +
+    'persons to whom the Software is furnished to do so, subject to the ' +
+    'following \nconditions:\n\tThe above copyright notice and this permission ' +
+    'notice shall be included in all copies \nor substantial portions of the ' +
+    'Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, ' +
+    'EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF ' +
+    'MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN ' +
+    'NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, ' +
+    'DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR ' +
+    'OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE ' +
+    'USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+    "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+    "const FILENAME = 'copy-file-to-multiple-paths.js';\nconst MODULE_NAME = " +
+    "'CopyFileToMultiplePaths';\nvar PROCESS_NAME = '';\nif(require.main === " +
+    "module){\n\tPROCESS_NAME = 'copy-file-to-multiple-paths';\n} else{\n\t" +
+    'PROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: ' +
+    '() => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\t' +
+    "var _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\t" +
+    'var function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) ' +
+    "=== 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t" +
+    "\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param " +
+    `"logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\t` +
+    'Logger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n' +
+    '//Exports and Execution\nif(require.main === module){\n\tvar _return = ' +
+    "[1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t" +
+    '\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = ' +
+    "require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = " +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( " +
+    'PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\t' +
+    'try{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\t' +
+    "console.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Config\n\t//Main\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: 'End of execution " +
+    "block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n",
+  '1': { edit: 'js file', pasteboard: true },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T18:15:38.547Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-06-25T18:15:38.547Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-06-25T18:44:34.061Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-06-25T18:44:34.079Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0': '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T18:44:34.105Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [
+  0,
+  {
+    template_directories: [
+      'Resources/templates',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/templates',
+      [length]: 2
+    ],
+    defaults_directories: [
+      'Resources/defaults',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/defaults',
+      [length]: 2
+    ]
+  },
+  [length]: 2
+]
+2019-06-25T18:44:34.105Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-06-25T18:44:34.110Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { edit: 'js file', pasteboard: true }
+2019-06-25T18:44:34.110Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: [Arguments] {
+  '0': 'js file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T18:44:34.111Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T18:44:34.111Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T18:44:34.172Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/file.json": Error: ' +
+    "ENOENT: no such file or directory, open 'js/file.json'\n    at " +
+    'Object.openSync (fs.js:447:3)\n    at Object.readFileSync (fs.js:349:35)\n ' +
+    '   at Object.JSONIC_Parse_FilePath [as ParseFilePath] ' +
+    '(/Users/cameron/dev/function-factory/source/jsonic-parse.js:146:27)\n    ' +
+    'at DefaultInputDataFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:156:33)\n    at ' +
+    'DefaultInputDataFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:179:21)\n    at ' +
+    'DefaultInputDataFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:219:21)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:469:21)\n    at ' +
+    'Object.<anonymous> ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:649:14)\n    at ' +
+    'Module._compile (internal/modules/cjs/loader.js:774:30)\n    at ' +
+    'Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10) {\n ' +
+    " errno: -2,\n  syscall: 'open',\n  code: 'ENOENT',\n  path: 'js/file.json'\n" +
+    '}',
+  [length]: 2
+]
+2019-06-25T18:44:34.172Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'Resources/defaults/js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T18:44:34.192Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": ' +
+    '"Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": ' +
+    '"process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": ' +
+    'true\n}',
+  [length]: 2
+]
+2019-06-25T18:44:34.192Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [
+  0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": ' +
+    '"Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": ' +
+    '"process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": ' +
+    'true\n}',
+  [length]: 2
+]
+2019-06-25T18:44:34.193Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [
+  0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": ' +
+    '"Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": ' +
+    '"process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": ' +
+    'true\n}',
+  [length]: 2
+]
+2019-06-25T18:44:34.237Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-06-25T18:46:02.749Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: {
+  editor_input: '{\n\t"template": "js file",\n\t"filename": ' +
+    '"copy-file-to-multiple-paths.js",\n\t"description": "Copies a ' +
+    'single file to multiple destination paths.",\n\t"modulename": ' +
+    '"CopyFileToMultiplePaths",\n\t"processname": ' +
+    '"copy-file-to-multiple-paths",\n\t"strict": true,\n\t"main": ' +
+    'true,\n\t"logger": true,\n\t"cli": false\n}\n'
+}
+2019-06-25T18:46:02.750Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: [Arguments] {
+  '0': {
+    editor_input: '{\n\t"template": "js file",\n\t"filename": ' +
+      '"copy-file-to-multiple-paths.js",\n\t"description": "Copies a ' +
+      'single file to multiple destination paths.",\n\t"modulename": ' +
+      '"CopyFileToMultiplePaths",\n\t"processname": ' +
+      '"copy-file-to-multiple-paths",\n\t"strict": true,\n\t"main": ' +
+      'true,\n\t"logger": true,\n\t"cli": false\n}\n'
+  },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T18:46:02.751Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: {
+  template: 'js file',
+  filename: 'copy-file-to-multiple-paths.js',
+  description: 'Copies a single file to multiple destination paths.',
+  modulename: 'CopyFileToMultiplePaths',
+  processname: 'copy-file-to-multiple-paths',
+  strict: true,
+  main: true,
+  logger: true,
+  cli: false
+} undefined
+2019-06-25T18:46:02.751Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: [Arguments] {
+  '0': 'js file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T18:46:02.752Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T18:46:02.752Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T18:46:02.753Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  -3,
+  'Error: template "js/file.hbs" cannot be read: Error: ENOENT: no such ' +
+    "file or directory, access 'js/file.hbs'\n    at Object.accessSync " +
+    '(fs.js:202:3)\n    at TemplateFunctionFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:239:15)\n    at ' +
+    'TemplateFunctionFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:269:21)\n    at ' +
+    'TemplateFunctionFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:308:21)\n    at ' +
+    'OutputFromInput ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:364:23)\n    at ' +
+    'OutputFromInquirerEditorAnswer ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:401:22)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:486:22)\n    at ' +
+    'processTicksAndRejections (internal/process/task_queues.js:89:5) {\n  ' +
+    "errno: -2,\n  syscall: 'access',\n  code: 'ENOENT',\n  path: 'js/file.hbs'\n" +
+    '}',
+  [length]: 2
+]
+2019-06-25T18:46:02.754Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'Resources/templates/js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T18:46:02.793Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-25T18:46:02.793Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-25T18:46:02.794Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-06-25T18:46:02.836Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: [Arguments] {
+  '0': "#!/usr/local/bin/node\n'use strict';\n/**\n* @file " +
+    'copy-file-to-multiple-paths.js\n* @brief Copies a single file to multiple ' +
+    'destination paths.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\t' +
+    'Permission is hereby granted, free of charge, to any person obtaining a ' +
+    'copy of this \nsoftware and associated documentation files (the ' +
+    '"Software"), to deal in the Software \nwithout restriction, including ' +
+    'without limitation the rights to use, copy, modify, \nmerge, publish, ' +
+    'distribute, sublicense, and/or sell copies of the Software, and to \npermit ' +
+    'persons to whom the Software is furnished to do so, subject to the ' +
+    'following \nconditions:\n\tThe above copyright notice and this permission ' +
+    'notice shall be included in all copies \nor substantial portions of the ' +
+    'Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, ' +
+    'EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF ' +
+    'MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN ' +
+    'NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, ' +
+    'DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR ' +
+    'OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE ' +
+    'USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+    "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+    "const FILENAME = 'copy-file-to-multiple-paths.js';\nconst MODULE_NAME = " +
+    "'CopyFileToMultiplePaths';\nvar PROCESS_NAME = '';\nif(require.main === " +
+    "module){\n\tPROCESS_NAME = 'copy-file-to-multiple-paths';\n} else{\n\t" +
+    'PROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: ' +
+    '() => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\t' +
+    "var _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\t" +
+    'var function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) ' +
+    "=== 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t" +
+    "\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param " +
+    `"logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\t` +
+    'Logger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n' +
+    '//Exports and Execution\nif(require.main === module){\n\tvar _return = ' +
+    "[1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t" +
+    '\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = ' +
+    "require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = " +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( " +
+    'PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\t' +
+    'try{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\t' +
+    "console.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Config\n\t//Main\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: 'End of execution " +
+    "block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n",
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T18:46:02.837Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2019-06-25T18:46:02.838Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [
+  0,
+  "#!/usr/local/bin/node\n'use strict';\n/**\n* @file " +
+    'copy-file-to-multiple-paths.js\n* @brief Copies a single file to multiple ' +
+    'destination paths.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\t' +
+    'Permission is hereby granted, free of charge, to any person obtaining a ' +
+    'copy of this \nsoftware and associated documentation files (the ' +
+    '"Software"), to deal in the Software \nwithout restriction, including ' +
+    'without limitation the rights to use, copy, modify, \nmerge, publish, ' +
+    'distribute, sublicense, and/or sell copies of the Software, and to \npermit ' +
+    'persons to whom the Software is furnished to do so, subject to the ' +
+    'following \nconditions:\n\tThe above copyright notice and this permission ' +
+    'notice shall be included in all copies \nor substantial portions of the ' +
+    'Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, ' +
+    'EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF ' +
+    'MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN ' +
+    'NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, ' +
+    'DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR ' +
+    'OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE ' +
+    'USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+    "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+    "const FILENAME = 'copy-file-to-multiple-paths.js';\nconst MODULE_NAME = " +
+    "'CopyFileToMultiplePaths';\nvar PROCESS_NAME = '';\nif(require.main === " +
+    "module){\n\tPROCESS_NAME = 'copy-file-to-multiple-paths';\n} else{\n\t" +
+    'PROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: ' +
+    '() => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\t' +
+    "var _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\t" +
+    'var function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) ' +
+    "=== 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t" +
+    "\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param " +
+    `"logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\t` +
+    'Logger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n' +
+    '//Exports and Execution\nif(require.main === module){\n\tvar _return = ' +
+    "[1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t" +
+    '\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = ' +
+    "require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = " +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( " +
+    'PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\t' +
+    'try{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\t' +
+    "console.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Config\n\t//Main\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: 'End of execution " +
+    "block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n",
+  [length]: 2
+]
+2019-06-25T18:46:02.840Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [
+  0,
+  "#!/usr/local/bin/node\n'use strict';\n/**\n* @file " +
+    'copy-file-to-multiple-paths.js\n* @brief Copies a single file to multiple ' +
+    'destination paths.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\t' +
+    'Permission is hereby granted, free of charge, to any person obtaining a ' +
+    'copy of this \nsoftware and associated documentation files (the ' +
+    '"Software"), to deal in the Software \nwithout restriction, including ' +
+    'without limitation the rights to use, copy, modify, \nmerge, publish, ' +
+    'distribute, sublicense, and/or sell copies of the Software, and to \npermit ' +
+    'persons to whom the Software is furnished to do so, subject to the ' +
+    'following \nconditions:\n\tThe above copyright notice and this permission ' +
+    'notice shall be included in all copies \nor substantial portions of the ' +
+    'Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, ' +
+    'EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF ' +
+    'MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN ' +
+    'NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, ' +
+    'DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR ' +
+    'OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE ' +
+    'USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+    "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+    "const FILENAME = 'copy-file-to-multiple-paths.js';\nconst MODULE_NAME = " +
+    "'CopyFileToMultiplePaths';\nvar PROCESS_NAME = '';\nif(require.main === " +
+    "module){\n\tPROCESS_NAME = 'copy-file-to-multiple-paths';\n} else{\n\t" +
+    'PROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: ' +
+    '() => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\t' +
+    "var _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\t" +
+    'var function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) ' +
+    "=== 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t" +
+    "\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param " +
+    `"logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\t` +
+    'Logger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n' +
+    '//Exports and Execution\nif(require.main === module){\n\tvar _return = ' +
+    "[1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t" +
+    '\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = ' +
+    "require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = " +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( " +
+    'PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\t' +
+    'try{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\t' +
+    "console.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Config\n\t//Main\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: 'End of execution " +
+    "block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n",
+  [
+    0,
+    "#!/usr/local/bin/node\n'use strict';\n/**\n* @file " +
+      'copy-file-to-multiple-paths.js\n* @brief Copies a single file to ' +
+      'multiple destination paths.\n* @author Anadian\n* @copyright \tCopyright ' +
+      '2019 Canosw\n\tPermission is hereby granted, free of charge, to any ' +
+      'person obtaining a copy of this \nsoftware and associated documentation ' +
+      'files (the "Software"), to deal in the Software \nwithout restriction, ' +
+      'including without limitation the rights to use, copy, modify, \nmerge, ' +
+      'publish, distribute, sublicense, and/or sell copies of the Software, ' +
+      'and to \npermit persons to whom the Software is furnished to do so, ' +
+      'subject to the following \nconditions:\n\tThe above copyright notice and ' +
+      'this permission notice shall be included in all copies \nor substantial ' +
+      'portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT ' +
+      'WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO ' +
+      'THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE ' +
+      'AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \n' +
+      'HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN ' +
+      'AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN ' +
+      'CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE ' +
+      'SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\tconst Utility = ' +
+      "require('util');\n\t//External\n\n//Constants\nconst FILENAME = " +
+      "'copy-file-to-multiple-paths.js';\nconst MODULE_NAME = " +
+      "'CopyFileToMultiplePaths';\nvar PROCESS_NAME = '';\nif(require.main === " +
+      "module){\n\tPROCESS_NAME = 'copy-file-to-multiple-paths';\n} else{\n\t" +
+      'PROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\t' +
+      'log: () => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( ' +
+      "logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n" +
+      '\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( ' +
+      "typeof(logger) === 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t" +
+      '\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = ' +
+      `[-2,'Error: param "logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( ` +
+      '_return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t' +
+      '//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main ' +
+      '=== module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = ' +
+      "'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t" +
+      "//External\n\t\tconst MakeDir = require('make-dir');\n\t\tconst " +
+      'ApplicationLogWinstonInterface = ' +
+      "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+      "require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( " +
+      'PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n' +
+      '\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\t' +
+      "console.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = " +
+      "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+      'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+      'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+      "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+      "message: 'Start of execution block.'});\n\t//Config\n\t//Main\n\t" +
+      'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+      "function: FUNCTION_NAME, level: 'debug', message: 'End of execution " +
+      "block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n",
+    [length]: 2
+  ],
+  [length]: 3
+]
+2019-06-25T18:46:02.841Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [
+  0,
+  "#!/usr/local/bin/node\n'use strict';\n/**\n* @file " +
+    'copy-file-to-multiple-paths.js\n* @brief Copies a single file to multiple ' +
+    'destination paths.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\t' +
+    'Permission is hereby granted, free of charge, to any person obtaining a ' +
+    'copy of this \nsoftware and associated documentation files (the ' +
+    '"Software"), to deal in the Software \nwithout restriction, including ' +
+    'without limitation the rights to use, copy, modify, \nmerge, publish, ' +
+    'distribute, sublicense, and/or sell copies of the Software, and to \npermit ' +
+    'persons to whom the Software is furnished to do so, subject to the ' +
+    'following \nconditions:\n\tThe above copyright notice and this permission ' +
+    'notice shall be included in all copies \nor substantial portions of the ' +
+    'Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, ' +
+    'EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF ' +
+    'MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN ' +
+    'NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, ' +
+    'DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR ' +
+    'OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE ' +
+    'USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+    "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+    "const FILENAME = 'copy-file-to-multiple-paths.js';\nconst MODULE_NAME = " +
+    "'CopyFileToMultiplePaths';\nvar PROCESS_NAME = '';\nif(require.main === " +
+    "module){\n\tPROCESS_NAME = 'copy-file-to-multiple-paths';\n} else{\n\t" +
+    'PROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: ' +
+    '() => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\t' +
+    "var _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\t" +
+    'var function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) ' +
+    "=== 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t" +
+    "\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param " +
+    `"logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\t` +
+    'Logger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n' +
+    '//Exports and Execution\nif(require.main === module){\n\tvar _return = ' +
+    "[1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t" +
+    '\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = ' +
+    "require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = " +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( " +
+    'PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\t' +
+    'try{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\t' +
+    "console.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Config\n\t//Main\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: 'End of execution " +
+    "block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n",
+  [length]: 2
+]
+2019-06-25T18:46:02.843Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: [Arguments] {
+  '0': "#!/usr/local/bin/node\n'use strict';\n/**\n* @file " +
+    'copy-file-to-multiple-paths.js\n* @brief Copies a single file to multiple ' +
+    'destination paths.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\t' +
+    'Permission is hereby granted, free of charge, to any person obtaining a ' +
+    'copy of this \nsoftware and associated documentation files (the ' +
+    '"Software"), to deal in the Software \nwithout restriction, including ' +
+    'without limitation the rights to use, copy, modify, \nmerge, publish, ' +
+    'distribute, sublicense, and/or sell copies of the Software, and to \npermit ' +
+    'persons to whom the Software is furnished to do so, subject to the ' +
+    'following \nconditions:\n\tThe above copyright notice and this permission ' +
+    'notice shall be included in all copies \nor substantial portions of the ' +
+    'Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, ' +
+    'EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF ' +
+    'MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN ' +
+    'NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, ' +
+    'DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR ' +
+    'OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE ' +
+    'USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+    "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+    "const FILENAME = 'copy-file-to-multiple-paths.js';\nconst MODULE_NAME = " +
+    "'CopyFileToMultiplePaths';\nvar PROCESS_NAME = '';\nif(require.main === " +
+    "module){\n\tPROCESS_NAME = 'copy-file-to-multiple-paths';\n} else{\n\t" +
+    'PROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: ' +
+    '() => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\t' +
+    "var _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\t" +
+    'var function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) ' +
+    "=== 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t" +
+    "\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param " +
+    `"logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\t` +
+    'Logger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n' +
+    '//Exports and Execution\nif(require.main === module){\n\tvar _return = ' +
+    "[1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t" +
+    '\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = ' +
+    "require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = " +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( " +
+    'PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\t' +
+    'try{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\t' +
+    "console.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Config\n\t//Main\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: 'End of execution " +
+    "block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n",
+  '1': { edit: 'js file', pasteboard: true },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-06-25T18:46:03.402Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-06-25T18:46:03.402Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]

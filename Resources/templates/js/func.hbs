@@ -6,7 +6,7 @@
 {{/asynchronous}}
 {{#params}}
 * @param {{name}}
-*	@type {{type}}
+*	@type {{#type}}{{$type}}{{/type}}{{^type}}{{high_type}}:{{low_type}}{{/type}}
 *	@brief {{& description}}
 *	@default {{& default}}
 {{/params}}
@@ -27,10 +27,17 @@
 	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('received: ', arguments)});
 	//Parametre checks
 {{#params}}
-	if({{name}} == undefined) {{name}} = {{& default}};
+	if( {{name}} == null {{#default}}){
+		{{name}} = {{& default}};
+	} else if( {{/default}}{{^default}}|| {{/default}}typeof({{name}}) !== '{{LowerCase low_type}}' ){
+		_return = [-2, 'Error: param "{{name}} is either null or not a {{LowerCase low_type}}.'];
+	}
 {{/params}}
 	
 	//Function
+	if( _return[0] === 1 ){
+
+	}
 
 	//Return
 	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('returned: ', _return)});
