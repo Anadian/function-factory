@@ -5153,3 +5153,2215 @@
 }
 2019-06-25T18:46:03.402Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
 2019-06-25T18:46:03.402Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-07-12T05:11:38.298Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-07-12T05:11:38.341Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0': '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:11:38.449Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [
+  0,
+  {
+    template_directories: [
+      'Resources/templates',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/templates',
+      [length]: 2
+    ],
+    defaults_directories: [
+      'Resources/defaults',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/defaults',
+      [length]: 2
+    ]
+  },
+  [length]: 2
+]
+2019-07-12T05:11:38.449Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-07-12T05:11:38.453Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { edit: 'js file', pasteboard: true }
+2019-07-12T05:11:38.467Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: [Arguments] {
+  '0': 'js file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:11:38.467Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:11:38.468Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:11:38.522Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/file.json": Error: ' +
+    "ENOENT: no such file or directory, open 'js/file.json'\n    at " +
+    'Object.openSync (fs.js:447:3)\n    at Object.readFileSync (fs.js:349:35)\n ' +
+    '   at Object.JSONIC_Parse_FilePath [as ParseFilePath] ' +
+    '(/Users/cameron/dev/function-factory/source/jsonic-parse.js:146:27)\n    ' +
+    'at DefaultInputDataFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:156:33)\n    at ' +
+    'DefaultInputDataFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:179:21)\n    at ' +
+    'DefaultInputDataFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:219:21)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:469:21)\n    at ' +
+    'Object.<anonymous> ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:649:14)\n    at ' +
+    'Module._compile (internal/modules/cjs/loader.js:774:30)\n    at ' +
+    'Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10) {\n ' +
+    " errno: -2,\n  syscall: 'open',\n  code: 'ENOENT',\n  path: 'js/file.json'\n" +
+    '}',
+  [length]: 2
+]
+2019-07-12T05:11:38.522Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'Resources/defaults/js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:11:38.551Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": ' +
+    '"Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": ' +
+    '"process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": ' +
+    'true\n}',
+  [length]: 2
+]
+2019-07-12T05:11:38.551Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [
+  0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": ' +
+    '"Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": ' +
+    '"process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": ' +
+    'true\n}',
+  [length]: 2
+]
+2019-07-12T05:11:38.551Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [
+  0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": ' +
+    '"Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": ' +
+    '"process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": ' +
+    'true\n}',
+  [length]: 2
+]
+2019-07-12T05:11:38.579Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-07-12T05:15:23.815Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: {
+  editor_input: '{\n\t"template": "js file",\n\t"filename": ' +
+    `"github-repository-stats.js",\n\t"description": "Uses GitHub's ` +
+    'GraphQL API to collect statistics of the given repositories.",\n\t' +
+    '"modulename": "GitHubRepositoryStats",\n\t"processname": ' +
+    '"github-repository-stats",\n\t"strict": true,\n\t"main": true,\n\t' +
+    '"logger": true,\n\t"cli": false\n}\n'
+}
+2019-07-12T05:15:23.816Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: [Arguments] {
+  '0': {
+    editor_input: '{\n\t"template": "js file",\n\t"filename": ' +
+      `"github-repository-stats.js",\n\t"description": "Uses GitHub's ` +
+      'GraphQL API to collect statistics of the given repositories.",\n\t' +
+      '"modulename": "GitHubRepositoryStats",\n\t"processname": ' +
+      '"github-repository-stats",\n\t"strict": true,\n\t"main": true,\n\t' +
+      '"logger": true,\n\t"cli": false\n}\n'
+  },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:15:23.816Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: {
+  template: 'js file',
+  filename: 'github-repository-stats.js',
+  description: "Uses GitHub's GraphQL API to collect statistics of the given repositories.",
+  modulename: 'GitHubRepositoryStats',
+  processname: 'github-repository-stats',
+  strict: true,
+  main: true,
+  logger: true,
+  cli: false
+} undefined
+2019-07-12T05:15:23.817Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: [Arguments] {
+  '0': 'js file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:15:23.818Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:15:23.818Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:15:23.819Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  -3,
+  'Error: template "js/file.hbs" cannot be read: Error: ENOENT: no such ' +
+    "file or directory, access 'js/file.hbs'\n    at Object.accessSync " +
+    '(fs.js:202:3)\n    at TemplateFunctionFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:239:15)\n    at ' +
+    'TemplateFunctionFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:269:21)\n    at ' +
+    'TemplateFunctionFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:308:21)\n    at ' +
+    'OutputFromInput ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:364:23)\n    at ' +
+    'OutputFromInquirerEditorAnswer ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:401:22)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:486:22)\n    at ' +
+    'processTicksAndRejections (internal/process/task_queues.js:89:5) {\n  ' +
+    "errno: -2,\n  syscall: 'access',\n  code: 'ENOENT',\n  path: 'js/file.hbs'\n" +
+    '}',
+  [length]: 2
+]
+2019-07-12T05:15:23.819Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'Resources/templates/js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:15:23.857Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-07-12T05:15:23.858Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-07-12T05:15:23.858Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-07-12T05:15:23.902Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: [Arguments] {
+  '0': "#!/usr/local/bin/node\n'use strict';\n/**\n* @file github-repository-stats.js\n" +
+    "* @brief Uses GitHub's GraphQL API to collect statistics of the given " +
+    'repositories.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\t' +
+    'Permission is hereby granted, free of charge, to any person obtaining a ' +
+    'copy of this \nsoftware and associated documentation files (the ' +
+    '"Software"), to deal in the Software \nwithout restriction, including ' +
+    'without limitation the rights to use, copy, modify, \nmerge, publish, ' +
+    'distribute, sublicense, and/or sell copies of the Software, and to \npermit ' +
+    'persons to whom the Software is furnished to do so, subject to the ' +
+    'following \nconditions:\n\tThe above copyright notice and this permission ' +
+    'notice shall be included in all copies \nor substantial portions of the ' +
+    'Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, ' +
+    'EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF ' +
+    'MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN ' +
+    'NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, ' +
+    'DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR ' +
+    'OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE ' +
+    'USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+    "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+    "const FILENAME = 'github-repository-stats.js';\nconst MODULE_NAME = " +
+    "'GitHubRepositoryStats';\nvar PROCESS_NAME = '';\nif(require.main === " +
+    "module){\n\tPROCESS_NAME = 'github-repository-stats';\n} else{\n\tPROCESS_NAME " +
+    '= process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: () => {\n\t\t' +
+    'return null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return ' +
+    "= [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar " +
+    'function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === ' +
+    "'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\t" +
+    "return null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param " +
+    `"logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\t` +
+    'Logger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n' +
+    '//Exports and Execution\nif(require.main === module){\n\tvar _return = ' +
+    "[1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t" +
+    '\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = ' +
+    "require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = " +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( " +
+    'PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\t' +
+    'try{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\t' +
+    "console.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Config\n\t//Main\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: 'End of execution " +
+    "block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n",
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:15:23.903Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2019-07-12T05:15:23.905Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [
+  0,
+  "#!/usr/local/bin/node\n'use strict';\n/**\n* @file github-repository-stats.js\n" +
+    "* @brief Uses GitHub's GraphQL API to collect statistics of the given " +
+    'repositories.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\t' +
+    'Permission is hereby granted, free of charge, to any person obtaining a ' +
+    'copy of this \nsoftware and associated documentation files (the ' +
+    '"Software"), to deal in the Software \nwithout restriction, including ' +
+    'without limitation the rights to use, copy, modify, \nmerge, publish, ' +
+    'distribute, sublicense, and/or sell copies of the Software, and to \npermit ' +
+    'persons to whom the Software is furnished to do so, subject to the ' +
+    'following \nconditions:\n\tThe above copyright notice and this permission ' +
+    'notice shall be included in all copies \nor substantial portions of the ' +
+    'Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, ' +
+    'EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF ' +
+    'MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN ' +
+    'NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, ' +
+    'DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR ' +
+    'OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE ' +
+    'USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+    "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+    "const FILENAME = 'github-repository-stats.js';\nconst MODULE_NAME = " +
+    "'GitHubRepositoryStats';\nvar PROCESS_NAME = '';\nif(require.main === " +
+    "module){\n\tPROCESS_NAME = 'github-repository-stats';\n} else{\n\tPROCESS_NAME " +
+    '= process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: () => {\n\t\t' +
+    'return null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return ' +
+    "= [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar " +
+    'function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === ' +
+    "'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\t" +
+    "return null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param " +
+    `"logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\t` +
+    'Logger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n' +
+    '//Exports and Execution\nif(require.main === module){\n\tvar _return = ' +
+    "[1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t" +
+    '\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = ' +
+    "require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = " +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( " +
+    'PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\t' +
+    'try{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\t' +
+    "console.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Config\n\t//Main\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: 'End of execution " +
+    "block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n",
+  [length]: 2
+]
+2019-07-12T05:15:23.906Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [
+  0,
+  "#!/usr/local/bin/node\n'use strict';\n/**\n* @file github-repository-stats.js\n" +
+    "* @brief Uses GitHub's GraphQL API to collect statistics of the given " +
+    'repositories.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\t' +
+    'Permission is hereby granted, free of charge, to any person obtaining a ' +
+    'copy of this \nsoftware and associated documentation files (the ' +
+    '"Software"), to deal in the Software \nwithout restriction, including ' +
+    'without limitation the rights to use, copy, modify, \nmerge, publish, ' +
+    'distribute, sublicense, and/or sell copies of the Software, and to \npermit ' +
+    'persons to whom the Software is furnished to do so, subject to the ' +
+    'following \nconditions:\n\tThe above copyright notice and this permission ' +
+    'notice shall be included in all copies \nor substantial portions of the ' +
+    'Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, ' +
+    'EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF ' +
+    'MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN ' +
+    'NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, ' +
+    'DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR ' +
+    'OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE ' +
+    'USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+    "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+    "const FILENAME = 'github-repository-stats.js';\nconst MODULE_NAME = " +
+    "'GitHubRepositoryStats';\nvar PROCESS_NAME = '';\nif(require.main === " +
+    "module){\n\tPROCESS_NAME = 'github-repository-stats';\n} else{\n\tPROCESS_NAME " +
+    '= process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: () => {\n\t\t' +
+    'return null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return ' +
+    "= [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar " +
+    'function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === ' +
+    "'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\t" +
+    "return null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param " +
+    `"logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\t` +
+    'Logger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n' +
+    '//Exports and Execution\nif(require.main === module){\n\tvar _return = ' +
+    "[1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t" +
+    '\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = ' +
+    "require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = " +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( " +
+    'PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\t' +
+    'try{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\t' +
+    "console.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Config\n\t//Main\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: 'End of execution " +
+    "block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n",
+  [
+    0,
+    "#!/usr/local/bin/node\n'use strict';\n/**\n* @file " +
+      "github-repository-stats.js\n* @brief Uses GitHub's GraphQL API to " +
+      'collect statistics of the given repositories.\n* @author Anadian\n* ' +
+      '@copyright \tCopyright 2019 Canosw\n\tPermission is hereby granted, free ' +
+      'of charge, to any person obtaining a copy of this \nsoftware and ' +
+      'associated documentation files (the "Software"), to deal in the ' +
+      'Software \nwithout restriction, including without limitation the rights ' +
+      'to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or ' +
+      'sell copies of the Software, and to \npermit persons to whom the ' +
+      'Software is furnished to do so, subject to the following \nconditions:\n\t' +
+      'The above copyright notice and this permission notice shall be included ' +
+      'in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE ' +
+      'IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \n' +
+      'INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS ' +
+      'FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE ' +
+      'AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER ' +
+      'LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ' +
+      'ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR ' +
+      'OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+      "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+      "const FILENAME = 'github-repository-stats.js';\nconst MODULE_NAME = " +
+      "'GitHubRepositoryStats';\nvar PROCESS_NAME = '';\nif(require.main === " +
+      "module){\n\tPROCESS_NAME = 'github-repository-stats';\n} else{\n\t" +
+      'PROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\t' +
+      'log: () => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( ' +
+      "logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n" +
+      '\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( ' +
+      "typeof(logger) === 'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t" +
+      '\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = ' +
+      `[-2,'Error: param "logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( ` +
+      '_return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t' +
+      '//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main ' +
+      '=== module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = ' +
+      "'MainExecutionFunction';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t" +
+      "//External\n\t\tconst MakeDir = require('make-dir');\n\t\tconst " +
+      'ApplicationLogWinstonInterface = ' +
+      "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+      "require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( " +
+      'PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n' +
+      '\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\t' +
+      "console.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = " +
+      "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+      'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+      'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+      "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+      "message: 'Start of execution block.'});\n\t//Config\n\t//Main\n\t" +
+      'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+      "function: FUNCTION_NAME, level: 'debug', message: 'End of execution " +
+      "block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n",
+    [length]: 2
+  ],
+  [length]: 3
+]
+2019-07-12T05:15:23.907Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [
+  0,
+  "#!/usr/local/bin/node\n'use strict';\n/**\n* @file github-repository-stats.js\n" +
+    "* @brief Uses GitHub's GraphQL API to collect statistics of the given " +
+    'repositories.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\t' +
+    'Permission is hereby granted, free of charge, to any person obtaining a ' +
+    'copy of this \nsoftware and associated documentation files (the ' +
+    '"Software"), to deal in the Software \nwithout restriction, including ' +
+    'without limitation the rights to use, copy, modify, \nmerge, publish, ' +
+    'distribute, sublicense, and/or sell copies of the Software, and to \npermit ' +
+    'persons to whom the Software is furnished to do so, subject to the ' +
+    'following \nconditions:\n\tThe above copyright notice and this permission ' +
+    'notice shall be included in all copies \nor substantial portions of the ' +
+    'Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, ' +
+    'EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF ' +
+    'MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN ' +
+    'NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, ' +
+    'DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR ' +
+    'OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE ' +
+    'USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+    "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+    "const FILENAME = 'github-repository-stats.js';\nconst MODULE_NAME = " +
+    "'GitHubRepositoryStats';\nvar PROCESS_NAME = '';\nif(require.main === " +
+    "module){\n\tPROCESS_NAME = 'github-repository-stats';\n} else{\n\tPROCESS_NAME " +
+    '= process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: () => {\n\t\t' +
+    'return null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return ' +
+    "= [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar " +
+    'function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === ' +
+    "'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\t" +
+    "return null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param " +
+    `"logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\t` +
+    'Logger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n' +
+    '//Exports and Execution\nif(require.main === module){\n\tvar _return = ' +
+    "[1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t" +
+    '\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = ' +
+    "require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = " +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( " +
+    'PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\t' +
+    'try{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\t' +
+    "console.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Config\n\t//Main\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: 'End of execution " +
+    "block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n",
+  [length]: 2
+]
+2019-07-12T05:15:23.908Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: [Arguments] {
+  '0': "#!/usr/local/bin/node\n'use strict';\n/**\n* @file github-repository-stats.js\n" +
+    "* @brief Uses GitHub's GraphQL API to collect statistics of the given " +
+    'repositories.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\t' +
+    'Permission is hereby granted, free of charge, to any person obtaining a ' +
+    'copy of this \nsoftware and associated documentation files (the ' +
+    '"Software"), to deal in the Software \nwithout restriction, including ' +
+    'without limitation the rights to use, copy, modify, \nmerge, publish, ' +
+    'distribute, sublicense, and/or sell copies of the Software, and to \npermit ' +
+    'persons to whom the Software is furnished to do so, subject to the ' +
+    'following \nconditions:\n\tThe above copyright notice and this permission ' +
+    'notice shall be included in all copies \nor substantial portions of the ' +
+    'Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, ' +
+    'EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF ' +
+    'MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN ' +
+    'NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, ' +
+    'DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR ' +
+    'OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE ' +
+    'USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t' +
+    "//Standard\n\tconst Utility = require('util');\n\t//External\n\n//Constants\n" +
+    "const FILENAME = 'github-repository-stats.js';\nconst MODULE_NAME = " +
+    "'GitHubRepositoryStats';\nvar PROCESS_NAME = '';\nif(require.main === " +
+    "module){\n\tPROCESS_NAME = 'github-repository-stats';\n} else{\n\tPROCESS_NAME " +
+    '= process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: () => {\n\t\t' +
+    'return null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return ' +
+    "= [1,null];\n\tconst FUNCTION_NAME = 'Logger_Set';\n\t//Variables\n\tvar " +
+    'function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === ' +
+    "'object' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\t" +
+    "return null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,'Error: param " +
+    `"logger" is not an object.'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\t` +
+    'Logger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n' +
+    '//Exports and Execution\nif(require.main === module){\n\tvar _return = ' +
+    "[1,null];\n\tconst FUNCTION_NAME = 'MainExecutionFunction';\n\t//Dependencies\n\t" +
+    '\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = ' +
+    "require('make-dir');\n\t\tconst ApplicationLogWinstonInterface = " +
+    "require('application-log-winston-interface');\n\t\tconst EnvPaths = " +
+    "require('env-paths');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( " +
+    'PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\t' +
+    'try{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\t' +
+    "console.error('MakeDir.sync threw: %s', error);\n\t}\n\tfunction_return = " +
+    "ApplicationLogWinstonInterface.InitLogger('debug.log', " +
+    'EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( ' +
+    'function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: ' +
+    "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+    "message: 'Start of execution block.'});\n\t//Config\n\t//Main\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: 'End of execution " +
+    "block.'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n",
+  '1': { edit: 'js file', pasteboard: true },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:15:25.289Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-07-12T05:15:25.289Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-07-12T05:18:02.746Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-07-12T05:18:02.782Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0': '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:18:02.824Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [
+  0,
+  {
+    template_directories: [
+      'Resources/templates',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/templates',
+      [length]: 2
+    ],
+    defaults_directories: [
+      'Resources/defaults',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/defaults',
+      [length]: 2
+    ]
+  },
+  [length]: 2
+]
+2019-07-12T05:18:02.825Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-07-12T05:18:02.829Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { edit: 'js func', pasteboard: true }
+2019-07-12T05:18:02.830Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:18:02.830Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:18:02.831Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:18:02.838Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ' +
+    "ENOENT: no such file or directory, open 'js/func.json'\n    at " +
+    'Object.openSync (fs.js:447:3)\n    at Object.readFileSync (fs.js:349:35)\n ' +
+    '   at Object.JSONIC_Parse_FilePath [as ParseFilePath] ' +
+    '(/Users/cameron/dev/function-factory/source/jsonic-parse.js:146:27)\n    ' +
+    'at DefaultInputDataFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:156:33)\n    at ' +
+    'DefaultInputDataFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:179:21)\n    at ' +
+    'DefaultInputDataFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:219:21)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:469:21)\n    at ' +
+    'Object.<anonymous> ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:649:14)\n    at ' +
+    'Module._compile (internal/modules/cjs/loader.js:774:30)\n    at ' +
+    'Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10) {\n ' +
+    " errno: -2,\n  syscall: 'open',\n  code: 'ENOENT',\n  path: 'js/func.json'\n" +
+    '}',
+  [length]: 2
+]
+2019-07-12T05:18:02.838Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:18:02.850Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-07-12T05:18:02.851Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-07-12T05:18:02.851Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-07-12T05:18:02.904Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-07-12T05:23:51.833Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: {
+  editor_input: '{\n\t"template": "js func",\n\t"name": ' +
+    '"GitHub_Repository_Stats_FileFromArray_Async",\n\t"description": "Get the ' +
+    'stats for the repositories in the array and writes the output JSON to the ' +
+    'given filename.",\n\t"params": [\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": ' +
+    '"output_filename",\n\t\t\t"default": "null",\n\t\t\t"description": "The file to ' +
+    'write the resulting JSON to."\n\t\t},\n\t\t{\n\t\t\t"type": "Array",\n\t\t\t"name": ' +
+    '"repos_array",\n\t\t\t"default": "null",\n\t\t\t"description": "Each entry in the ' +
+    "array should be an object with a 'repo' property and an 'owner' property, " +
+    'with a string for the repo name and GitHub username respectively."\n\t\t}\n\t' +
+    '],\n\t"asynchronous": true,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t' +
+    '"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n'
+}
+2019-07-12T05:23:51.835Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: [Arguments] {
+  '0': {
+    editor_input: '{\n\t"template": "js func",\n\t"name": ' +
+      '"GitHub_Repository_Stats_FileFromArray_Async",\n\t"description": ' +
+      '"Get the stats for the repositories in the array and writes the ' +
+      'output JSON to the given filename.",\n\t"params": [\n\t\t{\n\t\t\t"type": ' +
+      '"String",\n\t\t\t"name": "output_filename",\n\t\t\t"default": "null",\n\t\t\t' +
+      '"description": "The file to write the resulting JSON to."\n\t\t},\n\t\t{\n' +
+      '\t\t\t"type": "Array",\n\t\t\t"name": "repos_array",\n\t\t\t"default": ' +
+      '"null",\n\t\t\t"description": "Each entry in the array should be an ' +
+      "object with a 'repo' property and an 'owner' property, with a " +
+      'string for the repo name and GitHub username respectively."\n\t\t}\n\t' +
+      '],\n\t"asynchronous": true,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t' +
+      '\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n'
+  },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:23:51.837Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: {
+  template: 'js func',
+  name: 'GitHub_Repository_Stats_FileFromArray_Async',
+  description: 'Get the stats for the repositories in the array ' +
+    'and writes the output JSON to the given filename.',
+  params: [
+    {
+      type: 'String',
+      name: 'output_filename',
+      default: 'null',
+      description: 'The file to write the resulting JSON to.'
+    },
+    {
+      type: 'Array',
+      name: 'repos_array',
+      default: 'null',
+      description: 'Each entry in the array should be an object with a ' +
+        "'repo' property and an 'owner' property, with a " +
+        'string for the repo name and GitHub username ' +
+        'respectively.'
+    },
+    [length]: 2
+  ],
+  asynchronous: true,
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ]
+} undefined
+2019-07-12T05:23:51.837Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:23:51.838Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:23:51.838Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:23:51.839Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  -3,
+  'Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such ' +
+    "file or directory, access 'js/func.hbs'\n    at Object.accessSync " +
+    '(fs.js:202:3)\n    at TemplateFunctionFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:239:15)\n    at ' +
+    'TemplateFunctionFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:269:21)\n    at ' +
+    'TemplateFunctionFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:308:21)\n    at ' +
+    'OutputFromInput ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:364:23)\n    at ' +
+    'OutputFromInquirerEditorAnswer ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:401:22)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:486:22)\n    at ' +
+    'processTicksAndRejections (internal/process/task_queues.js:89:5) {\n  ' +
+    "errno: -2,\n  syscall: 'access',\n  code: 'ENOENT',\n  path: 'js/func.hbs'\n" +
+    '}',
+  [length]: 2
+]
+2019-07-12T05:23:51.839Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:23:51.876Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-07-12T05:23:51.876Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-07-12T05:23:51.876Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-07-12T05:23:52.022Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:error: [
+  -4,
+  "Error: inquirer_questions [\n  {\n    type: 'editor',\n    name: " +
+    "'editor_input',\n    message: 'Enter input context (JSON).',\n    default: " +
+    `'{\\n\\t"template": "js func",\\n\\t"name": "FunctionName",\\n\\t"description": ` +
+    `' +\n      '"Brief description.",\\n\\t"params": [\\n\\t\\t{\\n\\t\\t\\t"type": ` +
+    `"ArgumentType",\\n\\t\\t\\t' +\n      '"name": ` +
+    `"parametre_name",\\n\\t\\t\\t"default": "null",\\n\\t\\t\\t"description": ' +\n    ` +
+    `  '"Brief parametre description."\\n\\t\\t}\\n\\t],\\n\\t"asynchronous": ` +
+    `false,\\n\\t' +\n      '"post_re": [\\n\\t\\t{\\n\\t\\t\\t"search": ` +
+    `",\\\\\\\\)",\\n\\t\\t\\t"replace": " )",\\n\\t\\t\\t"flags": ' +\n      ` +
+    `'"gm"\\n\\t\\t}\\n\\t]\\n}'\n  },\n  [length]: 1\n] causes Inquirer.prompt to ` +
+    'throw an error: "Error: Missing helper: "LowerCase"\n    at ' +
+    'Object.<anonymous> ' +
+    '(/Users/cameron/dev/function-factory/node/npm/node_modules/handlebars/dist/cjs/handlebars/helpers/helper-missing.js:19:13)\n' +
+    '    at eval (eval at createFunctionContext ' +
+    '(/Users/cameron/dev/function-factory/node/npm/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:257:23), ' +
+    '<anonymous>:16:76)\n    at prog ' +
+    '(/Users/cameron/dev/function-factory/node/npm/node_modules/handlebars/dist/cjs/handlebars/runtime.js:221:12)\n' +
+    '    at execIteration ' +
+    '(/Users/cameron/dev/function-factory/node/npm/node_modules/handlebars/dist/cjs/handlebars/helpers/each.js:51:19)\n' +
+    '    at Object.each ' +
+    '(/Users/cameron/dev/function-factory/node/npm/node_modules/handlebars/dist/cjs/handlebars/helpers/each.js:61:13)\n' +
+    '    at Object.<anonymous> ' +
+    '(/Users/cameron/dev/function-factory/node/npm/node_modules/handlebars/dist/cjs/handlebars/helpers/block-helper-missing.js:22:33)\n' +
+    '    at Object.eval [as main] (eval at createFunctionContext ' +
+    '(/Users/cameron/dev/function-factory/node/npm/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:257:23), ' +
+    '<anonymous>:29:42)\n    at main ' +
+    '(/Users/cameron/dev/function-factory/node/npm/node_modules/handlebars/dist/cjs/handlebars/runtime.js:175:32)\n' +
+    '    at Array.ret ' +
+    '(/Users/cameron/dev/function-factory/node/npm/node_modules/handlebars/dist/cjs/handlebars/runtime.js:178:12)\n' +
+    '    at Array.ret ' +
+    '(/Users/cameron/dev/function-factory/node/npm/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:526:21) ' +
+    '{\n  description: undefined,\n  fileName: undefined,\n  lineNumber: ' +
+    `undefined,\n  message: 'Missing helper: "LowerCase"',\n  name: 'Error',\n  ` +
+    'number: undefined\n}"',
+  [length]: 2
+]
+2019-07-12T05:23:52.024Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [
+  -4,
+  "Error: inquirer_questions [\n  {\n    type: 'editor',\n    name: " +
+    "'editor_input',\n    message: 'Enter input context (JSON).',\n    default: " +
+    `'{\\n\\t"template": "js func",\\n\\t"name": "FunctionName",\\n\\t"description": ` +
+    `' +\n      '"Brief description.",\\n\\t"params": [\\n\\t\\t{\\n\\t\\t\\t"type": ` +
+    `"ArgumentType",\\n\\t\\t\\t' +\n      '"name": ` +
+    `"parametre_name",\\n\\t\\t\\t"default": "null",\\n\\t\\t\\t"description": ' +\n    ` +
+    `  '"Brief parametre description."\\n\\t\\t}\\n\\t],\\n\\t"asynchronous": ` +
+    `false,\\n\\t' +\n      '"post_re": [\\n\\t\\t{\\n\\t\\t\\t"search": ` +
+    `",\\\\\\\\)",\\n\\t\\t\\t"replace": " )",\\n\\t\\t\\t"flags": ' +\n      ` +
+    `'"gm"\\n\\t\\t}\\n\\t]\\n}'\n  },\n  [length]: 1\n] causes Inquirer.prompt to ` +
+    'throw an error: "Error: Missing helper: "LowerCase"\n    at ' +
+    'Object.<anonymous> ' +
+    '(/Users/cameron/dev/function-factory/node/npm/node_modules/handlebars/dist/cjs/handlebars/helpers/helper-missing.js:19:13)\n' +
+    '    at eval (eval at createFunctionContext ' +
+    '(/Users/cameron/dev/function-factory/node/npm/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:257:23), ' +
+    '<anonymous>:16:76)\n    at prog ' +
+    '(/Users/cameron/dev/function-factory/node/npm/node_modules/handlebars/dist/cjs/handlebars/runtime.js:221:12)\n' +
+    '    at execIteration ' +
+    '(/Users/cameron/dev/function-factory/node/npm/node_modules/handlebars/dist/cjs/handlebars/helpers/each.js:51:19)\n' +
+    '    at Object.each ' +
+    '(/Users/cameron/dev/function-factory/node/npm/node_modules/handlebars/dist/cjs/handlebars/helpers/each.js:61:13)\n' +
+    '    at Object.<anonymous> ' +
+    '(/Users/cameron/dev/function-factory/node/npm/node_modules/handlebars/dist/cjs/handlebars/helpers/block-helper-missing.js:22:33)\n' +
+    '    at Object.eval [as main] (eval at createFunctionContext ' +
+    '(/Users/cameron/dev/function-factory/node/npm/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:257:23), ' +
+    '<anonymous>:29:42)\n    at main ' +
+    '(/Users/cameron/dev/function-factory/node/npm/node_modules/handlebars/dist/cjs/handlebars/runtime.js:175:32)\n' +
+    '    at Array.ret ' +
+    '(/Users/cameron/dev/function-factory/node/npm/node_modules/handlebars/dist/cjs/handlebars/runtime.js:178:12)\n' +
+    '    at Array.ret ' +
+    '(/Users/cameron/dev/function-factory/node/npm/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:526:21) ' +
+    '{\n  description: undefined,\n  fileName: undefined,\n  lineNumber: ' +
+    `undefined,\n  message: 'Missing helper: "LowerCase"',\n  name: 'Error',\n  ` +
+    'number: undefined\n}"',
+  [length]: 2
+]
+2019-07-12T05:47:28.940Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-07-12T05:47:28.951Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0': '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:47:28.994Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [
+  0,
+  {
+    template_directories: [
+      'Resources/templates',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/templates',
+      [length]: 2
+    ],
+    defaults_directories: [
+      'Resources/defaults',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/defaults',
+      [length]: 2
+    ]
+  },
+  [length]: 2
+]
+2019-07-12T05:47:28.994Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-07-12T05:47:28.997Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { edit: 'js func', pasteboard: true }
+2019-07-12T05:47:28.998Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:47:28.999Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:47:28.999Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:47:29.025Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ' +
+    "ENOENT: no such file or directory, open 'js/func.json'\n    at " +
+    'Object.openSync (fs.js:447:3)\n    at Object.readFileSync (fs.js:349:35)\n ' +
+    '   at Object.JSONIC_Parse_FilePath [as ParseFilePath] ' +
+    '(/Users/cameron/dev/function-factory/source/jsonic-parse.js:146:27)\n    ' +
+    'at DefaultInputDataFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:156:33)\n    at ' +
+    'DefaultInputDataFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:179:21)\n    at ' +
+    'DefaultInputDataFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:219:21)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:469:21)\n    at ' +
+    'Object.<anonymous> ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:661:14)\n    at ' +
+    'Module._compile (internal/modules/cjs/loader.js:774:30)\n    at ' +
+    'Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10) {\n ' +
+    " errno: -2,\n  syscall: 'open',\n  code: 'ENOENT',\n  path: 'js/func.json'\n" +
+    '}',
+  [length]: 2
+]
+2019-07-12T05:47:29.025Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:47:29.044Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-07-12T05:47:29.045Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-07-12T05:47:29.045Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-07-12T05:47:29.080Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-07-12T05:54:58.293Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: {
+  editor_input: '{\n\t"template": "js func",\n\t"name": ' +
+    '"GitHub_Repository_Stats_FileFromArray_Async",\n\t"description": "Gets the ' +
+    'stats for the repositories listed in the repos_array and write the ' +
+    'resulting JSON to output_filename.",\n\t"params": [\n\t\t{\n\t\t\t"type": ' +
+    '"String",\n\t\t\t"name": "output_filename",\n\t\t\t"default": "null",\n\t\t\t' +
+    '"description": "The file to write the resulting JSON to."\n\t\t},\n\t\t{\n\t\t\t' +
+    '"type": "Array",\n\t\t\t"name": "repos_array",\n\t\t\t"default": "null",\n\t\t\t' +
+    '"description": "Each entry in the array should be an object with a ' +
+    "'name' property and an 'owner' property for the repo name and GitHub " +
+    'username respectively."\n\t\t}\n\t],\n\t"asynchronous": true,\n\t"post_re": [\n\t\t{\n' +
+    '\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n'
+}
+2019-07-12T05:54:58.295Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: [Arguments] {
+  '0': {
+    editor_input: '{\n\t"template": "js func",\n\t"name": ' +
+      '"GitHub_Repository_Stats_FileFromArray_Async",\n\t"description": "Gets the ' +
+      'stats for the repositories listed in the repos_array and write the ' +
+      'resulting JSON to output_filename.",\n\t"params": [\n\t\t{\n\t\t\t"type": ' +
+      '"String",\n\t\t\t"name": "output_filename",\n\t\t\t"default": "null",\n\t\t\t' +
+      '"description": "The file to write the resulting JSON to."\n\t\t},\n\t\t{\n\t\t\t' +
+      '"type": "Array",\n\t\t\t"name": "repos_array",\n\t\t\t"default": "null",\n\t\t\t' +
+      '"description": "Each entry in the array should be an object with a ' +
+      "'name' property and an 'owner' property for the repo name and GitHub " +
+      'username respectively."\n\t\t}\n\t],\n\t"asynchronous": true,\n\t"post_re": [\n\t\t{\n' +
+      '\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n'
+  },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:54:58.296Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: {
+  template: 'js func',
+  name: 'GitHub_Repository_Stats_FileFromArray_Async',
+  description: 'Gets the stats for the repositories listed in the ' +
+    'repos_array and write the resulting JSON to ' +
+    'output_filename.',
+  params: [
+    {
+      type: 'String',
+      name: 'output_filename',
+      default: 'null',
+      description: 'The file to write the resulting JSON to.'
+    },
+    {
+      type: 'Array',
+      name: 'repos_array',
+      default: 'null',
+      description: 'Each entry in the array should be an object with ' +
+        "a 'name' property and an 'owner' property for " +
+        'the repo name and GitHub username respectively.'
+    },
+    [length]: 2
+  ],
+  asynchronous: true,
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ]
+} undefined
+2019-07-12T05:54:58.297Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:54:58.297Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:54:58.298Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:54:58.299Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  -3,
+  'Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such ' +
+    "file or directory, access 'js/func.hbs'\n    at Object.accessSync " +
+    '(fs.js:202:3)\n    at TemplateFunctionFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:239:15)\n    at ' +
+    'TemplateFunctionFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:269:21)\n    at ' +
+    'TemplateFunctionFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:308:21)\n    at ' +
+    'OutputFromInput ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:364:23)\n    at ' +
+    'OutputFromInquirerEditorAnswer ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:401:22)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:486:22)\n    at ' +
+    'processTicksAndRejections (internal/process/task_queues.js:89:5) {\n  ' +
+    "errno: -2,\n  syscall: 'access',\n  code: 'ENOENT',\n  path: 'js/func.hbs'\n" +
+    '}',
+  [length]: 2
+]
+2019-07-12T05:54:58.300Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:54:58.328Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-07-12T05:54:58.329Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-07-12T05:54:58.329Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-07-12T05:54:58.409Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: [Arguments] {
+  '0': '/**\n* @fn GitHub_Repository_Stats_FileFromArray_Async\n* @brief Gets the ' +
+    'stats for the repositories listed in the repos_array and write the ' +
+    'resulting JSON to output_filename.\n* @async true\n* @param output_filename\n' +
+    '*\t@type \n*\t@brief The file to write the resulting JSON to.\n*\t@default null\n' +
+    '* @param repos_array\n*\t@type \n*\t@brief Each entry in the array should be ' +
+    "an object with a 'name' property and an 'owner' property for the repo name " +
+    'and GitHub username respectively.\n*\t@default null\n* @return <ARRAY>\n*\t' +
+    '@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nasync function ' +
+    'GitHub_Repository_Stats_FileFromArray_Async( output_filename, ' +
+    'repos_array,){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = ' +
+    "'GitHub_Repository_Stats_FileFromArray_Async';\n\t//Variables\n\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif( " +
+    'output_filename == null ){\n\t\t = ;\n\t} else if( typeof([object Object]) ' +
+    "&#x3D;&#x3D;&#x3D; &#x27;string&#x27; ){\n\t\t_return = [-2, 'Error: param " +
+    `"output_filename is either null or not a String.'];\n\t}\n\tif( repos_array == ` +
+    'null ){\n\t\t = ;\n\t} else if( Array.isArray([object Object]) ' +
+    `&#x3D;&#x3D;&#x3D; true ){\n\t\t_return = [-2, 'Error: param "repos_array is ` +
+    "either null or not a Array.'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t" +
+    '}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+    "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:54:58.410Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [
+  0,
+  '/**\n* @fn GitHub_Repository_Stats_FileFromArray_Async\n* @brief Gets the ' +
+    'stats for the repositories listed in the repos_array and write the ' +
+    'resulting JSON to output_filename.\n* @async true\n* @param output_filename\n' +
+    '*\t@type \n*\t@brief The file to write the resulting JSON to.\n*\t@default null\n' +
+    '* @param repos_array\n*\t@type \n*\t@brief Each entry in the array should be ' +
+    "an object with a 'name' property and an 'owner' property for the repo name " +
+    'and GitHub username respectively.\n*\t@default null\n* @return <ARRAY>\n*\t' +
+    '@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nasync function ' +
+    'GitHub_Repository_Stats_FileFromArray_Async( output_filename, repos_array ' +
+    '){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = ' +
+    "'GitHub_Repository_Stats_FileFromArray_Async';\n\t//Variables\n\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif( " +
+    'output_filename == null ){\n\t\t = ;\n\t} else if( typeof([object Object]) ' +
+    "&#x3D;&#x3D;&#x3D; &#x27;string&#x27; ){\n\t\t_return = [-2, 'Error: param " +
+    `"output_filename is either null or not a String.'];\n\t}\n\tif( repos_array == ` +
+    'null ){\n\t\t = ;\n\t} else if( Array.isArray([object Object]) ' +
+    `&#x3D;&#x3D;&#x3D; true ){\n\t\t_return = [-2, 'Error: param "repos_array is ` +
+    "either null or not a Array.'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t" +
+    '}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+    "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [length]: 2
+]
+2019-07-12T05:54:58.411Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [
+  0,
+  '/**\n* @fn GitHub_Repository_Stats_FileFromArray_Async\n* @brief Gets the ' +
+    'stats for the repositories listed in the repos_array and write the ' +
+    'resulting JSON to output_filename.\n* @async true\n* @param output_filename\n' +
+    '*\t@type \n*\t@brief The file to write the resulting JSON to.\n*\t@default null\n' +
+    '* @param repos_array\n*\t@type \n*\t@brief Each entry in the array should be ' +
+    "an object with a 'name' property and an 'owner' property for the repo name " +
+    'and GitHub username respectively.\n*\t@default null\n* @return <ARRAY>\n*\t' +
+    '@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nasync function ' +
+    'GitHub_Repository_Stats_FileFromArray_Async( output_filename, repos_array ' +
+    '){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = ' +
+    "'GitHub_Repository_Stats_FileFromArray_Async';\n\t//Variables\n\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif( " +
+    'output_filename == null ){\n\t\t = ;\n\t} else if( typeof([object Object]) ' +
+    "&#x3D;&#x3D;&#x3D; &#x27;string&#x27; ){\n\t\t_return = [-2, 'Error: param " +
+    `"output_filename is either null or not a String.'];\n\t}\n\tif( repos_array == ` +
+    'null ){\n\t\t = ;\n\t} else if( Array.isArray([object Object]) ' +
+    `&#x3D;&#x3D;&#x3D; true ){\n\t\t_return = [-2, 'Error: param "repos_array is ` +
+    "either null or not a Array.'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t" +
+    '}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+    "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [
+    0,
+    '/**\n* @fn GitHub_Repository_Stats_FileFromArray_Async\n* @brief Gets the ' +
+      'stats for the repositories listed in the repos_array and write the ' +
+      'resulting JSON to output_filename.\n* @async true\n* @param ' +
+      'output_filename\n*\t@type \n*\t@brief The file to write the resulting JSON ' +
+      'to.\n*\t@default null\n* @param repos_array\n*\t@type \n*\t@brief Each entry ' +
+      "in the array should be an object with a 'name' property and an 'owner' " +
+      'property for the repo name and GitHub username respectively.\n*\t@default ' +
+      'null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t' +
+      '@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval ' +
+      '<object> on success\n*\t\t@retval <error_message> on failure.\n*/\nasync ' +
+      'function GitHub_Repository_Stats_FileFromArray_Async( output_filename, ' +
+      'repos_array ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = ' +
+      "'GitHub_Repository_Stats_FileFromArray_Async';\n\t//Variables\n\n\t" +
+      'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+      "function: FUNCTION_NAME, level: 'debug', message: " +
+      "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif( " +
+      'output_filename == null ){\n\t\t = ;\n\t} else if( typeof([object Object]) ' +
+      "&#x3D;&#x3D;&#x3D; &#x27;string&#x27; ){\n\t\t_return = [-2, 'Error: param " +
+      `"output_filename is either null or not a String.'];\n\t}\n\tif( repos_array ` +
+      '== null ){\n\t\t = ;\n\t} else if( Array.isArray([object Object]) ' +
+      `&#x3D;&#x3D;&#x3D; true ){\n\t\t_return = [-2, 'Error: param "repos_array ` +
+      "is either null or not a Array.'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === " +
+      '1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: ' +
+      "MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', " +
+      "message: Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+    [length]: 2
+  ],
+  [length]: 3
+]
+2019-07-12T05:54:58.412Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [
+  0,
+  '/**\n* @fn GitHub_Repository_Stats_FileFromArray_Async\n* @brief Gets the ' +
+    'stats for the repositories listed in the repos_array and write the ' +
+    'resulting JSON to output_filename.\n* @async true\n* @param output_filename\n' +
+    '*\t@type \n*\t@brief The file to write the resulting JSON to.\n*\t@default null\n' +
+    '* @param repos_array\n*\t@type \n*\t@brief Each entry in the array should be ' +
+    "an object with a 'name' property and an 'owner' property for the repo name " +
+    'and GitHub username respectively.\n*\t@default null\n* @return <ARRAY>\n*\t' +
+    '@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nasync function ' +
+    'GitHub_Repository_Stats_FileFromArray_Async( output_filename, repos_array ' +
+    '){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = ' +
+    "'GitHub_Repository_Stats_FileFromArray_Async';\n\t//Variables\n\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif( " +
+    'output_filename == null ){\n\t\t = ;\n\t} else if( typeof([object Object]) ' +
+    "&#x3D;&#x3D;&#x3D; &#x27;string&#x27; ){\n\t\t_return = [-2, 'Error: param " +
+    `"output_filename is either null or not a String.'];\n\t}\n\tif( repos_array == ` +
+    'null ){\n\t\t = ;\n\t} else if( Array.isArray([object Object]) ' +
+    `&#x3D;&#x3D;&#x3D; true ){\n\t\t_return = [-2, 'Error: param "repos_array is ` +
+    "either null or not a Array.'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t" +
+    '}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+    "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [length]: 2
+]
+2019-07-12T05:54:58.414Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: [Arguments] {
+  '0': '/**\n* @fn GitHub_Repository_Stats_FileFromArray_Async\n* @brief Gets the ' +
+    'stats for the repositories listed in the repos_array and write the ' +
+    'resulting JSON to output_filename.\n* @async true\n* @param output_filename\n' +
+    '*\t@type \n*\t@brief The file to write the resulting JSON to.\n*\t@default null\n' +
+    '* @param repos_array\n*\t@type \n*\t@brief Each entry in the array should be ' +
+    "an object with a 'name' property and an 'owner' property for the repo name " +
+    'and GitHub username respectively.\n*\t@default null\n* @return <ARRAY>\n*\t' +
+    '@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nasync function ' +
+    'GitHub_Repository_Stats_FileFromArray_Async( output_filename, repos_array ' +
+    '){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = ' +
+    "'GitHub_Repository_Stats_FileFromArray_Async';\n\t//Variables\n\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif( " +
+    'output_filename == null ){\n\t\t = ;\n\t} else if( typeof([object Object]) ' +
+    "&#x3D;&#x3D;&#x3D; &#x27;string&#x27; ){\n\t\t_return = [-2, 'Error: param " +
+    `"output_filename is either null or not a String.'];\n\t}\n\tif( repos_array == ` +
+    'null ){\n\t\t = ;\n\t} else if( Array.isArray([object Object]) ' +
+    `&#x3D;&#x3D;&#x3D; true ){\n\t\t_return = [-2, 'Error: param "repos_array is ` +
+    "either null or not a Array.'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t" +
+    '}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, ' +
+    "file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  '1': { edit: 'js func', pasteboard: true },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:54:59.154Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-07-12T05:54:59.154Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-07-12T05:58:45.629Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-07-12T05:58:45.642Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0': '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:58:45.671Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [
+  0,
+  {
+    template_directories: [
+      'Resources/templates',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/templates',
+      [length]: 2
+    ],
+    defaults_directories: [
+      'Resources/defaults',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/defaults',
+      [length]: 2
+    ]
+  },
+  [length]: 2
+]
+2019-07-12T05:58:45.672Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-07-12T05:58:45.676Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { edit: 'js func', pasteboard: true }
+2019-07-12T05:58:45.676Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:58:45.678Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:58:45.678Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:58:45.688Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ' +
+    "ENOENT: no such file or directory, open 'js/func.json'\n    at " +
+    'Object.openSync (fs.js:447:3)\n    at Object.readFileSync (fs.js:349:35)\n ' +
+    '   at Object.JSONIC_Parse_FilePath [as ParseFilePath] ' +
+    '(/Users/cameron/dev/function-factory/source/jsonic-parse.js:146:27)\n    ' +
+    'at DefaultInputDataFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:156:33)\n    at ' +
+    'DefaultInputDataFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:179:21)\n    at ' +
+    'DefaultInputDataFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:219:21)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:469:21)\n    at ' +
+    'Object.<anonymous> ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:661:14)\n    at ' +
+    'Module._compile (internal/modules/cjs/loader.js:774:30)\n    at ' +
+    'Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10) {\n ' +
+    " errno: -2,\n  syscall: 'open',\n  code: 'ENOENT',\n  path: 'js/func.json'\n" +
+    '}',
+  [length]: 2
+]
+2019-07-12T05:58:45.689Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:58:45.709Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-07-12T05:58:45.709Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-07-12T05:58:45.709Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": "null",\n\t\t\t"description": ' +
+    '"Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t' +
+    '"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": ' +
+    '"gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-07-12T05:58:45.761Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-07-12T05:59:39.061Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: {
+  editor_input: '{\n\t"template": "js func",\n\t"name": ' +
+    '"GitHub_Repository_Stats_FileFromArray_Async",\n\t"description": "Gets the ' +
+    'stats for the repositories listed in the repos_array and write the ' +
+    'resulting JSON to output_filename.",\n\t"params": [\n\t\t{\n\t\t\t"type": ' +
+    '"String",\n\t\t\t"name": "output_filename",\n\t\t\t"default": "null",\n\t\t\t' +
+    '"description": "The file to write the resulting JSON to."\n\t\t},\n\t\t{\n\t\t\t' +
+    '"type": "Array",\n\t\t\t"name": "repos_array",\n\t\t\t"default": "null",\n\t\t\t' +
+    '"description": "Each entry in the array should be an object with a ' +
+    "'name' property and an 'owner' property for the repo name and GitHub " +
+    'username respectively."\n\t\t}\n\t],\n\t"asynchronous": true,\n\t"post_re": [\n\t\t{\n' +
+    '\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n\n'
+}
+2019-07-12T05:59:39.062Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: [Arguments] {
+  '0': {
+    editor_input: '{\n\t"template": "js func",\n\t"name": ' +
+      '"GitHub_Repository_Stats_FileFromArray_Async",\n\t"description": "Gets the ' +
+      'stats for the repositories listed in the repos_array and write the ' +
+      'resulting JSON to output_filename.",\n\t"params": [\n\t\t{\n\t\t\t"type": ' +
+      '"String",\n\t\t\t"name": "output_filename",\n\t\t\t"default": "null",\n\t\t\t' +
+      '"description": "The file to write the resulting JSON to."\n\t\t},\n\t\t{\n\t\t\t' +
+      '"type": "Array",\n\t\t\t"name": "repos_array",\n\t\t\t"default": "null",\n\t\t\t' +
+      '"description": "Each entry in the array should be an object with a ' +
+      "'name' property and an 'owner' property for the repo name and GitHub " +
+      'username respectively."\n\t\t}\n\t],\n\t"asynchronous": true,\n\t"post_re": [\n\t\t{\n' +
+      '\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n\n'
+  },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:59:39.063Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: {
+  template: 'js func',
+  name: 'GitHub_Repository_Stats_FileFromArray_Async',
+  description: 'Gets the stats for the repositories listed in the ' +
+    'repos_array and write the resulting JSON to ' +
+    'output_filename.',
+  params: [
+    {
+      type: 'String',
+      name: 'output_filename',
+      default: 'null',
+      description: 'The file to write the resulting JSON to.'
+    },
+    {
+      type: 'Array',
+      name: 'repos_array',
+      default: 'null',
+      description: 'Each entry in the array should be an object with ' +
+        "a 'name' property and an 'owner' property for " +
+        'the repo name and GitHub username respectively.'
+    },
+    [length]: 2
+  ],
+  asynchronous: true,
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ]
+} undefined
+2019-07-12T05:59:39.064Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:59:39.064Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:59:39.065Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:59:39.066Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  -3,
+  'Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such ' +
+    "file or directory, access 'js/func.hbs'\n    at Object.accessSync " +
+    '(fs.js:202:3)\n    at TemplateFunctionFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:239:15)\n    at ' +
+    'TemplateFunctionFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:269:21)\n    at ' +
+    'TemplateFunctionFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:308:21)\n    at ' +
+    'OutputFromInput ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:364:23)\n    at ' +
+    'OutputFromInquirerEditorAnswer ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:401:22)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:486:22)\n    at ' +
+    'processTicksAndRejections (internal/process/task_queues.js:89:5) {\n  ' +
+    "errno: -2,\n  syscall: 'access',\n  code: 'ENOENT',\n  path: 'js/func.hbs'\n" +
+    '}',
+  [length]: 2
+]
+2019-07-12T05:59:39.066Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:59:39.095Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-07-12T05:59:39.095Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-07-12T05:59:39.095Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-07-12T05:59:39.148Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: [Arguments] {
+  '0': '/**\n* @fn GitHub_Repository_Stats_FileFromArray_Async\n* @brief Gets the ' +
+    'stats for the repositories listed in the repos_array and write the ' +
+    'resulting JSON to output_filename.\n* @async true\n* @param ' +
+    'output_filename\n*\t@type \n*\t@brief The file to write the resulting JSON ' +
+    'to.\n*\t@default null\n* @param repos_array\n*\t@type \n*\t@brief Each entry in ' +
+    "the array should be an object with a 'name' property and an 'owner' " +
+    'property for the repo name and GitHub username respectively.\n*\t@default ' +
+    'null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t' +
+    '@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval ' +
+    '<object> on success\n*\t\t@retval <error_message> on failure.\n*/\nasync ' +
+    'function GitHub_Repository_Stats_FileFromArray_Async( output_filename, ' +
+    'repos_array,){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = ' +
+    "'GitHub_Repository_Stats_FileFromArray_Async';\n\t//Variables\n\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif( " +
+    'output_filename == null ){\n\t\t = ;\n\t} else if( typeof(output_filename) ' +
+    `=== 'string' ){\n\t\t_return = [-2, 'Error: param "output_filename is ` +
+    "either null or not a String.'];\n\t}\n\tif( repos_array == null ){\n\t\t = ;\n\t} " +
+    "else if( Array.isArray(repos_array) === true ){\n\t\t_return = [-2, 'Error: " +
+    `param "repos_array is either null or not a Array.'];\n\t}\n\t\n\t//Function\n\t` +
+    'if( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: ' +
+    'PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: ' +
+    "FUNCTION_NAME, level: 'debug', message: Utility.format('returned: ', " +
+    '_return)});\n\treturn _return;\n}\n',
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:59:39.149Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [
+  0,
+  '/**\n* @fn GitHub_Repository_Stats_FileFromArray_Async\n* @brief Gets the ' +
+    'stats for the repositories listed in the repos_array and write the ' +
+    'resulting JSON to output_filename.\n* @async true\n* @param ' +
+    'output_filename\n*\t@type \n*\t@brief The file to write the resulting JSON ' +
+    'to.\n*\t@default null\n* @param repos_array\n*\t@type \n*\t@brief Each entry in ' +
+    "the array should be an object with a 'name' property and an 'owner' " +
+    'property for the repo name and GitHub username respectively.\n*\t@default ' +
+    'null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t' +
+    '@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval ' +
+    '<object> on success\n*\t\t@retval <error_message> on failure.\n*/\nasync ' +
+    'function GitHub_Repository_Stats_FileFromArray_Async( output_filename, ' +
+    'repos_array ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = ' +
+    "'GitHub_Repository_Stats_FileFromArray_Async';\n\t//Variables\n\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif( " +
+    'output_filename == null ){\n\t\t = ;\n\t} else if( typeof(output_filename) ' +
+    `=== 'string' ){\n\t\t_return = [-2, 'Error: param "output_filename is ` +
+    "either null or not a String.'];\n\t}\n\tif( repos_array == null ){\n\t\t = ;\n\t} " +
+    "else if( Array.isArray(repos_array) === true ){\n\t\t_return = [-2, 'Error: " +
+    `param "repos_array is either null or not a Array.'];\n\t}\n\t\n\t//Function\n\t` +
+    'if( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: ' +
+    'PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: ' +
+    "FUNCTION_NAME, level: 'debug', message: Utility.format('returned: ', " +
+    '_return)});\n\treturn _return;\n}\n',
+  [length]: 2
+]
+2019-07-12T05:59:39.149Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [
+  0,
+  '/**\n* @fn GitHub_Repository_Stats_FileFromArray_Async\n* @brief Gets the ' +
+    'stats for the repositories listed in the repos_array and write the ' +
+    'resulting JSON to output_filename.\n* @async true\n* @param ' +
+    'output_filename\n*\t@type \n*\t@brief The file to write the resulting JSON ' +
+    'to.\n*\t@default null\n* @param repos_array\n*\t@type \n*\t@brief Each entry in ' +
+    "the array should be an object with a 'name' property and an 'owner' " +
+    'property for the repo name and GitHub username respectively.\n*\t@default ' +
+    'null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t' +
+    '@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval ' +
+    '<object> on success\n*\t\t@retval <error_message> on failure.\n*/\nasync ' +
+    'function GitHub_Repository_Stats_FileFromArray_Async( output_filename, ' +
+    'repos_array ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = ' +
+    "'GitHub_Repository_Stats_FileFromArray_Async';\n\t//Variables\n\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif( " +
+    'output_filename == null ){\n\t\t = ;\n\t} else if( typeof(output_filename) ' +
+    `=== 'string' ){\n\t\t_return = [-2, 'Error: param "output_filename is ` +
+    "either null or not a String.'];\n\t}\n\tif( repos_array == null ){\n\t\t = ;\n\t} " +
+    "else if( Array.isArray(repos_array) === true ){\n\t\t_return = [-2, 'Error: " +
+    `param "repos_array is either null or not a Array.'];\n\t}\n\t\n\t//Function\n\t` +
+    'if( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: ' +
+    'PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: ' +
+    "FUNCTION_NAME, level: 'debug', message: Utility.format('returned: ', " +
+    '_return)});\n\treturn _return;\n}\n',
+  [
+    0,
+    '/**\n* @fn GitHub_Repository_Stats_FileFromArray_Async\n* @brief Gets the ' +
+      'stats for the repositories listed in the repos_array and write the ' +
+      'resulting JSON to output_filename.\n* @async true\n* @param ' +
+      'output_filename\n*\t@type \n*\t@brief The file to write the resulting JSON ' +
+      'to.\n*\t@default null\n* @param repos_array\n*\t@type \n*\t@brief Each entry in ' +
+      "the array should be an object with a 'name' property and an 'owner' " +
+      'property for the repo name and GitHub username respectively.\n*\t@default ' +
+      'null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t' +
+      '@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval ' +
+      '<object> on success\n*\t\t@retval <error_message> on failure.\n*/\nasync ' +
+      'function GitHub_Repository_Stats_FileFromArray_Async( output_filename, ' +
+      'repos_array ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = ' +
+      "'GitHub_Repository_Stats_FileFromArray_Async';\n\t//Variables\n\n\t" +
+      'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+      "function: FUNCTION_NAME, level: 'debug', message: " +
+      "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif( " +
+      'output_filename == null ){\n\t\t = ;\n\t} else if( typeof(output_filename) ' +
+      `=== 'string' ){\n\t\t_return = [-2, 'Error: param "output_filename is ` +
+      "either null or not a String.'];\n\t}\n\tif( repos_array == null ){\n\t\t = ;\n\t} " +
+      "else if( Array.isArray(repos_array) === true ){\n\t\t_return = [-2, 'Error: " +
+      `param "repos_array is either null or not a Array.'];\n\t}\n\t\n\t//Function\n\t` +
+      'if( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: ' +
+      'PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: ' +
+      "FUNCTION_NAME, level: 'debug', message: Utility.format('returned: ', " +
+      '_return)});\n\treturn _return;\n}\n',
+    [length]: 2
+  ],
+  [length]: 3
+]
+2019-07-12T05:59:39.150Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [
+  0,
+  '/**\n* @fn GitHub_Repository_Stats_FileFromArray_Async\n* @brief Gets the ' +
+    'stats for the repositories listed in the repos_array and write the ' +
+    'resulting JSON to output_filename.\n* @async true\n* @param ' +
+    'output_filename\n*\t@type \n*\t@brief The file to write the resulting JSON ' +
+    'to.\n*\t@default null\n* @param repos_array\n*\t@type \n*\t@brief Each entry in ' +
+    "the array should be an object with a 'name' property and an 'owner' " +
+    'property for the repo name and GitHub username respectively.\n*\t@default ' +
+    'null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t' +
+    '@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval ' +
+    '<object> on success\n*\t\t@retval <error_message> on failure.\n*/\nasync ' +
+    'function GitHub_Repository_Stats_FileFromArray_Async( output_filename, ' +
+    'repos_array ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = ' +
+    "'GitHub_Repository_Stats_FileFromArray_Async';\n\t//Variables\n\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif( " +
+    'output_filename == null ){\n\t\t = ;\n\t} else if( typeof(output_filename) ' +
+    `=== 'string' ){\n\t\t_return = [-2, 'Error: param "output_filename is ` +
+    "either null or not a String.'];\n\t}\n\tif( repos_array == null ){\n\t\t = ;\n\t} " +
+    "else if( Array.isArray(repos_array) === true ){\n\t\t_return = [-2, 'Error: " +
+    `param "repos_array is either null or not a Array.'];\n\t}\n\t\n\t//Function\n\t` +
+    'if( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: ' +
+    'PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: ' +
+    "FUNCTION_NAME, level: 'debug', message: Utility.format('returned: ', " +
+    '_return)});\n\treturn _return;\n}\n',
+  [length]: 2
+]
+2019-07-12T05:59:39.152Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: [Arguments] {
+  '0': '/**\n* @fn GitHub_Repository_Stats_FileFromArray_Async\n* @brief Gets the ' +
+    'stats for the repositories listed in the repos_array and write the ' +
+    'resulting JSON to output_filename.\n* @async true\n* @param ' +
+    'output_filename\n*\t@type \n*\t@brief The file to write the resulting JSON ' +
+    'to.\n*\t@default null\n* @param repos_array\n*\t@type \n*\t@brief Each entry in ' +
+    "the array should be an object with a 'name' property and an 'owner' " +
+    'property for the repo name and GitHub username respectively.\n*\t@default ' +
+    'null\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t' +
+    '@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval ' +
+    '<object> on success\n*\t\t@retval <error_message> on failure.\n*/\nasync ' +
+    'function GitHub_Repository_Stats_FileFromArray_Async( output_filename, ' +
+    'repos_array ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = ' +
+    "'GitHub_Repository_Stats_FileFromArray_Async';\n\t//Variables\n\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif( " +
+    'output_filename == null ){\n\t\t = ;\n\t} else if( typeof(output_filename) ' +
+    `=== 'string' ){\n\t\t_return = [-2, 'Error: param "output_filename is ` +
+    "either null or not a String.'];\n\t}\n\tif( repos_array == null ){\n\t\t = ;\n\t} " +
+    "else if( Array.isArray(repos_array) === true ){\n\t\t_return = [-2, 'Error: " +
+    `param "repos_array is either null or not a Array.'];\n\t}\n\t\n\t//Function\n\t` +
+    'if( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: ' +
+    'PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: ' +
+    "FUNCTION_NAME, level: 'debug', message: Utility.format('returned: ', " +
+    '_return)});\n\treturn _return;\n}\n',
+  '1': { edit: 'js func', pasteboard: true },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T05:59:39.479Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-07-12T05:59:39.479Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-07-12T06:02:56.389Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-07-12T06:02:56.401Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0': '/Users/cameron/Library/Preferences/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T06:02:56.452Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [
+  0,
+  {
+    template_directories: [
+      'Resources/templates',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/templates',
+      [length]: 2
+    ],
+    defaults_directories: [
+      'Resources/defaults',
+      '/Users/cameron/Library/Application ' +
+        'Support/function-factory-nodejs/defaults',
+      [length]: 2
+    ]
+  },
+  [length]: 2
+]
+2019-07-12T06:02:56.452Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-07-12T06:02:56.461Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { edit: 'js func', pasteboard: true }
+2019-07-12T06:02:56.462Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T06:02:56.463Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T06:02:56.463Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T06:02:56.466Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ' +
+    "ENOENT: no such file or directory, open 'js/func.json'\n    at " +
+    'Object.openSync (fs.js:447:3)\n    at Object.readFileSync (fs.js:349:35)\n ' +
+    '   at Object.JSONIC_Parse_FilePath [as ParseFilePath] ' +
+    '(/Users/cameron/dev/function-factory/source/jsonic-parse.js:146:27)\n    ' +
+    'at DefaultInputDataFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:156:33)\n    at ' +
+    'DefaultInputDataFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:179:21)\n    at ' +
+    'DefaultInputDataFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:219:21)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:469:21)\n    at ' +
+    'Object.<anonymous> ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:661:14)\n    at ' +
+    'Module._compile (internal/modules/cjs/loader.js:774:30)\n    at ' +
+    'Object.Module._extensions..js (internal/modules/cjs/loader.js:785:10) {\n ' +
+    " errno: -2,\n  syscall: 'open',\n  code: 'ENOENT',\n  path: 'js/func.json'\n" +
+    '}',
+  [length]: 2
+]
+2019-07-12T06:02:56.466Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T06:02:56.486Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief ' +
+    'parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t' +
+    '\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-07-12T06:02:56.486Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief ' +
+    'parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t' +
+    '\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-07-12T06:02:56.486Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [
+  0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": ' +
+    '"Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t' +
+    '"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief ' +
+    'parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t' +
+    '\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2
+]
+2019-07-12T06:02:56.524Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-07-12T06:03:27.316Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: {
+  editor_input: '{\n\t"template": "js func",\n\t"name": ' +
+    '"GitHub_Repository_Stats_FileFromArray_Async",\n\t"description": "Gets the ' +
+    'stats for the repositories listed in the repos_array and write the ' +
+    'resulting JSON to output_filename.",\n\t"params": [\n\t\t{\n\t\t\t"type": ' +
+    '"String",\n\t\t\t"name": "output_filename",\n\t\t\t"default": null,\n\t\t\t' +
+    '"description": "The file to write the resulting JSON to."\n\t\t},\n\t\t{\n\t\t\t' +
+    '"type": "Array",\n\t\t\t"name": "repos_array",\n\t\t\t"default": null,\n\t\t\t' +
+    '"description": "Each entry in the array should be an object with a ' +
+    "'name' property and an 'owner' property for the repo name and GitHub " +
+    'username respectively."\n\t\t}\n\t],\n\t"asynchronous": true,\n\t"post_re": [\n\t\t{\n' +
+    '\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n\n'
+}
+2019-07-12T06:03:27.317Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: [Arguments] {
+  '0': {
+    editor_input: '{\n\t"template": "js func",\n\t"name": ' +
+      '"GitHub_Repository_Stats_FileFromArray_Async",\n\t"description": "Gets the ' +
+      'stats for the repositories listed in the repos_array and write the ' +
+      'resulting JSON to output_filename.",\n\t"params": [\n\t\t{\n\t\t\t"type": ' +
+      '"String",\n\t\t\t"name": "output_filename",\n\t\t\t"default": null,\n\t\t\t' +
+      '"description": "The file to write the resulting JSON to."\n\t\t},\n\t\t{\n\t\t\t' +
+      '"type": "Array",\n\t\t\t"name": "repos_array",\n\t\t\t"default": null,\n\t\t\t' +
+      '"description": "Each entry in the array should be an object with a ' +
+      "'name' property and an 'owner' property for the repo name and GitHub " +
+      'username respectively."\n\t\t}\n\t],\n\t"asynchronous": true,\n\t"post_re": [\n\t\t{\n' +
+      '\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n\n'
+  },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T06:03:27.319Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: {
+  template: 'js func',
+  name: 'GitHub_Repository_Stats_FileFromArray_Async',
+  description: 'Gets the stats for the repositories listed in the ' +
+    'repos_array and write the resulting JSON to ' +
+    'output_filename.',
+  params: [
+    {
+      type: 'String',
+      name: 'output_filename',
+      default: null,
+      description: 'The file to write the resulting JSON to.'
+    },
+    {
+      type: 'Array',
+      name: 'repos_array',
+      default: null,
+      description: 'Each entry in the array should be an object with ' +
+        "a 'name' property and an 'owner' property for " +
+        'the repo name and GitHub username respectively.'
+    },
+    [length]: 2
+  ],
+  asynchronous: true,
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ]
+} undefined
+2019-07-12T06:03:27.320Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T06:03:27.320Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T06:03:27.321Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T06:03:27.321Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  -3,
+  'Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such ' +
+    "file or directory, access 'js/func.hbs'\n    at Object.accessSync " +
+    '(fs.js:202:3)\n    at TemplateFunctionFromPath ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:239:15)\n    at ' +
+    'TemplateFunctionFromNameLiteral ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:269:21)\n    at ' +
+    'TemplateFunctionFromGenericName ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:308:21)\n    at ' +
+    'OutputFromInput ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:364:23)\n    at ' +
+    'OutputFromInquirerEditorAnswer ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:401:22)\n    at ' +
+    'Input_Inquirer_Editor ' +
+    '(/Users/cameron/dev/function-factory/source/main.js:486:22)\n    at ' +
+    'processTicksAndRejections (internal/process/task_queues.js:89:5) {\n  ' +
+    "errno: -2,\n  syscall: 'access',\n  code: 'ENOENT',\n  path: 'js/func.hbs'\n" +
+    '}',
+  [length]: 2
+]
+2019-07-12T06:03:27.322Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T06:03:27.349Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-07-12T06:03:27.349Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-07-12T06:03:27.350Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [
+  0,
+  [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: [Function] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    },
+    _child: [Function] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular] }
+    }
+  },
+  [length]: 2
+]
+2019-07-12T06:03:27.420Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: [Arguments] {
+  '0': '/**\n* @fn GitHub_Repository_Stats_FileFromArray_Async\n* @brief Gets the ' +
+    'stats for the repositories listed in the repos_array and write the ' +
+    'resulting JSON to output_filename.\n* @async true\n* @param ' +
+    'output_filename\n*\t@type \n*\t@brief The file to write the resulting JSON ' +
+    'to.\n* @param repos_array\n*\t@type \n*\t@brief Each entry in the array ' +
+    "should be an object with a 'name' property and an 'owner' property for " +
+    'the repo name and GitHub username respectively.\n\n* @return <ARRAY>\n*\t' +
+    '@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nasync function ' +
+    'GitHub_Repository_Stats_FileFromArray_Async( output_filename, ' +
+    'repos_array,){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = ' +
+    "'GitHub_Repository_Stats_FileFromArray_Async';\n\t//Variables\n\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif( " +
+    "output_filename == null || typeof(output_filename) === 'string' ){\n\t\t" +
+    `_return = [-2, 'Error: param "output_filename is either null or not a ` +
+    "String.'];\n\t}\n\tif( repos_array == null || Array.isArray(repos_array) === " +
+    `true ){\n\t\t_return = [-2, 'Error: param "repos_array is either null or ` +
+    "not a Array.'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n" +
+    '\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T06:03:27.421Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [
+  0,
+  '/**\n* @fn GitHub_Repository_Stats_FileFromArray_Async\n* @brief Gets the ' +
+    'stats for the repositories listed in the repos_array and write the ' +
+    'resulting JSON to output_filename.\n* @async true\n* @param ' +
+    'output_filename\n*\t@type \n*\t@brief The file to write the resulting JSON ' +
+    'to.\n* @param repos_array\n*\t@type \n*\t@brief Each entry in the array ' +
+    "should be an object with a 'name' property and an 'owner' property for " +
+    'the repo name and GitHub username respectively.\n\n* @return <ARRAY>\n*\t' +
+    '@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nasync function ' +
+    'GitHub_Repository_Stats_FileFromArray_Async( output_filename, ' +
+    'repos_array ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = ' +
+    "'GitHub_Repository_Stats_FileFromArray_Async';\n\t//Variables\n\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif( " +
+    "output_filename == null || typeof(output_filename) === 'string' ){\n\t\t" +
+    `_return = [-2, 'Error: param "output_filename is either null or not a ` +
+    "String.'];\n\t}\n\tif( repos_array == null || Array.isArray(repos_array) === " +
+    `true ){\n\t\t_return = [-2, 'Error: param "repos_array is either null or ` +
+    "not a Array.'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n" +
+    '\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [length]: 2
+]
+2019-07-12T06:03:27.422Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [
+  0,
+  '/**\n* @fn GitHub_Repository_Stats_FileFromArray_Async\n* @brief Gets the ' +
+    'stats for the repositories listed in the repos_array and write the ' +
+    'resulting JSON to output_filename.\n* @async true\n* @param ' +
+    'output_filename\n*\t@type \n*\t@brief The file to write the resulting JSON ' +
+    'to.\n* @param repos_array\n*\t@type \n*\t@brief Each entry in the array ' +
+    "should be an object with a 'name' property and an 'owner' property for " +
+    'the repo name and GitHub username respectively.\n\n* @return <ARRAY>\n*\t' +
+    '@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nasync function ' +
+    'GitHub_Repository_Stats_FileFromArray_Async( output_filename, ' +
+    'repos_array ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = ' +
+    "'GitHub_Repository_Stats_FileFromArray_Async';\n\t//Variables\n\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif( " +
+    "output_filename == null || typeof(output_filename) === 'string' ){\n\t\t" +
+    `_return = [-2, 'Error: param "output_filename is either null or not a ` +
+    "String.'];\n\t}\n\tif( repos_array == null || Array.isArray(repos_array) === " +
+    `true ){\n\t\t_return = [-2, 'Error: param "repos_array is either null or ` +
+    "not a Array.'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n" +
+    '\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [
+    0,
+    '/**\n* @fn GitHub_Repository_Stats_FileFromArray_Async\n* @brief Gets the ' +
+      'stats for the repositories listed in the repos_array and write the ' +
+      'resulting JSON to output_filename.\n* @async true\n* @param ' +
+      'output_filename\n*\t@type \n*\t@brief The file to write the resulting JSON ' +
+      'to.\n* @param repos_array\n*\t@type \n*\t@brief Each entry in the array ' +
+      "should be an object with a 'name' property and an 'owner' property for " +
+      'the repo name and GitHub username respectively.\n\n* @return <ARRAY>\n*\t' +
+      '@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+      '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+      '@retval <error_message> on failure.\n*/\nasync function ' +
+      'GitHub_Repository_Stats_FileFromArray_Async( output_filename, ' +
+      'repos_array ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = ' +
+      "'GitHub_Repository_Stats_FileFromArray_Async';\n\t//Variables\n\n\t" +
+      'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+      "function: FUNCTION_NAME, level: 'debug', message: " +
+      "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif( " +
+      "output_filename == null || typeof(output_filename) === 'string' ){\n\t\t" +
+      `_return = [-2, 'Error: param "output_filename is either null or not a ` +
+      "String.'];\n\t}\n\tif( repos_array == null || Array.isArray(repos_array) === " +
+      `true ){\n\t\t_return = [-2, 'Error: param "repos_array is either null or ` +
+      "not a Array.'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n" +
+      '\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+      "function: FUNCTION_NAME, level: 'debug', message: " +
+      "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+    [length]: 2
+  ],
+  [length]: 3
+]
+2019-07-12T06:03:27.422Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [
+  0,
+  '/**\n* @fn GitHub_Repository_Stats_FileFromArray_Async\n* @brief Gets the ' +
+    'stats for the repositories listed in the repos_array and write the ' +
+    'resulting JSON to output_filename.\n* @async true\n* @param ' +
+    'output_filename\n*\t@type \n*\t@brief The file to write the resulting JSON ' +
+    'to.\n* @param repos_array\n*\t@type \n*\t@brief Each entry in the array ' +
+    "should be an object with a 'name' property and an 'owner' property for " +
+    'the repo name and GitHub username respectively.\n\n* @return <ARRAY>\n*\t' +
+    '@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nasync function ' +
+    'GitHub_Repository_Stats_FileFromArray_Async( output_filename, ' +
+    'repos_array ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = ' +
+    "'GitHub_Repository_Stats_FileFromArray_Async';\n\t//Variables\n\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif( " +
+    "output_filename == null || typeof(output_filename) === 'string' ){\n\t\t" +
+    `_return = [-2, 'Error: param "output_filename is either null or not a ` +
+    "String.'];\n\t}\n\tif( repos_array == null || Array.isArray(repos_array) === " +
+    `true ){\n\t\t_return = [-2, 'Error: param "repos_array is either null or ` +
+    "not a Array.'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n" +
+    '\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  [length]: 2
+]
+2019-07-12T06:03:27.424Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: [Arguments] {
+  '0': '/**\n* @fn GitHub_Repository_Stats_FileFromArray_Async\n* @brief Gets the ' +
+    'stats for the repositories listed in the repos_array and write the ' +
+    'resulting JSON to output_filename.\n* @async true\n* @param ' +
+    'output_filename\n*\t@type \n*\t@brief The file to write the resulting JSON ' +
+    'to.\n* @param repos_array\n*\t@type \n*\t@brief Each entry in the array ' +
+    "should be an object with a 'name' property and an 'owner' property for " +
+    'the repo name and GitHub username respectively.\n\n* @return <ARRAY>\n*\t' +
+    '@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t' +
+    '@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t' +
+    '@retval <error_message> on failure.\n*/\nasync function ' +
+    'GitHub_Repository_Stats_FileFromArray_Async( output_filename, ' +
+    'repos_array ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = ' +
+    "'GitHub_Repository_Stats_FileFromArray_Async';\n\t//Variables\n\n\t" +
+    'Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('received: ', arguments)});\n\t//Parametre checks\n\tif( " +
+    "output_filename == null || typeof(output_filename) === 'string' ){\n\t\t" +
+    `_return = [-2, 'Error: param "output_filename is either null or not a ` +
+    "String.'];\n\t}\n\tif( repos_array == null || Array.isArray(repos_array) === " +
+    `true ){\n\t\t_return = [-2, 'Error: param "repos_array is either null or ` +
+    "not a Array.'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n" +
+    '\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, ' +
+    "function: FUNCTION_NAME, level: 'debug', message: " +
+    "Utility.format('returned: ', _return)});\n\treturn _return;\n}\n",
+  '1': { edit: 'js func', pasteboard: true },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2019-07-12T06:03:28.059Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-07-12T06:03:28.059Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]

@@ -644,6 +644,18 @@ if(require.main === module){
 	}
 
 	if( _return[0] === 1 ){
+		HandleBars.registerHelper('CheckType', function CheckType_HandleBarsHelper( type, name ){
+			var _return = null;
+			if( type === 'Array' ){
+				_return = `Array.isArray(${name}) === true`;
+			} else if( type === 'Buffer' ){
+				_return = `Buffer.isBuffer(${name}) === true`;
+			} else{
+				_return = `typeof(${name}) === '${type.toLowerCase()}'`;
+			}
+			return _return;
+		} );
+
 		if( Options.edit !== undefined ){
 			Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'In editor mode.'});
 			_return = Input_Inquirer_Editor( Options );

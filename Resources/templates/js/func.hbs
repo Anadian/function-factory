@@ -6,11 +6,10 @@
 {{/asynchronous}}
 {{#params}}
 * @param {{name}}
-*	@type {{#type}}{{$type}}{{/type}}{{^type}}{{high_type}}:{{low_type}}{{/type}}
+*	@type {{#type}}{{type}}{{/type}}
 *	@brief {{& description}}
-*	@default {{& default}}
-{{/params}}
-* @return <ARRAY>
+{{#default}}*	@default {{& default}}
+{{/default}}{{/params}}* @return <ARRAY>
 *	@entry 0 
 *		@retval 1 premature return.
 *		@retval 0 on success.
@@ -29,8 +28,8 @@
 {{#params}}
 	if( {{name}} == null {{#default}}){
 		{{name}} = {{& default}};
-	} else if( {{/default}}{{^default}}|| {{/default}}typeof({{name}}) !== '{{LowerCase low_type}}' ){
-		_return = [-2, 'Error: param "{{name}} is either null or not a {{LowerCase low_type}}.'];
+	} else if( {{/default}}{{^default}}|| {{/default}}{{&CheckType type name}} ){
+		_return = [-2, 'Error: param "{{name}} is either null or not a {{type}}.'];
 	}
 {{/params}}
 	

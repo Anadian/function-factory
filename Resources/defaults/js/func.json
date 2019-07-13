@@ -4,7 +4,7 @@
 	"name": "FunctionName",
 	"description": "Brief description.",
 	"params": [
-			{"type": "ArgumentType", "name": "parametre_name", "default": "null", "description": "Brief parametre description."}
+			{"type": "ArgumentType", "name": "parametre_name", "default": null, "description": "Brief parametre description."}
 	],
 	"asynchronous": false,
 	"post_re": [
