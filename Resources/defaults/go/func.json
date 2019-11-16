@@ -1,16 +1,54 @@
 {
-	"template": "go/func.hbs",
-	"name": "function_name",
-	"description": "",
-	"preceding_struct": null,
-	"type": null,
+	"template": "go func",
+	"name": "AddProjectile",
+	"description": "A method to add a new projectile to the scene.",
+	"preceding_struct": {
+		"name": "scene",
+		"type": "*Scene_type"
+	},
+	"type": "uint8",
 	"parameters": [
-		/* { "name": "", "type": "", "flow": "in", "description": "" }, */
+		{
+			"name": "alignment",
+			"type": "uint8",
+			"flow": "in",
+			"default": 0,
+			"description": ""
+		},
+		{
+			"name": "centre",
+			"type": "Vector_type",
+			"flow": "in",
+			"default": "Vector_type{0,0,}",
+			"description": ""
+		},
+		{
+			"name": "velocity",
+			"type": "Vector_type",
+			"flow": "in",
+			"default": "Vector_type{0,0,}",
+			"description": ""
+		}
 	],
 	"return_values": [
-		/* { "value": null, "description": "" }, */
+		{
+			"value": 0,
+			"description": "Success"
+		},
+		{
+			"value": 1,
+			"description": "Not Supported"
+		},
+		{
+			"value": ">1",
+			"description": "Error"
+		}
 	],
 	"post_re": [
-		{ "search": ",\\)", "replace": " )", "flags": "gm" }
+		{
+			"search": ",\\)",
+			"replace": " )",
+			"flags": "gm"
+		}
 	]
 }

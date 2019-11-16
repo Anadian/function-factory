@@ -1,0 +1,1233 @@
+2019-10-01T20:34:10.303Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-10-01T20:34:10.309Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-01T20:34:10.310Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-10-01T20:34:10.310Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2019-10-01T20:34:10.312Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-10-01T20:34:10.312Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'js func' }
+2019-10-01T20:34:10.312Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-01T20:34:10.313Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-01T20:34:10.313Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-01T20:34:10.313Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ENOENT: no such file or directory, open \'js/func.json\'',
+  [length]: 2 ]
+2019-10-01T20:34:10.313Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-01T20:34:10.314Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-10-01T20:34:10.314Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-10-01T20:34:10.314Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-10-01T20:34:10.325Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-10-01T20:37:11.831Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "js func",\n\t"name": "SteamAchievementStats_Stats_Global_Update_Game",\n\t"description": "Returns a game object for the given Steam-app ID.",\n\t"params": [\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": "steam_app_id",\n\t\t\t"default": null,\n\t\t\t"description": "The Steam-app ID to create a game object for."\n\t\t}\n\t],\n\t"asynchronous": true,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2019-10-01T20:37:11.831Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "js func",\n\t"name": "SteamAchievementStats_Stats_Global_Update_Game",\n\t"description": "Returns a game object for the given Steam-app ID.",\n\t"params": [\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": "steam_app_id",\n\t\t\t"default": null,\n\t\t\t"description": "The Steam-app ID to create a game object for."\n\t\t}\n\t],\n\t"asynchronous": true,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-01T20:37:11.832Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'js func',
+  name: 'SteamAchievementStats_Stats_Global_Update_Game',
+  description: 'Returns a game object for the given Steam-app ID.',
+  params: 
+   [ { type: 'String',
+       name: 'steam_app_id',
+       default: null,
+       description: 'The Steam-app ID to create a game object for.' },
+     [length]: 1 ],
+  asynchronous: true,
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ] } undefined
+2019-10-01T20:37:11.832Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-01T20:37:11.832Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-01T20:37:11.833Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-01T20:37:11.833Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'js/func.hbs\'',
+  [length]: 2 ]
+2019-10-01T20:37:11.833Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-01T20:37:11.834Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-10-01T20:37:11.834Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-10-01T20:37:11.834Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-10-01T20:37:11.857Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @fn SteamAchievementStats_Stats_Global_Update_Game\n* @brief Returns a game object for the given Steam-app ID.\n* @async true\n* @param steam_app_id\n*\t@type String\n*\t@brief The Steam-app ID to create a game object for.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nasync function SteamAchievementStats_Stats_Global_Update_Game( steam_app_id,){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'SteamAchievementStats_Stats_Global_Update_Game\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( steam_app_id == null || typeof(steam_app_id) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "steam_app_id" is either null or not a String.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-01T20:37:11.858Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @fn SteamAchievementStats_Stats_Global_Update_Game\n* @brief Returns a game object for the given Steam-app ID.\n* @async true\n* @param steam_app_id\n*\t@type String\n*\t@brief The Steam-app ID to create a game object for.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nasync function SteamAchievementStats_Stats_Global_Update_Game( steam_app_id ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'SteamAchievementStats_Stats_Global_Update_Game\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( steam_app_id == null || typeof(steam_app_id) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "steam_app_id" is either null or not a String.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2019-10-01T20:37:11.858Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @fn SteamAchievementStats_Stats_Global_Update_Game\n* @brief Returns a game object for the given Steam-app ID.\n* @async true\n* @param steam_app_id\n*\t@type String\n*\t@brief The Steam-app ID to create a game object for.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nasync function SteamAchievementStats_Stats_Global_Update_Game( steam_app_id ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'SteamAchievementStats_Stats_Global_Update_Game\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( steam_app_id == null || typeof(steam_app_id) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "steam_app_id" is either null or not a String.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  [ 0,
+    '/**\n* @fn SteamAchievementStats_Stats_Global_Update_Game\n* @brief Returns a game object for the given Steam-app ID.\n* @async true\n* @param steam_app_id\n*\t@type String\n*\t@brief The Steam-app ID to create a game object for.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nasync function SteamAchievementStats_Stats_Global_Update_Game( steam_app_id ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'SteamAchievementStats_Stats_Global_Update_Game\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( steam_app_id == null || typeof(steam_app_id) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "steam_app_id" is either null or not a String.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2019-10-01T20:37:11.858Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @fn SteamAchievementStats_Stats_Global_Update_Game\n* @brief Returns a game object for the given Steam-app ID.\n* @async true\n* @param steam_app_id\n*\t@type String\n*\t@brief The Steam-app ID to create a game object for.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nasync function SteamAchievementStats_Stats_Global_Update_Game( steam_app_id ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'SteamAchievementStats_Stats_Global_Update_Game\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( steam_app_id == null || typeof(steam_app_id) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "steam_app_id" is either null or not a String.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2019-10-01T20:37:11.859Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @fn SteamAchievementStats_Stats_Global_Update_Game\n* @brief Returns a game object for the given Steam-app ID.\n* @async true\n* @param steam_app_id\n*\t@type String\n*\t@brief The Steam-app ID to create a game object for.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nasync function SteamAchievementStats_Stats_Global_Update_Game( steam_app_id ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'SteamAchievementStats_Stats_Global_Update_Game\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( steam_app_id == null || typeof(steam_app_id) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "steam_app_id" is either null or not a String.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'js func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-01T20:37:11.864Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-10-01T20:37:11.864Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-10-04T02:38:17.535Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-10-04T02:38:17.570Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-04T02:38:17.609Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-10-04T02:38:17.610Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2019-10-04T02:38:17.618Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-10-04T02:38:17.621Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'js func' }
+2019-10-04T02:38:17.623Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-04T02:38:17.627Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-04T02:38:17.630Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-04T02:38:17.632Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ENOENT: no such file or directory, open \'js/func.json\'',
+  [length]: 2 ]
+2019-10-04T02:38:17.633Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-04T02:38:17.651Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-10-04T02:38:17.652Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-10-04T02:38:17.652Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-10-04T02:38:17.676Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-10-04T02:50:49.138Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "js func",\n\t"name": "SteamAchievementStats_ProfileObjectFromSteamProfileNameString_Async",\n\t"description": "Creates a new profile object for the given Steam profile name.",\n\t"params": [\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": "profile_name_string",\n\t\t\t"default": null,\n\t\t\t"description": "The Steam profile name, as a string, to create the profile object for."\n\t\t},\n\t\t{\n\t\t\t"type": "Objects",\n\t\t\t"name": "options",\n\t\t\t"default": null,\n\t\t\t"description": "Run-time options."\n\t\t}\n\t],\n\t"asynchronous": true,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2019-10-04T02:50:49.140Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "js func",\n\t"name": "SteamAchievementStats_ProfileObjectFromSteamProfileNameString_Async",\n\t"description": "Creates a new profile object for the given Steam profile name.",\n\t"params": [\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": "profile_name_string",\n\t\t\t"default": null,\n\t\t\t"description": "The Steam profile name, as a string, to create the profile object for."\n\t\t},\n\t\t{\n\t\t\t"type": "Objects",\n\t\t\t"name": "options",\n\t\t\t"default": null,\n\t\t\t"description": "Run-time options."\n\t\t}\n\t],\n\t"asynchronous": true,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-04T02:50:49.142Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'js func',
+  name: 'SteamAchievementStats_ProfileObjectFromSteamProfileNameString_Async',
+  description: 'Creates a new profile object for the given Steam profile name.',
+  params: 
+   [ { type: 'String',
+       name: 'profile_name_string',
+       default: null,
+       description: 'The Steam profile name, as a string, to create the profile object for.' },
+     { type: 'Objects',
+       name: 'options',
+       default: null,
+       description: 'Run-time options.' },
+     [length]: 2 ],
+  asynchronous: true,
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ] } undefined
+2019-10-04T02:50:49.143Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-04T02:50:49.145Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-04T02:50:49.146Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-04T02:50:49.147Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'js/func.hbs\'',
+  [length]: 2 ]
+2019-10-04T02:50:49.148Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-04T02:50:49.229Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-10-04T02:50:49.231Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-10-04T02:50:49.232Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-10-04T02:50:49.278Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @fn SteamAchievementStats_ProfileObjectFromSteamProfileNameString_Async\n* @brief Creates a new profile object for the given Steam profile name.\n* @async true\n* @param profile_name_string\n*\t@type String\n*\t@brief The Steam profile name, as a string, to create the profile object for.\n* @param options\n*\t@type Objects\n*\t@brief Run-time options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nasync function SteamAchievementStats_ProfileObjectFromSteamProfileNameString_Async( profile_name_string, options,){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'SteamAchievementStats_ProfileObjectFromSteamProfileNameString_Async\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( profile_name_string == null || typeof(profile_name_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "profile_name_string" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'objects\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Objects.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-04T02:50:49.278Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @fn SteamAchievementStats_ProfileObjectFromSteamProfileNameString_Async\n* @brief Creates a new profile object for the given Steam profile name.\n* @async true\n* @param profile_name_string\n*\t@type String\n*\t@brief The Steam profile name, as a string, to create the profile object for.\n* @param options\n*\t@type Objects\n*\t@brief Run-time options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nasync function SteamAchievementStats_ProfileObjectFromSteamProfileNameString_Async( profile_name_string, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'SteamAchievementStats_ProfileObjectFromSteamProfileNameString_Async\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( profile_name_string == null || typeof(profile_name_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "profile_name_string" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'objects\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Objects.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2019-10-04T02:50:49.279Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @fn SteamAchievementStats_ProfileObjectFromSteamProfileNameString_Async\n* @brief Creates a new profile object for the given Steam profile name.\n* @async true\n* @param profile_name_string\n*\t@type String\n*\t@brief The Steam profile name, as a string, to create the profile object for.\n* @param options\n*\t@type Objects\n*\t@brief Run-time options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nasync function SteamAchievementStats_ProfileObjectFromSteamProfileNameString_Async( profile_name_string, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'SteamAchievementStats_ProfileObjectFromSteamProfileNameString_Async\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( profile_name_string == null || typeof(profile_name_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "profile_name_string" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'objects\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Objects.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  [ 0,
+    '/**\n* @fn SteamAchievementStats_ProfileObjectFromSteamProfileNameString_Async\n* @brief Creates a new profile object for the given Steam profile name.\n* @async true\n* @param profile_name_string\n*\t@type String\n*\t@brief The Steam profile name, as a string, to create the profile object for.\n* @param options\n*\t@type Objects\n*\t@brief Run-time options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nasync function SteamAchievementStats_ProfileObjectFromSteamProfileNameString_Async( profile_name_string, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'SteamAchievementStats_ProfileObjectFromSteamProfileNameString_Async\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( profile_name_string == null || typeof(profile_name_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "profile_name_string" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'objects\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Objects.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2019-10-04T02:50:49.279Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @fn SteamAchievementStats_ProfileObjectFromSteamProfileNameString_Async\n* @brief Creates a new profile object for the given Steam profile name.\n* @async true\n* @param profile_name_string\n*\t@type String\n*\t@brief The Steam profile name, as a string, to create the profile object for.\n* @param options\n*\t@type Objects\n*\t@brief Run-time options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nasync function SteamAchievementStats_ProfileObjectFromSteamProfileNameString_Async( profile_name_string, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'SteamAchievementStats_ProfileObjectFromSteamProfileNameString_Async\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( profile_name_string == null || typeof(profile_name_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "profile_name_string" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'objects\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Objects.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2019-10-04T02:50:49.279Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @fn SteamAchievementStats_ProfileObjectFromSteamProfileNameString_Async\n* @brief Creates a new profile object for the given Steam profile name.\n* @async true\n* @param profile_name_string\n*\t@type String\n*\t@brief The Steam profile name, as a string, to create the profile object for.\n* @param options\n*\t@type Objects\n*\t@brief Run-time options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nasync function SteamAchievementStats_ProfileObjectFromSteamProfileNameString_Async( profile_name_string, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'SteamAchievementStats_ProfileObjectFromSteamProfileNameString_Async\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( profile_name_string == null || typeof(profile_name_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "profile_name_string" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'objects\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Objects.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'js func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-04T02:50:49.330Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-10-04T02:50:49.332Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-10-07T23:46:43.370Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-10-07T23:46:43.404Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-07T23:46:43.442Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-10-07T23:46:43.442Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2019-10-07T23:46:43.449Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-10-07T23:46:43.451Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'js func' }
+2019-10-07T23:46:43.453Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-07T23:46:43.455Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-07T23:46:43.457Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-07T23:46:43.458Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ENOENT: no such file or directory, open \'js/func.json\'',
+  [length]: 2 ]
+2019-10-07T23:46:43.459Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-07T23:46:43.475Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-10-07T23:46:43.476Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-10-07T23:46:43.477Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-10-07T23:46:43.504Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-10-07T23:50:37.244Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "js func",\n\t"name": "SteamAchievementStats_AchievementsObjectFromPageString",\n\t"description": "Create a new achievements object from a global-achievement-stats page.",\n\t"params": [\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": "page_string",\n\t\t\t"default": null,\n\t\t\t"description": "The raw-HTML page data, as a string, to parse for creating a new achievements object."\n\t\t},\n\t\t{\n\t\t\t"type": "Object",\n\t\t\t"name": "options",\n\t\t\t"default": null,\n\t\t\t"description": "Run-time options."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2019-10-07T23:50:37.246Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "js func",\n\t"name": "SteamAchievementStats_AchievementsObjectFromPageString",\n\t"description": "Create a new achievements object from a global-achievement-stats page.",\n\t"params": [\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": "page_string",\n\t\t\t"default": null,\n\t\t\t"description": "The raw-HTML page data, as a string, to parse for creating a new achievements object."\n\t\t},\n\t\t{\n\t\t\t"type": "Object",\n\t\t\t"name": "options",\n\t\t\t"default": null,\n\t\t\t"description": "Run-time options."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-07T23:50:37.248Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'js func',
+  name: 'SteamAchievementStats_AchievementsObjectFromPageString',
+  description: 'Create a new achievements object from a global-achievement-stats page.',
+  params: 
+   [ { type: 'String',
+       name: 'page_string',
+       default: null,
+       description: 'The raw-HTML page data, as a string, to parse for creating a new achievements object.' },
+     { type: 'Object',
+       name: 'options',
+       default: null,
+       description: 'Run-time options.' },
+     [length]: 2 ],
+  asynchronous: false,
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ] } undefined
+2019-10-07T23:50:37.249Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-07T23:50:37.250Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-07T23:50:37.251Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-07T23:50:37.252Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'js/func.hbs\'',
+  [length]: 2 ]
+2019-10-07T23:50:37.252Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-07T23:50:37.309Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-10-07T23:50:37.310Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-10-07T23:50:37.311Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-10-07T23:50:37.360Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @fn SteamAchievementStats_AchievementsObjectFromPageString\n* @brief Create a new achievements object from a global-achievement-stats page.\n* @param page_string\n*\t@type String\n*\t@brief The raw-HTML page data, as a string, to parse for creating a new achievements object.\n* @param options\n*\t@type Object\n*\t@brief Run-time options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction SteamAchievementStats_AchievementsObjectFromPageString( page_string, options,){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'SteamAchievementStats_AchievementsObjectFromPageString\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( page_string == null || typeof(page_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "page_string" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-07T23:50:37.360Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @fn SteamAchievementStats_AchievementsObjectFromPageString\n* @brief Create a new achievements object from a global-achievement-stats page.\n* @param page_string\n*\t@type String\n*\t@brief The raw-HTML page data, as a string, to parse for creating a new achievements object.\n* @param options\n*\t@type Object\n*\t@brief Run-time options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction SteamAchievementStats_AchievementsObjectFromPageString( page_string, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'SteamAchievementStats_AchievementsObjectFromPageString\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( page_string == null || typeof(page_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "page_string" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2019-10-07T23:50:37.360Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @fn SteamAchievementStats_AchievementsObjectFromPageString\n* @brief Create a new achievements object from a global-achievement-stats page.\n* @param page_string\n*\t@type String\n*\t@brief The raw-HTML page data, as a string, to parse for creating a new achievements object.\n* @param options\n*\t@type Object\n*\t@brief Run-time options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction SteamAchievementStats_AchievementsObjectFromPageString( page_string, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'SteamAchievementStats_AchievementsObjectFromPageString\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( page_string == null || typeof(page_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "page_string" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  [ 0,
+    '/**\n* @fn SteamAchievementStats_AchievementsObjectFromPageString\n* @brief Create a new achievements object from a global-achievement-stats page.\n* @param page_string\n*\t@type String\n*\t@brief The raw-HTML page data, as a string, to parse for creating a new achievements object.\n* @param options\n*\t@type Object\n*\t@brief Run-time options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction SteamAchievementStats_AchievementsObjectFromPageString( page_string, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'SteamAchievementStats_AchievementsObjectFromPageString\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( page_string == null || typeof(page_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "page_string" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2019-10-07T23:50:37.360Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @fn SteamAchievementStats_AchievementsObjectFromPageString\n* @brief Create a new achievements object from a global-achievement-stats page.\n* @param page_string\n*\t@type String\n*\t@brief The raw-HTML page data, as a string, to parse for creating a new achievements object.\n* @param options\n*\t@type Object\n*\t@brief Run-time options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction SteamAchievementStats_AchievementsObjectFromPageString( page_string, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'SteamAchievementStats_AchievementsObjectFromPageString\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( page_string == null || typeof(page_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "page_string" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2019-10-07T23:50:37.361Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @fn SteamAchievementStats_AchievementsObjectFromPageString\n* @brief Create a new achievements object from a global-achievement-stats page.\n* @param page_string\n*\t@type String\n*\t@brief The raw-HTML page data, as a string, to parse for creating a new achievements object.\n* @param options\n*\t@type Object\n*\t@brief Run-time options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction SteamAchievementStats_AchievementsObjectFromPageString( page_string, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'SteamAchievementStats_AchievementsObjectFromPageString\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( page_string == null || typeof(page_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "page_string" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'js func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-07T23:50:37.390Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-10-07T23:50:37.390Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-10-08T00:26:28.330Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-10-08T00:26:28.335Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-08T00:26:28.336Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-10-08T00:26:28.336Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2019-10-08T00:26:28.338Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-10-08T00:26:28.338Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'js func' }
+2019-10-08T00:26:28.339Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-08T00:26:28.339Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-08T00:26:28.339Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-08T00:26:28.340Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ENOENT: no such file or directory, open \'js/func.json\'',
+  [length]: 2 ]
+2019-10-08T00:26:28.340Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-08T00:26:28.340Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-10-08T00:26:28.340Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-10-08T00:26:28.341Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-10-08T00:26:28.353Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-10-08T00:30:17.260Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "js func",\n\t"name": "SteamAchievementStats_NewSingleAchievementObjectFromGlobalPagePartString",\n\t"description": "Parse a part of a gloabl-achievement-stats page to create a new achievement object.",\n\t"params": [\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": "global_page_part_string",\n\t\t\t"default": null,\n\t\t\t"description": "The part of the global achievements page to parse for the achievement object."\n\n\t\t},\n\t\t{\n\t\t\t"type": "Object",\n\t\t\t"name": "options",\n\t\t\t"default": null,\n\t\t\t"description": "Run-time options"\n\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2019-10-08T00:30:17.261Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "js func",\n\t"name": "SteamAchievementStats_NewSingleAchievementObjectFromGlobalPagePartString",\n\t"description": "Parse a part of a gloabl-achievement-stats page to create a new achievement object.",\n\t"params": [\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": "global_page_part_string",\n\t\t\t"default": null,\n\t\t\t"description": "The part of the global achievements page to parse for the achievement object."\n\n\t\t},\n\t\t{\n\t\t\t"type": "Object",\n\t\t\t"name": "options",\n\t\t\t"default": null,\n\t\t\t"description": "Run-time options"\n\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-08T00:30:17.262Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'js func',
+  name: 'SteamAchievementStats_NewSingleAchievementObjectFromGlobalPagePartString',
+  description: 'Parse a part of a gloabl-achievement-stats page to create a new achievement object.',
+  params: 
+   [ { type: 'String',
+       name: 'global_page_part_string',
+       default: null,
+       description: 'The part of the global achievements page to parse for the achievement object.' },
+     { type: 'Object',
+       name: 'options',
+       default: null,
+       description: 'Run-time options' },
+     [length]: 2 ],
+  asynchronous: false,
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ] } undefined
+2019-10-08T00:30:17.262Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-08T00:30:17.262Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-08T00:30:17.262Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-08T00:30:17.263Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'js/func.hbs\'',
+  [length]: 2 ]
+2019-10-08T00:30:17.263Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-08T00:30:17.263Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-10-08T00:30:17.264Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-10-08T00:30:17.264Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-10-08T00:30:17.286Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @fn SteamAchievementStats_NewSingleAchievementObjectFromGlobalPagePartString\n* @brief Parse a part of a gloabl-achievement-stats page to create a new achievement object.\n* @param global_page_part_string\n*\t@type String\n*\t@brief The part of the global achievements page to parse for the achievement object.\n* @param options\n*\t@type Object\n*\t@brief Run-time options\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction SteamAchievementStats_NewSingleAchievementObjectFromGlobalPagePartString( global_page_part_string, options,){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'SteamAchievementStats_NewSingleAchievementObjectFromGlobalPagePartString\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( global_page_part_string == null || typeof(global_page_part_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "global_page_part_string" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-08T00:30:17.287Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @fn SteamAchievementStats_NewSingleAchievementObjectFromGlobalPagePartString\n* @brief Parse a part of a gloabl-achievement-stats page to create a new achievement object.\n* @param global_page_part_string\n*\t@type String\n*\t@brief The part of the global achievements page to parse for the achievement object.\n* @param options\n*\t@type Object\n*\t@brief Run-time options\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction SteamAchievementStats_NewSingleAchievementObjectFromGlobalPagePartString( global_page_part_string, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'SteamAchievementStats_NewSingleAchievementObjectFromGlobalPagePartString\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( global_page_part_string == null || typeof(global_page_part_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "global_page_part_string" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2019-10-08T00:30:17.287Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @fn SteamAchievementStats_NewSingleAchievementObjectFromGlobalPagePartString\n* @brief Parse a part of a gloabl-achievement-stats page to create a new achievement object.\n* @param global_page_part_string\n*\t@type String\n*\t@brief The part of the global achievements page to parse for the achievement object.\n* @param options\n*\t@type Object\n*\t@brief Run-time options\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction SteamAchievementStats_NewSingleAchievementObjectFromGlobalPagePartString( global_page_part_string, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'SteamAchievementStats_NewSingleAchievementObjectFromGlobalPagePartString\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( global_page_part_string == null || typeof(global_page_part_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "global_page_part_string" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  [ 0,
+    '/**\n* @fn SteamAchievementStats_NewSingleAchievementObjectFromGlobalPagePartString\n* @brief Parse a part of a gloabl-achievement-stats page to create a new achievement object.\n* @param global_page_part_string\n*\t@type String\n*\t@brief The part of the global achievements page to parse for the achievement object.\n* @param options\n*\t@type Object\n*\t@brief Run-time options\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction SteamAchievementStats_NewSingleAchievementObjectFromGlobalPagePartString( global_page_part_string, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'SteamAchievementStats_NewSingleAchievementObjectFromGlobalPagePartString\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( global_page_part_string == null || typeof(global_page_part_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "global_page_part_string" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2019-10-08T00:30:17.287Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @fn SteamAchievementStats_NewSingleAchievementObjectFromGlobalPagePartString\n* @brief Parse a part of a gloabl-achievement-stats page to create a new achievement object.\n* @param global_page_part_string\n*\t@type String\n*\t@brief The part of the global achievements page to parse for the achievement object.\n* @param options\n*\t@type Object\n*\t@brief Run-time options\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction SteamAchievementStats_NewSingleAchievementObjectFromGlobalPagePartString( global_page_part_string, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'SteamAchievementStats_NewSingleAchievementObjectFromGlobalPagePartString\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( global_page_part_string == null || typeof(global_page_part_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "global_page_part_string" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2019-10-08T00:30:17.288Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @fn SteamAchievementStats_NewSingleAchievementObjectFromGlobalPagePartString\n* @brief Parse a part of a gloabl-achievement-stats page to create a new achievement object.\n* @param global_page_part_string\n*\t@type String\n*\t@brief The part of the global achievements page to parse for the achievement object.\n* @param options\n*\t@type Object\n*\t@brief Run-time options\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction SteamAchievementStats_NewSingleAchievementObjectFromGlobalPagePartString( global_page_part_string, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'SteamAchievementStats_NewSingleAchievementObjectFromGlobalPagePartString\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( global_page_part_string == null || typeof(global_page_part_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "global_page_part_string" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'js func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-10-08T00:30:17.294Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-10-08T00:30:17.294Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-11-05T23:52:32.858Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-11-05T23:52:32.896Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-05T23:52:32.932Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-11-05T23:52:32.933Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2019-11-05T23:52:32.941Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-11-05T23:52:32.943Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go file' }
+2019-11-05T23:52:32.945Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-05T23:52:32.948Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-05T23:52:32.950Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-05T23:52:32.951Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/file.json": Error: ENOENT: no such file or directory, open \'go/file.json\'',
+  [length]: 2 ]
+2019-11-05T23:52:32.952Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-05T23:52:32.965Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go file",\n\t"filename": "file_name.go",\n\t"description": "Brief description.",\n\t"package_name": "package_name"\n}',
+  [length]: 2 ]
+2019-11-05T23:52:32.966Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go file",\n\t"filename": "file_name.go",\n\t"description": "Brief description.",\n\t"package_name": "package_name"\n}',
+  [length]: 2 ]
+2019-11-05T23:52:32.966Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go file",\n\t"filename": "file_name.go",\n\t"description": "Brief description.",\n\t"package_name": "package_name"\n}',
+  [length]: 2 ]
+2019-11-05T23:52:32.988Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-11-05T23:54:31.375Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go file",\n\t"filename": "process.go",\n\t"description": "Process abstraction for Decoll specification.",\n\t"package_name": "main"\n}\n' }
+2019-11-05T23:54:31.378Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go file",\n\t"filename": "process.go",\n\t"description": "Process abstraction for Decoll specification.",\n\t"package_name": "main"\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-05T23:54:31.380Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go file',
+  filename: 'process.go',
+  description: 'Process abstraction for Decoll specification.',
+  package_name: 'main' } undefined
+2019-11-05T23:54:31.382Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-05T23:54:31.383Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-05T23:54:31.384Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-05T23:54:31.384Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/file.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/file.hbs\'',
+  [length]: 2 ]
+2019-11-05T23:54:31.385Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-05T23:54:31.414Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-05T23:54:31.414Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-05T23:54:31.415Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-05T23:54:31.434Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @file process.go\n* @brief Process abstraction for Decoll specification.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\npackage main;\n\n//Dependencies\nimport( \n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-05T23:54:31.434Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2019-11-05T23:54:31.434Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @file process.go\n* @brief Process abstraction for Decoll specification.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\npackage main;\n\n//Dependencies\nimport( \n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+  [length]: 2 ]
+2019-11-05T23:54:31.435Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @file process.go\n* @brief Process abstraction for Decoll specification.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\npackage main;\n\n//Dependencies\nimport( \n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+  [ 0,
+    '/**\n* @file process.go\n* @brief Process abstraction for Decoll specification.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\npackage main;\n\n//Dependencies\nimport( \n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2019-11-05T23:54:31.435Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @file process.go\n* @brief Process abstraction for Decoll specification.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\npackage main;\n\n//Dependencies\nimport( \n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+  [length]: 2 ]
+2019-11-05T23:54:31.435Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @file process.go\n* @brief Process abstraction for Decoll specification.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\npackage main;\n\n//Dependencies\nimport( \n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go file' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-05T23:54:31.538Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-11-05T23:54:31.539Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-11-11T10:46:07.123Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-11-11T10:46:07.158Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-11T10:46:07.198Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-11-11T10:46:07.198Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2019-11-11T10:46:07.206Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-11-11T10:46:07.209Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'js file' }
+2019-11-11T10:46:07.211Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'js file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-11T10:46:07.213Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-11T10:46:07.215Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-11T10:46:07.217Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/file.json": Error: ENOENT: no such file or directory, open \'js/file.json\'',
+  [length]: 2 ]
+2019-11-11T10:46:07.218Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-11T10:46:07.240Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": "Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": "process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": true\n}',
+  [length]: 2 ]
+2019-11-11T10:46:07.241Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": "Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": "process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": true\n}',
+  [length]: 2 ]
+2019-11-11T10:46:07.241Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": "Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": "process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": true\n}',
+  [length]: 2 ]
+2019-11-11T10:46:07.263Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-11-11T10:48:06.599Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "js file",\n\t"filename": "ajv-test.js",\n\t"description": "Test JSON schemas with AJV.",\n\t"modulename": "AJVTest",\n\t"processname": "ajv-test",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": false\n}\n' }
+2019-11-11T10:48:06.600Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "js file",\n\t"filename": "ajv-test.js",\n\t"description": "Test JSON schemas with AJV.",\n\t"modulename": "AJVTest",\n\t"processname": "ajv-test",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": false\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-11T10:48:06.602Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'js file',
+  filename: 'ajv-test.js',
+  description: 'Test JSON schemas with AJV.',
+  modulename: 'AJVTest',
+  processname: 'ajv-test',
+  strict: true,
+  main: true,
+  logger: true,
+  cli: false } undefined
+2019-11-11T10:48:06.603Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'js file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-11T10:48:06.604Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-11T10:48:06.605Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-11T10:48:06.606Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "js/file.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'js/file.hbs\'',
+  [length]: 2 ]
+2019-11-11T10:48:06.606Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-11T10:48:06.636Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-11T10:48:06.637Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-11T10:48:06.637Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-11T10:48:06.669Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '#!/usr/local/bin/node\n\'use strict\';\n/**\n* @file ajv-test.js\n* @brief Test JSON schemas with AJV.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\tconst Utility = require(\'util\');\n\t//External\n\n//Constants\nconst FILENAME = \'ajv-test.js\';\nconst MODULE_NAME = \'AJVTest\';\nvar PROCESS_NAME = \'\';\nif(require.main === module){\n\tPROCESS_NAME = \'ajv-test\';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'Logger_Set\';\n\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === \'object\' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,\'Error: param "logger" is not an object.\'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'MainExecutionFunction\';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = require(\'make-dir\');\n\t\tconst ApplicationLogWinstonInterface = require(\'application-log-winston-interface\');\n\t\tconst EnvPaths = require(\'env-paths\');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error(\'MakeDir.sync threw: %s\', error);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger(\'debug.log\', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'Start of execution block.\'});\n\t//Config\n\t//Main\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'End of execution block.\'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n',
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-11T10:48:06.670Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2019-11-11T10:48:06.670Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '#!/usr/local/bin/node\n\'use strict\';\n/**\n* @file ajv-test.js\n* @brief Test JSON schemas with AJV.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\tconst Utility = require(\'util\');\n\t//External\n\n//Constants\nconst FILENAME = \'ajv-test.js\';\nconst MODULE_NAME = \'AJVTest\';\nvar PROCESS_NAME = \'\';\nif(require.main === module){\n\tPROCESS_NAME = \'ajv-test\';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'Logger_Set\';\n\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === \'object\' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,\'Error: param "logger" is not an object.\'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'MainExecutionFunction\';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = require(\'make-dir\');\n\t\tconst ApplicationLogWinstonInterface = require(\'application-log-winston-interface\');\n\t\tconst EnvPaths = require(\'env-paths\');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error(\'MakeDir.sync threw: %s\', error);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger(\'debug.log\', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'Start of execution block.\'});\n\t//Config\n\t//Main\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'End of execution block.\'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n',
+  [length]: 2 ]
+2019-11-11T10:48:06.670Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '#!/usr/local/bin/node\n\'use strict\';\n/**\n* @file ajv-test.js\n* @brief Test JSON schemas with AJV.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\tconst Utility = require(\'util\');\n\t//External\n\n//Constants\nconst FILENAME = \'ajv-test.js\';\nconst MODULE_NAME = \'AJVTest\';\nvar PROCESS_NAME = \'\';\nif(require.main === module){\n\tPROCESS_NAME = \'ajv-test\';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'Logger_Set\';\n\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === \'object\' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,\'Error: param "logger" is not an object.\'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'MainExecutionFunction\';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = require(\'make-dir\');\n\t\tconst ApplicationLogWinstonInterface = require(\'application-log-winston-interface\');\n\t\tconst EnvPaths = require(\'env-paths\');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error(\'MakeDir.sync threw: %s\', error);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger(\'debug.log\', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'Start of execution block.\'});\n\t//Config\n\t//Main\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'End of execution block.\'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n',
+  [ 0,
+    '#!/usr/local/bin/node\n\'use strict\';\n/**\n* @file ajv-test.js\n* @brief Test JSON schemas with AJV.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\tconst Utility = require(\'util\');\n\t//External\n\n//Constants\nconst FILENAME = \'ajv-test.js\';\nconst MODULE_NAME = \'AJVTest\';\nvar PROCESS_NAME = \'\';\nif(require.main === module){\n\tPROCESS_NAME = \'ajv-test\';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'Logger_Set\';\n\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === \'object\' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,\'Error: param "logger" is not an object.\'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'MainExecutionFunction\';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = require(\'make-dir\');\n\t\tconst ApplicationLogWinstonInterface = require(\'application-log-winston-interface\');\n\t\tconst EnvPaths = require(\'env-paths\');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error(\'MakeDir.sync threw: %s\', error);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger(\'debug.log\', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'Start of execution block.\'});\n\t//Config\n\t//Main\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'End of execution block.\'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2019-11-11T10:48:06.670Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '#!/usr/local/bin/node\n\'use strict\';\n/**\n* @file ajv-test.js\n* @brief Test JSON schemas with AJV.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\tconst Utility = require(\'util\');\n\t//External\n\n//Constants\nconst FILENAME = \'ajv-test.js\';\nconst MODULE_NAME = \'AJVTest\';\nvar PROCESS_NAME = \'\';\nif(require.main === module){\n\tPROCESS_NAME = \'ajv-test\';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'Logger_Set\';\n\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === \'object\' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,\'Error: param "logger" is not an object.\'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'MainExecutionFunction\';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = require(\'make-dir\');\n\t\tconst ApplicationLogWinstonInterface = require(\'application-log-winston-interface\');\n\t\tconst EnvPaths = require(\'env-paths\');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error(\'MakeDir.sync threw: %s\', error);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger(\'debug.log\', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'Start of execution block.\'});\n\t//Config\n\t//Main\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'End of execution block.\'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n',
+  [length]: 2 ]
+2019-11-11T10:48:06.671Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '#!/usr/local/bin/node\n\'use strict\';\n/**\n* @file ajv-test.js\n* @brief Test JSON schemas with AJV.\n* @author Anadian\n* @copyright \tCopyright 2019 Canosw\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//Dependencies\n\t//Internal\n\t//Standard\n\tconst Utility = require(\'util\');\n\t//External\n\n//Constants\nconst FILENAME = \'ajv-test.js\';\nconst MODULE_NAME = \'AJVTest\';\nvar PROCESS_NAME = \'\';\nif(require.main === module){\n\tPROCESS_NAME = \'ajv-test\';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n\n//Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//Functions\nfunction Logger_Set( logger ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'Logger_Set\';\n\t//Variables\n\tvar function_return = [1,null];\n\n\t//Parametre checks\n\tif( typeof(logger) === \'object\' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\t_return = [-2,\'Error: param "logger" is not an object.\'];\n\t}\n\n\t//Function\n\tif( _return[0] === 1 ){\n\t\tLogger = logger;\n\t\t_return = [0,null];\n\t}\n\n\t//Return\n\treturn _return;\n}\n\n//Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'MainExecutionFunction\';\n\t//Dependencies\n\t\t//Internal\n\t\t//Standard\n\t\t//External\n\t\tconst MakeDir = require(\'make-dir\');\n\t\tconst ApplicationLogWinstonInterface = require(\'application-log-winston-interface\');\n\t\tconst EnvPaths = require(\'env-paths\');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error(\'MakeDir.sync threw: %s\', error);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger(\'debug.log\', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'Start of execution block.\'});\n\t//Config\n\t//Main\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'End of execution block.\'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'js file' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-11T10:48:06.698Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-11-11T10:48:06.698Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-11-15T06:31:54.885Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-11-15T06:31:54.925Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-15T06:31:54.964Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-11-15T06:31:54.965Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2019-11-15T06:31:54.976Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-11-15T06:31:54.980Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go file' }
+2019-11-15T06:31:54.982Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-15T06:31:54.985Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-15T06:31:54.987Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-15T06:31:54.989Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/file.json": Error: ENOENT: no such file or directory, open \'go/file.json\'',
+  [length]: 2 ]
+2019-11-15T06:31:54.990Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-15T06:31:55.008Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go file",\n\t"filename": "file_name.go",\n\t"description": "Brief description.",\n\t"package_name": "package_name"\n}',
+  [length]: 2 ]
+2019-11-15T06:31:55.009Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go file",\n\t"filename": "file_name.go",\n\t"description": "Brief description.",\n\t"package_name": "package_name"\n}',
+  [length]: 2 ]
+2019-11-15T06:31:55.010Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go file",\n\t"filename": "file_name.go",\n\t"description": "Brief description.",\n\t"package_name": "package_name"\n}',
+  [length]: 2 ]
+2019-11-15T06:31:55.065Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-11-15T06:32:55.915Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go file",\n\t"filename": "event_test.go",\n\t"description": "Tests agoalofalife/event package.",\n\t"package_name": "main"\n}\n' }
+2019-11-15T06:32:55.916Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go file",\n\t"filename": "event_test.go",\n\t"description": "Tests agoalofalife/event package.",\n\t"package_name": "main"\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-15T06:32:55.917Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go file',
+  filename: 'event_test.go',
+  description: 'Tests agoalofalife/event package.',
+  package_name: 'main' } undefined
+2019-11-15T06:32:55.917Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-15T06:32:55.918Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-15T06:32:55.918Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-15T06:32:55.919Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/file.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/file.hbs\'',
+  [length]: 2 ]
+2019-11-15T06:32:55.919Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-15T06:32:55.941Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-15T06:32:55.942Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-15T06:32:55.943Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-15T06:32:55.962Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @file event_test.go\n* @brief Tests agoalofalife/event package.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\npackage main;\n\n//Dependencies\nimport( \n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-15T06:32:55.963Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2019-11-15T06:32:55.963Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @file event_test.go\n* @brief Tests agoalofalife/event package.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\npackage main;\n\n//Dependencies\nimport( \n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+  [length]: 2 ]
+2019-11-15T06:32:55.963Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @file event_test.go\n* @brief Tests agoalofalife/event package.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\npackage main;\n\n//Dependencies\nimport( \n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+  [ 0,
+    '/**\n* @file event_test.go\n* @brief Tests agoalofalife/event package.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\npackage main;\n\n//Dependencies\nimport( \n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2019-11-15T06:32:55.963Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @file event_test.go\n* @brief Tests agoalofalife/event package.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\npackage main;\n\n//Dependencies\nimport( \n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+  [length]: 2 ]
+2019-11-15T06:32:55.964Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @file event_test.go\n* @brief Tests agoalofalife/event package.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\npackage main;\n\n//Dependencies\nimport( \n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go file' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-15T06:32:56.123Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-11-15T06:32:56.124Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-11-16T23:49:05.211Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-11-16T23:49:05.235Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-16T23:49:05.273Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-11-16T23:49:05.274Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2019-11-16T23:49:05.276Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-11-16T23:49:05.276Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go file' }
+2019-11-16T23:49:05.277Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-16T23:49:05.278Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-16T23:49:05.279Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-16T23:49:05.279Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/file.json": Error: ENOENT: no such file or directory, open \'go/file.json\'',
+  [length]: 2 ]
+2019-11-16T23:49:05.279Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-16T23:49:05.308Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go file",\n\t"filename": "file_name.go",\n\t"description": "Brief description.",\n\t"package_name": "package_name"\n}',
+  [length]: 2 ]
+2019-11-16T23:49:05.309Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go file",\n\t"filename": "file_name.go",\n\t"description": "Brief description.",\n\t"package_name": "package_name"\n}',
+  [length]: 2 ]
+2019-11-16T23:49:05.309Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go file",\n\t"filename": "file_name.go",\n\t"description": "Brief description.",\n\t"package_name": "package_name"\n}',
+  [length]: 2 ]
+2019-11-16T23:49:05.328Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-11-16T23:50:21.202Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go file",\n\t"filename": "event_dispatcher.go",\n\t"description": "A simple, machine-local, thread-safe pub/sub event queue and dispatcher for golang.",\n\t"package_name": "event_dispatcher"\n}\n' }
+2019-11-16T23:50:21.205Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go file",\n\t"filename": "event_dispatcher.go",\n\t"description": "A simple, machine-local, thread-safe pub/sub event queue and dispatcher for golang.",\n\t"package_name": "event_dispatcher"\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-16T23:50:21.207Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go file',
+  filename: 'event_dispatcher.go',
+  description: 'A simple, machine-local, thread-safe pub/sub event queue and dispatcher for golang.',
+  package_name: 'event_dispatcher' } undefined
+2019-11-16T23:50:21.208Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-16T23:50:21.210Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-16T23:50:21.211Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-16T23:50:21.212Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/file.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/file.hbs\'',
+  [length]: 2 ]
+2019-11-16T23:50:21.212Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-16T23:50:21.241Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-16T23:50:21.242Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-16T23:50:21.242Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-16T23:50:21.259Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @file event_dispatcher.go\n* @brief A simple, machine-local, thread-safe pub/sub event queue and dispatcher for golang.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\npackage event_dispatcher;\n\n//Dependencies\nimport( \n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-16T23:50:21.259Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2019-11-16T23:50:21.260Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @file event_dispatcher.go\n* @brief A simple, machine-local, thread-safe pub/sub event queue and dispatcher for golang.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\npackage event_dispatcher;\n\n//Dependencies\nimport( \n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+  [length]: 2 ]
+2019-11-16T23:50:21.260Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @file event_dispatcher.go\n* @brief A simple, machine-local, thread-safe pub/sub event queue and dispatcher for golang.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\npackage event_dispatcher;\n\n//Dependencies\nimport( \n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+  [ 0,
+    '/**\n* @file event_dispatcher.go\n* @brief A simple, machine-local, thread-safe pub/sub event queue and dispatcher for golang.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\npackage event_dispatcher;\n\n//Dependencies\nimport( \n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2019-11-16T23:50:21.260Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @file event_dispatcher.go\n* @brief A simple, machine-local, thread-safe pub/sub event queue and dispatcher for golang.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\npackage event_dispatcher;\n\n//Dependencies\nimport( \n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+  [length]: 2 ]
+2019-11-16T23:50:21.261Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @file event_dispatcher.go\n* @brief A simple, machine-local, thread-safe pub/sub event queue and dispatcher for golang.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\npackage event_dispatcher;\n\n//Dependencies\nimport( \n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go file' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-16T23:50:21.329Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-11-16T23:50:21.330Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]

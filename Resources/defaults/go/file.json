@@ -1,6 +1,6 @@
 {
-	"templatename": "Resources/templates/go_file.hbs",
-	"filename": "",
-	"description": "",
-	"packagename": ""
+	"template": "go file",
+	"filename": "file_name.go",
+	"description": "Brief description.",
+	"package_name": "package_name"
 }

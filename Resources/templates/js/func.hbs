@@ -6,7 +6,7 @@
 {{/asynchronous}}
 {{#params}}
 * @param {{name}}
-*	@type {{#type}}{{type}}{{/type}}
+*	@type {{type}}
 *	@brief {{& description}}
 {{#default}}*	@default {{& default}}
 {{/default}}{{/params}}* @return <ARRAY>
@@ -21,15 +21,14 @@
 {{#asynchronous}}async {{/asynchronous}}function {{name}}({{#params}} {{name}},{{/params}}){
 	var _return = [1,null];
 	const FUNCTION_NAME = '{{name}}';
-	//Variables
-
 	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('received: ', arguments)});
+	//Variables
 	//Parametre checks
 {{#params}}
 	if( {{name}} == null {{#default}}){
 		{{name}} = {{& default}};
-	} else if( {{/default}}{{^default}}|| {{/default}}{{&CheckType type name}} ){
-		_return = [-2, 'Error: param "{{name}} is either null or not a {{type}}.'];
+	} else if( {{/default}}{{^default}}|| {{/default}}{{&CheckNotType type name}} ){
+		_return = [-2, 'Error: param "{{name}}" is either null or not a {{type}}.'];
 	}
 {{/params}}
 	
