@@ -666,6 +666,24 @@ if(require.main === module){
 			}
 			return _return;
 		} );
+		HandleBars.registerHelper('upper_first', function UpperFirst_HandleBarsHelper( short_description ){
+			var _return = null;
+			if( typeof(short_description) === 'string' ){
+				var first_letter = short_description.charAt(0);
+				var rest_of_string = short_description.substring(1);
+				_return = first_letter.toUpperCase()+rest_of_string;
+			}
+			return _return;
+		} );
+		HandleBars.registerHelper('lower_first', function LowerFirst_HandleBarsHelper( short_description ){
+			var _return = null;
+			if( typeof(short_description) === 'string' ){
+				var first_letter = short_description.charAt(0);
+				var rest_of_string = short_description.substring(1);
+				_return = first_letter.toLowerCase()+rest_of_string;
+			}
+			return _return;
+		} );
 
 		if( Options.edit !== undefined ){
 			Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'In editor mode.'});

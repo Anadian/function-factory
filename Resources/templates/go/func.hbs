@@ -1,21 +1,21 @@
 /**
 * @fn {{name}}
-* @brief {{& description}}
+* @brief {{& upper_first description}}
 {{#preceding_struct}}* @struct {{name}} {{type}}
 {{/preceding_struct}}{{#parameters}}* @param {{name}} {{type}} [{{flow}}] {{& description}}
 {{/parameters}}* @return {{type}}
 {{#return_values}}
 * @retval {{& value}} {{& description}}
 {{/return_values}}*/
+
+// {{name}} {{& lower_first description}}
 func {{#preceding_struct}}({{name}} {{type}}){{/preceding_struct}} {{name}}({{#parameters}} {{name}} {{type}},{{/parameters}}) {{type}}{
 	var _return {{type}} = nil;
 	/* Variables */
-	
 	/* Parametres */
 {{#parameters}}
 {{/parameters}}
 	/* Function */
-	
 	/* Return */
 	return _return;
 }

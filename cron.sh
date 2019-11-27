@@ -1,6 +1,6 @@
 #!/bin/bash
-echo 'OddsandEnds/cron.sh';
-date;
+echo 'function-factory/cron.sh';
+date -uI'seconds';
 git checkout master;
 git add --all .;
 if git commit -m 'Cron.sh auto commit.' ; then

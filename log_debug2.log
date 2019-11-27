@@ -1231,3 +1231,1743 @@
   [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
 2019-11-16T23:50:21.329Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
 2019-11-16T23:50:21.330Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-11-17T03:42:38.822Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-11-17T03:42:38.847Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-17T03:42:38.862Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-11-17T03:42:38.862Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2019-11-17T03:42:38.864Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-11-17T03:42:38.864Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go struct' }
+2019-11-17T03:42:38.865Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go struct',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-17T03:42:38.865Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/struct.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-17T03:42:38.866Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/struct.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-17T03:42:38.866Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/struct.json": Error: ENOENT: no such file or directory, open \'go/struct.json\'',
+  [length]: 2 ]
+2019-11-17T03:42:38.866Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/struct.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-17T03:42:38.873Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go/struct.hbs",\n\t"name": "struct_name",\n\t"description": "",\n\t"properties": [],\n\t"methods": [],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-11-17T03:42:38.873Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go/struct.hbs",\n\t"name": "struct_name",\n\t"description": "",\n\t"properties": [],\n\t"methods": [],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-11-17T03:42:38.873Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go/struct.hbs",\n\t"name": "struct_name",\n\t"description": "",\n\t"properties": [],\n\t"methods": [],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-11-17T03:42:38.887Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-11-17T03:43:28.902Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go/struct.hbs",\n\t"name": "",\n\t"description": "",\n\t"properties": [],\n\t"methods": [],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2019-11-17T03:43:28.903Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go/struct.hbs",\n\t"name": "",\n\t"description": "",\n\t"properties": [],\n\t"methods": [],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-17T03:43:28.904Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go/struct.hbs',
+  name: '',
+  description: '',
+  properties: [ [length]: 0 ],
+  methods: [ [length]: 0 ],
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ] } undefined
+2019-11-17T03:43:28.904Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go/struct.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-17T03:43:28.904Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/struct.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-17T03:43:28.905Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/struct.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-17T03:43:28.905Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/struct.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/struct.hbs\'',
+  [length]: 2 ]
+2019-11-17T03:43:28.905Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/struct.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-17T03:43:28.906Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-17T03:43:28.906Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-17T03:43:28.906Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-17T03:43:28.922Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/** \n* @typedef \n* @brief \n* @struct\n*/\n// \n',
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-17T03:43:28.923Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/** \n* @typedef \n* @brief \n* @struct\n*/\n// \n',
+  [length]: 2 ]
+2019-11-17T03:43:28.923Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/** \n* @typedef \n* @brief \n* @struct\n*/\n// \n',
+  [ 0,
+    '/** \n* @typedef \n* @brief \n* @struct\n*/\n// \n',
+    [length]: 2 ],
+  [length]: 3 ]
+2019-11-17T03:43:28.923Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/** \n* @typedef \n* @brief \n* @struct\n*/\n// \n',
+  [length]: 2 ]
+2019-11-17T03:43:28.923Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/** \n* @typedef \n* @brief \n* @struct\n*/\n// \n',
+  '1': { verbose: true, pasteboard: true, edit: 'go struct' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-17T03:43:28.952Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-11-17T03:43:28.952Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-11-17T03:46:23.584Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-11-17T03:46:23.591Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-17T03:46:23.592Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-11-17T03:46:23.592Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2019-11-17T03:46:23.594Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-11-17T03:46:23.594Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go file' }
+2019-11-17T03:46:23.595Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-17T03:46:23.595Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-17T03:46:23.595Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-17T03:46:23.596Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/file.json": Error: ENOENT: no such file or directory, open \'go/file.json\'',
+  [length]: 2 ]
+2019-11-17T03:46:23.596Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-17T03:46:23.596Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go file",\n\t"filename": "file_name.go",\n\t"description": "Brief description.",\n\t"package_name": "package_name"\n}',
+  [length]: 2 ]
+2019-11-17T03:46:23.596Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go file",\n\t"filename": "file_name.go",\n\t"description": "Brief description.",\n\t"package_name": "package_name"\n}',
+  [length]: 2 ]
+2019-11-17T03:46:23.596Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go file",\n\t"filename": "file_name.go",\n\t"description": "Brief description.",\n\t"package_name": "package_name"\n}',
+  [length]: 2 ]
+2019-11-17T03:46:23.609Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-11-18T02:39:20.943Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go file",\n\t"filename": "file_name.go",\n\t"description": "Brief description.",\n\t"package_name": "package_name"\n}' }
+2019-11-18T02:39:20.946Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go file",\n\t"filename": "file_name.go",\n\t"description": "Brief description.",\n\t"package_name": "package_name"\n}' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T02:39:20.948Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go file',
+  filename: 'file_name.go',
+  description: 'Brief description.',
+  package_name: 'package_name' } undefined
+2019-11-18T02:39:20.950Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T02:39:20.952Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T02:39:20.953Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T02:39:20.997Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/file.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/file.hbs\'',
+  [length]: 2 ]
+2019-11-18T02:39:20.998Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T02:39:21.041Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-18T02:39:21.043Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-18T02:39:21.044Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-18T02:39:21.111Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @file file_name.go\n* @brief Brief description.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\n\n// package_name brief description.\npackage package_name;\n\n//Dependencies\nimport(\n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T02:39:21.112Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2019-11-18T02:39:21.113Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @file file_name.go\n* @brief Brief description.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\n\n// package_name brief description.\npackage package_name;\n\n//Dependencies\nimport(\n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+  [length]: 2 ]
+2019-11-18T02:39:21.113Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @file file_name.go\n* @brief Brief description.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\n\n// package_name brief description.\npackage package_name;\n\n//Dependencies\nimport(\n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+  [ 0,
+    '/**\n* @file file_name.go\n* @brief Brief description.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\n\n// package_name brief description.\npackage package_name;\n\n//Dependencies\nimport(\n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2019-11-18T02:39:21.114Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @file file_name.go\n* @brief Brief description.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\n\n// package_name brief description.\npackage package_name;\n\n//Dependencies\nimport(\n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+  [length]: 2 ]
+2019-11-18T02:39:21.115Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @file file_name.go\n* @brief Brief description.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\n\n// package_name brief description.\npackage package_name;\n\n//Dependencies\nimport(\n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go file' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T02:39:21.225Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-11-18T02:39:21.226Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-11-18T02:39:30.837Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-11-18T02:39:30.869Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T02:39:30.904Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-11-18T02:39:30.904Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2019-11-18T02:39:30.906Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-11-18T02:39:30.906Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go func' }
+2019-11-18T02:39:30.907Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T02:39:30.907Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T02:39:30.908Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T02:39:30.908Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/func.json": Error: ENOENT: no such file or directory, open \'go/func.json\'',
+  [length]: 2 ]
+2019-11-18T02:39:30.908Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T02:39:30.916Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-11-18T02:39:30.916Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-11-18T02:39:30.917Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-11-18T02:39:30.930Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-11-18T02:50:52.192Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go func",\n\t"name": "AddListener",\n\t"description": "Adds a listener function to the event emitter.",\n\t"preceding_struct": {\n\t\t"name": "event_emitter",\n\t\t"type": "*EventEmitter_struct"\n\t},\n\t"type": "error",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "event_string",\n\t\t\t"type": "string",\n\t\t\t"flow": "in",\n\t\t\t"description": "A string identifying which events will trigger the `listener_function` to be called."\n\t\t},\n\t\t{\n\t\t\t"name": "listener_function",\n\t\t\t"type": "func(args ...interface{})",\n\t\t\t"flow": "in",\n\t\t\t"description": "The function to call when an event matches `event_string`."\n\t\t},\n\t\t{\n\t\t\t"name": "default_arguments",\n\t\t\t"type": "...interface{}",\n\t\t\t"flow": "in",\n\t\t\t"description": "The default parametre arguments used when the `listener_function` is triggered but the event doesn\'t specify any additional arguments."\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": "nil",\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": "!== nil && !== 1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2019-11-18T02:50:52.192Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go func",\n\t"name": "AddListener",\n\t"description": "Adds a listener function to the event emitter.",\n\t"preceding_struct": {\n\t\t"name": "event_emitter",\n\t\t"type": "*EventEmitter_struct"\n\t},\n\t"type": "error",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "event_string",\n\t\t\t"type": "string",\n\t\t\t"flow": "in",\n\t\t\t"description": "A string identifying which events will trigger the `listener_function` to be called."\n\t\t},\n\t\t{\n\t\t\t"name": "listener_function",\n\t\t\t"type": "func(args ...interface{})",\n\t\t\t"flow": "in",\n\t\t\t"description": "The function to call when an event matches `event_string`."\n\t\t},\n\t\t{\n\t\t\t"name": "default_arguments",\n\t\t\t"type": "...interface{}",\n\t\t\t"flow": "in",\n\t\t\t"description": "The default parametre arguments used when the `listener_function` is triggered but the event doesn\'t specify any additional arguments."\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": "nil",\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": "!== nil && !== 1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T02:50:52.193Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go func',
+  name: 'AddListener',
+  description: 'Adds a listener function to the event emitter.',
+  preceding_struct: { name: 'event_emitter', type: '*EventEmitter_struct' },
+  type: 'error',
+  parameters: 
+   [ { name: 'event_string',
+       type: 'string',
+       flow: 'in',
+       description: 'A string identifying which events will trigger the `listener_function` to be called.' },
+     { name: 'listener_function',
+       type: 'func(args ...interface{})',
+       flow: 'in',
+       description: 'The function to call when an event matches `event_string`.' },
+     { name: 'default_arguments',
+       type: '...interface{}',
+       flow: 'in',
+       description: 'The default parametre arguments used when the `listener_function` is triggered but the event doesn\'t specify any additional arguments.' },
+     [length]: 3 ],
+  return_values: 
+   [ { value: 'nil', description: 'Success' },
+     { value: 1, description: 'Not Supported' },
+     { value: '!== nil && !== 1', description: 'Error' },
+     [length]: 3 ],
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ] } undefined
+2019-11-18T02:50:52.193Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T02:50:52.194Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T02:50:52.194Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T02:50:52.194Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/func.hbs\'',
+  [length]: 2 ]
+2019-11-18T02:50:52.194Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T02:50:52.256Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-18T02:50:52.257Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-18T02:50:52.258Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-18T02:50:52.298Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @fn AddListener\n* @brief Adds a listener function to the event emitter.\n* @struct event_emitter *EventEmitter_struct\n* @param event_string string [in] A string identifying which events will trigger the `listener_function` to be called.\n* @param listener_function func(args ...interface{}) [in] The function to call when an event matches `event_string`.\n* @param default_arguments ...interface{} [in] The default parametre arguments used when the `listener_function` is triggered but the event doesn\'t specify any additional arguments.\n* @return error\n* @retval nil Success\n* @retval 1 Not Supported\n* @retval !== nil && !== 1 Error\n*/\n// AddListener adds a listener function to the event emitter.\nfunc (event_emitter *EventEmitter_struct) AddListener( event_string string, listener_function func(args ...interface{}), default_arguments ...interface{},) error{\n\tvar _return error = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T02:50:52.298Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @fn AddListener\n* @brief Adds a listener function to the event emitter.\n* @struct event_emitter *EventEmitter_struct\n* @param event_string string [in] A string identifying which events will trigger the `listener_function` to be called.\n* @param listener_function func(args ...interface{}) [in] The function to call when an event matches `event_string`.\n* @param default_arguments ...interface{} [in] The default parametre arguments used when the `listener_function` is triggered but the event doesn\'t specify any additional arguments.\n* @return error\n* @retval nil Success\n* @retval 1 Not Supported\n* @retval !== nil && !== 1 Error\n*/\n// AddListener adds a listener function to the event emitter.\nfunc (event_emitter *EventEmitter_struct) AddListener( event_string string, listener_function func(args ...interface{}), default_arguments ...interface{} ) error{\n\tvar _return error = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2019-11-18T02:50:52.298Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @fn AddListener\n* @brief Adds a listener function to the event emitter.\n* @struct event_emitter *EventEmitter_struct\n* @param event_string string [in] A string identifying which events will trigger the `listener_function` to be called.\n* @param listener_function func(args ...interface{}) [in] The function to call when an event matches `event_string`.\n* @param default_arguments ...interface{} [in] The default parametre arguments used when the `listener_function` is triggered but the event doesn\'t specify any additional arguments.\n* @return error\n* @retval nil Success\n* @retval 1 Not Supported\n* @retval !== nil && !== 1 Error\n*/\n// AddListener adds a listener function to the event emitter.\nfunc (event_emitter *EventEmitter_struct) AddListener( event_string string, listener_function func(args ...interface{}), default_arguments ...interface{} ) error{\n\tvar _return error = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  [ 0,
+    '/**\n* @fn AddListener\n* @brief Adds a listener function to the event emitter.\n* @struct event_emitter *EventEmitter_struct\n* @param event_string string [in] A string identifying which events will trigger the `listener_function` to be called.\n* @param listener_function func(args ...interface{}) [in] The function to call when an event matches `event_string`.\n* @param default_arguments ...interface{} [in] The default parametre arguments used when the `listener_function` is triggered but the event doesn\'t specify any additional arguments.\n* @return error\n* @retval nil Success\n* @retval 1 Not Supported\n* @retval !== nil && !== 1 Error\n*/\n// AddListener adds a listener function to the event emitter.\nfunc (event_emitter *EventEmitter_struct) AddListener( event_string string, listener_function func(args ...interface{}), default_arguments ...interface{} ) error{\n\tvar _return error = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2019-11-18T02:50:52.299Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @fn AddListener\n* @brief Adds a listener function to the event emitter.\n* @struct event_emitter *EventEmitter_struct\n* @param event_string string [in] A string identifying which events will trigger the `listener_function` to be called.\n* @param listener_function func(args ...interface{}) [in] The function to call when an event matches `event_string`.\n* @param default_arguments ...interface{} [in] The default parametre arguments used when the `listener_function` is triggered but the event doesn\'t specify any additional arguments.\n* @return error\n* @retval nil Success\n* @retval 1 Not Supported\n* @retval !== nil && !== 1 Error\n*/\n// AddListener adds a listener function to the event emitter.\nfunc (event_emitter *EventEmitter_struct) AddListener( event_string string, listener_function func(args ...interface{}), default_arguments ...interface{} ) error{\n\tvar _return error = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2019-11-18T02:50:52.299Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @fn AddListener\n* @brief Adds a listener function to the event emitter.\n* @struct event_emitter *EventEmitter_struct\n* @param event_string string [in] A string identifying which events will trigger the `listener_function` to be called.\n* @param listener_function func(args ...interface{}) [in] The function to call when an event matches `event_string`.\n* @param default_arguments ...interface{} [in] The default parametre arguments used when the `listener_function` is triggered but the event doesn\'t specify any additional arguments.\n* @return error\n* @retval nil Success\n* @retval 1 Not Supported\n* @retval !== nil && !== 1 Error\n*/\n// AddListener adds a listener function to the event emitter.\nfunc (event_emitter *EventEmitter_struct) AddListener( event_string string, listener_function func(args ...interface{}), default_arguments ...interface{} ) error{\n\tvar _return error = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T02:50:52.304Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-11-18T02:50:52.305Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-11-18T05:02:21.003Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-11-18T05:02:21.036Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:02:21.061Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-11-18T05:02:21.062Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2019-11-18T05:02:21.070Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-11-18T05:02:21.072Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go file' }
+2019-11-18T05:02:21.074Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:02:21.076Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:02:21.078Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:02:21.079Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/file.json": Error: ENOENT: no such file or directory, open \'go/file.json\'',
+  [length]: 2 ]
+2019-11-18T05:02:21.080Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:02:21.095Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go file",\n\t"filename": "file_name.go",\n\t"description": "Brief description.",\n\t"package_name": "package_name"\n}',
+  [length]: 2 ]
+2019-11-18T05:02:21.096Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go file",\n\t"filename": "file_name.go",\n\t"description": "Brief description.",\n\t"package_name": "package_name"\n}',
+  [length]: 2 ]
+2019-11-18T05:02:21.097Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go file",\n\t"filename": "file_name.go",\n\t"description": "Brief description.",\n\t"package_name": "package_name"\n}',
+  [length]: 2 ]
+2019-11-18T05:02:21.126Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-11-18T05:06:23.171Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go file",\n\t"filename": "matchkey.go",\n\t"description": "A datatype which is a superposition of a literal string, a wildcarded path, and/or a Regular Expression.",\n\t"package_name": "matchkey"\n}\n' }
+2019-11-18T05:06:23.171Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go file",\n\t"filename": "matchkey.go",\n\t"description": "A datatype which is a superposition of a literal string, a wildcarded path, and/or a Regular Expression.",\n\t"package_name": "matchkey"\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:06:23.172Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go file',
+  filename: 'matchkey.go',
+  description: 'A datatype which is a superposition of a literal string, a wildcarded path, and/or a Regular Expression.',
+  package_name: 'matchkey' } undefined
+2019-11-18T05:06:23.172Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:06:23.172Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:06:23.173Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:06:23.173Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/file.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/file.hbs\'',
+  [length]: 2 ]
+2019-11-18T05:06:23.173Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:06:23.190Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-18T05:06:23.190Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-18T05:06:23.191Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-18T05:06:23.202Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @file matchkey.go\n* @brief A datatype which is a superposition of a literal string, a wildcarded path, and/or a Regular Expression.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\n\n// matchkey a datatype which is a superposition of a literal string, a wildcarded path, and/or a Regular Expression.\npackage matchkey;\n\n//Dependencies\nimport(\n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:06:23.202Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2019-11-18T05:06:23.202Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @file matchkey.go\n* @brief A datatype which is a superposition of a literal string, a wildcarded path, and/or a Regular Expression.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\n\n// matchkey a datatype which is a superposition of a literal string, a wildcarded path, and/or a Regular Expression.\npackage matchkey;\n\n//Dependencies\nimport(\n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+  [length]: 2 ]
+2019-11-18T05:06:23.202Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @file matchkey.go\n* @brief A datatype which is a superposition of a literal string, a wildcarded path, and/or a Regular Expression.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\n\n// matchkey a datatype which is a superposition of a literal string, a wildcarded path, and/or a Regular Expression.\npackage matchkey;\n\n//Dependencies\nimport(\n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+  [ 0,
+    '/**\n* @file matchkey.go\n* @brief A datatype which is a superposition of a literal string, a wildcarded path, and/or a Regular Expression.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\n\n// matchkey a datatype which is a superposition of a literal string, a wildcarded path, and/or a Regular Expression.\npackage matchkey;\n\n//Dependencies\nimport(\n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2019-11-18T05:06:23.203Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @file matchkey.go\n* @brief A datatype which is a superposition of a literal string, a wildcarded path, and/or a Regular Expression.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\n\n// matchkey a datatype which is a superposition of a literal string, a wildcarded path, and/or a Regular Expression.\npackage matchkey;\n\n//Dependencies\nimport(\n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+  [length]: 2 ]
+2019-11-18T05:06:23.203Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @file matchkey.go\n* @brief A datatype which is a superposition of a literal string, a wildcarded path, and/or a Regular Expression.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\n\n// matchkey a datatype which is a superposition of a literal string, a wildcarded path, and/or a Regular Expression.\npackage matchkey;\n\n//Dependencies\nimport(\n\t//Internal\n\t//Standard\n\t//External\n);\n\n//Constants\nconst(\n\t//Exported Constants\n\t//Private Constants\n);\n\n//Types, structs, and methods\n\n//Global Variables\nvar(\n\t//Exported Variables\n\t//Private Variables\n);\n\n//Exported Functions\n\n//Private Functions\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go file' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:06:23.255Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-11-18T05:06:23.256Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-11-18T05:10:34.715Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-11-18T05:10:34.722Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:10:34.723Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-11-18T05:10:34.723Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2019-11-18T05:10:34.724Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-11-18T05:10:34.725Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go func' }
+2019-11-18T05:10:34.725Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:10:34.726Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:10:34.726Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:10:34.726Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/func.json": Error: ENOENT: no such file or directory, open \'go/func.json\'',
+  [length]: 2 ]
+2019-11-18T05:10:34.726Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:10:34.744Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-11-18T05:10:34.745Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-11-18T05:10:34.745Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-11-18T05:10:34.762Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-11-18T05:18:01.404Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go func",\n\t"name": "New",\n\t"description": "Create a new MatchKey, for a specified type, from a given string value.",\n\t"type": "(MatchKey_struct, error)",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "matchkey_type",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 1,\n\t\t\t"description": "The type of the MatchKey: 1 for string-literal, 2 for wildcard-enabled path, and three for a full-on Regular Expression."\n\t\t},\n\t\t{\n\t\t\t"name": "matchkey_string",\n\t\t\t"type": "string",\n\t\t\t"flow": "in",\n\t\t\t"description": "The base string to be used for the MatchKey. If `matchkey_type` is `MATCHKEY_TYPE_REGEX` this string will be compiled into a RegExp object."\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2019-11-18T05:18:01.405Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go func",\n\t"name": "New",\n\t"description": "Create a new MatchKey, for a specified type, from a given string value.",\n\t"type": "(MatchKey_struct, error)",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "matchkey_type",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 1,\n\t\t\t"description": "The type of the MatchKey: 1 for string-literal, 2 for wildcard-enabled path, and three for a full-on Regular Expression."\n\t\t},\n\t\t{\n\t\t\t"name": "matchkey_string",\n\t\t\t"type": "string",\n\t\t\t"flow": "in",\n\t\t\t"description": "The base string to be used for the MatchKey. If `matchkey_type` is `MATCHKEY_TYPE_REGEX` this string will be compiled into a RegExp object."\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:18:01.406Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go func',
+  name: 'New',
+  description: 'Create a new MatchKey, for a specified type, from a given string value.',
+  type: '(MatchKey_struct, error)',
+  parameters: 
+   [ { name: 'matchkey_type',
+       type: 'uint8',
+       flow: 'in',
+       default: 1,
+       description: 'The type of the MatchKey: 1 for string-literal, 2 for wildcard-enabled path, and three for a full-on Regular Expression.' },
+     { name: 'matchkey_string',
+       type: 'string',
+       flow: 'in',
+       description: 'The base string to be used for the MatchKey. If `matchkey_type` is `MATCHKEY_TYPE_REGEX` this string will be compiled into a RegExp object.' },
+     [length]: 2 ],
+  return_values: 
+   [ { value: 0, description: 'Success' },
+     { value: 1, description: 'Not Supported' },
+     { value: '>1', description: 'Error' },
+     [length]: 3 ],
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ] } undefined
+2019-11-18T05:18:01.406Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:18:01.407Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:18:01.407Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:18:01.408Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/func.hbs\'',
+  [length]: 2 ]
+2019-11-18T05:18:01.408Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:18:01.426Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-18T05:18:01.426Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-18T05:18:01.427Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-18T05:18:01.452Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @fn New\n* @brief Create a new MatchKey, for a specified type, from a given string value.\n* @param matchkey_type uint8 [in] The type of the MatchKey: 1 for string-literal, 2 for wildcard-enabled path, and three for a full-on Regular Expression.\n* @param matchkey_string string [in] The base string to be used for the MatchKey. If `matchkey_type` is `MATCHKEY_TYPE_REGEX` this string will be compiled into a RegExp object.\n* @return (MatchKey_struct, error)\n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n// New create a new MatchKey, for a specified type, from a given string value.\nfunc  New( matchkey_type uint8, matchkey_string string,) (MatchKey_struct, error){\n\tvar _return (MatchKey_struct, error) = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:18:01.452Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @fn New\n* @brief Create a new MatchKey, for a specified type, from a given string value.\n* @param matchkey_type uint8 [in] The type of the MatchKey: 1 for string-literal, 2 for wildcard-enabled path, and three for a full-on Regular Expression.\n* @param matchkey_string string [in] The base string to be used for the MatchKey. If `matchkey_type` is `MATCHKEY_TYPE_REGEX` this string will be compiled into a RegExp object.\n* @return (MatchKey_struct, error)\n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n// New create a new MatchKey, for a specified type, from a given string value.\nfunc  New( matchkey_type uint8, matchkey_string string ) (MatchKey_struct, error){\n\tvar _return (MatchKey_struct, error) = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2019-11-18T05:18:01.452Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @fn New\n* @brief Create a new MatchKey, for a specified type, from a given string value.\n* @param matchkey_type uint8 [in] The type of the MatchKey: 1 for string-literal, 2 for wildcard-enabled path, and three for a full-on Regular Expression.\n* @param matchkey_string string [in] The base string to be used for the MatchKey. If `matchkey_type` is `MATCHKEY_TYPE_REGEX` this string will be compiled into a RegExp object.\n* @return (MatchKey_struct, error)\n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n// New create a new MatchKey, for a specified type, from a given string value.\nfunc  New( matchkey_type uint8, matchkey_string string ) (MatchKey_struct, error){\n\tvar _return (MatchKey_struct, error) = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  [ 0,
+    '/**\n* @fn New\n* @brief Create a new MatchKey, for a specified type, from a given string value.\n* @param matchkey_type uint8 [in] The type of the MatchKey: 1 for string-literal, 2 for wildcard-enabled path, and three for a full-on Regular Expression.\n* @param matchkey_string string [in] The base string to be used for the MatchKey. If `matchkey_type` is `MATCHKEY_TYPE_REGEX` this string will be compiled into a RegExp object.\n* @return (MatchKey_struct, error)\n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n// New create a new MatchKey, for a specified type, from a given string value.\nfunc  New( matchkey_type uint8, matchkey_string string ) (MatchKey_struct, error){\n\tvar _return (MatchKey_struct, error) = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2019-11-18T05:18:01.452Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @fn New\n* @brief Create a new MatchKey, for a specified type, from a given string value.\n* @param matchkey_type uint8 [in] The type of the MatchKey: 1 for string-literal, 2 for wildcard-enabled path, and three for a full-on Regular Expression.\n* @param matchkey_string string [in] The base string to be used for the MatchKey. If `matchkey_type` is `MATCHKEY_TYPE_REGEX` this string will be compiled into a RegExp object.\n* @return (MatchKey_struct, error)\n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n// New create a new MatchKey, for a specified type, from a given string value.\nfunc  New( matchkey_type uint8, matchkey_string string ) (MatchKey_struct, error){\n\tvar _return (MatchKey_struct, error) = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2019-11-18T05:18:01.453Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @fn New\n* @brief Create a new MatchKey, for a specified type, from a given string value.\n* @param matchkey_type uint8 [in] The type of the MatchKey: 1 for string-literal, 2 for wildcard-enabled path, and three for a full-on Regular Expression.\n* @param matchkey_string string [in] The base string to be used for the MatchKey. If `matchkey_type` is `MATCHKEY_TYPE_REGEX` this string will be compiled into a RegExp object.\n* @return (MatchKey_struct, error)\n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n// New create a new MatchKey, for a specified type, from a given string value.\nfunc  New( matchkey_type uint8, matchkey_string string ) (MatchKey_struct, error){\n\tvar _return (MatchKey_struct, error) = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:18:01.458Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-11-18T05:18:01.458Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-11-18T05:39:13.483Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-11-18T05:39:13.489Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:39:13.490Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-11-18T05:39:13.490Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2019-11-18T05:39:13.492Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-11-18T05:39:13.492Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go func' }
+2019-11-18T05:39:13.492Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:39:13.493Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:39:13.493Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:39:13.493Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/func.json": Error: ENOENT: no such file or directory, open \'go/func.json\'',
+  [length]: 2 ]
+2019-11-18T05:39:13.493Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:39:13.494Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-11-18T05:39:13.494Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-11-18T05:39:13.494Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-11-18T05:39:13.507Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-11-18T05:44:03.032Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go func",\n\t"name": "Match",\n\t"description": "Returns true if the given string matches the MatchKey dependent on the MatchKey type; false otherwise.",\n\t"preceding_struct": {\n\t\t"name": "matchkey",\n\t\t"type": "MatchKey_struct"\n\t},\n\t"type": "bool",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "check_string",\n\t\t\t"type": "string",\n\t\t\t"flow": "in",\n\t\t\t"description": "The string which will be matched against the MatchKey via the appropriate method for the MatchKey type."\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": true,\n\t\t\t"description": "Match"\n\t\t},\n\t\t{\n\t\t\t"value": false,\n\t\t\t"description": "No match."\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2019-11-18T05:44:03.032Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go func",\n\t"name": "Match",\n\t"description": "Returns true if the given string matches the MatchKey dependent on the MatchKey type; false otherwise.",\n\t"preceding_struct": {\n\t\t"name": "matchkey",\n\t\t"type": "MatchKey_struct"\n\t},\n\t"type": "bool",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "check_string",\n\t\t\t"type": "string",\n\t\t\t"flow": "in",\n\t\t\t"description": "The string which will be matched against the MatchKey via the appropriate method for the MatchKey type."\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": true,\n\t\t\t"description": "Match"\n\t\t},\n\t\t{\n\t\t\t"value": false,\n\t\t\t"description": "No match."\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:44:03.033Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go func',
+  name: 'Match',
+  description: 'Returns true if the given string matches the MatchKey dependent on the MatchKey type; false otherwise.',
+  preceding_struct: { name: 'matchkey', type: 'MatchKey_struct' },
+  type: 'bool',
+  parameters: 
+   [ { name: 'check_string',
+       type: 'string',
+       flow: 'in',
+       description: 'The string which will be matched against the MatchKey via the appropriate method for the MatchKey type.' },
+     [length]: 1 ],
+  return_values: 
+   [ { value: true, description: 'Match' },
+     { value: false, description: 'No match.' },
+     [length]: 2 ],
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ] } undefined
+2019-11-18T05:44:03.033Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:44:03.033Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:44:03.034Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:44:03.034Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/func.hbs\'',
+  [length]: 2 ]
+2019-11-18T05:44:03.034Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:44:03.035Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-18T05:44:03.035Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-18T05:44:03.035Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-18T05:44:03.059Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @fn Match\n* @brief Returns true if the given string matches the MatchKey dependent on the MatchKey type; false otherwise.\n* @struct matchkey MatchKey_struct\n* @param check_string string [in] The string which will be matched against the MatchKey via the appropriate method for the MatchKey type.\n* @return bool\n* @retval true Match\n* @retval false No match.\n*/\n// Match returns true if the given string matches the MatchKey dependent on the MatchKey type; false otherwise.\nfunc (matchkey MatchKey_struct) Match( check_string string,) bool{\n\tvar _return bool = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:44:03.059Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @fn Match\n* @brief Returns true if the given string matches the MatchKey dependent on the MatchKey type; false otherwise.\n* @struct matchkey MatchKey_struct\n* @param check_string string [in] The string which will be matched against the MatchKey via the appropriate method for the MatchKey type.\n* @return bool\n* @retval true Match\n* @retval false No match.\n*/\n// Match returns true if the given string matches the MatchKey dependent on the MatchKey type; false otherwise.\nfunc (matchkey MatchKey_struct) Match( check_string string ) bool{\n\tvar _return bool = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2019-11-18T05:44:03.059Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @fn Match\n* @brief Returns true if the given string matches the MatchKey dependent on the MatchKey type; false otherwise.\n* @struct matchkey MatchKey_struct\n* @param check_string string [in] The string which will be matched against the MatchKey via the appropriate method for the MatchKey type.\n* @return bool\n* @retval true Match\n* @retval false No match.\n*/\n// Match returns true if the given string matches the MatchKey dependent on the MatchKey type; false otherwise.\nfunc (matchkey MatchKey_struct) Match( check_string string ) bool{\n\tvar _return bool = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  [ 0,
+    '/**\n* @fn Match\n* @brief Returns true if the given string matches the MatchKey dependent on the MatchKey type; false otherwise.\n* @struct matchkey MatchKey_struct\n* @param check_string string [in] The string which will be matched against the MatchKey via the appropriate method for the MatchKey type.\n* @return bool\n* @retval true Match\n* @retval false No match.\n*/\n// Match returns true if the given string matches the MatchKey dependent on the MatchKey type; false otherwise.\nfunc (matchkey MatchKey_struct) Match( check_string string ) bool{\n\tvar _return bool = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2019-11-18T05:44:03.059Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @fn Match\n* @brief Returns true if the given string matches the MatchKey dependent on the MatchKey type; false otherwise.\n* @struct matchkey MatchKey_struct\n* @param check_string string [in] The string which will be matched against the MatchKey via the appropriate method for the MatchKey type.\n* @return bool\n* @retval true Match\n* @retval false No match.\n*/\n// Match returns true if the given string matches the MatchKey dependent on the MatchKey type; false otherwise.\nfunc (matchkey MatchKey_struct) Match( check_string string ) bool{\n\tvar _return bool = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2019-11-18T05:44:03.059Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @fn Match\n* @brief Returns true if the given string matches the MatchKey dependent on the MatchKey type; false otherwise.\n* @struct matchkey MatchKey_struct\n* @param check_string string [in] The string which will be matched against the MatchKey via the appropriate method for the MatchKey type.\n* @return bool\n* @retval true Match\n* @retval false No match.\n*/\n// Match returns true if the given string matches the MatchKey dependent on the MatchKey type; false otherwise.\nfunc (matchkey MatchKey_struct) Match( check_string string ) bool{\n\tvar _return bool = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-18T05:44:03.066Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-11-18T05:44:03.066Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-11-21T01:20:08.830Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-11-21T01:20:08.866Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T01:20:08.905Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-11-21T01:20:08.905Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2019-11-21T01:20:08.914Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-11-21T01:20:08.916Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go file' }
+2019-11-21T01:20:08.918Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T01:20:08.920Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T01:20:08.922Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T01:20:08.923Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/file.json": Error: ENOENT: no such file or directory, open \'go/file.json\'',
+  [length]: 2 ]
+2019-11-21T01:20:08.924Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T01:20:08.938Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go file",\n\t"filename": "file_name.go",\n\t"description": "Brief description.",\n\t"package_name": "package_name"\n}',
+  [length]: 2 ]
+2019-11-21T01:20:08.939Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go file",\n\t"filename": "file_name.go",\n\t"description": "Brief description.",\n\t"package_name": "package_name"\n}',
+  [length]: 2 ]
+2019-11-21T01:20:08.940Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go file",\n\t"filename": "file_name.go",\n\t"description": "Brief description.",\n\t"package_name": "package_name"\n}',
+  [length]: 2 ]
+2019-11-21T01:20:08.968Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-11-21T02:17:50.610Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go file",\n\t"filename": "error_report.go",\n\t"description": "Provides interfaces, structs, and functions for working with error reports.",\n\t"package_name": "error_reports"\n}\n' }
+2019-11-21T02:17:50.613Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go file",\n\t"filename": "error_report.go",\n\t"description": "Provides interfaces, structs, and functions for working with error reports.",\n\t"package_name": "error_reports"\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T02:17:50.614Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go file',
+  filename: 'error_report.go',
+  description: 'Provides interfaces, structs, and functions for working with error reports.',
+  package_name: 'error_reports' } undefined
+2019-11-21T02:17:50.616Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T02:17:50.617Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T02:17:50.618Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T02:17:50.618Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/file.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/file.hbs\'',
+  [length]: 2 ]
+2019-11-21T02:17:50.619Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T02:17:50.650Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-21T02:17:50.652Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-21T02:17:50.653Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-21T02:17:50.693Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @file error_report.go\n* @brief Provides interfaces, structs, and functions for working with error reports.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\n\n// error_reports provides interfaces, structs, and functions for working with error reports.\npackage error_reports;\n\n//# Dependencies\nimport(\n\t//## Internal\n\t//## Standard\n\t//## External\n);\n\n//# Constants\nconst(\n\t//## Exported Constants\n\t//### Errors\n\t//## Private Constants\n);\n\n//# Types, structs, and methods\n\n//# Global Variables\nvar(\n\t//## Exported Variables\n\t//## Private Variables\n);\n\n//# Exported Functions\n\n//# Private Functions\n',
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T02:17:50.693Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2019-11-21T02:17:50.693Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @file error_report.go\n* @brief Provides interfaces, structs, and functions for working with error reports.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\n\n// error_reports provides interfaces, structs, and functions for working with error reports.\npackage error_reports;\n\n//# Dependencies\nimport(\n\t//## Internal\n\t//## Standard\n\t//## External\n);\n\n//# Constants\nconst(\n\t//## Exported Constants\n\t//### Errors\n\t//## Private Constants\n);\n\n//# Types, structs, and methods\n\n//# Global Variables\nvar(\n\t//## Exported Variables\n\t//## Private Variables\n);\n\n//# Exported Functions\n\n//# Private Functions\n',
+  [length]: 2 ]
+2019-11-21T02:17:50.693Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @file error_report.go\n* @brief Provides interfaces, structs, and functions for working with error reports.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\n\n// error_reports provides interfaces, structs, and functions for working with error reports.\npackage error_reports;\n\n//# Dependencies\nimport(\n\t//## Internal\n\t//## Standard\n\t//## External\n);\n\n//# Constants\nconst(\n\t//## Exported Constants\n\t//### Errors\n\t//## Private Constants\n);\n\n//# Types, structs, and methods\n\n//# Global Variables\nvar(\n\t//## Exported Variables\n\t//## Private Variables\n);\n\n//# Exported Functions\n\n//# Private Functions\n',
+  [ 0,
+    '/**\n* @file error_report.go\n* @brief Provides interfaces, structs, and functions for working with error reports.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\n\n// error_reports provides interfaces, structs, and functions for working with error reports.\npackage error_reports;\n\n//# Dependencies\nimport(\n\t//## Internal\n\t//## Standard\n\t//## External\n);\n\n//# Constants\nconst(\n\t//## Exported Constants\n\t//### Errors\n\t//## Private Constants\n);\n\n//# Types, structs, and methods\n\n//# Global Variables\nvar(\n\t//## Exported Variables\n\t//## Private Variables\n);\n\n//# Exported Functions\n\n//# Private Functions\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2019-11-21T02:17:50.694Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @file error_report.go\n* @brief Provides interfaces, structs, and functions for working with error reports.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\n\n// error_reports provides interfaces, structs, and functions for working with error reports.\npackage error_reports;\n\n//# Dependencies\nimport(\n\t//## Internal\n\t//## Standard\n\t//## External\n);\n\n//# Constants\nconst(\n\t//## Exported Constants\n\t//### Errors\n\t//## Private Constants\n);\n\n//# Types, structs, and methods\n\n//# Global Variables\nvar(\n\t//## Exported Variables\n\t//## Private Variables\n);\n\n//# Exported Functions\n\n//# Private Functions\n',
+  [length]: 2 ]
+2019-11-21T02:17:50.694Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @file error_report.go\n* @brief Provides interfaces, structs, and functions for working with error reports.\n* @author Anadian\n* @copyright MITlicensetm(2019,Canosw)\n*/\n\n// error_reports provides interfaces, structs, and functions for working with error reports.\npackage error_reports;\n\n//# Dependencies\nimport(\n\t//## Internal\n\t//## Standard\n\t//## External\n);\n\n//# Constants\nconst(\n\t//## Exported Constants\n\t//### Errors\n\t//## Private Constants\n);\n\n//# Types, structs, and methods\n\n//# Global Variables\nvar(\n\t//## Exported Variables\n\t//## Private Variables\n);\n\n//# Exported Functions\n\n//# Private Functions\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go file' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T02:17:50.774Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-11-21T02:17:50.776Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-11-21T02:33:06.807Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-11-21T02:33:06.820Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T02:33:06.826Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-11-21T02:33:06.826Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2019-11-21T02:33:06.828Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-11-21T02:33:06.829Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go func' }
+2019-11-21T02:33:06.829Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T02:33:06.830Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T02:33:06.830Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T02:33:06.830Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/func.json": Error: ENOENT: no such file or directory, open \'go/func.json\'',
+  [length]: 2 ]
+2019-11-21T02:33:06.830Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T02:33:06.838Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-11-21T02:33:06.839Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-11-21T02:33:06.839Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-11-21T02:33:06.852Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-11-21T02:42:07.198Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go func",\n\t"name": "New",\n\t"description": "Creates a new Error Report",\n\t"type": "ErrorReport_struct",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "code",\n\t\t\t"type": "int64",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": "The code, a unique, static, signed 64-bit-integer value, to be used for the new error report."\n\t\t},\n\t\t{\n\t\t\t"name": "data",\n\t\t\t"type": "map[string]interface{}",\n\t\t\t"flow": "in",\n\t\t\t"default": "nil",\n\t\t\t"description": "A string-keyed map to be used for the `data` property of the new error report."\n\t\t},\n\t\t{\n\t\t\t"name": "wrapped_report",\n\t\t\t"type": "*ErrorReport_struct",\n\t\t\t"flow": "in",\n\t\t\t"default": "nil",\n\t\t\t"description": "A pointer to a pre-existing error report, if any, which the new error report should wrap."\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": "<The new ErrorReport_struct>",\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": "nil",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2019-11-21T02:42:07.199Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go func",\n\t"name": "New",\n\t"description": "Creates a new Error Report",\n\t"type": "ErrorReport_struct",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "code",\n\t\t\t"type": "int64",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": "The code, a unique, static, signed 64-bit-integer value, to be used for the new error report."\n\t\t},\n\t\t{\n\t\t\t"name": "data",\n\t\t\t"type": "map[string]interface{}",\n\t\t\t"flow": "in",\n\t\t\t"default": "nil",\n\t\t\t"description": "A string-keyed map to be used for the `data` property of the new error report."\n\t\t},\n\t\t{\n\t\t\t"name": "wrapped_report",\n\t\t\t"type": "*ErrorReport_struct",\n\t\t\t"flow": "in",\n\t\t\t"default": "nil",\n\t\t\t"description": "A pointer to a pre-existing error report, if any, which the new error report should wrap."\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": "<The new ErrorReport_struct>",\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": "nil",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T02:42:07.199Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go func',
+  name: 'New',
+  description: 'Creates a new Error Report',
+  type: 'ErrorReport_struct',
+  parameters: 
+   [ { name: 'code',
+       type: 'int64',
+       flow: 'in',
+       default: 0,
+       description: 'The code, a unique, static, signed 64-bit-integer value, to be used for the new error report.' },
+     { name: 'data',
+       type: 'map[string]interface{}',
+       flow: 'in',
+       default: 'nil',
+       description: 'A string-keyed map to be used for the `data` property of the new error report.' },
+     { name: 'wrapped_report',
+       type: '*ErrorReport_struct',
+       flow: 'in',
+       default: 'nil',
+       description: 'A pointer to a pre-existing error report, if any, which the new error report should wrap.' },
+     [length]: 3 ],
+  return_values: 
+   [ { value: '<The new ErrorReport_struct>',
+       description: 'Success' },
+     { value: 'nil', description: 'Error' },
+     [length]: 2 ],
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ] } undefined
+2019-11-21T02:42:07.200Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T02:42:07.200Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T02:42:07.200Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T02:42:07.200Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/func.hbs\'',
+  [length]: 2 ]
+2019-11-21T02:42:07.201Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T02:42:07.227Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-21T02:42:07.229Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-21T02:42:07.230Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-21T02:42:07.270Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @fn New\n* @brief Creates a new Error Report\n* @param code int64 [in] The code, a unique, static, signed 64-bit-integer value, to be used for the new error report.\n* @param data map[string]interface{} [in] A string-keyed map to be used for the `data` property of the new error report.\n* @param wrapped_report *ErrorReport_struct [in] A pointer to a pre-existing error report, if any, which the new error report should wrap.\n* @return ErrorReport_struct\n* @retval <The new ErrorReport_struct> Success\n* @retval nil Error\n*/\n// New creates a new Error Report\nfunc  New( code int64, data map[string]interface{}, wrapped_report *ErrorReport_struct,) ErrorReport_struct{\n\tvar _return ErrorReport_struct = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T02:42:07.271Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @fn New\n* @brief Creates a new Error Report\n* @param code int64 [in] The code, a unique, static, signed 64-bit-integer value, to be used for the new error report.\n* @param data map[string]interface{} [in] A string-keyed map to be used for the `data` property of the new error report.\n* @param wrapped_report *ErrorReport_struct [in] A pointer to a pre-existing error report, if any, which the new error report should wrap.\n* @return ErrorReport_struct\n* @retval <The new ErrorReport_struct> Success\n* @retval nil Error\n*/\n// New creates a new Error Report\nfunc  New( code int64, data map[string]interface{}, wrapped_report *ErrorReport_struct ) ErrorReport_struct{\n\tvar _return ErrorReport_struct = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2019-11-21T02:42:07.271Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @fn New\n* @brief Creates a new Error Report\n* @param code int64 [in] The code, a unique, static, signed 64-bit-integer value, to be used for the new error report.\n* @param data map[string]interface{} [in] A string-keyed map to be used for the `data` property of the new error report.\n* @param wrapped_report *ErrorReport_struct [in] A pointer to a pre-existing error report, if any, which the new error report should wrap.\n* @return ErrorReport_struct\n* @retval <The new ErrorReport_struct> Success\n* @retval nil Error\n*/\n// New creates a new Error Report\nfunc  New( code int64, data map[string]interface{}, wrapped_report *ErrorReport_struct ) ErrorReport_struct{\n\tvar _return ErrorReport_struct = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  [ 0,
+    '/**\n* @fn New\n* @brief Creates a new Error Report\n* @param code int64 [in] The code, a unique, static, signed 64-bit-integer value, to be used for the new error report.\n* @param data map[string]interface{} [in] A string-keyed map to be used for the `data` property of the new error report.\n* @param wrapped_report *ErrorReport_struct [in] A pointer to a pre-existing error report, if any, which the new error report should wrap.\n* @return ErrorReport_struct\n* @retval <The new ErrorReport_struct> Success\n* @retval nil Error\n*/\n// New creates a new Error Report\nfunc  New( code int64, data map[string]interface{}, wrapped_report *ErrorReport_struct ) ErrorReport_struct{\n\tvar _return ErrorReport_struct = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2019-11-21T02:42:07.271Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @fn New\n* @brief Creates a new Error Report\n* @param code int64 [in] The code, a unique, static, signed 64-bit-integer value, to be used for the new error report.\n* @param data map[string]interface{} [in] A string-keyed map to be used for the `data` property of the new error report.\n* @param wrapped_report *ErrorReport_struct [in] A pointer to a pre-existing error report, if any, which the new error report should wrap.\n* @return ErrorReport_struct\n* @retval <The new ErrorReport_struct> Success\n* @retval nil Error\n*/\n// New creates a new Error Report\nfunc  New( code int64, data map[string]interface{}, wrapped_report *ErrorReport_struct ) ErrorReport_struct{\n\tvar _return ErrorReport_struct = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2019-11-21T02:42:07.271Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @fn New\n* @brief Creates a new Error Report\n* @param code int64 [in] The code, a unique, static, signed 64-bit-integer value, to be used for the new error report.\n* @param data map[string]interface{} [in] A string-keyed map to be used for the `data` property of the new error report.\n* @param wrapped_report *ErrorReport_struct [in] A pointer to a pre-existing error report, if any, which the new error report should wrap.\n* @return ErrorReport_struct\n* @retval <The new ErrorReport_struct> Success\n* @retval nil Error\n*/\n// New creates a new Error Report\nfunc  New( code int64, data map[string]interface{}, wrapped_report *ErrorReport_struct ) ErrorReport_struct{\n\tvar _return ErrorReport_struct = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T02:42:07.300Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-11-21T02:42:07.301Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-11-21T02:57:11.080Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-11-21T02:57:11.086Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T02:57:11.088Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-11-21T02:57:11.088Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2019-11-21T02:57:11.089Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-11-21T02:57:11.089Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go func' }
+2019-11-21T02:57:11.090Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T02:57:11.090Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T02:57:11.090Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T02:57:11.091Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/func.json": Error: ENOENT: no such file or directory, open \'go/func.json\'',
+  [length]: 2 ]
+2019-11-21T02:57:11.091Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T02:57:11.092Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-11-21T02:57:11.092Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-11-21T02:57:11.092Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-11-21T02:57:11.104Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-11-21T03:00:31.658Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go func",\n\t"name": "NoError",\n\t"description": "Returns true if the error report doesn\'t report any errors.",\n\t"preceding_struct": {\n\t\t"name": "error_report",\n\t\t"type": "*ErrorReport_struct"\n\t},\n\t"type": "bool",\n\t"return_values": [\n\t\t{\n\t\t\t"value": "true",\n\t\t\t"description": "The preceding `error_report` struct signifies no errors."\n\t\t},\n\t\t{\n\t\t\t"value": "false",\n\t\t\t"description": "There were errors."\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2019-11-21T03:00:31.658Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go func",\n\t"name": "NoError",\n\t"description": "Returns true if the error report doesn\'t report any errors.",\n\t"preceding_struct": {\n\t\t"name": "error_report",\n\t\t"type": "*ErrorReport_struct"\n\t},\n\t"type": "bool",\n\t"return_values": [\n\t\t{\n\t\t\t"value": "true",\n\t\t\t"description": "The preceding `error_report` struct signifies no errors."\n\t\t},\n\t\t{\n\t\t\t"value": "false",\n\t\t\t"description": "There were errors."\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T03:00:31.659Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go func',
+  name: 'NoError',
+  description: 'Returns true if the error report doesn\'t report any errors.',
+  preceding_struct: { name: 'error_report', type: '*ErrorReport_struct' },
+  type: 'bool',
+  return_values: 
+   [ { value: 'true',
+       description: 'The preceding `error_report` struct signifies no errors.' },
+     { value: 'false', description: 'There were errors.' },
+     [length]: 2 ],
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ] } undefined
+2019-11-21T03:00:31.659Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T03:00:31.659Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T03:00:31.660Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T03:00:31.660Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/func.hbs\'',
+  [length]: 2 ]
+2019-11-21T03:00:31.660Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T03:00:31.661Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-21T03:00:31.661Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-21T03:00:31.662Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-21T03:00:31.685Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @fn NoError\n* @brief Returns true if the error report doesn\'t report any errors.\n* @struct error_report *ErrorReport_struct\n* @return bool\n* @retval true The preceding `error_report` struct signifies no errors.\n* @retval false There were errors.\n*/\n// NoError returns true if the error report doesn\'t report any errors.\nfunc (error_report *ErrorReport_struct) NoError() bool{\n\tvar _return bool = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T03:00:31.685Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @fn NoError\n* @brief Returns true if the error report doesn\'t report any errors.\n* @struct error_report *ErrorReport_struct\n* @return bool\n* @retval true The preceding `error_report` struct signifies no errors.\n* @retval false There were errors.\n*/\n// NoError returns true if the error report doesn\'t report any errors.\nfunc (error_report *ErrorReport_struct) NoError() bool{\n\tvar _return bool = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2019-11-21T03:00:31.685Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @fn NoError\n* @brief Returns true if the error report doesn\'t report any errors.\n* @struct error_report *ErrorReport_struct\n* @return bool\n* @retval true The preceding `error_report` struct signifies no errors.\n* @retval false There were errors.\n*/\n// NoError returns true if the error report doesn\'t report any errors.\nfunc (error_report *ErrorReport_struct) NoError() bool{\n\tvar _return bool = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  [ 0,
+    '/**\n* @fn NoError\n* @brief Returns true if the error report doesn\'t report any errors.\n* @struct error_report *ErrorReport_struct\n* @return bool\n* @retval true The preceding `error_report` struct signifies no errors.\n* @retval false There were errors.\n*/\n// NoError returns true if the error report doesn\'t report any errors.\nfunc (error_report *ErrorReport_struct) NoError() bool{\n\tvar _return bool = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2019-11-21T03:00:31.685Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @fn NoError\n* @brief Returns true if the error report doesn\'t report any errors.\n* @struct error_report *ErrorReport_struct\n* @return bool\n* @retval true The preceding `error_report` struct signifies no errors.\n* @retval false There were errors.\n*/\n// NoError returns true if the error report doesn\'t report any errors.\nfunc (error_report *ErrorReport_struct) NoError() bool{\n\tvar _return bool = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2019-11-21T03:00:31.686Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @fn NoError\n* @brief Returns true if the error report doesn\'t report any errors.\n* @struct error_report *ErrorReport_struct\n* @return bool\n* @retval true The preceding `error_report` struct signifies no errors.\n* @retval false There were errors.\n*/\n// NoError returns true if the error report doesn\'t report any errors.\nfunc (error_report *ErrorReport_struct) NoError() bool{\n\tvar _return bool = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-21T03:00:31.710Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-11-21T03:00:31.710Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-11-23T03:31:32.572Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-11-23T03:31:32.615Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-23T03:31:32.653Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-11-23T03:31:32.653Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2019-11-23T03:31:32.659Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-11-23T03:31:32.661Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go func' }
+2019-11-23T03:31:32.663Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-23T03:31:32.665Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-23T03:31:32.666Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-23T03:31:32.667Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/func.json": Error: ENOENT: no such file or directory, open \'go/func.json\'',
+  [length]: 2 ]
+2019-11-23T03:31:32.667Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-23T03:31:32.674Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-11-23T03:31:32.675Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-11-23T03:31:32.675Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-11-23T03:31:32.694Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-11-23T03:36:31.967Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go func",\n\t"name": "CodeEqual",\n\t"description": "Returns true if the `code` properties of the reports match.",\n\t"preceding_struct": {\n\t\t"name": "error_report",\n\t\t"type": "*ErrorReport_struct"\n\t},\n\t"type": "bool",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "other_report",\n\t\t\t"type": "ErrorReport_struct",\n\t\t\t"flow": "in",\n\t\t\t"description": "The other report to be checked against."\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": "true",\n\t\t\t"description": "The two reports\' `code` properties are equal."\n\t\t},\n\t\t{\n\t\t\t"value": "false",\n\t\t\t"description": "The two reports\' `code` properties are not equal."\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2019-11-23T03:36:31.970Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go func",\n\t"name": "CodeEqual",\n\t"description": "Returns true if the `code` properties of the reports match.",\n\t"preceding_struct": {\n\t\t"name": "error_report",\n\t\t"type": "*ErrorReport_struct"\n\t},\n\t"type": "bool",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "other_report",\n\t\t\t"type": "ErrorReport_struct",\n\t\t\t"flow": "in",\n\t\t\t"description": "The other report to be checked against."\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": "true",\n\t\t\t"description": "The two reports\' `code` properties are equal."\n\t\t},\n\t\t{\n\t\t\t"value": "false",\n\t\t\t"description": "The two reports\' `code` properties are not equal."\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-23T03:36:31.973Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go func',
+  name: 'CodeEqual',
+  description: 'Returns true if the `code` properties of the reports match.',
+  preceding_struct: { name: 'error_report', type: '*ErrorReport_struct' },
+  type: 'bool',
+  parameters: 
+   [ { name: 'other_report',
+       type: 'ErrorReport_struct',
+       flow: 'in',
+       description: 'The other report to be checked against.' },
+     [length]: 1 ],
+  return_values: 
+   [ { value: 'true',
+       description: 'The two reports\' `code` properties are equal.' },
+     { value: 'false',
+       description: 'The two reports\' `code` properties are not equal.' },
+     [length]: 2 ],
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ] } undefined
+2019-11-23T03:36:31.974Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-23T03:36:31.976Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-23T03:36:31.976Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-23T03:36:31.977Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/func.hbs\'',
+  [length]: 2 ]
+2019-11-23T03:36:31.978Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-23T03:36:32.004Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-23T03:36:32.005Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-23T03:36:32.005Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-23T03:36:32.041Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @fn CodeEqual\n* @brief Returns true if the `code` properties of the reports match.\n* @struct error_report *ErrorReport_struct\n* @param other_report ErrorReport_struct [in] The other report to be checked against.\n* @return bool\n* @retval true The two reports\' `code` properties are equal.\n* @retval false The two reports\' `code` properties are not equal.\n*/\n// CodeEqual returns true if the `code` properties of the reports match.\nfunc (error_report *ErrorReport_struct) CodeEqual( other_report ErrorReport_struct,) bool{\n\tvar _return bool = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-23T03:36:32.041Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @fn CodeEqual\n* @brief Returns true if the `code` properties of the reports match.\n* @struct error_report *ErrorReport_struct\n* @param other_report ErrorReport_struct [in] The other report to be checked against.\n* @return bool\n* @retval true The two reports\' `code` properties are equal.\n* @retval false The two reports\' `code` properties are not equal.\n*/\n// CodeEqual returns true if the `code` properties of the reports match.\nfunc (error_report *ErrorReport_struct) CodeEqual( other_report ErrorReport_struct ) bool{\n\tvar _return bool = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2019-11-23T03:36:32.041Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @fn CodeEqual\n* @brief Returns true if the `code` properties of the reports match.\n* @struct error_report *ErrorReport_struct\n* @param other_report ErrorReport_struct [in] The other report to be checked against.\n* @return bool\n* @retval true The two reports\' `code` properties are equal.\n* @retval false The two reports\' `code` properties are not equal.\n*/\n// CodeEqual returns true if the `code` properties of the reports match.\nfunc (error_report *ErrorReport_struct) CodeEqual( other_report ErrorReport_struct ) bool{\n\tvar _return bool = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  [ 0,
+    '/**\n* @fn CodeEqual\n* @brief Returns true if the `code` properties of the reports match.\n* @struct error_report *ErrorReport_struct\n* @param other_report ErrorReport_struct [in] The other report to be checked against.\n* @return bool\n* @retval true The two reports\' `code` properties are equal.\n* @retval false The two reports\' `code` properties are not equal.\n*/\n// CodeEqual returns true if the `code` properties of the reports match.\nfunc (error_report *ErrorReport_struct) CodeEqual( other_report ErrorReport_struct ) bool{\n\tvar _return bool = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2019-11-23T03:36:32.041Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @fn CodeEqual\n* @brief Returns true if the `code` properties of the reports match.\n* @struct error_report *ErrorReport_struct\n* @param other_report ErrorReport_struct [in] The other report to be checked against.\n* @return bool\n* @retval true The two reports\' `code` properties are equal.\n* @retval false The two reports\' `code` properties are not equal.\n*/\n// CodeEqual returns true if the `code` properties of the reports match.\nfunc (error_report *ErrorReport_struct) CodeEqual( other_report ErrorReport_struct ) bool{\n\tvar _return bool = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2019-11-23T03:36:32.042Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @fn CodeEqual\n* @brief Returns true if the `code` properties of the reports match.\n* @struct error_report *ErrorReport_struct\n* @param other_report ErrorReport_struct [in] The other report to be checked against.\n* @return bool\n* @retval true The two reports\' `code` properties are equal.\n* @retval false The two reports\' `code` properties are not equal.\n*/\n// CodeEqual returns true if the `code` properties of the reports match.\nfunc (error_report *ErrorReport_struct) CodeEqual( other_report ErrorReport_struct ) bool{\n\tvar _return bool = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-23T03:36:32.070Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-11-23T03:36:32.071Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-11-23T03:41:42.286Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-11-23T03:41:42.294Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-23T03:41:42.295Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-11-23T03:41:42.295Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2019-11-23T03:41:42.297Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-11-23T03:41:42.297Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go func' }
+2019-11-23T03:41:42.297Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-23T03:41:42.298Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-23T03:41:42.298Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-23T03:41:42.298Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/func.json": Error: ENOENT: no such file or directory, open \'go/func.json\'',
+  [length]: 2 ]
+2019-11-23T03:41:42.299Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-23T03:41:42.299Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-11-23T03:41:42.299Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-11-23T03:41:42.299Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-11-23T03:41:42.313Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-11-23T03:44:41.091Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go func",\n\t"name": "CodeEqual",\n\t"description": "Returns true if the report\'s `code` property matches the `code` parametre given.",\n\t"preceding_struct": {\n\t\t"name": "error_report",\n\t\t"type": "ErrorReport_struct"\n\t},\n\t"type": "bool",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "code",\n\t\t\t"type": "int64",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": "The code value to check against the error report."\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": "true",\n\t\t\t"description": "The codes are equal."\n\t\t},\n\t\t{\n\t\t\t"value": "false",\n\t\t\t"description": "The codes are not equal."\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2019-11-23T03:44:41.092Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go func",\n\t"name": "CodeEqual",\n\t"description": "Returns true if the report\'s `code` property matches the `code` parametre given.",\n\t"preceding_struct": {\n\t\t"name": "error_report",\n\t\t"type": "ErrorReport_struct"\n\t},\n\t"type": "bool",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "code",\n\t\t\t"type": "int64",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": "The code value to check against the error report."\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": "true",\n\t\t\t"description": "The codes are equal."\n\t\t},\n\t\t{\n\t\t\t"value": "false",\n\t\t\t"description": "The codes are not equal."\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-23T03:44:41.093Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go func',
+  name: 'CodeEqual',
+  description: 'Returns true if the report\'s `code` property matches the `code` parametre given.',
+  preceding_struct: { name: 'error_report', type: 'ErrorReport_struct' },
+  type: 'bool',
+  parameters: 
+   [ { name: 'code',
+       type: 'int64',
+       flow: 'in',
+       default: 0,
+       description: 'The code value to check against the error report.' },
+     [length]: 1 ],
+  return_values: 
+   [ { value: 'true', description: 'The codes are equal.' },
+     { value: 'false', description: 'The codes are not equal.' },
+     [length]: 2 ],
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ] } undefined
+2019-11-23T03:44:41.093Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-23T03:44:41.094Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-23T03:44:41.094Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-23T03:44:41.094Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/func.hbs\'',
+  [length]: 2 ]
+2019-11-23T03:44:41.095Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-23T03:44:41.095Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-23T03:44:41.096Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-23T03:44:41.096Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-11-23T03:44:41.119Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @fn CodeEqual\n* @brief Returns true if the report\'s `code` property matches the `code` parametre given.\n* @struct error_report ErrorReport_struct\n* @param code int64 [in] The code value to check against the error report.\n* @return bool\n* @retval true The codes are equal.\n* @retval false The codes are not equal.\n*/\n// CodeEqual returns true if the report\'s `code` property matches the `code` parametre given.\nfunc (error_report ErrorReport_struct) CodeEqual( code int64,) bool{\n\tvar _return bool = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-23T03:44:41.119Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @fn CodeEqual\n* @brief Returns true if the report\'s `code` property matches the `code` parametre given.\n* @struct error_report ErrorReport_struct\n* @param code int64 [in] The code value to check against the error report.\n* @return bool\n* @retval true The codes are equal.\n* @retval false The codes are not equal.\n*/\n// CodeEqual returns true if the report\'s `code` property matches the `code` parametre given.\nfunc (error_report ErrorReport_struct) CodeEqual( code int64 ) bool{\n\tvar _return bool = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2019-11-23T03:44:41.120Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @fn CodeEqual\n* @brief Returns true if the report\'s `code` property matches the `code` parametre given.\n* @struct error_report ErrorReport_struct\n* @param code int64 [in] The code value to check against the error report.\n* @return bool\n* @retval true The codes are equal.\n* @retval false The codes are not equal.\n*/\n// CodeEqual returns true if the report\'s `code` property matches the `code` parametre given.\nfunc (error_report ErrorReport_struct) CodeEqual( code int64 ) bool{\n\tvar _return bool = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  [ 0,
+    '/**\n* @fn CodeEqual\n* @brief Returns true if the report\'s `code` property matches the `code` parametre given.\n* @struct error_report ErrorReport_struct\n* @param code int64 [in] The code value to check against the error report.\n* @return bool\n* @retval true The codes are equal.\n* @retval false The codes are not equal.\n*/\n// CodeEqual returns true if the report\'s `code` property matches the `code` parametre given.\nfunc (error_report ErrorReport_struct) CodeEqual( code int64 ) bool{\n\tvar _return bool = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2019-11-23T03:44:41.120Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @fn CodeEqual\n* @brief Returns true if the report\'s `code` property matches the `code` parametre given.\n* @struct error_report ErrorReport_struct\n* @param code int64 [in] The code value to check against the error report.\n* @return bool\n* @retval true The codes are equal.\n* @retval false The codes are not equal.\n*/\n// CodeEqual returns true if the report\'s `code` property matches the `code` parametre given.\nfunc (error_report ErrorReport_struct) CodeEqual( code int64 ) bool{\n\tvar _return bool = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2019-11-23T03:44:41.120Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @fn CodeEqual\n* @brief Returns true if the report\'s `code` property matches the `code` parametre given.\n* @struct error_report ErrorReport_struct\n* @param code int64 [in] The code value to check against the error report.\n* @return bool\n* @retval true The codes are equal.\n* @retval false The codes are not equal.\n*/\n// CodeEqual returns true if the report\'s `code` property matches the `code` parametre given.\nfunc (error_report ErrorReport_struct) CodeEqual( code int64 ) bool{\n\tvar _return bool = nil;\n\t/* Variables */\n\t\n\t/* Parametres */\n\t/* Function */\n\t\n\t/* Return */\n\treturn _return;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-11-23T03:44:41.126Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-11-23T03:44:41.126Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
