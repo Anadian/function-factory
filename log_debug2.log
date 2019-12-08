@@ -3707,3 +3707,325 @@
   [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
 2019-11-27T02:43:12.001Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
 2019-11-27T02:43:12.002Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-12-07T21:01:52.146Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-12-07T21:01:52.172Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-12-07T21:01:52.211Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-12-07T21:01:52.212Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2019-12-07T21:01:52.219Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-12-07T21:01:52.222Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go func' }
+2019-12-07T21:01:52.224Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-12-07T21:01:52.226Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-12-07T21:01:52.227Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-12-07T21:01:52.229Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/func.json": Error: ENOENT: no such file or directory, open \'go/func.json\'',
+  [length]: 2 ]
+2019-12-07T21:01:52.230Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-12-07T21:01:52.245Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-12-07T21:01:52.246Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-12-07T21:01:52.247Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-12-07T21:01:52.277Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-12-07T21:06:21.902Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go func",\n\t"name": "AddListener",\n\t"description": "Adds an event listener to the event dispatcher.",\n\t"preceding_struct": {\n\t\t"name": "event_dispatcher",\n\t\t"type": "*EventDispatcher_struct"\n\t},\n\t"type": "(return_report error_report.ErrorReport_Struct)",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "event_listener",\n\t\t\t"type": "EventListener_struct",\n\t\t\t"flow": "in",\n\t\t\t"description": "The event listener object to add."\n\t\t}\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2019-12-07T21:06:21.903Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go func",\n\t"name": "AddListener",\n\t"description": "Adds an event listener to the event dispatcher.",\n\t"preceding_struct": {\n\t\t"name": "event_dispatcher",\n\t\t"type": "*EventDispatcher_struct"\n\t},\n\t"type": "(return_report error_report.ErrorReport_Struct)",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "event_listener",\n\t\t\t"type": "EventListener_struct",\n\t\t\t"flow": "in",\n\t\t\t"description": "The event listener object to add."\n\t\t}\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-12-07T21:06:21.904Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go func',
+  name: 'AddListener',
+  description: 'Adds an event listener to the event dispatcher.',
+  preceding_struct: { name: 'event_dispatcher', type: '*EventDispatcher_struct' },
+  type: '(return_report error_report.ErrorReport_Struct)',
+  parameters: 
+   [ { name: 'event_listener',
+       type: 'EventListener_struct',
+       flow: 'in',
+       description: 'The event listener object to add.' },
+     [length]: 1 ],
+  return_values: 
+   [ { value: 0, description: 'Success' },
+     { value: 1, description: 'Not Supported' },
+     { value: '>1', description: 'Error' },
+     [length]: 3 ],
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ] } undefined
+2019-12-07T21:06:21.905Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-12-07T21:06:21.906Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-12-07T21:06:21.906Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-12-07T21:06:21.907Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/func.hbs\'',
+  [length]: 2 ]
+2019-12-07T21:06:21.907Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-12-07T21:06:21.921Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-12-07T21:06:21.923Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-12-07T21:06:21.924Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-12-07T21:06:21.958Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @fn AddListener\n* @brief Adds an event listener to the event dispatcher.\n* @struct event_dispatcher *EventDispatcher_struct\n* @param event_listener EventListener_struct [in] The event listener object to add.\n* @return (return_report error_report.ErrorReport_Struct)\n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// AddListener adds an event listener to the event dispatcher.\nfunc (event_dispatcher *EventDispatcher_struct) AddListener( event_listener EventListener_struct,) (return_report error_report.ErrorReport_Struct){\n\tvar _return (return_report error_report.ErrorReport_Struct) = nil;\n\t/* Variables */\n\t/* Parametres */\n\t/* Function */\n\t/* Return */\n\treturn _return;\n}\n',
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-12-07T21:06:21.958Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @fn AddListener\n* @brief Adds an event listener to the event dispatcher.\n* @struct event_dispatcher *EventDispatcher_struct\n* @param event_listener EventListener_struct [in] The event listener object to add.\n* @return (return_report error_report.ErrorReport_Struct)\n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// AddListener adds an event listener to the event dispatcher.\nfunc (event_dispatcher *EventDispatcher_struct) AddListener( event_listener EventListener_struct ) (return_report error_report.ErrorReport_Struct){\n\tvar _return (return_report error_report.ErrorReport_Struct) = nil;\n\t/* Variables */\n\t/* Parametres */\n\t/* Function */\n\t/* Return */\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2019-12-07T21:06:21.958Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @fn AddListener\n* @brief Adds an event listener to the event dispatcher.\n* @struct event_dispatcher *EventDispatcher_struct\n* @param event_listener EventListener_struct [in] The event listener object to add.\n* @return (return_report error_report.ErrorReport_Struct)\n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// AddListener adds an event listener to the event dispatcher.\nfunc (event_dispatcher *EventDispatcher_struct) AddListener( event_listener EventListener_struct ) (return_report error_report.ErrorReport_Struct){\n\tvar _return (return_report error_report.ErrorReport_Struct) = nil;\n\t/* Variables */\n\t/* Parametres */\n\t/* Function */\n\t/* Return */\n\treturn _return;\n}\n',
+  [ 0,
+    '/**\n* @fn AddListener\n* @brief Adds an event listener to the event dispatcher.\n* @struct event_dispatcher *EventDispatcher_struct\n* @param event_listener EventListener_struct [in] The event listener object to add.\n* @return (return_report error_report.ErrorReport_Struct)\n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// AddListener adds an event listener to the event dispatcher.\nfunc (event_dispatcher *EventDispatcher_struct) AddListener( event_listener EventListener_struct ) (return_report error_report.ErrorReport_Struct){\n\tvar _return (return_report error_report.ErrorReport_Struct) = nil;\n\t/* Variables */\n\t/* Parametres */\n\t/* Function */\n\t/* Return */\n\treturn _return;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2019-12-07T21:06:21.958Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @fn AddListener\n* @brief Adds an event listener to the event dispatcher.\n* @struct event_dispatcher *EventDispatcher_struct\n* @param event_listener EventListener_struct [in] The event listener object to add.\n* @return (return_report error_report.ErrorReport_Struct)\n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// AddListener adds an event listener to the event dispatcher.\nfunc (event_dispatcher *EventDispatcher_struct) AddListener( event_listener EventListener_struct ) (return_report error_report.ErrorReport_Struct){\n\tvar _return (return_report error_report.ErrorReport_Struct) = nil;\n\t/* Variables */\n\t/* Parametres */\n\t/* Function */\n\t/* Return */\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2019-12-07T21:06:21.959Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @fn AddListener\n* @brief Adds an event listener to the event dispatcher.\n* @struct event_dispatcher *EventDispatcher_struct\n* @param event_listener EventListener_struct [in] The event listener object to add.\n* @return (return_report error_report.ErrorReport_Struct)\n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// AddListener adds an event listener to the event dispatcher.\nfunc (event_dispatcher *EventDispatcher_struct) AddListener( event_listener EventListener_struct ) (return_report error_report.ErrorReport_Struct){\n\tvar _return (return_report error_report.ErrorReport_Struct) = nil;\n\t/* Variables */\n\t/* Parametres */\n\t/* Function */\n\t/* Return */\n\treturn _return;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-12-07T21:06:21.974Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-12-07T21:06:21.974Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2019-12-07T21:20:14.620Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2019-12-07T21:20:14.625Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-12-07T21:20:14.626Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2019-12-07T21:20:14.626Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2019-12-07T21:20:14.628Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2019-12-07T21:20:14.628Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go func' }
+2019-12-07T21:20:14.629Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-12-07T21:20:14.629Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-12-07T21:20:14.629Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-12-07T21:20:14.630Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/func.json": Error: ENOENT: no such file or directory, open \'go/func.json\'',
+  [length]: 2 ]
+2019-12-07T21:20:14.630Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-12-07T21:20:14.630Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-12-07T21:20:14.631Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-12-07T21:20:14.631Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "AddProjectile",\n\t"description": "A method to add a new projectile to the scene.",\n\t"preceding_struct": {\n\t\t"name": "scene",\n\t\t"type": "*Scene_type"\n\t},\n\t"type": "uint8",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"default": 0,\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"default": "Vector_type{0,0,}",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2019-12-07T21:20:14.643Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2019-12-07T21:35:39.330Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go func",\n\t"name": "RemoveEventListener",\n\t"description": "RemoveEventListenerByStringLiteral",\n\t"preceding_struct": {\n\t\t"name": "event_dispatcher",\n\t\t"type": "*EventDispatcher_struct"\n\t},\n\t"type": "(return_report error_report.ErrorReport_struct)",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "string_literal",\n\t\t\t"type": "string",\n\t\t\t"flow": "in",\n\t\t\t"description": "The key.matchkey_string value for the event listener to be removed."\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2019-12-07T21:35:39.331Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go func",\n\t"name": "RemoveEventListener",\n\t"description": "RemoveEventListenerByStringLiteral",\n\t"preceding_struct": {\n\t\t"name": "event_dispatcher",\n\t\t"type": "*EventDispatcher_struct"\n\t},\n\t"type": "(return_report error_report.ErrorReport_struct)",\n\t"parameters": [\n\t\t{\n\t\t\t"name": "string_literal",\n\t\t\t"type": "string",\n\t\t\t"flow": "in",\n\t\t\t"description": "The key.matchkey_string value for the event listener to be removed."\n\t\t}\n\t],\n\t"return_values": [\n\t\t{\n\t\t\t"value": 0,\n\t\t\t"description": "Success"\n\t\t},\n\t\t{\n\t\t\t"value": 1,\n\t\t\t"description": "Not Supported"\n\t\t},\n\t\t{\n\t\t\t"value": ">1",\n\t\t\t"description": "Error"\n\t\t}\n\t],\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-12-07T21:35:39.332Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go func',
+  name: 'RemoveEventListener',
+  description: 'RemoveEventListenerByStringLiteral',
+  preceding_struct: { name: 'event_dispatcher', type: '*EventDispatcher_struct' },
+  type: '(return_report error_report.ErrorReport_struct)',
+  parameters: 
+   [ { name: 'string_literal',
+       type: 'string',
+       flow: 'in',
+       description: 'The key.matchkey_string value for the event listener to be removed.' },
+     [length]: 1 ],
+  return_values: 
+   [ { value: 0, description: 'Success' },
+     { value: 1, description: 'Not Supported' },
+     { value: '>1', description: 'Error' },
+     [length]: 3 ],
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ] } undefined
+2019-12-07T21:35:39.333Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-12-07T21:35:39.333Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-12-07T21:35:39.334Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-12-07T21:35:39.334Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/func.hbs\'',
+  [length]: 2 ]
+2019-12-07T21:35:39.334Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-12-07T21:35:39.335Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-12-07T21:35:39.335Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-12-07T21:35:39.335Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2019-12-07T21:35:39.356Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @fn RemoveEventListener\n* @brief RemoveEventListenerByStringLiteral\n* @struct event_dispatcher *EventDispatcher_struct\n* @param string_literal string [in] The key.matchkey_string value for the event listener to be removed.\n* @return (return_report error_report.ErrorReport_struct)\n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// RemoveEventListener removeEventListenerByStringLiteral\nfunc (event_dispatcher *EventDispatcher_struct) RemoveEventListener( string_literal string,) (return_report error_report.ErrorReport_struct){\n\tvar _return (return_report error_report.ErrorReport_struct) = nil;\n\t/* Variables */\n\t/* Parametres */\n\t/* Function */\n\t/* Return */\n\treturn _return;\n}\n',
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-12-07T21:35:39.356Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @fn RemoveEventListener\n* @brief RemoveEventListenerByStringLiteral\n* @struct event_dispatcher *EventDispatcher_struct\n* @param string_literal string [in] The key.matchkey_string value for the event listener to be removed.\n* @return (return_report error_report.ErrorReport_struct)\n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// RemoveEventListener removeEventListenerByStringLiteral\nfunc (event_dispatcher *EventDispatcher_struct) RemoveEventListener( string_literal string ) (return_report error_report.ErrorReport_struct){\n\tvar _return (return_report error_report.ErrorReport_struct) = nil;\n\t/* Variables */\n\t/* Parametres */\n\t/* Function */\n\t/* Return */\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2019-12-07T21:35:39.356Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @fn RemoveEventListener\n* @brief RemoveEventListenerByStringLiteral\n* @struct event_dispatcher *EventDispatcher_struct\n* @param string_literal string [in] The key.matchkey_string value for the event listener to be removed.\n* @return (return_report error_report.ErrorReport_struct)\n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// RemoveEventListener removeEventListenerByStringLiteral\nfunc (event_dispatcher *EventDispatcher_struct) RemoveEventListener( string_literal string ) (return_report error_report.ErrorReport_struct){\n\tvar _return (return_report error_report.ErrorReport_struct) = nil;\n\t/* Variables */\n\t/* Parametres */\n\t/* Function */\n\t/* Return */\n\treturn _return;\n}\n',
+  [ 0,
+    '/**\n* @fn RemoveEventListener\n* @brief RemoveEventListenerByStringLiteral\n* @struct event_dispatcher *EventDispatcher_struct\n* @param string_literal string [in] The key.matchkey_string value for the event listener to be removed.\n* @return (return_report error_report.ErrorReport_struct)\n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// RemoveEventListener removeEventListenerByStringLiteral\nfunc (event_dispatcher *EventDispatcher_struct) RemoveEventListener( string_literal string ) (return_report error_report.ErrorReport_struct){\n\tvar _return (return_report error_report.ErrorReport_struct) = nil;\n\t/* Variables */\n\t/* Parametres */\n\t/* Function */\n\t/* Return */\n\treturn _return;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2019-12-07T21:35:39.357Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @fn RemoveEventListener\n* @brief RemoveEventListenerByStringLiteral\n* @struct event_dispatcher *EventDispatcher_struct\n* @param string_literal string [in] The key.matchkey_string value for the event listener to be removed.\n* @return (return_report error_report.ErrorReport_struct)\n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// RemoveEventListener removeEventListenerByStringLiteral\nfunc (event_dispatcher *EventDispatcher_struct) RemoveEventListener( string_literal string ) (return_report error_report.ErrorReport_struct){\n\tvar _return (return_report error_report.ErrorReport_struct) = nil;\n\t/* Variables */\n\t/* Parametres */\n\t/* Function */\n\t/* Return */\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2019-12-07T21:35:39.357Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @fn RemoveEventListener\n* @brief RemoveEventListenerByStringLiteral\n* @struct event_dispatcher *EventDispatcher_struct\n* @param string_literal string [in] The key.matchkey_string value for the event listener to be removed.\n* @return (return_report error_report.ErrorReport_struct)\n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// RemoveEventListener removeEventListenerByStringLiteral\nfunc (event_dispatcher *EventDispatcher_struct) RemoveEventListener( string_literal string ) (return_report error_report.ErrorReport_struct){\n\tvar _return (return_report error_report.ErrorReport_struct) = nil;\n\t/* Variables */\n\t/* Parametres */\n\t/* Function */\n\t/* Return */\n\treturn _return;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2019-12-07T21:35:39.363Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2019-12-07T21:35:39.363Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
