@@ -94,7 +94,7 @@ if(require.main === module){
 		{ name: 'help', alias: 'h', type: Boolean, description: 'Writes this help text to stdout.' },
 		{ name: 'noop', alias: 'n', type: Boolean, description: 'Show what would be done without actually doing it.' },
 		{ name: 'verbose', alias: 'v', type: Boolean, description: 'Verbose output to stderr.' },
-		{ name: 'Version', alias: 'V', type: Boolean, description: 'Writes version information to stdout.'},
+		{ name: 'version', alias: 'V', type: Boolean, description: 'Writes version information to stdout.'},
 		//Input
 		{ name: 'stdin', alias: 'i', type: Boolean, description: 'Read input from stdin.' },
 		{ name: 'input', alias: 'I', type: String, description: 'The path to the file to read input from.'},
@@ -120,7 +120,7 @@ if(require.main === module){
 	}
 	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});
 {{/logger}}{{#cli}}	//Options
-	var Options = CommandLineArguments( OptionDefinitions );
+	var Options = CommandLineArgs( OptionDefinitions );
 {{/cli}}	//Config
 	//Main
 {{#cli}}	if(Options.help === true){

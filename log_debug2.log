@@ -5178,3 +5178,638 @@
   '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
   [length]: 2 ]
 2020-01-21T04:58:32.267Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-01-21T05:02:51.392Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "js func",\n\t"name": "AOBGenerate_SamplesArrayFromFilePath",\n\t"description": "Retrieves the line-separated samples from the file at the given path.",\n\t"params": [\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": "filepath",\n\t\t\t"default": null,\n\t\t\t"description": "The path to read the file from."\n\t\t},\n\t\t{\n\t\t\t"type": "Object",\n\t\t\t"name": "options",\n\t\t\t"default": null,\n\t\t\t"description": "Additional options."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2020-01-21T05:02:51.393Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "js func",\n\t"name": "AOBGenerate_SamplesArrayFromFilePath",\n\t"description": "Retrieves the line-separated samples from the file at the given path.",\n\t"params": [\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": "filepath",\n\t\t\t"default": null,\n\t\t\t"description": "The path to read the file from."\n\t\t},\n\t\t{\n\t\t\t"type": "Object",\n\t\t\t"name": "options",\n\t\t\t"default": null,\n\t\t\t"description": "Additional options."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T05:02:51.393Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'js func',
+  name: 'AOBGenerate_SamplesArrayFromFilePath',
+  description: 'Retrieves the line-separated samples from the file at the given path.',
+  params: 
+   [ { type: 'String',
+       name: 'filepath',
+       default: null,
+       description: 'The path to read the file from.' },
+     { type: 'Object',
+       name: 'options',
+       default: null,
+       description: 'Additional options.' },
+     [length]: 2 ],
+  asynchronous: false,
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ] } undefined
+2020-01-21T05:02:51.394Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T05:02:51.394Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T05:02:51.394Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T05:02:51.395Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'js/func.hbs\'',
+  [length]: 2 ]
+2020-01-21T05:02:51.395Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T05:02:51.395Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-01-21T05:02:51.396Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-01-21T05:02:51.396Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-01-21T05:02:51.417Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @fn AOBGenerate_SamplesArrayFromFilePath\n* @brief Retrieves the line-separated samples from the file at the given path.\n* @param filepath\n*\t@type String\n*\t@brief The path to read the file from.\n* @param options\n*\t@type Object\n*\t@brief Additional options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction AOBGenerate_SamplesArrayFromFilePath( filepath, options,){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'AOBGenerate_SamplesArrayFromFilePath\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( filepath == null || typeof(filepath) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "filepath" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T05:02:51.417Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @fn AOBGenerate_SamplesArrayFromFilePath\n* @brief Retrieves the line-separated samples from the file at the given path.\n* @param filepath\n*\t@type String\n*\t@brief The path to read the file from.\n* @param options\n*\t@type Object\n*\t@brief Additional options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction AOBGenerate_SamplesArrayFromFilePath( filepath, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'AOBGenerate_SamplesArrayFromFilePath\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( filepath == null || typeof(filepath) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "filepath" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2020-01-21T05:02:51.417Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @fn AOBGenerate_SamplesArrayFromFilePath\n* @brief Retrieves the line-separated samples from the file at the given path.\n* @param filepath\n*\t@type String\n*\t@brief The path to read the file from.\n* @param options\n*\t@type Object\n*\t@brief Additional options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction AOBGenerate_SamplesArrayFromFilePath( filepath, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'AOBGenerate_SamplesArrayFromFilePath\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( filepath == null || typeof(filepath) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "filepath" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  [ 0,
+    '/**\n* @fn AOBGenerate_SamplesArrayFromFilePath\n* @brief Retrieves the line-separated samples from the file at the given path.\n* @param filepath\n*\t@type String\n*\t@brief The path to read the file from.\n* @param options\n*\t@type Object\n*\t@brief Additional options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction AOBGenerate_SamplesArrayFromFilePath( filepath, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'AOBGenerate_SamplesArrayFromFilePath\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( filepath == null || typeof(filepath) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "filepath" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-01-21T05:02:51.417Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @fn AOBGenerate_SamplesArrayFromFilePath\n* @brief Retrieves the line-separated samples from the file at the given path.\n* @param filepath\n*\t@type String\n*\t@brief The path to read the file from.\n* @param options\n*\t@type Object\n*\t@brief Additional options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction AOBGenerate_SamplesArrayFromFilePath( filepath, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'AOBGenerate_SamplesArrayFromFilePath\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( filepath == null || typeof(filepath) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "filepath" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2020-01-21T05:02:51.418Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @fn AOBGenerate_SamplesArrayFromFilePath\n* @brief Retrieves the line-separated samples from the file at the given path.\n* @param filepath\n*\t@type String\n*\t@brief The path to read the file from.\n* @param options\n*\t@type Object\n*\t@brief Additional options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction AOBGenerate_SamplesArrayFromFilePath( filepath, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'AOBGenerate_SamplesArrayFromFilePath\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( filepath == null || typeof(filepath) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "filepath" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'js func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T05:02:51.425Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-01-21T05:02:51.426Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-01-21T20:27:17.791Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-01-21T20:27:17.797Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T20:27:17.798Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-01-21T20:27:17.798Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-01-21T20:27:17.800Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-01-21T20:27:17.800Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'js func' }
+2020-01-21T20:27:17.801Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T20:27:17.801Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T20:27:17.801Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T20:27:17.802Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ENOENT: no such file or directory, open \'js/func.json\'',
+  [length]: 2 ]
+2020-01-21T20:27:17.802Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T20:27:17.802Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-01-21T20:27:17.802Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-01-21T20:27:17.803Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-01-21T20:27:17.815Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-01-21T20:29:50.817Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "js func",\n\t"name": "AOBGenerate_AOBStringToPasteboard",\n\t"description": "Copies the AOB string to the system clipboard.",\n\t"params": [\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": "aob_string",\n\t\t\t"default": null,\n\t\t\t"description": "The AOB string to copy."\n\t\t},\n\t\t{\n\t\t\t"type": "Object",\n\t\t\t"name": "options",\n\t\t\t"description": "Additional options."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2020-01-21T20:29:50.817Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "js func",\n\t"name": "AOBGenerate_AOBStringToPasteboard",\n\t"description": "Copies the AOB string to the system clipboard.",\n\t"params": [\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": "aob_string",\n\t\t\t"default": null,\n\t\t\t"description": "The AOB string to copy."\n\t\t},\n\t\t{\n\t\t\t"type": "Object",\n\t\t\t"name": "options",\n\t\t\t"description": "Additional options."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T20:29:50.818Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'js func',
+  name: 'AOBGenerate_AOBStringToPasteboard',
+  description: 'Copies the AOB string to the system clipboard.',
+  params: 
+   [ { type: 'String',
+       name: 'aob_string',
+       default: null,
+       description: 'The AOB string to copy.' },
+     { type: 'Object',
+       name: 'options',
+       description: 'Additional options.' },
+     [length]: 2 ],
+  asynchronous: false,
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ] } undefined
+2020-01-21T20:29:50.818Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T20:29:50.819Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T20:29:50.819Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T20:29:50.819Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'js/func.hbs\'',
+  [length]: 2 ]
+2020-01-21T20:29:50.819Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T20:29:50.820Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-01-21T20:29:50.820Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-01-21T20:29:50.820Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-01-21T20:29:50.843Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @fn AOBGenerate_AOBStringToPasteboard\n* @brief Copies the AOB string to the system clipboard.\n* @param aob_string\n*\t@type String\n*\t@brief The AOB string to copy.\n* @param options\n*\t@type Object\n*\t@brief Additional options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction AOBGenerate_AOBStringToPasteboard( aob_string, options,){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'AOBGenerate_AOBStringToPasteboard\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( aob_string == null || typeof(aob_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "aob_string" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T20:29:50.843Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @fn AOBGenerate_AOBStringToPasteboard\n* @brief Copies the AOB string to the system clipboard.\n* @param aob_string\n*\t@type String\n*\t@brief The AOB string to copy.\n* @param options\n*\t@type Object\n*\t@brief Additional options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction AOBGenerate_AOBStringToPasteboard( aob_string, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'AOBGenerate_AOBStringToPasteboard\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( aob_string == null || typeof(aob_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "aob_string" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2020-01-21T20:29:50.843Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @fn AOBGenerate_AOBStringToPasteboard\n* @brief Copies the AOB string to the system clipboard.\n* @param aob_string\n*\t@type String\n*\t@brief The AOB string to copy.\n* @param options\n*\t@type Object\n*\t@brief Additional options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction AOBGenerate_AOBStringToPasteboard( aob_string, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'AOBGenerate_AOBStringToPasteboard\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( aob_string == null || typeof(aob_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "aob_string" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  [ 0,
+    '/**\n* @fn AOBGenerate_AOBStringToPasteboard\n* @brief Copies the AOB string to the system clipboard.\n* @param aob_string\n*\t@type String\n*\t@brief The AOB string to copy.\n* @param options\n*\t@type Object\n*\t@brief Additional options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction AOBGenerate_AOBStringToPasteboard( aob_string, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'AOBGenerate_AOBStringToPasteboard\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( aob_string == null || typeof(aob_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "aob_string" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-01-21T20:29:50.844Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @fn AOBGenerate_AOBStringToPasteboard\n* @brief Copies the AOB string to the system clipboard.\n* @param aob_string\n*\t@type String\n*\t@brief The AOB string to copy.\n* @param options\n*\t@type Object\n*\t@brief Additional options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction AOBGenerate_AOBStringToPasteboard( aob_string, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'AOBGenerate_AOBStringToPasteboard\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( aob_string == null || typeof(aob_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "aob_string" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2020-01-21T20:29:50.844Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @fn AOBGenerate_AOBStringToPasteboard\n* @brief Copies the AOB string to the system clipboard.\n* @param aob_string\n*\t@type String\n*\t@brief The AOB string to copy.\n* @param options\n*\t@type Object\n*\t@brief Additional options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction AOBGenerate_AOBStringToPasteboard( aob_string, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'AOBGenerate_AOBStringToPasteboard\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( aob_string == null || typeof(aob_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "aob_string" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'js func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T20:29:50.865Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-01-21T20:29:50.865Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-01-21T20:37:27.717Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-01-21T20:37:27.722Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T20:37:27.723Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-01-21T20:37:27.724Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-01-21T20:37:27.725Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-01-21T20:37:27.725Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'js func' }
+2020-01-21T20:37:27.726Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T20:37:27.726Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T20:37:27.726Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T20:37:27.727Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ENOENT: no such file or directory, open \'js/func.json\'',
+  [length]: 2 ]
+2020-01-21T20:37:27.727Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T20:37:27.727Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-01-21T20:37:27.728Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-01-21T20:37:27.728Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-01-21T20:37:27.740Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-01-21T20:45:43.053Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "js func",\n\t"name": "AOBGenerate_AOBStringToFilePath",\n\t"description": "Writes the AOB string to the given file path.",\n\t"params": [\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": "aob_string",\n\t\t\t"default": null,\n\t\t\t"description": "The AOB string to write."\n\t\t},\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": "file_path",\n\t\t\t"default": null,\n\t\t\t"description": "The file path to write to."\n\t\t},\n\t\t{\n\t\t\t"type": "Object",\n\t\t\t"name": "options",\n\t\t\t"default": null,\n\t\t\t"description": "Additonal options."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2020-01-21T20:45:43.053Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "js func",\n\t"name": "AOBGenerate_AOBStringToFilePath",\n\t"description": "Writes the AOB string to the given file path.",\n\t"params": [\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": "aob_string",\n\t\t\t"default": null,\n\t\t\t"description": "The AOB string to write."\n\t\t},\n\t\t{\n\t\t\t"type": "String",\n\t\t\t"name": "file_path",\n\t\t\t"default": null,\n\t\t\t"description": "The file path to write to."\n\t\t},\n\t\t{\n\t\t\t"type": "Object",\n\t\t\t"name": "options",\n\t\t\t"default": null,\n\t\t\t"description": "Additonal options."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T20:45:43.054Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'js func',
+  name: 'AOBGenerate_AOBStringToFilePath',
+  description: 'Writes the AOB string to the given file path.',
+  params: 
+   [ { type: 'String',
+       name: 'aob_string',
+       default: null,
+       description: 'The AOB string to write.' },
+     { type: 'String',
+       name: 'file_path',
+       default: null,
+       description: 'The file path to write to.' },
+     { type: 'Object',
+       name: 'options',
+       default: null,
+       description: 'Additonal options.' },
+     [length]: 3 ],
+  asynchronous: false,
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ] } undefined
+2020-01-21T20:45:43.054Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T20:45:43.054Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T20:45:43.055Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T20:45:43.055Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'js/func.hbs\'',
+  [length]: 2 ]
+2020-01-21T20:45:43.055Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T20:45:43.056Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-01-21T20:45:43.056Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-01-21T20:45:43.056Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-01-21T20:45:43.080Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @fn AOBGenerate_AOBStringToFilePath\n* @brief Writes the AOB string to the given file path.\n* @param aob_string\n*\t@type String\n*\t@brief The AOB string to write.\n* @param file_path\n*\t@type String\n*\t@brief The file path to write to.\n* @param options\n*\t@type Object\n*\t@brief Additonal options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction AOBGenerate_AOBStringToFilePath( aob_string, file_path, options,){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'AOBGenerate_AOBStringToFilePath\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( aob_string == null || typeof(aob_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "aob_string" is either null or not a String.\'];\n\t}\n\tif( file_path == null || typeof(file_path) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "file_path" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T20:45:43.081Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @fn AOBGenerate_AOBStringToFilePath\n* @brief Writes the AOB string to the given file path.\n* @param aob_string\n*\t@type String\n*\t@brief The AOB string to write.\n* @param file_path\n*\t@type String\n*\t@brief The file path to write to.\n* @param options\n*\t@type Object\n*\t@brief Additonal options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction AOBGenerate_AOBStringToFilePath( aob_string, file_path, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'AOBGenerate_AOBStringToFilePath\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( aob_string == null || typeof(aob_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "aob_string" is either null or not a String.\'];\n\t}\n\tif( file_path == null || typeof(file_path) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "file_path" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2020-01-21T20:45:43.081Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @fn AOBGenerate_AOBStringToFilePath\n* @brief Writes the AOB string to the given file path.\n* @param aob_string\n*\t@type String\n*\t@brief The AOB string to write.\n* @param file_path\n*\t@type String\n*\t@brief The file path to write to.\n* @param options\n*\t@type Object\n*\t@brief Additonal options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction AOBGenerate_AOBStringToFilePath( aob_string, file_path, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'AOBGenerate_AOBStringToFilePath\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( aob_string == null || typeof(aob_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "aob_string" is either null or not a String.\'];\n\t}\n\tif( file_path == null || typeof(file_path) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "file_path" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  [ 0,
+    '/**\n* @fn AOBGenerate_AOBStringToFilePath\n* @brief Writes the AOB string to the given file path.\n* @param aob_string\n*\t@type String\n*\t@brief The AOB string to write.\n* @param file_path\n*\t@type String\n*\t@brief The file path to write to.\n* @param options\n*\t@type Object\n*\t@brief Additonal options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction AOBGenerate_AOBStringToFilePath( aob_string, file_path, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'AOBGenerate_AOBStringToFilePath\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( aob_string == null || typeof(aob_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "aob_string" is either null or not a String.\'];\n\t}\n\tif( file_path == null || typeof(file_path) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "file_path" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-01-21T20:45:43.081Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @fn AOBGenerate_AOBStringToFilePath\n* @brief Writes the AOB string to the given file path.\n* @param aob_string\n*\t@type String\n*\t@brief The AOB string to write.\n* @param file_path\n*\t@type String\n*\t@brief The file path to write to.\n* @param options\n*\t@type Object\n*\t@brief Additonal options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction AOBGenerate_AOBStringToFilePath( aob_string, file_path, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'AOBGenerate_AOBStringToFilePath\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( aob_string == null || typeof(aob_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "aob_string" is either null or not a String.\'];\n\t}\n\tif( file_path == null || typeof(file_path) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "file_path" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2020-01-21T20:45:43.081Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @fn AOBGenerate_AOBStringToFilePath\n* @brief Writes the AOB string to the given file path.\n* @param aob_string\n*\t@type String\n*\t@brief The AOB string to write.\n* @param file_path\n*\t@type String\n*\t@brief The file path to write to.\n* @param options\n*\t@type Object\n*\t@brief Additonal options.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction AOBGenerate_AOBStringToFilePath( aob_string, file_path, options ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'AOBGenerate_AOBStringToFilePath\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( aob_string == null || typeof(aob_string) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "aob_string" is either null or not a String.\'];\n\t}\n\tif( file_path == null || typeof(file_path) !== \'string\' ){\n\t\t_return = [-2, \'Error: param "file_path" is either null or not a String.\'];\n\t}\n\tif( options == null || typeof(options) !== \'object\' ){\n\t\t_return = [-2, \'Error: param "options" is either null or not a Object.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'js func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T20:45:43.088Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-01-21T20:45:43.088Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-01-21T21:49:56.149Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-01-21T21:49:56.155Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T21:49:56.156Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-01-21T21:49:56.156Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-01-21T21:49:56.157Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-01-21T21:49:56.158Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'js func' }
+2020-01-21T21:49:56.158Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T21:49:56.158Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T21:49:56.159Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T21:49:56.159Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ENOENT: no such file or directory, open \'js/func.json\'',
+  [length]: 2 ]
+2020-01-21T21:49:56.159Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T21:49:56.160Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-01-21T21:49:56.160Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-01-21T21:49:56.160Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-01-21T21:49:56.172Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-01-21T21:51:35.864Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "js func",\n\t"name": "AOBGenerate_RemoveBlankLines",\n\t"description": "Removes blank lines from the sample array.",\n\t"params": [\n\t\t{\n\t\t\t"type": "Array",\n\t\t\t"name": "samples_array",\n\t\t\t"default": null,\n\t\t\t"description": "The samples array to remove the blank lines from."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2020-01-21T21:51:35.864Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "js func",\n\t"name": "AOBGenerate_RemoveBlankLines",\n\t"description": "Removes blank lines from the sample array.",\n\t"params": [\n\t\t{\n\t\t\t"type": "Array",\n\t\t\t"name": "samples_array",\n\t\t\t"default": null,\n\t\t\t"description": "The samples array to remove the blank lines from."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T21:51:35.865Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'js func',
+  name: 'AOBGenerate_RemoveBlankLines',
+  description: 'Removes blank lines from the sample array.',
+  params: 
+   [ { type: 'Array',
+       name: 'samples_array',
+       default: null,
+       description: 'The samples array to remove the blank lines from.' },
+     [length]: 1 ],
+  asynchronous: false,
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ] } undefined
+2020-01-21T21:51:35.866Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T21:51:35.866Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T21:51:35.866Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T21:51:35.867Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'js/func.hbs\'',
+  [length]: 2 ]
+2020-01-21T21:51:35.867Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T21:51:35.868Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-01-21T21:51:35.868Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-01-21T21:51:35.868Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-01-21T21:51:35.892Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @fn AOBGenerate_RemoveBlankLines\n* @brief Removes blank lines from the sample array.\n* @param samples_array\n*\t@type Array\n*\t@brief The samples array to remove the blank lines from.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction AOBGenerate_RemoveBlankLines( samples_array,){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'AOBGenerate_RemoveBlankLines\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( samples_array == null || Array.isArray(samples_array) === false ){\n\t\t_return = [-2, \'Error: param "samples_array" is either null or not a Array.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T21:51:35.893Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @fn AOBGenerate_RemoveBlankLines\n* @brief Removes blank lines from the sample array.\n* @param samples_array\n*\t@type Array\n*\t@brief The samples array to remove the blank lines from.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction AOBGenerate_RemoveBlankLines( samples_array ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'AOBGenerate_RemoveBlankLines\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( samples_array == null || Array.isArray(samples_array) === false ){\n\t\t_return = [-2, \'Error: param "samples_array" is either null or not a Array.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2020-01-21T21:51:35.893Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @fn AOBGenerate_RemoveBlankLines\n* @brief Removes blank lines from the sample array.\n* @param samples_array\n*\t@type Array\n*\t@brief The samples array to remove the blank lines from.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction AOBGenerate_RemoveBlankLines( samples_array ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'AOBGenerate_RemoveBlankLines\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( samples_array == null || Array.isArray(samples_array) === false ){\n\t\t_return = [-2, \'Error: param "samples_array" is either null or not a Array.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  [ 0,
+    '/**\n* @fn AOBGenerate_RemoveBlankLines\n* @brief Removes blank lines from the sample array.\n* @param samples_array\n*\t@type Array\n*\t@brief The samples array to remove the blank lines from.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction AOBGenerate_RemoveBlankLines( samples_array ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'AOBGenerate_RemoveBlankLines\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( samples_array == null || Array.isArray(samples_array) === false ){\n\t\t_return = [-2, \'Error: param "samples_array" is either null or not a Array.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-01-21T21:51:35.893Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @fn AOBGenerate_RemoveBlankLines\n* @brief Removes blank lines from the sample array.\n* @param samples_array\n*\t@type Array\n*\t@brief The samples array to remove the blank lines from.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction AOBGenerate_RemoveBlankLines( samples_array ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'AOBGenerate_RemoveBlankLines\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( samples_array == null || Array.isArray(samples_array) === false ){\n\t\t_return = [-2, \'Error: param "samples_array" is either null or not a Array.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  [length]: 2 ]
+2020-01-21T21:51:35.893Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @fn AOBGenerate_RemoveBlankLines\n* @brief Removes blank lines from the sample array.\n* @param samples_array\n*\t@type Array\n*\t@brief The samples array to remove the blank lines from.\n* @return <ARRAY>\n*\t@entry 0 \n*\t\t@retval 1 premature return.\n*\t\t@retval 0 on success.\n*\t\t@retval <0 on failure.\n*\t@entry 1\n*\t\t@retval <object> on success\n*\t\t@retval <error_message> on failure.\n*/\nfunction AOBGenerate_RemoveBlankLines( samples_array ){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'AOBGenerate_RemoveBlankLines\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'received: \', arguments)});\n\t//Variables\n\t//Parametre checks\n\tif( samples_array == null || Array.isArray(samples_array) === false ){\n\t\t_return = [-2, \'Error: param "samples_array" is either null or not a Array.\'];\n\t}\n\t\n\t//Function\n\tif( _return[0] === 1 ){\n\n\t}\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: Utility.format(\'returned: \', _return)});\n\treturn _return;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'js func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T21:51:35.899Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-01-21T21:51:35.900Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-01-21T23:06:29.720Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-01-21T23:06:29.725Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T23:06:29.726Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-01-21T23:06:29.726Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-01-21T23:06:29.728Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-01-21T23:06:29.728Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'js file' }
+2020-01-21T23:06:29.729Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'js file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T23:06:29.729Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T23:06:29.729Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T23:06:29.729Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/file.json": Error: ENOENT: no such file or directory, open \'js/file.json\'',
+  [length]: 2 ]
+2020-01-21T23:06:29.730Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-01-21T23:06:29.746Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": "Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": "process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": true\n}',
+  [length]: 2 ]
+2020-01-21T23:06:29.746Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": "Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": "process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": true\n}',
+  [length]: 2 ]
+2020-01-21T23:06:29.747Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": "Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": "process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": true\n}',
+  [length]: 2 ]
+2020-01-21T23:06:29.764Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
