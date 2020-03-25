@@ -6138,3 +6138,122 @@
   '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
   [length]: 2 ]
 2020-03-22T21:25:05.944Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-03-24T23:04:14.674Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go func",\n\t"name": "PopEvent",\n\t"description": "Returns the last event in the queue.",\n\t"preceding_struct": {\n\t\t"name": "event_dispatcher",\n\t\t"type": "*EventDispatcher"\n\t},\n\t"parameters": [\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2020-03-24T23:04:14.676Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go func",\n\t"name": "PopEvent",\n\t"description": "Returns the last event in the queue.",\n\t"preceding_struct": {\n\t\t"name": "event_dispatcher",\n\t\t"type": "*EventDispatcher"\n\t},\n\t"parameters": [\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-24T23:04:14.682Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go func',
+  name: 'PopEvent',
+  description: 'Returns the last event in the queue.',
+  preceding_struct: { name: 'event_dispatcher', type: '*EventDispatcher' },
+  parameters: [ [length]: 0 ],
+  return: 
+   { return_values: 
+      [ { name: 'return_report',
+          type: 'error_report.ErrorReport_struct' },
+        [length]: 1 ],
+     report_codes: 
+      [ { code: 0, description: 'Success' },
+        { code: 1, description: 'Not Supported' },
+        { code: '>1', description: 'Error' },
+        [length]: 3 ] },
+  post_re: 
+   [ { search: ',\\)', replace: ' )', flags: 'gm' },
+     { search: ',;', replace: ';', flags: 'gm' },
+     [length]: 2 ] } undefined
+2020-03-24T23:04:14.684Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-24T23:04:14.686Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-24T23:04:14.687Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-24T23:04:14.688Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/func.hbs\'',
+  [length]: 2 ]
+2020-03-24T23:04:14.689Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-24T23:04:14.706Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-24T23:04:14.708Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-24T23:04:14.710Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-24T23:04:14.749Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @fn PopEvent\n* @brief Returns the last event in the queue.\n* @struct event_dispatcher *EventDispatcher\n* @return ( return_report error_report.ErrorReport_struct,) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// PopEvent returns the last event in the queue.\nfunc (event_dispatcher *EventDispatcher) PopEvent() ( return_report error_report.ErrorReport_struct,){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report,;\n}\n',
+  '1': 
+   [ { search: ',\\)', replace: ' )', flags: 'gm' },
+     { search: ',;', replace: ';', flags: 'gm' },
+     [length]: 2 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-24T23:04:14.750Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @fn PopEvent\n* @brief Returns the last event in the queue.\n* @struct event_dispatcher *EventDispatcher\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// PopEvent returns the last event in the queue.\nfunc (event_dispatcher *EventDispatcher) PopEvent() ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [length]: 2 ]
+2020-03-24T23:04:14.750Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @fn PopEvent\n* @brief Returns the last event in the queue.\n* @struct event_dispatcher *EventDispatcher\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// PopEvent returns the last event in the queue.\nfunc (event_dispatcher *EventDispatcher) PopEvent() ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [ 0,
+    '/**\n* @fn PopEvent\n* @brief Returns the last event in the queue.\n* @struct event_dispatcher *EventDispatcher\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// PopEvent returns the last event in the queue.\nfunc (event_dispatcher *EventDispatcher) PopEvent() ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-03-24T23:04:14.750Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @fn PopEvent\n* @brief Returns the last event in the queue.\n* @struct event_dispatcher *EventDispatcher\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// PopEvent returns the last event in the queue.\nfunc (event_dispatcher *EventDispatcher) PopEvent() ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [length]: 2 ]
+2020-03-24T23:04:14.750Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @fn PopEvent\n* @brief Returns the last event in the queue.\n* @struct event_dispatcher *EventDispatcher\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// PopEvent returns the last event in the queue.\nfunc (event_dispatcher *EventDispatcher) PopEvent() ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-24T23:04:14.772Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-03-24T23:04:14.772Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
