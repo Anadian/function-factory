@@ -6257,3 +6257,516 @@
   [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
 2020-03-24T23:04:14.772Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
 2020-03-24T23:04:14.772Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-03-26T06:01:14.101Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-03-26T06:01:14.115Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:01:14.130Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-03-26T06:01:14.130Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-03-26T06:01:14.132Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-03-26T06:01:14.133Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go func' }
+2020-03-26T06:01:14.133Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:01:14.134Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:01:14.134Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:01:14.134Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/func.json": Error: ENOENT: no such file or directory, open \'go/func.json\'',
+  [length]: 2 ]
+2020-03-26T06:01:14.135Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:01:14.142Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-03-26T06:01:14.143Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-03-26T06:01:14.143Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-03-26T06:01:14.158Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-03-26T06:05:27.912Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go func",\n\t"name": "GetEventByIndex",\n\t"description": "Returns a copy of the event, at the given index, in the events slice; it does not modify the event slice.",\n\t"preceding_struct": {\n\t\t"name": "event_dispatcher",\n\t\t"type": "EventDispatcher_struct"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "index",\n\t\t\t"type": "uint",\n\t\t\t"flow": "in",\n\t\t\t"description": "The index you the event to be retrieved."\n\t\t}\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2020-03-26T06:05:27.915Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go func",\n\t"name": "GetEventByIndex",\n\t"description": "Returns a copy of the event, at the given index, in the events slice; it does not modify the event slice.",\n\t"preceding_struct": {\n\t\t"name": "event_dispatcher",\n\t\t"type": "EventDispatcher_struct"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "index",\n\t\t\t"type": "uint",\n\t\t\t"flow": "in",\n\t\t\t"description": "The index you the event to be retrieved."\n\t\t}\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:05:27.921Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go func',
+  name: 'GetEventByIndex',
+  description: 'Returns a copy of the event, at the given index, in the events slice; it does not modify the event slice.',
+  preceding_struct: { name: 'event_dispatcher', type: 'EventDispatcher_struct' },
+  parameters: 
+   [ { name: 'index',
+       type: 'uint',
+       flow: 'in',
+       description: 'The index you the event to be retrieved.' },
+     [length]: 1 ],
+  return: 
+   { return_values: 
+      [ { name: 'return_report',
+          type: 'error_report.ErrorReport_struct' },
+        [length]: 1 ],
+     report_codes: 
+      [ { code: 0, description: 'Success' },
+        { code: 1, description: 'Not Supported' },
+        { code: '>1', description: 'Error' },
+        [length]: 3 ] },
+  post_re: 
+   [ { search: ',\\)', replace: ' )', flags: 'gm' },
+     { search: ',;', replace: ';', flags: 'gm' },
+     [length]: 2 ] } undefined
+2020-03-26T06:05:27.922Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:05:27.923Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:05:27.924Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:05:27.925Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/func.hbs\'',
+  [length]: 2 ]
+2020-03-26T06:05:27.926Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:05:27.948Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-26T06:05:27.948Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-26T06:05:27.949Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-26T06:05:27.983Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @fn GetEventByIndex\n* @brief Returns a copy of the event, at the given index, in the events slice; it does not modify the event slice.\n* @struct event_dispatcher EventDispatcher_struct\n* @param index uint [in] The index you the event to be retrieved.\n* @return ( return_report error_report.ErrorReport_struct,) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// GetEventByIndex returns a copy of the event, at the given index, in the events slice; it does not modify the event slice.\nfunc (event_dispatcher EventDispatcher_struct) GetEventByIndex( index uint,) ( return_report error_report.ErrorReport_struct,){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report,;\n}\n',
+  '1': 
+   [ { search: ',\\)', replace: ' )', flags: 'gm' },
+     { search: ',;', replace: ';', flags: 'gm' },
+     [length]: 2 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:05:27.983Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @fn GetEventByIndex\n* @brief Returns a copy of the event, at the given index, in the events slice; it does not modify the event slice.\n* @struct event_dispatcher EventDispatcher_struct\n* @param index uint [in] The index you the event to be retrieved.\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// GetEventByIndex returns a copy of the event, at the given index, in the events slice; it does not modify the event slice.\nfunc (event_dispatcher EventDispatcher_struct) GetEventByIndex( index uint ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [length]: 2 ]
+2020-03-26T06:05:27.983Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @fn GetEventByIndex\n* @brief Returns a copy of the event, at the given index, in the events slice; it does not modify the event slice.\n* @struct event_dispatcher EventDispatcher_struct\n* @param index uint [in] The index you the event to be retrieved.\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// GetEventByIndex returns a copy of the event, at the given index, in the events slice; it does not modify the event slice.\nfunc (event_dispatcher EventDispatcher_struct) GetEventByIndex( index uint ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [ 0,
+    '/**\n* @fn GetEventByIndex\n* @brief Returns a copy of the event, at the given index, in the events slice; it does not modify the event slice.\n* @struct event_dispatcher EventDispatcher_struct\n* @param index uint [in] The index you the event to be retrieved.\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// GetEventByIndex returns a copy of the event, at the given index, in the events slice; it does not modify the event slice.\nfunc (event_dispatcher EventDispatcher_struct) GetEventByIndex( index uint ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-03-26T06:05:27.983Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @fn GetEventByIndex\n* @brief Returns a copy of the event, at the given index, in the events slice; it does not modify the event slice.\n* @struct event_dispatcher EventDispatcher_struct\n* @param index uint [in] The index you the event to be retrieved.\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// GetEventByIndex returns a copy of the event, at the given index, in the events slice; it does not modify the event slice.\nfunc (event_dispatcher EventDispatcher_struct) GetEventByIndex( index uint ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [length]: 2 ]
+2020-03-26T06:05:27.984Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @fn GetEventByIndex\n* @brief Returns a copy of the event, at the given index, in the events slice; it does not modify the event slice.\n* @struct event_dispatcher EventDispatcher_struct\n* @param index uint [in] The index you the event to be retrieved.\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// GetEventByIndex returns a copy of the event, at the given index, in the events slice; it does not modify the event slice.\nfunc (event_dispatcher EventDispatcher_struct) GetEventByIndex( index uint ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:05:28.002Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-03-26T06:05:28.002Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-03-26T06:21:20.986Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-03-26T06:21:20.992Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:21:20.993Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-03-26T06:21:20.993Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-03-26T06:21:20.994Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-03-26T06:21:20.995Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go func' }
+2020-03-26T06:21:20.995Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:21:20.996Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:21:20.996Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:21:20.996Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/func.json": Error: ENOENT: no such file or directory, open \'go/func.json\'',
+  [length]: 2 ]
+2020-03-26T06:21:20.996Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:21:20.997Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-03-26T06:21:20.997Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-03-26T06:21:20.997Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-03-26T06:21:21.010Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-03-26T06:25:36.468Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go func",\n\t"name": "ExtractEventByIndex",\n\t"description": "Extracts the event at the given index from the events slice, removing it from the slice, and returns it.",\n\t"preceding_struct": {\n\t\t"name": "event_dispatcher",\n\t\t"type": "*EventDispatcher_struct"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "index",\n\t\t\t"type": "uint",\n\t\t\t"flow": "in",\n\t\t\t"description": "The index of the event to be extracted."\n\t\t}\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2020-03-26T06:25:36.468Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go func",\n\t"name": "ExtractEventByIndex",\n\t"description": "Extracts the event at the given index from the events slice, removing it from the slice, and returns it.",\n\t"preceding_struct": {\n\t\t"name": "event_dispatcher",\n\t\t"type": "*EventDispatcher_struct"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "index",\n\t\t\t"type": "uint",\n\t\t\t"flow": "in",\n\t\t\t"description": "The index of the event to be extracted."\n\t\t}\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:25:36.469Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go func',
+  name: 'ExtractEventByIndex',
+  description: 'Extracts the event at the given index from the events slice, removing it from the slice, and returns it.',
+  preceding_struct: { name: 'event_dispatcher', type: '*EventDispatcher_struct' },
+  parameters: 
+   [ { name: 'index',
+       type: 'uint',
+       flow: 'in',
+       description: 'The index of the event to be extracted.' },
+     [length]: 1 ],
+  return: 
+   { return_values: 
+      [ { name: 'return_report',
+          type: 'error_report.ErrorReport_struct' },
+        [length]: 1 ],
+     report_codes: 
+      [ { code: 0, description: 'Success' },
+        { code: 1, description: 'Not Supported' },
+        { code: '>1', description: 'Error' },
+        [length]: 3 ] },
+  post_re: 
+   [ { search: ',\\)', replace: ' )', flags: 'gm' },
+     { search: ',;', replace: ';', flags: 'gm' },
+     [length]: 2 ] } undefined
+2020-03-26T06:25:36.470Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:25:36.470Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:25:36.470Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:25:36.471Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/func.hbs\'',
+  [length]: 2 ]
+2020-03-26T06:25:36.471Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:25:36.471Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-26T06:25:36.472Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-26T06:25:36.472Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-26T06:25:36.498Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @fn ExtractEventByIndex\n* @brief Extracts the event at the given index from the events slice, removing it from the slice, and returns it.\n* @struct event_dispatcher *EventDispatcher_struct\n* @param index uint [in] The index of the event to be extracted.\n* @return ( return_report error_report.ErrorReport_struct,) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// ExtractEventByIndex extracts the event at the given index from the events slice, removing it from the slice, and returns it.\nfunc (event_dispatcher *EventDispatcher_struct) ExtractEventByIndex( index uint,) ( return_report error_report.ErrorReport_struct,){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report,;\n}\n',
+  '1': 
+   [ { search: ',\\)', replace: ' )', flags: 'gm' },
+     { search: ',;', replace: ';', flags: 'gm' },
+     [length]: 2 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:25:36.498Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @fn ExtractEventByIndex\n* @brief Extracts the event at the given index from the events slice, removing it from the slice, and returns it.\n* @struct event_dispatcher *EventDispatcher_struct\n* @param index uint [in] The index of the event to be extracted.\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// ExtractEventByIndex extracts the event at the given index from the events slice, removing it from the slice, and returns it.\nfunc (event_dispatcher *EventDispatcher_struct) ExtractEventByIndex( index uint ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [length]: 2 ]
+2020-03-26T06:25:36.499Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @fn ExtractEventByIndex\n* @brief Extracts the event at the given index from the events slice, removing it from the slice, and returns it.\n* @struct event_dispatcher *EventDispatcher_struct\n* @param index uint [in] The index of the event to be extracted.\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// ExtractEventByIndex extracts the event at the given index from the events slice, removing it from the slice, and returns it.\nfunc (event_dispatcher *EventDispatcher_struct) ExtractEventByIndex( index uint ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [ 0,
+    '/**\n* @fn ExtractEventByIndex\n* @brief Extracts the event at the given index from the events slice, removing it from the slice, and returns it.\n* @struct event_dispatcher *EventDispatcher_struct\n* @param index uint [in] The index of the event to be extracted.\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// ExtractEventByIndex extracts the event at the given index from the events slice, removing it from the slice, and returns it.\nfunc (event_dispatcher *EventDispatcher_struct) ExtractEventByIndex( index uint ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-03-26T06:25:36.499Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @fn ExtractEventByIndex\n* @brief Extracts the event at the given index from the events slice, removing it from the slice, and returns it.\n* @struct event_dispatcher *EventDispatcher_struct\n* @param index uint [in] The index of the event to be extracted.\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// ExtractEventByIndex extracts the event at the given index from the events slice, removing it from the slice, and returns it.\nfunc (event_dispatcher *EventDispatcher_struct) ExtractEventByIndex( index uint ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [length]: 2 ]
+2020-03-26T06:25:36.499Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @fn ExtractEventByIndex\n* @brief Extracts the event at the given index from the events slice, removing it from the slice, and returns it.\n* @struct event_dispatcher *EventDispatcher_struct\n* @param index uint [in] The index of the event to be extracted.\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// ExtractEventByIndex extracts the event at the given index from the events slice, removing it from the slice, and returns it.\nfunc (event_dispatcher *EventDispatcher_struct) ExtractEventByIndex( index uint ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:25:36.505Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-03-26T06:25:36.505Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-03-26T06:37:14.879Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-03-26T06:37:14.885Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:37:14.886Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-03-26T06:37:14.886Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-03-26T06:37:14.888Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-03-26T06:37:14.888Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go func' }
+2020-03-26T06:37:14.889Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:37:14.889Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:37:14.890Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:37:14.890Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/func.json": Error: ENOENT: no such file or directory, open \'go/func.json\'',
+  [length]: 2 ]
+2020-03-26T06:37:14.890Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:37:14.891Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-03-26T06:37:14.891Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-03-26T06:37:14.891Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-03-26T06:37:14.904Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-03-26T06:39:04.982Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go func",\n\t"name": "RemoveEventByIndex",\n\t"description": "Removes the event at the given index from the events slice.",\n\t"preceding_struct": {\n\t\t"name": "event_dispatcher",\n\t\t"type": "*EventDispatcher_struct"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "index",\n\t\t\t"type": "uint",\n\t\t\t"flow": "in",\n\t\t\t"description": "The index of the event to remove."\n\t\t}\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2020-03-26T06:39:04.982Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go func",\n\t"name": "RemoveEventByIndex",\n\t"description": "Removes the event at the given index from the events slice.",\n\t"preceding_struct": {\n\t\t"name": "event_dispatcher",\n\t\t"type": "*EventDispatcher_struct"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "index",\n\t\t\t"type": "uint",\n\t\t\t"flow": "in",\n\t\t\t"description": "The index of the event to remove."\n\t\t}\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:39:04.983Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go func',
+  name: 'RemoveEventByIndex',
+  description: 'Removes the event at the given index from the events slice.',
+  preceding_struct: { name: 'event_dispatcher', type: '*EventDispatcher_struct' },
+  parameters: 
+   [ { name: 'index',
+       type: 'uint',
+       flow: 'in',
+       description: 'The index of the event to remove.' },
+     [length]: 1 ],
+  return: 
+   { return_values: 
+      [ { name: 'return_report',
+          type: 'error_report.ErrorReport_struct' },
+        [length]: 1 ],
+     report_codes: 
+      [ { code: 0, description: 'Success' },
+        { code: 1, description: 'Not Supported' },
+        { code: '>1', description: 'Error' },
+        [length]: 3 ] },
+  post_re: 
+   [ { search: ',\\)', replace: ' )', flags: 'gm' },
+     { search: ',;', replace: ';', flags: 'gm' },
+     [length]: 2 ] } undefined
+2020-03-26T06:39:04.983Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:39:04.984Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:39:04.984Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:39:04.984Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/func.hbs\'',
+  [length]: 2 ]
+2020-03-26T06:39:04.984Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:39:04.985Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-26T06:39:04.986Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-26T06:39:04.986Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-26T06:39:05.013Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @fn RemoveEventByIndex\n* @brief Removes the event at the given index from the events slice.\n* @struct event_dispatcher *EventDispatcher_struct\n* @param index uint [in] The index of the event to remove.\n* @return ( return_report error_report.ErrorReport_struct,) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// RemoveEventByIndex removes the event at the given index from the events slice.\nfunc (event_dispatcher *EventDispatcher_struct) RemoveEventByIndex( index uint,) ( return_report error_report.ErrorReport_struct,){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report,;\n}\n',
+  '1': 
+   [ { search: ',\\)', replace: ' )', flags: 'gm' },
+     { search: ',;', replace: ';', flags: 'gm' },
+     [length]: 2 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:39:05.013Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @fn RemoveEventByIndex\n* @brief Removes the event at the given index from the events slice.\n* @struct event_dispatcher *EventDispatcher_struct\n* @param index uint [in] The index of the event to remove.\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// RemoveEventByIndex removes the event at the given index from the events slice.\nfunc (event_dispatcher *EventDispatcher_struct) RemoveEventByIndex( index uint ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [length]: 2 ]
+2020-03-26T06:39:05.013Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @fn RemoveEventByIndex\n* @brief Removes the event at the given index from the events slice.\n* @struct event_dispatcher *EventDispatcher_struct\n* @param index uint [in] The index of the event to remove.\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// RemoveEventByIndex removes the event at the given index from the events slice.\nfunc (event_dispatcher *EventDispatcher_struct) RemoveEventByIndex( index uint ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [ 0,
+    '/**\n* @fn RemoveEventByIndex\n* @brief Removes the event at the given index from the events slice.\n* @struct event_dispatcher *EventDispatcher_struct\n* @param index uint [in] The index of the event to remove.\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// RemoveEventByIndex removes the event at the given index from the events slice.\nfunc (event_dispatcher *EventDispatcher_struct) RemoveEventByIndex( index uint ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-03-26T06:39:05.014Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @fn RemoveEventByIndex\n* @brief Removes the event at the given index from the events slice.\n* @struct event_dispatcher *EventDispatcher_struct\n* @param index uint [in] The index of the event to remove.\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// RemoveEventByIndex removes the event at the given index from the events slice.\nfunc (event_dispatcher *EventDispatcher_struct) RemoveEventByIndex( index uint ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [length]: 2 ]
+2020-03-26T06:39:05.014Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @fn RemoveEventByIndex\n* @brief Removes the event at the given index from the events slice.\n* @struct event_dispatcher *EventDispatcher_struct\n* @param index uint [in] The index of the event to remove.\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// RemoveEventByIndex removes the event at the given index from the events slice.\nfunc (event_dispatcher *EventDispatcher_struct) RemoveEventByIndex( index uint ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-26T06:39:05.023Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-03-26T06:39:05.024Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
