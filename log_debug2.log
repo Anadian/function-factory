@@ -7779,3 +7779,1397 @@
   [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
 2020-03-27T07:51:14.418Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
 2020-03-27T07:51:14.420Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-03-31T08:02:11.211Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-03-31T08:02:11.238Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:02:11.277Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-03-31T08:02:11.619Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:error: [ -2, 'Error: no input option specified.', [length]: 2 ]
+2020-03-31T08:02:11.620Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-03-31T08:02:48.365Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-03-31T08:02:48.371Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:02:48.372Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-03-31T08:02:48.372Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:error: [ -2, 'Error: no input option specified.', [length]: 2 ]
+2020-03-31T08:02:48.374Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-03-31T08:17:41.020Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-03-31T08:17:41.027Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:17:41.028Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-03-31T08:17:41.028Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-03-31T08:17:41.029Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-03-31T08:17:41.030Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true,
+  pasteboard: true,
+  edit: 'go event_listener_test_case' }
+2020-03-31T08:17:41.030Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go event_listener_test_case',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:17:41.031Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/event_listener_test_case.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:17:41.031Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/event_listener_test_case.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:17:41.031Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/event_listener_test_case.json": Error: ENOENT: no such file or directory, open \'go/event_listener_test_case.json\'',
+  [length]: 2 ]
+2020-03-31T08:17:41.031Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/event_listener_test_case.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:17:41.032Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"case_name": "string_sync",\n\t"async_bool": false\n}',
+  [length]: 2 ]
+2020-03-31T08:17:41.032Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"case_name": "string_sync",\n\t"async_bool": false\n}',
+  [length]: 2 ]
+2020-03-31T08:17:41.032Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"case_name": "string_sync",\n\t"async_bool": false\n}',
+  [length]: 2 ]
+2020-03-31T08:17:41.045Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-03-31T08:19:45.336Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"case_name": "regex_async",\n\t"async_bool": true\n}\n' }
+2020-03-31T08:19:45.339Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"case_name": "regex_async",\n\t"async_bool": true\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:19:45.340Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { case_name: 'regex_async', async_bool: true } undefined
+2020-03-31T08:19:45.341Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: Error: [ -4,
+  'Error: neither templatename nor template is specified in the given input_context { case_name: \'regex_async\', async_bool: true }',
+  [length]: 2 ]
+2020-03-31T08:19:45.342Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ -4,
+  'Error: neither templatename nor template is specified in the given input_context { case_name: \'regex_async\', async_bool: true }',
+  [length]: 2 ]
+2020-03-31T08:19:45.343Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ -4,
+  'Error: generating output from given input answer "{ editor_input: \'{\\n\\t"case_name": "regex_async",\\n\\t"async_bool": true\\n}\\n\' }": [ -4,\n  \'Error: neither templatename nor template is specified in the given input_context { case_name: \\\'regex_async\\\', async_bool: true }\',\n  [length]: 2 ]',
+  [length]: 2 ]
+2020-03-31T08:19:45.343Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:error: [ -8,
+  'Error: couldn\'t construct output from inquirer_editor_answer { editor_input: \'{\\n\\t"case_name": "regex_async",\\n\\t"async_bool": true\\n}\\n\' }: [ -4,\n  \'Error: generating output from given input answer "{ editor_input: \\\'{\\\\n\\\\t"case_name": "regex_async",\\\\n\\\\t"async_bool": true\\\\n}\\\\n\\\' }": [ -4,\\n  \\\'Error: neither templatename nor template is specified in the given input_context { case_name: \\\\\\\'regex_async\\\\\\\', async_bool: true }\\\',\\n  [length]: 2 ]\',\n  [length]: 2 ]',
+  [length]: 2 ]
+2020-03-31T08:19:45.344Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ -8,
+  'Error: couldn\'t construct output from inquirer_editor_answer { editor_input: \'{\\n\\t"case_name": "regex_async",\\n\\t"async_bool": true\\n}\\n\' }: [ -4,\n  \'Error: generating output from given input answer "{ editor_input: \\\'{\\\\n\\\\t"case_name": "regex_async",\\\\n\\\\t"async_bool": true\\\\n}\\\\n\\\' }": [ -4,\\n  \\\'Error: neither templatename nor template is specified in the given input_context { case_name: \\\\\\\'regex_async\\\\\\\', async_bool: true }\\\',\\n  [length]: 2 ]\',\n  [length]: 2 ]',
+  [length]: 2 ]
+2020-03-31T08:20:18.089Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-03-31T08:20:18.096Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:20:18.097Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-03-31T08:20:18.097Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-03-31T08:20:18.098Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-03-31T08:20:18.099Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true,
+  pasteboard: true,
+  edit: 'go event_listener_test_case' }
+2020-03-31T08:20:18.099Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go event_listener_test_case',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:20:18.099Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/event_listener_test_case.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:20:18.100Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/event_listener_test_case.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:20:18.100Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/event_listener_test_case.json": Error: ENOENT: no such file or directory, open \'go/event_listener_test_case.json\'',
+  [length]: 2 ]
+2020-03-31T08:20:18.100Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/event_listener_test_case.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:20:18.100Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"case_name": "string_sync",\n\t"async_bool": false\n}',
+  [length]: 2 ]
+2020-03-31T08:20:18.101Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"case_name": "string_sync",\n\t"async_bool": false\n}',
+  [length]: 2 ]
+2020-03-31T08:20:18.101Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"case_name": "string_sync",\n\t"async_bool": false\n}',
+  [length]: 2 ]
+2020-03-31T08:20:18.113Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-03-31T08:20:41.216Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go event_listener_test_case",\n\t"case_name": "string_sync",\n\t"async_bool": false\n}\n' }
+2020-03-31T08:20:41.217Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go event_listener_test_case",\n\t"case_name": "string_sync",\n\t"async_bool": false\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:20:41.218Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go event_listener_test_case',
+  case_name: 'string_sync',
+  async_bool: false } undefined
+2020-03-31T08:20:41.219Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go event_listener_test_case',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:20:41.219Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/event_listener_test_case.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:20:41.220Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/event_listener_test_case.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:20:41.220Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/event_listener_test_case.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/event_listener_test_case.hbs\'',
+  [length]: 2 ]
+2020-03-31T08:20:41.220Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/event_listener_test_case.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:20:41.221Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-31T08:20:41.222Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-31T08:20:41.222Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-31T08:20:41.233Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '//Create event listener string_sync\nfunction_return = NewEventListener( event_listener_matchkey_string_sync, false, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_string_sync received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Second event listener (path_async) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener string_sync\n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: string_sync event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:20:41.234Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2020-03-31T08:20:41.234Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '//Create event listener string_sync\nfunction_return = NewEventListener( event_listener_matchkey_string_sync, false, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_string_sync received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Second event listener (path_async) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener string_sync\n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: string_sync event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  [length]: 2 ]
+2020-03-31T08:20:41.234Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '//Create event listener string_sync\nfunction_return = NewEventListener( event_listener_matchkey_string_sync, false, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_string_sync received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Second event listener (path_async) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener string_sync\n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: string_sync event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  [ 0,
+    '//Create event listener string_sync\nfunction_return = NewEventListener( event_listener_matchkey_string_sync, false, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_string_sync received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Second event listener (path_async) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener string_sync\n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: string_sync event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-03-31T08:20:41.234Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '//Create event listener string_sync\nfunction_return = NewEventListener( event_listener_matchkey_string_sync, false, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_string_sync received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Second event listener (path_async) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener string_sync\n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: string_sync event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  [length]: 2 ]
+2020-03-31T08:20:41.235Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '//Create event listener string_sync\nfunction_return = NewEventListener( event_listener_matchkey_string_sync, false, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_string_sync received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Second event listener (path_async) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener string_sync\n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: string_sync event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  '1': 
+   { verbose: true,
+     pasteboard: true,
+     edit: 'go event_listener_test_case' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:20:41.262Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-03-31T08:20:41.262Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-03-31T08:27:28.118Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-03-31T08:27:28.125Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:27:28.126Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-03-31T08:27:28.126Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-03-31T08:27:28.127Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-03-31T08:27:28.128Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true,
+  pasteboard: true,
+  edit: 'go event_listener_test_case' }
+2020-03-31T08:27:28.128Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go event_listener_test_case',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:27:28.129Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/event_listener_test_case.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:27:28.129Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/event_listener_test_case.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:27:28.129Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/event_listener_test_case.json": Error: ENOENT: no such file or directory, open \'go/event_listener_test_case.json\'',
+  [length]: 2 ]
+2020-03-31T08:27:28.129Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/event_listener_test_case.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:27:28.130Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go event_listener_test_case",\n\t"name": "string",\n\t"async_bool": false\n}',
+  [length]: 2 ]
+2020-03-31T08:27:28.130Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go event_listener_test_case",\n\t"name": "string",\n\t"async_bool": false\n}',
+  [length]: 2 ]
+2020-03-31T08:27:28.130Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go event_listener_test_case",\n\t"name": "string",\n\t"async_bool": false\n}',
+  [length]: 2 ]
+2020-03-31T08:27:28.143Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-03-31T08:27:43.439Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go event_listener_test_case",\n\t"name": "regex",\n\t"async_bool": true\n}\n' }
+2020-03-31T08:27:43.440Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go event_listener_test_case",\n\t"name": "regex",\n\t"async_bool": true\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:27:43.440Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go event_listener_test_case',
+  name: 'regex',
+  async_bool: true } undefined
+2020-03-31T08:27:43.440Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go event_listener_test_case',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:27:43.441Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/event_listener_test_case.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:27:43.441Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/event_listener_test_case.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:27:43.441Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/event_listener_test_case.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/event_listener_test_case.hbs\'',
+  [length]: 2 ]
+2020-03-31T08:27:43.442Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/event_listener_test_case.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:27:43.442Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-31T08:27:43.442Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-31T08:27:43.443Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-31T08:27:43.455Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '//Create event listener regex (true)\nfunction_return = NewEventListener( regex_event_listener_matchkey, true, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_regex (true) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (regex true) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: regex (true event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:27:43.455Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2020-03-31T08:27:43.455Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '//Create event listener regex (true)\nfunction_return = NewEventListener( regex_event_listener_matchkey, true, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_regex (true) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (regex true) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: regex (true event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  [length]: 2 ]
+2020-03-31T08:27:43.455Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '//Create event listener regex (true)\nfunction_return = NewEventListener( regex_event_listener_matchkey, true, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_regex (true) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (regex true) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: regex (true event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  [ 0,
+    '//Create event listener regex (true)\nfunction_return = NewEventListener( regex_event_listener_matchkey, true, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_regex (true) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (regex true) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: regex (true event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-03-31T08:27:43.455Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '//Create event listener regex (true)\nfunction_return = NewEventListener( regex_event_listener_matchkey, true, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_regex (true) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (regex true) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: regex (true event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  [length]: 2 ]
+2020-03-31T08:27:43.456Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '//Create event listener regex (true)\nfunction_return = NewEventListener( regex_event_listener_matchkey, true, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_regex (true) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (regex true) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: regex (true event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  '1': 
+   { verbose: true,
+     pasteboard: true,
+     edit: 'go event_listener_test_case' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:27:43.462Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-03-31T08:27:43.462Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-03-31T08:30:40.033Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-03-31T08:30:40.040Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:30:40.041Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-03-31T08:30:40.041Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-03-31T08:30:40.042Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-03-31T08:30:40.043Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true,
+  pasteboard: true,
+  edit: 'go event_listener_test_case' }
+2020-03-31T08:30:40.043Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go event_listener_test_case',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:30:40.043Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/event_listener_test_case.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:30:40.044Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/event_listener_test_case.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:30:40.044Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/event_listener_test_case.json": Error: ENOENT: no such file or directory, open \'go/event_listener_test_case.json\'',
+  [length]: 2 ]
+2020-03-31T08:30:40.044Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/event_listener_test_case.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:30:40.044Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go event_listener_test_case",\n\t"name": "string",\n\t"async_bool": false\n}',
+  [length]: 2 ]
+2020-03-31T08:30:40.044Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go event_listener_test_case",\n\t"name": "string",\n\t"async_bool": false\n}',
+  [length]: 2 ]
+2020-03-31T08:30:40.045Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go event_listener_test_case",\n\t"name": "string",\n\t"async_bool": false\n}',
+  [length]: 2 ]
+2020-03-31T08:30:40.057Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-03-31T08:30:48.525Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go event_listener_test_case",\n\t"name": "string",\n\t"async_bool": false\n}\n' }
+2020-03-31T08:30:48.526Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go event_listener_test_case",\n\t"name": "string",\n\t"async_bool": false\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:30:48.526Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go event_listener_test_case',
+  name: 'string',
+  async_bool: false } undefined
+2020-03-31T08:30:48.527Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go event_listener_test_case',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:30:48.528Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/event_listener_test_case.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:30:48.528Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/event_listener_test_case.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:30:48.529Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/event_listener_test_case.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/event_listener_test_case.hbs\'',
+  [length]: 2 ]
+2020-03-31T08:30:48.529Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/event_listener_test_case.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:30:48.530Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-31T08:30:48.531Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-31T08:30:48.531Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-31T08:30:48.545Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '//Create event listener string (false)\nfunction_return = NewEventListener( string_event_listener_matchkey, false, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_string (false) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (string false) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: string (false) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:30:48.546Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2020-03-31T08:30:48.546Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '//Create event listener string (false)\nfunction_return = NewEventListener( string_event_listener_matchkey, false, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_string (false) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (string false) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: string (false) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  [length]: 2 ]
+2020-03-31T08:30:48.546Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '//Create event listener string (false)\nfunction_return = NewEventListener( string_event_listener_matchkey, false, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_string (false) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (string false) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: string (false) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  [ 0,
+    '//Create event listener string (false)\nfunction_return = NewEventListener( string_event_listener_matchkey, false, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_string (false) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (string false) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: string (false) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-03-31T08:30:48.547Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '//Create event listener string (false)\nfunction_return = NewEventListener( string_event_listener_matchkey, false, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_string (false) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (string false) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: string (false) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  [length]: 2 ]
+2020-03-31T08:30:48.547Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '//Create event listener string (false)\nfunction_return = NewEventListener( string_event_listener_matchkey, false, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_string (false) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (string false) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: string (false) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  '1': 
+   { verbose: true,
+     pasteboard: true,
+     edit: 'go event_listener_test_case' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:30:48.560Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-03-31T08:30:48.560Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-03-31T08:32:51.289Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-03-31T08:32:51.295Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:32:51.297Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-03-31T08:32:51.297Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-03-31T08:32:51.298Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-03-31T08:32:51.299Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true,
+  pasteboard: true,
+  edit: 'go event_listener_test_case' }
+2020-03-31T08:32:51.299Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go event_listener_test_case',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:32:51.299Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/event_listener_test_case.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:32:51.299Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/event_listener_test_case.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:32:51.300Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/event_listener_test_case.json": Error: ENOENT: no such file or directory, open \'go/event_listener_test_case.json\'',
+  [length]: 2 ]
+2020-03-31T08:32:51.300Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/event_listener_test_case.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:32:51.300Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go event_listener_test_case",\n\t"name": "string",\n\t"async_bool": false\n}',
+  [length]: 2 ]
+2020-03-31T08:32:51.300Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go event_listener_test_case",\n\t"name": "string",\n\t"async_bool": false\n}',
+  [length]: 2 ]
+2020-03-31T08:32:51.300Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go event_listener_test_case",\n\t"name": "string",\n\t"async_bool": false\n}',
+  [length]: 2 ]
+2020-03-31T08:32:51.312Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-03-31T08:33:03.545Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go event_listener_test_case",\n\t"name": "path",\n\t"async_bool": true\n}\n' }
+2020-03-31T08:33:03.546Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go event_listener_test_case",\n\t"name": "path",\n\t"async_bool": true\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:33:03.546Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go event_listener_test_case',
+  name: 'path',
+  async_bool: true } undefined
+2020-03-31T08:33:03.547Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go event_listener_test_case',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:33:03.547Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/event_listener_test_case.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:33:03.547Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/event_listener_test_case.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:33:03.548Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/event_listener_test_case.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/event_listener_test_case.hbs\'',
+  [length]: 2 ]
+2020-03-31T08:33:03.548Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/event_listener_test_case.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:33:03.548Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-31T08:33:03.549Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-31T08:33:03.549Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-31T08:33:03.559Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '//Create event listener path (true)\nfunction_return = NewEventListener( path_event_listener_matchkey, true, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_path (true) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (path true) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: path (true) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:33:03.560Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2020-03-31T08:33:03.560Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '//Create event listener path (true)\nfunction_return = NewEventListener( path_event_listener_matchkey, true, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_path (true) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (path true) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: path (true) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  [length]: 2 ]
+2020-03-31T08:33:03.560Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '//Create event listener path (true)\nfunction_return = NewEventListener( path_event_listener_matchkey, true, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_path (true) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (path true) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: path (true) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  [ 0,
+    '//Create event listener path (true)\nfunction_return = NewEventListener( path_event_listener_matchkey, true, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_path (true) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (path true) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: path (true) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-03-31T08:33:03.560Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '//Create event listener path (true)\nfunction_return = NewEventListener( path_event_listener_matchkey, true, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_path (true) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (path true) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: path (true) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  [length]: 2 ]
+2020-03-31T08:33:03.561Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '//Create event listener path (true)\nfunction_return = NewEventListener( path_event_listener_matchkey, true, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_path (true) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (path true) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: path (true) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  '1': 
+   { verbose: true,
+     pasteboard: true,
+     edit: 'go event_listener_test_case' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:33:03.566Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-03-31T08:33:03.567Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-03-31T08:34:36.862Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-03-31T08:34:36.869Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:34:36.870Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-03-31T08:34:36.870Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-03-31T08:34:36.871Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-03-31T08:34:36.872Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true,
+  pasteboard: true,
+  edit: 'go event_listener_test_case' }
+2020-03-31T08:34:36.872Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go event_listener_test_case',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:34:36.872Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/event_listener_test_case.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:34:36.873Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/event_listener_test_case.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:34:36.873Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/event_listener_test_case.json": Error: ENOENT: no such file or directory, open \'go/event_listener_test_case.json\'',
+  [length]: 2 ]
+2020-03-31T08:34:36.873Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/event_listener_test_case.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:34:36.873Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go event_listener_test_case",\n\t"name": "string",\n\t"async_bool": false\n}',
+  [length]: 2 ]
+2020-03-31T08:34:36.874Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go event_listener_test_case",\n\t"name": "string",\n\t"async_bool": false\n}',
+  [length]: 2 ]
+2020-03-31T08:34:36.874Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go event_listener_test_case",\n\t"name": "string",\n\t"async_bool": false\n}',
+  [length]: 2 ]
+2020-03-31T08:34:36.886Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-03-31T08:34:55.141Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go event_listener_test_case",\n\t"name": "path",\n\t"async_bool": false\n}\n' }
+2020-03-31T08:34:55.142Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go event_listener_test_case",\n\t"name": "path",\n\t"async_bool": false\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:34:55.142Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go event_listener_test_case',
+  name: 'path',
+  async_bool: false } undefined
+2020-03-31T08:34:55.142Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go event_listener_test_case',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:34:55.143Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/event_listener_test_case.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:34:55.143Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/event_listener_test_case.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:34:55.143Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/event_listener_test_case.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/event_listener_test_case.hbs\'',
+  [length]: 2 ]
+2020-03-31T08:34:55.144Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/event_listener_test_case.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:34:55.145Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-31T08:34:55.145Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-31T08:34:55.145Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-31T08:34:55.157Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '//Create event listener path (false)\nfunction_return = NewEventListener( path_event_listener_matchkey, false, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_path (false) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (path false) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: path (false) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:34:55.157Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2020-03-31T08:34:55.157Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '//Create event listener path (false)\nfunction_return = NewEventListener( path_event_listener_matchkey, false, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_path (false) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (path false) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: path (false) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  [length]: 2 ]
+2020-03-31T08:34:55.158Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '//Create event listener path (false)\nfunction_return = NewEventListener( path_event_listener_matchkey, false, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_path (false) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (path false) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: path (false) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  [ 0,
+    '//Create event listener path (false)\nfunction_return = NewEventListener( path_event_listener_matchkey, false, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_path (false) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (path false) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: path (false) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-03-31T08:34:55.158Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '//Create event listener path (false)\nfunction_return = NewEventListener( path_event_listener_matchkey, false, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_path (false) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (path false) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: path (false) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  [length]: 2 ]
+2020-03-31T08:34:55.158Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '//Create event listener path (false)\nfunction_return = NewEventListener( path_event_listener_matchkey, false, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_path (false) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (path false) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: path (false) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  '1': 
+   { verbose: true,
+     pasteboard: true,
+     edit: 'go event_listener_test_case' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:34:55.164Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-03-31T08:34:55.164Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-03-31T08:37:29.263Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-03-31T08:37:29.270Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:37:29.271Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-03-31T08:37:29.271Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-03-31T08:37:29.272Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-03-31T08:37:29.272Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true,
+  pasteboard: true,
+  edit: 'go event_listener_test_case' }
+2020-03-31T08:37:29.273Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go event_listener_test_case',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:37:29.273Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/event_listener_test_case.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:37:29.274Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/event_listener_test_case.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:37:29.274Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/event_listener_test_case.json": Error: ENOENT: no such file or directory, open \'go/event_listener_test_case.json\'',
+  [length]: 2 ]
+2020-03-31T08:37:29.274Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/event_listener_test_case.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:37:29.274Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go event_listener_test_case",\n\t"name": "string",\n\t"async_bool": false\n}',
+  [length]: 2 ]
+2020-03-31T08:37:29.275Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go event_listener_test_case",\n\t"name": "string",\n\t"async_bool": false\n}',
+  [length]: 2 ]
+2020-03-31T08:37:29.275Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go event_listener_test_case",\n\t"name": "string",\n\t"async_bool": false\n}',
+  [length]: 2 ]
+2020-03-31T08:37:29.287Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-03-31T08:37:45.784Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go event_listener_test_case",\n\t"name": "regex",\n\t"async_bool": false\n}\n' }
+2020-03-31T08:37:45.785Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go event_listener_test_case",\n\t"name": "regex",\n\t"async_bool": false\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:37:45.786Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go event_listener_test_case',
+  name: 'regex',
+  async_bool: false } undefined
+2020-03-31T08:37:45.786Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go event_listener_test_case',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:37:45.786Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/event_listener_test_case.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:37:45.787Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/event_listener_test_case.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:37:45.787Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/event_listener_test_case.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/event_listener_test_case.hbs\'',
+  [length]: 2 ]
+2020-03-31T08:37:45.787Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/event_listener_test_case.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:37:45.788Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-31T08:37:45.789Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-31T08:37:45.789Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-31T08:37:45.801Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '//Create event listener regex (false)\nfunction_return = NewEventListener( regex_event_listener_matchkey, false, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_regex (false) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (regex false) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: regex (false) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:37:45.802Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2020-03-31T08:37:45.802Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '//Create event listener regex (false)\nfunction_return = NewEventListener( regex_event_listener_matchkey, false, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_regex (false) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (regex false) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: regex (false) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  [length]: 2 ]
+2020-03-31T08:37:45.802Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '//Create event listener regex (false)\nfunction_return = NewEventListener( regex_event_listener_matchkey, false, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_regex (false) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (regex false) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: regex (false) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  [ 0,
+    '//Create event listener regex (false)\nfunction_return = NewEventListener( regex_event_listener_matchkey, false, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_regex (false) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (regex false) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: regex (false) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-03-31T08:37:45.802Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '//Create event listener regex (false)\nfunction_return = NewEventListener( regex_event_listener_matchkey, false, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_regex (false) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (regex false) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: regex (false) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  [length]: 2 ]
+2020-03-31T08:37:45.802Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '//Create event listener regex (false)\nfunction_return = NewEventListener( regex_event_listener_matchkey, false, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_regex (false) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (regex false) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: regex (false) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  '1': 
+   { verbose: true,
+     pasteboard: true,
+     edit: 'go event_listener_test_case' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:37:45.807Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-03-31T08:37:45.808Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-03-31T08:42:13.708Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-03-31T08:42:13.714Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:42:13.715Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-03-31T08:42:13.715Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-03-31T08:42:13.717Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-03-31T08:42:13.717Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true,
+  pasteboard: true,
+  edit: 'go event_listener_test_case' }
+2020-03-31T08:42:13.717Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go event_listener_test_case',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:42:13.718Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/event_listener_test_case.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:42:13.718Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/event_listener_test_case.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:42:13.718Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/event_listener_test_case.json": Error: ENOENT: no such file or directory, open \'go/event_listener_test_case.json\'',
+  [length]: 2 ]
+2020-03-31T08:42:13.719Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/event_listener_test_case.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:42:13.719Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go event_listener_test_case",\n\t"name": "string",\n\t"async_bool": false\n}',
+  [length]: 2 ]
+2020-03-31T08:42:13.719Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go event_listener_test_case",\n\t"name": "string",\n\t"async_bool": false\n}',
+  [length]: 2 ]
+2020-03-31T08:42:13.719Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go event_listener_test_case",\n\t"name": "string",\n\t"async_bool": false\n}',
+  [length]: 2 ]
+2020-03-31T08:42:13.731Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-03-31T08:42:22.432Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go event_listener_test_case",\n\t"name": "string",\n\t"async_bool": true\n}\n' }
+2020-03-31T08:42:22.433Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go event_listener_test_case",\n\t"name": "string",\n\t"async_bool": true\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:42:22.433Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go event_listener_test_case',
+  name: 'string',
+  async_bool: true } undefined
+2020-03-31T08:42:22.433Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go event_listener_test_case',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:42:22.434Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/event_listener_test_case.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:42:22.434Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/event_listener_test_case.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:42:22.435Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/event_listener_test_case.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/event_listener_test_case.hbs\'',
+  [length]: 2 ]
+2020-03-31T08:42:22.435Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/event_listener_test_case.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:42:22.436Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-31T08:42:22.436Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-31T08:42:22.436Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-31T08:42:22.447Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '//Create event listener string (true)\nfunction_return = NewEventListener( string_event_listener_matchkey, true, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_string (true) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (string true) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: string (true) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:42:22.447Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2020-03-31T08:42:22.448Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '//Create event listener string (true)\nfunction_return = NewEventListener( string_event_listener_matchkey, true, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_string (true) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (string true) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: string (true) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  [length]: 2 ]
+2020-03-31T08:42:22.448Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '//Create event listener string (true)\nfunction_return = NewEventListener( string_event_listener_matchkey, true, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_string (true) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (string true) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: string (true) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  [ 0,
+    '//Create event listener string (true)\nfunction_return = NewEventListener( string_event_listener_matchkey, true, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_string (true) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (string true) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: string (true) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-03-31T08:42:22.448Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '//Create event listener string (true)\nfunction_return = NewEventListener( string_event_listener_matchkey, true, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_string (true) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (string true) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: string (true) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  [length]: 2 ]
+2020-03-31T08:42:22.448Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '//Create event listener string (true)\nfunction_return = NewEventListener( string_event_listener_matchkey, true, func( event Event_struct, args ...interface{} ){\n\tlog.Printf("event_listener_string (true) received event: %v\\n", event);\n} );\nif( function_return.NoError() == true ){\n\tlog.Printf("Success: Event listener (string true) created.\\n");\n\tevent_listener = function_return.Data["event_listener"];\n\t//Add event listener \n\tfunction_return = event_dispatcher.AddEventListener( event_listener );\n\tif( function_return.NoError() == true ){\n\t\tlog.Printf("Success: string (true) event listener added.\\n");\n\t\t\n\t} else{\n\t\tt.Fail();\n\t\tlog.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\\n", function_return);\n\t}\n} else{\n\tt.Fail();\n\tlog.Printf("Failure: NewEventListener returned an error: %v\\n", function_return);\n}\n',
+  '1': 
+   { verbose: true,
+     pasteboard: true,
+     edit: 'go event_listener_test_case' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:42:22.455Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-03-31T08:42:22.457Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-03-31T08:48:05.151Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-03-31T08:48:05.158Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:48:05.159Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-03-31T08:48:05.159Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-03-31T08:48:05.161Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-03-31T08:48:05.161Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go func' }
+2020-03-31T08:48:05.161Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:48:05.162Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:48:05.162Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:48:05.162Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/func.json": Error: ENOENT: no such file or directory, open \'go/func.json\'',
+  [length]: 2 ]
+2020-03-31T08:48:05.163Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:48:05.178Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-03-31T08:48:05.178Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-03-31T08:48:05.179Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-03-31T08:48:05.193Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-03-31T08:51:44.041Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go func",\n\t"name": "ProcessEvent",\n\t"description": "Transmits the given event.",\n\t"preceding_struct": {\n\t\t"name": "event_dispatcher",\n\t\t"type": "*EventDispatcher_struct"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "event",\n\t\t\t"type": "Event_struct",\n\t\t\t"flow": "in",\n\t\t\t"description": "The event to be processed."\n\t\t}\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2020-03-31T08:51:44.042Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go func",\n\t"name": "ProcessEvent",\n\t"description": "Transmits the given event.",\n\t"preceding_struct": {\n\t\t"name": "event_dispatcher",\n\t\t"type": "*EventDispatcher_struct"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "event",\n\t\t\t"type": "Event_struct",\n\t\t\t"flow": "in",\n\t\t\t"description": "The event to be processed."\n\t\t}\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:51:44.043Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go func',
+  name: 'ProcessEvent',
+  description: 'Transmits the given event.',
+  preceding_struct: { name: 'event_dispatcher', type: '*EventDispatcher_struct' },
+  parameters: 
+   [ { name: 'event',
+       type: 'Event_struct',
+       flow: 'in',
+       description: 'The event to be processed.' },
+     [length]: 1 ],
+  return: 
+   { return_values: 
+      [ { name: 'return_report',
+          type: 'error_report.ErrorReport_struct' },
+        [length]: 1 ],
+     report_codes: 
+      [ { code: 0, description: 'Success' },
+        { code: 1, description: 'Not Supported' },
+        { code: '>1', description: 'Error' },
+        [length]: 3 ] },
+  post_re: 
+   [ { search: ',\\)', replace: ' )', flags: 'gm' },
+     { search: ',;', replace: ';', flags: 'gm' },
+     [length]: 2 ] } undefined
+2020-03-31T08:51:44.043Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:51:44.043Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:51:44.044Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:51:44.044Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/func.hbs\'',
+  [length]: 2 ]
+2020-03-31T08:51:44.044Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:51:44.067Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-31T08:51:44.068Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-31T08:51:44.070Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-03-31T08:51:44.111Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @fn ProcessEvent\n* @brief Transmits the given event.\n* @struct event_dispatcher *EventDispatcher_struct\n* @param event Event_struct [in] The event to be processed.\n* @return ( return_report error_report.ErrorReport_struct,) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// ProcessEvent transmits the given event.\nfunc (event_dispatcher *EventDispatcher_struct) ProcessEvent( event Event_struct,) ( return_report error_report.ErrorReport_struct,){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report,;\n}\n',
+  '1': 
+   [ { search: ',\\)', replace: ' )', flags: 'gm' },
+     { search: ',;', replace: ';', flags: 'gm' },
+     [length]: 2 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:51:44.111Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @fn ProcessEvent\n* @brief Transmits the given event.\n* @struct event_dispatcher *EventDispatcher_struct\n* @param event Event_struct [in] The event to be processed.\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// ProcessEvent transmits the given event.\nfunc (event_dispatcher *EventDispatcher_struct) ProcessEvent( event Event_struct ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [length]: 2 ]
+2020-03-31T08:51:44.112Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @fn ProcessEvent\n* @brief Transmits the given event.\n* @struct event_dispatcher *EventDispatcher_struct\n* @param event Event_struct [in] The event to be processed.\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// ProcessEvent transmits the given event.\nfunc (event_dispatcher *EventDispatcher_struct) ProcessEvent( event Event_struct ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [ 0,
+    '/**\n* @fn ProcessEvent\n* @brief Transmits the given event.\n* @struct event_dispatcher *EventDispatcher_struct\n* @param event Event_struct [in] The event to be processed.\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// ProcessEvent transmits the given event.\nfunc (event_dispatcher *EventDispatcher_struct) ProcessEvent( event Event_struct ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-03-31T08:51:44.112Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @fn ProcessEvent\n* @brief Transmits the given event.\n* @struct event_dispatcher *EventDispatcher_struct\n* @param event Event_struct [in] The event to be processed.\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// ProcessEvent transmits the given event.\nfunc (event_dispatcher *EventDispatcher_struct) ProcessEvent( event Event_struct ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [length]: 2 ]
+2020-03-31T08:51:44.112Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @fn ProcessEvent\n* @brief Transmits the given event.\n* @struct event_dispatcher *EventDispatcher_struct\n* @param event Event_struct [in] The event to be processed.\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// ProcessEvent transmits the given event.\nfunc (event_dispatcher *EventDispatcher_struct) ProcessEvent( event Event_struct ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T08:51:44.118Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-03-31T08:51:44.120Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-03-31T09:24:57.131Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-03-31T09:24:57.137Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T09:24:57.139Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-03-31T09:24:57.139Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-03-31T09:24:57.140Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-03-31T09:24:57.141Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go func' }
+2020-03-31T09:24:57.141Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T09:24:57.141Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T09:24:57.141Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T09:24:57.142Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/func.json": Error: ENOENT: no such file or directory, open \'go/func.json\'',
+  [length]: 2 ]
+2020-03-31T09:24:57.142Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-03-31T09:24:57.142Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-03-31T09:24:57.143Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-03-31T09:24:57.143Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-03-31T09:24:57.154Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.

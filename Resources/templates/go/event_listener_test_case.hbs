@@ -1,0 +1,20 @@
+//Create event listener {{name}} ({{async_bool}})
+function_return = NewEventListener( {{name}}_event_listener_matchkey, {{async_bool}}, func( event Event_struct, args ...interface{} ){
+	log.Printf("event_listener_{{name}} ({{async_bool}}) received event: %v\n", event);
+} );
+if( function_return.NoError() == true ){
+	log.Printf("Success: Event listener ({{name}} {{async_bool}}) created.\n");
+	event_listener = function_return.Data["event_listener"];
+	//Add event listener {{case_name}}
+	function_return = event_dispatcher.AddEventListener( event_listener );
+	if( function_return.NoError() == true ){
+		log.Printf("Success: {{name}} ({{async_bool}}) event listener added.\n");
+		
+	} else{
+		t.Fail();
+		log.Printf("Failure: event_dispatcher.AddEventListener returned an error: %v\n", function_return);
+	}
+} else{
+	t.Fail();
+	log.Printf("Failure: NewEventListener returned an error: %v\n", function_return);
+}

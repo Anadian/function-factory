@@ -1,0 +1,5 @@
+{
+	"template": "go event_listener_test_case",
+	"name": "string",
+	"async_bool": false
+}
