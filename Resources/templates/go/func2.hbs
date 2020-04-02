@@ -1,0 +1,23 @@
+/**
+* @fn {{name}}
+* @brief {{& upper_first description}}
+{{#preceding_struct}}* @struct {{name}} {{type}}
+{{/preceding_struct}}{{#parameters}}* @param {{name}} {{type}} [{{flow}}] {{& description}}
+{{/parameters}}{{#return}}* @return ({{#return_values}} {{name}} {{type}},{{/return_values}}) 
+{{#report_codes}}
+* @retval {{& code}} {{& description}}
+{{/report_codes}}{{/return}}*/
+
+/* 
+{{name}} {{& lower_first description}}
+{{#parameters}}Parametres:
+{{/parameters}}{{#parameters}}- {{name}} {{type}} {{&description}}
+func {{#preceding_struct}}({{name}} {{type}}){{/preceding_struct}} {{name}}({{#parameters}} {{name}} {{type}},{{/parameters}}) {{#return}}({{#return_values}} {{name}} {{type}},{{/return_values}}){{/return}}{
+	//Variables
+	//Parametres
+{{#parameters}}
+{{/parameters}}
+	//Function
+	//Return
+{{#return}}	return {{#return_values}}{{name}},{{/return_values}};
+{{/return~}} }
