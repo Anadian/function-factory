@@ -1,0 +1,4 @@
+{
+	"template": "go event_test",
+	"event_name": "path_test"
+}

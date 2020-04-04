@@ -1,0 +1,15 @@
+
+		//Create event {{event_name}}
+		function_return = NewEvent( "event_listener:{{event_name}}", map[string]interface{}{} );
+		if( function_return.NoError() == true ){
+			log.Printf("Success: Event event_lister:{{event_name}} created successfully.\n",);
+			event = function_return.Data["event"].(Event_struct);
+			function_return = event_dispatcher.PushEvent(event);
+			if( function_return.NoError() == true ){
+				log.Printf("Success: Event {{event_name}} pushed successfully.\n");
+			} else{
+				log.Printf("Failure: event_dispatcher.PushEvent returned an error: %v\n", function_return);
+			}
+		} else{
+			log.Printf("Failure: NewEvent returned an error: %v\n", error);
+		}

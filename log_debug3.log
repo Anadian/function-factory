@@ -1,0 +1,339 @@
+2020-04-03T23:03:25.098Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-04-03T23:03:25.133Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:03:25.173Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-04-03T23:03:25.173Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-04-03T23:03:25.182Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-04-03T23:03:25.185Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go event_test' }
+2020-04-03T23:03:25.187Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go event_test',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:03:25.189Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/event_test.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:03:25.191Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/event_test.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:03:25.193Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/event_test.json": Error: ENOENT: no such file or directory, open \'go/event_test.json\'',
+  [length]: 2 ]
+2020-04-03T23:03:25.194Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/event_test.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:03:25.195Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go event_test",\n\t"event_name": "path_test"\n}',
+  [length]: 2 ]
+2020-04-03T23:03:25.197Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go event_test",\n\t"event_name": "path_test"\n}',
+  [length]: 2 ]
+2020-04-03T23:03:25.198Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go event_test",\n\t"event_name": "path_test"\n}',
+  [length]: 2 ]
+2020-04-03T23:03:25.227Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-04-03T23:03:35.411Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go event_test",\n\t"event_name": "path_test"\n}\n' }
+2020-04-03T23:03:35.411Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go event_test",\n\t"event_name": "path_test"\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:03:35.412Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go event_test', event_name: 'path_test' } undefined
+2020-04-03T23:03:35.412Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go event_test',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:03:35.413Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/event_test.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:03:35.413Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/event_test.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:03:35.414Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/event_test.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/event_test.hbs\'',
+  [length]: 2 ]
+2020-04-03T23:03:35.414Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/event_test.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:03:35.415Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-03T23:03:35.415Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-03T23:03:35.415Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-03T23:03:35.425Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '\n\t\t//Create event path_test\n\t\tfunction_return = NewEvent( "event_listener:path_test", map[string]interface{}{} );\n\t\tif( function_return.NoError() == true ){\n\t\t\tlog.Printf("Success: Event event_lister:path_test created successfully.\\n",);\n\t\t\tevent = function_return.Data["event"].(Event_struct);\n\t\t\tfunction_return = event_dispatcher.PushEvent(event);\n\t\t\tif( function_return.NoError() == true ){\n\t\t\t\tlog.Printf("Success: Event path_test pushed successfully.\\n");\n\t\t\t} else{\n\t\t\t\tlog.Printf("Failure: event_dispatcher.PushEvent returned an error: %v\\n", function_return);\n\t\t\t}\n\t\t} else{\n\t\t\tlog.Printf("Failure: NewEvent returned an error: %v\\n", error);\n\t\t}\n',
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:03:35.425Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2020-04-03T23:03:35.425Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '\n\t\t//Create event path_test\n\t\tfunction_return = NewEvent( "event_listener:path_test", map[string]interface{}{} );\n\t\tif( function_return.NoError() == true ){\n\t\t\tlog.Printf("Success: Event event_lister:path_test created successfully.\\n",);\n\t\t\tevent = function_return.Data["event"].(Event_struct);\n\t\t\tfunction_return = event_dispatcher.PushEvent(event);\n\t\t\tif( function_return.NoError() == true ){\n\t\t\t\tlog.Printf("Success: Event path_test pushed successfully.\\n");\n\t\t\t} else{\n\t\t\t\tlog.Printf("Failure: event_dispatcher.PushEvent returned an error: %v\\n", function_return);\n\t\t\t}\n\t\t} else{\n\t\t\tlog.Printf("Failure: NewEvent returned an error: %v\\n", error);\n\t\t}\n',
+  [length]: 2 ]
+2020-04-03T23:03:35.425Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '\n\t\t//Create event path_test\n\t\tfunction_return = NewEvent( "event_listener:path_test", map[string]interface{}{} );\n\t\tif( function_return.NoError() == true ){\n\t\t\tlog.Printf("Success: Event event_lister:path_test created successfully.\\n",);\n\t\t\tevent = function_return.Data["event"].(Event_struct);\n\t\t\tfunction_return = event_dispatcher.PushEvent(event);\n\t\t\tif( function_return.NoError() == true ){\n\t\t\t\tlog.Printf("Success: Event path_test pushed successfully.\\n");\n\t\t\t} else{\n\t\t\t\tlog.Printf("Failure: event_dispatcher.PushEvent returned an error: %v\\n", function_return);\n\t\t\t}\n\t\t} else{\n\t\t\tlog.Printf("Failure: NewEvent returned an error: %v\\n", error);\n\t\t}\n',
+  [ 0,
+    '\n\t\t//Create event path_test\n\t\tfunction_return = NewEvent( "event_listener:path_test", map[string]interface{}{} );\n\t\tif( function_return.NoError() == true ){\n\t\t\tlog.Printf("Success: Event event_lister:path_test created successfully.\\n",);\n\t\t\tevent = function_return.Data["event"].(Event_struct);\n\t\t\tfunction_return = event_dispatcher.PushEvent(event);\n\t\t\tif( function_return.NoError() == true ){\n\t\t\t\tlog.Printf("Success: Event path_test pushed successfully.\\n");\n\t\t\t} else{\n\t\t\t\tlog.Printf("Failure: event_dispatcher.PushEvent returned an error: %v\\n", function_return);\n\t\t\t}\n\t\t} else{\n\t\t\tlog.Printf("Failure: NewEvent returned an error: %v\\n", error);\n\t\t}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-04-03T23:03:35.426Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '\n\t\t//Create event path_test\n\t\tfunction_return = NewEvent( "event_listener:path_test", map[string]interface{}{} );\n\t\tif( function_return.NoError() == true ){\n\t\t\tlog.Printf("Success: Event event_lister:path_test created successfully.\\n",);\n\t\t\tevent = function_return.Data["event"].(Event_struct);\n\t\t\tfunction_return = event_dispatcher.PushEvent(event);\n\t\t\tif( function_return.NoError() == true ){\n\t\t\t\tlog.Printf("Success: Event path_test pushed successfully.\\n");\n\t\t\t} else{\n\t\t\t\tlog.Printf("Failure: event_dispatcher.PushEvent returned an error: %v\\n", function_return);\n\t\t\t}\n\t\t} else{\n\t\t\tlog.Printf("Failure: NewEvent returned an error: %v\\n", error);\n\t\t}\n',
+  [length]: 2 ]
+2020-04-03T23:03:35.426Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '\n\t\t//Create event path_test\n\t\tfunction_return = NewEvent( "event_listener:path_test", map[string]interface{}{} );\n\t\tif( function_return.NoError() == true ){\n\t\t\tlog.Printf("Success: Event event_lister:path_test created successfully.\\n",);\n\t\t\tevent = function_return.Data["event"].(Event_struct);\n\t\t\tfunction_return = event_dispatcher.PushEvent(event);\n\t\t\tif( function_return.NoError() == true ){\n\t\t\t\tlog.Printf("Success: Event path_test pushed successfully.\\n");\n\t\t\t} else{\n\t\t\t\tlog.Printf("Failure: event_dispatcher.PushEvent returned an error: %v\\n", function_return);\n\t\t\t}\n\t\t} else{\n\t\t\tlog.Printf("Failure: NewEvent returned an error: %v\\n", error);\n\t\t}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go event_test' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:03:35.463Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-04-03T23:03:35.465Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-04-03T23:04:17.024Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-04-03T23:04:17.031Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:04:17.032Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-04-03T23:04:17.032Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-04-03T23:04:17.034Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-04-03T23:04:17.034Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go event_test' }
+2020-04-03T23:04:17.035Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go event_test',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:04:17.035Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/event_test.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:04:17.036Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/event_test.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:04:17.036Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/event_test.json": Error: ENOENT: no such file or directory, open \'go/event_test.json\'',
+  [length]: 2 ]
+2020-04-03T23:04:17.036Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/event_test.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:04:17.037Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go event_test",\n\t"event_name": "path_test"\n}',
+  [length]: 2 ]
+2020-04-03T23:04:17.037Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go event_test",\n\t"event_name": "path_test"\n}',
+  [length]: 2 ]
+2020-04-03T23:04:17.037Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go event_test",\n\t"event_name": "path_test"\n}',
+  [length]: 2 ]
+2020-04-03T23:04:17.051Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-04-03T23:04:42.967Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go event_test",\n\t"event_name": "regexpath_test"\n}\n' }
+2020-04-03T23:04:42.967Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go event_test",\n\t"event_name": "regexpath_test"\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:04:42.968Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go event_test', event_name: 'regexpath_test' } undefined
+2020-04-03T23:04:42.968Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go event_test',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:04:42.969Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/event_test.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:04:42.969Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/event_test.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:04:42.969Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/event_test.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/event_test.hbs\'',
+  [length]: 2 ]
+2020-04-03T23:04:42.970Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/event_test.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:04:42.970Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-03T23:04:42.971Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-03T23:04:42.971Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-03T23:04:42.981Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '\n\t\t//Create event regexpath_test\n\t\tfunction_return = NewEvent( "event_listener:regexpath_test", map[string]interface{}{} );\n\t\tif( function_return.NoError() == true ){\n\t\t\tlog.Printf("Success: Event event_lister:regexpath_test created successfully.\\n",);\n\t\t\tevent = function_return.Data["event"].(Event_struct);\n\t\t\tfunction_return = event_dispatcher.PushEvent(event);\n\t\t\tif( function_return.NoError() == true ){\n\t\t\t\tlog.Printf("Success: Event regexpath_test pushed successfully.\\n");\n\t\t\t} else{\n\t\t\t\tlog.Printf("Failure: event_dispatcher.PushEvent returned an error: %v\\n", function_return);\n\t\t\t}\n\t\t} else{\n\t\t\tlog.Printf("Failure: NewEvent returned an error: %v\\n", error);\n\t\t}\n',
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:04:42.981Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2020-04-03T23:04:42.981Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '\n\t\t//Create event regexpath_test\n\t\tfunction_return = NewEvent( "event_listener:regexpath_test", map[string]interface{}{} );\n\t\tif( function_return.NoError() == true ){\n\t\t\tlog.Printf("Success: Event event_lister:regexpath_test created successfully.\\n",);\n\t\t\tevent = function_return.Data["event"].(Event_struct);\n\t\t\tfunction_return = event_dispatcher.PushEvent(event);\n\t\t\tif( function_return.NoError() == true ){\n\t\t\t\tlog.Printf("Success: Event regexpath_test pushed successfully.\\n");\n\t\t\t} else{\n\t\t\t\tlog.Printf("Failure: event_dispatcher.PushEvent returned an error: %v\\n", function_return);\n\t\t\t}\n\t\t} else{\n\t\t\tlog.Printf("Failure: NewEvent returned an error: %v\\n", error);\n\t\t}\n',
+  [length]: 2 ]
+2020-04-03T23:04:42.981Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '\n\t\t//Create event regexpath_test\n\t\tfunction_return = NewEvent( "event_listener:regexpath_test", map[string]interface{}{} );\n\t\tif( function_return.NoError() == true ){\n\t\t\tlog.Printf("Success: Event event_lister:regexpath_test created successfully.\\n",);\n\t\t\tevent = function_return.Data["event"].(Event_struct);\n\t\t\tfunction_return = event_dispatcher.PushEvent(event);\n\t\t\tif( function_return.NoError() == true ){\n\t\t\t\tlog.Printf("Success: Event regexpath_test pushed successfully.\\n");\n\t\t\t} else{\n\t\t\t\tlog.Printf("Failure: event_dispatcher.PushEvent returned an error: %v\\n", function_return);\n\t\t\t}\n\t\t} else{\n\t\t\tlog.Printf("Failure: NewEvent returned an error: %v\\n", error);\n\t\t}\n',
+  [ 0,
+    '\n\t\t//Create event regexpath_test\n\t\tfunction_return = NewEvent( "event_listener:regexpath_test", map[string]interface{}{} );\n\t\tif( function_return.NoError() == true ){\n\t\t\tlog.Printf("Success: Event event_lister:regexpath_test created successfully.\\n",);\n\t\t\tevent = function_return.Data["event"].(Event_struct);\n\t\t\tfunction_return = event_dispatcher.PushEvent(event);\n\t\t\tif( function_return.NoError() == true ){\n\t\t\t\tlog.Printf("Success: Event regexpath_test pushed successfully.\\n");\n\t\t\t} else{\n\t\t\t\tlog.Printf("Failure: event_dispatcher.PushEvent returned an error: %v\\n", function_return);\n\t\t\t}\n\t\t} else{\n\t\t\tlog.Printf("Failure: NewEvent returned an error: %v\\n", error);\n\t\t}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-04-03T23:04:42.982Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '\n\t\t//Create event regexpath_test\n\t\tfunction_return = NewEvent( "event_listener:regexpath_test", map[string]interface{}{} );\n\t\tif( function_return.NoError() == true ){\n\t\t\tlog.Printf("Success: Event event_lister:regexpath_test created successfully.\\n",);\n\t\t\tevent = function_return.Data["event"].(Event_struct);\n\t\t\tfunction_return = event_dispatcher.PushEvent(event);\n\t\t\tif( function_return.NoError() == true ){\n\t\t\t\tlog.Printf("Success: Event regexpath_test pushed successfully.\\n");\n\t\t\t} else{\n\t\t\t\tlog.Printf("Failure: event_dispatcher.PushEvent returned an error: %v\\n", function_return);\n\t\t\t}\n\t\t} else{\n\t\t\tlog.Printf("Failure: NewEvent returned an error: %v\\n", error);\n\t\t}\n',
+  [length]: 2 ]
+2020-04-03T23:04:42.982Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '\n\t\t//Create event regexpath_test\n\t\tfunction_return = NewEvent( "event_listener:regexpath_test", map[string]interface{}{} );\n\t\tif( function_return.NoError() == true ){\n\t\t\tlog.Printf("Success: Event event_lister:regexpath_test created successfully.\\n",);\n\t\t\tevent = function_return.Data["event"].(Event_struct);\n\t\t\tfunction_return = event_dispatcher.PushEvent(event);\n\t\t\tif( function_return.NoError() == true ){\n\t\t\t\tlog.Printf("Success: Event regexpath_test pushed successfully.\\n");\n\t\t\t} else{\n\t\t\t\tlog.Printf("Failure: event_dispatcher.PushEvent returned an error: %v\\n", function_return);\n\t\t\t}\n\t\t} else{\n\t\t\tlog.Printf("Failure: NewEvent returned an error: %v\\n", error);\n\t\t}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go event_test' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:04:42.989Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-04-03T23:04:42.990Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-04-03T23:05:25.894Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-04-03T23:05:25.901Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:05:25.902Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-04-03T23:05:25.902Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-04-03T23:05:25.904Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-04-03T23:05:25.904Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go event_test' }
+2020-04-03T23:05:25.904Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go event_test',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:05:25.905Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/event_test.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:05:25.905Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/event_test.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:05:25.905Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/event_test.json": Error: ENOENT: no such file or directory, open \'go/event_test.json\'',
+  [length]: 2 ]
+2020-04-03T23:05:25.906Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/event_test.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-03T23:05:25.906Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go event_test",\n\t"event_name": "path_test"\n}',
+  [length]: 2 ]
+2020-04-03T23:05:25.906Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go event_test",\n\t"event_name": "path_test"\n}',
+  [length]: 2 ]
+2020-04-03T23:05:25.906Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go event_test",\n\t"event_name": "path_test"\n}',
+  [length]: 2 ]
+2020-04-03T23:05:25.919Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
