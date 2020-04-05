@@ -337,3 +337,910 @@
   '{\n\t"template": "go event_test",\n\t"event_name": "path_test"\n}',
   [length]: 2 ]
 2020-04-03T23:05:25.919Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-04-04T08:23:59.134Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go event_test",\n\t"event_name": "regex-test"\n}\n' }
+2020-04-04T08:23:59.136Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go event_test",\n\t"event_name": "regex-test"\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-04T08:23:59.138Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go event_test', event_name: 'regex-test' } undefined
+2020-04-04T08:23:59.140Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go event_test',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-04T08:23:59.142Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/event_test.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-04T08:23:59.144Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/event_test.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-04T08:23:59.145Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/event_test.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/event_test.hbs\'',
+  [length]: 2 ]
+2020-04-04T08:23:59.146Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/event_test.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-04T08:23:59.239Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-04T08:23:59.240Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-04T08:23:59.242Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-04T08:23:59.450Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '\n\t\t//Create event regex-test\n\t\tfunction_return = NewEvent( "event_listener:regex-test", map[string]interface{}{} );\n\t\tif( function_return.NoError() == true ){\n\t\t\tlog.Printf("Success: Event event_lister:regex-test created successfully.\\n",);\n\t\t\tevent = function_return.Data["event"].(Event_struct);\n\t\t\tfunction_return = event_dispatcher.PushEvent(event);\n\t\t\tif( function_return.NoError() == true ){\n\t\t\t\tlog.Printf("Success: Event regex-test pushed successfully.\\n");\n\t\t\t} else{\n\t\t\t\tlog.Printf("Failure: event_dispatcher.PushEvent returned an error: %v\\n", function_return);\n\t\t\t}\n\t\t} else{\n\t\t\tlog.Printf("Failure: NewEvent returned an error: %v\\n", error);\n\t\t}\n',
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-04T08:23:59.451Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2020-04-04T08:23:59.453Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '\n\t\t//Create event regex-test\n\t\tfunction_return = NewEvent( "event_listener:regex-test", map[string]interface{}{} );\n\t\tif( function_return.NoError() == true ){\n\t\t\tlog.Printf("Success: Event event_lister:regex-test created successfully.\\n",);\n\t\t\tevent = function_return.Data["event"].(Event_struct);\n\t\t\tfunction_return = event_dispatcher.PushEvent(event);\n\t\t\tif( function_return.NoError() == true ){\n\t\t\t\tlog.Printf("Success: Event regex-test pushed successfully.\\n");\n\t\t\t} else{\n\t\t\t\tlog.Printf("Failure: event_dispatcher.PushEvent returned an error: %v\\n", function_return);\n\t\t\t}\n\t\t} else{\n\t\t\tlog.Printf("Failure: NewEvent returned an error: %v\\n", error);\n\t\t}\n',
+  [length]: 2 ]
+2020-04-04T08:23:59.454Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '\n\t\t//Create event regex-test\n\t\tfunction_return = NewEvent( "event_listener:regex-test", map[string]interface{}{} );\n\t\tif( function_return.NoError() == true ){\n\t\t\tlog.Printf("Success: Event event_lister:regex-test created successfully.\\n",);\n\t\t\tevent = function_return.Data["event"].(Event_struct);\n\t\t\tfunction_return = event_dispatcher.PushEvent(event);\n\t\t\tif( function_return.NoError() == true ){\n\t\t\t\tlog.Printf("Success: Event regex-test pushed successfully.\\n");\n\t\t\t} else{\n\t\t\t\tlog.Printf("Failure: event_dispatcher.PushEvent returned an error: %v\\n", function_return);\n\t\t\t}\n\t\t} else{\n\t\t\tlog.Printf("Failure: NewEvent returned an error: %v\\n", error);\n\t\t}\n',
+  [ 0,
+    '\n\t\t//Create event regex-test\n\t\tfunction_return = NewEvent( "event_listener:regex-test", map[string]interface{}{} );\n\t\tif( function_return.NoError() == true ){\n\t\t\tlog.Printf("Success: Event event_lister:regex-test created successfully.\\n",);\n\t\t\tevent = function_return.Data["event"].(Event_struct);\n\t\t\tfunction_return = event_dispatcher.PushEvent(event);\n\t\t\tif( function_return.NoError() == true ){\n\t\t\t\tlog.Printf("Success: Event regex-test pushed successfully.\\n");\n\t\t\t} else{\n\t\t\t\tlog.Printf("Failure: event_dispatcher.PushEvent returned an error: %v\\n", function_return);\n\t\t\t}\n\t\t} else{\n\t\t\tlog.Printf("Failure: NewEvent returned an error: %v\\n", error);\n\t\t}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-04-04T08:23:59.455Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '\n\t\t//Create event regex-test\n\t\tfunction_return = NewEvent( "event_listener:regex-test", map[string]interface{}{} );\n\t\tif( function_return.NoError() == true ){\n\t\t\tlog.Printf("Success: Event event_lister:regex-test created successfully.\\n",);\n\t\t\tevent = function_return.Data["event"].(Event_struct);\n\t\t\tfunction_return = event_dispatcher.PushEvent(event);\n\t\t\tif( function_return.NoError() == true ){\n\t\t\t\tlog.Printf("Success: Event regex-test pushed successfully.\\n");\n\t\t\t} else{\n\t\t\t\tlog.Printf("Failure: event_dispatcher.PushEvent returned an error: %v\\n", function_return);\n\t\t\t}\n\t\t} else{\n\t\t\tlog.Printf("Failure: NewEvent returned an error: %v\\n", error);\n\t\t}\n',
+  [length]: 2 ]
+2020-04-04T08:23:59.458Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '\n\t\t//Create event regex-test\n\t\tfunction_return = NewEvent( "event_listener:regex-test", map[string]interface{}{} );\n\t\tif( function_return.NoError() == true ){\n\t\t\tlog.Printf("Success: Event event_lister:regex-test created successfully.\\n",);\n\t\t\tevent = function_return.Data["event"].(Event_struct);\n\t\t\tfunction_return = event_dispatcher.PushEvent(event);\n\t\t\tif( function_return.NoError() == true ){\n\t\t\t\tlog.Printf("Success: Event regex-test pushed successfully.\\n");\n\t\t\t} else{\n\t\t\t\tlog.Printf("Failure: event_dispatcher.PushEvent returned an error: %v\\n", function_return);\n\t\t\t}\n\t\t} else{\n\t\t\tlog.Printf("Failure: NewEvent returned an error: %v\\n", error);\n\t\t}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go event_test' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-04T08:23:59.595Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-04-04T08:23:59.596Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-04-04T08:24:31.907Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-04-04T08:24:31.947Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-04T08:24:31.990Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-04-04T08:24:31.990Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-04-04T08:24:31.992Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-04-04T08:24:31.993Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go event_test' }
+2020-04-04T08:24:31.994Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go event_test',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-04T08:24:31.995Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/event_test.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-04T08:24:31.995Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/event_test.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-04T08:24:31.996Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/event_test.json": Error: ENOENT: no such file or directory, open \'go/event_test.json\'',
+  [length]: 2 ]
+2020-04-04T08:24:31.996Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/event_test.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-04T08:24:32.016Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go event_test",\n\t"event_name": "path_test"\n}',
+  [length]: 2 ]
+2020-04-04T08:24:32.016Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go event_test",\n\t"event_name": "path_test"\n}',
+  [length]: 2 ]
+2020-04-04T08:24:32.017Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go event_test",\n\t"event_name": "path_test"\n}',
+  [length]: 2 ]
+2020-04-04T08:24:32.034Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-04-04T08:24:56.775Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go event_test",\n\t"event_name": "01_test"\n}\n' }
+2020-04-04T08:24:56.776Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go event_test",\n\t"event_name": "01_test"\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-04T08:24:56.777Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go event_test', event_name: '01_test' } undefined
+2020-04-04T08:24:56.777Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go event_test',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-04T08:24:56.778Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/event_test.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-04T08:24:56.778Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/event_test.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-04T08:24:56.779Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/event_test.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/event_test.hbs\'',
+  [length]: 2 ]
+2020-04-04T08:24:56.779Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/event_test.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-04T08:24:56.780Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-04T08:24:56.780Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-04T08:24:56.780Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-04T08:24:56.793Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '\n\t\t//Create event 01_test\n\t\tfunction_return = NewEvent( "event_listener:01_test", map[string]interface{}{} );\n\t\tif( function_return.NoError() == true ){\n\t\t\tlog.Printf("Success: Event event_lister:01_test created successfully.\\n",);\n\t\t\tevent = function_return.Data["event"].(Event_struct);\n\t\t\tfunction_return = event_dispatcher.PushEvent(event);\n\t\t\tif( function_return.NoError() == true ){\n\t\t\t\tlog.Printf("Success: Event 01_test pushed successfully.\\n");\n\t\t\t} else{\n\t\t\t\tlog.Printf("Failure: event_dispatcher.PushEvent returned an error: %v\\n", function_return);\n\t\t\t}\n\t\t} else{\n\t\t\tlog.Printf("Failure: NewEvent returned an error: %v\\n", error);\n\t\t}\n',
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-04T08:24:56.793Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2020-04-04T08:24:56.793Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '\n\t\t//Create event 01_test\n\t\tfunction_return = NewEvent( "event_listener:01_test", map[string]interface{}{} );\n\t\tif( function_return.NoError() == true ){\n\t\t\tlog.Printf("Success: Event event_lister:01_test created successfully.\\n",);\n\t\t\tevent = function_return.Data["event"].(Event_struct);\n\t\t\tfunction_return = event_dispatcher.PushEvent(event);\n\t\t\tif( function_return.NoError() == true ){\n\t\t\t\tlog.Printf("Success: Event 01_test pushed successfully.\\n");\n\t\t\t} else{\n\t\t\t\tlog.Printf("Failure: event_dispatcher.PushEvent returned an error: %v\\n", function_return);\n\t\t\t}\n\t\t} else{\n\t\t\tlog.Printf("Failure: NewEvent returned an error: %v\\n", error);\n\t\t}\n',
+  [length]: 2 ]
+2020-04-04T08:24:56.794Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '\n\t\t//Create event 01_test\n\t\tfunction_return = NewEvent( "event_listener:01_test", map[string]interface{}{} );\n\t\tif( function_return.NoError() == true ){\n\t\t\tlog.Printf("Success: Event event_lister:01_test created successfully.\\n",);\n\t\t\tevent = function_return.Data["event"].(Event_struct);\n\t\t\tfunction_return = event_dispatcher.PushEvent(event);\n\t\t\tif( function_return.NoError() == true ){\n\t\t\t\tlog.Printf("Success: Event 01_test pushed successfully.\\n");\n\t\t\t} else{\n\t\t\t\tlog.Printf("Failure: event_dispatcher.PushEvent returned an error: %v\\n", function_return);\n\t\t\t}\n\t\t} else{\n\t\t\tlog.Printf("Failure: NewEvent returned an error: %v\\n", error);\n\t\t}\n',
+  [ 0,
+    '\n\t\t//Create event 01_test\n\t\tfunction_return = NewEvent( "event_listener:01_test", map[string]interface{}{} );\n\t\tif( function_return.NoError() == true ){\n\t\t\tlog.Printf("Success: Event event_lister:01_test created successfully.\\n",);\n\t\t\tevent = function_return.Data["event"].(Event_struct);\n\t\t\tfunction_return = event_dispatcher.PushEvent(event);\n\t\t\tif( function_return.NoError() == true ){\n\t\t\t\tlog.Printf("Success: Event 01_test pushed successfully.\\n");\n\t\t\t} else{\n\t\t\t\tlog.Printf("Failure: event_dispatcher.PushEvent returned an error: %v\\n", function_return);\n\t\t\t}\n\t\t} else{\n\t\t\tlog.Printf("Failure: NewEvent returned an error: %v\\n", error);\n\t\t}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-04-04T08:24:56.794Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '\n\t\t//Create event 01_test\n\t\tfunction_return = NewEvent( "event_listener:01_test", map[string]interface{}{} );\n\t\tif( function_return.NoError() == true ){\n\t\t\tlog.Printf("Success: Event event_lister:01_test created successfully.\\n",);\n\t\t\tevent = function_return.Data["event"].(Event_struct);\n\t\t\tfunction_return = event_dispatcher.PushEvent(event);\n\t\t\tif( function_return.NoError() == true ){\n\t\t\t\tlog.Printf("Success: Event 01_test pushed successfully.\\n");\n\t\t\t} else{\n\t\t\t\tlog.Printf("Failure: event_dispatcher.PushEvent returned an error: %v\\n", function_return);\n\t\t\t}\n\t\t} else{\n\t\t\tlog.Printf("Failure: NewEvent returned an error: %v\\n", error);\n\t\t}\n',
+  [length]: 2 ]
+2020-04-04T08:24:56.795Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '\n\t\t//Create event 01_test\n\t\tfunction_return = NewEvent( "event_listener:01_test", map[string]interface{}{} );\n\t\tif( function_return.NoError() == true ){\n\t\t\tlog.Printf("Success: Event event_lister:01_test created successfully.\\n",);\n\t\t\tevent = function_return.Data["event"].(Event_struct);\n\t\t\tfunction_return = event_dispatcher.PushEvent(event);\n\t\t\tif( function_return.NoError() == true ){\n\t\t\t\tlog.Printf("Success: Event 01_test pushed successfully.\\n");\n\t\t\t} else{\n\t\t\t\tlog.Printf("Failure: event_dispatcher.PushEvent returned an error: %v\\n", function_return);\n\t\t\t}\n\t\t} else{\n\t\t\tlog.Printf("Failure: NewEvent returned an error: %v\\n", error);\n\t\t}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go event_test' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-04T08:24:56.804Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-04-04T08:24:56.805Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-04-05T02:10:56.135Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-04-05T02:10:56.160Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:10:56.198Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-04-05T02:10:56.199Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-04-05T02:10:56.206Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-04-05T02:10:56.209Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go func' }
+2020-04-05T02:10:56.211Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:10:56.213Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:10:56.214Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:10:56.216Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/func.json": Error: ENOENT: no such file or directory, open \'go/func.json\'',
+  [length]: 2 ]
+2020-04-05T02:10:56.216Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:10:56.233Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-05T02:10:56.234Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-05T02:10:56.236Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-05T02:10:56.264Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-04-05T02:13:31.368Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go func",\n\t"name": "ProcessEvents",\n\t"description": "Processes all of the events in the queue.",\n\t"preceding_struct": {\n\t\t"name": "event_dispatcher",\n\t\t"type": "EventDispatcher_struct"\n\t},\n\t"parameters": [\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2020-04-05T02:13:31.371Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go func",\n\t"name": "ProcessEvents",\n\t"description": "Processes all of the events in the queue.",\n\t"preceding_struct": {\n\t\t"name": "event_dispatcher",\n\t\t"type": "EventDispatcher_struct"\n\t},\n\t"parameters": [\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:13:31.374Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go func',
+  name: 'ProcessEvents',
+  description: 'Processes all of the events in the queue.',
+  preceding_struct: { name: 'event_dispatcher', type: 'EventDispatcher_struct' },
+  parameters: [ [length]: 0 ],
+  return: 
+   { return_values: 
+      [ { name: 'return_report',
+          type: 'error_report.ErrorReport_struct' },
+        [length]: 1 ],
+     report_codes: 
+      [ { code: 0, description: 'Success' },
+        { code: 1, description: 'Not Supported' },
+        { code: '>1', description: 'Error' },
+        [length]: 3 ] },
+  post_re: 
+   [ { search: ',\\)', replace: ' )', flags: 'gm' },
+     { search: ',;', replace: ';', flags: 'gm' },
+     [length]: 2 ] } undefined
+2020-04-05T02:13:31.375Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:13:31.376Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:13:31.377Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:13:31.378Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/func.hbs\'',
+  [length]: 2 ]
+2020-04-05T02:13:31.378Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:13:31.416Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-05T02:13:31.417Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-05T02:13:31.417Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-05T02:13:31.452Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @fn ProcessEvents\n* @brief Processes all of the events in the queue.\n* @struct event_dispatcher EventDispatcher_struct\n* @return ( return_report error_report.ErrorReport_struct,) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// ProcessEvents processes all of the events in the queue.\nfunc (event_dispatcher EventDispatcher_struct) ProcessEvents() ( return_report error_report.ErrorReport_struct,){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report,;\n}\n',
+  '1': 
+   [ { search: ',\\)', replace: ' )', flags: 'gm' },
+     { search: ',;', replace: ';', flags: 'gm' },
+     [length]: 2 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:13:31.452Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @fn ProcessEvents\n* @brief Processes all of the events in the queue.\n* @struct event_dispatcher EventDispatcher_struct\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// ProcessEvents processes all of the events in the queue.\nfunc (event_dispatcher EventDispatcher_struct) ProcessEvents() ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [length]: 2 ]
+2020-04-05T02:13:31.453Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @fn ProcessEvents\n* @brief Processes all of the events in the queue.\n* @struct event_dispatcher EventDispatcher_struct\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// ProcessEvents processes all of the events in the queue.\nfunc (event_dispatcher EventDispatcher_struct) ProcessEvents() ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [ 0,
+    '/**\n* @fn ProcessEvents\n* @brief Processes all of the events in the queue.\n* @struct event_dispatcher EventDispatcher_struct\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// ProcessEvents processes all of the events in the queue.\nfunc (event_dispatcher EventDispatcher_struct) ProcessEvents() ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-04-05T02:13:31.453Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @fn ProcessEvents\n* @brief Processes all of the events in the queue.\n* @struct event_dispatcher EventDispatcher_struct\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// ProcessEvents processes all of the events in the queue.\nfunc (event_dispatcher EventDispatcher_struct) ProcessEvents() ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [length]: 2 ]
+2020-04-05T02:13:31.453Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @fn ProcessEvents\n* @brief Processes all of the events in the queue.\n* @struct event_dispatcher EventDispatcher_struct\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// ProcessEvents processes all of the events in the queue.\nfunc (event_dispatcher EventDispatcher_struct) ProcessEvents() ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:13:31.501Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-04-05T02:13:31.502Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-04-05T02:23:49.901Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-04-05T02:23:49.907Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:23:49.908Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-04-05T02:23:49.908Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-04-05T02:23:49.909Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-04-05T02:23:49.910Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go func' }
+2020-04-05T02:23:49.910Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:23:49.911Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:23:49.911Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:23:49.911Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/func.json": Error: ENOENT: no such file or directory, open \'go/func.json\'',
+  [length]: 2 ]
+2020-04-05T02:23:49.912Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:23:49.912Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-05T02:23:49.912Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-05T02:23:49.912Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-05T02:23:49.925Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-04-05T02:25:27.354Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go func",\n\t"name": "ShiftEvent",\n\t"description": "Extracts and returns the first event in the queue.",\n\t"preceding_struct": {\n\t\t"name": "event_dispatcher",\n\t\t"type": "*EventDispatcher_struct"\n\t},\n\t"parameters": [\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2020-04-05T02:25:27.354Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go func",\n\t"name": "ShiftEvent",\n\t"description": "Extracts and returns the first event in the queue.",\n\t"preceding_struct": {\n\t\t"name": "event_dispatcher",\n\t\t"type": "*EventDispatcher_struct"\n\t},\n\t"parameters": [\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:25:27.356Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go func',
+  name: 'ShiftEvent',
+  description: 'Extracts and returns the first event in the queue.',
+  preceding_struct: { name: 'event_dispatcher', type: '*EventDispatcher_struct' },
+  parameters: [ [length]: 0 ],
+  return: 
+   { return_values: 
+      [ { name: 'return_report',
+          type: 'error_report.ErrorReport_struct' },
+        [length]: 1 ],
+     report_codes: 
+      [ { code: 0, description: 'Success' },
+        { code: 1, description: 'Not Supported' },
+        { code: '>1', description: 'Error' },
+        [length]: 3 ] },
+  post_re: 
+   [ { search: ',\\)', replace: ' )', flags: 'gm' },
+     { search: ',;', replace: ';', flags: 'gm' },
+     [length]: 2 ] } undefined
+2020-04-05T02:25:27.356Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:25:27.356Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:25:27.357Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:25:27.357Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/func.hbs\'',
+  [length]: 2 ]
+2020-04-05T02:25:27.357Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:25:27.358Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-05T02:25:27.358Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-05T02:25:27.358Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-05T02:25:27.382Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @fn ShiftEvent\n* @brief Extracts and returns the first event in the queue.\n* @struct event_dispatcher *EventDispatcher_struct\n* @return ( return_report error_report.ErrorReport_struct,) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// ShiftEvent extracts and returns the first event in the queue.\nfunc (event_dispatcher *EventDispatcher_struct) ShiftEvent() ( return_report error_report.ErrorReport_struct,){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report,;\n}\n',
+  '1': 
+   [ { search: ',\\)', replace: ' )', flags: 'gm' },
+     { search: ',;', replace: ';', flags: 'gm' },
+     [length]: 2 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:25:27.382Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @fn ShiftEvent\n* @brief Extracts and returns the first event in the queue.\n* @struct event_dispatcher *EventDispatcher_struct\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// ShiftEvent extracts and returns the first event in the queue.\nfunc (event_dispatcher *EventDispatcher_struct) ShiftEvent() ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [length]: 2 ]
+2020-04-05T02:25:27.382Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @fn ShiftEvent\n* @brief Extracts and returns the first event in the queue.\n* @struct event_dispatcher *EventDispatcher_struct\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// ShiftEvent extracts and returns the first event in the queue.\nfunc (event_dispatcher *EventDispatcher_struct) ShiftEvent() ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [ 0,
+    '/**\n* @fn ShiftEvent\n* @brief Extracts and returns the first event in the queue.\n* @struct event_dispatcher *EventDispatcher_struct\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// ShiftEvent extracts and returns the first event in the queue.\nfunc (event_dispatcher *EventDispatcher_struct) ShiftEvent() ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-04-05T02:25:27.382Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @fn ShiftEvent\n* @brief Extracts and returns the first event in the queue.\n* @struct event_dispatcher *EventDispatcher_struct\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// ShiftEvent extracts and returns the first event in the queue.\nfunc (event_dispatcher *EventDispatcher_struct) ShiftEvent() ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [length]: 2 ]
+2020-04-05T02:25:27.383Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @fn ShiftEvent\n* @brief Extracts and returns the first event in the queue.\n* @struct event_dispatcher *EventDispatcher_struct\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// ShiftEvent extracts and returns the first event in the queue.\nfunc (event_dispatcher *EventDispatcher_struct) ShiftEvent() ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:25:27.388Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-04-05T02:25:27.388Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-04-05T02:48:47.780Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-04-05T02:48:47.786Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:48:47.788Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-04-05T02:48:47.788Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-04-05T02:48:47.789Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-04-05T02:48:47.789Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go func' }
+2020-04-05T02:48:47.790Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:48:47.790Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:48:47.790Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:48:47.791Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/func.json": Error: ENOENT: no such file or directory, open \'go/func.json\'',
+  [length]: 2 ]
+2020-04-05T02:48:47.791Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T02:48:47.791Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-05T02:48:47.792Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-05T02:48:47.792Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-05T02:48:47.803Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-04-05T03:03:24.611Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go func",\n\t"name": "GetWrappedBottom",\n\t"description": "Returns the deepest wrapped report.",\n\t"preceding_struct": {\n\t\t"name": "error_report",\n\t\t"type": "*ErrorReport_struct"\n\t},\n\t"parameters": [\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2020-04-05T03:03:24.612Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go func",\n\t"name": "GetWrappedBottom",\n\t"description": "Returns the deepest wrapped report.",\n\t"preceding_struct": {\n\t\t"name": "error_report",\n\t\t"type": "*ErrorReport_struct"\n\t},\n\t"parameters": [\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T03:03:24.613Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go func',
+  name: 'GetWrappedBottom',
+  description: 'Returns the deepest wrapped report.',
+  preceding_struct: { name: 'error_report', type: '*ErrorReport_struct' },
+  parameters: [ [length]: 0 ],
+  return: 
+   { return_values: 
+      [ { name: 'return_report',
+          type: 'error_report.ErrorReport_struct' },
+        [length]: 1 ],
+     report_codes: 
+      [ { code: 0, description: 'Success' },
+        { code: 1, description: 'Not Supported' },
+        { code: '>1', description: 'Error' },
+        [length]: 3 ] },
+  post_re: 
+   [ { search: ',\\)', replace: ' )', flags: 'gm' },
+     { search: ',;', replace: ';', flags: 'gm' },
+     [length]: 2 ] } undefined
+2020-04-05T03:03:24.613Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T03:03:24.613Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T03:03:24.613Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T03:03:24.614Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/func.hbs\'',
+  [length]: 2 ]
+2020-04-05T03:03:24.614Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T03:03:24.614Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-05T03:03:24.615Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-05T03:03:24.615Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-05T03:03:24.640Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @fn GetWrappedBottom\n* @brief Returns the deepest wrapped report.\n* @struct error_report *ErrorReport_struct\n* @return ( return_report error_report.ErrorReport_struct,) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// GetWrappedBottom returns the deepest wrapped report.\nfunc (error_report *ErrorReport_struct) GetWrappedBottom() ( return_report error_report.ErrorReport_struct,){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report,;\n}\n',
+  '1': 
+   [ { search: ',\\)', replace: ' )', flags: 'gm' },
+     { search: ',;', replace: ';', flags: 'gm' },
+     [length]: 2 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T03:03:24.640Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @fn GetWrappedBottom\n* @brief Returns the deepest wrapped report.\n* @struct error_report *ErrorReport_struct\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// GetWrappedBottom returns the deepest wrapped report.\nfunc (error_report *ErrorReport_struct) GetWrappedBottom() ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [length]: 2 ]
+2020-04-05T03:03:24.640Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @fn GetWrappedBottom\n* @brief Returns the deepest wrapped report.\n* @struct error_report *ErrorReport_struct\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// GetWrappedBottom returns the deepest wrapped report.\nfunc (error_report *ErrorReport_struct) GetWrappedBottom() ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [ 0,
+    '/**\n* @fn GetWrappedBottom\n* @brief Returns the deepest wrapped report.\n* @struct error_report *ErrorReport_struct\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// GetWrappedBottom returns the deepest wrapped report.\nfunc (error_report *ErrorReport_struct) GetWrappedBottom() ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-04-05T03:03:24.641Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @fn GetWrappedBottom\n* @brief Returns the deepest wrapped report.\n* @struct error_report *ErrorReport_struct\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// GetWrappedBottom returns the deepest wrapped report.\nfunc (error_report *ErrorReport_struct) GetWrappedBottom() ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [length]: 2 ]
+2020-04-05T03:03:24.641Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @fn GetWrappedBottom\n* @brief Returns the deepest wrapped report.\n* @struct error_report *ErrorReport_struct\n* @return ( return_report error_report.ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// GetWrappedBottom returns the deepest wrapped report.\nfunc (error_report *ErrorReport_struct) GetWrappedBottom() ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T03:03:24.647Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-04-05T03:03:24.647Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-04-05T03:13:43.343Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-04-05T03:13:43.349Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T03:13:43.350Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-04-05T03:13:43.350Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-04-05T03:13:43.352Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-04-05T03:13:43.352Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go func' }
+2020-04-05T03:13:43.352Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T03:13:43.353Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T03:13:43.353Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T03:13:43.353Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/func.json": Error: ENOENT: no such file or directory, open \'go/func.json\'',
+  [length]: 2 ]
+2020-04-05T03:13:43.353Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T03:13:43.354Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-05T03:13:43.354Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-05T03:13:43.354Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-05T03:13:43.366Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-04-05T03:15:27.013Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go func",\n\t"name": "TestGetWrappedBottom",\n\t"description": "Test error_report.GetWrappedBottom",\n\t"parameters": [\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2020-04-05T03:15:27.013Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go func",\n\t"name": "TestGetWrappedBottom",\n\t"description": "Test error_report.GetWrappedBottom",\n\t"parameters": [\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T03:15:27.014Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go func',
+  name: 'TestGetWrappedBottom',
+  description: 'Test error_report.GetWrappedBottom',
+  parameters: [ [length]: 0 ],
+  return: 
+   { return_values: 
+      [ { name: 'return_report', type: 'ErrorReport_struct' },
+        [length]: 1 ],
+     report_codes: 
+      [ { code: 0, description: 'Success' },
+        { code: 1, description: 'Not Supported' },
+        { code: '>1', description: 'Error' },
+        [length]: 3 ] },
+  post_re: 
+   [ { search: ',\\)', replace: ' )', flags: 'gm' },
+     { search: ',;', replace: ';', flags: 'gm' },
+     [length]: 2 ] } undefined
+2020-04-05T03:15:27.015Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T03:15:27.015Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T03:15:27.015Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T03:15:27.016Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/func.hbs\'',
+  [length]: 2 ]
+2020-04-05T03:15:27.016Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T03:15:27.016Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-05T03:15:27.017Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-05T03:15:27.017Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-05T03:15:27.044Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @fn TestGetWrappedBottom\n* @brief Test error_report.GetWrappedBottom\n* @return ( return_report ErrorReport_struct,) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// TestGetWrappedBottom test error_report.GetWrappedBottom\nfunc  TestGetWrappedBottom() ( return_report ErrorReport_struct,){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report,;\n}\n',
+  '1': 
+   [ { search: ',\\)', replace: ' )', flags: 'gm' },
+     { search: ',;', replace: ';', flags: 'gm' },
+     [length]: 2 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T03:15:27.044Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @fn TestGetWrappedBottom\n* @brief Test error_report.GetWrappedBottom\n* @return ( return_report ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// TestGetWrappedBottom test error_report.GetWrappedBottom\nfunc  TestGetWrappedBottom() ( return_report ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [length]: 2 ]
+2020-04-05T03:15:27.044Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @fn TestGetWrappedBottom\n* @brief Test error_report.GetWrappedBottom\n* @return ( return_report ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// TestGetWrappedBottom test error_report.GetWrappedBottom\nfunc  TestGetWrappedBottom() ( return_report ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [ 0,
+    '/**\n* @fn TestGetWrappedBottom\n* @brief Test error_report.GetWrappedBottom\n* @return ( return_report ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// TestGetWrappedBottom test error_report.GetWrappedBottom\nfunc  TestGetWrappedBottom() ( return_report ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-04-05T03:15:27.044Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @fn TestGetWrappedBottom\n* @brief Test error_report.GetWrappedBottom\n* @return ( return_report ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// TestGetWrappedBottom test error_report.GetWrappedBottom\nfunc  TestGetWrappedBottom() ( return_report ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [length]: 2 ]
+2020-04-05T03:15:27.045Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @fn TestGetWrappedBottom\n* @brief Test error_report.GetWrappedBottom\n* @return ( return_report ErrorReport_struct ) \n* @retval 0 Success\n* @retval 1 Not Supported\n* @retval >1 Error\n*/\n\n// TestGetWrappedBottom test error_report.GetWrappedBottom\nfunc  TestGetWrappedBottom() ( return_report ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-05T03:15:27.052Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-04-05T03:15:27.052Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
