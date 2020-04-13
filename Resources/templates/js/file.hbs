@@ -3,9 +3,10 @@
 {{/strict}}
 /**
 * @file {{filename}}
-* @brief {{& description}}
+{{#main}}* @alias source/main.js
+{{/main}}* @description {{& description}}
 * @author Anadian
-* @copyright 	Copyright 2019 Canosw
+* @license 	Copyright 2020 Anadian
 	Permission is hereby granted, free of charge, to any person obtaining a copy of this 
 software and associated documentation files (the "Software"), to deal in the Software 
 without restriction, including without limitation the rights to use, copy, modify, 
@@ -22,13 +23,13 @@ CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFT
 OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-//Dependencies
-	//Internal
-	//Standard
+//#Dependencies
+	//##Internal
+	//##Standard
 {{#logger}}	const Utility = require('util');
-{{/logger}}	//External
+{{/logger}}	//##External
 
-//Constants
+//#Constants
 const FILENAME = '{{filename}}';
 const MODULE_NAME = '{{modulename}}';
 var PROCESS_NAME = '';
@@ -37,20 +38,28 @@ if(require.main === module){
 } else{
 	PROCESS_NAME = process.argv0;
 }
+//##Errors
 
-//Global Variables
+//#Global Variables
 {{#logger}}var Logger = { 
 	log: () => {
 		return null;
 	}
 };{{/logger}}
-//Functions
-{{#logger}}function Logger_Set( logger ){
-	var _return = [1,null];
+//#Functions
+{{#logger}}/**
+* @function Logger_Set
+* @alias SetLogger
+* @access public
+* @description Allows this module's functions to log the given logger object.
+* @param {?object} logger - The logger to be used for logging or `null` to disable logging.
+* @throws {TypeError} `ERR_INVALID_ARG_TYPE` if logger is not an object or `null`. 
+* @since v0.0.0
+*/
+function Logger_Set( logger ){
+	var return_error = null;
 	const FUNCTION_NAME = 'Logger_Set';
 	//Variables
-	var function_return = [1,null];
-
 	//Parametre checks
 	if( typeof(logger) === 'object' ){
 		if( logger === null ){
@@ -61,27 +70,24 @@ if(require.main === module){
 			};
 		}
 	} else{
-		_return = [-2,'Error: param "logger" is not an object.'];
+		return_error = new TypeError('Param "logger" is not an object.');
+		return_error.code = ERR_INVALID_ARG_TYPE;
+		throw return_error;
 	}
 
 	//Function
-	if( _return[0] === 1 ){
-		Logger = logger;
-		_return = [0,null];
-	}
-
+	Logger = logger;
 	//Return
-	return _return;
 }{{/logger}}
 
-//Exports and Execution
+//#Exports and Execution
 if(require.main === module){
 {{#main}}	var _return = [1,null];
 	const FUNCTION_NAME = 'MainExecutionFunction';
-	//Dependencies
-		//Internal
-		//Standard
-		//External
+	//##Dependencies
+		//###Internal
+		//###Standard
+		//###External
 {{#logger}}		const MakeDir = require('make-dir');
 		const ApplicationLogWinstonInterface = require('application-log-winston-interface');
 {{/logger}}		const EnvPaths = require('env-paths');
@@ -122,6 +128,10 @@ if(require.main === module){
 {{/logger}}{{#cli}}	//Options
 	var Options = CommandLineArgs( OptionDefinitions );
 {{/cli}}	//Config
+			if( Options.verbose === true ){
+{{#logger}}				logger.real_transports.console_stderr.level = 'debug';
+				Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'note', message: Utility.format('Logger: console_stderr transport log level set to: %s', logger.real_transports.console_stderr.level)});
+{{/logger}}			}
 	//Main
 {{#cli}}	if(Options.help === true){
 		const help_sections_array = [

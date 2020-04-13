@@ -6,26 +6,28 @@
 		"name": "struct_name",
 		"type": "*Struct_type"
 	},
-	"parameters": [
-		{
-			"name": "alignment",
-			"type": "uint8",
-			"flow": "in",
-			"description": ""
-		},
-		{
-			"name": "centre",
-			"type": "Vector_type",
-			"flow": "in",
-			"description": ""
-		},
-		{
-			"name": "velocity",
-			"type": "Vector_type",
-			"flow": "in",
-			"description": ""
-		}
-	],
+	"parameter": {
+		"parameters": [
+			{
+				"name": "alignment",
+				"type": "uint8",
+				"flow": "in",
+				"description": ""
+			},
+			{
+				"name": "centre",
+				"type": "Vector_type",
+				"flow": "in",
+				"description": ""
+			},
+			{
+				"name": "velocity",
+				"type": "Vector_type",
+				"flow": "in",
+				"description": ""
+			}
+		]
+	},
 	"return": {
 		"return_values": [
 			{

@@ -1,15 +1,28 @@
 /**
-* @fn {{name}}
-* @brief {{& upper_first description}}
-{{#preceding_struct}}* @struct {{name}} {{type}}
-{{/preceding_struct}}{{#parameters}}* @param {{name}} {{type}} [{{flow}}] {{& description}}
-{{/parameters}}{{#return}}* @return ({{#return_values}} {{name}} {{type}},{{/return_values}}) 
-{{#report_codes}}
-* @retval {{& code}} {{& description}}
-{{/report_codes}}{{/return}}*/
+#### {{name}}
+```go
+func {{#preceding_struct}}({{name}} {{type}}) {{/preceding_struct}}{{name}}({{#parameter}}{{#parameters}} {{name}} {{type}},{{/parameters}}{{/parameter}}){{#return}}{{#return_values}} {{type}}{{/return_values}}{{/return}}
+```
+> {{& upper_first description}}
+{{#parameter}}##### Parametres
+| Name and Type | Description |
+| --- | --- |
+{{#parameters}}| `{{name}} {{type}}` | {{& description}} |
+{{/parameters}}{{/parameter}}{{#return}}##### Return 
+`({{#return_values}} {{name}} {{type}},{{/return_values}})`
+###### Possible Report Codes and Additional Properties
+| Code | Description and Additional Properties |
+| --- | --- |
+{{#report_codes}}| `{{& code}}` | {{& description}} |
+{{/report_codes}}{{/return}}
+##### Status and History
+| Version | Status and Changes |
+| --- | --- |
+| v0.0.0 | Reserved |
+*/
 
 // {{name}} {{& lower_first description}}
-func {{#preceding_struct}}({{name}} {{type}}){{/preceding_struct}} {{name}}({{#parameters}} {{name}} {{type}},{{/parameters}}) {{#return}}({{#return_values}} {{name}} {{type}},{{/return_values}}){{/return}}{
+func {{#preceding_struct}}({{name}} {{type}}) {{/preceding_struct}}{{name}}({{#parameter}}{{#parameters}} {{name}} {{type}},{{/parameters}}{{/parameter}}) {{#return}}({{#return_values}} {{name}} {{type}},{{/return_values}}){{/return}}{
 	//Variables
 	//Parametres
 {{#parameters}}

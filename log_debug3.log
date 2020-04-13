@@ -1244,3 +1244,902 @@
   [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
 2020-04-05T03:15:27.052Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
 2020-04-05T03:15:27.052Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-04-12T04:25:49.312Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-04-12T04:25:49.346Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:25:49.378Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-04-12T04:25:49.378Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-04-12T04:25:49.382Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-04-12T04:25:49.383Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go func' }
+2020-04-12T04:25:49.384Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:25:49.385Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:25:49.385Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:25:49.386Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/func.json": Error: ENOENT: no such file or directory, open \'go/func.json\'',
+  [length]: 2 ]
+2020-04-12T04:25:49.386Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:25:49.401Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-12T04:25:49.402Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-12T04:25:49.403Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-12T04:25:49.428Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-04-12T04:26:28.561Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2020-04-12T04:26:28.563Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameters": [\n\t\t{\n\t\t\t"name": "alignment",\n\t\t\t"type": "uint8",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "centre",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t},\n\t\t{\n\t\t\t"name": "velocity",\n\t\t\t"type": "Vector_type",\n\t\t\t"flow": "in",\n\t\t\t"description": ""\n\t\t}\n\t],\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:26:28.566Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go func',
+  name: 'FunctionName',
+  description: 'Function description.',
+  preceding_struct: { name: 'struct_name', type: '*Struct_type' },
+  parameters: 
+   [ { name: 'alignment', type: 'uint8', flow: 'in', description: '' },
+     { name: 'centre',
+       type: 'Vector_type',
+       flow: 'in',
+       description: '' },
+     { name: 'velocity',
+       type: 'Vector_type',
+       flow: 'in',
+       description: '' },
+     [length]: 3 ],
+  return: 
+   { return_values: 
+      [ { name: 'return_report',
+          type: 'error_report.ErrorReport_struct' },
+        [length]: 1 ],
+     report_codes: 
+      [ { code: 0, description: 'Success' },
+        { code: 1, description: 'Not Supported' },
+        { code: '>1', description: 'Error' },
+        [length]: 3 ] },
+  post_re: 
+   [ { search: ',\\)', replace: ' )', flags: 'gm' },
+     { search: ',;', replace: ';', flags: 'gm' },
+     [length]: 2 ] } undefined
+2020-04-12T04:26:28.568Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:26:28.569Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:26:28.571Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:26:28.572Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/func.hbs\'',
+  [length]: 2 ]
+2020-04-12T04:26:28.572Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:26:28.575Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-12T04:26:28.575Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-12T04:26:28.576Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-12T04:26:28.608Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* ### FunctionName\n* `(struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type,)`\n* > Function description.\n* #### Parametres\n* - `alignment uint8` \n* #### Parametres\n* - `centre Vector_type` \n* #### Parametres\n* - `velocity Vector_type` \n* #### Return \n* `( return_report error_report.ErrorReport_struct,)`\n* ##### Possible Report Codes and Additional Properties\n* - `0` Success\n* - `1` Not Supported\n* - `>1` Error\n\n* #### Status and History\n* - v0.0.0 Reserved*/\n\n// FunctionName function description.\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type,) ( return_report error_report.ErrorReport_struct,){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report,;\n}\n',
+  '1': 
+   [ { search: ',\\)', replace: ' )', flags: 'gm' },
+     { search: ',;', replace: ';', flags: 'gm' },
+     [length]: 2 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:26:28.608Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* ### FunctionName\n* `(struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type )`\n* > Function description.\n* #### Parametres\n* - `alignment uint8` \n* #### Parametres\n* - `centre Vector_type` \n* #### Parametres\n* - `velocity Vector_type` \n* #### Return \n* `( return_report error_report.ErrorReport_struct )`\n* ##### Possible Report Codes and Additional Properties\n* - `0` Success\n* - `1` Not Supported\n* - `>1` Error\n\n* #### Status and History\n* - v0.0.0 Reserved*/\n\n// FunctionName function description.\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [length]: 2 ]
+2020-04-12T04:26:28.609Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* ### FunctionName\n* `(struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type )`\n* > Function description.\n* #### Parametres\n* - `alignment uint8` \n* #### Parametres\n* - `centre Vector_type` \n* #### Parametres\n* - `velocity Vector_type` \n* #### Return \n* `( return_report error_report.ErrorReport_struct )`\n* ##### Possible Report Codes and Additional Properties\n* - `0` Success\n* - `1` Not Supported\n* - `>1` Error\n\n* #### Status and History\n* - v0.0.0 Reserved*/\n\n// FunctionName function description.\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [ 0,
+    '/**\n* ### FunctionName\n* `(struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type )`\n* > Function description.\n* #### Parametres\n* - `alignment uint8` \n* #### Parametres\n* - `centre Vector_type` \n* #### Parametres\n* - `velocity Vector_type` \n* #### Return \n* `( return_report error_report.ErrorReport_struct )`\n* ##### Possible Report Codes and Additional Properties\n* - `0` Success\n* - `1` Not Supported\n* - `>1` Error\n\n* #### Status and History\n* - v0.0.0 Reserved*/\n\n// FunctionName function description.\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-04-12T04:26:28.609Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* ### FunctionName\n* `(struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type )`\n* > Function description.\n* #### Parametres\n* - `alignment uint8` \n* #### Parametres\n* - `centre Vector_type` \n* #### Parametres\n* - `velocity Vector_type` \n* #### Return \n* `( return_report error_report.ErrorReport_struct )`\n* ##### Possible Report Codes and Additional Properties\n* - `0` Success\n* - `1` Not Supported\n* - `>1` Error\n\n* #### Status and History\n* - v0.0.0 Reserved*/\n\n// FunctionName function description.\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [length]: 2 ]
+2020-04-12T04:26:28.609Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* ### FunctionName\n* `(struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type )`\n* > Function description.\n* #### Parametres\n* - `alignment uint8` \n* #### Parametres\n* - `centre Vector_type` \n* #### Parametres\n* - `velocity Vector_type` \n* #### Return \n* `( return_report error_report.ErrorReport_struct )`\n* ##### Possible Report Codes and Additional Properties\n* - `0` Success\n* - `1` Not Supported\n* - `>1` Error\n\n* #### Status and History\n* - v0.0.0 Reserved*/\n\n// FunctionName function description.\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:26:28.639Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-04-12T04:26:28.640Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-04-12T04:39:06.694Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-04-12T04:39:06.700Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:39:06.701Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-04-12T04:39:06.701Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-04-12T04:39:06.703Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-04-12T04:39:06.703Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go func' }
+2020-04-12T04:39:06.704Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:39:06.704Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:39:06.704Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:39:06.705Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/func.json": Error: ENOENT: no such file or directory, open \'go/func.json\'',
+  [length]: 2 ]
+2020-04-12T04:39:06.705Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:39:06.706Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-04-12T04:39:29.525Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-04-12T04:39:29.531Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:39:29.532Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-04-12T04:39:29.532Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-04-12T04:39:29.534Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-04-12T04:39:29.534Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go func' }
+2020-04-12T04:39:29.535Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:39:29.535Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:39:29.535Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:39:29.536Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/func.json": Error: ENOENT: no such file or directory, open \'go/func.json\'',
+  [length]: 2 ]
+2020-04-12T04:39:29.536Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:39:29.536Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameter": {\n\t\t"parameters": [\n\t\t\t{\n\t\t\t\t"name": "alignment",\n\t\t\t\t"type": "uint8",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "centre",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "velocity",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t}\n\t\t]\n\t},\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-12T04:39:29.537Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameter": {\n\t\t"parameters": [\n\t\t\t{\n\t\t\t\t"name": "alignment",\n\t\t\t\t"type": "uint8",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "centre",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "velocity",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t}\n\t\t]\n\t},\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-12T04:39:29.537Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameter": {\n\t\t"parameters": [\n\t\t\t{\n\t\t\t\t"name": "alignment",\n\t\t\t\t"type": "uint8",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "centre",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "velocity",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t}\n\t\t]\n\t},\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-12T04:39:29.550Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-04-12T04:39:32.911Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameter": {\n\t\t"parameters": [\n\t\t\t{\n\t\t\t\t"name": "alignment",\n\t\t\t\t"type": "uint8",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "centre",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "velocity",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t}\n\t\t]\n\t},\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2020-04-12T04:39:32.911Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameter": {\n\t\t"parameters": [\n\t\t\t{\n\t\t\t\t"name": "alignment",\n\t\t\t\t"type": "uint8",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "centre",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "velocity",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t}\n\t\t]\n\t},\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:39:32.912Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go func',
+  name: 'FunctionName',
+  description: 'Function description.',
+  preceding_struct: { name: 'struct_name', type: '*Struct_type' },
+  parameter: 
+   { parameters: 
+      [ { name: 'alignment', type: 'uint8', flow: 'in', description: '' },
+        { name: 'centre',
+          type: 'Vector_type',
+          flow: 'in',
+          description: '' },
+        { name: 'velocity',
+          type: 'Vector_type',
+          flow: 'in',
+          description: '' },
+        [length]: 3 ] },
+  return: 
+   { return_values: 
+      [ { name: 'return_report',
+          type: 'error_report.ErrorReport_struct' },
+        [length]: 1 ],
+     report_codes: 
+      [ { code: 0, description: 'Success' },
+        { code: 1, description: 'Not Supported' },
+        { code: '>1', description: 'Error' },
+        [length]: 3 ] },
+  post_re: 
+   [ { search: ',\\)', replace: ' )', flags: 'gm' },
+     { search: ',;', replace: ';', flags: 'gm' },
+     [length]: 2 ] } undefined
+2020-04-12T04:39:32.912Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:39:32.913Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:39:32.913Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:39:32.913Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/func.hbs\'',
+  [length]: 2 ]
+2020-04-12T04:39:32.913Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:39:32.914Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-12T04:39:32.914Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-12T04:39:32.914Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-12T04:39:32.939Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n### FunctionName\n```go\n(struct_name *Struct_type) FunctionName()\n```\n> Function description.\n#### Parametres\n- `alignment uint8` \n- `centre Vector_type` \n- `velocity Vector_type` \n#### Return \n`( return_report error_report.ErrorReport_struct,)`\n##### Possible Report Codes and Additional Properties\n- `0` Success\n- `1` Not Supported\n- `>1` Error\n\n#### Status and History\n- v0.0.0 Reserved\n*/\n\n// FunctionName function description.\nfunc (struct_name *Struct_type) FunctionName() ( return_report error_report.ErrorReport_struct,){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report,;\n}\n',
+  '1': 
+   [ { search: ',\\)', replace: ' )', flags: 'gm' },
+     { search: ',;', replace: ';', flags: 'gm' },
+     [length]: 2 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:39:32.939Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n### FunctionName\n```go\n(struct_name *Struct_type) FunctionName()\n```\n> Function description.\n#### Parametres\n- `alignment uint8` \n- `centre Vector_type` \n- `velocity Vector_type` \n#### Return \n`( return_report error_report.ErrorReport_struct )`\n##### Possible Report Codes and Additional Properties\n- `0` Success\n- `1` Not Supported\n- `>1` Error\n\n#### Status and History\n- v0.0.0 Reserved\n*/\n\n// FunctionName function description.\nfunc (struct_name *Struct_type) FunctionName() ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [length]: 2 ]
+2020-04-12T04:39:32.939Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n### FunctionName\n```go\n(struct_name *Struct_type) FunctionName()\n```\n> Function description.\n#### Parametres\n- `alignment uint8` \n- `centre Vector_type` \n- `velocity Vector_type` \n#### Return \n`( return_report error_report.ErrorReport_struct )`\n##### Possible Report Codes and Additional Properties\n- `0` Success\n- `1` Not Supported\n- `>1` Error\n\n#### Status and History\n- v0.0.0 Reserved\n*/\n\n// FunctionName function description.\nfunc (struct_name *Struct_type) FunctionName() ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [ 0,
+    '/**\n### FunctionName\n```go\n(struct_name *Struct_type) FunctionName()\n```\n> Function description.\n#### Parametres\n- `alignment uint8` \n- `centre Vector_type` \n- `velocity Vector_type` \n#### Return \n`( return_report error_report.ErrorReport_struct )`\n##### Possible Report Codes and Additional Properties\n- `0` Success\n- `1` Not Supported\n- `>1` Error\n\n#### Status and History\n- v0.0.0 Reserved\n*/\n\n// FunctionName function description.\nfunc (struct_name *Struct_type) FunctionName() ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-04-12T04:39:32.939Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n### FunctionName\n```go\n(struct_name *Struct_type) FunctionName()\n```\n> Function description.\n#### Parametres\n- `alignment uint8` \n- `centre Vector_type` \n- `velocity Vector_type` \n#### Return \n`( return_report error_report.ErrorReport_struct )`\n##### Possible Report Codes and Additional Properties\n- `0` Success\n- `1` Not Supported\n- `>1` Error\n\n#### Status and History\n- v0.0.0 Reserved\n*/\n\n// FunctionName function description.\nfunc (struct_name *Struct_type) FunctionName() ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [length]: 2 ]
+2020-04-12T04:39:32.940Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n### FunctionName\n```go\n(struct_name *Struct_type) FunctionName()\n```\n> Function description.\n#### Parametres\n- `alignment uint8` \n- `centre Vector_type` \n- `velocity Vector_type` \n#### Return \n`( return_report error_report.ErrorReport_struct )`\n##### Possible Report Codes and Additional Properties\n- `0` Success\n- `1` Not Supported\n- `>1` Error\n\n#### Status and History\n- v0.0.0 Reserved\n*/\n\n// FunctionName function description.\nfunc (struct_name *Struct_type) FunctionName() ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:39:32.946Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-04-12T04:39:32.946Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-04-12T04:44:45.663Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-04-12T04:44:45.669Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:44:45.670Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-04-12T04:44:45.670Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-04-12T04:44:45.672Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-04-12T04:44:45.672Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go func' }
+2020-04-12T04:44:45.672Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:44:45.673Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:44:45.673Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:44:45.674Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/func.json": Error: ENOENT: no such file or directory, open \'go/func.json\'',
+  [length]: 2 ]
+2020-04-12T04:44:45.674Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:44:45.674Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameter": {\n\t\t"parameters": [\n\t\t\t{\n\t\t\t\t"name": "alignment",\n\t\t\t\t"type": "uint8",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "centre",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "velocity",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t}\n\t\t]\n\t},\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-12T04:44:45.675Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameter": {\n\t\t"parameters": [\n\t\t\t{\n\t\t\t\t"name": "alignment",\n\t\t\t\t"type": "uint8",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "centre",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "velocity",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t}\n\t\t]\n\t},\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-12T04:44:45.675Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameter": {\n\t\t"parameters": [\n\t\t\t{\n\t\t\t\t"name": "alignment",\n\t\t\t\t"type": "uint8",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "centre",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "velocity",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t}\n\t\t]\n\t},\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-12T04:44:45.687Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-04-12T04:44:48.886Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameter": {\n\t\t"parameters": [\n\t\t\t{\n\t\t\t\t"name": "alignment",\n\t\t\t\t"type": "uint8",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "centre",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "velocity",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t}\n\t\t]\n\t},\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2020-04-12T04:44:48.887Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameter": {\n\t\t"parameters": [\n\t\t\t{\n\t\t\t\t"name": "alignment",\n\t\t\t\t"type": "uint8",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "centre",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "velocity",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t}\n\t\t]\n\t},\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:44:48.887Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go func',
+  name: 'FunctionName',
+  description: 'Function description.',
+  preceding_struct: { name: 'struct_name', type: '*Struct_type' },
+  parameter: 
+   { parameters: 
+      [ { name: 'alignment', type: 'uint8', flow: 'in', description: '' },
+        { name: 'centre',
+          type: 'Vector_type',
+          flow: 'in',
+          description: '' },
+        { name: 'velocity',
+          type: 'Vector_type',
+          flow: 'in',
+          description: '' },
+        [length]: 3 ] },
+  return: 
+   { return_values: 
+      [ { name: 'return_report',
+          type: 'error_report.ErrorReport_struct' },
+        [length]: 1 ],
+     report_codes: 
+      [ { code: 0, description: 'Success' },
+        { code: 1, description: 'Not Supported' },
+        { code: '>1', description: 'Error' },
+        [length]: 3 ] },
+  post_re: 
+   [ { search: ',\\)', replace: ' )', flags: 'gm' },
+     { search: ',;', replace: ';', flags: 'gm' },
+     [length]: 2 ] } undefined
+2020-04-12T04:44:48.888Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:44:48.888Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:44:48.888Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:44:48.888Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/func.hbs\'',
+  [length]: 2 ]
+2020-04-12T04:44:48.889Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:44:48.889Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-12T04:44:48.890Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-12T04:44:48.890Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-12T04:44:48.916Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n### FunctionName\n```go\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type,) error_report.ErrorReport_struct\n```\n> Function description.\n#### Parametres\n- `alignment uint8` \n- `centre Vector_type` \n- `velocity Vector_type` \n#### Return \n`( return_report error_report.ErrorReport_struct,)`\n##### Possible Report Codes and Additional Properties\n- `0` Success\n- `1` Not Supported\n- `>1` Error\n\n#### Status and History\n- v0.0.0 Reserved\n*/\n\n// FunctionName function description.\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type,) ( return_report error_report.ErrorReport_struct,){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report,;\n}\n',
+  '1': 
+   [ { search: ',\\)', replace: ' )', flags: 'gm' },
+     { search: ',;', replace: ';', flags: 'gm' },
+     [length]: 2 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:44:48.916Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n### FunctionName\n```go\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type ) error_report.ErrorReport_struct\n```\n> Function description.\n#### Parametres\n- `alignment uint8` \n- `centre Vector_type` \n- `velocity Vector_type` \n#### Return \n`( return_report error_report.ErrorReport_struct )`\n##### Possible Report Codes and Additional Properties\n- `0` Success\n- `1` Not Supported\n- `>1` Error\n\n#### Status and History\n- v0.0.0 Reserved\n*/\n\n// FunctionName function description.\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [length]: 2 ]
+2020-04-12T04:44:48.916Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n### FunctionName\n```go\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type ) error_report.ErrorReport_struct\n```\n> Function description.\n#### Parametres\n- `alignment uint8` \n- `centre Vector_type` \n- `velocity Vector_type` \n#### Return \n`( return_report error_report.ErrorReport_struct )`\n##### Possible Report Codes and Additional Properties\n- `0` Success\n- `1` Not Supported\n- `>1` Error\n\n#### Status and History\n- v0.0.0 Reserved\n*/\n\n// FunctionName function description.\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [ 0,
+    '/**\n### FunctionName\n```go\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type ) error_report.ErrorReport_struct\n```\n> Function description.\n#### Parametres\n- `alignment uint8` \n- `centre Vector_type` \n- `velocity Vector_type` \n#### Return \n`( return_report error_report.ErrorReport_struct )`\n##### Possible Report Codes and Additional Properties\n- `0` Success\n- `1` Not Supported\n- `>1` Error\n\n#### Status and History\n- v0.0.0 Reserved\n*/\n\n// FunctionName function description.\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-04-12T04:44:48.916Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n### FunctionName\n```go\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type ) error_report.ErrorReport_struct\n```\n> Function description.\n#### Parametres\n- `alignment uint8` \n- `centre Vector_type` \n- `velocity Vector_type` \n#### Return \n`( return_report error_report.ErrorReport_struct )`\n##### Possible Report Codes and Additional Properties\n- `0` Success\n- `1` Not Supported\n- `>1` Error\n\n#### Status and History\n- v0.0.0 Reserved\n*/\n\n// FunctionName function description.\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [length]: 2 ]
+2020-04-12T04:44:48.917Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n### FunctionName\n```go\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type ) error_report.ErrorReport_struct\n```\n> Function description.\n#### Parametres\n- `alignment uint8` \n- `centre Vector_type` \n- `velocity Vector_type` \n#### Return \n`( return_report error_report.ErrorReport_struct )`\n##### Possible Report Codes and Additional Properties\n- `0` Success\n- `1` Not Supported\n- `>1` Error\n\n#### Status and History\n- v0.0.0 Reserved\n*/\n\n// FunctionName function description.\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:44:48.924Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-04-12T04:44:48.924Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-04-12T04:51:54.511Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-04-12T04:51:54.518Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:51:54.519Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-04-12T04:51:54.519Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-04-12T04:51:54.520Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-04-12T04:51:54.521Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'go func' }
+2020-04-12T04:51:54.521Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:51:54.521Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:51:54.522Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:51:54.522Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "go/func.json": Error: ENOENT: no such file or directory, open \'go/func.json\'',
+  [length]: 2 ]
+2020-04-12T04:51:54.522Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/go/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:51:54.523Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameter": {\n\t\t"parameters": [\n\t\t\t{\n\t\t\t\t"name": "alignment",\n\t\t\t\t"type": "uint8",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "centre",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "velocity",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t}\n\t\t]\n\t},\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-12T04:51:54.523Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameter": {\n\t\t"parameters": [\n\t\t\t{\n\t\t\t\t"name": "alignment",\n\t\t\t\t"type": "uint8",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "centre",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "velocity",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t}\n\t\t]\n\t},\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-12T04:51:54.523Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameter": {\n\t\t"parameters": [\n\t\t\t{\n\t\t\t\t"name": "alignment",\n\t\t\t\t"type": "uint8",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "centre",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "velocity",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t}\n\t\t]\n\t},\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-12T04:51:54.537Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-04-12T04:51:57.796Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameter": {\n\t\t"parameters": [\n\t\t\t{\n\t\t\t\t"name": "alignment",\n\t\t\t\t"type": "uint8",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "centre",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "velocity",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t}\n\t\t]\n\t},\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2020-04-12T04:51:57.796Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "go func",\n\t"name": "FunctionName",\n\t"description": "Function description.",\n\t"preceding_struct": {\n\t\t"name": "struct_name",\n\t\t"type": "*Struct_type"\n\t},\n\t"parameter": {\n\t\t"parameters": [\n\t\t\t{\n\t\t\t\t"name": "alignment",\n\t\t\t\t"type": "uint8",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "centre",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t},\n\t\t\t{\n\t\t\t\t"name": "velocity",\n\t\t\t\t"type": "Vector_type",\n\t\t\t\t"flow": "in",\n\t\t\t\t"description": ""\n\t\t\t}\n\t\t]\n\t},\n\t"return": {\n\t\t"return_values": [\n\t\t\t{\n\t\t\t\t"name": "return_report",\n\t\t\t\t"type": "error_report.ErrorReport_struct"\n\t\t\t}\n\t\t],\n\t\t"report_codes": [\n\t\t\t{\n\t\t\t\t"code": 0,\n\t\t\t\t"description": "Success"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": 1,\n\t\t\t\t"description": "Not Supported"\n\t\t\t},\n\t\t\t{\n\t\t\t\t"code": ">1",\n\t\t\t\t"description": "Error"\n\t\t\t}\n\t\t]\n\t},\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t},\n\t\t{\n\t\t\t"search": ",;",\n\t\t\t"replace": ";",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:51:57.797Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'go func',
+  name: 'FunctionName',
+  description: 'Function description.',
+  preceding_struct: { name: 'struct_name', type: '*Struct_type' },
+  parameter: 
+   { parameters: 
+      [ { name: 'alignment', type: 'uint8', flow: 'in', description: '' },
+        { name: 'centre',
+          type: 'Vector_type',
+          flow: 'in',
+          description: '' },
+        { name: 'velocity',
+          type: 'Vector_type',
+          flow: 'in',
+          description: '' },
+        [length]: 3 ] },
+  return: 
+   { return_values: 
+      [ { name: 'return_report',
+          type: 'error_report.ErrorReport_struct' },
+        [length]: 1 ],
+     report_codes: 
+      [ { code: 0, description: 'Success' },
+        { code: 1, description: 'Not Supported' },
+        { code: '>1', description: 'Error' },
+        [length]: 3 ] },
+  post_re: 
+   [ { search: ',\\)', replace: ' )', flags: 'gm' },
+     { search: ',;', replace: ';', flags: 'gm' },
+     [length]: 2 ] } undefined
+2020-04-12T04:51:57.798Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'go func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:51:57.798Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:51:57.798Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:51:57.798Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "go/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'go/func.hbs\'',
+  [length]: 2 ]
+2020-04-12T04:51:57.799Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/go/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:51:57.799Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-12T04:51:57.799Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-12T04:51:57.800Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-12T04:51:57.825Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n### FunctionName\n```go\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type,) error_report.ErrorReport_struct\n```\n> Function description.\n#### Parametres\n| Name and Type | Description |\n| --- | --- |\n| `alignment uint8` |  |\n| `centre Vector_type` |  |\n| `velocity Vector_type` |  |\n#### Return \n`( return_report error_report.ErrorReport_struct,)`\n##### Possible Report Codes and Additional Properties\n| Code | Description and Additional Properties |\n| --- | --- |\n| `0` | Success |\n| `1` | Not Supported |\n| `>1` | Error |\n\n#### Status and History\n| Version | Status and Changes |\n| --- | --- |\n| v0.0.0 | Reserved |\n*/\n\n// FunctionName function description.\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type,) ( return_report error_report.ErrorReport_struct,){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report,;\n}\n',
+  '1': 
+   [ { search: ',\\)', replace: ' )', flags: 'gm' },
+     { search: ',;', replace: ';', flags: 'gm' },
+     [length]: 2 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:51:57.825Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n### FunctionName\n```go\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type ) error_report.ErrorReport_struct\n```\n> Function description.\n#### Parametres\n| Name and Type | Description |\n| --- | --- |\n| `alignment uint8` |  |\n| `centre Vector_type` |  |\n| `velocity Vector_type` |  |\n#### Return \n`( return_report error_report.ErrorReport_struct )`\n##### Possible Report Codes and Additional Properties\n| Code | Description and Additional Properties |\n| --- | --- |\n| `0` | Success |\n| `1` | Not Supported |\n| `>1` | Error |\n\n#### Status and History\n| Version | Status and Changes |\n| --- | --- |\n| v0.0.0 | Reserved |\n*/\n\n// FunctionName function description.\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [length]: 2 ]
+2020-04-12T04:51:57.825Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n### FunctionName\n```go\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type ) error_report.ErrorReport_struct\n```\n> Function description.\n#### Parametres\n| Name and Type | Description |\n| --- | --- |\n| `alignment uint8` |  |\n| `centre Vector_type` |  |\n| `velocity Vector_type` |  |\n#### Return \n`( return_report error_report.ErrorReport_struct )`\n##### Possible Report Codes and Additional Properties\n| Code | Description and Additional Properties |\n| --- | --- |\n| `0` | Success |\n| `1` | Not Supported |\n| `>1` | Error |\n\n#### Status and History\n| Version | Status and Changes |\n| --- | --- |\n| v0.0.0 | Reserved |\n*/\n\n// FunctionName function description.\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [ 0,
+    '/**\n### FunctionName\n```go\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type ) error_report.ErrorReport_struct\n```\n> Function description.\n#### Parametres\n| Name and Type | Description |\n| --- | --- |\n| `alignment uint8` |  |\n| `centre Vector_type` |  |\n| `velocity Vector_type` |  |\n#### Return \n`( return_report error_report.ErrorReport_struct )`\n##### Possible Report Codes and Additional Properties\n| Code | Description and Additional Properties |\n| --- | --- |\n| `0` | Success |\n| `1` | Not Supported |\n| `>1` | Error |\n\n#### Status and History\n| Version | Status and Changes |\n| --- | --- |\n| v0.0.0 | Reserved |\n*/\n\n// FunctionName function description.\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-04-12T04:51:57.826Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n### FunctionName\n```go\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type ) error_report.ErrorReport_struct\n```\n> Function description.\n#### Parametres\n| Name and Type | Description |\n| --- | --- |\n| `alignment uint8` |  |\n| `centre Vector_type` |  |\n| `velocity Vector_type` |  |\n#### Return \n`( return_report error_report.ErrorReport_struct )`\n##### Possible Report Codes and Additional Properties\n| Code | Description and Additional Properties |\n| --- | --- |\n| `0` | Success |\n| `1` | Not Supported |\n| `>1` | Error |\n\n#### Status and History\n| Version | Status and Changes |\n| --- | --- |\n| v0.0.0 | Reserved |\n*/\n\n// FunctionName function description.\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  [length]: 2 ]
+2020-04-12T04:51:57.826Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n### FunctionName\n```go\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type ) error_report.ErrorReport_struct\n```\n> Function description.\n#### Parametres\n| Name and Type | Description |\n| --- | --- |\n| `alignment uint8` |  |\n| `centre Vector_type` |  |\n| `velocity Vector_type` |  |\n#### Return \n`( return_report error_report.ErrorReport_struct )`\n##### Possible Report Codes and Additional Properties\n| Code | Description and Additional Properties |\n| --- | --- |\n| `0` | Success |\n| `1` | Not Supported |\n| `>1` | Error |\n\n#### Status and History\n| Version | Status and Changes |\n| --- | --- |\n| v0.0.0 | Reserved |\n*/\n\n// FunctionName function description.\nfunc (struct_name *Struct_type) FunctionName( alignment uint8, centre Vector_type, velocity Vector_type ) ( return_report error_report.ErrorReport_struct ){\n\t//Variables\n\t//Parametres\n\t//Function\n\t//Return\n\treturn return_report;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'go func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-12T04:51:57.833Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-04-12T04:51:57.833Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-04-13T03:54:55.562Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-04-13T03:54:55.593Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-13T03:54:55.631Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-04-13T03:54:55.631Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-04-13T03:54:55.633Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-04-13T03:54:55.633Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'js file' }
+2020-04-13T03:54:55.634Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'js file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-13T03:54:55.634Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-13T03:54:55.635Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-13T03:54:55.635Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/file.json": Error: ENOENT: no such file or directory, open \'js/file.json\'',
+  [length]: 2 ]
+2020-04-13T03:54:55.635Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-13T03:54:55.636Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": "Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": "process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": true\n}',
+  [length]: 2 ]
+2020-04-13T03:54:55.636Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": "Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": "process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": true\n}',
+  [length]: 2 ]
+2020-04-13T03:54:55.637Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": "Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": "process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": true\n}',
+  [length]: 2 ]
+2020-04-13T03:54:55.655Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-04-13T03:55:05.011Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": "Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": "process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": true\n}\n' }
+2020-04-13T03:55:05.012Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": "Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": "process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": true\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-13T03:55:05.013Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'js file',
+  filename: 'filename.js',
+  description: 'Brief description.',
+  modulename: 'ModuleName',
+  processname: 'process-name',
+  strict: true,
+  main: true,
+  logger: true,
+  cli: true } undefined
+2020-04-13T03:55:05.014Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'js file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-13T03:55:05.014Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-13T03:55:05.015Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-13T03:55:05.015Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "js/file.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'js/file.hbs\'',
+  [length]: 2 ]
+2020-04-13T03:55:05.016Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-13T03:55:05.017Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-13T03:55:05.018Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-13T03:55:05.018Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-13T03:55:05.052Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '#!/usr/local/bin/node\n\'use strict\';\n/**\n* @file filename.js\n* @alias source/main.js\n* @description Brief description.\n* @author Anadian\n* @license \tCopyright 2020 Anadian\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//#Dependencies\n\t//##Internal\n\t//##Standard\n\tconst Utility = require(\'util\');\n\t//##External\n\n//#Constants\nconst FILENAME = \'filename.js\';\nconst MODULE_NAME = \'ModuleName\';\nvar PROCESS_NAME = \'\';\nif(require.main === module){\n\tPROCESS_NAME = \'process-name\';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n//##Errors\n\n//#Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//#Functions\n/**\n* @function Logger_Set\n* @alias SetLogger\n* @access public\n* @description Allows this module\'s functions to log the given logger object.\n* @param {?object} logger - The logger to be used for logging or `null` to disable logging.\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` if logger is not an object or `null`. \n* @since v0.0.0\n*/\nfunction Logger_Set( logger ){\n\tvar return_error = null;\n\tconst FUNCTION_NAME = \'Logger_Set\';\n\t//Variables\n\t//Parametre checks\n\tif( typeof(logger) === \'object\' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\treturn_error = new TypeError(\'Param "logger" is not an object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\n\t//Function\n\tLogger = logger;\n\t//Return\n}\n\n//#Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'MainExecutionFunction\';\n\t//##Dependencies\n\t\t//###Internal\n\t\t//###Standard\n\t\t//###External\n\t\tconst MakeDir = require(\'make-dir\');\n\t\tconst ApplicationLogWinstonInterface = require(\'application-log-winston-interface\');\n\t\tconst EnvPaths = require(\'env-paths\');\n\t\tconst CommandLineArgs = require(\'command-line-args\');\n\t\tconst CommandLineUsage = require(\'command-line-usage\');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: \'help\', alias: \'h\', type: Boolean, description: \'Writes this help text to stdout.\' },\n\t\t{ name: \'noop\', alias: \'n\', type: Boolean, description: \'Show what would be done without actually doing it.\' },\n\t\t{ name: \'verbose\', alias: \'v\', type: Boolean, description: \'Verbose output to stderr.\' },\n\t\t{ name: \'version\', alias: \'V\', type: Boolean, description: \'Writes version information to stdout.\'},\n\t\t//Input\n\t\t{ name: \'stdin\', alias: \'i\', type: Boolean, description: \'Read input from stdin.\' },\n\t\t{ name: \'input\', alias: \'I\', type: String, description: \'The path to the file to read input from.\'},\n\t\t//Output\n\t\t{ name: \'stdout\', alias: \'o\', type: Boolean, description: \'Write output to stdout.\' },\n\t\t{ name: \'output\', alias: \'O\', type: String, description: \'The name of the file to write output to.\' },\n\t\t{ name: \'pasteboard\', alias: \'p\', type: Boolean, description: \'Copy output to pasteboard (clipboard).\'},\n\t\t//Config\n\t\t{ name: \'config\', alias: \'c\', type: Boolean, description: \'Print configuration values and information to stdout.\' },\n\t\t{ name: \'config-file\', alias: \'C\', type: String, description: \'Use the given config file instead of the default.\' },\n\t];\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error(\'MakeDir.sync threw: %s\', error);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger(\'debug.log\', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'Start of execution block.\'});\n\t//Options\n\tvar Options = CommandLineArgs( OptionDefinitions );\n\t//Config\n\t\t\tif( Options.verbose === true ){\n\t\t\t\tlogger.real_transports.console_stderr.level = \'debug\';\n\t\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'note\', message: Utility.format(\'Logger: console_stderr transport log level set to: %s\', logger.real_transports.console_stderr.level)});\n\t\t\t}\n\t//Main\n\tif(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\theader: \'process-name\',\n\t\t\t\tcontent: \'Brief description.\',\n\t\t\t},\n\t\t\t{\n\t\t\t\theader: \'Options\',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst help_message = CommandLineUsage(help_sections_array);\n\t\tconsole.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'End of execution block.\'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n',
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-13T03:55:05.052Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2020-04-13T03:55:05.052Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '#!/usr/local/bin/node\n\'use strict\';\n/**\n* @file filename.js\n* @alias source/main.js\n* @description Brief description.\n* @author Anadian\n* @license \tCopyright 2020 Anadian\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//#Dependencies\n\t//##Internal\n\t//##Standard\n\tconst Utility = require(\'util\');\n\t//##External\n\n//#Constants\nconst FILENAME = \'filename.js\';\nconst MODULE_NAME = \'ModuleName\';\nvar PROCESS_NAME = \'\';\nif(require.main === module){\n\tPROCESS_NAME = \'process-name\';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n//##Errors\n\n//#Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//#Functions\n/**\n* @function Logger_Set\n* @alias SetLogger\n* @access public\n* @description Allows this module\'s functions to log the given logger object.\n* @param {?object} logger - The logger to be used for logging or `null` to disable logging.\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` if logger is not an object or `null`. \n* @since v0.0.0\n*/\nfunction Logger_Set( logger ){\n\tvar return_error = null;\n\tconst FUNCTION_NAME = \'Logger_Set\';\n\t//Variables\n\t//Parametre checks\n\tif( typeof(logger) === \'object\' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\treturn_error = new TypeError(\'Param "logger" is not an object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\n\t//Function\n\tLogger = logger;\n\t//Return\n}\n\n//#Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'MainExecutionFunction\';\n\t//##Dependencies\n\t\t//###Internal\n\t\t//###Standard\n\t\t//###External\n\t\tconst MakeDir = require(\'make-dir\');\n\t\tconst ApplicationLogWinstonInterface = require(\'application-log-winston-interface\');\n\t\tconst EnvPaths = require(\'env-paths\');\n\t\tconst CommandLineArgs = require(\'command-line-args\');\n\t\tconst CommandLineUsage = require(\'command-line-usage\');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: \'help\', alias: \'h\', type: Boolean, description: \'Writes this help text to stdout.\' },\n\t\t{ name: \'noop\', alias: \'n\', type: Boolean, description: \'Show what would be done without actually doing it.\' },\n\t\t{ name: \'verbose\', alias: \'v\', type: Boolean, description: \'Verbose output to stderr.\' },\n\t\t{ name: \'version\', alias: \'V\', type: Boolean, description: \'Writes version information to stdout.\'},\n\t\t//Input\n\t\t{ name: \'stdin\', alias: \'i\', type: Boolean, description: \'Read input from stdin.\' },\n\t\t{ name: \'input\', alias: \'I\', type: String, description: \'The path to the file to read input from.\'},\n\t\t//Output\n\t\t{ name: \'stdout\', alias: \'o\', type: Boolean, description: \'Write output to stdout.\' },\n\t\t{ name: \'output\', alias: \'O\', type: String, description: \'The name of the file to write output to.\' },\n\t\t{ name: \'pasteboard\', alias: \'p\', type: Boolean, description: \'Copy output to pasteboard (clipboard).\'},\n\t\t//Config\n\t\t{ name: \'config\', alias: \'c\', type: Boolean, description: \'Print configuration values and information to stdout.\' },\n\t\t{ name: \'config-file\', alias: \'C\', type: String, description: \'Use the given config file instead of the default.\' },\n\t];\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error(\'MakeDir.sync threw: %s\', error);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger(\'debug.log\', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'Start of execution block.\'});\n\t//Options\n\tvar Options = CommandLineArgs( OptionDefinitions );\n\t//Config\n\t\t\tif( Options.verbose === true ){\n\t\t\t\tlogger.real_transports.console_stderr.level = \'debug\';\n\t\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'note\', message: Utility.format(\'Logger: console_stderr transport log level set to: %s\', logger.real_transports.console_stderr.level)});\n\t\t\t}\n\t//Main\n\tif(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\theader: \'process-name\',\n\t\t\t\tcontent: \'Brief description.\',\n\t\t\t},\n\t\t\t{\n\t\t\t\theader: \'Options\',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst help_message = CommandLineUsage(help_sections_array);\n\t\tconsole.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'End of execution block.\'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n',
+  [length]: 2 ]
+2020-04-13T03:55:05.053Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '#!/usr/local/bin/node\n\'use strict\';\n/**\n* @file filename.js\n* @alias source/main.js\n* @description Brief description.\n* @author Anadian\n* @license \tCopyright 2020 Anadian\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//#Dependencies\n\t//##Internal\n\t//##Standard\n\tconst Utility = require(\'util\');\n\t//##External\n\n//#Constants\nconst FILENAME = \'filename.js\';\nconst MODULE_NAME = \'ModuleName\';\nvar PROCESS_NAME = \'\';\nif(require.main === module){\n\tPROCESS_NAME = \'process-name\';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n//##Errors\n\n//#Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//#Functions\n/**\n* @function Logger_Set\n* @alias SetLogger\n* @access public\n* @description Allows this module\'s functions to log the given logger object.\n* @param {?object} logger - The logger to be used for logging or `null` to disable logging.\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` if logger is not an object or `null`. \n* @since v0.0.0\n*/\nfunction Logger_Set( logger ){\n\tvar return_error = null;\n\tconst FUNCTION_NAME = \'Logger_Set\';\n\t//Variables\n\t//Parametre checks\n\tif( typeof(logger) === \'object\' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\treturn_error = new TypeError(\'Param "logger" is not an object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\n\t//Function\n\tLogger = logger;\n\t//Return\n}\n\n//#Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'MainExecutionFunction\';\n\t//##Dependencies\n\t\t//###Internal\n\t\t//###Standard\n\t\t//###External\n\t\tconst MakeDir = require(\'make-dir\');\n\t\tconst ApplicationLogWinstonInterface = require(\'application-log-winston-interface\');\n\t\tconst EnvPaths = require(\'env-paths\');\n\t\tconst CommandLineArgs = require(\'command-line-args\');\n\t\tconst CommandLineUsage = require(\'command-line-usage\');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: \'help\', alias: \'h\', type: Boolean, description: \'Writes this help text to stdout.\' },\n\t\t{ name: \'noop\', alias: \'n\', type: Boolean, description: \'Show what would be done without actually doing it.\' },\n\t\t{ name: \'verbose\', alias: \'v\', type: Boolean, description: \'Verbose output to stderr.\' },\n\t\t{ name: \'version\', alias: \'V\', type: Boolean, description: \'Writes version information to stdout.\'},\n\t\t//Input\n\t\t{ name: \'stdin\', alias: \'i\', type: Boolean, description: \'Read input from stdin.\' },\n\t\t{ name: \'input\', alias: \'I\', type: String, description: \'The path to the file to read input from.\'},\n\t\t//Output\n\t\t{ name: \'stdout\', alias: \'o\', type: Boolean, description: \'Write output to stdout.\' },\n\t\t{ name: \'output\', alias: \'O\', type: String, description: \'The name of the file to write output to.\' },\n\t\t{ name: \'pasteboard\', alias: \'p\', type: Boolean, description: \'Copy output to pasteboard (clipboard).\'},\n\t\t//Config\n\t\t{ name: \'config\', alias: \'c\', type: Boolean, description: \'Print configuration values and information to stdout.\' },\n\t\t{ name: \'config-file\', alias: \'C\', type: String, description: \'Use the given config file instead of the default.\' },\n\t];\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error(\'MakeDir.sync threw: %s\', error);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger(\'debug.log\', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'Start of execution block.\'});\n\t//Options\n\tvar Options = CommandLineArgs( OptionDefinitions );\n\t//Config\n\t\t\tif( Options.verbose === true ){\n\t\t\t\tlogger.real_transports.console_stderr.level = \'debug\';\n\t\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'note\', message: Utility.format(\'Logger: console_stderr transport log level set to: %s\', logger.real_transports.console_stderr.level)});\n\t\t\t}\n\t//Main\n\tif(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\theader: \'process-name\',\n\t\t\t\tcontent: \'Brief description.\',\n\t\t\t},\n\t\t\t{\n\t\t\t\theader: \'Options\',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst help_message = CommandLineUsage(help_sections_array);\n\t\tconsole.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'End of execution block.\'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n',
+  [ 0,
+    '#!/usr/local/bin/node\n\'use strict\';\n/**\n* @file filename.js\n* @alias source/main.js\n* @description Brief description.\n* @author Anadian\n* @license \tCopyright 2020 Anadian\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//#Dependencies\n\t//##Internal\n\t//##Standard\n\tconst Utility = require(\'util\');\n\t//##External\n\n//#Constants\nconst FILENAME = \'filename.js\';\nconst MODULE_NAME = \'ModuleName\';\nvar PROCESS_NAME = \'\';\nif(require.main === module){\n\tPROCESS_NAME = \'process-name\';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n//##Errors\n\n//#Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//#Functions\n/**\n* @function Logger_Set\n* @alias SetLogger\n* @access public\n* @description Allows this module\'s functions to log the given logger object.\n* @param {?object} logger - The logger to be used for logging or `null` to disable logging.\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` if logger is not an object or `null`. \n* @since v0.0.0\n*/\nfunction Logger_Set( logger ){\n\tvar return_error = null;\n\tconst FUNCTION_NAME = \'Logger_Set\';\n\t//Variables\n\t//Parametre checks\n\tif( typeof(logger) === \'object\' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\treturn_error = new TypeError(\'Param "logger" is not an object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\n\t//Function\n\tLogger = logger;\n\t//Return\n}\n\n//#Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'MainExecutionFunction\';\n\t//##Dependencies\n\t\t//###Internal\n\t\t//###Standard\n\t\t//###External\n\t\tconst MakeDir = require(\'make-dir\');\n\t\tconst ApplicationLogWinstonInterface = require(\'application-log-winston-interface\');\n\t\tconst EnvPaths = require(\'env-paths\');\n\t\tconst CommandLineArgs = require(\'command-line-args\');\n\t\tconst CommandLineUsage = require(\'command-line-usage\');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: \'help\', alias: \'h\', type: Boolean, description: \'Writes this help text to stdout.\' },\n\t\t{ name: \'noop\', alias: \'n\', type: Boolean, description: \'Show what would be done without actually doing it.\' },\n\t\t{ name: \'verbose\', alias: \'v\', type: Boolean, description: \'Verbose output to stderr.\' },\n\t\t{ name: \'version\', alias: \'V\', type: Boolean, description: \'Writes version information to stdout.\'},\n\t\t//Input\n\t\t{ name: \'stdin\', alias: \'i\', type: Boolean, description: \'Read input from stdin.\' },\n\t\t{ name: \'input\', alias: \'I\', type: String, description: \'The path to the file to read input from.\'},\n\t\t//Output\n\t\t{ name: \'stdout\', alias: \'o\', type: Boolean, description: \'Write output to stdout.\' },\n\t\t{ name: \'output\', alias: \'O\', type: String, description: \'The name of the file to write output to.\' },\n\t\t{ name: \'pasteboard\', alias: \'p\', type: Boolean, description: \'Copy output to pasteboard (clipboard).\'},\n\t\t//Config\n\t\t{ name: \'config\', alias: \'c\', type: Boolean, description: \'Print configuration values and information to stdout.\' },\n\t\t{ name: \'config-file\', alias: \'C\', type: String, description: \'Use the given config file instead of the default.\' },\n\t];\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error(\'MakeDir.sync threw: %s\', error);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger(\'debug.log\', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'Start of execution block.\'});\n\t//Options\n\tvar Options = CommandLineArgs( OptionDefinitions );\n\t//Config\n\t\t\tif( Options.verbose === true ){\n\t\t\t\tlogger.real_transports.console_stderr.level = \'debug\';\n\t\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'note\', message: Utility.format(\'Logger: console_stderr transport log level set to: %s\', logger.real_transports.console_stderr.level)});\n\t\t\t}\n\t//Main\n\tif(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\theader: \'process-name\',\n\t\t\t\tcontent: \'Brief description.\',\n\t\t\t},\n\t\t\t{\n\t\t\t\theader: \'Options\',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst help_message = CommandLineUsage(help_sections_array);\n\t\tconsole.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'End of execution block.\'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-04-13T03:55:05.054Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '#!/usr/local/bin/node\n\'use strict\';\n/**\n* @file filename.js\n* @alias source/main.js\n* @description Brief description.\n* @author Anadian\n* @license \tCopyright 2020 Anadian\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//#Dependencies\n\t//##Internal\n\t//##Standard\n\tconst Utility = require(\'util\');\n\t//##External\n\n//#Constants\nconst FILENAME = \'filename.js\';\nconst MODULE_NAME = \'ModuleName\';\nvar PROCESS_NAME = \'\';\nif(require.main === module){\n\tPROCESS_NAME = \'process-name\';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n//##Errors\n\n//#Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//#Functions\n/**\n* @function Logger_Set\n* @alias SetLogger\n* @access public\n* @description Allows this module\'s functions to log the given logger object.\n* @param {?object} logger - The logger to be used for logging or `null` to disable logging.\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` if logger is not an object or `null`. \n* @since v0.0.0\n*/\nfunction Logger_Set( logger ){\n\tvar return_error = null;\n\tconst FUNCTION_NAME = \'Logger_Set\';\n\t//Variables\n\t//Parametre checks\n\tif( typeof(logger) === \'object\' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\treturn_error = new TypeError(\'Param "logger" is not an object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\n\t//Function\n\tLogger = logger;\n\t//Return\n}\n\n//#Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'MainExecutionFunction\';\n\t//##Dependencies\n\t\t//###Internal\n\t\t//###Standard\n\t\t//###External\n\t\tconst MakeDir = require(\'make-dir\');\n\t\tconst ApplicationLogWinstonInterface = require(\'application-log-winston-interface\');\n\t\tconst EnvPaths = require(\'env-paths\');\n\t\tconst CommandLineArgs = require(\'command-line-args\');\n\t\tconst CommandLineUsage = require(\'command-line-usage\');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: \'help\', alias: \'h\', type: Boolean, description: \'Writes this help text to stdout.\' },\n\t\t{ name: \'noop\', alias: \'n\', type: Boolean, description: \'Show what would be done without actually doing it.\' },\n\t\t{ name: \'verbose\', alias: \'v\', type: Boolean, description: \'Verbose output to stderr.\' },\n\t\t{ name: \'version\', alias: \'V\', type: Boolean, description: \'Writes version information to stdout.\'},\n\t\t//Input\n\t\t{ name: \'stdin\', alias: \'i\', type: Boolean, description: \'Read input from stdin.\' },\n\t\t{ name: \'input\', alias: \'I\', type: String, description: \'The path to the file to read input from.\'},\n\t\t//Output\n\t\t{ name: \'stdout\', alias: \'o\', type: Boolean, description: \'Write output to stdout.\' },\n\t\t{ name: \'output\', alias: \'O\', type: String, description: \'The name of the file to write output to.\' },\n\t\t{ name: \'pasteboard\', alias: \'p\', type: Boolean, description: \'Copy output to pasteboard (clipboard).\'},\n\t\t//Config\n\t\t{ name: \'config\', alias: \'c\', type: Boolean, description: \'Print configuration values and information to stdout.\' },\n\t\t{ name: \'config-file\', alias: \'C\', type: String, description: \'Use the given config file instead of the default.\' },\n\t];\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error(\'MakeDir.sync threw: %s\', error);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger(\'debug.log\', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'Start of execution block.\'});\n\t//Options\n\tvar Options = CommandLineArgs( OptionDefinitions );\n\t//Config\n\t\t\tif( Options.verbose === true ){\n\t\t\t\tlogger.real_transports.console_stderr.level = \'debug\';\n\t\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'note\', message: Utility.format(\'Logger: console_stderr transport log level set to: %s\', logger.real_transports.console_stderr.level)});\n\t\t\t}\n\t//Main\n\tif(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\theader: \'process-name\',\n\t\t\t\tcontent: \'Brief description.\',\n\t\t\t},\n\t\t\t{\n\t\t\t\theader: \'Options\',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst help_message = CommandLineUsage(help_sections_array);\n\t\tconsole.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'End of execution block.\'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n',
+  [length]: 2 ]
+2020-04-13T03:55:05.055Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '#!/usr/local/bin/node\n\'use strict\';\n/**\n* @file filename.js\n* @alias source/main.js\n* @description Brief description.\n* @author Anadian\n* @license \tCopyright 2020 Anadian\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//#Dependencies\n\t//##Internal\n\t//##Standard\n\tconst Utility = require(\'util\');\n\t//##External\n\n//#Constants\nconst FILENAME = \'filename.js\';\nconst MODULE_NAME = \'ModuleName\';\nvar PROCESS_NAME = \'\';\nif(require.main === module){\n\tPROCESS_NAME = \'process-name\';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n//##Errors\n\n//#Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//#Functions\n/**\n* @function Logger_Set\n* @alias SetLogger\n* @access public\n* @description Allows this module\'s functions to log the given logger object.\n* @param {?object} logger - The logger to be used for logging or `null` to disable logging.\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` if logger is not an object or `null`. \n* @since v0.0.0\n*/\nfunction Logger_Set( logger ){\n\tvar return_error = null;\n\tconst FUNCTION_NAME = \'Logger_Set\';\n\t//Variables\n\t//Parametre checks\n\tif( typeof(logger) === \'object\' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\treturn_error = new TypeError(\'Param "logger" is not an object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\n\t//Function\n\tLogger = logger;\n\t//Return\n}\n\n//#Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'MainExecutionFunction\';\n\t//##Dependencies\n\t\t//###Internal\n\t\t//###Standard\n\t\t//###External\n\t\tconst MakeDir = require(\'make-dir\');\n\t\tconst ApplicationLogWinstonInterface = require(\'application-log-winston-interface\');\n\t\tconst EnvPaths = require(\'env-paths\');\n\t\tconst CommandLineArgs = require(\'command-line-args\');\n\t\tconst CommandLineUsage = require(\'command-line-usage\');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: \'help\', alias: \'h\', type: Boolean, description: \'Writes this help text to stdout.\' },\n\t\t{ name: \'noop\', alias: \'n\', type: Boolean, description: \'Show what would be done without actually doing it.\' },\n\t\t{ name: \'verbose\', alias: \'v\', type: Boolean, description: \'Verbose output to stderr.\' },\n\t\t{ name: \'version\', alias: \'V\', type: Boolean, description: \'Writes version information to stdout.\'},\n\t\t//Input\n\t\t{ name: \'stdin\', alias: \'i\', type: Boolean, description: \'Read input from stdin.\' },\n\t\t{ name: \'input\', alias: \'I\', type: String, description: \'The path to the file to read input from.\'},\n\t\t//Output\n\t\t{ name: \'stdout\', alias: \'o\', type: Boolean, description: \'Write output to stdout.\' },\n\t\t{ name: \'output\', alias: \'O\', type: String, description: \'The name of the file to write output to.\' },\n\t\t{ name: \'pasteboard\', alias: \'p\', type: Boolean, description: \'Copy output to pasteboard (clipboard).\'},\n\t\t//Config\n\t\t{ name: \'config\', alias: \'c\', type: Boolean, description: \'Print configuration values and information to stdout.\' },\n\t\t{ name: \'config-file\', alias: \'C\', type: String, description: \'Use the given config file instead of the default.\' },\n\t];\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error(\'MakeDir.sync threw: %s\', error);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger(\'debug.log\', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tLogger_Set( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'Start of execution block.\'});\n\t//Options\n\tvar Options = CommandLineArgs( OptionDefinitions );\n\t//Config\n\t\t\tif( Options.verbose === true ){\n\t\t\t\tlogger.real_transports.console_stderr.level = \'debug\';\n\t\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'note\', message: Utility.format(\'Logger: console_stderr transport log level set to: %s\', logger.real_transports.console_stderr.level)});\n\t\t\t}\n\t//Main\n\tif(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\theader: \'process-name\',\n\t\t\t\tcontent: \'Brief description.\',\n\t\t\t},\n\t\t\t{\n\t\t\t\theader: \'Options\',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst help_message = CommandLineUsage(help_sections_array);\n\t\tconsole.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'End of execution block.\'});\n} else{\n\texports.SetLogger = Logger_Set;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'js file' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-13T03:55:05.085Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-04-13T03:55:05.086Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
