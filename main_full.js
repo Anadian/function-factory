@@ -1,11 +1,10 @@
 #!/usr/local/bin/node
-{{#strict}}'use strict';
-{{/strict}}
+'use strict';
 /**
-* @module {{modulename}}
-* @file {{filename}}
-{{#main}}* @alias source/main.js
-{{/main}}* @description {{& description}}
+* @file filename.js
+* @alias source/main.js
+* @module ModuleName
+* @description Brief description.
 * @author Anadian
 * @license 	Copyright 2020 Anadian
 	Permission is hereby granted, free of charge, to any person obtaining a copy of this 
@@ -27,28 +26,28 @@ OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //#Dependencies
 	//##Internal
 	//##Standard
-{{#logger}}	const Utility = require('util');
-{{/logger}}	//##External
+	const Utility = require('util');
+	//##External
 
 //#Constants
-const FILENAME = '{{filename}}';
-const MODULE_NAME = '{{modulename}}';
+const FILENAME = 'filename.js';
+const MODULE_NAME = 'ModuleName';
 var PROCESS_NAME = '';
 if(require.main === module){
-	PROCESS_NAME = '{{processname}}';
+	PROCESS_NAME = 'process-name';
 } else{
 	PROCESS_NAME = process.argv0;
 }
 //##Errors
 
 //#Global Variables
-{{#logger}}var Logger = { 
+var Logger = { 
 	log: () => {
 		return null;
 	}
-};{{/logger}}
+};
 //#Functions
-{{#logger}}/**
+/**
 * @function Logger_Set
 * @access public
 * @description Allows this module's functions to log the given logger object.
@@ -78,24 +77,24 @@ function Logger_Set( logger ){
 	//Function
 	Logger = logger;
 	//Return
-}{{/logger}}
+}
 
 //#Exports and Execution
 if(require.main === module){
-{{#main}}	var _return = [1,null];
+	var _return = [1,null];
 	const FUNCTION_NAME = 'MainExecutionFunction';
 	//##Dependencies
 		//###Internal
 		//###Standard
 		//###External
-{{#logger}}		const MakeDir = require('make-dir');
+		const MakeDir = require('make-dir');
 		const ApplicationLogWinstonInterface = require('application-log-winston-interface');
-{{/logger}}		const EnvPaths = require('env-paths');
-{{#cli}}		const CommandLineArgs = require('command-line-args');
+		const EnvPaths = require('env-paths');
+		const CommandLineArgs = require('command-line-args');
 		const CommandLineUsage = require('command-line-usage');
-{{/cli}}	//Constants
+	//Constants
 	const EnvironmentPaths = EnvPaths( PROCESS_NAME );
-{{#cli}}	const OptionDefinitions = [
+	const OptionDefinitions = [
 		//UI
 		{ name: 'help', alias: 'h', type: Boolean, description: 'Writes this help text to stdout.' },
 		{ name: 'noop', alias: 'n', type: Boolean, description: 'Show what would be done without actually doing it.' },
@@ -112,9 +111,9 @@ if(require.main === module){
 		{ name: 'config', alias: 'c', type: Boolean, description: 'Print configuration values and information to stdout.' },
 		{ name: 'config-file', alias: 'C', type: String, description: 'Use the given config file instead of the default.' },
 	];
-{{/cli}}	//Variables
+	//Variables
 	var function_return = [1,null];
-{{#logger}}	//Logger
+	//Logger
 	try{ 
 		MakeDir.sync( EnvironmentPaths.log );
 	} catch(error){
@@ -125,19 +124,19 @@ if(require.main === module){
 		Logger_Set( function_return[1] );
 	}
 	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});
-{{/logger}}{{#cli}}	//Options
+	//Options
 	var Options = CommandLineArgs( OptionDefinitions );
-{{/cli}}	//Config
+	//Config
 	if( Options.verbose === true ){
-{{#logger}}		logger.real_transports.console_stderr.level = 'debug';
+		logger.real_transports.console_stderr.level = 'debug';
 		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'note', message: Utility.format('Logger: console_stderr transport log level set to: %s', logger.real_transports.console_stderr.level)});
-{{/logger}}	}
+	}
 	//Main
-{{#cli}}	if(Options.help === true){
+	if(Options.help === true){
 		const help_sections_array = [
 			{
-				header: '{{processname}}',
-				content: '{{description}}',
+				header: 'process-name',
+				content: 'Brief description.',
 			},
 			{
 				header: 'Options',
@@ -147,10 +146,10 @@ if(require.main === module){
 		const help_message = CommandLineUsage(help_sections_array);
 		console.log(help_message);
 	}
-{{/cli}}{{#logger}}	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});
-{{/logger}}
-{{/main}}
+	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});
 } else{
-{{#logger}}	exports.Logger_Set = Logger_Set;
-{{/logger}}	
+/**
+* @property SetLogger
+* @alias S
+	exports.SetLogger = Logger_Set;
 }
