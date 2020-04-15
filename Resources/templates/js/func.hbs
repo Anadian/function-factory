@@ -1,22 +1,10 @@
 /**
-* @fn {{name}}
-* @brief {{& description}}
-{{#asynchronous}}
-* @async {{asynchronous}}
-{{/asynchronous}}
-{{#params}}
-* @param {{name}}
-*	@type {{type}}
-*	@brief {{& description}}
-{{#default}}*	@default {{& default}}
-{{/default}}{{/params}}* @return <ARRAY>
-*	@entry 0 
-*		@retval 1 premature return.
-*		@retval 0 on success.
-*		@retval <0 on failure.
-*	@entry 1
-*		@retval <object> on success
-*		@retval <error_message> on failure.
+* @function {{name}}
+* @access public
+* @description {{description}}
+{{#params}}* @param { {{~type~}} } logger - The logger to be used for logging or `null` to disable logging.
+* @throws {TypeError} `ERR_INVALID_ARG_TYPE` if logger is not an object or `null`. 
+* @since v0.0.0
 */
 {{#asynchronous}}async {{/asynchronous}}function {{name}}({{#params}} {{name}},{{/params}}){
 	var _return = [1,null];

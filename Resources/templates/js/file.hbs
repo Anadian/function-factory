@@ -49,16 +49,16 @@ if(require.main === module){
 };{{/logger}}
 //#Functions
 {{#logger}}/**
-* @function Logger_Set
+* @function setLogger
 * @access public
 * @description Allows this module's functions to log the given logger object.
 * @param {?object} logger - The logger to be used for logging or `null` to disable logging.
 * @throws {TypeError} `ERR_INVALID_ARG_TYPE` if logger is not an object or `null`. 
 * @since v0.0.0
 */
-function Logger_Set( logger ){
+function setLogger( logger ){
 	var return_error = null;
-	const FUNCTION_NAME = 'Logger_Set';
+	const FUNCTION_NAME = 'setLogger';
 	//Variables
 	//Parametre checks
 	if( typeof(logger) === 'object' ){
@@ -122,7 +122,7 @@ if(require.main === module){
 	}
 	function_return = ApplicationLogWinstonInterface.InitLogger('debug.log', EnvironmentPaths.log);
 	if( function_return[0] === 0 ){
-		Logger_Set( function_return[1] );
+		setLogger( function_return[1] );
 	}
 	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});
 {{/logger}}{{#cli}}	//Options
@@ -151,6 +151,6 @@ if(require.main === module){
 {{/logger}}
 {{/main}}
 } else{
-{{#logger}}	exports.Logger_Set = Logger_Set;
+{{#logger}}	exports.setLogger = setLogger;
 {{/logger}}	
 }
