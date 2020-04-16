@@ -651,7 +651,7 @@ if(require.main === module){
 			} else if( type === 'Buffer' ){
 				_return = `Buffer.isBuffer(${name}) === true`;
 			} else{
-				_return = `typeof(${name}) === '${type.toLowerCase()}'`;
+				_return = `typeof(${name}) === '${type.replace(/[?!| ]/g, '').toLowerCase()}'`;
 			}
 			return _return;
 		} );
@@ -662,7 +662,7 @@ if(require.main === module){
 			} else if( type === 'Buffer' ){
 				_return = `Buffer.isBuffer(${name}) === false`;
 			} else{
-				_return = `typeof(${name}) !== '${type.toLowerCase()}'`;
+				_return = `typeof(${name}) !== '${type.replace(/[?!| ]/g, '').toLowerCase()}'`;
 			}
 			return _return;
 		} );

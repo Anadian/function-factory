@@ -4,9 +4,17 @@
 	"name": "FunctionName",
 	"description": "Brief description.",
 	"params": [
-			{"type": "ArgumentType", "name": "parametre_name", "default": null, "description": "Brief parametre description."}
+			{"type": "ArgumentType", "name": "parametre_name", "default": null, "description": "Brief parametre description."},
+			{"type": "?Object", "name": "options", "default": { "value": "{}" }, "descriptions": "Additional run-time options."}
+	],
+	"returns": [
+		//{ "type": "ReturnType", "description": "Return value description." }
+	],
+	"throws": [
+		{ "type": "TypeError", "code": "ERR_INVALID_ARG_TYPE", "description": "Thrown if a given argument isn't of the correct type." }
 	],
 	"asynchronous": false,
+	"since": "v0.0.0",
 	"post_re": [
 		{"search": ",\\)", "replace": " )", "flags": "gm"}
 	]

@@ -2297,3 +2297,868 @@
   [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
 2020-04-14T02:23:28.413Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
 2020-04-14T02:23:28.413Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-04-15T08:36:24.667Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-04-15T08:36:24.702Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T08:36:24.742Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-04-15T08:36:24.743Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-04-15T08:36:24.751Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-04-15T08:36:24.753Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'js file' }
+2020-04-15T08:36:24.756Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'js file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T08:36:24.759Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T08:36:24.762Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T08:36:24.763Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/file.json": Error: ENOENT: no such file or directory, open \'js/file.json\'',
+  [length]: 2 ]
+2020-04-15T08:36:24.765Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T08:36:24.773Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": "Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": "process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": true\n}',
+  [length]: 2 ]
+2020-04-15T08:36:24.773Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": "Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": "process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": true\n}',
+  [length]: 2 ]
+2020-04-15T08:36:24.774Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "js file",\n\t"filename": "filename.js",\n\t"description": "Brief description.",\n\t"modulename": "ModuleName",\n\t"processname": "process-name",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": true\n}',
+  [length]: 2 ]
+2020-04-15T08:36:24.796Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-04-15T08:40:11.329Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "js file",\n\t"filename": "extract-documentation-comments.js",\n\t"description": "Simply extract documentation comments from a source file.",\n\t"modulename": "ExtractDocumentationComments",\n\t"processname": "extract-documentation-comments",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": true\n}\n' }
+2020-04-15T08:40:11.332Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "js file",\n\t"filename": "extract-documentation-comments.js",\n\t"description": "Simply extract documentation comments from a source file.",\n\t"modulename": "ExtractDocumentationComments",\n\t"processname": "extract-documentation-comments",\n\t"strict": true,\n\t"main": true,\n\t"logger": true,\n\t"cli": true\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T08:40:11.335Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'js file',
+  filename: 'extract-documentation-comments.js',
+  description: 'Simply extract documentation comments from a source file.',
+  modulename: 'ExtractDocumentationComments',
+  processname: 'extract-documentation-comments',
+  strict: true,
+  main: true,
+  logger: true,
+  cli: true } undefined
+2020-04-15T08:40:11.337Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'js file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T08:40:11.338Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T08:40:11.339Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T08:40:11.340Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "js/file.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'js/file.hbs\'',
+  [length]: 2 ]
+2020-04-15T08:40:11.341Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T08:40:11.363Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-15T08:40:11.365Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-15T08:40:11.367Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-15T08:40:11.410Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '#!/usr/local/bin/node\n\'use strict\';\n/**\n* @module ExtractDocumentationComments\n* @file extract-documentation-comments.js\n* @alias source/main.js\n* @description Simply extract documentation comments from a source file.\n* @author Anadian\n* @license \tCopyright 2020 Anadian\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//#Dependencies\n\t//##Internal\n\t//##Standard\n\tconst Utility = require(\'util\');\n\t//##External\n\n//#Constants\nconst FILENAME = \'extract-documentation-comments.js\';\nconst MODULE_NAME = \'ExtractDocumentationComments\';\nvar PROCESS_NAME = \'\';\nif(require.main === module){\n\tPROCESS_NAME = \'extract-documentation-comments\';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n//##Errors\n\n//#Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//#Functions\n/**\n* @function setLogger\n* @access public\n* @description Allows this module\'s functions to log the given logger object.\n* @param {?object} logger - The logger to be used for logging or `null` to disable logging.\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` if logger is not an object or `null`. \n* @since v0.0.0\n*/\nfunction setLogger( logger ){\n\tvar return_error = null;\n\tconst FUNCTION_NAME = \'setLogger\';\n\t//Variables\n\t//Parametre checks\n\tif( typeof(logger) === \'object\' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\treturn_error = new TypeError(\'Param "logger" is not an object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\n\t//Function\n\tLogger = logger;\n\t//Return\n}\n\n//#Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'MainExecutionFunction\';\n\t//##Dependencies\n\t\t//###Internal\n\t\t//###Standard\n\t\t//###External\n\t\tconst MakeDir = require(\'make-dir\');\n\t\tconst ApplicationLogWinstonInterface = require(\'application-log-winston-interface\');\n\t\tconst EnvPaths = require(\'env-paths\');\n\t\tconst CommandLineArgs = require(\'command-line-args\');\n\t\tconst CommandLineUsage = require(\'command-line-usage\');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: \'help\', alias: \'h\', type: Boolean, description: \'Writes this help text to stdout.\' },\n\t\t{ name: \'noop\', alias: \'n\', type: Boolean, description: \'Show what would be done without actually doing it.\' },\n\t\t{ name: \'verbose\', alias: \'v\', type: Boolean, description: \'Verbose output to stderr.\' },\n\t\t{ name: \'version\', alias: \'V\', type: Boolean, description: \'Writes version information to stdout.\'},\n\t\t//Input\n\t\t{ name: \'stdin\', alias: \'i\', type: Boolean, description: \'Read input from stdin.\' },\n\t\t{ name: \'input\', alias: \'I\', type: String, description: \'The path to the file to read input from.\'},\n\t\t//Output\n\t\t{ name: \'stdout\', alias: \'o\', type: Boolean, description: \'Write output to stdout.\' },\n\t\t{ name: \'output\', alias: \'O\', type: String, description: \'The name of the file to write output to.\' },\n\t\t{ name: \'pasteboard\', alias: \'p\', type: Boolean, description: \'Copy output to pasteboard (clipboard).\'},\n\t\t//Config\n\t\t{ name: \'config\', alias: \'c\', type: Boolean, description: \'Print configuration values and information to stdout.\' },\n\t\t{ name: \'config-file\', alias: \'C\', type: String, description: \'Use the given config file instead of the default.\' },\n\t];\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error(\'MakeDir.sync threw: %s\', error);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger(\'debug.log\', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tsetLogger( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'Start of execution block.\'});\n\t//Options\n\tvar Options = CommandLineArgs( OptionDefinitions );\n\t//Config\n\tif( Options.verbose === true ){\n\t\tlogger.real_transports.console_stderr.level = \'debug\';\n\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'note\', message: Utility.format(\'Logger: console_stderr transport log level set to: %s\', logger.real_transports.console_stderr.level)});\n\t}\n\t//Main\n\tif(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\theader: \'extract-documentation-comments\',\n\t\t\t\tcontent: \'Simply extract documentation comments from a source file.\',\n\t\t\t},\n\t\t\t{\n\t\t\t\theader: \'Options\',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst help_message = CommandLineUsage(help_sections_array);\n\t\tconsole.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'End of execution block.\'});\n} else{\n\texports.setLogger = setLogger;\n}\n',
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T08:40:11.411Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2020-04-15T08:40:11.411Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '#!/usr/local/bin/node\n\'use strict\';\n/**\n* @module ExtractDocumentationComments\n* @file extract-documentation-comments.js\n* @alias source/main.js\n* @description Simply extract documentation comments from a source file.\n* @author Anadian\n* @license \tCopyright 2020 Anadian\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//#Dependencies\n\t//##Internal\n\t//##Standard\n\tconst Utility = require(\'util\');\n\t//##External\n\n//#Constants\nconst FILENAME = \'extract-documentation-comments.js\';\nconst MODULE_NAME = \'ExtractDocumentationComments\';\nvar PROCESS_NAME = \'\';\nif(require.main === module){\n\tPROCESS_NAME = \'extract-documentation-comments\';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n//##Errors\n\n//#Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//#Functions\n/**\n* @function setLogger\n* @access public\n* @description Allows this module\'s functions to log the given logger object.\n* @param {?object} logger - The logger to be used for logging or `null` to disable logging.\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` if logger is not an object or `null`. \n* @since v0.0.0\n*/\nfunction setLogger( logger ){\n\tvar return_error = null;\n\tconst FUNCTION_NAME = \'setLogger\';\n\t//Variables\n\t//Parametre checks\n\tif( typeof(logger) === \'object\' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\treturn_error = new TypeError(\'Param "logger" is not an object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\n\t//Function\n\tLogger = logger;\n\t//Return\n}\n\n//#Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'MainExecutionFunction\';\n\t//##Dependencies\n\t\t//###Internal\n\t\t//###Standard\n\t\t//###External\n\t\tconst MakeDir = require(\'make-dir\');\n\t\tconst ApplicationLogWinstonInterface = require(\'application-log-winston-interface\');\n\t\tconst EnvPaths = require(\'env-paths\');\n\t\tconst CommandLineArgs = require(\'command-line-args\');\n\t\tconst CommandLineUsage = require(\'command-line-usage\');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: \'help\', alias: \'h\', type: Boolean, description: \'Writes this help text to stdout.\' },\n\t\t{ name: \'noop\', alias: \'n\', type: Boolean, description: \'Show what would be done without actually doing it.\' },\n\t\t{ name: \'verbose\', alias: \'v\', type: Boolean, description: \'Verbose output to stderr.\' },\n\t\t{ name: \'version\', alias: \'V\', type: Boolean, description: \'Writes version information to stdout.\'},\n\t\t//Input\n\t\t{ name: \'stdin\', alias: \'i\', type: Boolean, description: \'Read input from stdin.\' },\n\t\t{ name: \'input\', alias: \'I\', type: String, description: \'The path to the file to read input from.\'},\n\t\t//Output\n\t\t{ name: \'stdout\', alias: \'o\', type: Boolean, description: \'Write output to stdout.\' },\n\t\t{ name: \'output\', alias: \'O\', type: String, description: \'The name of the file to write output to.\' },\n\t\t{ name: \'pasteboard\', alias: \'p\', type: Boolean, description: \'Copy output to pasteboard (clipboard).\'},\n\t\t//Config\n\t\t{ name: \'config\', alias: \'c\', type: Boolean, description: \'Print configuration values and information to stdout.\' },\n\t\t{ name: \'config-file\', alias: \'C\', type: String, description: \'Use the given config file instead of the default.\' },\n\t];\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error(\'MakeDir.sync threw: %s\', error);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger(\'debug.log\', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tsetLogger( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'Start of execution block.\'});\n\t//Options\n\tvar Options = CommandLineArgs( OptionDefinitions );\n\t//Config\n\tif( Options.verbose === true ){\n\t\tlogger.real_transports.console_stderr.level = \'debug\';\n\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'note\', message: Utility.format(\'Logger: console_stderr transport log level set to: %s\', logger.real_transports.console_stderr.level)});\n\t}\n\t//Main\n\tif(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\theader: \'extract-documentation-comments\',\n\t\t\t\tcontent: \'Simply extract documentation comments from a source file.\',\n\t\t\t},\n\t\t\t{\n\t\t\t\theader: \'Options\',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst help_message = CommandLineUsage(help_sections_array);\n\t\tconsole.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'End of execution block.\'});\n} else{\n\texports.setLogger = setLogger;\n}\n',
+  [length]: 2 ]
+2020-04-15T08:40:11.411Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '#!/usr/local/bin/node\n\'use strict\';\n/**\n* @module ExtractDocumentationComments\n* @file extract-documentation-comments.js\n* @alias source/main.js\n* @description Simply extract documentation comments from a source file.\n* @author Anadian\n* @license \tCopyright 2020 Anadian\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//#Dependencies\n\t//##Internal\n\t//##Standard\n\tconst Utility = require(\'util\');\n\t//##External\n\n//#Constants\nconst FILENAME = \'extract-documentation-comments.js\';\nconst MODULE_NAME = \'ExtractDocumentationComments\';\nvar PROCESS_NAME = \'\';\nif(require.main === module){\n\tPROCESS_NAME = \'extract-documentation-comments\';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n//##Errors\n\n//#Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//#Functions\n/**\n* @function setLogger\n* @access public\n* @description Allows this module\'s functions to log the given logger object.\n* @param {?object} logger - The logger to be used for logging or `null` to disable logging.\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` if logger is not an object or `null`. \n* @since v0.0.0\n*/\nfunction setLogger( logger ){\n\tvar return_error = null;\n\tconst FUNCTION_NAME = \'setLogger\';\n\t//Variables\n\t//Parametre checks\n\tif( typeof(logger) === \'object\' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\treturn_error = new TypeError(\'Param "logger" is not an object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\n\t//Function\n\tLogger = logger;\n\t//Return\n}\n\n//#Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'MainExecutionFunction\';\n\t//##Dependencies\n\t\t//###Internal\n\t\t//###Standard\n\t\t//###External\n\t\tconst MakeDir = require(\'make-dir\');\n\t\tconst ApplicationLogWinstonInterface = require(\'application-log-winston-interface\');\n\t\tconst EnvPaths = require(\'env-paths\');\n\t\tconst CommandLineArgs = require(\'command-line-args\');\n\t\tconst CommandLineUsage = require(\'command-line-usage\');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: \'help\', alias: \'h\', type: Boolean, description: \'Writes this help text to stdout.\' },\n\t\t{ name: \'noop\', alias: \'n\', type: Boolean, description: \'Show what would be done without actually doing it.\' },\n\t\t{ name: \'verbose\', alias: \'v\', type: Boolean, description: \'Verbose output to stderr.\' },\n\t\t{ name: \'version\', alias: \'V\', type: Boolean, description: \'Writes version information to stdout.\'},\n\t\t//Input\n\t\t{ name: \'stdin\', alias: \'i\', type: Boolean, description: \'Read input from stdin.\' },\n\t\t{ name: \'input\', alias: \'I\', type: String, description: \'The path to the file to read input from.\'},\n\t\t//Output\n\t\t{ name: \'stdout\', alias: \'o\', type: Boolean, description: \'Write output to stdout.\' },\n\t\t{ name: \'output\', alias: \'O\', type: String, description: \'The name of the file to write output to.\' },\n\t\t{ name: \'pasteboard\', alias: \'p\', type: Boolean, description: \'Copy output to pasteboard (clipboard).\'},\n\t\t//Config\n\t\t{ name: \'config\', alias: \'c\', type: Boolean, description: \'Print configuration values and information to stdout.\' },\n\t\t{ name: \'config-file\', alias: \'C\', type: String, description: \'Use the given config file instead of the default.\' },\n\t];\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error(\'MakeDir.sync threw: %s\', error);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger(\'debug.log\', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tsetLogger( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'Start of execution block.\'});\n\t//Options\n\tvar Options = CommandLineArgs( OptionDefinitions );\n\t//Config\n\tif( Options.verbose === true ){\n\t\tlogger.real_transports.console_stderr.level = \'debug\';\n\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'note\', message: Utility.format(\'Logger: console_stderr transport log level set to: %s\', logger.real_transports.console_stderr.level)});\n\t}\n\t//Main\n\tif(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\theader: \'extract-documentation-comments\',\n\t\t\t\tcontent: \'Simply extract documentation comments from a source file.\',\n\t\t\t},\n\t\t\t{\n\t\t\t\theader: \'Options\',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst help_message = CommandLineUsage(help_sections_array);\n\t\tconsole.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'End of execution block.\'});\n} else{\n\texports.setLogger = setLogger;\n}\n',
+  [ 0,
+    '#!/usr/local/bin/node\n\'use strict\';\n/**\n* @module ExtractDocumentationComments\n* @file extract-documentation-comments.js\n* @alias source/main.js\n* @description Simply extract documentation comments from a source file.\n* @author Anadian\n* @license \tCopyright 2020 Anadian\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//#Dependencies\n\t//##Internal\n\t//##Standard\n\tconst Utility = require(\'util\');\n\t//##External\n\n//#Constants\nconst FILENAME = \'extract-documentation-comments.js\';\nconst MODULE_NAME = \'ExtractDocumentationComments\';\nvar PROCESS_NAME = \'\';\nif(require.main === module){\n\tPROCESS_NAME = \'extract-documentation-comments\';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n//##Errors\n\n//#Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//#Functions\n/**\n* @function setLogger\n* @access public\n* @description Allows this module\'s functions to log the given logger object.\n* @param {?object} logger - The logger to be used for logging or `null` to disable logging.\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` if logger is not an object or `null`. \n* @since v0.0.0\n*/\nfunction setLogger( logger ){\n\tvar return_error = null;\n\tconst FUNCTION_NAME = \'setLogger\';\n\t//Variables\n\t//Parametre checks\n\tif( typeof(logger) === \'object\' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\treturn_error = new TypeError(\'Param "logger" is not an object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\n\t//Function\n\tLogger = logger;\n\t//Return\n}\n\n//#Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'MainExecutionFunction\';\n\t//##Dependencies\n\t\t//###Internal\n\t\t//###Standard\n\t\t//###External\n\t\tconst MakeDir = require(\'make-dir\');\n\t\tconst ApplicationLogWinstonInterface = require(\'application-log-winston-interface\');\n\t\tconst EnvPaths = require(\'env-paths\');\n\t\tconst CommandLineArgs = require(\'command-line-args\');\n\t\tconst CommandLineUsage = require(\'command-line-usage\');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: \'help\', alias: \'h\', type: Boolean, description: \'Writes this help text to stdout.\' },\n\t\t{ name: \'noop\', alias: \'n\', type: Boolean, description: \'Show what would be done without actually doing it.\' },\n\t\t{ name: \'verbose\', alias: \'v\', type: Boolean, description: \'Verbose output to stderr.\' },\n\t\t{ name: \'version\', alias: \'V\', type: Boolean, description: \'Writes version information to stdout.\'},\n\t\t//Input\n\t\t{ name: \'stdin\', alias: \'i\', type: Boolean, description: \'Read input from stdin.\' },\n\t\t{ name: \'input\', alias: \'I\', type: String, description: \'The path to the file to read input from.\'},\n\t\t//Output\n\t\t{ name: \'stdout\', alias: \'o\', type: Boolean, description: \'Write output to stdout.\' },\n\t\t{ name: \'output\', alias: \'O\', type: String, description: \'The name of the file to write output to.\' },\n\t\t{ name: \'pasteboard\', alias: \'p\', type: Boolean, description: \'Copy output to pasteboard (clipboard).\'},\n\t\t//Config\n\t\t{ name: \'config\', alias: \'c\', type: Boolean, description: \'Print configuration values and information to stdout.\' },\n\t\t{ name: \'config-file\', alias: \'C\', type: String, description: \'Use the given config file instead of the default.\' },\n\t];\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error(\'MakeDir.sync threw: %s\', error);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger(\'debug.log\', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tsetLogger( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'Start of execution block.\'});\n\t//Options\n\tvar Options = CommandLineArgs( OptionDefinitions );\n\t//Config\n\tif( Options.verbose === true ){\n\t\tlogger.real_transports.console_stderr.level = \'debug\';\n\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'note\', message: Utility.format(\'Logger: console_stderr transport log level set to: %s\', logger.real_transports.console_stderr.level)});\n\t}\n\t//Main\n\tif(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\theader: \'extract-documentation-comments\',\n\t\t\t\tcontent: \'Simply extract documentation comments from a source file.\',\n\t\t\t},\n\t\t\t{\n\t\t\t\theader: \'Options\',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst help_message = CommandLineUsage(help_sections_array);\n\t\tconsole.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'End of execution block.\'});\n} else{\n\texports.setLogger = setLogger;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-04-15T08:40:11.412Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '#!/usr/local/bin/node\n\'use strict\';\n/**\n* @module ExtractDocumentationComments\n* @file extract-documentation-comments.js\n* @alias source/main.js\n* @description Simply extract documentation comments from a source file.\n* @author Anadian\n* @license \tCopyright 2020 Anadian\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//#Dependencies\n\t//##Internal\n\t//##Standard\n\tconst Utility = require(\'util\');\n\t//##External\n\n//#Constants\nconst FILENAME = \'extract-documentation-comments.js\';\nconst MODULE_NAME = \'ExtractDocumentationComments\';\nvar PROCESS_NAME = \'\';\nif(require.main === module){\n\tPROCESS_NAME = \'extract-documentation-comments\';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n//##Errors\n\n//#Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//#Functions\n/**\n* @function setLogger\n* @access public\n* @description Allows this module\'s functions to log the given logger object.\n* @param {?object} logger - The logger to be used for logging or `null` to disable logging.\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` if logger is not an object or `null`. \n* @since v0.0.0\n*/\nfunction setLogger( logger ){\n\tvar return_error = null;\n\tconst FUNCTION_NAME = \'setLogger\';\n\t//Variables\n\t//Parametre checks\n\tif( typeof(logger) === \'object\' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\treturn_error = new TypeError(\'Param "logger" is not an object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\n\t//Function\n\tLogger = logger;\n\t//Return\n}\n\n//#Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'MainExecutionFunction\';\n\t//##Dependencies\n\t\t//###Internal\n\t\t//###Standard\n\t\t//###External\n\t\tconst MakeDir = require(\'make-dir\');\n\t\tconst ApplicationLogWinstonInterface = require(\'application-log-winston-interface\');\n\t\tconst EnvPaths = require(\'env-paths\');\n\t\tconst CommandLineArgs = require(\'command-line-args\');\n\t\tconst CommandLineUsage = require(\'command-line-usage\');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: \'help\', alias: \'h\', type: Boolean, description: \'Writes this help text to stdout.\' },\n\t\t{ name: \'noop\', alias: \'n\', type: Boolean, description: \'Show what would be done without actually doing it.\' },\n\t\t{ name: \'verbose\', alias: \'v\', type: Boolean, description: \'Verbose output to stderr.\' },\n\t\t{ name: \'version\', alias: \'V\', type: Boolean, description: \'Writes version information to stdout.\'},\n\t\t//Input\n\t\t{ name: \'stdin\', alias: \'i\', type: Boolean, description: \'Read input from stdin.\' },\n\t\t{ name: \'input\', alias: \'I\', type: String, description: \'The path to the file to read input from.\'},\n\t\t//Output\n\t\t{ name: \'stdout\', alias: \'o\', type: Boolean, description: \'Write output to stdout.\' },\n\t\t{ name: \'output\', alias: \'O\', type: String, description: \'The name of the file to write output to.\' },\n\t\t{ name: \'pasteboard\', alias: \'p\', type: Boolean, description: \'Copy output to pasteboard (clipboard).\'},\n\t\t//Config\n\t\t{ name: \'config\', alias: \'c\', type: Boolean, description: \'Print configuration values and information to stdout.\' },\n\t\t{ name: \'config-file\', alias: \'C\', type: String, description: \'Use the given config file instead of the default.\' },\n\t];\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error(\'MakeDir.sync threw: %s\', error);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger(\'debug.log\', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tsetLogger( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'Start of execution block.\'});\n\t//Options\n\tvar Options = CommandLineArgs( OptionDefinitions );\n\t//Config\n\tif( Options.verbose === true ){\n\t\tlogger.real_transports.console_stderr.level = \'debug\';\n\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'note\', message: Utility.format(\'Logger: console_stderr transport log level set to: %s\', logger.real_transports.console_stderr.level)});\n\t}\n\t//Main\n\tif(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\theader: \'extract-documentation-comments\',\n\t\t\t\tcontent: \'Simply extract documentation comments from a source file.\',\n\t\t\t},\n\t\t\t{\n\t\t\t\theader: \'Options\',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst help_message = CommandLineUsage(help_sections_array);\n\t\tconsole.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'End of execution block.\'});\n} else{\n\texports.setLogger = setLogger;\n}\n',
+  [length]: 2 ]
+2020-04-15T08:40:11.413Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '#!/usr/local/bin/node\n\'use strict\';\n/**\n* @module ExtractDocumentationComments\n* @file extract-documentation-comments.js\n* @alias source/main.js\n* @description Simply extract documentation comments from a source file.\n* @author Anadian\n* @license \tCopyright 2020 Anadian\n\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \nsoftware and associated documentation files (the "Software"), to deal in the Software \nwithout restriction, including without limitation the rights to use, copy, modify, \nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to \npermit persons to whom the Software is furnished to do so, subject to the following \nconditions:\n\tThe above copyright notice and this permission notice shall be included in all copies \nor substantial portions of the Software.\n\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \nOR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/\n\n//#Dependencies\n\t//##Internal\n\t//##Standard\n\tconst Utility = require(\'util\');\n\t//##External\n\n//#Constants\nconst FILENAME = \'extract-documentation-comments.js\';\nconst MODULE_NAME = \'ExtractDocumentationComments\';\nvar PROCESS_NAME = \'\';\nif(require.main === module){\n\tPROCESS_NAME = \'extract-documentation-comments\';\n} else{\n\tPROCESS_NAME = process.argv0;\n}\n//##Errors\n\n//#Global Variables\nvar Logger = { \n\tlog: () => {\n\t\treturn null;\n\t}\n};\n//#Functions\n/**\n* @function setLogger\n* @access public\n* @description Allows this module\'s functions to log the given logger object.\n* @param {?object} logger - The logger to be used for logging or `null` to disable logging.\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` if logger is not an object or `null`. \n* @since v0.0.0\n*/\nfunction setLogger( logger ){\n\tvar return_error = null;\n\tconst FUNCTION_NAME = \'setLogger\';\n\t//Variables\n\t//Parametre checks\n\tif( typeof(logger) === \'object\' ){\n\t\tif( logger === null ){\n\t\t\tlogger = { \n\t\t\t\tlog: () => {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t} else{\n\t\treturn_error = new TypeError(\'Param "logger" is not an object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\n\t//Function\n\tLogger = logger;\n\t//Return\n}\n\n//#Exports and Execution\nif(require.main === module){\n\tvar _return = [1,null];\n\tconst FUNCTION_NAME = \'MainExecutionFunction\';\n\t//##Dependencies\n\t\t//###Internal\n\t\t//###Standard\n\t\t//###External\n\t\tconst MakeDir = require(\'make-dir\');\n\t\tconst ApplicationLogWinstonInterface = require(\'application-log-winston-interface\');\n\t\tconst EnvPaths = require(\'env-paths\');\n\t\tconst CommandLineArgs = require(\'command-line-args\');\n\t\tconst CommandLineUsage = require(\'command-line-usage\');\n\t//Constants\n\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n\tconst OptionDefinitions = [\n\t\t//UI\n\t\t{ name: \'help\', alias: \'h\', type: Boolean, description: \'Writes this help text to stdout.\' },\n\t\t{ name: \'noop\', alias: \'n\', type: Boolean, description: \'Show what would be done without actually doing it.\' },\n\t\t{ name: \'verbose\', alias: \'v\', type: Boolean, description: \'Verbose output to stderr.\' },\n\t\t{ name: \'version\', alias: \'V\', type: Boolean, description: \'Writes version information to stdout.\'},\n\t\t//Input\n\t\t{ name: \'stdin\', alias: \'i\', type: Boolean, description: \'Read input from stdin.\' },\n\t\t{ name: \'input\', alias: \'I\', type: String, description: \'The path to the file to read input from.\'},\n\t\t//Output\n\t\t{ name: \'stdout\', alias: \'o\', type: Boolean, description: \'Write output to stdout.\' },\n\t\t{ name: \'output\', alias: \'O\', type: String, description: \'The name of the file to write output to.\' },\n\t\t{ name: \'pasteboard\', alias: \'p\', type: Boolean, description: \'Copy output to pasteboard (clipboard).\'},\n\t\t//Config\n\t\t{ name: \'config\', alias: \'c\', type: Boolean, description: \'Print configuration values and information to stdout.\' },\n\t\t{ name: \'config-file\', alias: \'C\', type: String, description: \'Use the given config file instead of the default.\' },\n\t];\n\t//Variables\n\tvar function_return = [1,null];\n\t//Logger\n\ttry{ \n\t\tMakeDir.sync( EnvironmentPaths.log );\n\t} catch(error){\n\t\tconsole.error(\'MakeDir.sync threw: %s\', error);\n\t}\n\tfunction_return = ApplicationLogWinstonInterface.InitLogger(\'debug.log\', EnvironmentPaths.log);\n\tif( function_return[0] === 0 ){\n\t\tsetLogger( function_return[1] );\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'Start of execution block.\'});\n\t//Options\n\tvar Options = CommandLineArgs( OptionDefinitions );\n\t//Config\n\tif( Options.verbose === true ){\n\t\tlogger.real_transports.console_stderr.level = \'debug\';\n\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'note\', message: Utility.format(\'Logger: console_stderr transport log level set to: %s\', logger.real_transports.console_stderr.level)});\n\t}\n\t//Main\n\tif(Options.help === true){\n\t\tconst help_sections_array = [\n\t\t\t{\n\t\t\t\theader: \'extract-documentation-comments\',\n\t\t\t\tcontent: \'Simply extract documentation comments from a source file.\',\n\t\t\t},\n\t\t\t{\n\t\t\t\theader: \'Options\',\n\t\t\t\toptionList: OptionDefinitions\n\t\t\t}\n\t\t]\n\t\tconst help_message = CommandLineUsage(help_sections_array);\n\t\tconsole.log(help_message);\n\t}\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: \'End of execution block.\'});\n} else{\n\texports.setLogger = setLogger;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'js file' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T08:40:11.477Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-04-15T08:40:11.479Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-04-15T21:05:19.336Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-04-15T21:05:19.370Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:05:19.386Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-04-15T21:05:19.386Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-04-15T21:05:19.388Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-04-15T21:05:19.388Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'js func' }
+2020-04-15T21:05:19.389Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:05:19.389Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:05:19.390Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:05:19.390Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ENOENT: no such file or directory, open \'js/func.json\'',
+  [length]: 2 ]
+2020-04-15T21:05:19.390Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:05:19.391Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"returns": [],\n\t"throws": [\n\t\t{\n\t\t\t"type": "TypeError",\n\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n\t\t\t"description": "Thrown if a given argument isn\'t of the correct type."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"since": "v0.0.0",\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-15T21:05:19.391Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"returns": [],\n\t"throws": [\n\t\t{\n\t\t\t"type": "TypeError",\n\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n\t\t\t"description": "Thrown if a given argument isn\'t of the correct type."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"since": "v0.0.0",\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-15T21:05:19.391Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"returns": [],\n\t"throws": [\n\t\t{\n\t\t\t"type": "TypeError",\n\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n\t\t\t"description": "Thrown if a given argument isn\'t of the correct type."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"since": "v0.0.0",\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-15T21:05:19.406Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-04-15T21:14:44.485Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "js func",\n\t"name": "DocumentationStringFromSourceBuffer",\n\t"description": "Returns a string containing only the contents of `/** ... */` style documentation strings from the given source-file buffer.",\n\t"params": [\n\t\t{\n\t\t\t"type": "Buffer",\n\t\t\t"name": "source_buffer",\n\t\t\t"default": null,\n\t\t\t"description": "The source file, as a Node Buffer, to parse for `/** ... */` style documentation strings."\n\t\t},\n\t\t{\n\t\t\t"type": "?Object",\n\t\t\t"name": "options",\n\t\t\t"default": "{}",\n\t\t\t"descriptions": "Additional run-time options."\n\t\t}\n\n\t],\n\t"returns": [],\n\t"throws": [\n\t\t{\n\t\t\t"type": "TypeError",\n\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n\t\t\t"description": "Thrown if "source_buffer" isn\'t a Buffer."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"since": "v0.0.1",\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2020-04-15T21:14:44.487Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "js func",\n\t"name": "DocumentationStringFromSourceBuffer",\n\t"description": "Returns a string containing only the contents of `/** ... */` style documentation strings from the given source-file buffer.",\n\t"params": [\n\t\t{\n\t\t\t"type": "Buffer",\n\t\t\t"name": "source_buffer",\n\t\t\t"default": null,\n\t\t\t"description": "The source file, as a Node Buffer, to parse for `/** ... */` style documentation strings."\n\t\t},\n\t\t{\n\t\t\t"type": "?Object",\n\t\t\t"name": "options",\n\t\t\t"default": "{}",\n\t\t\t"descriptions": "Additional run-time options."\n\t\t}\n\n\t],\n\t"returns": [],\n\t"throws": [\n\t\t{\n\t\t\t"type": "TypeError",\n\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n\t\t\t"description": "Thrown if "source_buffer" isn\'t a Buffer."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"since": "v0.0.1",\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:14:44.494Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:error: [ -4,
+  'Error: inquirer_questions [ { type: \'editor\',\n    name: \'editor_input\',\n    message: \'Enter input context (JSON).\',\n    default: \'{\\n\\t"template": "js func",\\n\\t"name": "FunctionName",\\n\\t"description": "Brief description.",\\n\\t"params": [\\n\\t\\t{\\n\\t\\t\\t"type": "ArgumentType",\\n\\t\\t\\t"name": "parametre_name",\\n\\t\\t\\t"default": null,\\n\\t\\t\\t"description": "Brief parametre description."\\n\\t\\t}\\n\\t],\\n\\t"returns": [],\\n\\t"throws": [\\n\\t\\t{\\n\\t\\t\\t"type": "TypeError",\\n\\t\\t\\t"code": "ERR_INVALID_ARG_TYPE",\\n\\t\\t\\t"description": "Thrown if a given argument isn\\\'t of the correct type."\\n\\t\\t}\\n\\t],\\n\\t"asynchronous": false,\\n\\t"since": "v0.0.0",\\n\\t"post_re": [\\n\\t\\t{\\n\\t\\t\\t"search": ",\\\\\\\\)",\\n\\t\\t\\t"replace": " )",\\n\\t\\t\\t"flags": "gm"\\n\\t\\t}\\n\\t]\\n}\' },\n  [length]: 1 ] causes Inquirer.prompt to throw an error: "JSONError: Unexpected token s in JSON at position 668 while parsing near \'...ption": "Thrown if "source_buffer" isn\'t...\'"',
+  [length]: 2 ]
+2020-04-15T21:14:44.495Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ -4,
+  'Error: inquirer_questions [ { type: \'editor\',\n    name: \'editor_input\',\n    message: \'Enter input context (JSON).\',\n    default: \'{\\n\\t"template": "js func",\\n\\t"name": "FunctionName",\\n\\t"description": "Brief description.",\\n\\t"params": [\\n\\t\\t{\\n\\t\\t\\t"type": "ArgumentType",\\n\\t\\t\\t"name": "parametre_name",\\n\\t\\t\\t"default": null,\\n\\t\\t\\t"description": "Brief parametre description."\\n\\t\\t}\\n\\t],\\n\\t"returns": [],\\n\\t"throws": [\\n\\t\\t{\\n\\t\\t\\t"type": "TypeError",\\n\\t\\t\\t"code": "ERR_INVALID_ARG_TYPE",\\n\\t\\t\\t"description": "Thrown if a given argument isn\\\'t of the correct type."\\n\\t\\t}\\n\\t],\\n\\t"asynchronous": false,\\n\\t"since": "v0.0.0",\\n\\t"post_re": [\\n\\t\\t{\\n\\t\\t\\t"search": ",\\\\\\\\)",\\n\\t\\t\\t"replace": " )",\\n\\t\\t\\t"flags": "gm"\\n\\t\\t}\\n\\t]\\n}\' },\n  [length]: 1 ] causes Inquirer.prompt to throw an error: "JSONError: Unexpected token s in JSON at position 668 while parsing near \'...ption": "Thrown if "source_buffer" isn\'t...\'"',
+  [length]: 2 ]
+2020-04-15T21:15:22.228Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-04-15T21:15:22.235Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:15:22.236Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-04-15T21:15:22.236Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-04-15T21:15:22.237Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-04-15T21:15:22.238Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'js func' }
+2020-04-15T21:15:22.238Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:15:22.239Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:15:22.239Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:15:22.239Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ENOENT: no such file or directory, open \'js/func.json\'',
+  [length]: 2 ]
+2020-04-15T21:15:22.239Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:15:22.240Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"returns": [],\n\t"throws": [\n\t\t{\n\t\t\t"type": "TypeError",\n\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n\t\t\t"description": "Thrown if a given argument isn\'t of the correct type."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"since": "v0.0.0",\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-15T21:15:22.240Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"returns": [],\n\t"throws": [\n\t\t{\n\t\t\t"type": "TypeError",\n\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n\t\t\t"description": "Thrown if a given argument isn\'t of the correct type."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"since": "v0.0.0",\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-15T21:15:22.240Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t}\n\t],\n\t"returns": [],\n\t"throws": [\n\t\t{\n\t\t\t"type": "TypeError",\n\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n\t\t\t"description": "Thrown if a given argument isn\'t of the correct type."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"since": "v0.0.0",\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-15T21:15:22.252Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-04-15T21:15:56.859Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "js func",\n\t"name": "DocumentationStringFromSourceBuffer",\n\t"description": "Returns a string containing only the contents of `/** ... */` style documentation strings from the given source-file buffer.",\n\t"params": [\n\t\t{\n\t\t\t"type": "Buffer",\n\t\t\t"name": "source_buffer",\n\t\t\t"default": null,\n\t\t\t"description": "The source file, as a Node Buffer, to parse for `/** ... */` style documentation strings."\n\t\t},\n\t\t{\n\t\t\t"type": "?Object",\n\t\t\t"name": "options",\n\t\t\t"default": "{}",\n\t\t\t"descriptions": "Additional run-time options."\n\t\t}\n\n\t],\n\t"returns": [],\n\t"throws": [\n\t\t{\n\t\t\t"type": "TypeError",\n\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n\t\t\t"description": "Thrown if `source_buffer` isn\'t a Buffer."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"since": "v0.0.1",\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2020-04-15T21:15:56.860Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "js func",\n\t"name": "DocumentationStringFromSourceBuffer",\n\t"description": "Returns a string containing only the contents of `/** ... */` style documentation strings from the given source-file buffer.",\n\t"params": [\n\t\t{\n\t\t\t"type": "Buffer",\n\t\t\t"name": "source_buffer",\n\t\t\t"default": null,\n\t\t\t"description": "The source file, as a Node Buffer, to parse for `/** ... */` style documentation strings."\n\t\t},\n\t\t{\n\t\t\t"type": "?Object",\n\t\t\t"name": "options",\n\t\t\t"default": "{}",\n\t\t\t"descriptions": "Additional run-time options."\n\t\t}\n\n\t],\n\t"returns": [],\n\t"throws": [\n\t\t{\n\t\t\t"type": "TypeError",\n\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n\t\t\t"description": "Thrown if `source_buffer` isn\'t a Buffer."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"since": "v0.0.1",\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:15:56.861Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'js func',
+  name: 'DocumentationStringFromSourceBuffer',
+  description: 'Returns a string containing only the contents of `/** ... */` style documentation strings from the given source-file buffer.',
+  params: 
+   [ { type: 'Buffer',
+       name: 'source_buffer',
+       default: null,
+       description: 'The source file, as a Node Buffer, to parse for `/** ... */` style documentation strings.' },
+     { type: '?Object',
+       name: 'options',
+       default: '{}',
+       descriptions: 'Additional run-time options.' },
+     [length]: 2 ],
+  returns: [ [length]: 0 ],
+  throws: 
+   [ { type: 'TypeError',
+       code: 'ERR_INVALID_ARG_TYPE',
+       description: 'Thrown if `source_buffer` isn\'t a Buffer.' },
+     [length]: 1 ],
+  asynchronous: false,
+  since: 'v0.0.1',
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ] } undefined
+2020-04-15T21:15:56.862Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:15:56.862Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:15:56.863Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:15:56.863Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'js/func.hbs\'',
+  [length]: 2 ]
+2020-04-15T21:15:56.863Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:15:56.864Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-15T21:15:56.865Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-15T21:15:56.865Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-15T21:15:56.872Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:error: [ -4,
+  'Error: inquirer_questions [ { type: \'editor\',\n    name: \'editor_input\',\n    message: \'Enter input context (JSON).\',\n    default: \'{\\n\\t"template": "js func",\\n\\t"name": "FunctionName",\\n\\t"description": "Brief description.",\\n\\t"params": [\\n\\t\\t{\\n\\t\\t\\t"type": "ArgumentType",\\n\\t\\t\\t"name": "parametre_name",\\n\\t\\t\\t"default": null,\\n\\t\\t\\t"description": "Brief parametre description."\\n\\t\\t}\\n\\t],\\n\\t"returns": [],\\n\\t"throws": [\\n\\t\\t{\\n\\t\\t\\t"type": "TypeError",\\n\\t\\t\\t"code": "ERR_INVALID_ARG_TYPE",\\n\\t\\t\\t"description": "Thrown if a given argument isn\\\'t of the correct type."\\n\\t\\t}\\n\\t],\\n\\t"asynchronous": false,\\n\\t"since": "v0.0.0",\\n\\t"post_re": [\\n\\t\\t{\\n\\t\\t\\t"search": ",\\\\\\\\)",\\n\\t\\t\\t"replace": " )",\\n\\t\\t\\t"flags": "gm"\\n\\t\\t}\\n\\t]\\n}\' },\n  [length]: 1 ] causes Inquirer.prompt to throw an error: "Error: Parse error on line 30:\n... _return;{{/returns}}}/*** @function\n----------------------^\nExpecting \'CLOSE\', got \'CLOSE_UNESCAPED\'"',
+  [length]: 2 ]
+2020-04-15T21:15:56.873Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ -4,
+  'Error: inquirer_questions [ { type: \'editor\',\n    name: \'editor_input\',\n    message: \'Enter input context (JSON).\',\n    default: \'{\\n\\t"template": "js func",\\n\\t"name": "FunctionName",\\n\\t"description": "Brief description.",\\n\\t"params": [\\n\\t\\t{\\n\\t\\t\\t"type": "ArgumentType",\\n\\t\\t\\t"name": "parametre_name",\\n\\t\\t\\t"default": null,\\n\\t\\t\\t"description": "Brief parametre description."\\n\\t\\t}\\n\\t],\\n\\t"returns": [],\\n\\t"throws": [\\n\\t\\t{\\n\\t\\t\\t"type": "TypeError",\\n\\t\\t\\t"code": "ERR_INVALID_ARG_TYPE",\\n\\t\\t\\t"description": "Thrown if a given argument isn\\\'t of the correct type."\\n\\t\\t}\\n\\t],\\n\\t"asynchronous": false,\\n\\t"since": "v0.0.0",\\n\\t"post_re": [\\n\\t\\t{\\n\\t\\t\\t"search": ",\\\\\\\\)",\\n\\t\\t\\t"replace": " )",\\n\\t\\t\\t"flags": "gm"\\n\\t\\t}\\n\\t]\\n}\' },\n  [length]: 1 ] causes Inquirer.prompt to throw an error: "Error: Parse error on line 30:\n... _return;{{/returns}}}/*** @function\n----------------------^\nExpecting \'CLOSE\', got \'CLOSE_UNESCAPED\'"',
+  [length]: 2 ]
+2020-04-15T21:18:51.640Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-04-15T21:18:51.646Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:18:51.647Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-04-15T21:18:51.647Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-04-15T21:18:51.649Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-04-15T21:18:51.649Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'js func' }
+2020-04-15T21:18:51.649Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:18:51.650Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:18:51.650Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:18:51.651Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ENOENT: no such file or directory, open \'js/func.json\'',
+  [length]: 2 ]
+2020-04-15T21:18:51.651Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:18:51.651Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t},\n\t\t{\n\t\t\t"type": "?Object",\n\t\t\t"name": "options",\n\t\t\t"default": "{}",\n\t\t\t"descriptions": "Additional run-time options."\n\t\t}\n\t],\n\t"returns": [],\n\t"throws": [\n\t\t{\n\t\t\t"type": "TypeError",\n\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n\t\t\t"description": "Thrown if a given argument isn\'t of the correct type."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"since": "v0.0.0",\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-15T21:18:51.651Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t},\n\t\t{\n\t\t\t"type": "?Object",\n\t\t\t"name": "options",\n\t\t\t"default": "{}",\n\t\t\t"descriptions": "Additional run-time options."\n\t\t}\n\t],\n\t"returns": [],\n\t"throws": [\n\t\t{\n\t\t\t"type": "TypeError",\n\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n\t\t\t"description": "Thrown if a given argument isn\'t of the correct type."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"since": "v0.0.0",\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-15T21:18:51.652Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t},\n\t\t{\n\t\t\t"type": "?Object",\n\t\t\t"name": "options",\n\t\t\t"default": "{}",\n\t\t\t"descriptions": "Additional run-time options."\n\t\t}\n\t],\n\t"returns": [],\n\t"throws": [\n\t\t{\n\t\t\t"type": "TypeError",\n\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n\t\t\t"description": "Thrown if a given argument isn\'t of the correct type."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"since": "v0.0.0",\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-15T21:18:51.664Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-04-15T21:19:11.265Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "js func",\n\t"name": "DocumentationStringFromSourceBuffer",\n\t"description": "Returns a string containing only the contents of `/** ... */` style documentation strings from the given source-file buffer.",\n\t"params": [\n\t\t{\n\t\t\t"type": "Buffer",\n\t\t\t"name": "source_buffer",\n\t\t\t"default": null,\n\t\t\t"description": "The source file, as a Node Buffer, to parse for `/** ... */` style documentation strings."\n\t\t},\n\t\t{\n\t\t\t"type": "?Object",\n\t\t\t"name": "options",\n\t\t\t"default": "{}",\n\t\t\t"descriptions": "Additional run-time options."\n\t\t}\n\n\t],\n\t"returns": [],\n\t"throws": [\n\t\t{\n\t\t\t"type": "TypeError",\n\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n\t\t\t"description": "Thrown if `source_buffer` isn\'t a Buffer."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"since": "v0.0.1",\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2020-04-15T21:19:11.266Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "js func",\n\t"name": "DocumentationStringFromSourceBuffer",\n\t"description": "Returns a string containing only the contents of `/** ... */` style documentation strings from the given source-file buffer.",\n\t"params": [\n\t\t{\n\t\t\t"type": "Buffer",\n\t\t\t"name": "source_buffer",\n\t\t\t"default": null,\n\t\t\t"description": "The source file, as a Node Buffer, to parse for `/** ... */` style documentation strings."\n\t\t},\n\t\t{\n\t\t\t"type": "?Object",\n\t\t\t"name": "options",\n\t\t\t"default": "{}",\n\t\t\t"descriptions": "Additional run-time options."\n\t\t}\n\n\t],\n\t"returns": [],\n\t"throws": [\n\t\t{\n\t\t\t"type": "TypeError",\n\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n\t\t\t"description": "Thrown if `source_buffer` isn\'t a Buffer."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"since": "v0.0.1",\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:19:11.267Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'js func',
+  name: 'DocumentationStringFromSourceBuffer',
+  description: 'Returns a string containing only the contents of `/** ... */` style documentation strings from the given source-file buffer.',
+  params: 
+   [ { type: 'Buffer',
+       name: 'source_buffer',
+       default: null,
+       description: 'The source file, as a Node Buffer, to parse for `/** ... */` style documentation strings.' },
+     { type: '?Object',
+       name: 'options',
+       default: '{}',
+       descriptions: 'Additional run-time options.' },
+     [length]: 2 ],
+  returns: [ [length]: 0 ],
+  throws: 
+   [ { type: 'TypeError',
+       code: 'ERR_INVALID_ARG_TYPE',
+       description: 'Thrown if `source_buffer` isn\'t a Buffer.' },
+     [length]: 1 ],
+  asynchronous: false,
+  since: 'v0.0.1',
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ] } undefined
+2020-04-15T21:19:11.267Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:19:11.267Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:19:11.267Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:19:11.268Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'js/func.hbs\'',
+  [length]: 2 ]
+2020-04-15T21:19:11.268Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:19:11.268Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-15T21:19:11.269Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-15T21:19:11.269Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-15T21:19:11.298Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @function DocumentationStringFromSourceBuffer\n* @access public\n* @description Returns a string containing only the contents of `/** ... */` style documentation strings from the given source-file buffer.\n* @param {Buffer} source_buffer - The source file, as a Node Buffer, to parse for `/** ... */` style documentation strings. \n* @param {?Object} options -  [default: ]\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` Thrown if `source_buffer` isn\'t a Buffer.\n* @since v0.0.1\n*/\nfunction DocumentationStringFromSourceBuffer( source_buffer , options = ,){\n\t\tvar return_error;\n\tconst FUNCTION_NAME = \'DocumentationStringFromSourceBuffer\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `received: ${arguments}`});\n\t//Variables\n\t//Parametre checks\n\tif( Buffer.isBuffer(source_buffer) === false ){\n\t\treturn_error = new TypeError(\'Param "source_buffer" is not Buffer.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\tif( typeof(options) !== \'object\' ){\n\t\treturn_error = new TypeError(\'Param "options" is not ?Object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\t//Function\n\n\t//Return\n}\n\n/**\n* @function DocumentationStringFromSourceBuffer_Test\n* @access private\n* @description Tests DocumentationStringFromSourceBuffer\n* @returns {boolean} `true` if all test pass successfully.\n* @throws {Error} If a test fails.\n* @since v0.0.1\n*/\nfunction DocumentationStringFromSourceBuffer_Test(){\n\tconst FUNCTION_NAME = \'DocumentationStringFromSourceBuffer_Test\';\n\t//Variables\n\t//Tests\n\t//Return\n\treturn true;\n}\n',
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:19:11.298Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @function DocumentationStringFromSourceBuffer\n* @access public\n* @description Returns a string containing only the contents of `/** ... */` style documentation strings from the given source-file buffer.\n* @param {Buffer} source_buffer - The source file, as a Node Buffer, to parse for `/** ... */` style documentation strings. \n* @param {?Object} options -  [default: ]\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` Thrown if `source_buffer` isn\'t a Buffer.\n* @since v0.0.1\n*/\nfunction DocumentationStringFromSourceBuffer( source_buffer , options =  ){\n\t\tvar return_error;\n\tconst FUNCTION_NAME = \'DocumentationStringFromSourceBuffer\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `received: ${arguments}`});\n\t//Variables\n\t//Parametre checks\n\tif( Buffer.isBuffer(source_buffer) === false ){\n\t\treturn_error = new TypeError(\'Param "source_buffer" is not Buffer.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\tif( typeof(options) !== \'object\' ){\n\t\treturn_error = new TypeError(\'Param "options" is not ?Object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\t//Function\n\n\t//Return\n}\n\n/**\n* @function DocumentationStringFromSourceBuffer_Test\n* @access private\n* @description Tests DocumentationStringFromSourceBuffer\n* @returns {boolean} `true` if all test pass successfully.\n* @throws {Error} If a test fails.\n* @since v0.0.1\n*/\nfunction DocumentationStringFromSourceBuffer_Test(){\n\tconst FUNCTION_NAME = \'DocumentationStringFromSourceBuffer_Test\';\n\t//Variables\n\t//Tests\n\t//Return\n\treturn true;\n}\n',
+  [length]: 2 ]
+2020-04-15T21:19:11.299Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @function DocumentationStringFromSourceBuffer\n* @access public\n* @description Returns a string containing only the contents of `/** ... */` style documentation strings from the given source-file buffer.\n* @param {Buffer} source_buffer - The source file, as a Node Buffer, to parse for `/** ... */` style documentation strings. \n* @param {?Object} options -  [default: ]\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` Thrown if `source_buffer` isn\'t a Buffer.\n* @since v0.0.1\n*/\nfunction DocumentationStringFromSourceBuffer( source_buffer , options =  ){\n\t\tvar return_error;\n\tconst FUNCTION_NAME = \'DocumentationStringFromSourceBuffer\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `received: ${arguments}`});\n\t//Variables\n\t//Parametre checks\n\tif( Buffer.isBuffer(source_buffer) === false ){\n\t\treturn_error = new TypeError(\'Param "source_buffer" is not Buffer.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\tif( typeof(options) !== \'object\' ){\n\t\treturn_error = new TypeError(\'Param "options" is not ?Object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\t//Function\n\n\t//Return\n}\n\n/**\n* @function DocumentationStringFromSourceBuffer_Test\n* @access private\n* @description Tests DocumentationStringFromSourceBuffer\n* @returns {boolean} `true` if all test pass successfully.\n* @throws {Error} If a test fails.\n* @since v0.0.1\n*/\nfunction DocumentationStringFromSourceBuffer_Test(){\n\tconst FUNCTION_NAME = \'DocumentationStringFromSourceBuffer_Test\';\n\t//Variables\n\t//Tests\n\t//Return\n\treturn true;\n}\n',
+  [ 0,
+    '/**\n* @function DocumentationStringFromSourceBuffer\n* @access public\n* @description Returns a string containing only the contents of `/** ... */` style documentation strings from the given source-file buffer.\n* @param {Buffer} source_buffer - The source file, as a Node Buffer, to parse for `/** ... */` style documentation strings. \n* @param {?Object} options -  [default: ]\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` Thrown if `source_buffer` isn\'t a Buffer.\n* @since v0.0.1\n*/\nfunction DocumentationStringFromSourceBuffer( source_buffer , options =  ){\n\t\tvar return_error;\n\tconst FUNCTION_NAME = \'DocumentationStringFromSourceBuffer\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `received: ${arguments}`});\n\t//Variables\n\t//Parametre checks\n\tif( Buffer.isBuffer(source_buffer) === false ){\n\t\treturn_error = new TypeError(\'Param "source_buffer" is not Buffer.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\tif( typeof(options) !== \'object\' ){\n\t\treturn_error = new TypeError(\'Param "options" is not ?Object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\t//Function\n\n\t//Return\n}\n\n/**\n* @function DocumentationStringFromSourceBuffer_Test\n* @access private\n* @description Tests DocumentationStringFromSourceBuffer\n* @returns {boolean} `true` if all test pass successfully.\n* @throws {Error} If a test fails.\n* @since v0.0.1\n*/\nfunction DocumentationStringFromSourceBuffer_Test(){\n\tconst FUNCTION_NAME = \'DocumentationStringFromSourceBuffer_Test\';\n\t//Variables\n\t//Tests\n\t//Return\n\treturn true;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-04-15T21:19:11.299Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @function DocumentationStringFromSourceBuffer\n* @access public\n* @description Returns a string containing only the contents of `/** ... */` style documentation strings from the given source-file buffer.\n* @param {Buffer} source_buffer - The source file, as a Node Buffer, to parse for `/** ... */` style documentation strings. \n* @param {?Object} options -  [default: ]\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` Thrown if `source_buffer` isn\'t a Buffer.\n* @since v0.0.1\n*/\nfunction DocumentationStringFromSourceBuffer( source_buffer , options =  ){\n\t\tvar return_error;\n\tconst FUNCTION_NAME = \'DocumentationStringFromSourceBuffer\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `received: ${arguments}`});\n\t//Variables\n\t//Parametre checks\n\tif( Buffer.isBuffer(source_buffer) === false ){\n\t\treturn_error = new TypeError(\'Param "source_buffer" is not Buffer.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\tif( typeof(options) !== \'object\' ){\n\t\treturn_error = new TypeError(\'Param "options" is not ?Object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\t//Function\n\n\t//Return\n}\n\n/**\n* @function DocumentationStringFromSourceBuffer_Test\n* @access private\n* @description Tests DocumentationStringFromSourceBuffer\n* @returns {boolean} `true` if all test pass successfully.\n* @throws {Error} If a test fails.\n* @since v0.0.1\n*/\nfunction DocumentationStringFromSourceBuffer_Test(){\n\tconst FUNCTION_NAME = \'DocumentationStringFromSourceBuffer_Test\';\n\t//Variables\n\t//Tests\n\t//Return\n\treturn true;\n}\n',
+  [length]: 2 ]
+2020-04-15T21:19:11.299Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @function DocumentationStringFromSourceBuffer\n* @access public\n* @description Returns a string containing only the contents of `/** ... */` style documentation strings from the given source-file buffer.\n* @param {Buffer} source_buffer - The source file, as a Node Buffer, to parse for `/** ... */` style documentation strings. \n* @param {?Object} options -  [default: ]\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` Thrown if `source_buffer` isn\'t a Buffer.\n* @since v0.0.1\n*/\nfunction DocumentationStringFromSourceBuffer( source_buffer , options =  ){\n\t\tvar return_error;\n\tconst FUNCTION_NAME = \'DocumentationStringFromSourceBuffer\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `received: ${arguments}`});\n\t//Variables\n\t//Parametre checks\n\tif( Buffer.isBuffer(source_buffer) === false ){\n\t\treturn_error = new TypeError(\'Param "source_buffer" is not Buffer.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\tif( typeof(options) !== \'object\' ){\n\t\treturn_error = new TypeError(\'Param "options" is not ?Object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\t//Function\n\n\t//Return\n}\n\n/**\n* @function DocumentationStringFromSourceBuffer_Test\n* @access private\n* @description Tests DocumentationStringFromSourceBuffer\n* @returns {boolean} `true` if all test pass successfully.\n* @throws {Error} If a test fails.\n* @since v0.0.1\n*/\nfunction DocumentationStringFromSourceBuffer_Test(){\n\tconst FUNCTION_NAME = \'DocumentationStringFromSourceBuffer_Test\';\n\t//Variables\n\t//Tests\n\t//Return\n\treturn true;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'js func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:19:11.306Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-04-15T21:19:11.306Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-04-15T21:27:39.700Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-04-15T21:27:39.707Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:27:39.708Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-04-15T21:27:39.708Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-04-15T21:27:39.709Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-04-15T21:27:39.710Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'js func' }
+2020-04-15T21:27:39.710Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:27:39.710Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:27:39.711Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:27:39.711Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ENOENT: no such file or directory, open \'js/func.json\'',
+  [length]: 2 ]
+2020-04-15T21:27:39.711Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:27:39.712Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t},\n\t\t{\n\t\t\t"type": "?Object",\n\t\t\t"name": "options",\n\t\t\t"default": {\n\t\t\t\t"value": "{}"\n\t\t\t},\n\t\t\t"descriptions": "Additional run-time options."\n\t\t}\n\t],\n\t"returns": [],\n\t"throws": [\n\t\t{\n\t\t\t"type": "TypeError",\n\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n\t\t\t"description": "Thrown if a given argument isn\'t of the correct type."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"since": "v0.0.0",\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-15T21:27:39.712Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t},\n\t\t{\n\t\t\t"type": "?Object",\n\t\t\t"name": "options",\n\t\t\t"default": {\n\t\t\t\t"value": "{}"\n\t\t\t},\n\t\t\t"descriptions": "Additional run-time options."\n\t\t}\n\t],\n\t"returns": [],\n\t"throws": [\n\t\t{\n\t\t\t"type": "TypeError",\n\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n\t\t\t"description": "Thrown if a given argument isn\'t of the correct type."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"since": "v0.0.0",\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-15T21:27:39.712Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t},\n\t\t{\n\t\t\t"type": "?Object",\n\t\t\t"name": "options",\n\t\t\t"default": {\n\t\t\t\t"value": "{}"\n\t\t\t},\n\t\t\t"descriptions": "Additional run-time options."\n\t\t}\n\t],\n\t"returns": [],\n\t"throws": [\n\t\t{\n\t\t\t"type": "TypeError",\n\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n\t\t\t"description": "Thrown if a given argument isn\'t of the correct type."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"since": "v0.0.0",\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-15T21:27:39.725Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-04-15T21:27:59.371Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "js func",\n\t"name": "DocumentationStringFromSourceBuffer",\n\t"description": "Returns a string containing only the contents of `\\\\/** ... *\\\\/` style documentation strings from the given source-file buffer.",\n\t"params": [\n\t\t{\n\t\t\t"type": "Buffer",\n\t\t\t"name": "source_buffer",\n\t\t\t"default": null,\n\t\t\t"description": "The source file, as a Node Buffer, to parse for `\\\\/** ... *\\\\/` style documentation strings."\n\t\t},\n\t\t{\n\t\t\t"type": "?Object",\n\t\t\t"name": "options",\n\t\t\t"default": "{}",\n\t\t\t"descriptions": "Additional run-time options."\n\t\t}\n\n\t],\n\t"returns": [\n\t\t{ "type": "string", "description": "A string containing all of the documentation style comments, with the comment markers themselves remove, concatenated together." }\n\t\t],\n\t"throws": [\n\t\t{\n\t\t\t"type": "TypeError",\n\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n\t\t\t"description": "Thrown if `source_buffer` isn\'t a Buffer."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"since": "v0.0.1",\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2020-04-15T21:27:59.372Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "js func",\n\t"name": "DocumentationStringFromSourceBuffer",\n\t"description": "Returns a string containing only the contents of `\\\\/** ... *\\\\/` style documentation strings from the given source-file buffer.",\n\t"params": [\n\t\t{\n\t\t\t"type": "Buffer",\n\t\t\t"name": "source_buffer",\n\t\t\t"default": null,\n\t\t\t"description": "The source file, as a Node Buffer, to parse for `\\\\/** ... *\\\\/` style documentation strings."\n\t\t},\n\t\t{\n\t\t\t"type": "?Object",\n\t\t\t"name": "options",\n\t\t\t"default": "{}",\n\t\t\t"descriptions": "Additional run-time options."\n\t\t}\n\n\t],\n\t"returns": [\n\t\t{ "type": "string", "description": "A string containing all of the documentation style comments, with the comment markers themselves remove, concatenated together." }\n\t\t],\n\t"throws": [\n\t\t{\n\t\t\t"type": "TypeError",\n\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n\t\t\t"description": "Thrown if `source_buffer` isn\'t a Buffer."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"since": "v0.0.1",\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:27:59.372Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'js func',
+  name: 'DocumentationStringFromSourceBuffer',
+  description: 'Returns a string containing only the contents of `\\/** ... *\\/` style documentation strings from the given source-file buffer.',
+  params: 
+   [ { type: 'Buffer',
+       name: 'source_buffer',
+       default: null,
+       description: 'The source file, as a Node Buffer, to parse for `\\/** ... *\\/` style documentation strings.' },
+     { type: '?Object',
+       name: 'options',
+       default: '{}',
+       descriptions: 'Additional run-time options.' },
+     [length]: 2 ],
+  returns: 
+   [ { type: 'string',
+       description: 'A string containing all of the documentation style comments, with the comment markers themselves remove, concatenated together.' },
+     [length]: 1 ],
+  throws: 
+   [ { type: 'TypeError',
+       code: 'ERR_INVALID_ARG_TYPE',
+       description: 'Thrown if `source_buffer` isn\'t a Buffer.' },
+     [length]: 1 ],
+  asynchronous: false,
+  since: 'v0.0.1',
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ] } undefined
+2020-04-15T21:27:59.373Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:27:59.373Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:27:59.373Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:27:59.374Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'js/func.hbs\'',
+  [length]: 2 ]
+2020-04-15T21:27:59.374Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:27:59.374Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-15T21:27:59.375Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-15T21:27:59.375Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-15T21:27:59.405Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @function DocumentationStringFromSourceBuffer\n* @access public\n* @description Returns a string containing only the contents of `\\/** ... *\\/` style documentation strings from the given source-file buffer.\n* @param {Buffer} source_buffer - The source file, as a Node Buffer, to parse for `\\/** ... *\\/` style documentation strings. \n* @param {?Object} options -  [default: ]\n* @returns {string} A string containing all of the documentation style comments, with the comment markers themselves remove, concatenated together.\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` Thrown if `source_buffer` isn\'t a Buffer.\n* @since v0.0.1\n*/\nfunction DocumentationStringFromSourceBuffer( source_buffer , options = ,){\n\tvar _return;\n\tvar return_error;\n\tconst FUNCTION_NAME = \'DocumentationStringFromSourceBuffer\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `received: ${arguments}`});\n\t//Variables\n\t//Parametre checks\n\tif( Buffer.isBuffer(source_buffer) === false ){\n\t\treturn_error = new TypeError(\'Param "source_buffer" is not Buffer.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\tif( typeof(options) !== \'object\' ){\n\t\treturn_error = new TypeError(\'Param "options" is not ?Object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\t//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `returned: ${_return}`});\n\treturn _return;\n}\n\n/**\n* @function DocumentationStringFromSourceBuffer_Test\n* @access private\n* @description Tests DocumentationStringFromSourceBuffer\n* @returns {boolean} `true` if all test pass successfully.\n* @throws {Error} If a test fails.\n* @since v0.0.1\n*/\nfunction DocumentationStringFromSourceBuffer_Test(){\n\tconst FUNCTION_NAME = \'DocumentationStringFromSourceBuffer_Test\';\n\t//Variables\n\t//Tests\n\t//Return\n\treturn true;\n}\n',
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:27:59.406Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @function DocumentationStringFromSourceBuffer\n* @access public\n* @description Returns a string containing only the contents of `\\/** ... *\\/` style documentation strings from the given source-file buffer.\n* @param {Buffer} source_buffer - The source file, as a Node Buffer, to parse for `\\/** ... *\\/` style documentation strings. \n* @param {?Object} options -  [default: ]\n* @returns {string} A string containing all of the documentation style comments, with the comment markers themselves remove, concatenated together.\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` Thrown if `source_buffer` isn\'t a Buffer.\n* @since v0.0.1\n*/\nfunction DocumentationStringFromSourceBuffer( source_buffer , options =  ){\n\tvar _return;\n\tvar return_error;\n\tconst FUNCTION_NAME = \'DocumentationStringFromSourceBuffer\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `received: ${arguments}`});\n\t//Variables\n\t//Parametre checks\n\tif( Buffer.isBuffer(source_buffer) === false ){\n\t\treturn_error = new TypeError(\'Param "source_buffer" is not Buffer.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\tif( typeof(options) !== \'object\' ){\n\t\treturn_error = new TypeError(\'Param "options" is not ?Object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\t//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `returned: ${_return}`});\n\treturn _return;\n}\n\n/**\n* @function DocumentationStringFromSourceBuffer_Test\n* @access private\n* @description Tests DocumentationStringFromSourceBuffer\n* @returns {boolean} `true` if all test pass successfully.\n* @throws {Error} If a test fails.\n* @since v0.0.1\n*/\nfunction DocumentationStringFromSourceBuffer_Test(){\n\tconst FUNCTION_NAME = \'DocumentationStringFromSourceBuffer_Test\';\n\t//Variables\n\t//Tests\n\t//Return\n\treturn true;\n}\n',
+  [length]: 2 ]
+2020-04-15T21:27:59.406Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @function DocumentationStringFromSourceBuffer\n* @access public\n* @description Returns a string containing only the contents of `\\/** ... *\\/` style documentation strings from the given source-file buffer.\n* @param {Buffer} source_buffer - The source file, as a Node Buffer, to parse for `\\/** ... *\\/` style documentation strings. \n* @param {?Object} options -  [default: ]\n* @returns {string} A string containing all of the documentation style comments, with the comment markers themselves remove, concatenated together.\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` Thrown if `source_buffer` isn\'t a Buffer.\n* @since v0.0.1\n*/\nfunction DocumentationStringFromSourceBuffer( source_buffer , options =  ){\n\tvar _return;\n\tvar return_error;\n\tconst FUNCTION_NAME = \'DocumentationStringFromSourceBuffer\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `received: ${arguments}`});\n\t//Variables\n\t//Parametre checks\n\tif( Buffer.isBuffer(source_buffer) === false ){\n\t\treturn_error = new TypeError(\'Param "source_buffer" is not Buffer.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\tif( typeof(options) !== \'object\' ){\n\t\treturn_error = new TypeError(\'Param "options" is not ?Object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\t//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `returned: ${_return}`});\n\treturn _return;\n}\n\n/**\n* @function DocumentationStringFromSourceBuffer_Test\n* @access private\n* @description Tests DocumentationStringFromSourceBuffer\n* @returns {boolean} `true` if all test pass successfully.\n* @throws {Error} If a test fails.\n* @since v0.0.1\n*/\nfunction DocumentationStringFromSourceBuffer_Test(){\n\tconst FUNCTION_NAME = \'DocumentationStringFromSourceBuffer_Test\';\n\t//Variables\n\t//Tests\n\t//Return\n\treturn true;\n}\n',
+  [ 0,
+    '/**\n* @function DocumentationStringFromSourceBuffer\n* @access public\n* @description Returns a string containing only the contents of `\\/** ... *\\/` style documentation strings from the given source-file buffer.\n* @param {Buffer} source_buffer - The source file, as a Node Buffer, to parse for `\\/** ... *\\/` style documentation strings. \n* @param {?Object} options -  [default: ]\n* @returns {string} A string containing all of the documentation style comments, with the comment markers themselves remove, concatenated together.\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` Thrown if `source_buffer` isn\'t a Buffer.\n* @since v0.0.1\n*/\nfunction DocumentationStringFromSourceBuffer( source_buffer , options =  ){\n\tvar _return;\n\tvar return_error;\n\tconst FUNCTION_NAME = \'DocumentationStringFromSourceBuffer\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `received: ${arguments}`});\n\t//Variables\n\t//Parametre checks\n\tif( Buffer.isBuffer(source_buffer) === false ){\n\t\treturn_error = new TypeError(\'Param "source_buffer" is not Buffer.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\tif( typeof(options) !== \'object\' ){\n\t\treturn_error = new TypeError(\'Param "options" is not ?Object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\t//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `returned: ${_return}`});\n\treturn _return;\n}\n\n/**\n* @function DocumentationStringFromSourceBuffer_Test\n* @access private\n* @description Tests DocumentationStringFromSourceBuffer\n* @returns {boolean} `true` if all test pass successfully.\n* @throws {Error} If a test fails.\n* @since v0.0.1\n*/\nfunction DocumentationStringFromSourceBuffer_Test(){\n\tconst FUNCTION_NAME = \'DocumentationStringFromSourceBuffer_Test\';\n\t//Variables\n\t//Tests\n\t//Return\n\treturn true;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-04-15T21:27:59.406Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @function DocumentationStringFromSourceBuffer\n* @access public\n* @description Returns a string containing only the contents of `\\/** ... *\\/` style documentation strings from the given source-file buffer.\n* @param {Buffer} source_buffer - The source file, as a Node Buffer, to parse for `\\/** ... *\\/` style documentation strings. \n* @param {?Object} options -  [default: ]\n* @returns {string} A string containing all of the documentation style comments, with the comment markers themselves remove, concatenated together.\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` Thrown if `source_buffer` isn\'t a Buffer.\n* @since v0.0.1\n*/\nfunction DocumentationStringFromSourceBuffer( source_buffer , options =  ){\n\tvar _return;\n\tvar return_error;\n\tconst FUNCTION_NAME = \'DocumentationStringFromSourceBuffer\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `received: ${arguments}`});\n\t//Variables\n\t//Parametre checks\n\tif( Buffer.isBuffer(source_buffer) === false ){\n\t\treturn_error = new TypeError(\'Param "source_buffer" is not Buffer.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\tif( typeof(options) !== \'object\' ){\n\t\treturn_error = new TypeError(\'Param "options" is not ?Object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\t//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `returned: ${_return}`});\n\treturn _return;\n}\n\n/**\n* @function DocumentationStringFromSourceBuffer_Test\n* @access private\n* @description Tests DocumentationStringFromSourceBuffer\n* @returns {boolean} `true` if all test pass successfully.\n* @throws {Error} If a test fails.\n* @since v0.0.1\n*/\nfunction DocumentationStringFromSourceBuffer_Test(){\n\tconst FUNCTION_NAME = \'DocumentationStringFromSourceBuffer_Test\';\n\t//Variables\n\t//Tests\n\t//Return\n\treturn true;\n}\n',
+  [length]: 2 ]
+2020-04-15T21:27:59.407Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @function DocumentationStringFromSourceBuffer\n* @access public\n* @description Returns a string containing only the contents of `\\/** ... *\\/` style documentation strings from the given source-file buffer.\n* @param {Buffer} source_buffer - The source file, as a Node Buffer, to parse for `\\/** ... *\\/` style documentation strings. \n* @param {?Object} options -  [default: ]\n* @returns {string} A string containing all of the documentation style comments, with the comment markers themselves remove, concatenated together.\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` Thrown if `source_buffer` isn\'t a Buffer.\n* @since v0.0.1\n*/\nfunction DocumentationStringFromSourceBuffer( source_buffer , options =  ){\n\tvar _return;\n\tvar return_error;\n\tconst FUNCTION_NAME = \'DocumentationStringFromSourceBuffer\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `received: ${arguments}`});\n\t//Variables\n\t//Parametre checks\n\tif( Buffer.isBuffer(source_buffer) === false ){\n\t\treturn_error = new TypeError(\'Param "source_buffer" is not Buffer.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\tif( typeof(options) !== \'object\' ){\n\t\treturn_error = new TypeError(\'Param "options" is not ?Object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\t//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `returned: ${_return}`});\n\treturn _return;\n}\n\n/**\n* @function DocumentationStringFromSourceBuffer_Test\n* @access private\n* @description Tests DocumentationStringFromSourceBuffer\n* @returns {boolean} `true` if all test pass successfully.\n* @throws {Error} If a test fails.\n* @since v0.0.1\n*/\nfunction DocumentationStringFromSourceBuffer_Test(){\n\tconst FUNCTION_NAME = \'DocumentationStringFromSourceBuffer_Test\';\n\t//Variables\n\t//Tests\n\t//Return\n\treturn true;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'js func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:27:59.413Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-04-15T21:27:59.413Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-04-15T21:52:53.419Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-04-15T21:52:53.425Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: { '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:52:53.426Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [ 0,
+  { template_directories: 
+     [ 'Resources/templates',
+       '/home/cameron/.local/share/function-factory-nodejs/templates',
+       [length]: 2 ],
+    defaults_directories: 
+     [ 'Resources/defaults',
+       '/home/cameron/.local/share/function-factory-nodejs/defaults',
+       [length]: 2 ] },
+  [length]: 2 ]
+2020-04-15T21:52:53.426Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-04-15T21:52:53.428Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-04-15T21:52:53.428Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'js func' }
+2020-04-15T21:52:53.429Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: { '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:52:53.429Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: { '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:52:53.429Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:52:53.430Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ -4,
+  'JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ENOENT: no such file or directory, open \'js/func.json\'',
+  [length]: 2 ]
+2020-04-15T21:52:53.430Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: { '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:52:53.430Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t},\n\t\t{\n\t\t\t"type": "?Object",\n\t\t\t"name": "options",\n\t\t\t"default": {\n\t\t\t\t"value": "{}"\n\t\t\t},\n\t\t\t"descriptions": "Additional run-time options."\n\t\t}\n\t],\n\t"returns": [],\n\t"throws": [\n\t\t{\n\t\t\t"type": "TypeError",\n\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n\t\t\t"description": "Thrown if a given argument isn\'t of the correct type."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"since": "v0.0.0",\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-15T21:52:53.431Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t},\n\t\t{\n\t\t\t"type": "?Object",\n\t\t\t"name": "options",\n\t\t\t"default": {\n\t\t\t\t"value": "{}"\n\t\t\t},\n\t\t\t"descriptions": "Additional run-time options."\n\t\t}\n\t],\n\t"returns": [],\n\t"throws": [\n\t\t{\n\t\t\t"type": "TypeError",\n\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n\t\t\t"description": "Thrown if a given argument isn\'t of the correct type."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"since": "v0.0.0",\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-15T21:52:53.431Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [ 0,
+  '{\n\t"template": "js func",\n\t"name": "FunctionName",\n\t"description": "Brief description.",\n\t"params": [\n\t\t{\n\t\t\t"type": "ArgumentType",\n\t\t\t"name": "parametre_name",\n\t\t\t"default": null,\n\t\t\t"description": "Brief parametre description."\n\t\t},\n\t\t{\n\t\t\t"type": "?Object",\n\t\t\t"name": "options",\n\t\t\t"default": {\n\t\t\t\t"value": "{}"\n\t\t\t},\n\t\t\t"descriptions": "Additional run-time options."\n\t\t}\n\t],\n\t"returns": [],\n\t"throws": [\n\t\t{\n\t\t\t"type": "TypeError",\n\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n\t\t\t"description": "Thrown if a given argument isn\'t of the correct type."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"since": "v0.0.0",\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}',
+  [length]: 2 ]
+2020-04-15T21:52:53.443Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-04-15T21:56:57.494Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: { editor_input: '{\n\t"template": "js func",\n\t"name": "getDocumentationStringFromSourceString",\n\t"description": "Returns a string containing only the contents of `\\\\/** ... *\\\\/` style documentation strings from the given source-file string.",\n\t"params": [\n\t\t{\n\t\t\t"type": "string",\n\t\t\t"name": "source_string",\n\t\t\t"default": null,\n\t\t\t"description": "The source file, as a string, to parse for `\\\\/** ... *\\\\/` style documentation strings."\n\t\t},\n\t\t{\n\t\t\t"type": "?Object",\n\t\t\t"name": "options",\n\t\t\t"default": "{}",\n\t\t\t"descriptions": "Additional run-time options."\n\t\t}\n\n\t],\n\t"returns": [\n\t\t{ "type": "string", "description": "A string containing all of the documentation style comments, with the comment markers themselves remove, concatenated together." }\n\t\t],\n\t"throws": [\n\t\t{\n\t\t\t"type": "TypeError",\n\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n\t\t\t"description": "Thrown if `source_string` isn\'t a string."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"since": "v0.0.1",\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' }
+2020-04-15T21:56:57.495Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: { '0': 
+   { editor_input: '{\n\t"template": "js func",\n\t"name": "getDocumentationStringFromSourceString",\n\t"description": "Returns a string containing only the contents of `\\\\/** ... *\\\\/` style documentation strings from the given source-file string.",\n\t"params": [\n\t\t{\n\t\t\t"type": "string",\n\t\t\t"name": "source_string",\n\t\t\t"default": null,\n\t\t\t"description": "The source file, as a string, to parse for `\\\\/** ... *\\\\/` style documentation strings."\n\t\t},\n\t\t{\n\t\t\t"type": "?Object",\n\t\t\t"name": "options",\n\t\t\t"default": "{}",\n\t\t\t"descriptions": "Additional run-time options."\n\t\t}\n\n\t],\n\t"returns": [\n\t\t{ "type": "string", "description": "A string containing all of the documentation style comments, with the comment markers themselves remove, concatenated together." }\n\t\t],\n\t"throws": [\n\t\t{\n\t\t\t"type": "TypeError",\n\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n\t\t\t"description": "Thrown if `source_string` isn\'t a string."\n\t\t}\n\t],\n\t"asynchronous": false,\n\t"since": "v0.0.1",\n\t"post_re": [\n\t\t{\n\t\t\t"search": ",\\\\)",\n\t\t\t"replace": " )",\n\t\t\t"flags": "gm"\n\t\t}\n\t]\n}\n' },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:56:57.495Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: { template: 'js func',
+  name: 'getDocumentationStringFromSourceString',
+  description: 'Returns a string containing only the contents of `\\/** ... *\\/` style documentation strings from the given source-file string.',
+  params: 
+   [ { type: 'string',
+       name: 'source_string',
+       default: null,
+       description: 'The source file, as a string, to parse for `\\/** ... *\\/` style documentation strings.' },
+     { type: '?Object',
+       name: 'options',
+       default: '{}',
+       descriptions: 'Additional run-time options.' },
+     [length]: 2 ],
+  returns: 
+   [ { type: 'string',
+       description: 'A string containing all of the documentation style comments, with the comment markers themselves remove, concatenated together.' },
+     [length]: 1 ],
+  throws: 
+   [ { type: 'TypeError',
+       code: 'ERR_INVALID_ARG_TYPE',
+       description: 'Thrown if `source_string` isn\'t a string.' },
+     [length]: 1 ],
+  asynchronous: false,
+  since: 'v0.0.1',
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ] } undefined
+2020-04-15T21:56:57.496Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: { '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:56:57.496Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: { '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:56:57.496Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:56:57.497Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ -3,
+  'Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access \'js/func.hbs\'',
+  [length]: 2 ]
+2020-04-15T21:56:57.497Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: { '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:56:57.498Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-15T21:56:57.498Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-15T21:56:57.498Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [ 0,
+  { [Function: ret]
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular] },
+    _setup: 
+     { [Function]
+       [length]: 1,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } },
+    _child: 
+     { [Function]
+       [length]: 4,
+       [name]: '',
+       [prototype]: { [constructor]: [Circular] } } },
+  [length]: 2 ]
+2020-04-15T21:56:57.528Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: { '0': '/**\n* @function getDocumentationStringFromSourceString\n* @access public\n* @description Returns a string containing only the contents of `\\/** ... *\\/` style documentation strings from the given source-file string.\n* @param {string} source_string - The source file, as a string, to parse for `\\/** ... *\\/` style documentation strings. \n* @param {?Object} options -  [default: ]\n* @returns {string} A string containing all of the documentation style comments, with the comment markers themselves remove, concatenated together.\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` Thrown if `source_string` isn\'t a string.\n* @since v0.0.1\n*/\nfunction getDocumentationStringFromSourceString( source_string , options = ,){\n\tvar _return;\n\tvar return_error;\n\tconst FUNCTION_NAME = \'getDocumentationStringFromSourceString\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `received: ${arguments}`});\n\t//Variables\n\t//Parametre checks\n\tif( typeof(source_string) !== \'string\' ){\n\t\treturn_error = new TypeError(\'Param "source_string" is not string.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\tif( typeof(options) !== \'object\' ){\n\t\treturn_error = new TypeError(\'Param "options" is not ?Object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\t//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `returned: ${_return}`});\n\treturn _return;\n}\n\n/**\n* @function getDocumentationStringFromSourceString_Test\n* @access private\n* @description Tests getDocumentationStringFromSourceString\n* @returns {boolean} `true` if all test pass successfully.\n* @throws {Error} If a test fails.\n* @since v0.0.1\n*/\nfunction getDocumentationStringFromSourceString_Test(){\n\tconst FUNCTION_NAME = \'getDocumentationStringFromSourceString_Test\';\n\t//Variables\n\t//Tests\n\t//Return\n\treturn true;\n}\n',
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:56:57.529Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [ 0,
+  '/**\n* @function getDocumentationStringFromSourceString\n* @access public\n* @description Returns a string containing only the contents of `\\/** ... *\\/` style documentation strings from the given source-file string.\n* @param {string} source_string - The source file, as a string, to parse for `\\/** ... *\\/` style documentation strings. \n* @param {?Object} options -  [default: ]\n* @returns {string} A string containing all of the documentation style comments, with the comment markers themselves remove, concatenated together.\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` Thrown if `source_string` isn\'t a string.\n* @since v0.0.1\n*/\nfunction getDocumentationStringFromSourceString( source_string , options =  ){\n\tvar _return;\n\tvar return_error;\n\tconst FUNCTION_NAME = \'getDocumentationStringFromSourceString\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `received: ${arguments}`});\n\t//Variables\n\t//Parametre checks\n\tif( typeof(source_string) !== \'string\' ){\n\t\treturn_error = new TypeError(\'Param "source_string" is not string.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\tif( typeof(options) !== \'object\' ){\n\t\treturn_error = new TypeError(\'Param "options" is not ?Object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\t//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `returned: ${_return}`});\n\treturn _return;\n}\n\n/**\n* @function getDocumentationStringFromSourceString_Test\n* @access private\n* @description Tests getDocumentationStringFromSourceString\n* @returns {boolean} `true` if all test pass successfully.\n* @throws {Error} If a test fails.\n* @since v0.0.1\n*/\nfunction getDocumentationStringFromSourceString_Test(){\n\tconst FUNCTION_NAME = \'getDocumentationStringFromSourceString_Test\';\n\t//Variables\n\t//Tests\n\t//Return\n\treturn true;\n}\n',
+  [length]: 2 ]
+2020-04-15T21:56:57.529Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [ 0,
+  '/**\n* @function getDocumentationStringFromSourceString\n* @access public\n* @description Returns a string containing only the contents of `\\/** ... *\\/` style documentation strings from the given source-file string.\n* @param {string} source_string - The source file, as a string, to parse for `\\/** ... *\\/` style documentation strings. \n* @param {?Object} options -  [default: ]\n* @returns {string} A string containing all of the documentation style comments, with the comment markers themselves remove, concatenated together.\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` Thrown if `source_string` isn\'t a string.\n* @since v0.0.1\n*/\nfunction getDocumentationStringFromSourceString( source_string , options =  ){\n\tvar _return;\n\tvar return_error;\n\tconst FUNCTION_NAME = \'getDocumentationStringFromSourceString\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `received: ${arguments}`});\n\t//Variables\n\t//Parametre checks\n\tif( typeof(source_string) !== \'string\' ){\n\t\treturn_error = new TypeError(\'Param "source_string" is not string.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\tif( typeof(options) !== \'object\' ){\n\t\treturn_error = new TypeError(\'Param "options" is not ?Object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\t//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `returned: ${_return}`});\n\treturn _return;\n}\n\n/**\n* @function getDocumentationStringFromSourceString_Test\n* @access private\n* @description Tests getDocumentationStringFromSourceString\n* @returns {boolean} `true` if all test pass successfully.\n* @throws {Error} If a test fails.\n* @since v0.0.1\n*/\nfunction getDocumentationStringFromSourceString_Test(){\n\tconst FUNCTION_NAME = \'getDocumentationStringFromSourceString_Test\';\n\t//Variables\n\t//Tests\n\t//Return\n\treturn true;\n}\n',
+  [ 0,
+    '/**\n* @function getDocumentationStringFromSourceString\n* @access public\n* @description Returns a string containing only the contents of `\\/** ... *\\/` style documentation strings from the given source-file string.\n* @param {string} source_string - The source file, as a string, to parse for `\\/** ... *\\/` style documentation strings. \n* @param {?Object} options -  [default: ]\n* @returns {string} A string containing all of the documentation style comments, with the comment markers themselves remove, concatenated together.\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` Thrown if `source_string` isn\'t a string.\n* @since v0.0.1\n*/\nfunction getDocumentationStringFromSourceString( source_string , options =  ){\n\tvar _return;\n\tvar return_error;\n\tconst FUNCTION_NAME = \'getDocumentationStringFromSourceString\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `received: ${arguments}`});\n\t//Variables\n\t//Parametre checks\n\tif( typeof(source_string) !== \'string\' ){\n\t\treturn_error = new TypeError(\'Param "source_string" is not string.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\tif( typeof(options) !== \'object\' ){\n\t\treturn_error = new TypeError(\'Param "options" is not ?Object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\t//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `returned: ${_return}`});\n\treturn _return;\n}\n\n/**\n* @function getDocumentationStringFromSourceString_Test\n* @access private\n* @description Tests getDocumentationStringFromSourceString\n* @returns {boolean} `true` if all test pass successfully.\n* @throws {Error} If a test fails.\n* @since v0.0.1\n*/\nfunction getDocumentationStringFromSourceString_Test(){\n\tconst FUNCTION_NAME = \'getDocumentationStringFromSourceString_Test\';\n\t//Variables\n\t//Tests\n\t//Return\n\treturn true;\n}\n',
+    [length]: 2 ],
+  [length]: 3 ]
+2020-04-15T21:56:57.529Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [ 0,
+  '/**\n* @function getDocumentationStringFromSourceString\n* @access public\n* @description Returns a string containing only the contents of `\\/** ... *\\/` style documentation strings from the given source-file string.\n* @param {string} source_string - The source file, as a string, to parse for `\\/** ... *\\/` style documentation strings. \n* @param {?Object} options -  [default: ]\n* @returns {string} A string containing all of the documentation style comments, with the comment markers themselves remove, concatenated together.\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` Thrown if `source_string` isn\'t a string.\n* @since v0.0.1\n*/\nfunction getDocumentationStringFromSourceString( source_string , options =  ){\n\tvar _return;\n\tvar return_error;\n\tconst FUNCTION_NAME = \'getDocumentationStringFromSourceString\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `received: ${arguments}`});\n\t//Variables\n\t//Parametre checks\n\tif( typeof(source_string) !== \'string\' ){\n\t\treturn_error = new TypeError(\'Param "source_string" is not string.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\tif( typeof(options) !== \'object\' ){\n\t\treturn_error = new TypeError(\'Param "options" is not ?Object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\t//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `returned: ${_return}`});\n\treturn _return;\n}\n\n/**\n* @function getDocumentationStringFromSourceString_Test\n* @access private\n* @description Tests getDocumentationStringFromSourceString\n* @returns {boolean} `true` if all test pass successfully.\n* @throws {Error} If a test fails.\n* @since v0.0.1\n*/\nfunction getDocumentationStringFromSourceString_Test(){\n\tconst FUNCTION_NAME = \'getDocumentationStringFromSourceString_Test\';\n\t//Variables\n\t//Tests\n\t//Return\n\treturn true;\n}\n',
+  [length]: 2 ]
+2020-04-15T21:56:57.530Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: { '0': '/**\n* @function getDocumentationStringFromSourceString\n* @access public\n* @description Returns a string containing only the contents of `\\/** ... *\\/` style documentation strings from the given source-file string.\n* @param {string} source_string - The source file, as a string, to parse for `\\/** ... *\\/` style documentation strings. \n* @param {?Object} options -  [default: ]\n* @returns {string} A string containing all of the documentation style comments, with the comment markers themselves remove, concatenated together.\n* @throws {TypeError} `ERR_INVALID_ARG_TYPE` Thrown if `source_string` isn\'t a string.\n* @since v0.0.1\n*/\nfunction getDocumentationStringFromSourceString( source_string , options =  ){\n\tvar _return;\n\tvar return_error;\n\tconst FUNCTION_NAME = \'getDocumentationStringFromSourceString\';\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `received: ${arguments}`});\n\t//Variables\n\t//Parametre checks\n\tif( typeof(source_string) !== \'string\' ){\n\t\treturn_error = new TypeError(\'Param "source_string" is not string.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\tif( typeof(options) !== \'object\' ){\n\t\treturn_error = new TypeError(\'Param "options" is not ?Object.\');\n\t\treturn_error.code = ERR_INVALID_ARG_TYPE;\n\t\tthrow return_error;\n\t}\n\t//Function\n\n\t//Return\n\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: \'debug\', message: `returned: ${_return}`});\n\treturn _return;\n}\n\n/**\n* @function getDocumentationStringFromSourceString_Test\n* @access private\n* @description Tests getDocumentationStringFromSourceString\n* @returns {boolean} `true` if all test pass successfully.\n* @throws {Error} If a test fails.\n* @since v0.0.1\n*/\nfunction getDocumentationStringFromSourceString_Test(){\n\tconst FUNCTION_NAME = \'getDocumentationStringFromSourceString_Test\';\n\t//Variables\n\t//Tests\n\t//Return\n\treturn true;\n}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'js func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: { [Function: values] [length]: 0, [name]: 'values' } }
+2020-04-15T21:56:57.538Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-04-15T21:56:57.538Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]

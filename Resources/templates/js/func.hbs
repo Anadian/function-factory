@@ -1,31 +1,47 @@
 /**
 * @function {{name}}
-* @access public
-* @description {{description}}
-{{#params}}* @param { {{~type~}} } logger - The logger to be used for logging or `null` to disable logging.
-* @throws {TypeError} `ERR_INVALID_ARG_TYPE` if logger is not an object or `null`. 
-* @since v0.0.0
+{{#asynchronous}}* @async
+{{/asynchronous}}* @access public
+* @description {{&description}}
+{{#params}}* @param { {{~type~}} } {{name}} - {{&description}} {{#default}}[default: {{&value}}]{{/default}}
+{{/params}}{{#returns}}* @returns { {{~type~}} } {{&description}}
+{{/returns}}{{#throws}}* @throws { {{~type~}} } `{{code}}` {{&description}}
+{{/throws}}* @since {{&since}}
 */
-{{#asynchronous}}async {{/asynchronous}}function {{name}}({{#params}} {{name}},{{/params}}){
-	var _return = [1,null];
-	const FUNCTION_NAME = '{{name}}';
-	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('received: ', arguments)});
+{{#asynchronous}}async {{/asynchronous}}function {{name}}({{#params}} {{name}} {{#default}}= {{&value}}{{/default}},{{/params}}){
+{{#returns}}	var _return;
+{{/returns}}{{#throws}}	var return_error;
+{{/throws}}	const FUNCTION_NAME = '{{name}}';
+	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments}`});
 	//Variables
 	//Parametre checks
 {{#params}}
-	if( {{name}} == null {{#default}}){
-		{{name}} = {{& default}};
-	} else if( {{/default}}{{^default}}|| {{/default}}{{&CheckNotType type name}} ){
-		_return = [-2, 'Error: param "{{name}}" is either null or not a {{type}}.'];
+	if( {{& CheckNotType type name}} ){
+		return_error = new TypeError('Param "{{name}}" is not {{type}}.');
+		return_error.code = ERR_INVALID_ARG_TYPE;
+		throw return_error;
 	}
 {{/params}}
-	
 	//Function
-	if( _return[0] === 1 ){
-
-	}
 
 	//Return
-	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: Utility.format('returned: ', _return)});
+{{#returns}}	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
 	return _return;
+{{/returns ~}} }
+
+/**
+* @function {{name}}_Test
+{{#asynchronous}}* @async
+{{/asynchronous}}* @access private
+* @description Tests {{name}}
+* @returns {boolean} `true` if all test pass successfully.
+{{#throws}}* @throws {Error} If a test fails.
+{{/throws}}* @since {{&since}}
+*/
+{{#asynchronous}}async {{/asynchronous}}function {{name}}_Test(){
+	const FUNCTION_NAME = '{{name}}_Test';
+	//Variables
+	//Tests
+	//Return
+	return true;
 }
