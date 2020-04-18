@@ -8,7 +8,7 @@
 {{/returns}}{{#throws}}* @throws { {{~type~}} } `{{code}}` {{&description}}
 {{/throws}}* @since {{&since}}
 */
-{{#asynchronous}}async {{/asynchronous}}function {{name}}({{#params}} {{name}} {{#default}}= {{&value}}{{/default}},{{/params}}){
+{{#asynchronous}}async {{/asynchronous}}function {{name}}({{#params}} {{name}}{{#default}} = {{&value}}{{/default}},{{/params}}){
 {{#returns}}	var _return;
 {{/returns}}{{#throws}}	var return_error;
 {{/throws}}	const FUNCTION_NAME = '{{name}}';
@@ -18,7 +18,7 @@
 {{#params}}
 	if( {{& CheckNotType type name}} ){
 		return_error = new TypeError('Param "{{name}}" is not {{type}}.');
-		return_error.code = ERR_INVALID_ARG_TYPE;
+		return_error.code = 'ERR_INVALID_ARG_TYPE';
 		throw return_error;
 	}
 {{/params}}
@@ -41,7 +41,9 @@
 {{#asynchronous}}async {{/asynchronous}}function {{name}}_Test(){
 	const FUNCTION_NAME = '{{name}}_Test';
 	//Variables
+	var _return = false;
+	var return_error = null;
 	//Tests
 	//Return
-	return true;
+	return _return;
 }
