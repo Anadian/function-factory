@@ -8,13 +8,14 @@
 			{"type": "?Object", "name": "options", "default": { "value": "{}" }, "descriptions": "Additional run-time options."}
 	],
 	"returns": [
-		//{ "type": "ReturnType", "description": "Return value description." }
+		{ "type": "ReturnType", "description": "Return value description." }
 	],
 	"throws": [
 		{ "type": "TypeError", "code": "ERR_INVALID_ARG_TYPE", "description": "Thrown if a given argument isn't of the correct type." }
 	],
 	"asynchronous": false,
 	"since": "v0.0.0",
+	"unit_test": true,
 	"post_re": [
 		{"search": ",\\)", "replace": " )", "flags": "gm"}
 	]

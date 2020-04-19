@@ -9,10 +9,11 @@
 {{/throws}}* @since {{&since}}
 */
 {{#asynchronous}}async {{/asynchronous}}function {{name}}({{#params}} {{name}}{{#default}} = {{&value}}{{/default}},{{/params}}){
+	var arguments_array = Array.from(arguments);
 {{#returns}}	var _return;
 {{/returns}}{{#throws}}	var return_error;
 {{/throws}}	const FUNCTION_NAME = '{{name}}';
-	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments}`});
+	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
 	//Variables
 	//Parametre checks
 {{#params}}
@@ -29,7 +30,7 @@
 	return _return;
 {{/returns ~}} }
 
-/**
+{{#unit_test}}/**
 * @function {{name}}_Test
 {{#asynchronous}}* @async
 {{/asynchronous}}* @access private
@@ -46,4 +47,4 @@
 	//Tests
 	//Return
 	return _return;
-}
+}{{/unit_test}}
