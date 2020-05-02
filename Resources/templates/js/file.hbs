@@ -2,12 +2,16 @@
 {{#strict}}'use strict';
 {{/strict}}
 /**
-* @module {{modulename}}
-* @file {{filename}}
-{{#main}}* @alias source/main.js
-{{/main}}* @description {{& description}}
-* @author Anadian
-* @license 	Copyright 2020 Anadian
+# [{{filename}}](source/{{filename}})
+> Simply extract documentation comments from a source file.
+
+Internal module name: `{{modulename}}`
+
+Author: Anadian
+
+Code license: MIT
+```
+	Copyright 2020 Anadian
 	Permission is hereby granted, free of charge, to any person obtaining a copy of this 
 software and associated documentation files (the "Software"), to deal in the Software 
 without restriction, including without limitation the rights to use, copy, modify, 
@@ -22,6 +26,13 @@ PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIG
 HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF 
 CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE 
 OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
+Documentation License: [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
+> The source-code comments and documentation are written in [GitHub Flavored Markdown](https://github.github.com/gfm/).
+
+> The type notation used in this documentation is based off of the [Google Closure type system](https://github.com/google/closure-compiler/wiki/Types-in-the-Closure-Type-System).
+
+> The status and feature lifecycle keywords used in this documentation are based off of my own standard [defined here](https://github.com/Anadian/FeatureLifeCycleStateStandard).
 */
 
 //#Dependencies
@@ -32,9 +43,9 @@ OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 {{#cli}}	const GetStream = require('get-stream');
 {{/cli}}
 //#Constants
-const MODULE_VERSION_STRING = 'v0.0.0';
 const FILENAME = '{{filename}}';
 const MODULE_NAME = '{{modulename}}';
+var PACKAGE_JSON = {};
 var PROCESS_NAME = '';
 if(require.main === module){
 	PROCESS_NAME = '{{processname}}';
@@ -44,6 +55,7 @@ if(require.main === module){
 //##Errors
 
 //#Global Variables
+/* istanbul ignore next */
 {{#logger}}var Logger = { 
 	log: () => {
 		return null;
@@ -51,19 +63,35 @@ if(require.main === module){
 };{{/logger}}
 //#Functions
 {{#logger}}/**
-* @function setLogger
-* @access public
-* @description Allows this module's functions to log the given logger object.
-* @param {?object} logger - The logger to be used for logging or `null` to disable logging.
-* @throws {TypeError} `ERR_INVALID_ARG_TYPE` if logger is not an object or `null`. 
-* @since v0.0.0
+## Functions
+*/
+/**
+### setLogger
+> Allows this module's functions to log the given logger object.
+
+Parametres:
+| name | type | description |
+| --- | --- | --- |
+| logger | {?object} | The logger to be used for logging or `null` to disable logging. |
+
+Throws:
+| code | type | condition |
+| --- | --- | --- |
+| 'ERR_INVALID_ARG_TYPE' | {TypeError} | Thrown if `logger` is neither an object nor `null` |
+
+Status:
+| version | change |
+| --- | --- |
+| 0.0.0 | Introduced |
 */
 function setLogger( logger ){
 	var return_error = null;
 	//const FUNCTION_NAME = 'setLogger';
 	//Variables
 	//Parametre checks
+	/* istanbul ignore else */
 	if( typeof(logger) === 'object' ){
+		/* istanbul ignore next */
 		if( logger === null ){
 			logger = { 
 				log: () => {
@@ -80,16 +108,23 @@ function setLogger( logger ){
 	//Function
 	Logger = logger;
 	//Return
-}{{/logger}}
-
+}
+{{/logger}}
 {{#cli}}/**
-* @function main_Async
-* @async
-* @access public
-* @description The main function.
-* @param {?Object} options -  [default: {}]
-* @since v0.0.1
+### main_Async (private)
+> The main function when the script is run as an executable without the `--test` command-line option. Not exported and should never be manually called.
+
+Parametres:
+| name | type | description |
+| --- | --- | --- |
+| options | {?options} | An object representing the command-line options. \[default: {}\] |
+
+Status:
+| version | change |
+| --- | --- |
+| 0.0.1 | Introduced |
 */
+/* istanbul ignore next */
 async function main_Async( options = {} ){
 	var arguments_array = Array.from(arguments);
 	var return_error = null;
@@ -165,14 +200,20 @@ async function main_Async( options = {} ){
 }
 
 /**
-* @function main_Async_Test
-* @async
-* @access private
-* @description Tests main_Async
-* @returns {boolean} `true` if all test pass successfully.
-* @throws {Error} If a test fails.
-* @since v0.0.1
+### main_Async_Test (private)
+> The main function when the script is run as an executable **with** the `--test` command-line option. Runs all of the other `*_Test()`-type unit-test functions in this module. Not exported and should never be manually called.
+
+Parametres:
+| name | type | description |
+| --- | --- | --- |
+| options | {?options} | An object representing the command-line options. \[default: {}\] |
+
+Status:
+| version | change |
+| --- | --- |
+| 0.0.1 | Introduced |
 */
+/* istanbul ignore next */
 async function main_Async_Test(){
 	const FUNCTION_NAME = 'main_Async_Test';
 	//Variables
@@ -187,7 +228,7 @@ async function main_Async_Test(){
 	//Return
 	return _return;
 }
-
+{{/cli}}
 //#Exports and Execution
 if(require.main === module){
 {{#main}}	var _return = [1,null];
@@ -195,7 +236,8 @@ if(require.main === module){
 	//##Dependencies
 		//###Internal
 		//###Standard
-		//###External
+{{#cli}}		const Path = require('path');
+{{/cli}}		//###External
 {{#logger}}		const MakeDir = require('make-dir');
 		const ApplicationLogWinstonInterface = require('application-log-winston-interface');
 {{/logger}}		const EnvPaths = require('env-paths');
@@ -205,22 +247,22 @@ if(require.main === module){
 	const EnvironmentPaths = EnvPaths( PROCESS_NAME );
 {{#cli}}	const OptionDefinitions = [
 		//UI
-		{ name: 'help', alias: 'h', type: Boolean, description: 'Writes this help text to stdout.' },
-		{ name: 'noop', alias: 'n', type: Boolean, description: 'Show what would be done without actually doing it.' },
-		{ name: 'verbose', alias: 'v', type: Boolean, description: 'Verbose output to stderr.' },
-		{ name: 'version', alias: 'V', type: Boolean, description: 'Writes version information to stdout.' },
+		{ name: 'help', alias: 'h', type: Boolean, description: 'Writes this help text to STDOUT.' },
+		{ name: 'noop', alias: 'n', type: Boolean, description: '[Reserved] Show what would be done without actually doing it.' },
+		{ name: 'verbose', alias: 'v', type: Boolean, description: 'Verbose output to STDERR.' },
+		{ name: 'version', alias: 'V', type: Boolean, description: 'Writes version information to STDOUT.' },
 		{ name: 'no-quick-exit', alias: 'x', type: Boolean, description: 'Don\'t immediately exit after printing help, version, and/or config information.' },
 		//Input
-		{ name: 'stdin', alias: 'i', type: Boolean, description: 'Read input from stdin.' },
+		{ name: 'stdin', alias: 'i', type: Boolean, description: 'Read input from STDIN.' },
 		{ name: 'input', alias: 'I', type: String, description: 'The path to the file to read input from.' },
 		{ name: 'test', alias: 't', type: Boolean, description: 'Run unit tests and exit.' },
 		//Output
-		{ name: 'stdout', alias: 'o', type: Boolean, description: 'Write output to stdout.' },
+		{ name: 'stdout', alias: 'o', type: Boolean, description: 'Write output to STDOUT.' },
 		{ name: 'output', alias: 'O', type: String, description: 'The name of the file to write output to.' },
-		{ name: 'pasteboard', alias: 'p', type: Boolean, description: 'Copy output to pasteboard (clipboard).' },
+		{ name: 'pasteboard', alias: 'p', type: Boolean, description: '[Reserved] Copy output to pasteboard (clipboard).' },
 		//Config
-		{ name: 'config', alias: 'c', type: Boolean, description: 'Print configuration values and information to stdout.' },
-		{ name: 'config-file', alias: 'C', type: String, description: 'Use the given config file instead of the default.' },
+		{ name: 'config', alias: 'c', type: Boolean, description: 'Print search paths and configuration values to STDOUT.' },
+		{ name: 'config-file', alias: 'C', type: String, description: '[Resevred] Use the given config file instead of the default.' },
 	];
 {{/cli}}	//Variables
 	var function_return = [1,null];
@@ -231,7 +273,7 @@ if(require.main === module){
 {{/cli}}{{#logger}}	//Logger
 	try{ 
 		MakeDir.sync( EnvironmentPaths.log );
-	} catch(error){
+	} catch(error)/* istanbul ignore next */{
 		console.error('MakeDir.sync threw: %s', error);
 	}
 	function_return = ApplicationLogWinstonInterface.InitLogger('debug.log', EnvironmentPaths.log);
@@ -242,9 +284,10 @@ if(require.main === module){
 {{/logger}}{{#cli}}	//Options
 	var Options = CommandLineArgs( OptionDefinitions );
 {{/cli}}	//Config
+	/* istanbul ignore next */
 	if( Options.verbose === true ){
-{{#logger}}		logger.real_transports.console_stderr.level = 'debug';
-		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'note', message: Utility.format('Logger: console_stderr transport log level set to: %s', logger.real_transports.console_stderr.level)});
+{{#logger}}		Logger.real_transports.console_stderr.level = 'debug';
+		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'note', message: `Logger: console_stderr transport log level set to: ${Logger.real_transports.console_stderr.level}`});
 {{/logger}}	}
 	///Load package.json
 	try{
@@ -262,15 +305,17 @@ if(require.main === module){
 		}
 	}
 	//Main
+{{#cli}}	/* istanbul ignore next */
 	if( Options.version === true ){
-		console.log(MODULE_VERSION_STRING);
+		console.log(PACKAGE_JSON.version);
 		quick_exit = true;
 	}
+	/* istanbul ignore next */
 	if( Options.help === true ){
 		const help_sections_array = [
 			{
 				header: '{{processname}}',
-				content: '{{description}}'
+				content: '{{&description}}',
 			},
 			{
 				header: 'Options',
@@ -281,10 +326,13 @@ if(require.main === module){
 		console.log(help_message);
 		quick_exit = true;
 	}
+	/* istanbul ignore next */
 	if( Options.config === true ){
+		console.log('Paths: ', EnvironmentPaths);
 		quick_exit = true;
 	}
 	if( quick_exit === false || Options['no-quick-exit'] === true ){
+		/* istanbul ignore else */
 		if( Options.test === true ){
 			main_Async_Test();
 		} else{

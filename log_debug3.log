@@ -4597,3 +4597,2362 @@
 }
 2020-04-18T20:54:08.599Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
 2020-04-18T20:54:08.600Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-05-02T23:10:45.498Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-05-02T23:10:45.504Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-02T23:10:45.533Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [
+  0,
+  {
+    template_directories: [
+      'Resources/templates',
+      '/home/cameron/.local/share/function-factory-nodejs/templates',
+      [length]: 2
+    ],
+    defaults_directories: [
+      'Resources/defaults',
+      '/home/cameron/.local/share/function-factory-nodejs/defaults',
+      [length]: 2
+    ]
+  },
+  [length]: 2
+]
+2020-05-02T23:10:45.534Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-05-02T23:10:45.535Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-05-02T23:10:45.536Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'js file' }
+2020-05-02T23:10:45.536Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: [Arguments] {
+  '0': 'js file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-02T23:10:45.536Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-02T23:10:45.537Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-02T23:10:45.538Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  -4,
+  `JSONICParse.ParseFilePath: Error: reading file "js/file.json": Error: ENOENT: no such file or directory, open 'js/file.json'\n` +
+    '    at Object.openSync (fs.js:462:3)\n' +
+    '    at Object.readFileSync (fs.js:364:35)\n' +
+    '    at Object.JSONIC_Parse_FilePath [as ParseFilePath] (/home/cameron/dev/function-factory/source/jsonic-parse.js:146:27)\n' +
+    '    at DefaultInputDataFromPath (/home/cameron/dev/function-factory/source/main.js:156:33)\n' +
+    '    at DefaultInputDataFromNameLiteral (/home/cameron/dev/function-factory/source/main.js:179:21)\n' +
+    '    at DefaultInputDataFromGenericName (/home/cameron/dev/function-factory/source/main.js:219:21)\n' +
+    '    at Input_Inquirer_Editor (/home/cameron/dev/function-factory/source/main.js:469:21)\n' +
+    '    at Object.<anonymous> (/home/cameron/dev/function-factory/source/main.js:690:14)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1118:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1138:10) {\n' +
+    '  errno: -2,\n' +
+    "  syscall: 'open',\n" +
+    "  code: 'ENOENT',\n" +
+    "  path: 'js/file.json'\n" +
+    '}',
+  [length]: 2
+]
+2020-05-02T23:10:45.539Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'Resources/defaults/js/file.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-02T23:10:45.539Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  0,
+  '{\n' +
+    '\t"template": "js file",\n' +
+    '\t"filename": "filename.js",\n' +
+    '\t"description": "Brief description.",\n' +
+    '\t"modulename": "ModuleName",\n' +
+    '\t"processname": "process-name",\n' +
+    '\t"strict": true,\n' +
+    '\t"main": true,\n' +
+    '\t"logger": true,\n' +
+    '\t"cli": true\n' +
+    '}',
+  [length]: 2
+]
+2020-05-02T23:10:45.539Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [
+  0,
+  '{\n' +
+    '\t"template": "js file",\n' +
+    '\t"filename": "filename.js",\n' +
+    '\t"description": "Brief description.",\n' +
+    '\t"modulename": "ModuleName",\n' +
+    '\t"processname": "process-name",\n' +
+    '\t"strict": true,\n' +
+    '\t"main": true,\n' +
+    '\t"logger": true,\n' +
+    '\t"cli": true\n' +
+    '}',
+  [length]: 2
+]
+2020-05-02T23:10:45.540Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [
+  0,
+  '{\n' +
+    '\t"template": "js file",\n' +
+    '\t"filename": "filename.js",\n' +
+    '\t"description": "Brief description.",\n' +
+    '\t"modulename": "ModuleName",\n' +
+    '\t"processname": "process-name",\n' +
+    '\t"strict": true,\n' +
+    '\t"main": true,\n' +
+    '\t"logger": true,\n' +
+    '\t"cli": true\n' +
+    '}',
+  [length]: 2
+]
+2020-05-02T23:10:45.550Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-05-02T23:11:20.063Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: {
+  editor_input: '{\n' +
+    '\t"template": "js file",\n' +
+    '\t"filename": "filename.js",\n' +
+    '\t"description": "Brief description.",\n' +
+    '\t"modulename": "ModuleName",\n' +
+    '\t"processname": "process-name",\n' +
+    '\t"strict": true,\n' +
+    '\t"main": true,\n' +
+    '\t"logger": true,\n' +
+    '\t"cli": true\n' +
+    '}\n'
+}
+2020-05-02T23:11:20.065Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: [Arguments] {
+  '0': {
+    editor_input: '{\n' +
+      '\t"template": "js file",\n' +
+      '\t"filename": "filename.js",\n' +
+      '\t"description": "Brief description.",\n' +
+      '\t"modulename": "ModuleName",\n' +
+      '\t"processname": "process-name",\n' +
+      '\t"strict": true,\n' +
+      '\t"main": true,\n' +
+      '\t"logger": true,\n' +
+      '\t"cli": true\n' +
+      '}\n'
+  },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-02T23:11:20.066Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: {
+  template: 'js file',
+  filename: 'filename.js',
+  description: 'Brief description.',
+  modulename: 'ModuleName',
+  processname: 'process-name',
+  strict: true,
+  main: true,
+  logger: true,
+  cli: true
+} undefined
+2020-05-02T23:11:20.067Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: [Arguments] {
+  '0': 'js file',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-02T23:11:20.068Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-02T23:11:20.069Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-02T23:11:20.070Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  -3,
+  `Error: template "js/file.hbs" cannot be read: Error: ENOENT: no such file or directory, access 'js/file.hbs'\n` +
+    '    at Object.accessSync (fs.js:208:3)\n' +
+    '    at TemplateFunctionFromPath (/home/cameron/dev/function-factory/source/main.js:239:15)\n' +
+    '    at TemplateFunctionFromNameLiteral (/home/cameron/dev/function-factory/source/main.js:269:21)\n' +
+    '    at TemplateFunctionFromGenericName (/home/cameron/dev/function-factory/source/main.js:308:21)\n' +
+    '    at OutputFromInput (/home/cameron/dev/function-factory/source/main.js:364:23)\n' +
+    '    at OutputFromInquirerEditorAnswer (/home/cameron/dev/function-factory/source/main.js:401:22)\n' +
+    '    at Input_Inquirer_Editor (/home/cameron/dev/function-factory/source/main.js:486:22)\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:97:5) {\n' +
+    '  errno: -2,\n' +
+    "  syscall: 'access',\n" +
+    "  code: 'ENOENT',\n" +
+    "  path: 'js/file.hbs'\n" +
+    '}',
+  [length]: 2
+]
+2020-05-02T23:11:20.070Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'Resources/templates/js/file.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-02T23:11:20.071Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  0,
+  <ref *1> [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular *1] },
+    _setup: <ref *2> [Function (anonymous)] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular *2] }
+    },
+    _child: <ref *3> [Function (anonymous)] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular *3] }
+    }
+  },
+  [length]: 2
+]
+2020-05-02T23:11:20.072Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [
+  0,
+  <ref *1> [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular *1] },
+    _setup: <ref *2> [Function (anonymous)] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular *2] }
+    },
+    _child: <ref *3> [Function (anonymous)] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular *3] }
+    }
+  },
+  [length]: 2
+]
+2020-05-02T23:11:20.072Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [
+  0,
+  <ref *1> [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular *1] },
+    _setup: <ref *2> [Function (anonymous)] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular *2] }
+    },
+    _child: <ref *3> [Function (anonymous)] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular *3] }
+    }
+  },
+  [length]: 2
+]
+2020-05-02T23:11:20.101Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: [Arguments] {
+  '0': '#!/usr/local/bin/node\n' +
+    "'use strict';\n" +
+    '/**\n' +
+    '# [filename.js](source/filename.js)\n' +
+    '> Simply extract documentation comments from a source file.\n' +
+    '\n' +
+    'Internal module name: `ModuleName`\n' +
+    '\n' +
+    'Author: Anadian\n' +
+    '\n' +
+    'Code license: MIT\n' +
+    '```\n' +
+    '\tCopyright 2020 Anadian\n' +
+    '\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \n' +
+    'software and associated documentation files (the "Software"), to deal in the Software \n' +
+    'without restriction, including without limitation the rights to use, copy, modify, \n' +
+    'merge, publish, distribute, sublicense, and/or sell copies of the Software, and to \n' +
+    'permit persons to whom the Software is furnished to do so, subject to the following \n' +
+    'conditions:\n' +
+    '\tThe above copyright notice and this permission notice shall be included in all copies \n' +
+    'or substantial portions of the Software.\n' +
+    '\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \n' +
+    'INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \n' +
+    'PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \n' +
+    'HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \n' +
+    'CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \n' +
+    'OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n' +
+    '```\n' +
+    'Documentation License: [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)\n' +
+    '> The source-code comments and documentation are written in [GitHub Flavored Markdown](https://github.github.com/gfm/).\n' +
+    '\n' +
+    '> The type notation used in this documentation is based off of the [Google Closure type system](https://github.com/google/closure-compiler/wiki/Types-in-the-Closure-Type-System).\n' +
+    '\n' +
+    '> The status and feature lifecycle keywords used in this documentation are based off of my own standard [defined here](https://github.com/Anadian/FeatureLifeCycleStateStandard).\n' +
+    '*/\n' +
+    '\n' +
+    '//#Dependencies\n' +
+    '\t//##Internal\n' +
+    '\t//##Standard\n' +
+    "\tconst FileSystem = require('fs');\n" +
+    '\t//##External\n' +
+    "\tconst GetStream = require('get-stream');\n" +
+    '//#Constants\n' +
+    "const FILENAME = 'filename.js';\n" +
+    "const MODULE_NAME = 'ModuleName';\n" +
+    'var PACKAGE_JSON = {};\n' +
+    "var PROCESS_NAME = '';\n" +
+    'if(require.main === module){\n' +
+    "\tPROCESS_NAME = 'process-name';\n" +
+    '} else{\n' +
+    '\tPROCESS_NAME = process.argv0;\n' +
+    '}\n' +
+    '//##Errors\n' +
+    '\n' +
+    '//#Global Variables\n' +
+    '/* istanbul ignore next */\n' +
+    'var Logger = { \n' +
+    '\tlog: () => {\n' +
+    '\t\treturn null;\n' +
+    '\t}\n' +
+    '};\n' +
+    '//#Functions\n' +
+    '/**\n' +
+    '## Functions\n' +
+    '*/\n' +
+    '/**\n' +
+    '### setLogger\n' +
+    "> Allows this module's functions to log the given logger object.\n" +
+    '\n' +
+    'Parametres:\n' +
+    '| name | type | description |\n' +
+    '| --- | --- | --- |\n' +
+    '| logger | {?object} | The logger to be used for logging or `null` to disable logging. |\n' +
+    '\n' +
+    'Throws:\n' +
+    '| code | type | condition |\n' +
+    '| --- | --- | --- |\n' +
+    "| 'ERR_INVALID_ARG_TYPE' | {TypeError} | Thrown if `logger` is neither an object nor `null` |\n" +
+    '\n' +
+    'Status:\n' +
+    '| version | change |\n' +
+    '| --- | --- |\n' +
+    '| 0.0.0 | Introduced |\n' +
+    '*/\n' +
+    'function setLogger( logger ){\n' +
+    '\tvar return_error = null;\n' +
+    "\t//const FUNCTION_NAME = 'setLogger';\n" +
+    '\t//Variables\n' +
+    '\t//Parametre checks\n' +
+    '\t/* istanbul ignore else */\n' +
+    "\tif( typeof(logger) === 'object' ){\n" +
+    '\t\t/* istanbul ignore next */\n' +
+    '\t\tif( logger === null ){\n' +
+    '\t\t\tlogger = { \n' +
+    '\t\t\t\tlog: () => {\n' +
+    '\t\t\t\t\treturn null;\n' +
+    '\t\t\t\t}\n' +
+    '\t\t\t};\n' +
+    '\t\t}\n' +
+    '\t} else{\n' +
+    `\t\treturn_error = new TypeError('Param "logger" is not an object.');\n` +
+    "\t\treturn_error.code = 'ERR_INVALID_ARG_TYPE';\n" +
+    '\t\tthrow return_error;\n' +
+    '\t}\n' +
+    '\n' +
+    '\t//Function\n' +
+    '\tLogger = logger;\n' +
+    '\t//Return\n' +
+    '}\n' +
+    '/**\n' +
+    '### main_Async (private)\n' +
+    '> The main function when the script is run as an executable without the `--test` command-line option. Not exported and should never be manually called.\n' +
+    '\n' +
+    'Parametres:\n' +
+    '| name | type | description |\n' +
+    '| --- | --- | --- |\n' +
+    '| options | {?options} | An object representing the command-line options. \\[default: {}\\] |\n' +
+    '\n' +
+    'Status:\n' +
+    '| version | change |\n' +
+    '| --- | --- |\n' +
+    '| 0.0.1 | Introduced |\n' +
+    '*/\n' +
+    '/* istanbul ignore next */\n' +
+    'async function main_Async( options = {} ){\n' +
+    '\tvar arguments_array = Array.from(arguments);\n' +
+    '\tvar return_error = null;\n' +
+    "\tconst FUNCTION_NAME = 'main_Async';\n" +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});\n" +
+    '\t//Variables\n' +
+    "\tvar input_string = '';\n" +
+    "\tvar output_string = '';\n" +
+    '\t//Parametre checks\n' +
+    '\t//Function\n' +
+    '\t///Input\n' +
+    '\tif( options.stdin === true ){\n' +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'Reading input from STDIN.'});\n" +
+    '\t\ttry{\n' +
+    "\t\t\tinput_string = await GetStream( process.stdin, 'utf8' );\n" +
+    '\t\t} catch(error){\n' +
+    '\t\t\treturn_error = new Error(`GetStream threw an error: ${error}`);\n' +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t}\n' +
+    '\t} else if( options.input != null ){\n' +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'Reading input from a file.'});\n" +
+    "\t\tif( typeof(options.input) === 'string' ){\n" +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `options.input: '${options.input}'`});\n" +
+    '\t\t\ttry{\n' +
+    "\t\t\t\tinput_string = FileSystem.readFileSync( options.input, 'utf8' );\n" +
+    '\t\t\t} catch(error){\n' +
+    '\t\t\t\treturn_error = new Error(`FileSystem.readFileSync threw an error: ${error}`);\n' +
+    "\t\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t\t}\n' +
+    '\t\t} else{\n' +
+    `\t\t\treturn_error = new Error('"options.input" is not a string.');\n` +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t}\n' +
+    '\t} else{\n' +
+    "\t\treturn_error = new Error('No input options specified.');\n" +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t}\n' +
+    '\t///Transform\n' +
+    '\tif( return_error === null ){\n' +
+    "\t\tif( input_string !== '' && typeof(input_string) === 'string' ){\n" +
+    '\t\t} else{\n' +
+    "\t\t\treturn_error = new Error('input_string is either null or not a string.');\n" +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t}\n' +
+    '\t}\n' +
+    '\t///Output\n' +
+    '\tif( return_error === null ){\n' +
+    "\t\tif( output_string !== '' && typeof(output_string) === 'string' ){\n" +
+    "\t\t\tif( options.output != null && typeof(output_string) === 'string' ){\n" +
+    '\t\t\t\ttry{\n' +
+    "\t\t\t\t\tFileSystem.writeFileSync( options.output, output_string, 'utf8' );\n" +
+    '\t\t\t\t} catch(error){\n' +
+    '\t\t\t\t\treturn_error = new Error(`FileSystem.writeFileSync threw an error: ${error}`);\n' +
+    "\t\t\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t\t\t}\n' +
+    '\t\t\t} else{\n' +
+    '\t\t\t\tif( options.stdout !== true ){\n' +
+    "\t\t\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'warn', message: 'No output options specified; defaulting to STDOUT.'});\n" +
+    '\t\t\t\t}\n' +
+    '\t\t\t\tconsole.log(output_string);\n' +
+    '\t\t\t}\n' +
+    '\t\t} else{\n' +
+    `\t\t\treturn_error = new Error('"output_string" is either null or not a string.');\n` +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t}\n' +
+    '\t}\n' +
+    '\n' +
+    '\t//Return\n' +
+    '\tif( return_error !== null ){\n' +
+    '\t\tprocess.exitCode = 1;\n' +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'crit', message: return_error.message});\n" +
+    '\t}\n' +
+    '}\n' +
+    '\n' +
+    '/**\n' +
+    '### main_Async_Test (private)\n' +
+    '> The main function when the script is run as an executable **with** the `--test` command-line option. Runs all of the other `*_Test()`-type unit-test functions in this module. Not exported and should never be manually called.\n' +
+    '\n' +
+    'Parametres:\n' +
+    '| name | type | description |\n' +
+    '| --- | --- | --- |\n' +
+    '| options | {?options} | An object representing the command-line options. \\[default: {}\\] |\n' +
+    '\n' +
+    'Status:\n' +
+    '| version | change |\n' +
+    '| --- | --- |\n' +
+    '| 0.0.1 | Introduced |\n' +
+    '*/\n' +
+    '/* istanbul ignore next */\n' +
+    'async function main_Async_Test(){\n' +
+    "\tconst FUNCTION_NAME = 'main_Async_Test';\n" +
+    '\t//Variables\n' +
+    '\tvar _return = false;\n' +
+    '\tvar return_error = null;\n' +
+    '\t//Tests\n' +
+    '\ttry{\n' +
+    '\t} catch(error){\n' +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'crit', message: `Test failed with error: '${error}'`});\n" +
+    '\t\tprocess.exitCode = 4;\n' +
+    '\t}\n' +
+    '\t//Return\n' +
+    '\treturn _return;\n' +
+    '}\n' +
+    '//#Exports and Execution\n' +
+    'if(require.main === module){\n' +
+    '\tvar _return = [1,null];\n' +
+    "\tconst FUNCTION_NAME = 'MainExecutionFunction';\n" +
+    '\t//##Dependencies\n' +
+    '\t\t//###Internal\n' +
+    '\t\t//###Standard\n' +
+    "\t\tconst Path = require('path');\n" +
+    '\t\t//###External\n' +
+    "\t\tconst MakeDir = require('make-dir');\n" +
+    "\t\tconst ApplicationLogWinstonInterface = require('application-log-winston-interface');\n" +
+    "\t\tconst EnvPaths = require('env-paths');\n" +
+    "\t\tconst CommandLineArgs = require('command-line-args');\n" +
+    "\t\tconst CommandLineUsage = require('command-line-usage');\n" +
+    '\t//Constants\n' +
+    '\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n' +
+    '\tconst OptionDefinitions = [\n' +
+    '\t\t//UI\n' +
+    "\t\t{ name: 'help', alias: 'h', type: Boolean, description: 'Writes this help text to STDOUT.' },\n" +
+    "\t\t{ name: 'noop', alias: 'n', type: Boolean, description: '[Reserved] Show what would be done without actually doing it.' },\n" +
+    "\t\t{ name: 'verbose', alias: 'v', type: Boolean, description: 'Verbose output to STDERR.' },\n" +
+    "\t\t{ name: 'version', alias: 'V', type: Boolean, description: 'Writes version information to STDOUT.' },\n" +
+    "\t\t{ name: 'no-quick-exit', alias: 'x', type: Boolean, description: 'Don\\'t immediately exit after printing help, version, and/or config information.' },\n" +
+    '\t\t//Input\n' +
+    "\t\t{ name: 'stdin', alias: 'i', type: Boolean, description: 'Read input from STDIN.' },\n" +
+    "\t\t{ name: 'input', alias: 'I', type: String, description: 'The path to the file to read input from.' },\n" +
+    "\t\t{ name: 'test', alias: 't', type: Boolean, description: 'Run unit tests and exit.' },\n" +
+    '\t\t//Output\n' +
+    "\t\t{ name: 'stdout', alias: 'o', type: Boolean, description: 'Write output to STDOUT.' },\n" +
+    "\t\t{ name: 'output', alias: 'O', type: String, description: 'The name of the file to write output to.' },\n" +
+    "\t\t{ name: 'pasteboard', alias: 'p', type: Boolean, description: '[Reserved] Copy output to pasteboard (clipboard).' },\n" +
+    '\t\t//Config\n' +
+    "\t\t{ name: 'config', alias: 'c', type: Boolean, description: 'Print search paths and configuration values to STDOUT.' },\n" +
+    "\t\t{ name: 'config-file', alias: 'C', type: String, description: '[Resevred] Use the given config file instead of the default.' },\n" +
+    '\t];\n' +
+    '\t//Variables\n' +
+    '\tvar function_return = [1,null];\n' +
+    '\tvar quick_exit = false;\n' +
+    "\tvar source_dirname = '';\n" +
+    "\tvar parent_dirname = '';\n" +
+    "\tvar package_path = '';\n" +
+    '\t//Logger\n' +
+    '\ttry{ \n' +
+    '\t\tMakeDir.sync( EnvironmentPaths.log );\n' +
+    '\t} catch(error)/* istanbul ignore next */{\n' +
+    "\t\tconsole.error('MakeDir.sync threw: %s', error);\n" +
+    '\t}\n' +
+    "\tfunction_return = ApplicationLogWinstonInterface.InitLogger('debug.log', EnvironmentPaths.log);\n" +
+    '\tif( function_return[0] === 0 ){\n' +
+    '\t\tsetLogger( function_return[1] );\n' +
+    '\t}\n' +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});\n" +
+    '\t//Options\n' +
+    '\tvar Options = CommandLineArgs( OptionDefinitions );\n' +
+    '\t//Config\n' +
+    '\t/* istanbul ignore next */\n' +
+    '\tif( Options.verbose === true ){\n' +
+    "\t\tLogger.real_transports.console_stderr.level = 'debug';\n" +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'note', message: `Logger: console_stderr transport log level set to: ${Logger.real_transports.console_stderr.level}`});\n" +
+    '\t}\n' +
+    '\t///Load package.json\n' +
+    '\ttry{\n' +
+    '\t\tsource_dirname = Path.dirname( module.filename );\n' +
+    "\t\tpackage_path = Path.join( source_dirname, 'package.json' );\n" +
+    '\t\tPACKAGE_JSON = require(package_path);\n' +
+    '\t} catch(error){\n' +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `Soft error: ${error}`});\n" +
+    '\t\ttry{\n' +
+    '\t\t\tparent_dirname = Path.dirname( source_dirname );\n' +
+    "\t\t\tpackage_path = Path.join( parent_dirname, 'package.json' );\n" +
+    '\t\t\tPACKAGE_JSON = require(package_path);\n' +
+    '\t\t} catch(error){\n' +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `Soft error: ${error}`});\n" +
+    '\t\t}\n' +
+    '\t}\n' +
+    '\t//Main\n' +
+    '\t/* istanbul ignore next */\n' +
+    '\tif( Options.version === true ){\n' +
+    '\t\tconsole.log(PACKAGE_JSON.version);\n' +
+    '\t\tquick_exit = true;\n' +
+    '\t}\n' +
+    '\t/* istanbul ignore next */\n' +
+    '\tif( Options.help === true ){\n' +
+    '\t\tconst help_sections_array = [\n' +
+    '\t\t\t{\n' +
+    "\t\t\t\theader: 'process-name',\n" +
+    "\t\t\t\tcontent: 'Brief description.',\n" +
+    '\t\t\t},\n' +
+    '\t\t\t{\n' +
+    "\t\t\t\theader: 'Options',\n" +
+    '\t\t\t\toptionList: OptionDefinitions\n' +
+    '\t\t\t}\n' +
+    '\t\t]\n' +
+    '\t\tconst help_message = CommandLineUsage(help_sections_array);\n' +
+    '\t\tconsole.log(help_message);\n' +
+    '\t\tquick_exit = true;\n' +
+    '\t}\n' +
+    '\t/* istanbul ignore next */\n' +
+    '\tif( Options.config === true ){\n' +
+    "\t\tconsole.log('Paths: ', EnvironmentPaths);\n" +
+    '\t\tquick_exit = true;\n' +
+    '\t}\n' +
+    "\tif( quick_exit === false || Options['no-quick-exit'] === true ){\n" +
+    '\t\t/* istanbul ignore else */\n' +
+    '\t\tif( Options.test === true ){\n' +
+    '\t\t\tmain_Async_Test();\n' +
+    '\t\t} else{\n' +
+    '\t\t\tmain_Async( Options );\n' +
+    '\t\t}\n' +
+    '\t}\n' +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});\n" +
+    '} else{\n' +
+    '\texports.setLogger = setLogger;\n' +
+    '}\n',
+  '1': undefined,
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-02T23:11:20.133Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:warn: Warn: post_re is null: undefined
+2020-05-02T23:11:20.134Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [
+  0,
+  '#!/usr/local/bin/node\n' +
+    "'use strict';\n" +
+    '/**\n' +
+    '# [filename.js](source/filename.js)\n' +
+    '> Simply extract documentation comments from a source file.\n' +
+    '\n' +
+    'Internal module name: `ModuleName`\n' +
+    '\n' +
+    'Author: Anadian\n' +
+    '\n' +
+    'Code license: MIT\n' +
+    '```\n' +
+    '\tCopyright 2020 Anadian\n' +
+    '\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \n' +
+    'software and associated documentation files (the "Software"), to deal in the Software \n' +
+    'without restriction, including without limitation the rights to use, copy, modify, \n' +
+    'merge, publish, distribute, sublicense, and/or sell copies of the Software, and to \n' +
+    'permit persons to whom the Software is furnished to do so, subject to the following \n' +
+    'conditions:\n' +
+    '\tThe above copyright notice and this permission notice shall be included in all copies \n' +
+    'or substantial portions of the Software.\n' +
+    '\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \n' +
+    'INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \n' +
+    'PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \n' +
+    'HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \n' +
+    'CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \n' +
+    'OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n' +
+    '```\n' +
+    'Documentation License: [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)\n' +
+    '> The source-code comments and documentation are written in [GitHub Flavored Markdown](https://github.github.com/gfm/).\n' +
+    '\n' +
+    '> The type notation used in this documentation is based off of the [Google Closure type system](https://github.com/google/closure-compiler/wiki/Types-in-the-Closure-Type-System).\n' +
+    '\n' +
+    '> The status and feature lifecycle keywords used in this documentation are based off of my own standard [defined here](https://github.com/Anadian/FeatureLifeCycleStateStandard).\n' +
+    '*/\n' +
+    '\n' +
+    '//#Dependencies\n' +
+    '\t//##Internal\n' +
+    '\t//##Standard\n' +
+    "\tconst FileSystem = require('fs');\n" +
+    '\t//##External\n' +
+    "\tconst GetStream = require('get-stream');\n" +
+    '//#Constants\n' +
+    "const FILENAME = 'filename.js';\n" +
+    "const MODULE_NAME = 'ModuleName';\n" +
+    'var PACKAGE_JSON = {};\n' +
+    "var PROCESS_NAME = '';\n" +
+    'if(require.main === module){\n' +
+    "\tPROCESS_NAME = 'process-name';\n" +
+    '} else{\n' +
+    '\tPROCESS_NAME = process.argv0;\n' +
+    '}\n' +
+    '//##Errors\n' +
+    '\n' +
+    '//#Global Variables\n' +
+    '/* istanbul ignore next */\n' +
+    'var Logger = { \n' +
+    '\tlog: () => {\n' +
+    '\t\treturn null;\n' +
+    '\t}\n' +
+    '};\n' +
+    '//#Functions\n' +
+    '/**\n' +
+    '## Functions\n' +
+    '*/\n' +
+    '/**\n' +
+    '### setLogger\n' +
+    "> Allows this module's functions to log the given logger object.\n" +
+    '\n' +
+    'Parametres:\n' +
+    '| name | type | description |\n' +
+    '| --- | --- | --- |\n' +
+    '| logger | {?object} | The logger to be used for logging or `null` to disable logging. |\n' +
+    '\n' +
+    'Throws:\n' +
+    '| code | type | condition |\n' +
+    '| --- | --- | --- |\n' +
+    "| 'ERR_INVALID_ARG_TYPE' | {TypeError} | Thrown if `logger` is neither an object nor `null` |\n" +
+    '\n' +
+    'Status:\n' +
+    '| version | change |\n' +
+    '| --- | --- |\n' +
+    '| 0.0.0 | Introduced |\n' +
+    '*/\n' +
+    'function setLogger( logger ){\n' +
+    '\tvar return_error = null;\n' +
+    "\t//const FUNCTION_NAME = 'setLogger';\n" +
+    '\t//Variables\n' +
+    '\t//Parametre checks\n' +
+    '\t/* istanbul ignore else */\n' +
+    "\tif( typeof(logger) === 'object' ){\n" +
+    '\t\t/* istanbul ignore next */\n' +
+    '\t\tif( logger === null ){\n' +
+    '\t\t\tlogger = { \n' +
+    '\t\t\t\tlog: () => {\n' +
+    '\t\t\t\t\treturn null;\n' +
+    '\t\t\t\t}\n' +
+    '\t\t\t};\n' +
+    '\t\t}\n' +
+    '\t} else{\n' +
+    `\t\treturn_error = new TypeError('Param "logger" is not an object.');\n` +
+    "\t\treturn_error.code = 'ERR_INVALID_ARG_TYPE';\n" +
+    '\t\tthrow return_error;\n' +
+    '\t}\n' +
+    '\n' +
+    '\t//Function\n' +
+    '\tLogger = logger;\n' +
+    '\t//Return\n' +
+    '}\n' +
+    '/**\n' +
+    '### main_Async (private)\n' +
+    '> The main function when the script is run as an executable without the `--test` command-line option. Not exported and should never be manually called.\n' +
+    '\n' +
+    'Parametres:\n' +
+    '| name | type | description |\n' +
+    '| --- | --- | --- |\n' +
+    '| options | {?options} | An object representing the command-line options. \\[default: {}\\] |\n' +
+    '\n' +
+    'Status:\n' +
+    '| version | change |\n' +
+    '| --- | --- |\n' +
+    '| 0.0.1 | Introduced |\n' +
+    '*/\n' +
+    '/* istanbul ignore next */\n' +
+    'async function main_Async( options = {} ){\n' +
+    '\tvar arguments_array = Array.from(arguments);\n' +
+    '\tvar return_error = null;\n' +
+    "\tconst FUNCTION_NAME = 'main_Async';\n" +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});\n" +
+    '\t//Variables\n' +
+    "\tvar input_string = '';\n" +
+    "\tvar output_string = '';\n" +
+    '\t//Parametre checks\n' +
+    '\t//Function\n' +
+    '\t///Input\n' +
+    '\tif( options.stdin === true ){\n' +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'Reading input from STDIN.'});\n" +
+    '\t\ttry{\n' +
+    "\t\t\tinput_string = await GetStream( process.stdin, 'utf8' );\n" +
+    '\t\t} catch(error){\n' +
+    '\t\t\treturn_error = new Error(`GetStream threw an error: ${error}`);\n' +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t}\n' +
+    '\t} else if( options.input != null ){\n' +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'Reading input from a file.'});\n" +
+    "\t\tif( typeof(options.input) === 'string' ){\n" +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `options.input: '${options.input}'`});\n" +
+    '\t\t\ttry{\n' +
+    "\t\t\t\tinput_string = FileSystem.readFileSync( options.input, 'utf8' );\n" +
+    '\t\t\t} catch(error){\n' +
+    '\t\t\t\treturn_error = new Error(`FileSystem.readFileSync threw an error: ${error}`);\n' +
+    "\t\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t\t}\n' +
+    '\t\t} else{\n' +
+    `\t\t\treturn_error = new Error('"options.input" is not a string.');\n` +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t}\n' +
+    '\t} else{\n' +
+    "\t\treturn_error = new Error('No input options specified.');\n" +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t}\n' +
+    '\t///Transform\n' +
+    '\tif( return_error === null ){\n' +
+    "\t\tif( input_string !== '' && typeof(input_string) === 'string' ){\n" +
+    '\t\t} else{\n' +
+    "\t\t\treturn_error = new Error('input_string is either null or not a string.');\n" +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t}\n' +
+    '\t}\n' +
+    '\t///Output\n' +
+    '\tif( return_error === null ){\n' +
+    "\t\tif( output_string !== '' && typeof(output_string) === 'string' ){\n" +
+    "\t\t\tif( options.output != null && typeof(output_string) === 'string' ){\n" +
+    '\t\t\t\ttry{\n' +
+    "\t\t\t\t\tFileSystem.writeFileSync( options.output, output_string, 'utf8' );\n" +
+    '\t\t\t\t} catch(error){\n' +
+    '\t\t\t\t\treturn_error = new Error(`FileSystem.writeFileSync threw an error: ${error}`);\n' +
+    "\t\t\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t\t\t}\n' +
+    '\t\t\t} else{\n' +
+    '\t\t\t\tif( options.stdout !== true ){\n' +
+    "\t\t\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'warn', message: 'No output options specified; defaulting to STDOUT.'});\n" +
+    '\t\t\t\t}\n' +
+    '\t\t\t\tconsole.log(output_string);\n' +
+    '\t\t\t}\n' +
+    '\t\t} else{\n' +
+    `\t\t\treturn_error = new Error('"output_string" is either null or not a string.');\n` +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t}\n' +
+    '\t}\n' +
+    '\n' +
+    '\t//Return\n' +
+    '\tif( return_error !== null ){\n' +
+    '\t\tprocess.exitCode = 1;\n' +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'crit', message: return_error.message});\n" +
+    '\t}\n' +
+    '}\n' +
+    '\n' +
+    '/**\n' +
+    '### main_Async_Test (private)\n' +
+    '> The main function when the script is run as an executable **with** the `--test` command-line option. Runs all of the other `*_Test()`-type unit-test functions in this module. Not exported and should never be manually called.\n' +
+    '\n' +
+    'Parametres:\n' +
+    '| name | type | description |\n' +
+    '| --- | --- | --- |\n' +
+    '| options | {?options} | An object representing the command-line options. \\[default: {}\\] |\n' +
+    '\n' +
+    'Status:\n' +
+    '| version | change |\n' +
+    '| --- | --- |\n' +
+    '| 0.0.1 | Introduced |\n' +
+    '*/\n' +
+    '/* istanbul ignore next */\n' +
+    'async function main_Async_Test(){\n' +
+    "\tconst FUNCTION_NAME = 'main_Async_Test';\n" +
+    '\t//Variables\n' +
+    '\tvar _return = false;\n' +
+    '\tvar return_error = null;\n' +
+    '\t//Tests\n' +
+    '\ttry{\n' +
+    '\t} catch(error){\n' +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'crit', message: `Test failed with error: '${error}'`});\n" +
+    '\t\tprocess.exitCode = 4;\n' +
+    '\t}\n' +
+    '\t//Return\n' +
+    '\treturn _return;\n' +
+    '}\n' +
+    '//#Exports and Execution\n' +
+    'if(require.main === module){\n' +
+    '\tvar _return = [1,null];\n' +
+    "\tconst FUNCTION_NAME = 'MainExecutionFunction';\n" +
+    '\t//##Dependencies\n' +
+    '\t\t//###Internal\n' +
+    '\t\t//###Standard\n' +
+    "\t\tconst Path = require('path');\n" +
+    '\t\t//###External\n' +
+    "\t\tconst MakeDir = require('make-dir');\n" +
+    "\t\tconst ApplicationLogWinstonInterface = require('application-log-winston-interface');\n" +
+    "\t\tconst EnvPaths = require('env-paths');\n" +
+    "\t\tconst CommandLineArgs = require('command-line-args');\n" +
+    "\t\tconst CommandLineUsage = require('command-line-usage');\n" +
+    '\t//Constants\n' +
+    '\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n' +
+    '\tconst OptionDefinitions = [\n' +
+    '\t\t//UI\n' +
+    "\t\t{ name: 'help', alias: 'h', type: Boolean, description: 'Writes this help text to STDOUT.' },\n" +
+    "\t\t{ name: 'noop', alias: 'n', type: Boolean, description: '[Reserved] Show what would be done without actually doing it.' },\n" +
+    "\t\t{ name: 'verbose', alias: 'v', type: Boolean, description: 'Verbose output to STDERR.' },\n" +
+    "\t\t{ name: 'version', alias: 'V', type: Boolean, description: 'Writes version information to STDOUT.' },\n" +
+    "\t\t{ name: 'no-quick-exit', alias: 'x', type: Boolean, description: 'Don\\'t immediately exit after printing help, version, and/or config information.' },\n" +
+    '\t\t//Input\n' +
+    "\t\t{ name: 'stdin', alias: 'i', type: Boolean, description: 'Read input from STDIN.' },\n" +
+    "\t\t{ name: 'input', alias: 'I', type: String, description: 'The path to the file to read input from.' },\n" +
+    "\t\t{ name: 'test', alias: 't', type: Boolean, description: 'Run unit tests and exit.' },\n" +
+    '\t\t//Output\n' +
+    "\t\t{ name: 'stdout', alias: 'o', type: Boolean, description: 'Write output to STDOUT.' },\n" +
+    "\t\t{ name: 'output', alias: 'O', type: String, description: 'The name of the file to write output to.' },\n" +
+    "\t\t{ name: 'pasteboard', alias: 'p', type: Boolean, description: '[Reserved] Copy output to pasteboard (clipboard).' },\n" +
+    '\t\t//Config\n' +
+    "\t\t{ name: 'config', alias: 'c', type: Boolean, description: 'Print search paths and configuration values to STDOUT.' },\n" +
+    "\t\t{ name: 'config-file', alias: 'C', type: String, description: '[Resevred] Use the given config file instead of the default.' },\n" +
+    '\t];\n' +
+    '\t//Variables\n' +
+    '\tvar function_return = [1,null];\n' +
+    '\tvar quick_exit = false;\n' +
+    "\tvar source_dirname = '';\n" +
+    "\tvar parent_dirname = '';\n" +
+    "\tvar package_path = '';\n" +
+    '\t//Logger\n' +
+    '\ttry{ \n' +
+    '\t\tMakeDir.sync( EnvironmentPaths.log );\n' +
+    '\t} catch(error)/* istanbul ignore next */{\n' +
+    "\t\tconsole.error('MakeDir.sync threw: %s', error);\n" +
+    '\t}\n' +
+    "\tfunction_return = ApplicationLogWinstonInterface.InitLogger('debug.log', EnvironmentPaths.log);\n" +
+    '\tif( function_return[0] === 0 ){\n' +
+    '\t\tsetLogger( function_return[1] );\n' +
+    '\t}\n' +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});\n" +
+    '\t//Options\n' +
+    '\tvar Options = CommandLineArgs( OptionDefinitions );\n' +
+    '\t//Config\n' +
+    '\t/* istanbul ignore next */\n' +
+    '\tif( Options.verbose === true ){\n' +
+    "\t\tLogger.real_transports.console_stderr.level = 'debug';\n" +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'note', message: `Logger: console_stderr transport log level set to: ${Logger.real_transports.console_stderr.level}`});\n" +
+    '\t}\n' +
+    '\t///Load package.json\n' +
+    '\ttry{\n' +
+    '\t\tsource_dirname = Path.dirname( module.filename );\n' +
+    "\t\tpackage_path = Path.join( source_dirname, 'package.json' );\n" +
+    '\t\tPACKAGE_JSON = require(package_path);\n' +
+    '\t} catch(error){\n' +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `Soft error: ${error}`});\n" +
+    '\t\ttry{\n' +
+    '\t\t\tparent_dirname = Path.dirname( source_dirname );\n' +
+    "\t\t\tpackage_path = Path.join( parent_dirname, 'package.json' );\n" +
+    '\t\t\tPACKAGE_JSON = require(package_path);\n' +
+    '\t\t} catch(error){\n' +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `Soft error: ${error}`});\n" +
+    '\t\t}\n' +
+    '\t}\n' +
+    '\t//Main\n' +
+    '\t/* istanbul ignore next */\n' +
+    '\tif( Options.version === true ){\n' +
+    '\t\tconsole.log(PACKAGE_JSON.version);\n' +
+    '\t\tquick_exit = true;\n' +
+    '\t}\n' +
+    '\t/* istanbul ignore next */\n' +
+    '\tif( Options.help === true ){\n' +
+    '\t\tconst help_sections_array = [\n' +
+    '\t\t\t{\n' +
+    "\t\t\t\theader: 'process-name',\n" +
+    "\t\t\t\tcontent: 'Brief description.',\n" +
+    '\t\t\t},\n' +
+    '\t\t\t{\n' +
+    "\t\t\t\theader: 'Options',\n" +
+    '\t\t\t\toptionList: OptionDefinitions\n' +
+    '\t\t\t}\n' +
+    '\t\t]\n' +
+    '\t\tconst help_message = CommandLineUsage(help_sections_array);\n' +
+    '\t\tconsole.log(help_message);\n' +
+    '\t\tquick_exit = true;\n' +
+    '\t}\n' +
+    '\t/* istanbul ignore next */\n' +
+    '\tif( Options.config === true ){\n' +
+    "\t\tconsole.log('Paths: ', EnvironmentPaths);\n" +
+    '\t\tquick_exit = true;\n' +
+    '\t}\n' +
+    "\tif( quick_exit === false || Options['no-quick-exit'] === true ){\n" +
+    '\t\t/* istanbul ignore else */\n' +
+    '\t\tif( Options.test === true ){\n' +
+    '\t\t\tmain_Async_Test();\n' +
+    '\t\t} else{\n' +
+    '\t\t\tmain_Async( Options );\n' +
+    '\t\t}\n' +
+    '\t}\n' +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});\n" +
+    '} else{\n' +
+    '\texports.setLogger = setLogger;\n' +
+    '}\n',
+  [length]: 2
+]
+2020-05-02T23:11:20.134Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [
+  0,
+  '#!/usr/local/bin/node\n' +
+    "'use strict';\n" +
+    '/**\n' +
+    '# [filename.js](source/filename.js)\n' +
+    '> Simply extract documentation comments from a source file.\n' +
+    '\n' +
+    'Internal module name: `ModuleName`\n' +
+    '\n' +
+    'Author: Anadian\n' +
+    '\n' +
+    'Code license: MIT\n' +
+    '```\n' +
+    '\tCopyright 2020 Anadian\n' +
+    '\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \n' +
+    'software and associated documentation files (the "Software"), to deal in the Software \n' +
+    'without restriction, including without limitation the rights to use, copy, modify, \n' +
+    'merge, publish, distribute, sublicense, and/or sell copies of the Software, and to \n' +
+    'permit persons to whom the Software is furnished to do so, subject to the following \n' +
+    'conditions:\n' +
+    '\tThe above copyright notice and this permission notice shall be included in all copies \n' +
+    'or substantial portions of the Software.\n' +
+    '\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \n' +
+    'INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \n' +
+    'PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \n' +
+    'HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \n' +
+    'CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \n' +
+    'OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n' +
+    '```\n' +
+    'Documentation License: [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)\n' +
+    '> The source-code comments and documentation are written in [GitHub Flavored Markdown](https://github.github.com/gfm/).\n' +
+    '\n' +
+    '> The type notation used in this documentation is based off of the [Google Closure type system](https://github.com/google/closure-compiler/wiki/Types-in-the-Closure-Type-System).\n' +
+    '\n' +
+    '> The status and feature lifecycle keywords used in this documentation are based off of my own standard [defined here](https://github.com/Anadian/FeatureLifeCycleStateStandard).\n' +
+    '*/\n' +
+    '\n' +
+    '//#Dependencies\n' +
+    '\t//##Internal\n' +
+    '\t//##Standard\n' +
+    "\tconst FileSystem = require('fs');\n" +
+    '\t//##External\n' +
+    "\tconst GetStream = require('get-stream');\n" +
+    '//#Constants\n' +
+    "const FILENAME = 'filename.js';\n" +
+    "const MODULE_NAME = 'ModuleName';\n" +
+    'var PACKAGE_JSON = {};\n' +
+    "var PROCESS_NAME = '';\n" +
+    'if(require.main === module){\n' +
+    "\tPROCESS_NAME = 'process-name';\n" +
+    '} else{\n' +
+    '\tPROCESS_NAME = process.argv0;\n' +
+    '}\n' +
+    '//##Errors\n' +
+    '\n' +
+    '//#Global Variables\n' +
+    '/* istanbul ignore next */\n' +
+    'var Logger = { \n' +
+    '\tlog: () => {\n' +
+    '\t\treturn null;\n' +
+    '\t}\n' +
+    '};\n' +
+    '//#Functions\n' +
+    '/**\n' +
+    '## Functions\n' +
+    '*/\n' +
+    '/**\n' +
+    '### setLogger\n' +
+    "> Allows this module's functions to log the given logger object.\n" +
+    '\n' +
+    'Parametres:\n' +
+    '| name | type | description |\n' +
+    '| --- | --- | --- |\n' +
+    '| logger | {?object} | The logger to be used for logging or `null` to disable logging. |\n' +
+    '\n' +
+    'Throws:\n' +
+    '| code | type | condition |\n' +
+    '| --- | --- | --- |\n' +
+    "| 'ERR_INVALID_ARG_TYPE' | {TypeError} | Thrown if `logger` is neither an object nor `null` |\n" +
+    '\n' +
+    'Status:\n' +
+    '| version | change |\n' +
+    '| --- | --- |\n' +
+    '| 0.0.0 | Introduced |\n' +
+    '*/\n' +
+    'function setLogger( logger ){\n' +
+    '\tvar return_error = null;\n' +
+    "\t//const FUNCTION_NAME = 'setLogger';\n" +
+    '\t//Variables\n' +
+    '\t//Parametre checks\n' +
+    '\t/* istanbul ignore else */\n' +
+    "\tif( typeof(logger) === 'object' ){\n" +
+    '\t\t/* istanbul ignore next */\n' +
+    '\t\tif( logger === null ){\n' +
+    '\t\t\tlogger = { \n' +
+    '\t\t\t\tlog: () => {\n' +
+    '\t\t\t\t\treturn null;\n' +
+    '\t\t\t\t}\n' +
+    '\t\t\t};\n' +
+    '\t\t}\n' +
+    '\t} else{\n' +
+    `\t\treturn_error = new TypeError('Param "logger" is not an object.');\n` +
+    "\t\treturn_error.code = 'ERR_INVALID_ARG_TYPE';\n" +
+    '\t\tthrow return_error;\n' +
+    '\t}\n' +
+    '\n' +
+    '\t//Function\n' +
+    '\tLogger = logger;\n' +
+    '\t//Return\n' +
+    '}\n' +
+    '/**\n' +
+    '### main_Async (private)\n' +
+    '> The main function when the script is run as an executable without the `--test` command-line option. Not exported and should never be manually called.\n' +
+    '\n' +
+    'Parametres:\n' +
+    '| name | type | description |\n' +
+    '| --- | --- | --- |\n' +
+    '| options | {?options} | An object representing the command-line options. \\[default: {}\\] |\n' +
+    '\n' +
+    'Status:\n' +
+    '| version | change |\n' +
+    '| --- | --- |\n' +
+    '| 0.0.1 | Introduced |\n' +
+    '*/\n' +
+    '/* istanbul ignore next */\n' +
+    'async function main_Async( options = {} ){\n' +
+    '\tvar arguments_array = Array.from(arguments);\n' +
+    '\tvar return_error = null;\n' +
+    "\tconst FUNCTION_NAME = 'main_Async';\n" +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});\n" +
+    '\t//Variables\n' +
+    "\tvar input_string = '';\n" +
+    "\tvar output_string = '';\n" +
+    '\t//Parametre checks\n' +
+    '\t//Function\n' +
+    '\t///Input\n' +
+    '\tif( options.stdin === true ){\n' +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'Reading input from STDIN.'});\n" +
+    '\t\ttry{\n' +
+    "\t\t\tinput_string = await GetStream( process.stdin, 'utf8' );\n" +
+    '\t\t} catch(error){\n' +
+    '\t\t\treturn_error = new Error(`GetStream threw an error: ${error}`);\n' +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t}\n' +
+    '\t} else if( options.input != null ){\n' +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'Reading input from a file.'});\n" +
+    "\t\tif( typeof(options.input) === 'string' ){\n" +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `options.input: '${options.input}'`});\n" +
+    '\t\t\ttry{\n' +
+    "\t\t\t\tinput_string = FileSystem.readFileSync( options.input, 'utf8' );\n" +
+    '\t\t\t} catch(error){\n' +
+    '\t\t\t\treturn_error = new Error(`FileSystem.readFileSync threw an error: ${error}`);\n' +
+    "\t\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t\t}\n' +
+    '\t\t} else{\n' +
+    `\t\t\treturn_error = new Error('"options.input" is not a string.');\n` +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t}\n' +
+    '\t} else{\n' +
+    "\t\treturn_error = new Error('No input options specified.');\n" +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t}\n' +
+    '\t///Transform\n' +
+    '\tif( return_error === null ){\n' +
+    "\t\tif( input_string !== '' && typeof(input_string) === 'string' ){\n" +
+    '\t\t} else{\n' +
+    "\t\t\treturn_error = new Error('input_string is either null or not a string.');\n" +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t}\n' +
+    '\t}\n' +
+    '\t///Output\n' +
+    '\tif( return_error === null ){\n' +
+    "\t\tif( output_string !== '' && typeof(output_string) === 'string' ){\n" +
+    "\t\t\tif( options.output != null && typeof(output_string) === 'string' ){\n" +
+    '\t\t\t\ttry{\n' +
+    "\t\t\t\t\tFileSystem.writeFileSync( options.output, output_string, 'utf8' );\n" +
+    '\t\t\t\t} catch(error){\n' +
+    '\t\t\t\t\treturn_error = new Error(`FileSystem.writeFileSync threw an error: ${error}`);\n' +
+    "\t\t\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t\t\t}\n' +
+    '\t\t\t} else{\n' +
+    '\t\t\t\tif( options.stdout !== true ){\n' +
+    "\t\t\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'warn', message: 'No output options specified; defaulting to STDOUT.'});\n" +
+    '\t\t\t\t}\n' +
+    '\t\t\t\tconsole.log(output_string);\n' +
+    '\t\t\t}\n' +
+    '\t\t} else{\n' +
+    `\t\t\treturn_error = new Error('"output_string" is either null or not a string.');\n` +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t}\n' +
+    '\t}\n' +
+    '\n' +
+    '\t//Return\n' +
+    '\tif( return_error !== null ){\n' +
+    '\t\tprocess.exitCode = 1;\n' +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'crit', message: return_error.message});\n" +
+    '\t}\n' +
+    '}\n' +
+    '\n' +
+    '/**\n' +
+    '### main_Async_Test (private)\n' +
+    '> The main function when the script is run as an executable **with** the `--test` command-line option. Runs all of the other `*_Test()`-type unit-test functions in this module. Not exported and should never be manually called.\n' +
+    '\n' +
+    'Parametres:\n' +
+    '| name | type | description |\n' +
+    '| --- | --- | --- |\n' +
+    '| options | {?options} | An object representing the command-line options. \\[default: {}\\] |\n' +
+    '\n' +
+    'Status:\n' +
+    '| version | change |\n' +
+    '| --- | --- |\n' +
+    '| 0.0.1 | Introduced |\n' +
+    '*/\n' +
+    '/* istanbul ignore next */\n' +
+    'async function main_Async_Test(){\n' +
+    "\tconst FUNCTION_NAME = 'main_Async_Test';\n" +
+    '\t//Variables\n' +
+    '\tvar _return = false;\n' +
+    '\tvar return_error = null;\n' +
+    '\t//Tests\n' +
+    '\ttry{\n' +
+    '\t} catch(error){\n' +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'crit', message: `Test failed with error: '${error}'`});\n" +
+    '\t\tprocess.exitCode = 4;\n' +
+    '\t}\n' +
+    '\t//Return\n' +
+    '\treturn _return;\n' +
+    '}\n' +
+    '//#Exports and Execution\n' +
+    'if(require.main === module){\n' +
+    '\tvar _return = [1,null];\n' +
+    "\tconst FUNCTION_NAME = 'MainExecutionFunction';\n" +
+    '\t//##Dependencies\n' +
+    '\t\t//###Internal\n' +
+    '\t\t//###Standard\n' +
+    "\t\tconst Path = require('path');\n" +
+    '\t\t//###External\n' +
+    "\t\tconst MakeDir = require('make-dir');\n" +
+    "\t\tconst ApplicationLogWinstonInterface = require('application-log-winston-interface');\n" +
+    "\t\tconst EnvPaths = require('env-paths');\n" +
+    "\t\tconst CommandLineArgs = require('command-line-args');\n" +
+    "\t\tconst CommandLineUsage = require('command-line-usage');\n" +
+    '\t//Constants\n' +
+    '\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n' +
+    '\tconst OptionDefinitions = [\n' +
+    '\t\t//UI\n' +
+    "\t\t{ name: 'help', alias: 'h', type: Boolean, description: 'Writes this help text to STDOUT.' },\n" +
+    "\t\t{ name: 'noop', alias: 'n', type: Boolean, description: '[Reserved] Show what would be done without actually doing it.' },\n" +
+    "\t\t{ name: 'verbose', alias: 'v', type: Boolean, description: 'Verbose output to STDERR.' },\n" +
+    "\t\t{ name: 'version', alias: 'V', type: Boolean, description: 'Writes version information to STDOUT.' },\n" +
+    "\t\t{ name: 'no-quick-exit', alias: 'x', type: Boolean, description: 'Don\\'t immediately exit after printing help, version, and/or config information.' },\n" +
+    '\t\t//Input\n' +
+    "\t\t{ name: 'stdin', alias: 'i', type: Boolean, description: 'Read input from STDIN.' },\n" +
+    "\t\t{ name: 'input', alias: 'I', type: String, description: 'The path to the file to read input from.' },\n" +
+    "\t\t{ name: 'test', alias: 't', type: Boolean, description: 'Run unit tests and exit.' },\n" +
+    '\t\t//Output\n' +
+    "\t\t{ name: 'stdout', alias: 'o', type: Boolean, description: 'Write output to STDOUT.' },\n" +
+    "\t\t{ name: 'output', alias: 'O', type: String, description: 'The name of the file to write output to.' },\n" +
+    "\t\t{ name: 'pasteboard', alias: 'p', type: Boolean, description: '[Reserved] Copy output to pasteboard (clipboard).' },\n" +
+    '\t\t//Config\n' +
+    "\t\t{ name: 'config', alias: 'c', type: Boolean, description: 'Print search paths and configuration values to STDOUT.' },\n" +
+    "\t\t{ name: 'config-file', alias: 'C', type: String, description: '[Resevred] Use the given config file instead of the default.' },\n" +
+    '\t];\n' +
+    '\t//Variables\n' +
+    '\tvar function_return = [1,null];\n' +
+    '\tvar quick_exit = false;\n' +
+    "\tvar source_dirname = '';\n" +
+    "\tvar parent_dirname = '';\n" +
+    "\tvar package_path = '';\n" +
+    '\t//Logger\n' +
+    '\ttry{ \n' +
+    '\t\tMakeDir.sync( EnvironmentPaths.log );\n' +
+    '\t} catch(error)/* istanbul ignore next */{\n' +
+    "\t\tconsole.error('MakeDir.sync threw: %s', error);\n" +
+    '\t}\n' +
+    "\tfunction_return = ApplicationLogWinstonInterface.InitLogger('debug.log', EnvironmentPaths.log);\n" +
+    '\tif( function_return[0] === 0 ){\n' +
+    '\t\tsetLogger( function_return[1] );\n' +
+    '\t}\n' +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});\n" +
+    '\t//Options\n' +
+    '\tvar Options = CommandLineArgs( OptionDefinitions );\n' +
+    '\t//Config\n' +
+    '\t/* istanbul ignore next */\n' +
+    '\tif( Options.verbose === true ){\n' +
+    "\t\tLogger.real_transports.console_stderr.level = 'debug';\n" +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'note', message: `Logger: console_stderr transport log level set to: ${Logger.real_transports.console_stderr.level}`});\n" +
+    '\t}\n' +
+    '\t///Load package.json\n' +
+    '\ttry{\n' +
+    '\t\tsource_dirname = Path.dirname( module.filename );\n' +
+    "\t\tpackage_path = Path.join( source_dirname, 'package.json' );\n" +
+    '\t\tPACKAGE_JSON = require(package_path);\n' +
+    '\t} catch(error){\n' +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `Soft error: ${error}`});\n" +
+    '\t\ttry{\n' +
+    '\t\t\tparent_dirname = Path.dirname( source_dirname );\n' +
+    "\t\t\tpackage_path = Path.join( parent_dirname, 'package.json' );\n" +
+    '\t\t\tPACKAGE_JSON = require(package_path);\n' +
+    '\t\t} catch(error){\n' +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `Soft error: ${error}`});\n" +
+    '\t\t}\n' +
+    '\t}\n' +
+    '\t//Main\n' +
+    '\t/* istanbul ignore next */\n' +
+    '\tif( Options.version === true ){\n' +
+    '\t\tconsole.log(PACKAGE_JSON.version);\n' +
+    '\t\tquick_exit = true;\n' +
+    '\t}\n' +
+    '\t/* istanbul ignore next */\n' +
+    '\tif( Options.help === true ){\n' +
+    '\t\tconst help_sections_array = [\n' +
+    '\t\t\t{\n' +
+    "\t\t\t\theader: 'process-name',\n" +
+    "\t\t\t\tcontent: 'Brief description.',\n" +
+    '\t\t\t},\n' +
+    '\t\t\t{\n' +
+    "\t\t\t\theader: 'Options',\n" +
+    '\t\t\t\toptionList: OptionDefinitions\n' +
+    '\t\t\t}\n' +
+    '\t\t]\n' +
+    '\t\tconst help_message = CommandLineUsage(help_sections_array);\n' +
+    '\t\tconsole.log(help_message);\n' +
+    '\t\tquick_exit = true;\n' +
+    '\t}\n' +
+    '\t/* istanbul ignore next */\n' +
+    '\tif( Options.config === true ){\n' +
+    "\t\tconsole.log('Paths: ', EnvironmentPaths);\n" +
+    '\t\tquick_exit = true;\n' +
+    '\t}\n' +
+    "\tif( quick_exit === false || Options['no-quick-exit'] === true ){\n" +
+    '\t\t/* istanbul ignore else */\n' +
+    '\t\tif( Options.test === true ){\n' +
+    '\t\t\tmain_Async_Test();\n' +
+    '\t\t} else{\n' +
+    '\t\t\tmain_Async( Options );\n' +
+    '\t\t}\n' +
+    '\t}\n' +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});\n" +
+    '} else{\n' +
+    '\texports.setLogger = setLogger;\n' +
+    '}\n',
+  [
+    0,
+    '#!/usr/local/bin/node\n' +
+      "'use strict';\n" +
+      '/**\n' +
+      '# [filename.js](source/filename.js)\n' +
+      '> Simply extract documentation comments from a source file.\n' +
+      '\n' +
+      'Internal module name: `ModuleName`\n' +
+      '\n' +
+      'Author: Anadian\n' +
+      '\n' +
+      'Code license: MIT\n' +
+      '```\n' +
+      '\tCopyright 2020 Anadian\n' +
+      '\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \n' +
+      'software and associated documentation files (the "Software"), to deal in the Software \n' +
+      'without restriction, including without limitation the rights to use, copy, modify, \n' +
+      'merge, publish, distribute, sublicense, and/or sell copies of the Software, and to \n' +
+      'permit persons to whom the Software is furnished to do so, subject to the following \n' +
+      'conditions:\n' +
+      '\tThe above copyright notice and this permission notice shall be included in all copies \n' +
+      'or substantial portions of the Software.\n' +
+      '\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \n' +
+      'INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \n' +
+      'PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \n' +
+      'HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \n' +
+      'CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \n' +
+      'OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n' +
+      '```\n' +
+      'Documentation License: [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)\n' +
+      '> The source-code comments and documentation are written in [GitHub Flavored Markdown](https://github.github.com/gfm/).\n' +
+      '\n' +
+      '> The type notation used in this documentation is based off of the [Google Closure type system](https://github.com/google/closure-compiler/wiki/Types-in-the-Closure-Type-System).\n' +
+      '\n' +
+      '> The status and feature lifecycle keywords used in this documentation are based off of my own standard [defined here](https://github.com/Anadian/FeatureLifeCycleStateStandard).\n' +
+      '*/\n' +
+      '\n' +
+      '//#Dependencies\n' +
+      '\t//##Internal\n' +
+      '\t//##Standard\n' +
+      "\tconst FileSystem = require('fs');\n" +
+      '\t//##External\n' +
+      "\tconst GetStream = require('get-stream');\n" +
+      '//#Constants\n' +
+      "const FILENAME = 'filename.js';\n" +
+      "const MODULE_NAME = 'ModuleName';\n" +
+      'var PACKAGE_JSON = {};\n' +
+      "var PROCESS_NAME = '';\n" +
+      'if(require.main === module){\n' +
+      "\tPROCESS_NAME = 'process-name';\n" +
+      '} else{\n' +
+      '\tPROCESS_NAME = process.argv0;\n' +
+      '}\n' +
+      '//##Errors\n' +
+      '\n' +
+      '//#Global Variables\n' +
+      '/* istanbul ignore next */\n' +
+      'var Logger = { \n' +
+      '\tlog: () => {\n' +
+      '\t\treturn null;\n' +
+      '\t}\n' +
+      '};\n' +
+      '//#Functions\n' +
+      '/**\n' +
+      '## Functions\n' +
+      '*/\n' +
+      '/**\n' +
+      '### setLogger\n' +
+      "> Allows this module's functions to log the given logger object.\n" +
+      '\n' +
+      'Parametres:\n' +
+      '| name | type | description |\n' +
+      '| --- | --- | --- |\n' +
+      '| logger | {?object} | The logger to be used for logging or `null` to disable logging. |\n' +
+      '\n' +
+      'Throws:\n' +
+      '| code | type | condition |\n' +
+      '| --- | --- | --- |\n' +
+      "| 'ERR_INVALID_ARG_TYPE' | {TypeError} | Thrown if `logger` is neither an object nor `null` |\n" +
+      '\n' +
+      'Status:\n' +
+      '| version | change |\n' +
+      '| --- | --- |\n' +
+      '| 0.0.0 | Introduced |\n' +
+      '*/\n' +
+      'function setLogger( logger ){\n' +
+      '\tvar return_error = null;\n' +
+      "\t//const FUNCTION_NAME = 'setLogger';\n" +
+      '\t//Variables\n' +
+      '\t//Parametre checks\n' +
+      '\t/* istanbul ignore else */\n' +
+      "\tif( typeof(logger) === 'object' ){\n" +
+      '\t\t/* istanbul ignore next */\n' +
+      '\t\tif( logger === null ){\n' +
+      '\t\t\tlogger = { \n' +
+      '\t\t\t\tlog: () => {\n' +
+      '\t\t\t\t\treturn null;\n' +
+      '\t\t\t\t}\n' +
+      '\t\t\t};\n' +
+      '\t\t}\n' +
+      '\t} else{\n' +
+      `\t\treturn_error = new TypeError('Param "logger" is not an object.');\n` +
+      "\t\treturn_error.code = 'ERR_INVALID_ARG_TYPE';\n" +
+      '\t\tthrow return_error;\n' +
+      '\t}\n' +
+      '\n' +
+      '\t//Function\n' +
+      '\tLogger = logger;\n' +
+      '\t//Return\n' +
+      '}\n' +
+      '/**\n' +
+      '### main_Async (private)\n' +
+      '> The main function when the script is run as an executable without the `--test` command-line option. Not exported and should never be manually called.\n' +
+      '\n' +
+      'Parametres:\n' +
+      '| name | type | description |\n' +
+      '| --- | --- | --- |\n' +
+      '| options | {?options} | An object representing the command-line options. \\[default: {}\\] |\n' +
+      '\n' +
+      'Status:\n' +
+      '| version | change |\n' +
+      '| --- | --- |\n' +
+      '| 0.0.1 | Introduced |\n' +
+      '*/\n' +
+      '/* istanbul ignore next */\n' +
+      'async function main_Async( options = {} ){\n' +
+      '\tvar arguments_array = Array.from(arguments);\n' +
+      '\tvar return_error = null;\n' +
+      "\tconst FUNCTION_NAME = 'main_Async';\n" +
+      "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});\n" +
+      '\t//Variables\n' +
+      "\tvar input_string = '';\n" +
+      "\tvar output_string = '';\n" +
+      '\t//Parametre checks\n' +
+      '\t//Function\n' +
+      '\t///Input\n' +
+      '\tif( options.stdin === true ){\n' +
+      "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'Reading input from STDIN.'});\n" +
+      '\t\ttry{\n' +
+      "\t\t\tinput_string = await GetStream( process.stdin, 'utf8' );\n" +
+      '\t\t} catch(error){\n' +
+      '\t\t\treturn_error = new Error(`GetStream threw an error: ${error}`);\n' +
+      "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+      '\t\t}\n' +
+      '\t} else if( options.input != null ){\n' +
+      "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'Reading input from a file.'});\n" +
+      "\t\tif( typeof(options.input) === 'string' ){\n" +
+      "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `options.input: '${options.input}'`});\n" +
+      '\t\t\ttry{\n' +
+      "\t\t\t\tinput_string = FileSystem.readFileSync( options.input, 'utf8' );\n" +
+      '\t\t\t} catch(error){\n' +
+      '\t\t\t\treturn_error = new Error(`FileSystem.readFileSync threw an error: ${error}`);\n' +
+      "\t\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+      '\t\t\t}\n' +
+      '\t\t} else{\n' +
+      `\t\t\treturn_error = new Error('"options.input" is not a string.');\n` +
+      "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+      '\t\t}\n' +
+      '\t} else{\n' +
+      "\t\treturn_error = new Error('No input options specified.');\n" +
+      "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+      '\t}\n' +
+      '\t///Transform\n' +
+      '\tif( return_error === null ){\n' +
+      "\t\tif( input_string !== '' && typeof(input_string) === 'string' ){\n" +
+      '\t\t} else{\n' +
+      "\t\t\treturn_error = new Error('input_string is either null or not a string.');\n" +
+      "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+      '\t\t}\n' +
+      '\t}\n' +
+      '\t///Output\n' +
+      '\tif( return_error === null ){\n' +
+      "\t\tif( output_string !== '' && typeof(output_string) === 'string' ){\n" +
+      "\t\t\tif( options.output != null && typeof(output_string) === 'string' ){\n" +
+      '\t\t\t\ttry{\n' +
+      "\t\t\t\t\tFileSystem.writeFileSync( options.output, output_string, 'utf8' );\n" +
+      '\t\t\t\t} catch(error){\n' +
+      '\t\t\t\t\treturn_error = new Error(`FileSystem.writeFileSync threw an error: ${error}`);\n' +
+      "\t\t\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+      '\t\t\t\t}\n' +
+      '\t\t\t} else{\n' +
+      '\t\t\t\tif( options.stdout !== true ){\n' +
+      "\t\t\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'warn', message: 'No output options specified; defaulting to STDOUT.'});\n" +
+      '\t\t\t\t}\n' +
+      '\t\t\t\tconsole.log(output_string);\n' +
+      '\t\t\t}\n' +
+      '\t\t} else{\n' +
+      `\t\t\treturn_error = new Error('"output_string" is either null or not a string.');\n` +
+      "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+      '\t\t}\n' +
+      '\t}\n' +
+      '\n' +
+      '\t//Return\n' +
+      '\tif( return_error !== null ){\n' +
+      '\t\tprocess.exitCode = 1;\n' +
+      "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'crit', message: return_error.message});\n" +
+      '\t}\n' +
+      '}\n' +
+      '\n' +
+      '/**\n' +
+      '### main_Async_Test (private)\n' +
+      '> The main function when the script is run as an executable **with** the `--test` command-line option. Runs all of the other `*_Test()`-type unit-test functions in this module. Not exported and should never be manually called.\n' +
+      '\n' +
+      'Parametres:\n' +
+      '| name | type | description |\n' +
+      '| --- | --- | --- |\n' +
+      '| options | {?options} | An object representing the command-line options. \\[default: {}\\] |\n' +
+      '\n' +
+      'Status:\n' +
+      '| version | change |\n' +
+      '| --- | --- |\n' +
+      '| 0.0.1 | Introduced |\n' +
+      '*/\n' +
+      '/* istanbul ignore next */\n' +
+      'async function main_Async_Test(){\n' +
+      "\tconst FUNCTION_NAME = 'main_Async_Test';\n" +
+      '\t//Variables\n' +
+      '\tvar _return = false;\n' +
+      '\tvar return_error = null;\n' +
+      '\t//Tests\n' +
+      '\ttry{\n' +
+      '\t} catch(error){\n' +
+      "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'crit', message: `Test failed with error: '${error}'`});\n" +
+      '\t\tprocess.exitCode = 4;\n' +
+      '\t}\n' +
+      '\t//Return\n' +
+      '\treturn _return;\n' +
+      '}\n' +
+      '//#Exports and Execution\n' +
+      'if(require.main === module){\n' +
+      '\tvar _return = [1,null];\n' +
+      "\tconst FUNCTION_NAME = 'MainExecutionFunction';\n" +
+      '\t//##Dependencies\n' +
+      '\t\t//###Internal\n' +
+      '\t\t//###Standard\n' +
+      "\t\tconst Path = require('path');\n" +
+      '\t\t//###External\n' +
+      "\t\tconst MakeDir = require('make-dir');\n" +
+      "\t\tconst ApplicationLogWinstonInterface = require('application-log-winston-interface');\n" +
+      "\t\tconst EnvPaths = require('env-paths');\n" +
+      "\t\tconst CommandLineArgs = require('command-line-args');\n" +
+      "\t\tconst CommandLineUsage = require('command-line-usage');\n" +
+      '\t//Constants\n' +
+      '\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n' +
+      '\tconst OptionDefinitions = [\n' +
+      '\t\t//UI\n' +
+      "\t\t{ name: 'help', alias: 'h', type: Boolean, description: 'Writes this help text to STDOUT.' },\n" +
+      "\t\t{ name: 'noop', alias: 'n', type: Boolean, description: '[Reserved] Show what would be done without actually doing it.' },\n" +
+      "\t\t{ name: 'verbose', alias: 'v', type: Boolean, description: 'Verbose output to STDERR.' },\n" +
+      "\t\t{ name: 'version', alias: 'V', type: Boolean, description: 'Writes version information to STDOUT.' },\n" +
+      "\t\t{ name: 'no-quick-exit', alias: 'x', type: Boolean, description: 'Don\\'t immediately exit after printing help, version, and/or config information.' },\n" +
+      '\t\t//Input\n' +
+      "\t\t{ name: 'stdin', alias: 'i', type: Boolean, description: 'Read input from STDIN.' },\n" +
+      "\t\t{ name: 'input', alias: 'I', type: String, description: 'The path to the file to read input from.' },\n" +
+      "\t\t{ name: 'test', alias: 't', type: Boolean, description: 'Run unit tests and exit.' },\n" +
+      '\t\t//Output\n' +
+      "\t\t{ name: 'stdout', alias: 'o', type: Boolean, description: 'Write output to STDOUT.' },\n" +
+      "\t\t{ name: 'output', alias: 'O', type: String, description: 'The name of the file to write output to.' },\n" +
+      "\t\t{ name: 'pasteboard', alias: 'p', type: Boolean, description: '[Reserved] Copy output to pasteboard (clipboard).' },\n" +
+      '\t\t//Config\n' +
+      "\t\t{ name: 'config', alias: 'c', type: Boolean, description: 'Print search paths and configuration values to STDOUT.' },\n" +
+      "\t\t{ name: 'config-file', alias: 'C', type: String, description: '[Resevred] Use the given config file instead of the default.' },\n" +
+      '\t];\n' +
+      '\t//Variables\n' +
+      '\tvar function_return = [1,null];\n' +
+      '\tvar quick_exit = false;\n' +
+      "\tvar source_dirname = '';\n" +
+      "\tvar parent_dirname = '';\n" +
+      "\tvar package_path = '';\n" +
+      '\t//Logger\n' +
+      '\ttry{ \n' +
+      '\t\tMakeDir.sync( EnvironmentPaths.log );\n' +
+      '\t} catch(error)/* istanbul ignore next */{\n' +
+      "\t\tconsole.error('MakeDir.sync threw: %s', error);\n" +
+      '\t}\n' +
+      "\tfunction_return = ApplicationLogWinstonInterface.InitLogger('debug.log', EnvironmentPaths.log);\n" +
+      '\tif( function_return[0] === 0 ){\n' +
+      '\t\tsetLogger( function_return[1] );\n' +
+      '\t}\n' +
+      "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});\n" +
+      '\t//Options\n' +
+      '\tvar Options = CommandLineArgs( OptionDefinitions );\n' +
+      '\t//Config\n' +
+      '\t/* istanbul ignore next */\n' +
+      '\tif( Options.verbose === true ){\n' +
+      "\t\tLogger.real_transports.console_stderr.level = 'debug';\n" +
+      "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'note', message: `Logger: console_stderr transport log level set to: ${Logger.real_transports.console_stderr.level}`});\n" +
+      '\t}\n' +
+      '\t///Load package.json\n' +
+      '\ttry{\n' +
+      '\t\tsource_dirname = Path.dirname( module.filename );\n' +
+      "\t\tpackage_path = Path.join( source_dirname, 'package.json' );\n" +
+      '\t\tPACKAGE_JSON = require(package_path);\n' +
+      '\t} catch(error){\n' +
+      "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `Soft error: ${error}`});\n" +
+      '\t\ttry{\n' +
+      '\t\t\tparent_dirname = Path.dirname( source_dirname );\n' +
+      "\t\t\tpackage_path = Path.join( parent_dirname, 'package.json' );\n" +
+      '\t\t\tPACKAGE_JSON = require(package_path);\n' +
+      '\t\t} catch(error){\n' +
+      "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `Soft error: ${error}`});\n" +
+      '\t\t}\n' +
+      '\t}\n' +
+      '\t//Main\n' +
+      '\t/* istanbul ignore next */\n' +
+      '\tif( Options.version === true ){\n' +
+      '\t\tconsole.log(PACKAGE_JSON.version);\n' +
+      '\t\tquick_exit = true;\n' +
+      '\t}\n' +
+      '\t/* istanbul ignore next */\n' +
+      '\tif( Options.help === true ){\n' +
+      '\t\tconst help_sections_array = [\n' +
+      '\t\t\t{\n' +
+      "\t\t\t\theader: 'process-name',\n" +
+      "\t\t\t\tcontent: 'Brief description.',\n" +
+      '\t\t\t},\n' +
+      '\t\t\t{\n' +
+      "\t\t\t\theader: 'Options',\n" +
+      '\t\t\t\toptionList: OptionDefinitions\n' +
+      '\t\t\t}\n' +
+      '\t\t]\n' +
+      '\t\tconst help_message = CommandLineUsage(help_sections_array);\n' +
+      '\t\tconsole.log(help_message);\n' +
+      '\t\tquick_exit = true;\n' +
+      '\t}\n' +
+      '\t/* istanbul ignore next */\n' +
+      '\tif( Options.config === true ){\n' +
+      "\t\tconsole.log('Paths: ', EnvironmentPaths);\n" +
+      '\t\tquick_exit = true;\n' +
+      '\t}\n' +
+      "\tif( quick_exit === false || Options['no-quick-exit'] === true ){\n" +
+      '\t\t/* istanbul ignore else */\n' +
+      '\t\tif( Options.test === true ){\n' +
+      '\t\t\tmain_Async_Test();\n' +
+      '\t\t} else{\n' +
+      '\t\t\tmain_Async( Options );\n' +
+      '\t\t}\n' +
+      '\t}\n' +
+      "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});\n" +
+      '} else{\n' +
+      '\texports.setLogger = setLogger;\n' +
+      '}\n',
+    [length]: 2
+  ],
+  [length]: 3
+]
+2020-05-02T23:11:20.134Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [
+  0,
+  '#!/usr/local/bin/node\n' +
+    "'use strict';\n" +
+    '/**\n' +
+    '# [filename.js](source/filename.js)\n' +
+    '> Simply extract documentation comments from a source file.\n' +
+    '\n' +
+    'Internal module name: `ModuleName`\n' +
+    '\n' +
+    'Author: Anadian\n' +
+    '\n' +
+    'Code license: MIT\n' +
+    '```\n' +
+    '\tCopyright 2020 Anadian\n' +
+    '\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \n' +
+    'software and associated documentation files (the "Software"), to deal in the Software \n' +
+    'without restriction, including without limitation the rights to use, copy, modify, \n' +
+    'merge, publish, distribute, sublicense, and/or sell copies of the Software, and to \n' +
+    'permit persons to whom the Software is furnished to do so, subject to the following \n' +
+    'conditions:\n' +
+    '\tThe above copyright notice and this permission notice shall be included in all copies \n' +
+    'or substantial portions of the Software.\n' +
+    '\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \n' +
+    'INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \n' +
+    'PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \n' +
+    'HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \n' +
+    'CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \n' +
+    'OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n' +
+    '```\n' +
+    'Documentation License: [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)\n' +
+    '> The source-code comments and documentation are written in [GitHub Flavored Markdown](https://github.github.com/gfm/).\n' +
+    '\n' +
+    '> The type notation used in this documentation is based off of the [Google Closure type system](https://github.com/google/closure-compiler/wiki/Types-in-the-Closure-Type-System).\n' +
+    '\n' +
+    '> The status and feature lifecycle keywords used in this documentation are based off of my own standard [defined here](https://github.com/Anadian/FeatureLifeCycleStateStandard).\n' +
+    '*/\n' +
+    '\n' +
+    '//#Dependencies\n' +
+    '\t//##Internal\n' +
+    '\t//##Standard\n' +
+    "\tconst FileSystem = require('fs');\n" +
+    '\t//##External\n' +
+    "\tconst GetStream = require('get-stream');\n" +
+    '//#Constants\n' +
+    "const FILENAME = 'filename.js';\n" +
+    "const MODULE_NAME = 'ModuleName';\n" +
+    'var PACKAGE_JSON = {};\n' +
+    "var PROCESS_NAME = '';\n" +
+    'if(require.main === module){\n' +
+    "\tPROCESS_NAME = 'process-name';\n" +
+    '} else{\n' +
+    '\tPROCESS_NAME = process.argv0;\n' +
+    '}\n' +
+    '//##Errors\n' +
+    '\n' +
+    '//#Global Variables\n' +
+    '/* istanbul ignore next */\n' +
+    'var Logger = { \n' +
+    '\tlog: () => {\n' +
+    '\t\treturn null;\n' +
+    '\t}\n' +
+    '};\n' +
+    '//#Functions\n' +
+    '/**\n' +
+    '## Functions\n' +
+    '*/\n' +
+    '/**\n' +
+    '### setLogger\n' +
+    "> Allows this module's functions to log the given logger object.\n" +
+    '\n' +
+    'Parametres:\n' +
+    '| name | type | description |\n' +
+    '| --- | --- | --- |\n' +
+    '| logger | {?object} | The logger to be used for logging or `null` to disable logging. |\n' +
+    '\n' +
+    'Throws:\n' +
+    '| code | type | condition |\n' +
+    '| --- | --- | --- |\n' +
+    "| 'ERR_INVALID_ARG_TYPE' | {TypeError} | Thrown if `logger` is neither an object nor `null` |\n" +
+    '\n' +
+    'Status:\n' +
+    '| version | change |\n' +
+    '| --- | --- |\n' +
+    '| 0.0.0 | Introduced |\n' +
+    '*/\n' +
+    'function setLogger( logger ){\n' +
+    '\tvar return_error = null;\n' +
+    "\t//const FUNCTION_NAME = 'setLogger';\n" +
+    '\t//Variables\n' +
+    '\t//Parametre checks\n' +
+    '\t/* istanbul ignore else */\n' +
+    "\tif( typeof(logger) === 'object' ){\n" +
+    '\t\t/* istanbul ignore next */\n' +
+    '\t\tif( logger === null ){\n' +
+    '\t\t\tlogger = { \n' +
+    '\t\t\t\tlog: () => {\n' +
+    '\t\t\t\t\treturn null;\n' +
+    '\t\t\t\t}\n' +
+    '\t\t\t};\n' +
+    '\t\t}\n' +
+    '\t} else{\n' +
+    `\t\treturn_error = new TypeError('Param "logger" is not an object.');\n` +
+    "\t\treturn_error.code = 'ERR_INVALID_ARG_TYPE';\n" +
+    '\t\tthrow return_error;\n' +
+    '\t}\n' +
+    '\n' +
+    '\t//Function\n' +
+    '\tLogger = logger;\n' +
+    '\t//Return\n' +
+    '}\n' +
+    '/**\n' +
+    '### main_Async (private)\n' +
+    '> The main function when the script is run as an executable without the `--test` command-line option. Not exported and should never be manually called.\n' +
+    '\n' +
+    'Parametres:\n' +
+    '| name | type | description |\n' +
+    '| --- | --- | --- |\n' +
+    '| options | {?options} | An object representing the command-line options. \\[default: {}\\] |\n' +
+    '\n' +
+    'Status:\n' +
+    '| version | change |\n' +
+    '| --- | --- |\n' +
+    '| 0.0.1 | Introduced |\n' +
+    '*/\n' +
+    '/* istanbul ignore next */\n' +
+    'async function main_Async( options = {} ){\n' +
+    '\tvar arguments_array = Array.from(arguments);\n' +
+    '\tvar return_error = null;\n' +
+    "\tconst FUNCTION_NAME = 'main_Async';\n" +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});\n" +
+    '\t//Variables\n' +
+    "\tvar input_string = '';\n" +
+    "\tvar output_string = '';\n" +
+    '\t//Parametre checks\n' +
+    '\t//Function\n' +
+    '\t///Input\n' +
+    '\tif( options.stdin === true ){\n' +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'Reading input from STDIN.'});\n" +
+    '\t\ttry{\n' +
+    "\t\t\tinput_string = await GetStream( process.stdin, 'utf8' );\n" +
+    '\t\t} catch(error){\n' +
+    '\t\t\treturn_error = new Error(`GetStream threw an error: ${error}`);\n' +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t}\n' +
+    '\t} else if( options.input != null ){\n' +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'Reading input from a file.'});\n" +
+    "\t\tif( typeof(options.input) === 'string' ){\n" +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `options.input: '${options.input}'`});\n" +
+    '\t\t\ttry{\n' +
+    "\t\t\t\tinput_string = FileSystem.readFileSync( options.input, 'utf8' );\n" +
+    '\t\t\t} catch(error){\n' +
+    '\t\t\t\treturn_error = new Error(`FileSystem.readFileSync threw an error: ${error}`);\n' +
+    "\t\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t\t}\n' +
+    '\t\t} else{\n' +
+    `\t\t\treturn_error = new Error('"options.input" is not a string.');\n` +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t}\n' +
+    '\t} else{\n' +
+    "\t\treturn_error = new Error('No input options specified.');\n" +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t}\n' +
+    '\t///Transform\n' +
+    '\tif( return_error === null ){\n' +
+    "\t\tif( input_string !== '' && typeof(input_string) === 'string' ){\n" +
+    '\t\t} else{\n' +
+    "\t\t\treturn_error = new Error('input_string is either null or not a string.');\n" +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t}\n' +
+    '\t}\n' +
+    '\t///Output\n' +
+    '\tif( return_error === null ){\n' +
+    "\t\tif( output_string !== '' && typeof(output_string) === 'string' ){\n" +
+    "\t\t\tif( options.output != null && typeof(output_string) === 'string' ){\n" +
+    '\t\t\t\ttry{\n' +
+    "\t\t\t\t\tFileSystem.writeFileSync( options.output, output_string, 'utf8' );\n" +
+    '\t\t\t\t} catch(error){\n' +
+    '\t\t\t\t\treturn_error = new Error(`FileSystem.writeFileSync threw an error: ${error}`);\n' +
+    "\t\t\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t\t\t}\n' +
+    '\t\t\t} else{\n' +
+    '\t\t\t\tif( options.stdout !== true ){\n' +
+    "\t\t\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'warn', message: 'No output options specified; defaulting to STDOUT.'});\n" +
+    '\t\t\t\t}\n' +
+    '\t\t\t\tconsole.log(output_string);\n' +
+    '\t\t\t}\n' +
+    '\t\t} else{\n' +
+    `\t\t\treturn_error = new Error('"output_string" is either null or not a string.');\n` +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t}\n' +
+    '\t}\n' +
+    '\n' +
+    '\t//Return\n' +
+    '\tif( return_error !== null ){\n' +
+    '\t\tprocess.exitCode = 1;\n' +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'crit', message: return_error.message});\n" +
+    '\t}\n' +
+    '}\n' +
+    '\n' +
+    '/**\n' +
+    '### main_Async_Test (private)\n' +
+    '> The main function when the script is run as an executable **with** the `--test` command-line option. Runs all of the other `*_Test()`-type unit-test functions in this module. Not exported and should never be manually called.\n' +
+    '\n' +
+    'Parametres:\n' +
+    '| name | type | description |\n' +
+    '| --- | --- | --- |\n' +
+    '| options | {?options} | An object representing the command-line options. \\[default: {}\\] |\n' +
+    '\n' +
+    'Status:\n' +
+    '| version | change |\n' +
+    '| --- | --- |\n' +
+    '| 0.0.1 | Introduced |\n' +
+    '*/\n' +
+    '/* istanbul ignore next */\n' +
+    'async function main_Async_Test(){\n' +
+    "\tconst FUNCTION_NAME = 'main_Async_Test';\n" +
+    '\t//Variables\n' +
+    '\tvar _return = false;\n' +
+    '\tvar return_error = null;\n' +
+    '\t//Tests\n' +
+    '\ttry{\n' +
+    '\t} catch(error){\n' +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'crit', message: `Test failed with error: '${error}'`});\n" +
+    '\t\tprocess.exitCode = 4;\n' +
+    '\t}\n' +
+    '\t//Return\n' +
+    '\treturn _return;\n' +
+    '}\n' +
+    '//#Exports and Execution\n' +
+    'if(require.main === module){\n' +
+    '\tvar _return = [1,null];\n' +
+    "\tconst FUNCTION_NAME = 'MainExecutionFunction';\n" +
+    '\t//##Dependencies\n' +
+    '\t\t//###Internal\n' +
+    '\t\t//###Standard\n' +
+    "\t\tconst Path = require('path');\n" +
+    '\t\t//###External\n' +
+    "\t\tconst MakeDir = require('make-dir');\n" +
+    "\t\tconst ApplicationLogWinstonInterface = require('application-log-winston-interface');\n" +
+    "\t\tconst EnvPaths = require('env-paths');\n" +
+    "\t\tconst CommandLineArgs = require('command-line-args');\n" +
+    "\t\tconst CommandLineUsage = require('command-line-usage');\n" +
+    '\t//Constants\n' +
+    '\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n' +
+    '\tconst OptionDefinitions = [\n' +
+    '\t\t//UI\n' +
+    "\t\t{ name: 'help', alias: 'h', type: Boolean, description: 'Writes this help text to STDOUT.' },\n" +
+    "\t\t{ name: 'noop', alias: 'n', type: Boolean, description: '[Reserved] Show what would be done without actually doing it.' },\n" +
+    "\t\t{ name: 'verbose', alias: 'v', type: Boolean, description: 'Verbose output to STDERR.' },\n" +
+    "\t\t{ name: 'version', alias: 'V', type: Boolean, description: 'Writes version information to STDOUT.' },\n" +
+    "\t\t{ name: 'no-quick-exit', alias: 'x', type: Boolean, description: 'Don\\'t immediately exit after printing help, version, and/or config information.' },\n" +
+    '\t\t//Input\n' +
+    "\t\t{ name: 'stdin', alias: 'i', type: Boolean, description: 'Read input from STDIN.' },\n" +
+    "\t\t{ name: 'input', alias: 'I', type: String, description: 'The path to the file to read input from.' },\n" +
+    "\t\t{ name: 'test', alias: 't', type: Boolean, description: 'Run unit tests and exit.' },\n" +
+    '\t\t//Output\n' +
+    "\t\t{ name: 'stdout', alias: 'o', type: Boolean, description: 'Write output to STDOUT.' },\n" +
+    "\t\t{ name: 'output', alias: 'O', type: String, description: 'The name of the file to write output to.' },\n" +
+    "\t\t{ name: 'pasteboard', alias: 'p', type: Boolean, description: '[Reserved] Copy output to pasteboard (clipboard).' },\n" +
+    '\t\t//Config\n' +
+    "\t\t{ name: 'config', alias: 'c', type: Boolean, description: 'Print search paths and configuration values to STDOUT.' },\n" +
+    "\t\t{ name: 'config-file', alias: 'C', type: String, description: '[Resevred] Use the given config file instead of the default.' },\n" +
+    '\t];\n' +
+    '\t//Variables\n' +
+    '\tvar function_return = [1,null];\n' +
+    '\tvar quick_exit = false;\n' +
+    "\tvar source_dirname = '';\n" +
+    "\tvar parent_dirname = '';\n" +
+    "\tvar package_path = '';\n" +
+    '\t//Logger\n' +
+    '\ttry{ \n' +
+    '\t\tMakeDir.sync( EnvironmentPaths.log );\n' +
+    '\t} catch(error)/* istanbul ignore next */{\n' +
+    "\t\tconsole.error('MakeDir.sync threw: %s', error);\n" +
+    '\t}\n' +
+    "\tfunction_return = ApplicationLogWinstonInterface.InitLogger('debug.log', EnvironmentPaths.log);\n" +
+    '\tif( function_return[0] === 0 ){\n' +
+    '\t\tsetLogger( function_return[1] );\n' +
+    '\t}\n' +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});\n" +
+    '\t//Options\n' +
+    '\tvar Options = CommandLineArgs( OptionDefinitions );\n' +
+    '\t//Config\n' +
+    '\t/* istanbul ignore next */\n' +
+    '\tif( Options.verbose === true ){\n' +
+    "\t\tLogger.real_transports.console_stderr.level = 'debug';\n" +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'note', message: `Logger: console_stderr transport log level set to: ${Logger.real_transports.console_stderr.level}`});\n" +
+    '\t}\n' +
+    '\t///Load package.json\n' +
+    '\ttry{\n' +
+    '\t\tsource_dirname = Path.dirname( module.filename );\n' +
+    "\t\tpackage_path = Path.join( source_dirname, 'package.json' );\n" +
+    '\t\tPACKAGE_JSON = require(package_path);\n' +
+    '\t} catch(error){\n' +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `Soft error: ${error}`});\n" +
+    '\t\ttry{\n' +
+    '\t\t\tparent_dirname = Path.dirname( source_dirname );\n' +
+    "\t\t\tpackage_path = Path.join( parent_dirname, 'package.json' );\n" +
+    '\t\t\tPACKAGE_JSON = require(package_path);\n' +
+    '\t\t} catch(error){\n' +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `Soft error: ${error}`});\n" +
+    '\t\t}\n' +
+    '\t}\n' +
+    '\t//Main\n' +
+    '\t/* istanbul ignore next */\n' +
+    '\tif( Options.version === true ){\n' +
+    '\t\tconsole.log(PACKAGE_JSON.version);\n' +
+    '\t\tquick_exit = true;\n' +
+    '\t}\n' +
+    '\t/* istanbul ignore next */\n' +
+    '\tif( Options.help === true ){\n' +
+    '\t\tconst help_sections_array = [\n' +
+    '\t\t\t{\n' +
+    "\t\t\t\theader: 'process-name',\n" +
+    "\t\t\t\tcontent: 'Brief description.',\n" +
+    '\t\t\t},\n' +
+    '\t\t\t{\n' +
+    "\t\t\t\theader: 'Options',\n" +
+    '\t\t\t\toptionList: OptionDefinitions\n' +
+    '\t\t\t}\n' +
+    '\t\t]\n' +
+    '\t\tconst help_message = CommandLineUsage(help_sections_array);\n' +
+    '\t\tconsole.log(help_message);\n' +
+    '\t\tquick_exit = true;\n' +
+    '\t}\n' +
+    '\t/* istanbul ignore next */\n' +
+    '\tif( Options.config === true ){\n' +
+    "\t\tconsole.log('Paths: ', EnvironmentPaths);\n" +
+    '\t\tquick_exit = true;\n' +
+    '\t}\n' +
+    "\tif( quick_exit === false || Options['no-quick-exit'] === true ){\n" +
+    '\t\t/* istanbul ignore else */\n' +
+    '\t\tif( Options.test === true ){\n' +
+    '\t\t\tmain_Async_Test();\n' +
+    '\t\t} else{\n' +
+    '\t\t\tmain_Async( Options );\n' +
+    '\t\t}\n' +
+    '\t}\n' +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});\n" +
+    '} else{\n' +
+    '\texports.setLogger = setLogger;\n' +
+    '}\n',
+  [length]: 2
+]
+2020-05-02T23:11:20.134Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: [Arguments] {
+  '0': '#!/usr/local/bin/node\n' +
+    "'use strict';\n" +
+    '/**\n' +
+    '# [filename.js](source/filename.js)\n' +
+    '> Simply extract documentation comments from a source file.\n' +
+    '\n' +
+    'Internal module name: `ModuleName`\n' +
+    '\n' +
+    'Author: Anadian\n' +
+    '\n' +
+    'Code license: MIT\n' +
+    '```\n' +
+    '\tCopyright 2020 Anadian\n' +
+    '\tPermission is hereby granted, free of charge, to any person obtaining a copy of this \n' +
+    'software and associated documentation files (the "Software"), to deal in the Software \n' +
+    'without restriction, including without limitation the rights to use, copy, modify, \n' +
+    'merge, publish, distribute, sublicense, and/or sell copies of the Software, and to \n' +
+    'permit persons to whom the Software is furnished to do so, subject to the following \n' +
+    'conditions:\n' +
+    '\tThe above copyright notice and this permission notice shall be included in all copies \n' +
+    'or substantial portions of the Software.\n' +
+    '\tTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, \n' +
+    'INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \n' +
+    'PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \n' +
+    'HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \n' +
+    'CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE \n' +
+    'OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n' +
+    '```\n' +
+    'Documentation License: [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)\n' +
+    '> The source-code comments and documentation are written in [GitHub Flavored Markdown](https://github.github.com/gfm/).\n' +
+    '\n' +
+    '> The type notation used in this documentation is based off of the [Google Closure type system](https://github.com/google/closure-compiler/wiki/Types-in-the-Closure-Type-System).\n' +
+    '\n' +
+    '> The status and feature lifecycle keywords used in this documentation are based off of my own standard [defined here](https://github.com/Anadian/FeatureLifeCycleStateStandard).\n' +
+    '*/\n' +
+    '\n' +
+    '//#Dependencies\n' +
+    '\t//##Internal\n' +
+    '\t//##Standard\n' +
+    "\tconst FileSystem = require('fs');\n" +
+    '\t//##External\n' +
+    "\tconst GetStream = require('get-stream');\n" +
+    '//#Constants\n' +
+    "const FILENAME = 'filename.js';\n" +
+    "const MODULE_NAME = 'ModuleName';\n" +
+    'var PACKAGE_JSON = {};\n' +
+    "var PROCESS_NAME = '';\n" +
+    'if(require.main === module){\n' +
+    "\tPROCESS_NAME = 'process-name';\n" +
+    '} else{\n' +
+    '\tPROCESS_NAME = process.argv0;\n' +
+    '}\n' +
+    '//##Errors\n' +
+    '\n' +
+    '//#Global Variables\n' +
+    '/* istanbul ignore next */\n' +
+    'var Logger = { \n' +
+    '\tlog: () => {\n' +
+    '\t\treturn null;\n' +
+    '\t}\n' +
+    '};\n' +
+    '//#Functions\n' +
+    '/**\n' +
+    '## Functions\n' +
+    '*/\n' +
+    '/**\n' +
+    '### setLogger\n' +
+    "> Allows this module's functions to log the given logger object.\n" +
+    '\n' +
+    'Parametres:\n' +
+    '| name | type | description |\n' +
+    '| --- | --- | --- |\n' +
+    '| logger | {?object} | The logger to be used for logging or `null` to disable logging. |\n' +
+    '\n' +
+    'Throws:\n' +
+    '| code | type | condition |\n' +
+    '| --- | --- | --- |\n' +
+    "| 'ERR_INVALID_ARG_TYPE' | {TypeError} | Thrown if `logger` is neither an object nor `null` |\n" +
+    '\n' +
+    'Status:\n' +
+    '| version | change |\n' +
+    '| --- | --- |\n' +
+    '| 0.0.0 | Introduced |\n' +
+    '*/\n' +
+    'function setLogger( logger ){\n' +
+    '\tvar return_error = null;\n' +
+    "\t//const FUNCTION_NAME = 'setLogger';\n" +
+    '\t//Variables\n' +
+    '\t//Parametre checks\n' +
+    '\t/* istanbul ignore else */\n' +
+    "\tif( typeof(logger) === 'object' ){\n" +
+    '\t\t/* istanbul ignore next */\n' +
+    '\t\tif( logger === null ){\n' +
+    '\t\t\tlogger = { \n' +
+    '\t\t\t\tlog: () => {\n' +
+    '\t\t\t\t\treturn null;\n' +
+    '\t\t\t\t}\n' +
+    '\t\t\t};\n' +
+    '\t\t}\n' +
+    '\t} else{\n' +
+    `\t\treturn_error = new TypeError('Param "logger" is not an object.');\n` +
+    "\t\treturn_error.code = 'ERR_INVALID_ARG_TYPE';\n" +
+    '\t\tthrow return_error;\n' +
+    '\t}\n' +
+    '\n' +
+    '\t//Function\n' +
+    '\tLogger = logger;\n' +
+    '\t//Return\n' +
+    '}\n' +
+    '/**\n' +
+    '### main_Async (private)\n' +
+    '> The main function when the script is run as an executable without the `--test` command-line option. Not exported and should never be manually called.\n' +
+    '\n' +
+    'Parametres:\n' +
+    '| name | type | description |\n' +
+    '| --- | --- | --- |\n' +
+    '| options | {?options} | An object representing the command-line options. \\[default: {}\\] |\n' +
+    '\n' +
+    'Status:\n' +
+    '| version | change |\n' +
+    '| --- | --- |\n' +
+    '| 0.0.1 | Introduced |\n' +
+    '*/\n' +
+    '/* istanbul ignore next */\n' +
+    'async function main_Async( options = {} ){\n' +
+    '\tvar arguments_array = Array.from(arguments);\n' +
+    '\tvar return_error = null;\n' +
+    "\tconst FUNCTION_NAME = 'main_Async';\n" +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});\n" +
+    '\t//Variables\n' +
+    "\tvar input_string = '';\n" +
+    "\tvar output_string = '';\n" +
+    '\t//Parametre checks\n' +
+    '\t//Function\n' +
+    '\t///Input\n' +
+    '\tif( options.stdin === true ){\n' +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'Reading input from STDIN.'});\n" +
+    '\t\ttry{\n' +
+    "\t\t\tinput_string = await GetStream( process.stdin, 'utf8' );\n" +
+    '\t\t} catch(error){\n' +
+    '\t\t\treturn_error = new Error(`GetStream threw an error: ${error}`);\n' +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t}\n' +
+    '\t} else if( options.input != null ){\n' +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'Reading input from a file.'});\n" +
+    "\t\tif( typeof(options.input) === 'string' ){\n" +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `options.input: '${options.input}'`});\n" +
+    '\t\t\ttry{\n' +
+    "\t\t\t\tinput_string = FileSystem.readFileSync( options.input, 'utf8' );\n" +
+    '\t\t\t} catch(error){\n' +
+    '\t\t\t\treturn_error = new Error(`FileSystem.readFileSync threw an error: ${error}`);\n' +
+    "\t\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t\t}\n' +
+    '\t\t} else{\n' +
+    `\t\t\treturn_error = new Error('"options.input" is not a string.');\n` +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t}\n' +
+    '\t} else{\n' +
+    "\t\treturn_error = new Error('No input options specified.');\n" +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t}\n' +
+    '\t///Transform\n' +
+    '\tif( return_error === null ){\n' +
+    "\t\tif( input_string !== '' && typeof(input_string) === 'string' ){\n" +
+    '\t\t} else{\n' +
+    "\t\t\treturn_error = new Error('input_string is either null or not a string.');\n" +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t}\n' +
+    '\t}\n' +
+    '\t///Output\n' +
+    '\tif( return_error === null ){\n' +
+    "\t\tif( output_string !== '' && typeof(output_string) === 'string' ){\n" +
+    "\t\t\tif( options.output != null && typeof(output_string) === 'string' ){\n" +
+    '\t\t\t\ttry{\n' +
+    "\t\t\t\t\tFileSystem.writeFileSync( options.output, output_string, 'utf8' );\n" +
+    '\t\t\t\t} catch(error){\n' +
+    '\t\t\t\t\treturn_error = new Error(`FileSystem.writeFileSync threw an error: ${error}`);\n' +
+    "\t\t\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t\t\t}\n' +
+    '\t\t\t} else{\n' +
+    '\t\t\t\tif( options.stdout !== true ){\n' +
+    "\t\t\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'warn', message: 'No output options specified; defaulting to STDOUT.'});\n" +
+    '\t\t\t\t}\n' +
+    '\t\t\t\tconsole.log(output_string);\n' +
+    '\t\t\t}\n' +
+    '\t\t} else{\n' +
+    `\t\t\treturn_error = new Error('"output_string" is either null or not a string.');\n` +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});\n" +
+    '\t\t}\n' +
+    '\t}\n' +
+    '\n' +
+    '\t//Return\n' +
+    '\tif( return_error !== null ){\n' +
+    '\t\tprocess.exitCode = 1;\n' +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'crit', message: return_error.message});\n" +
+    '\t}\n' +
+    '}\n' +
+    '\n' +
+    '/**\n' +
+    '### main_Async_Test (private)\n' +
+    '> The main function when the script is run as an executable **with** the `--test` command-line option. Runs all of the other `*_Test()`-type unit-test functions in this module. Not exported and should never be manually called.\n' +
+    '\n' +
+    'Parametres:\n' +
+    '| name | type | description |\n' +
+    '| --- | --- | --- |\n' +
+    '| options | {?options} | An object representing the command-line options. \\[default: {}\\] |\n' +
+    '\n' +
+    'Status:\n' +
+    '| version | change |\n' +
+    '| --- | --- |\n' +
+    '| 0.0.1 | Introduced |\n' +
+    '*/\n' +
+    '/* istanbul ignore next */\n' +
+    'async function main_Async_Test(){\n' +
+    "\tconst FUNCTION_NAME = 'main_Async_Test';\n" +
+    '\t//Variables\n' +
+    '\tvar _return = false;\n' +
+    '\tvar return_error = null;\n' +
+    '\t//Tests\n' +
+    '\ttry{\n' +
+    '\t} catch(error){\n' +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'crit', message: `Test failed with error: '${error}'`});\n" +
+    '\t\tprocess.exitCode = 4;\n' +
+    '\t}\n' +
+    '\t//Return\n' +
+    '\treturn _return;\n' +
+    '}\n' +
+    '//#Exports and Execution\n' +
+    'if(require.main === module){\n' +
+    '\tvar _return = [1,null];\n' +
+    "\tconst FUNCTION_NAME = 'MainExecutionFunction';\n" +
+    '\t//##Dependencies\n' +
+    '\t\t//###Internal\n' +
+    '\t\t//###Standard\n' +
+    "\t\tconst Path = require('path');\n" +
+    '\t\t//###External\n' +
+    "\t\tconst MakeDir = require('make-dir');\n" +
+    "\t\tconst ApplicationLogWinstonInterface = require('application-log-winston-interface');\n" +
+    "\t\tconst EnvPaths = require('env-paths');\n" +
+    "\t\tconst CommandLineArgs = require('command-line-args');\n" +
+    "\t\tconst CommandLineUsage = require('command-line-usage');\n" +
+    '\t//Constants\n' +
+    '\tconst EnvironmentPaths = EnvPaths( PROCESS_NAME );\n' +
+    '\tconst OptionDefinitions = [\n' +
+    '\t\t//UI\n' +
+    "\t\t{ name: 'help', alias: 'h', type: Boolean, description: 'Writes this help text to STDOUT.' },\n" +
+    "\t\t{ name: 'noop', alias: 'n', type: Boolean, description: '[Reserved] Show what would be done without actually doing it.' },\n" +
+    "\t\t{ name: 'verbose', alias: 'v', type: Boolean, description: 'Verbose output to STDERR.' },\n" +
+    "\t\t{ name: 'version', alias: 'V', type: Boolean, description: 'Writes version information to STDOUT.' },\n" +
+    "\t\t{ name: 'no-quick-exit', alias: 'x', type: Boolean, description: 'Don\\'t immediately exit after printing help, version, and/or config information.' },\n" +
+    '\t\t//Input\n' +
+    "\t\t{ name: 'stdin', alias: 'i', type: Boolean, description: 'Read input from STDIN.' },\n" +
+    "\t\t{ name: 'input', alias: 'I', type: String, description: 'The path to the file to read input from.' },\n" +
+    "\t\t{ name: 'test', alias: 't', type: Boolean, description: 'Run unit tests and exit.' },\n" +
+    '\t\t//Output\n' +
+    "\t\t{ name: 'stdout', alias: 'o', type: Boolean, description: 'Write output to STDOUT.' },\n" +
+    "\t\t{ name: 'output', alias: 'O', type: String, description: 'The name of the file to write output to.' },\n" +
+    "\t\t{ name: 'pasteboard', alias: 'p', type: Boolean, description: '[Reserved] Copy output to pasteboard (clipboard).' },\n" +
+    '\t\t//Config\n' +
+    "\t\t{ name: 'config', alias: 'c', type: Boolean, description: 'Print search paths and configuration values to STDOUT.' },\n" +
+    "\t\t{ name: 'config-file', alias: 'C', type: String, description: '[Resevred] Use the given config file instead of the default.' },\n" +
+    '\t];\n' +
+    '\t//Variables\n' +
+    '\tvar function_return = [1,null];\n' +
+    '\tvar quick_exit = false;\n' +
+    "\tvar source_dirname = '';\n" +
+    "\tvar parent_dirname = '';\n" +
+    "\tvar package_path = '';\n" +
+    '\t//Logger\n' +
+    '\ttry{ \n' +
+    '\t\tMakeDir.sync( EnvironmentPaths.log );\n' +
+    '\t} catch(error)/* istanbul ignore next */{\n' +
+    "\t\tconsole.error('MakeDir.sync threw: %s', error);\n" +
+    '\t}\n' +
+    "\tfunction_return = ApplicationLogWinstonInterface.InitLogger('debug.log', EnvironmentPaths.log);\n" +
+    '\tif( function_return[0] === 0 ){\n' +
+    '\t\tsetLogger( function_return[1] );\n' +
+    '\t}\n' +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});\n" +
+    '\t//Options\n' +
+    '\tvar Options = CommandLineArgs( OptionDefinitions );\n' +
+    '\t//Config\n' +
+    '\t/* istanbul ignore next */\n' +
+    '\tif( Options.verbose === true ){\n' +
+    "\t\tLogger.real_transports.console_stderr.level = 'debug';\n" +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'note', message: `Logger: console_stderr transport log level set to: ${Logger.real_transports.console_stderr.level}`});\n" +
+    '\t}\n' +
+    '\t///Load package.json\n' +
+    '\ttry{\n' +
+    '\t\tsource_dirname = Path.dirname( module.filename );\n' +
+    "\t\tpackage_path = Path.join( source_dirname, 'package.json' );\n" +
+    '\t\tPACKAGE_JSON = require(package_path);\n' +
+    '\t} catch(error){\n' +
+    "\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `Soft error: ${error}`});\n" +
+    '\t\ttry{\n' +
+    '\t\t\tparent_dirname = Path.dirname( source_dirname );\n' +
+    "\t\t\tpackage_path = Path.join( parent_dirname, 'package.json' );\n" +
+    '\t\t\tPACKAGE_JSON = require(package_path);\n' +
+    '\t\t} catch(error){\n' +
+    "\t\t\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `Soft error: ${error}`});\n" +
+    '\t\t}\n' +
+    '\t}\n' +
+    '\t//Main\n' +
+    '\t/* istanbul ignore next */\n' +
+    '\tif( Options.version === true ){\n' +
+    '\t\tconsole.log(PACKAGE_JSON.version);\n' +
+    '\t\tquick_exit = true;\n' +
+    '\t}\n' +
+    '\t/* istanbul ignore next */\n' +
+    '\tif( Options.help === true ){\n' +
+    '\t\tconst help_sections_array = [\n' +
+    '\t\t\t{\n' +
+    "\t\t\t\theader: 'process-name',\n" +
+    "\t\t\t\tcontent: 'Brief description.',\n" +
+    '\t\t\t},\n' +
+    '\t\t\t{\n' +
+    "\t\t\t\theader: 'Options',\n" +
+    '\t\t\t\toptionList: OptionDefinitions\n' +
+    '\t\t\t}\n' +
+    '\t\t]\n' +
+    '\t\tconst help_message = CommandLineUsage(help_sections_array);\n' +
+    '\t\tconsole.log(help_message);\n' +
+    '\t\tquick_exit = true;\n' +
+    '\t}\n' +
+    '\t/* istanbul ignore next */\n' +
+    '\tif( Options.config === true ){\n' +
+    "\t\tconsole.log('Paths: ', EnvironmentPaths);\n" +
+    '\t\tquick_exit = true;\n' +
+    '\t}\n' +
+    "\tif( quick_exit === false || Options['no-quick-exit'] === true ){\n" +
+    '\t\t/* istanbul ignore else */\n' +
+    '\t\tif( Options.test === true ){\n' +
+    '\t\t\tmain_Async_Test();\n' +
+    '\t\t} else{\n' +
+    '\t\t\tmain_Async( Options );\n' +
+    '\t\t}\n' +
+    '\t}\n' +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});\n" +
+    '} else{\n' +
+    '\texports.setLogger = setLogger;\n' +
+    '}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'js file' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-02T23:11:20.134Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-05-02T23:11:20.134Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-05-02T23:34:59.741Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-05-02T23:34:59.746Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-02T23:34:59.746Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [
+  0,
+  {
+    template_directories: [
+      'Resources/templates',
+      '/home/cameron/.local/share/function-factory-nodejs/templates',
+      [length]: 2
+    ],
+    defaults_directories: [
+      'Resources/defaults',
+      '/home/cameron/.local/share/function-factory-nodejs/defaults',
+      [length]: 2
+    ]
+  },
+  [length]: 2
+]
+2020-05-02T23:34:59.763Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:error: [ -2, 'Error: no input option specified.', [length]: 2 ]
+2020-05-02T23:34:59.763Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.

@@ -1,0 +1,34 @@
+{
+  "name": "jsonic-parse",
+  "version": "1.0.0",
+  "description": "Parses JavaScript Object Notation Including Comments (JSONIC) file/data.",
+  "main": "source/main.js",
+  "dependencies": {
+	"strip-json-comments": "*",
+	"parse-json": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "./source/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anadian/jsonic-parse.git"
+  },
+  "keywords": [
+    "json",
+    "jsonic",
+    "comments",
+    "parser",
+    "libre",
+    "open",
+    "free",
+    "mit"
+  ],
+  "author": "Anadian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Anadian/jsonic-parse/issues"
+  },
+  "homepage": "https://github.com/Anadian/jsonic-parse#readme"
+}
