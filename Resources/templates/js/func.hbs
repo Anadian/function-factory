@@ -1,43 +1,68 @@
 /**
-* @function {{name}}
-{{#asynchronous}}* @async
-{{/asynchronous}}* @access public
-* @description {{&description}}
-{{#params}}* @param { {{~type~}} } {{name}} - {{&description}} {{#default}}[default: {{&value}}]{{/default}}
-{{/params}}{{#returns}}* @returns { {{~type~}} } {{&description}}
-{{/returns}}{{#throws}}* @throws { {{~type~}} } `{{code}}` {{&description}}
-{{/throws}}* @since {{&since}}
+### {{name}}
+> {{&description}}
+
+{{#parametres}}Parametres:
+| name | type | description |
+| --- | --- | --- |
+{{#params}}| {{name}} | { {{~&type~}} } | {{&description} {{#default}}\[default: {{&value}}\]{{/default}} |
+{{/params}}{{/parametres}}
+
+{{#return}}Returns:
+| type | description |
+| --- | --- |
+| { {{~&type~}} } | {{&description}} |
+{{/return}}
+{{#throw}}Throws:
+| code | type | condition |
+| --- | --- | --- |
+{{#throws}}| '{{code}}' | { {{~&type~~}} } | {{&description}} |
+{{/throws}}{{/throw}}
+Status:
+| version | change |
+| --- | --- |
+| 0.0.1 | Introduced |
 */
-{{#asynchronous}}async {{/asynchronous}}function {{name}}({{#params}} {{name}}{{#default}} = {{&value}}{{/default}},{{/params}}){
+{{#asynchronous}}async {{/asynchronous}}function {{name}}({{#parametres}}{{#params}} {{name}}{{#default}} = {{&value}}{{/default}},{{/params}}{{/parametres}}){
 	var arguments_array = Array.from(arguments);
-{{#returns}}	var _return;
-{{/returns}}{{#throws}}	var return_error;
-{{/throws}}	const FUNCTION_NAME = '{{name}}';
+{{#return}}	var _return;
+{{/return}}{{#throw}}	var return_error;
+{{/throw}}	const FUNCTION_NAME = '{{name}}';
 	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
 	//Variables
-	//Parametre checks
+{{#parametres}}	//Parametre checks
 {{#params}}
 	if( {{& CheckNotType type name}} ){
 		return_error = new TypeError('Param "{{name}}" is not {{type}}.');
 		return_error.code = 'ERR_INVALID_ARG_TYPE';
 		throw return_error;
 	}
-{{/params}}
+{{/params}}{{/parametres}}
 	//Function
 
-	//Return
-{{#returns}}	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
+{{#return}}	//Return
+	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
 	return _return;
-{{/returns ~}} }
+{{/return ~}} }
 
 {{#unit_test}}/**
-* @function {{name}}_Test
-{{#asynchronous}}* @async
-{{/asynchronous}}* @access private
-* @description Tests {{name}}
-* @returns {boolean} `true` if all test pass successfully.
-{{#throws}}* @throws {Error} If a test fails.
-{{/throws}}* @since {{&since}}
+### {{name}}_Test (private)
+> Tests [{{name}}](#{{name}}); this function is not exported and should only be used internally by this module. 
+ 
+Returns:
+| type | description |
+| --- | --- |
+| {boolean} | Returns `true` if all tests pass successfully. |
+
+Throws:
+| code | type | condition |
+| --- | --- | --- |
+| any | {Error} | Thrown if a test fails. |
+
+Status:
+| version | change |
+| --- | --- |
+| 0.0.1 | Introduced |
 */
 {{#asynchronous}}async {{/asynchronous}}function {{name}}_Test(){
 	const FUNCTION_NAME = '{{name}}_Test';
