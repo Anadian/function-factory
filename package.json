@@ -1,7 +1,7 @@
 {
   "name": "function-factory",
-  "version": "0.2.0",
-  "description": "Fast minimalist templating from the command line.",
+  "version": "1.9.0",
+  "description": "Simple, minimalist templating from the command line.",
   "main": "source/main.js",
   "scripts": {
     "test": "./source/main.js --test"
@@ -12,22 +12,24 @@
   },
   "keywords": [
     "templating",
-    "boiler",
-    "plate",
-    "macro",
     "text",
     "source",
-    "code",
     "dev",
     "ops",
-    "devops",
-    "free",
-    "libre",
-    "open",
-    "mit",
+    "operations",
+    "development",
+    "mustache",
+    "handlebars",
+    "cli",
     "command",
     "line",
-    "cli"
+    "app",
+    "application",
+    "libre",
+    "free",
+    "open",
+    "mit",
+    "macro"
   ],
   "author": "Anadian",
   "license": "MIT",
@@ -35,6 +37,10 @@
     "url": "https://github.com/Anadian/function-factory/issues"
   },
   "homepage": "https://github.com/Anadian/function-factory#readme",
+  "devDependencies": {
+    "coveralls": "^3.1.0",
+    "nyc": "^15.0.1"
+  },
   "dependencies": {
     "application-log-winston-interface": "^1.0.5",
     "clipboardy": "^2.3.0",
@@ -45,8 +51,6 @@
     "handlebars": "^4.7.6",
     "inquirer": "^7.1.0",
     "jsonic-parse": "^1.0.0",
-    "make-dir": "^3.1.0",
-    "parse-json": "^5.0.0",
-    "strip-json-comments": "^3.1.0"
+    "make-dir": "^3.1.0"
   }
 }
