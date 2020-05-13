@@ -141,11 +141,12 @@ Throws:
 | code | type | condition |
 | --- | --- | --- |
 | 'ERR_INVALID_ARG_TYPE' | {TypeError} | Thrown if a given argument isn't of the correct type. |
+| 'ERR_INVALID_RETURN_VALUE' | {Error} | Thrown if parsing the file as JSONIC fails. |
 
 Status:
 | version | change |
 | --- | --- |
-| 0.0.1 | Introduced |
+| 1.9.0 | Experimental |
 */
 function loadConfigObjectFromFilePath( config_filepath, options = {} ){
 	var arguments_array = Array.from(arguments);
@@ -154,19 +155,34 @@ function loadConfigObjectFromFilePath( config_filepath, options = {} ){
 	const FUNCTION_NAME = 'loadConfigObjectFromFilePath';
 	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
 	//Variables
+	var f\r = [1, null];
+	var have_readwrite_permissions = false;
 	//Parametre checks
 	if( typeof(config_filepath) !== 'string' ){
-		return_error = new TypeError('Param "config_filepath" is not string.');
-		return_error.code = 'ERR_INVALID_ARG_TYPE';
-		throw return_error;
-	}
-	if( typeof(options) !== 'object' ){
-		return_error = new TypeError('Param "options" is not ?Object.');
+		return_error = new TypeError('Param "config_filepath" is not a string.');
 		return_error.code = 'ERR_INVALID_ARG_TYPE';
 		throw return_error;
 	}
 
 	//Function
+	try{
+		FileSystem.accessSync( config_filepath, (FileSystem.constants.R_OK | FileSystem.constants.W_OK) );
+		have_readwrite_permissions = true;
+	} catch(error){
+		return_error = new Error(`FileSystem.accessSync threw an error: ${error}`);
+		throw return_error;
+	}
+	if( have_readwrite_permissions === true ){
+		f\r = JSONICParse.ParseFilePath(config_filepath);
+		if( f\r[0] === 0 ){
+			ConfigObject = f\r[1];
+			_return = f\r[1];
+		} else{
+			return_error = new Error(`JSONICParse.ParseFilePath returned an error value: ${f\r}`);
+			return_error.code = 'ERR_INVALID_RETURN_VALUE';
+			throw return_error;
+		}
+	}
 
 	//Return
 	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});

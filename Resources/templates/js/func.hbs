@@ -6,20 +6,18 @@
 | name | type | description |
 | --- | --- | --- |
 {{#params}}| {{name}} | { {{~&type~}} } | {{&description}} {{#default}}\[default: {{&value}}\]{{/default}} |
-{{/params}}{{/parametres}}
-
-{{#return}}Returns:
+{{/params}}
+{{/parametres}}{{#return}}Returns:
 | type | description |
 | --- | --- |
 | { {{~&type~}} } | {{&description}} |
 {{/return}}
-
 {{#throw}}Throws:
 | code | type | condition |
 | --- | --- | --- |
 {{#throws}}| '{{code}}' | { {{~&type~}} } | {{&description}} |
-{{/throws}}{{/throw}}
-
+{{/throws}}
+{{/throw}}
 Status:
 | version | change |
 | --- | --- |
