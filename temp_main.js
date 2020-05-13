@@ -41,6 +41,7 @@ Documentation License: [![Creative Commons License](https://i.creativecommons.or
 	const FileSystem = require('fs');
 	const Path = require('path');
 	//##External
+	const MakeDir = require('make-dir');
 	const HandleBars = require('handlebars');
 	const Inquirer = require('inquirer');
 	const GetStream = require('get-stream');
@@ -148,6 +149,7 @@ Status:
 | --- | --- |
 | 1.9.0 | Experimental |
 */
+/* istanbul ignore next */
 function loadConfigObjectFromFilePath( config_filepath, options = {} ){
 	var arguments_array = Array.from(arguments);
 	var _return;
@@ -155,7 +157,7 @@ function loadConfigObjectFromFilePath( config_filepath, options = {} ){
 	const FUNCTION_NAME = 'loadConfigObjectFromFilePath';
 	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
 	//Variables
-	var f\r = [1, null];
+	var function_return = [1, null];
 	var have_readwrite_permissions = false;
 	//Parametre checks
 	if( typeof(config_filepath) !== 'string' ){
@@ -173,12 +175,12 @@ function loadConfigObjectFromFilePath( config_filepath, options = {} ){
 		throw return_error;
 	}
 	if( have_readwrite_permissions === true ){
-		f\r = JSONICParse.ParseFilePath(config_filepath);
-		if( f\r[0] === 0 ){
-			ConfigObject = f\r[1];
-			_return = f\r[1];
+		function_return = JSONICParse.ParseFilePath(config_filepath);
+		if( function_return[0] === 0 ){
+			ConfigObject = function_return[1];
+			_return = function_return[1];
 		} else{
-			return_error = new Error(`JSONICParse.ParseFilePath returned an error value: ${f\r}`);
+			return_error = new Error(`JSONICParse.ParseFilePath returned an error value: ${function_return}`);
 			return_error.code = 'ERR_INVALID_RETURN_VALUE';
 			throw return_error;
 		}
@@ -187,6 +189,67 @@ function loadConfigObjectFromFilePath( config_filepath, options = {} ){
 	//Return
 	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
 	return _return;
+}
+/**
+### saveConfigObjectToFilePath
+> Saves the current ConfigObject to the given filepath.
+
+Parametres:
+| name | type | description |
+| --- | --- | --- |
+| filepath_string | {string} | The filepath destination to save the configuration to.  |
+| options | {?Object} | [Reserved] Additional run-time options. \[default: {}\] |
+
+Throws:
+| code | type | condition |
+| --- | --- | --- |
+| 'ERR_INVALID_ARG_TYPE' | {TypeError} | Thrown if a given argument isn't of the correct type. |
+
+Status:
+| version | change |
+| --- | --- |
+| 1.9.0 | Experimental |
+*/
+/* istanbul ignore next */
+function saveConfigObjectToFilePath( filepath_string, options = {} ){
+	var arguments_array = Array.from(arguments);
+	var return_error;
+	const FUNCTION_NAME = 'saveConfigObjectToFilePath';
+	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
+	//Variables
+	var config_directory = '';
+	var config_json_string = '';
+	//Parametre checks
+	if( typeof(filepath_string) !== 'string' ){
+		return_error = new TypeError('Param "filepath_string" is not a string.');
+		return_error.code = 'ERR_INVALID_ARG_TYPE';
+		throw return_error;
+	}
+	//Function
+	try{
+		config_directory = Path.dirname( filepath_string );
+	} catch(error){
+		return_error = new Error(`Path.dirname threw an error: ${error}`);
+		throw return_error;
+	}
+	try{
+		MakeDir.sync(config_directory);
+	} catch(error){
+		return_error = new Error(`MakeDir.sync threw an error: ${error}`);
+		throw return_error;
+	}
+	try{
+		config_json_string = JSON.stringify(ConfigObject, null, '\t');
+	} catch(error){
+		return_error = new Error(`JSON.stringify threw an error: ${error}`);
+		throw return_error;
+	}
+	try{
+		FileSystem.writeFileSync( filepath_string, config_json_string, 'utf8' );
+	} catch(error){
+		return_error = new Error(`FileSystem.writeFileSync threw an error: ${error}`);
+		throw return_error;
+	}
 }
 /**
 ### main_Async (private)
@@ -315,7 +378,6 @@ if(require.main === module){
 		//###Standard
 		const Path = require('path');
 		//###External
-		const MakeDir = require('make-dir');
 		const ApplicationLogWinstonInterface = require('application-log-winston-interface');
 		const EnvPaths = require('env-paths');
 		const CommandLineArgs = require('command-line-args');
@@ -332,18 +394,25 @@ if(require.main === module){
 		//Input
 		{ name: 'stdin', alias: 'i', type: Boolean, description: 'Read input from STDIN.' },
 		{ name: 'input', alias: 'I', type: String, description: 'The path to the file to read input from.' },
+		{ name: 'edit', alias: 'e', type: String, description: 'Edit the input in $EDITOR, optionally specifying a file in the "defaults" directory to use as a base.' },
+		{ name: 'ask', alias: 'a', type: String, description: '[Reserved] Interactively prompt for input properties, optionally specifying a file in the "defaults" directory to use as a base.' },
+		{ name: 'do', alias: 'D', type: String, defaultOption: true, description: '[Reserved] Select a default input file and an output template based on a signle string.' },
 		{ name: 'test', alias: 't', type: Boolean, description: 'Run unit tests and exit.' },
 		//Output
 		{ name: 'stdout', alias: 'o', type: Boolean, description: 'Write output to STDOUT.' },
 		{ name: 'output', alias: 'O', type: String, description: 'The name of the file to write output to.' },
-		{ name: 'pasteboard', alias: 'p', type: Boolean, description: '[Reserved] Copy output to pasteboard (clipboard).' },
+		{ name: 'pasteboard', alias: 'p', type: Boolean, description: 'Copy output to pasteboard (clipboard).' },
 		//Config
 		{ name: 'config', alias: 'c', type: Boolean, description: 'Print search paths and configuration values to STDOUT.' },
 		{ name: 'config-file', alias: 'C', type: String, description: '[Resevred] Use the given config file instead of the default.' },
+		{ name: 'defaults', alias: 'd', type: Boolean, description: '[Reserved] Print a list of the "defaults" files.' },
+		{ name: 'templates', alias: 'l', type: Boolean, description: '[Reserved] Print a list of available templates to stdout.' },
+		{ name: 'template-override', alias: 'T', type: String, description: '[Reserved] Override the template to the file specified.' }
 	];
 	//Variables
 	var function_return = [1,null];
 	var quick_exit = false;
+	var config_filepath = '';
 	var source_dirname = '';
 	var parent_dirname = '';
 	var package_path = '';
@@ -361,6 +430,23 @@ if(require.main === module){
 	//Options
 	var Options = CommandLineArgs( OptionDefinitions );
 	//Config
+	try{
+		ConfigObject.template_directories.push( Path.join( EnvironmentPaths.data, 'templates' ) );
+		ConfigObject.defaults_directories.push( Path.join( EnvironmentPaths.data, 'defaults' ) );
+		if( Options['config-file'] != null && typeof(Options['config-file']) === 'string' ){
+			config_filepath = Options['config-file'];
+		} else{
+			config_filepath = Path.join( EnvironmentPaths.config, 'config.json' );
+		}
+		try{
+			loadConfigObjectFromFilePath( config_filepath );
+		} catch(error){
+			return_error = new Error(`loadConfigObjectFromFilePath threw an error: ${error}`);
+			throw return_error;
+		}
+	} catch(error){
+		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `Caught an unhandled error while setting config: ${error}`});
+	}
 	/* istanbul ignore next */
 	if( Options.verbose === true ){
 		Logger.real_transports.console_stderr.level = 'debug';
@@ -406,6 +492,7 @@ if(require.main === module){
 	/* istanbul ignore next */
 	if( Options.config === true ){
 		console.log('Paths: ', EnvironmentPaths);
+		console.log('Config: ', ConfigObject);
 		quick_exit = true;
 	}
 	if( quick_exit === false || Options['no-quick-exit'] === true ){
