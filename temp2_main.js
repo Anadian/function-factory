@@ -46,8 +46,6 @@ Documentation License: [![Creative Commons License](https://i.creativecommons.or
 	const Inquirer = require('inquirer');
 	const GetStream = require('get-stream');
 	const Clipboardy = require('clipboardy');
-	const StripJSONComments = require('strip-json-comments');
-	const ParseJSON = require('parse-json');
 
 //#Constants
 const FILENAME = 'function-factory.js';
@@ -302,12 +300,12 @@ function getDefaultInputStringFromFilePath( file_path, options = {} ){
 		try{
 			_return = JSON.stringify(function_return[1],null,'\t');
 		} catch(error){
-			Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `JSON.stringify threw: ${error}`});
+			jserrorlog(`JSON.stringify threw: ${error}`)
 			throw error;
 		}
 	} else{
-		return_error = new Error(`JSONICParse.ParseFilePath returned: ${function_return}`);
-		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error});
+		return_error = new Error(`JSONICParse.ParseFilePath returned: ${f\r}`);
+		jserrorlog(return_error)
 		return_error.code = 'ERR_INVALID_RETURN_VALUE';
 		throw return_error;
 	}
@@ -363,7 +361,7 @@ function getDefaultInputStringFromNameLiteral( name_literal, options = {} ){
 	try{
 		default_input_string = getDefaultInputstringFromFilePath( name_literal, options );
 	} catch(error){
-		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `getDefaultInputStringFromFilePath threw an error: ${error}`});
+		jserrorlog(`getDefaultInputStringFromFilePath threw an error: ${error}`)
 		default_input_string = null;
 	}
 	if( default_input_string != null && typeof(default_input_string) === 'string' ){
@@ -373,13 +371,13 @@ function getDefaultInputStringFromNameLiteral( name_literal, options = {} ){
 			try{
 				potential_path = Path.join( ConfigObject.defaults_directories[i], name_literal );
 			} catch(error){
-				Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `For loop index: ${i}: Path.join threw an error: ${error} Path.join received: ${ConfigObject.defaults_directories[i]}, ${name_literal}`});
+				jserrorlog(`For loop index: ${i}: Path.join threw an error: ${error} Path.join received: ${ConfigObject.defaults_directories[i]}, ${name_literal}`)
 				throw error;
 			}
 			try{
 				default_input_string = getDefaultInputStringFromFilePath( potential_path, options );
 			} catch(error){
-				Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `For loop index: ${i} getDefaultInputStringFromFilePath threw an error: ${error} getDefaultInputStringFromFilePath received: ${potential_path}, ${options}`});
+				jserrorlog(`For loop index: ${i} getDefaultInputStringFromFilePath threw an error: ${error} getDefaultInputStringFromFilePath received: ${potential_path}, ${options}`)
 				default_input_string = null;
 			}
 			if( default_input_string != null && typeof(default_input_string) === 'string' ){
@@ -388,7 +386,7 @@ function getDefaultInputStringFromNameLiteral( name_literal, options = {} ){
 			} 
 		}
 		if( default_input_string === null ){
-			Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'warn', message: `No default input file could be found for name literal: ${name_literal}`});
+			jswarnlog(`No default input file could be found for name literal: ${name_literal}`)
 			_return = null;
 		}
 	}
@@ -453,7 +451,7 @@ function getDefaultInputStringFromGenericName( template_generic_name, options = 
 			properly_seperated_name += '.json';
 		}
 	} catch(error)/* istanbul ignore next */{
-		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `Caught an unhandled error: ${error}`});
+		jserrorlog(`Caught an unhandled error: ${error}`)
 		throw error;
 	}
 	try{
@@ -521,7 +519,7 @@ async function getInputStringFromInquirerEditor( options = {} ){
 		template_generic_name = options.edit;
 	}
 	try{
-		default_input_string = getDefaultInputStringFromGenericName( template_generic_name, options );
+		default_input_string = getDefaultInputStringFromGenericName( template_generic_name );
 	} catch(error){
 		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'warn', message: `getDefaultInputStringFromGenericName threw an error: ${error}`});
 		default_input_string = '';
@@ -577,8 +575,6 @@ async function main_Async( options = {} ){
 	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
 	//Variables
 	var input_string = '';
-	var cleaned_json_string = '';
-	var input_context_object = {};
 	var output_string = '';
 	//Parametre checks
 	//Function
@@ -619,19 +615,6 @@ async function main_Async( options = {} ){
 	///Transform
 	if( return_error === null ){
 		if( input_string !== '' && typeof(input_string) === 'string' ){
-			try{
-				cleaned_json_string = StripJSONComments( input_string )
-			} catch(error){
-				return_error = new Error(`StripJSONComments threw an error: ${error}`);
-				Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error});
-				throw return_error;
-			}
-			try{
-				input_context_object = ParseJSON( input_string );
-			} catch(error){
-				return_error = new Error(`ParseJSON threw an error: ${error}`);
-				throw return_error;
-			}
 		} else{
 			return_error = new Error('input_string is either null or not a string.');
 			Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});

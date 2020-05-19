@@ -14061,3 +14061,1015 @@
 }
 2020-05-17T18:44:34.529Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
 2020-05-17T18:44:34.529Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-05-18T04:02:45.199Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-05-18T04:02:45.204Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-18T04:02:45.205Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [
+  0,
+  {
+    template_directories: [
+      'Resources/templates',
+      '/home/cameron/.local/share/function-factory-nodejs/templates',
+      [length]: 2
+    ],
+    defaults_directories: [
+      'Resources/defaults',
+      '/home/cameron/.local/share/function-factory-nodejs/defaults',
+      [length]: 2
+    ]
+  },
+  [length]: 2
+]
+2020-05-18T04:02:45.205Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-05-18T04:02:45.206Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-05-18T04:02:45.207Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'js func' }
+2020-05-18T04:02:45.207Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-18T04:02:45.208Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-18T04:02:45.208Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-18T04:02:45.210Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  -4,
+  `JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ENOENT: no such file or directory, open 'js/func.json'\n` +
+    '    at Object.openSync (fs.js:462:3)\n' +
+    '    at Object.readFileSync (fs.js:364:35)\n' +
+    '    at Object.JSONIC_Parse_FilePath [as ParseFilePath] (/home/cameron/dev/function-factory/source/jsonic-parse.js:146:27)\n' +
+    '    at DefaultInputDataFromPath (/home/cameron/dev/function-factory/source/main.js:156:33)\n' +
+    '    at DefaultInputDataFromNameLiteral (/home/cameron/dev/function-factory/source/main.js:179:21)\n' +
+    '    at DefaultInputDataFromGenericName (/home/cameron/dev/function-factory/source/main.js:219:21)\n' +
+    '    at Input_Inquirer_Editor (/home/cameron/dev/function-factory/source/main.js:469:21)\n' +
+    '    at Object.<anonymous> (/home/cameron/dev/function-factory/source/main.js:690:14)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1118:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1138:10) {\n' +
+    '  errno: -2,\n' +
+    "  syscall: 'open',\n" +
+    "  code: 'ENOENT',\n" +
+    "  path: 'js/func.json'\n" +
+    '}',
+  [length]: 2
+]
+2020-05-18T04:02:45.210Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-18T04:02:45.211Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  0,
+  '{\n' +
+    '\t"template": "js func",\n' +
+    '\t"name": "FunctionName",\n' +
+    '\t"description": "Brief description.",\n' +
+    '\t"parametres": {\n' +
+    '\t\t"params": [\n' +
+    '\t\t\t{\n' +
+    '\t\t\t\t"type": "ArgumentType",\n' +
+    '\t\t\t\t"name": "parametre_name",\n' +
+    '\t\t\t\t"default": null,\n' +
+    '\t\t\t\t"description": "Brief parametre description."\n' +
+    '\t\t\t},\n' +
+    '\t\t\t{\n' +
+    '\t\t\t\t"type": "?Object",\n' +
+    '\t\t\t\t"name": "options",\n' +
+    '\t\t\t\t"default": {\n' +
+    '\t\t\t\t\t"value": "{}"\n' +
+    '\t\t\t\t},\n' +
+    '\t\t\t\t"description": "[Reserved] Additional run-time options."\n' +
+    '\t\t\t}\n' +
+    '\t\t]\n' +
+    '\t},\n' +
+    '\t"return": {\n' +
+    '\t\t"type": "ReturnType",\n' +
+    '\t\t"description": "Return value description."\n' +
+    '\t},\n' +
+    '\t"throw": {\n' +
+    '\t\t"throws": [\n' +
+    '\t\t\t{\n' +
+    '\t\t\t\t"type": "TypeError",\n' +
+    '\t\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n' +
+    `\t\t\t\t"description": "Thrown if a given argument isn't of the correct type."\n` +
+    '\t\t\t}\n' +
+    '\t\t]\n' +
+    '\t},\n' +
+    '\t"asynchronous": false,\n' +
+    '\t"unit_test": true,\n' +
+    '\t"post_re": [\n' +
+    '\t\t{\n' +
+    '\t\t\t"search": ",\\\\)",\n' +
+    '\t\t\t"replace": " )",\n' +
+    '\t\t\t"flags": "gm"\n' +
+    '\t\t}\n' +
+    '\t]\n' +
+    '}',
+  [length]: 2
+]
+2020-05-18T04:02:45.211Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [
+  0,
+  '{\n' +
+    '\t"template": "js func",\n' +
+    '\t"name": "FunctionName",\n' +
+    '\t"description": "Brief description.",\n' +
+    '\t"parametres": {\n' +
+    '\t\t"params": [\n' +
+    '\t\t\t{\n' +
+    '\t\t\t\t"type": "ArgumentType",\n' +
+    '\t\t\t\t"name": "parametre_name",\n' +
+    '\t\t\t\t"default": null,\n' +
+    '\t\t\t\t"description": "Brief parametre description."\n' +
+    '\t\t\t},\n' +
+    '\t\t\t{\n' +
+    '\t\t\t\t"type": "?Object",\n' +
+    '\t\t\t\t"name": "options",\n' +
+    '\t\t\t\t"default": {\n' +
+    '\t\t\t\t\t"value": "{}"\n' +
+    '\t\t\t\t},\n' +
+    '\t\t\t\t"description": "[Reserved] Additional run-time options."\n' +
+    '\t\t\t}\n' +
+    '\t\t]\n' +
+    '\t},\n' +
+    '\t"return": {\n' +
+    '\t\t"type": "ReturnType",\n' +
+    '\t\t"description": "Return value description."\n' +
+    '\t},\n' +
+    '\t"throw": {\n' +
+    '\t\t"throws": [\n' +
+    '\t\t\t{\n' +
+    '\t\t\t\t"type": "TypeError",\n' +
+    '\t\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n' +
+    `\t\t\t\t"description": "Thrown if a given argument isn't of the correct type."\n` +
+    '\t\t\t}\n' +
+    '\t\t]\n' +
+    '\t},\n' +
+    '\t"asynchronous": false,\n' +
+    '\t"unit_test": true,\n' +
+    '\t"post_re": [\n' +
+    '\t\t{\n' +
+    '\t\t\t"search": ",\\\\)",\n' +
+    '\t\t\t"replace": " )",\n' +
+    '\t\t\t"flags": "gm"\n' +
+    '\t\t}\n' +
+    '\t]\n' +
+    '}',
+  [length]: 2
+]
+2020-05-18T04:02:45.211Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [
+  0,
+  '{\n' +
+    '\t"template": "js func",\n' +
+    '\t"name": "FunctionName",\n' +
+    '\t"description": "Brief description.",\n' +
+    '\t"parametres": {\n' +
+    '\t\t"params": [\n' +
+    '\t\t\t{\n' +
+    '\t\t\t\t"type": "ArgumentType",\n' +
+    '\t\t\t\t"name": "parametre_name",\n' +
+    '\t\t\t\t"default": null,\n' +
+    '\t\t\t\t"description": "Brief parametre description."\n' +
+    '\t\t\t},\n' +
+    '\t\t\t{\n' +
+    '\t\t\t\t"type": "?Object",\n' +
+    '\t\t\t\t"name": "options",\n' +
+    '\t\t\t\t"default": {\n' +
+    '\t\t\t\t\t"value": "{}"\n' +
+    '\t\t\t\t},\n' +
+    '\t\t\t\t"description": "[Reserved] Additional run-time options."\n' +
+    '\t\t\t}\n' +
+    '\t\t]\n' +
+    '\t},\n' +
+    '\t"return": {\n' +
+    '\t\t"type": "ReturnType",\n' +
+    '\t\t"description": "Return value description."\n' +
+    '\t},\n' +
+    '\t"throw": {\n' +
+    '\t\t"throws": [\n' +
+    '\t\t\t{\n' +
+    '\t\t\t\t"type": "TypeError",\n' +
+    '\t\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n' +
+    `\t\t\t\t"description": "Thrown if a given argument isn't of the correct type."\n` +
+    '\t\t\t}\n' +
+    '\t\t]\n' +
+    '\t},\n' +
+    '\t"asynchronous": false,\n' +
+    '\t"unit_test": true,\n' +
+    '\t"post_re": [\n' +
+    '\t\t{\n' +
+    '\t\t\t"search": ",\\\\)",\n' +
+    '\t\t\t"replace": " )",\n' +
+    '\t\t\t"flags": "gm"\n' +
+    '\t\t}\n' +
+    '\t]\n' +
+    '}',
+  [length]: 2
+]
+2020-05-18T04:02:45.222Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
+2020-05-18T04:07:42.019Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: inquirer_answer: {
+  editor_input: '{\n' +
+    '\t"template": "js func",\n' +
+    '\t"name": "getDefaultInputStringFromFilePath",\n' +
+    '\t"description": "Returns the default input string after parsing the JSON file at the given path.",\n' +
+    '\t"parametres": {\n' +
+    '\t\t"params": [\n' +
+    '\t\t\t{\n' +
+    '\t\t\t\t"type": "string",\n' +
+    '\t\t\t\t"name": "file_path",\n' +
+    '\t\t\t\t"default": null,\n' +
+    '\t\t\t\t"description": "The path of the file to read and parse."\n' +
+    '\t\t\t},\n' +
+    '\t\t\t{\n' +
+    '\t\t\t\t"type": "?Object",\n' +
+    '\t\t\t\t"name": "options",\n' +
+    '\t\t\t\t"default": {\n' +
+    '\t\t\t\t\t"value": "{}"\n' +
+    '\t\t\t\t},\n' +
+    '\t\t\t\t"description": "[Reserved] Additional run-time options."\n' +
+    '\t\t\t}\n' +
+    '\t\t]\n' +
+    '\t},\n' +
+    '\t"return": {\n' +
+    '\t\t"type": "string",\n' +
+    '\t\t"description": "The file contents as a string."\n' +
+    '\t},\n' +
+    '\t"throw": {\n' +
+    '\t\t"throws": [\n' +
+    '\t\t\t{\n' +
+    '\t\t\t\t"type": "TypeError",\n' +
+    '\t\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n' +
+    `\t\t\t\t"description": "Thrown if a given argument isn't of the correct type."\n` +
+    '\t\t\t}\n' +
+    '\t\t]\n' +
+    '\t},\n' +
+    '\t"asynchronous": false,\n' +
+    '\t"unit_test": false,\n' +
+    '\t"post_re": [\n' +
+    '\t\t{\n' +
+    '\t\t\t"search": ",\\\\)",\n' +
+    '\t\t\t"replace": " )",\n' +
+    '\t\t\t"flags": "gm"\n' +
+    '\t\t}\n' +
+    '\t]\n' +
+    '}\n'
+}
+2020-05-18T04:07:42.020Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer received: [Arguments] {
+  '0': {
+    editor_input: '{\n' +
+      '\t"template": "js func",\n' +
+      '\t"name": "getDefaultInputStringFromFilePath",\n' +
+      '\t"description": "Returns the default input string after parsing the JSON file at the given path.",\n' +
+      '\t"parametres": {\n' +
+      '\t\t"params": [\n' +
+      '\t\t\t{\n' +
+      '\t\t\t\t"type": "string",\n' +
+      '\t\t\t\t"name": "file_path",\n' +
+      '\t\t\t\t"default": null,\n' +
+      '\t\t\t\t"description": "The path of the file to read and parse."\n' +
+      '\t\t\t},\n' +
+      '\t\t\t{\n' +
+      '\t\t\t\t"type": "?Object",\n' +
+      '\t\t\t\t"name": "options",\n' +
+      '\t\t\t\t"default": {\n' +
+      '\t\t\t\t\t"value": "{}"\n' +
+      '\t\t\t\t},\n' +
+      '\t\t\t\t"description": "[Reserved] Additional run-time options."\n' +
+      '\t\t\t}\n' +
+      '\t\t]\n' +
+      '\t},\n' +
+      '\t"return": {\n' +
+      '\t\t"type": "string",\n' +
+      '\t\t"description": "The file contents as a string."\n' +
+      '\t},\n' +
+      '\t"throw": {\n' +
+      '\t\t"throws": [\n' +
+      '\t\t\t{\n' +
+      '\t\t\t\t"type": "TypeError",\n' +
+      '\t\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n' +
+      `\t\t\t\t"description": "Thrown if a given argument isn't of the correct type."\n` +
+      '\t\t\t}\n' +
+      '\t\t]\n' +
+      '\t},\n' +
+      '\t"asynchronous": false,\n' +
+      '\t"unit_test": false,\n' +
+      '\t"post_re": [\n' +
+      '\t\t{\n' +
+      '\t\t\t"search": ",\\\\)",\n' +
+      '\t\t\t"replace": " )",\n' +
+      '\t\t\t"flags": "gm"\n' +
+      '\t\t}\n' +
+      '\t]\n' +
+      '}\n'
+  },
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-18T04:07:42.021Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OuputputFromInput received: {
+  template: 'js func',
+  name: 'getDefaultInputStringFromFilePath',
+  description: 'Returns the default input string after parsing the JSON file at the given path.',
+  parametres: {
+    params: [
+      {
+        type: 'string',
+        name: 'file_path',
+        default: null,
+        description: 'The path of the file to read and parse.'
+      },
+      {
+        type: '?Object',
+        name: 'options',
+        default: { value: '{}' },
+        description: '[Reserved] Additional run-time options.'
+      },
+      [length]: 2
+    ]
+  },
+  return: { type: 'string', description: 'The file contents as a string.' },
+  throw: {
+    throws: [
+      {
+        type: 'TypeError',
+        code: 'ERR_INVALID_ARG_TYPE',
+        description: "Thrown if a given argument isn't of the correct type."
+      },
+      [length]: 1
+    ]
+  },
+  asynchronous: false,
+  unit_test: false,
+  post_re: [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ]
+} undefined
+2020-05-18T04:07:42.022Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-18T04:07:42.022Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-18T04:07:42.023Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-18T04:07:42.023Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  -3,
+  `Error: template "js/func.hbs" cannot be read: Error: ENOENT: no such file or directory, access 'js/func.hbs'\n` +
+    '    at Object.accessSync (fs.js:208:3)\n' +
+    '    at TemplateFunctionFromPath (/home/cameron/dev/function-factory/source/main.js:239:15)\n' +
+    '    at TemplateFunctionFromNameLiteral (/home/cameron/dev/function-factory/source/main.js:269:21)\n' +
+    '    at TemplateFunctionFromGenericName (/home/cameron/dev/function-factory/source/main.js:308:21)\n' +
+    '    at OutputFromInput (/home/cameron/dev/function-factory/source/main.js:364:23)\n' +
+    '    at OutputFromInquirerEditorAnswer (/home/cameron/dev/function-factory/source/main.js:401:22)\n' +
+    '    at Input_Inquirer_Editor (/home/cameron/dev/function-factory/source/main.js:486:22)\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:97:5) {\n' +
+    '  errno: -2,\n' +
+    "  syscall: 'access',\n" +
+    "  code: 'ENOENT',\n" +
+    "  path: 'js/func.hbs'\n" +
+    '}',
+  [length]: 2
+]
+2020-05-18T04:07:42.024Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: received: [Arguments] {
+  '0': 'Resources/templates/js/func.hbs',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-18T04:07:42.025Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromPath:debug: returned: [
+  0,
+  <ref *1> [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular *1] },
+    _setup: <ref *2> [Function (anonymous)] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular *2] }
+    },
+    _child: <ref *3> [Function (anonymous)] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular *3] }
+    }
+  },
+  [length]: 2
+]
+2020-05-18T04:07:42.025Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromNameLiteral:debug: returned: [
+  0,
+  <ref *1> [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular *1] },
+    _setup: <ref *2> [Function (anonymous)] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular *2] }
+    },
+    _child: <ref *3> [Function (anonymous)] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular *3] }
+    }
+  },
+  [length]: 2
+]
+2020-05-18T04:07:42.026Z function-factory:FunctionFactory:function-factory.js:TemplateFunctionFromGenericName:debug: returned: [
+  0,
+  <ref *1> [Function: ret] {
+    [length]: 2,
+    [name]: 'ret',
+    [prototype]: ret { [constructor]: [Circular *1] },
+    _setup: <ref *2> [Function (anonymous)] {
+      [length]: 1,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular *2] }
+    },
+    _child: <ref *3> [Function (anonymous)] {
+      [length]: 4,
+      [name]: '',
+      [prototype]: { [constructor]: [Circular *3] }
+    }
+  },
+  [length]: 2
+]
+2020-05-18T04:07:42.067Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: received: [Arguments] {
+  '0': '/**\n' +
+    '### getDefaultInputStringFromFilePath\n' +
+    '> Returns the default input string after parsing the JSON file at the given path.\n' +
+    '\n' +
+    'Parametres:\n' +
+    '| name | type | description |\n' +
+    '| --- | --- | --- |\n' +
+    '| file_path | {string} | The path of the file to read and parse.  |\n' +
+    '| options | {?Object} | [Reserved] Additional run-time options. \\[default: {}\\] |\n' +
+    '\n' +
+    'Returns:\n' +
+    '| type | description |\n' +
+    '| --- | --- |\n' +
+    '| {string} | The file contents as a string. |\n' +
+    '\n' +
+    'Throws:\n' +
+    '| code | type | condition |\n' +
+    '| --- | --- | --- |\n' +
+    "| 'ERR_INVALID_ARG_TYPE' | {TypeError} | Thrown if a given argument isn't of the correct type. |\n" +
+    '\n' +
+    'Status:\n' +
+    '| version | change |\n' +
+    '| --- | --- |\n' +
+    '| 0.0.1 | Introduced |\n' +
+    '*/\n' +
+    'function getDefaultInputStringFromFilePath( file_path, options = {},){\n' +
+    '\tvar arguments_array = Array.from(arguments);\n' +
+    '\tvar _return;\n' +
+    '\tvar return_error;\n' +
+    "\tconst FUNCTION_NAME = 'getDefaultInputStringFromFilePath';\n" +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});\n" +
+    '\t//Variables\n' +
+    '\t//Parametre checks\n' +
+    "\tif( typeof(file_path) !== 'string' ){\n" +
+    `\t\treturn_error = new TypeError('Param "file_path" is not string.');\n` +
+    "\t\treturn_error.code = 'ERR_INVALID_ARG_TYPE';\n" +
+    '\t\tthrow return_error;\n' +
+    '\t}\n' +
+    "\tif( typeof(options) !== 'object' ){\n" +
+    `\t\treturn_error = new TypeError('Param "options" is not ?Object.');\n` +
+    "\t\treturn_error.code = 'ERR_INVALID_ARG_TYPE';\n" +
+    '\t\tthrow return_error;\n' +
+    '\t}\n' +
+    '\n' +
+    '\t//Function\n' +
+    '\n' +
+    '\t//Return\n' +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});\n" +
+    '\treturn _return;\n' +
+    '}\n' +
+    '\n' +
+    '\n',
+  '1': [ { search: ',\\)', replace: ' )', flags: 'gm' }, [length]: 1 ],
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-18T04:07:42.067Z function-factory:FunctionFactory:function-factory.js:OutputApplyPostRE:debug: returned: [
+  0,
+  '/**\n' +
+    '### getDefaultInputStringFromFilePath\n' +
+    '> Returns the default input string after parsing the JSON file at the given path.\n' +
+    '\n' +
+    'Parametres:\n' +
+    '| name | type | description |\n' +
+    '| --- | --- | --- |\n' +
+    '| file_path | {string} | The path of the file to read and parse.  |\n' +
+    '| options | {?Object} | [Reserved] Additional run-time options. \\[default: {}\\] |\n' +
+    '\n' +
+    'Returns:\n' +
+    '| type | description |\n' +
+    '| --- | --- |\n' +
+    '| {string} | The file contents as a string. |\n' +
+    '\n' +
+    'Throws:\n' +
+    '| code | type | condition |\n' +
+    '| --- | --- | --- |\n' +
+    "| 'ERR_INVALID_ARG_TYPE' | {TypeError} | Thrown if a given argument isn't of the correct type. |\n" +
+    '\n' +
+    'Status:\n' +
+    '| version | change |\n' +
+    '| --- | --- |\n' +
+    '| 0.0.1 | Introduced |\n' +
+    '*/\n' +
+    'function getDefaultInputStringFromFilePath( file_path, options = {} ){\n' +
+    '\tvar arguments_array = Array.from(arguments);\n' +
+    '\tvar _return;\n' +
+    '\tvar return_error;\n' +
+    "\tconst FUNCTION_NAME = 'getDefaultInputStringFromFilePath';\n" +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});\n" +
+    '\t//Variables\n' +
+    '\t//Parametre checks\n' +
+    "\tif( typeof(file_path) !== 'string' ){\n" +
+    `\t\treturn_error = new TypeError('Param "file_path" is not string.');\n` +
+    "\t\treturn_error.code = 'ERR_INVALID_ARG_TYPE';\n" +
+    '\t\tthrow return_error;\n' +
+    '\t}\n' +
+    "\tif( typeof(options) !== 'object' ){\n" +
+    `\t\treturn_error = new TypeError('Param "options" is not ?Object.');\n` +
+    "\t\treturn_error.code = 'ERR_INVALID_ARG_TYPE';\n" +
+    '\t\tthrow return_error;\n' +
+    '\t}\n' +
+    '\n' +
+    '\t//Function\n' +
+    '\n' +
+    '\t//Return\n' +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});\n" +
+    '\treturn _return;\n' +
+    '}\n' +
+    '\n' +
+    '\n',
+  [length]: 2
+]
+2020-05-18T04:07:42.069Z function-factory:FunctionFactory:function-factory.js:OutputFromInput:debug: OutputFromInput returned: [
+  0,
+  '/**\n' +
+    '### getDefaultInputStringFromFilePath\n' +
+    '> Returns the default input string after parsing the JSON file at the given path.\n' +
+    '\n' +
+    'Parametres:\n' +
+    '| name | type | description |\n' +
+    '| --- | --- | --- |\n' +
+    '| file_path | {string} | The path of the file to read and parse.  |\n' +
+    '| options | {?Object} | [Reserved] Additional run-time options. \\[default: {}\\] |\n' +
+    '\n' +
+    'Returns:\n' +
+    '| type | description |\n' +
+    '| --- | --- |\n' +
+    '| {string} | The file contents as a string. |\n' +
+    '\n' +
+    'Throws:\n' +
+    '| code | type | condition |\n' +
+    '| --- | --- | --- |\n' +
+    "| 'ERR_INVALID_ARG_TYPE' | {TypeError} | Thrown if a given argument isn't of the correct type. |\n" +
+    '\n' +
+    'Status:\n' +
+    '| version | change |\n' +
+    '| --- | --- |\n' +
+    '| 0.0.1 | Introduced |\n' +
+    '*/\n' +
+    'function getDefaultInputStringFromFilePath( file_path, options = {} ){\n' +
+    '\tvar arguments_array = Array.from(arguments);\n' +
+    '\tvar _return;\n' +
+    '\tvar return_error;\n' +
+    "\tconst FUNCTION_NAME = 'getDefaultInputStringFromFilePath';\n" +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});\n" +
+    '\t//Variables\n' +
+    '\t//Parametre checks\n' +
+    "\tif( typeof(file_path) !== 'string' ){\n" +
+    `\t\treturn_error = new TypeError('Param "file_path" is not string.');\n` +
+    "\t\treturn_error.code = 'ERR_INVALID_ARG_TYPE';\n" +
+    '\t\tthrow return_error;\n' +
+    '\t}\n' +
+    "\tif( typeof(options) !== 'object' ){\n" +
+    `\t\treturn_error = new TypeError('Param "options" is not ?Object.');\n` +
+    "\t\treturn_error.code = 'ERR_INVALID_ARG_TYPE';\n" +
+    '\t\tthrow return_error;\n' +
+    '\t}\n' +
+    '\n' +
+    '\t//Function\n' +
+    '\n' +
+    '\t//Return\n' +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});\n" +
+    '\treturn _return;\n' +
+    '}\n' +
+    '\n' +
+    '\n',
+  [
+    0,
+    '/**\n' +
+      '### getDefaultInputStringFromFilePath\n' +
+      '> Returns the default input string after parsing the JSON file at the given path.\n' +
+      '\n' +
+      'Parametres:\n' +
+      '| name | type | description |\n' +
+      '| --- | --- | --- |\n' +
+      '| file_path | {string} | The path of the file to read and parse.  |\n' +
+      '| options | {?Object} | [Reserved] Additional run-time options. \\[default: {}\\] |\n' +
+      '\n' +
+      'Returns:\n' +
+      '| type | description |\n' +
+      '| --- | --- |\n' +
+      '| {string} | The file contents as a string. |\n' +
+      '\n' +
+      'Throws:\n' +
+      '| code | type | condition |\n' +
+      '| --- | --- | --- |\n' +
+      "| 'ERR_INVALID_ARG_TYPE' | {TypeError} | Thrown if a given argument isn't of the correct type. |\n" +
+      '\n' +
+      'Status:\n' +
+      '| version | change |\n' +
+      '| --- | --- |\n' +
+      '| 0.0.1 | Introduced |\n' +
+      '*/\n' +
+      'function getDefaultInputStringFromFilePath( file_path, options = {} ){\n' +
+      '\tvar arguments_array = Array.from(arguments);\n' +
+      '\tvar _return;\n' +
+      '\tvar return_error;\n' +
+      "\tconst FUNCTION_NAME = 'getDefaultInputStringFromFilePath';\n" +
+      "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});\n" +
+      '\t//Variables\n' +
+      '\t//Parametre checks\n' +
+      "\tif( typeof(file_path) !== 'string' ){\n" +
+      `\t\treturn_error = new TypeError('Param "file_path" is not string.');\n` +
+      "\t\treturn_error.code = 'ERR_INVALID_ARG_TYPE';\n" +
+      '\t\tthrow return_error;\n' +
+      '\t}\n' +
+      "\tif( typeof(options) !== 'object' ){\n" +
+      `\t\treturn_error = new TypeError('Param "options" is not ?Object.');\n` +
+      "\t\treturn_error.code = 'ERR_INVALID_ARG_TYPE';\n" +
+      '\t\tthrow return_error;\n' +
+      '\t}\n' +
+      '\n' +
+      '\t//Function\n' +
+      '\n' +
+      '\t//Return\n' +
+      "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});\n" +
+      '\treturn _return;\n' +
+      '}\n' +
+      '\n' +
+      '\n',
+    [length]: 2
+  ],
+  [length]: 3
+]
+2020-05-18T04:07:42.070Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [
+  0,
+  '/**\n' +
+    '### getDefaultInputStringFromFilePath\n' +
+    '> Returns the default input string after parsing the JSON file at the given path.\n' +
+    '\n' +
+    'Parametres:\n' +
+    '| name | type | description |\n' +
+    '| --- | --- | --- |\n' +
+    '| file_path | {string} | The path of the file to read and parse.  |\n' +
+    '| options | {?Object} | [Reserved] Additional run-time options. \\[default: {}\\] |\n' +
+    '\n' +
+    'Returns:\n' +
+    '| type | description |\n' +
+    '| --- | --- |\n' +
+    '| {string} | The file contents as a string. |\n' +
+    '\n' +
+    'Throws:\n' +
+    '| code | type | condition |\n' +
+    '| --- | --- | --- |\n' +
+    "| 'ERR_INVALID_ARG_TYPE' | {TypeError} | Thrown if a given argument isn't of the correct type. |\n" +
+    '\n' +
+    'Status:\n' +
+    '| version | change |\n' +
+    '| --- | --- |\n' +
+    '| 0.0.1 | Introduced |\n' +
+    '*/\n' +
+    'function getDefaultInputStringFromFilePath( file_path, options = {} ){\n' +
+    '\tvar arguments_array = Array.from(arguments);\n' +
+    '\tvar _return;\n' +
+    '\tvar return_error;\n' +
+    "\tconst FUNCTION_NAME = 'getDefaultInputStringFromFilePath';\n" +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});\n" +
+    '\t//Variables\n' +
+    '\t//Parametre checks\n' +
+    "\tif( typeof(file_path) !== 'string' ){\n" +
+    `\t\treturn_error = new TypeError('Param "file_path" is not string.');\n` +
+    "\t\treturn_error.code = 'ERR_INVALID_ARG_TYPE';\n" +
+    '\t\tthrow return_error;\n' +
+    '\t}\n' +
+    "\tif( typeof(options) !== 'object' ){\n" +
+    `\t\treturn_error = new TypeError('Param "options" is not ?Object.');\n` +
+    "\t\treturn_error.code = 'ERR_INVALID_ARG_TYPE';\n" +
+    '\t\tthrow return_error;\n' +
+    '\t}\n' +
+    '\n' +
+    '\t//Function\n' +
+    '\n' +
+    '\t//Return\n' +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});\n" +
+    '\treturn _return;\n' +
+    '}\n' +
+    '\n' +
+    '\n',
+  [length]: 2
+]
+2020-05-18T04:07:42.071Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: [Arguments] {
+  '0': '/**\n' +
+    '### getDefaultInputStringFromFilePath\n' +
+    '> Returns the default input string after parsing the JSON file at the given path.\n' +
+    '\n' +
+    'Parametres:\n' +
+    '| name | type | description |\n' +
+    '| --- | --- | --- |\n' +
+    '| file_path | {string} | The path of the file to read and parse.  |\n' +
+    '| options | {?Object} | [Reserved] Additional run-time options. \\[default: {}\\] |\n' +
+    '\n' +
+    'Returns:\n' +
+    '| type | description |\n' +
+    '| --- | --- |\n' +
+    '| {string} | The file contents as a string. |\n' +
+    '\n' +
+    'Throws:\n' +
+    '| code | type | condition |\n' +
+    '| --- | --- | --- |\n' +
+    "| 'ERR_INVALID_ARG_TYPE' | {TypeError} | Thrown if a given argument isn't of the correct type. |\n" +
+    '\n' +
+    'Status:\n' +
+    '| version | change |\n' +
+    '| --- | --- |\n' +
+    '| 0.0.1 | Introduced |\n' +
+    '*/\n' +
+    'function getDefaultInputStringFromFilePath( file_path, options = {} ){\n' +
+    '\tvar arguments_array = Array.from(arguments);\n' +
+    '\tvar _return;\n' +
+    '\tvar return_error;\n' +
+    "\tconst FUNCTION_NAME = 'getDefaultInputStringFromFilePath';\n" +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});\n" +
+    '\t//Variables\n' +
+    '\t//Parametre checks\n' +
+    "\tif( typeof(file_path) !== 'string' ){\n" +
+    `\t\treturn_error = new TypeError('Param "file_path" is not string.');\n` +
+    "\t\treturn_error.code = 'ERR_INVALID_ARG_TYPE';\n" +
+    '\t\tthrow return_error;\n' +
+    '\t}\n' +
+    "\tif( typeof(options) !== 'object' ){\n" +
+    `\t\treturn_error = new TypeError('Param "options" is not ?Object.');\n` +
+    "\t\treturn_error.code = 'ERR_INVALID_ARG_TYPE';\n" +
+    '\t\tthrow return_error;\n' +
+    '\t}\n' +
+    '\n' +
+    '\t//Function\n' +
+    '\n' +
+    '\t//Return\n' +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});\n" +
+    '\treturn _return;\n' +
+    '}\n' +
+    '\n' +
+    '\n',
+  '1': { verbose: true, pasteboard: true, edit: 'js func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-18T04:07:42.082Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-05-18T04:07:42.082Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]
+2020-05-18T20:48:10.948Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: Start of execution block.
+2020-05-18T20:48:10.961Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load received: [Arguments] {
+  '0': '/home/cameron/.config/function-factory-nodejs/config.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-18T20:48:10.988Z function-factory:FunctionFactory:function-factory.js:ConfigObject_Load:debug: ConfigObject_Load returned: [
+  0,
+  {
+    template_directories: [
+      'Resources/templates',
+      '/home/cameron/.local/share/function-factory-nodejs/templates',
+      [length]: 2
+    ],
+    defaults_directories: [
+      'Resources/defaults',
+      '/home/cameron/.local/share/function-factory-nodejs/defaults',
+      [length]: 2
+    ]
+  },
+  [length]: 2
+]
+2020-05-18T20:48:10.988Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:note: Logger: console_stderr transport log level is now: debug
+2020-05-18T20:48:10.990Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:info: In editor mode.
+2020-05-18T20:48:10.990Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor received: { verbose: true, pasteboard: true, edit: 'js func' }
+2020-05-18T20:48:10.991Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: received: [Arguments] {
+  '0': 'js func',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-18T20:48:10.992Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-18T20:48:10.992Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-18T20:48:10.994Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  -4,
+  `JSONICParse.ParseFilePath: Error: reading file "js/func.json": Error: ENOENT: no such file or directory, open 'js/func.json'\n` +
+    '    at Object.openSync (fs.js:462:3)\n' +
+    '    at Object.readFileSync (fs.js:364:35)\n' +
+    '    at Object.JSONIC_Parse_FilePath [as ParseFilePath] (/home/cameron/dev/function-factory/source/jsonic-parse.js:146:27)\n' +
+    '    at DefaultInputDataFromPath (/home/cameron/dev/function-factory/source/main.js:156:33)\n' +
+    '    at DefaultInputDataFromNameLiteral (/home/cameron/dev/function-factory/source/main.js:179:21)\n' +
+    '    at DefaultInputDataFromGenericName (/home/cameron/dev/function-factory/source/main.js:219:21)\n' +
+    '    at Input_Inquirer_Editor (/home/cameron/dev/function-factory/source/main.js:469:21)\n' +
+    '    at Object.<anonymous> (/home/cameron/dev/function-factory/source/main.js:690:14)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1118:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1138:10) {\n' +
+    '  errno: -2,\n' +
+    "  syscall: 'open',\n" +
+    "  code: 'ENOENT',\n" +
+    "  path: 'js/func.json'\n" +
+    '}',
+  [length]: 2
+]
+2020-05-18T20:48:10.995Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: received: [Arguments] {
+  '0': 'Resources/defaults/js/func.json',
+  [length]: 1,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-18T20:48:11.012Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromPath:debug: returned: [
+  0,
+  '{\n' +
+    '\t"template": "js func",\n' +
+    '\t"name": "FunctionName",\n' +
+    '\t"description": "Brief description.",\n' +
+    '\t"parametres": {\n' +
+    '\t\t"params": [\n' +
+    '\t\t\t{\n' +
+    '\t\t\t\t"type": "ArgumentType",\n' +
+    '\t\t\t\t"name": "parametre_name",\n' +
+    '\t\t\t\t"default": null,\n' +
+    '\t\t\t\t"description": "Brief parametre description."\n' +
+    '\t\t\t},\n' +
+    '\t\t\t{\n' +
+    '\t\t\t\t"type": "?Object",\n' +
+    '\t\t\t\t"name": "options",\n' +
+    '\t\t\t\t"default": {\n' +
+    '\t\t\t\t\t"value": "{}"\n' +
+    '\t\t\t\t},\n' +
+    '\t\t\t\t"description": "[Reserved] Additional run-time options."\n' +
+    '\t\t\t}\n' +
+    '\t\t]\n' +
+    '\t},\n' +
+    '\t"return": {\n' +
+    '\t\t"type": "ReturnType",\n' +
+    '\t\t"description": "Return value description."\n' +
+    '\t},\n' +
+    '\t"throw": {\n' +
+    '\t\t"throws": [\n' +
+    '\t\t\t{\n' +
+    '\t\t\t\t"type": "TypeError",\n' +
+    '\t\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n' +
+    `\t\t\t\t"description": "Thrown if a given argument isn't of the correct type."\n` +
+    '\t\t\t}\n' +
+    '\t\t]\n' +
+    '\t},\n' +
+    '\t"asynchronous": false,\n' +
+    '\t"unit_test": true,\n' +
+    '\t"post_re": [\n' +
+    '\t\t{\n' +
+    '\t\t\t"search": ",\\\\)",\n' +
+    '\t\t\t"replace": " )",\n' +
+    '\t\t\t"flags": "gm"\n' +
+    '\t\t}\n' +
+    '\t]\n' +
+    '}',
+  [length]: 2
+]
+2020-05-18T20:48:11.013Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromNameLiteral:debug: returned: [
+  0,
+  '{\n' +
+    '\t"template": "js func",\n' +
+    '\t"name": "FunctionName",\n' +
+    '\t"description": "Brief description.",\n' +
+    '\t"parametres": {\n' +
+    '\t\t"params": [\n' +
+    '\t\t\t{\n' +
+    '\t\t\t\t"type": "ArgumentType",\n' +
+    '\t\t\t\t"name": "parametre_name",\n' +
+    '\t\t\t\t"default": null,\n' +
+    '\t\t\t\t"description": "Brief parametre description."\n' +
+    '\t\t\t},\n' +
+    '\t\t\t{\n' +
+    '\t\t\t\t"type": "?Object",\n' +
+    '\t\t\t\t"name": "options",\n' +
+    '\t\t\t\t"default": {\n' +
+    '\t\t\t\t\t"value": "{}"\n' +
+    '\t\t\t\t},\n' +
+    '\t\t\t\t"description": "[Reserved] Additional run-time options."\n' +
+    '\t\t\t}\n' +
+    '\t\t]\n' +
+    '\t},\n' +
+    '\t"return": {\n' +
+    '\t\t"type": "ReturnType",\n' +
+    '\t\t"description": "Return value description."\n' +
+    '\t},\n' +
+    '\t"throw": {\n' +
+    '\t\t"throws": [\n' +
+    '\t\t\t{\n' +
+    '\t\t\t\t"type": "TypeError",\n' +
+    '\t\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n' +
+    `\t\t\t\t"description": "Thrown if a given argument isn't of the correct type."\n` +
+    '\t\t\t}\n' +
+    '\t\t]\n' +
+    '\t},\n' +
+    '\t"asynchronous": false,\n' +
+    '\t"unit_test": true,\n' +
+    '\t"post_re": [\n' +
+    '\t\t{\n' +
+    '\t\t\t"search": ",\\\\)",\n' +
+    '\t\t\t"replace": " )",\n' +
+    '\t\t\t"flags": "gm"\n' +
+    '\t\t}\n' +
+    '\t]\n' +
+    '}',
+  [length]: 2
+]
+2020-05-18T20:48:11.013Z function-factory:FunctionFactory:function-factory.js:DefaultInputDataFromGenericName:debug: returned: [
+  0,
+  '{\n' +
+    '\t"template": "js func",\n' +
+    '\t"name": "FunctionName",\n' +
+    '\t"description": "Brief description.",\n' +
+    '\t"parametres": {\n' +
+    '\t\t"params": [\n' +
+    '\t\t\t{\n' +
+    '\t\t\t\t"type": "ArgumentType",\n' +
+    '\t\t\t\t"name": "parametre_name",\n' +
+    '\t\t\t\t"default": null,\n' +
+    '\t\t\t\t"description": "Brief parametre description."\n' +
+    '\t\t\t},\n' +
+    '\t\t\t{\n' +
+    '\t\t\t\t"type": "?Object",\n' +
+    '\t\t\t\t"name": "options",\n' +
+    '\t\t\t\t"default": {\n' +
+    '\t\t\t\t\t"value": "{}"\n' +
+    '\t\t\t\t},\n' +
+    '\t\t\t\t"description": "[Reserved] Additional run-time options."\n' +
+    '\t\t\t}\n' +
+    '\t\t]\n' +
+    '\t},\n' +
+    '\t"return": {\n' +
+    '\t\t"type": "ReturnType",\n' +
+    '\t\t"description": "Return value description."\n' +
+    '\t},\n' +
+    '\t"throw": {\n' +
+    '\t\t"throws": [\n' +
+    '\t\t\t{\n' +
+    '\t\t\t\t"type": "TypeError",\n' +
+    '\t\t\t\t"code": "ERR_INVALID_ARG_TYPE",\n' +
+    `\t\t\t\t"description": "Thrown if a given argument isn't of the correct type."\n` +
+    '\t\t\t}\n' +
+    '\t\t]\n' +
+    '\t},\n' +
+    '\t"asynchronous": false,\n' +
+    '\t"unit_test": true,\n' +
+    '\t"post_re": [\n' +
+    '\t\t{\n' +
+    '\t\t\t"search": ",\\\\)",\n' +
+    '\t\t\t"replace": " )",\n' +
+    '\t\t\t"flags": "gm"\n' +
+    '\t\t}\n' +
+    '\t]\n' +
+    '}',
+  [length]: 2
+]
+2020-05-18T20:48:11.029Z function-factory:FunctionFactory:function-factory.js:MainExecutionFunction:debug: End of execution block.
