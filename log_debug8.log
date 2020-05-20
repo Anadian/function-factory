@@ -1,0 +1,170 @@
+2020-05-19T21:40:22.337Z function-factory:FunctionFactory:function-factory.js:OutputFromInquirerEditorAnswer:debug: OutputFromInquirerEditorAnswer returned: [
+  0,
+  '/**\n' +
+    '### genericifyString\n' +
+    '> Ensures the given input_string is a generic name and returns a string guaranteed to be a generic name.\n' +
+    '\n' +
+    'Parametres:\n' +
+    '| name | type | description |\n' +
+    '| --- | --- | --- |\n' +
+    '| input_string | {string} | The input string to be coverted to a generic name string.  |\n' +
+    '| options | {?Object} | [Reserved] Additional run-time options. \\[default: {}\\] |\n' +
+    '\n' +
+    'Returns:\n' +
+    '| type | description |\n' +
+    '| --- | --- |\n' +
+    '| {string} | The genericified string. |\n' +
+    '\n' +
+    'Throws:\n' +
+    '| code | type | condition |\n' +
+    '| --- | --- | --- |\n' +
+    "| 'ERR_INVALID_ARG_TYPE' | {TypeError} | Thrown if a given argument isn't of the correct type. |\n" +
+    '\n' +
+    'Status:\n' +
+    '| version | change |\n' +
+    '| --- | --- |\n' +
+    '| 0.0.1 | Introduced |\n' +
+    '*/\n' +
+    'function genericifyString( input_string, options = {} ){\n' +
+    '\tvar arguments_array = Array.from(arguments);\n' +
+    '\tvar _return;\n' +
+    '\tvar return_error;\n' +
+    "\tconst FUNCTION_NAME = 'genericifyString';\n" +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});\n" +
+    '\t//Variables\n' +
+    '\t//Parametre checks\n' +
+    "\tif( typeof(input_string) !== 'string' ){\n" +
+    `\t\treturn_error = new TypeError('Param "input_string" is not string.');\n` +
+    "\t\treturn_error.code = 'ERR_INVALID_ARG_TYPE';\n" +
+    '\t\tthrow return_error;\n' +
+    '\t}\n' +
+    "\tif( typeof(options) !== 'object' ){\n" +
+    `\t\treturn_error = new TypeError('Param "options" is not ?Object.');\n` +
+    "\t\treturn_error.code = 'ERR_INVALID_ARG_TYPE';\n" +
+    '\t\tthrow return_error;\n' +
+    '\t}\n' +
+    '\n' +
+    '\t//Function\n' +
+    '\n' +
+    '\t//Return\n' +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});\n" +
+    '\treturn _return;\n' +
+    '}\n' +
+    '\n' +
+    '/**\n' +
+    '### genericifyString_Test (private)\n' +
+    '> Tests [genericifyString](#genericifyString); this function is not exported and should only be used internally by this module. \n' +
+    ' \n' +
+    'Returns:\n' +
+    '| type | description |\n' +
+    '| --- | --- |\n' +
+    '| {boolean} | Returns `true` if all tests pass successfully. |\n' +
+    '\n' +
+    'Throws:\n' +
+    '| code | type | condition |\n' +
+    '| --- | --- | --- |\n' +
+    '| any | {Error} | Thrown if a test fails. |\n' +
+    '\n' +
+    'Status:\n' +
+    '| version | change |\n' +
+    '| --- | --- |\n' +
+    '| 0.0.1 | Introduced |\n' +
+    '*/\n' +
+    'function genericifyString_Test(){\n' +
+    "\tconst FUNCTION_NAME = 'genericifyString_Test';\n" +
+    '\t//Variables\n' +
+    '\tvar _return = false;\n' +
+    '\tvar return_error = null;\n' +
+    '\t//Tests\n' +
+    '\t//Return\n' +
+    '\treturn _return;\n' +
+    '}\n',
+  [length]: 2
+]
+2020-05-19T21:40:22.338Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: received: [Arguments] {
+  '0': '/**\n' +
+    '### genericifyString\n' +
+    '> Ensures the given input_string is a generic name and returns a string guaranteed to be a generic name.\n' +
+    '\n' +
+    'Parametres:\n' +
+    '| name | type | description |\n' +
+    '| --- | --- | --- |\n' +
+    '| input_string | {string} | The input string to be coverted to a generic name string.  |\n' +
+    '| options | {?Object} | [Reserved] Additional run-time options. \\[default: {}\\] |\n' +
+    '\n' +
+    'Returns:\n' +
+    '| type | description |\n' +
+    '| --- | --- |\n' +
+    '| {string} | The genericified string. |\n' +
+    '\n' +
+    'Throws:\n' +
+    '| code | type | condition |\n' +
+    '| --- | --- | --- |\n' +
+    "| 'ERR_INVALID_ARG_TYPE' | {TypeError} | Thrown if a given argument isn't of the correct type. |\n" +
+    '\n' +
+    'Status:\n' +
+    '| version | change |\n' +
+    '| --- | --- |\n' +
+    '| 0.0.1 | Introduced |\n' +
+    '*/\n' +
+    'function genericifyString( input_string, options = {} ){\n' +
+    '\tvar arguments_array = Array.from(arguments);\n' +
+    '\tvar _return;\n' +
+    '\tvar return_error;\n' +
+    "\tconst FUNCTION_NAME = 'genericifyString';\n" +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});\n" +
+    '\t//Variables\n' +
+    '\t//Parametre checks\n' +
+    "\tif( typeof(input_string) !== 'string' ){\n" +
+    `\t\treturn_error = new TypeError('Param "input_string" is not string.');\n` +
+    "\t\treturn_error.code = 'ERR_INVALID_ARG_TYPE';\n" +
+    '\t\tthrow return_error;\n' +
+    '\t}\n' +
+    "\tif( typeof(options) !== 'object' ){\n" +
+    `\t\treturn_error = new TypeError('Param "options" is not ?Object.');\n` +
+    "\t\treturn_error.code = 'ERR_INVALID_ARG_TYPE';\n" +
+    '\t\tthrow return_error;\n' +
+    '\t}\n' +
+    '\n' +
+    '\t//Function\n' +
+    '\n' +
+    '\t//Return\n' +
+    "\tLogger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});\n" +
+    '\treturn _return;\n' +
+    '}\n' +
+    '\n' +
+    '/**\n' +
+    '### genericifyString_Test (private)\n' +
+    '> Tests [genericifyString](#genericifyString); this function is not exported and should only be used internally by this module. \n' +
+    ' \n' +
+    'Returns:\n' +
+    '| type | description |\n' +
+    '| --- | --- |\n' +
+    '| {boolean} | Returns `true` if all tests pass successfully. |\n' +
+    '\n' +
+    'Throws:\n' +
+    '| code | type | condition |\n' +
+    '| --- | --- | --- |\n' +
+    '| any | {Error} | Thrown if a test fails. |\n' +
+    '\n' +
+    'Status:\n' +
+    '| version | change |\n' +
+    '| --- | --- |\n' +
+    '| 0.0.1 | Introduced |\n' +
+    '*/\n' +
+    'function genericifyString_Test(){\n' +
+    "\tconst FUNCTION_NAME = 'genericifyString_Test';\n" +
+    '\t//Variables\n' +
+    '\tvar _return = false;\n' +
+    '\tvar return_error = null;\n' +
+    '\t//Tests\n' +
+    '\t//Return\n' +
+    '\treturn _return;\n' +
+    '}\n',
+  '1': { verbose: true, pasteboard: true, edit: 'js func' },
+  [length]: 2,
+  [callee]: [Getter/Setter],
+  [Symbol(Symbol.iterator)]: [Function: values] { [length]: 0, [name]: 'values' }
+}
+2020-05-19T21:40:22.345Z function-factory:FunctionFactory:function-factory.js:ProduceOutput:debug: returned: [ 0, null, [length]: 2 ]
+2020-05-19T21:40:22.345Z function-factory:FunctionFactory:function-factory.js:Input_Inquirer_Editor:debug: Input_Inquirer_Editor returned: [ 0, null, [length]: 2 ]

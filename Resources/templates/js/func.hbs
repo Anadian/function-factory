@@ -1,5 +1,5 @@
 /**
-### {{name}}
+### {{name}}{{^unit_test}} (private){{/unit_test}}
 > {{&description}}
 
 {{#parametres}}Parametres:
@@ -26,7 +26,8 @@ Status:
 | --- | --- |
 | 0.0.1 | Introduced |
 */
-{{#asynchronous}}async {{/asynchronous}}function {{name}}({{#parametres}}{{#params}} {{name}}{{#default}} = {{&value}}{{/default}},{{/params}}{{/parametres}}){
+{{^unit_test}}/* istanbul ignore next */
+{{/unit_test}}{{#asynchronous}}async {{/asynchronous}}function {{name}}({{#parametres}}{{#params}} {{name}}{{#default}} = {{&value}}{{/default}},{{/params}}{{/parametres}}){
 	var arguments_array = Array.from(arguments);
 {{#return}}	var _return;
 {{/return}}{{#throw}}	var return_error;
