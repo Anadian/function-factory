@@ -1,6 +1,6 @@
 {
   "name": "function-factory",
-  "version": "1.9.1",
+  "version": "1.9.2",
   "description": "Simple, minimalist templating from the command line.",
   "main": "source/main.js",
   "scripts": {
@@ -52,5 +52,8 @@
     "inquirer": "^7.1.0",
     "jsonic-parse": "^1.0.0",
     "make-dir": "^3.1.0"
+  },
+  "bin": {
+	"function-factory": "source/main.js"
   }
 }
