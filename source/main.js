@@ -1004,6 +1004,47 @@ async function main_Async( options = {} ){
 	var output_string = '';
 	//Parametre checks
 	//Function
+	//Taken from old_main.js; should be updated.################################################################################
+		HandleBars.registerHelper('CheckType', function CheckType_HandleBarsHelper( type, name ){
+			var _return = null;
+			if( type === 'Array' ){
+				_return = `Array.isArray(${name}) === true`;
+			} else if( type === 'Buffer' ){
+				_return = `Buffer.isBuffer(${name}) === true`;
+			} else{
+				_return = `typeof(${name}) === '${type.replace(/[?!| ]/g, '').toLowerCase()}'`;
+			}
+			return _return;
+		} );
+		HandleBars.registerHelper('CheckNotType', function CheckNotType_HandleBarsHelper( type, name ){
+			var _return = null;
+			if( type === 'Array' ){
+				_return = `Array.isArray(${name}) === false`;
+			} else if( type === 'Buffer' ){
+				_return = `Buffer.isBuffer(${name}) === false`;
+			} else{
+				_return = `typeof(${name}) !== '${type.replace(/[?!| ]/g, '').toLowerCase()}'`;
+			}
+			return _return;
+		} );
+		HandleBars.registerHelper('upper_first', function UpperFirst_HandleBarsHelper( short_description ){
+			var _return = null;
+			if( typeof(short_description) === 'string' ){
+				var first_letter = short_description.charAt(0);
+				var rest_of_string = short_description.substring(1);
+				_return = first_letter.toUpperCase()+rest_of_string;
+			}
+			return _return;
+		} );
+		HandleBars.registerHelper('lower_first', function LowerFirst_HandleBarsHelper( short_description ){
+			var _return = null;
+			if( typeof(short_description) === 'string' ){
+				var first_letter = short_description.charAt(0);
+				var rest_of_string = short_description.substring(1);
+				_return = first_letter.toLowerCase()+rest_of_string;
+			}
+			return _return;
+		} );
 	///Input
 	if( options.stdin === true ){
 		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'Reading input from STDIN.'});
