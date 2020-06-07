@@ -4,7 +4,10 @@
   "description": "Simple, minimalist templating from the command line.",
   "main": "source/main.js",
   "scripts": {
-    "test": "./source/main.js --test"
+    "test": "./source/main.js --test",
+    "lint": "eslint ./source/main.js",
+    "generate-docs": "extract-documentation-comments -I source/main.js -O API.md",
+    "update-travis-config": "json2yaml --preserve-key-order ci/travis.json .travis.yml"
   },
   "repository": {
     "type": "git",
@@ -38,8 +41,12 @@
   },
   "homepage": "https://github.com/Anadian/function-factory#readme",
   "devDependencies": {
+    "ava": "^3.8.2",
     "coveralls": "^3.1.0",
-    "nyc": "^15.0.1"
+    "eslint": "^7.2.0",
+    "extract-documentation-comments": "^0.1.2",
+    "nyc": "^15.0.1",
+    "standard-version": "^8.0.0"
   },
   "dependencies": {
     "application-log-winston-interface": "^1.0.5",
@@ -54,6 +61,72 @@
     "make-dir": "^3.1.0"
   },
   "bin": {
-	"function-factory": "source/main.js"
+    "function-factory": "source/main.js"
+  },
+  "eslintConfig": {
+    "env": {
+      "commonjs": true,
+      "es6": true,
+      "node": true
+    },
+    "extends": "eslint:recommended",
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+      "ecmaVersion": 11
+    },
+    "rules": {
+      "no-unused-vars": [
+        "warn"
+      ],
+      "no-useless-escape": "off",
+      "no-empty": "warn"
+    }
+  },
+  "standard-version": {
+    "types": [
+      {
+        "type": "feat",
+        "section": "Features",
+        "hidden": false
+      },
+      {
+        "type": "fix",
+        "section": "Bug Fixes",
+        "hidden": false
+      },
+      {
+        "type": "chore",
+        "section": "Chores",
+        "hidden": false
+      },
+      {
+        "type": "docs",
+        "section": "Documentation",
+        "hidden": false
+      },
+      {
+        "type": "style",
+        "section": "Code Style",
+        "hidden": false
+      },
+      {
+        "type": "refactor",
+        "section": "Refactoring",
+        "hidden": false
+      },
+      {
+        "type": "perf",
+        "section": "Performance",
+        "hidden": false
+      },
+      {
+        "type": "test",
+        "section": "Tests",
+        "hidden": false
+      }
+    ]
   }
 }
