@@ -19,7 +19,6 @@
 		]
 	},
 	"asynchronous": false,
-	"unit_test": true,
 	"post_re": [
 		{"search": ",\\)", "replace": " )", "flags": "gm"}
 	]

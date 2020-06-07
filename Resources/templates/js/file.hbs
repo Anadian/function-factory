@@ -112,7 +112,7 @@ function setLogger( logger ){
 {{/logger}}
 {{#cli}}/**
 ### main_Async (private)
-> The main function when the script is run as an executable without the `--test` command-line option. Not exported and should never be manually called.
+> The main function when the script is run as an executable. Not exported and should never be manually called.
 
 Parametres:
 | name | type | description |
@@ -198,36 +198,6 @@ async function main_Async( options = {} ){
 		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'crit', message: return_error.message});
 	}
 }
-
-/**
-### main_Async_Test (private)
-> The main function when the script is run as an executable **with** the `--test` command-line option. Runs all of the other `*_Test()`-type unit-test functions in this module. Not exported and should never be manually called.
-
-Parametres:
-| name | type | description |
-| --- | --- | --- |
-| options | {?options} | An object representing the command-line options. \[default: {}\] |
-
-Status:
-| version | change |
-| --- | --- |
-| 0.0.1 | Introduced |
-*/
-/* istanbul ignore next */
-async function main_Async_Test(){
-	const FUNCTION_NAME = 'main_Async_Test';
-	//Variables
-	var _return = false;
-	var return_error = null;
-	//Tests
-	try{
-	} catch(error){
-		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'crit', message: `Test failed with error: '${error}'`});
-		process.exitCode = 4;
-	}
-	//Return
-	return _return;
-}
 {{/cli}}
 //#Exports and Execution
 if(require.main === module){
@@ -255,7 +225,6 @@ if(require.main === module){
 		//Input
 		{ name: 'stdin', alias: 'i', type: Boolean, description: 'Read input from STDIN.' },
 		{ name: 'input', alias: 'I', type: String, description: 'The path to the file to read input from.' },
-		{ name: 'test', alias: 't', type: Boolean, description: 'Run unit tests and exit.' },
 		//Output
 		{ name: 'stdout', alias: 'o', type: Boolean, description: 'Write output to STDOUT.' },
 		{ name: 'output', alias: 'O', type: String, description: 'The name of the file to write output to.' },
@@ -300,7 +269,7 @@ if(require.main === module){
 			parent_dirname = Path.dirname( source_dirname );
 			package_path = Path.join( parent_dirname, 'package.json' );
 			PACKAGE_JSON = require(package_path);
-		} catch(error){
+		} catch(error)/* istanbul ignore next */{
 			Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `Soft error: ${error}`});
 		}
 	}
@@ -332,12 +301,8 @@ if(require.main === module){
 		quick_exit = true;
 	}
 	if( quick_exit === false || Options['no-quick-exit'] === true ){
-		/* istanbul ignore else */
-		if( Options.test === true ){
-			main_Async_Test();
-		} else{
-			main_Async( Options );
-		}
+		/* istanbul ignore next */
+		main_Async( Options );
 	}
 {{/cli}}{{#logger}}	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});
 {{/logger}}
