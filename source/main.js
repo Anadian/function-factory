@@ -1218,6 +1218,7 @@ if(require.main === module){
 	];
 	//Variables
 	var function_return = [1,null];
+	var return_error = null;
 	var quick_exit = false;
 	var config_filepath = '';
 	var source_dirname = '';
