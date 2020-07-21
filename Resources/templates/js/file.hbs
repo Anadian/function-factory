@@ -79,7 +79,7 @@ Throws:
 | --- | --- | --- |
 | 'ERR_INVALID_ARG_TYPE' | {TypeError} | Thrown if `logger` is neither an object nor `null` |
 
-Status:
+History:
 | version | change |
 | --- | --- |
 | 0.0.0 | Introduced |
@@ -254,7 +254,7 @@ if(require.main === module){
 {{/logger}}{{#cli}}	//Options
 	var Options = CommandLineArgs( OptionDefinitions );
 {{/cli}}	//Config
-	/* istanbul ignore next */
+{{#cli}}	/* istanbul ignore next */
 	if( Options.verbose === true ){
 {{#logger}}		Logger.real_transports.console_stderr.level = 'debug';
 		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'note', message: `Logger: console_stderr transport log level set to: ${Logger.real_transports.console_stderr.level}`});
@@ -274,7 +274,7 @@ if(require.main === module){
 			Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `Soft error: ${error}`});
 		}
 	}
-	//Main
+{{/cli}}	//Main
 {{#cli}}	/* istanbul ignore next */
 	if( Options.version === true ){
 		console.log(PACKAGE_JSON.version);

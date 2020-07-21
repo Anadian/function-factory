@@ -36,7 +36,7 @@ Documentation License: [![Creative Commons License](https://i.creativecommons.or
 
 //#Dependencies
 	//##Internal
-	const JSONICParse = require('jsonic-parse');
+	//const JSONICParse = require('jsonic-parse');
 	//##Standard
 	const FileSystem = require('fs');
 	const Path = require('path');
@@ -68,6 +68,12 @@ var ConfigObject = {
 	],
 	defaults_directories: [
 		Path.join( 'Resources', 'defaults' )
+	],
+	helper_scripts: [
+		Path.join( 'Resources', 'helpers', 'any.js' )
+	],
+	partial_scripts: [
+		Path.joing( 'Resources', 'partials', 'any.js' )
 	]
 };
 /* istanbul ignore next */
