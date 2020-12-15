@@ -36,7 +36,7 @@ Documentation License: [![Creative Commons License](https://i.creativecommons.or
 
 //#Dependencies
 	//##Internal
-	//const JSONICParse = require('jsonic-parse');
+	const JSONICParse = require('jsonic-parse');
 	//##Standard
 	const FileSystem = require('fs');
 	const Path = require('path');
@@ -73,7 +73,7 @@ var ConfigObject = {
 		Path.join( 'Resources', 'helpers', 'any.js' )
 	],
 	partial_scripts: [
-		Path.joing( 'Resources', 'partials', 'any.js' )
+		Path.join( 'Resources', 'partials', 'any.js' )
 	]
 };
 /* istanbul ignore next */
@@ -1247,6 +1247,8 @@ if(require.main === module){
 	try{
 		ConfigObject.template_directories.push( Path.join( EnvironmentPaths.data, 'templates' ) );
 		ConfigObject.defaults_directories.push( Path.join( EnvironmentPaths.data, 'defaults' ) );
+		ConfigObject.helper_scripts.push( Path.join( EnvironmentPaths.data,	'helpers' ) );	
+		ConfigObject.partial_scripts.push( Path.join( EnvironmentPaths.data, 'partials' ) );
 		/* istanbul ignore next */
 		if( Options['config-file'] != null && typeof(Options['config-file']) === 'string' ){
 			config_filepath = Options['config-file'];
