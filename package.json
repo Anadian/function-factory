@@ -62,7 +62,6 @@
     "get-stream": "^6.0.0",
     "handlebars": "^4.7.7",
     "inquirer": "^7.3.3",
-    "jsonic-parse": "^1.0.0",
     "make-dir": "^3.1.0"
   },
   "bin": {

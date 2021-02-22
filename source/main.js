@@ -1148,35 +1148,6 @@ async function main_Async( options = {} ){
 	}
 }
 
-/**
-### main_Async_Test (private)
-> The main function when the script is run as an executable **with** the `--test` command-line option. Runs all of the other `*_Test()`-type unit-test functions in this module. Not exported and should never be manually called.
-
-Parametres:
-| name | type | description |
-| --- | --- | --- |
-| options | {?options} | An object representing the command-line options. \[default: {}\] |
-
-Status:
-| version | change |
-| --- | --- |
-| 0.0.1 | Introduced |
-*/
-/* istanbul ignore next */
-async function main_Async_Test(){
-	const FUNCTION_NAME = 'main_Async_Test';
-	//Variables
-	var _return = false;
-	var return_error = null;
-	//Tests
-	try{
-	} catch(error){
-		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'crit', message: `Test failed with error: '${error}'`});
-		process.exitCode = 4;
-	}
-	//Return
-	return _return;
-}
 //#Exports and Execution
 if(require.main === module){
 	var _return = [1,null];
@@ -1205,14 +1176,14 @@ if(require.main === module){
 		{ name: 'edit', alias: 'e', type: String, description: 'Edit the input in $EDITOR, optionally specifying a file in the "defaults" directory to use as a base.' },
 		{ name: 'ask', alias: 'a', type: String, description: '[Reserved] Interactively prompt for input properties, optionally specifying a file in the "defaults" directory to use as a base.' },
 		{ name: 'do', alias: 'D', type: String, defaultOption: true, description: '[Reserved] Select a default input file and an output template based on a signle string.' },
-		{ name: 'test', alias: 't', type: Boolean, description: 'Run unit tests and exit.' },
+		//{ name: 'test', alias: 't', type: Boolean, description: 'Run unit tests and exit.' },
 		//Output
 		{ name: 'stdout', alias: 'o', type: Boolean, description: 'Write output to STDOUT.' },
 		{ name: 'output', alias: 'O', type: String, description: 'The name of the file to write output to.' },
 		{ name: 'pasteboard', alias: 'p', type: Boolean, description: 'Copy output to pasteboard (clipboard).' },
 		//Config
 		{ name: 'config', alias: 'c', type: Boolean, description: 'Print search paths and configuration values to STDOUT.' },
-		{ name: 'config-file', alias: 'C', type: String, description: '[Resevred] Use the given config file instead of the default.' },
+		{ name: 'config-file', alias: 'C', type: String, description: 'Use the given config file instead of the default.' },
 		{ name: 'defaults', alias: 'd', type: Boolean, description: '[Reserved] Print a list of the "defaults" files.' },
 		{ name: 'templates', alias: 'l', type: Boolean, description: '[Reserved] Print a list of available templates to stdout.' },
 		{ name: 'template-override', alias: 'T', type: String, description: 'Override the template to the file specified.' }
