@@ -18,16 +18,16 @@
 # Install
 To use it as a dependency in a NodeJS project, run:
 ```sh
-npm install --save executable-metadata
+npm install --save function-factory
 ```
 To use it as a global command-line app, run:
 ```sh
-npm install --global executable-metadata
+npm install --global function-factory
 ```
 # Usage
 To use the command-line interface:
 ```sh
-[npx] executable-metadata [options] binary_files ...
+[npx] function-factory [options]
 ```
 Remember to prepend `npx` to the command when you haven't installed it globally.
 ## CLI

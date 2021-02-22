@@ -150,11 +150,11 @@ Throws:
 | code | type | condition |
 | --- | --- | --- |
 | 'ERR_INVALID_ARG_TYPE' | {TypeError} | Thrown if a given argument isn't of the correct type. |
-| 'ERR_INVALID_RETURN_VALUE' | {Error} | Thrown if parsing the file as JSONIC fails. |
 
-Status:
+History:
 | version | change |
 | --- | --- |
+| 2.1.1 | Moved to HJSON |
 | 1.9.0 | Experimental |
 */
 /* istanbul ignore next */
@@ -693,11 +693,11 @@ Throws:
 | code | type | condition |
 | --- | --- | --- |
 | 'ERR_INVALID_ARG_TYPE' | {TypeError} | Thrown if a given argument isn't of the correct type. |
-| 'ERR_INVALID_RETURN_VALUE' | {Error} | Thrown if JSONICParse.ParseFilePath returns an error code. |
 
 Status:
 | version | change |
 | --- | --- |
+| 2.1.1 | Moved to HJSON |
 | 1.9.0 | Introduced |
 */
 /* istanbul ignore next */
