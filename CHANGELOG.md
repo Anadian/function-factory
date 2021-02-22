@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/Anadian/function-factory/compare/v2.0.0...v2.1.0) (2021-02-22)
+
+
+### Features
+
+* Further quality of life improvements. ([e3bb96c](https://github.com/Anadian/function-factory/commit/e3bb96c59cf24479a73e89c6989842a8289b8b78))
+
+
+### Documentation
+
+* Added API.md. ([c9309de](https://github.com/Anadian/function-factory/commit/c9309dedebf3da4492aaa0be054ca2714cd547b5))
+
 ## [2.0.0](https://github.com/Anadian/function-factory/compare/v1.9.2...v2.0.0) (2021-02-22)
 
 
