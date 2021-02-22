@@ -4,10 +4,13 @@
   "description": "Simple, minimalist templating from the command line.",
   "main": "source/main.js",
   "scripts": {
-    "test": "./source/main.js --test",
+    "test": "ava -v source/main.test.js",
     "lint": "eslint ./source/main.js",
     "generate-docs": "extract-documentation-comments -I source/main.js -O API.md",
-    "update-travis-config": "json2yaml --preserve-key-order ci/travis.json .travis.yml"
+    "update-config": "hjson -j ci/github-actions.hjson | json2yaml --preserve-key-order -o .github/workflows/ci.yml",
+    "update-deps": "npm-check-updates -u",
+    "release": "standard-version",
+    "publish-release": "git push --follow-tags origin master && npm publish"
   },
   "repository": {
     "type": "git",
@@ -41,27 +44,32 @@
   },
   "homepage": "https://github.com/Anadian/function-factory#readme",
   "devDependencies": {
-    "ava": "^3.8.2",
+    "ava": "^3.15.0",
     "coveralls": "^3.1.0",
-    "eslint": "^7.2.0",
-    "extract-documentation-comments": "^0.1.2",
-    "nyc": "^15.0.1",
-    "standard-version": "^8.0.0"
+    "eslint": "^7.20.0",
+    "extract-documentation-comments": "^0.3.0",
+    "hjson": "^3.2.2",
+    "npm-check-updates": "^11.1.4",
+    "nyc": "^15.1.0",
+    "standard-version": "^9.1.1"
   },
   "dependencies": {
     "application-log-winston-interface": "^1.0.5",
     "clipboardy": "^2.3.0",
     "command-line-args": "^5.1.1",
-    "command-line-usage": "^6.1.0",
+    "command-line-usage": "^6.1.1",
     "env-paths": "^2.2.0",
-    "get-stream": "^5.1.0",
-    "handlebars": "^4.7.6",
-    "inquirer": "^7.1.0",
+    "get-stream": "^6.0.0",
+    "handlebars": "^4.7.7",
+    "inquirer": "^7.3.3",
     "jsonic-parse": "^1.0.0",
     "make-dir": "^3.1.0"
   },
   "bin": {
     "function-factory": "source/main.js"
+  },
+  "engines": {
+    "node": ">=12"
   },
   "eslintConfig": {
     "env": {
@@ -88,13 +96,13 @@
   "standard-version": {
     "types": [
       {
-        "type": "feat",
-        "section": "Features",
+        "type": "build",
+        "section": "Build",
         "hidden": false
       },
       {
-        "type": "fix",
-        "section": "Bug Fixes",
+        "type": "ci",
+        "section": "Continuous Integration",
         "hidden": false
       },
       {
@@ -108,8 +116,18 @@
         "hidden": false
       },
       {
-        "type": "style",
-        "section": "Code Style",
+        "type": "feat",
+        "section": "Features",
+        "hidden": false
+      },
+      {
+        "type": "fix",
+        "section": "Bug Fixes",
+        "hidden": false
+      },
+      {
+        "type": "perf",
+        "section": "Performance",
         "hidden": false
       },
       {
@@ -118,8 +136,8 @@
         "hidden": false
       },
       {
-        "type": "perf",
-        "section": "Performance",
+        "type": "style",
+        "section": "Code Style",
         "hidden": false
       },
       {
