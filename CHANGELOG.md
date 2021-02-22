@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/Anadian/function-factory/compare/v1.9.2...v2.0.0) (2021-02-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* Massive migration and refactoring.
+
+### Features
+
+* Massive migration and refactoring. ([c64dc07](https://github.com/Anadian/function-factory/commit/c64dc076388406b5ea5995f09059218dd8544df6))
+
 ### 1.9.2 (2021-02-22)
 
 
