@@ -1,3 +1,0 @@
-- 2020-05-11 v1.9.0 Major reworking to bring it in line with my other, newer projects. Will become v2.0.0 when the reworking is complete.
-- 2020-05-20 v1.9.1 refactor(source/main.js): New main complete in an experimental state.
-- 2020-05-20 v1.9.2 refactor(package.json): Updated package-lock.json and added a bin property to package.json.

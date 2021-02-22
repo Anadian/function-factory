@@ -15,3 +15,7 @@ All notable changes to this project will be documented in this file. See [standa
 * Cleaned up directory and added dev dependencies ([834d8db](https://github.com/Anadian/function-factory/commit/834d8dbd28eb8e441573e2261148da7eb5ff64be))
 * Cleaning ([46dec9d](https://github.com/Anadian/function-factory/commit/46dec9d3ae2016fc5c83de3360612cd5bfb4dec3))
 * Prosperity commit before cleaning things up. ([c98245c](https://github.com/Anadian/function-factory/commit/c98245cd61580cb2b684efcd43b331e7fa424c3c))
+# Old CHANGES.md
+- 2020-05-11 v1.9.0 Major reworking to bring it in line with my other, newer projects. Will become v2.0.0 when the reworking is complete.
+- 2020-05-20 v1.9.1 refactor(source/main.js): New main complete in an experimental state.
+- 2020-05-20 v1.9.2 refactor(package.json): Updated package-lock.json and added a bin property to package.json.

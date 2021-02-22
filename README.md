@@ -2,7 +2,7 @@
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![Semantic Versioning 2.0.0](https://img.shields.io/badge/semver-2.0.0-brightgreen?style=flat-square)](https://semver.org/spec/v2.0.0.html)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat-square)](https://conventionalcommits.org)
-[![License](https://img.shields.io/github/license/Anadian/function-factory)](https://github.com/Anadian/function-factory/LICENSE)
+[![License](https://img.shields.io/github/license/Anadian/function-factory)](https://github.com/Anadian/function-factory/blob/master/LICENSE)
 
 > Simple, minimalist templating from the command line.
 # Table of Contents
@@ -17,7 +17,7 @@
 # Usage
 # API
 # Contributing
-Changes are tracked in [CHANGES.md](CHANGES.md).
+Changes are tracked in [CHANGELOG.md](CHANGELOG.md).
 # License
 MIT ©2020 Anadian
 

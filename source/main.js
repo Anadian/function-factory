@@ -36,7 +36,6 @@ Documentation License: [![Creative Commons License](https://i.creativecommons.or
 
 //#Dependencies
 	//##Internal
-	const JSONICParse = require('jsonic-parse');
 	//##Standard
 	const FileSystem = require('fs');
 	const Path = require('path');
@@ -46,6 +45,7 @@ Documentation License: [![Creative Commons License](https://i.creativecommons.or
 	const Inquirer = require('inquirer');
 	const GetStream = require('get-stream');
 	const Clipboardy = require('clipboardy');
+	const HJSON = require('hjson');
 	const StripJSONComments = require('strip-json-comments');
 	const ParseJSON = require('parse-json');
 
@@ -167,6 +167,7 @@ function loadConfigObjectFromFilePath( config_filepath, options = {} ){
 	//Variables
 	var function_return = [1, null];
 	var have_readwrite_permissions = false;
+	var config_file_string = '';
 	//Parametre checks
 	if( typeof(config_filepath) !== 'string' ){
 		return_error = new TypeError('Param "config_filepath" is not a string.');
@@ -183,15 +184,27 @@ function loadConfigObjectFromFilePath( config_filepath, options = {} ){
 		throw return_error;
 	}
 	if( have_readwrite_permissions === true ){
-		function_return = JSONICParse.ParseFilePath(config_filepath);
-		if( function_return[0] === 0 ){
+		try{
+			config_file_string = FileSystem.readFileSync( config_filepath, 'utf8' );
+		} catch(error){
+			return_error = new Error(`FileSystem.readFileSync threw an error: ${error}`);
+			throw return_error;
+		}
+		try{
+			ConfigObject = HJSON.parse( config_file_string );
+			_return = ConfigObject;
+		} catch(error){
+			return_error = new Error(`HJSON.parse threw an error: ${error}`);
+			throw return_error;
+		}
+		/*if( function_return[0] === 0 ){
 			ConfigObject = function_return[1];
 			_return = function_return[1];
 		} else{
 			return_error = new Error(`JSONICParse.ParseFilePath returned an error value: ${function_return}`);
 			return_error.code = 'ERR_INVALID_RETURN_VALUE';
 			throw return_error;
-		}
+		}*/
 	}
 
 	//Return
@@ -329,35 +342,6 @@ function getNameLiteralFromGenericName( input_string, extension_string = '', opt
 
 	//Return
 	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
-	return _return;
-}
-
-/**
-### getNameLiteralFromGenericName_Test (private)
-> Tests [getNameLiteralFromGenericName](#getNameLiteralFromGenericName); this function is not exported and should only be used internally by this module. 
- 
-Returns:
-| type | description |
-| --- | --- |
-| {boolean} | Returns `true` if all tests pass successfully. |
-
-Throws:
-| code | type | condition |
-| --- | --- | --- |
-| any | {Error} | Thrown if a test fails. |
-
-Status:
-| version | change |
-| --- | --- |
-| 1.9.0 | Introduced |
-*/
-function getNameLiteralFromGenericName_Test(){
-	const FUNCTION_NAME = 'getNameLiteralFromGenericName_Test';
-	//Variables
-	var _return = false;
-	var return_error = null;
-	//Tests
-	//Return
 	return _return;
 }
 
@@ -724,7 +708,8 @@ function getDefaultInputStringFromFilePath( file_path, options = {} ){
 	const FUNCTION_NAME = 'getDefaultInputStringFromFilePath';
 	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
 	//Variables
-	var function_return = [1,null];
+	var file_string = '';
+	var default_input_object = {};
 	//Parametre checks
 	if( typeof(file_path) !== 'string' ){
 		return_error = new TypeError('Param "file_path" is not string.');
@@ -733,18 +718,22 @@ function getDefaultInputStringFromFilePath( file_path, options = {} ){
 	}
 
 	//Function
-	function_return = JSONICParse.ParseFilePath( file_path );
-	if( function_return[0] === 0 ){
+	try{
+		file_string = FileSystem.readFileSync( file_path, 'utf8' );
 		try{
-			_return = JSON.stringify(function_return[1],null,'\t');
+			default_input_object = HJSON.parse( file_string );
+			try{
+				_return = JSON.stringify( default_input_object, null, '\t' );
+			} catch(error){
+				Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `JSON.stringify threw: ${error}`});
+				throw error;
+			}
 		} catch(error){
-			Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `JSON.stringify threw: ${error}`});
-			throw error;
+			return_error = new Error(`HJSON.parse threw an error: ${error}`);
+			throw return_error;
 		}
-	} else{
-		return_error = new Error(`JSONICParse.ParseFilePath returned: ${function_return}`);
-		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error});
-		return_error.code = 'ERR_INVALID_RETURN_VALUE';
+	} catch(error){
+		return_error = new Error(`FileSystem.readFileSync threw an error: ${error}`);
 		throw return_error;
 	}
 
@@ -1108,6 +1097,12 @@ async function main_Async( options = {} ){
 			if( template_function != null && typeof(template_function) === 'function' ){
 				try{
 					output_string = template_function( input_context_object );
+					if( input_context_object.post_re != undefined && Array.isArray( input_context_object.post_re ) === true ){
+						for( var i = 0; i < input_context_object.post_re.length; i++ ){
+							var regex = new RegExp( input_context_object.post_re[i].search, input_context_object.post_re[i].flags );
+							output_string = output_string.replace( regex, input_context_object.post_re[i].replace );
+						}
+					}
 					Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `output_string: ${output_string}`});
 				} catch(error){
 					return_error = new Error(`template_function threw an error: ${error}`);
