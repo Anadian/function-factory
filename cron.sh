@@ -4,7 +4,7 @@ date -uI'seconds';
 git checkout wip;
 git add --all .;
 if git commit -m 'Cron.sh auto commit.' ; then
-	git push origin master;
+	git push origin wip;
 else
 	git pull origin master;
 fi
