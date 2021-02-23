@@ -1077,7 +1077,7 @@ async function main_Async( options = {} ){
 	///Transform
 	if( return_error === null ){
 		if( input_string !== '' && typeof(input_string) === 'string' ){
-			try{
+			/*try{
 				cleaned_json_string = StripJSONComments( input_string )
 			} catch(error){
 				return_error = new Error(`StripJSONComments threw an error: ${error}`);
@@ -1088,6 +1088,11 @@ async function main_Async( options = {} ){
 			} catch(error){
 				return_error = new Error(`ParseJSON threw an error: ${error}`);
 				Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error});
+			}*/
+			try{
+				input_context_object = HJSON.parse(input_string);
+			} catch(error){
+				return_error = new Error(`HJSON.parse threw an error: ${error}`);
 			}
 			try{
 				template_function = getTemplateFunctionFromInputContextObject( input_context_object, options );
