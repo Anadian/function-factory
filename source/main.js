@@ -46,8 +46,8 @@ Documentation License: [![Creative Commons License](https://i.creativecommons.or
 	const GetStream = require('get-stream');
 	const Clipboardy = require('clipboardy');
 	const HJSON = require('hjson');
-	const StripJSONComments = require('strip-json-comments');
-	const ParseJSON = require('parse-json');
+	/*const StripJSONComments = require('strip-json-comments');
+	const ParseJSON = require('parse-json');*/
 
 //#Constants
 const FILENAME = 'function-factory.js';
