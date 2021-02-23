@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.5](https://github.com/Anadian/function-factory/compare/v2.1.4...v2.1.5) (2021-02-23)
+
+
+### Bug Fixes
+
+* Removed stranded requires. ([3006b6e](https://github.com/Anadian/function-factory/commit/3006b6e979c8a11c759e0bda37118d2040009da4))
+
 ### [2.1.4](https://github.com/Anadian/function-factory/compare/v2.1.3...v2.1.4) (2021-02-23)
 
 
