@@ -8,5 +8,7 @@
 	"strict": true,
 	"main": true,
 	"logger": true,
+	"config": true,
+	"paths": true,
 	"cli": true
 }
