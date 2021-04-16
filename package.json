@@ -1,6 +1,6 @@
 {
   "name": "function-factory",
-  "version": "2.1.5",
+  "version": "2.2.0",
   "description": "Simple, minimalist templating from the command line.",
   "main": "source/main.js",
   "scripts": {
@@ -58,7 +58,7 @@
     "command-line-args": "^5.1.1",
     "command-line-usage": "^6.1.1",
     "env-paths": "^2.2.1",
-    "get-stream": "^6.0.0",
+    "get-stream": "^6.0.1",
     "handlebars": "^4.7.7",
     "hjson": "^3.2.2",
     "inquirer": "^8.0.0",
