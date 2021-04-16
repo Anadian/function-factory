@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/Anadian/function-factory/compare/v2.1.5...v2.2.0) (2021-04-16)
+
+
+### Features
+
+* Significantly updated `js file`. ([2168520](https://github.com/Anadian/function-factory/commit/2168520048952b0848f1889717716175af38568b))
+
+
+### Chores
+
+* **deps:** Updated dependencies. ([08c4045](https://github.com/Anadian/function-factory/commit/08c404584b20b354030ed0c47e28465ebc7e24d3))
+
 ### [2.1.5](https://github.com/Anadian/function-factory/compare/v2.1.4...v2.1.5) (2021-02-23)
 
 
