@@ -1,0 +1,14 @@
+{
+	//"templatename": "Resources/templates/jsfile.hbs",
+	"template": "js source",
+	"filename": "filename.js",
+	"description": "Brief description.",
+	"modulename": "ModuleName",
+	"processname": "process-name",
+	"strict": true,
+	"node": true,
+	"main": true,
+	"logger": true,
+	"config": true,
+	"paths": true
+}
