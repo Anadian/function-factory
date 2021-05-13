@@ -1195,6 +1195,7 @@ if(require.main === module){
 	];
 	//Variables
 	var function_return = [1,null];
+	var logger = null;
 	var return_error = null;
 	var quick_exit = false;
 	var config_filepath = '';
@@ -1207,9 +1208,16 @@ if(require.main === module){
 	} catch(error)/* istanbul ignore next */{
 		console.error('MakeDir.sync threw: %s', error);
 	}
-	function_return = ApplicationLogWinstonInterface.InitLogger('debug.log', EnvironmentPaths.log);
+	/*function_return = ApplicationLogWinstonInterface.InitLogger('debug.log', EnvironmentPaths.log);
 	if( function_return[0] === 0 ){
 		setLogger( function_return[1] );
+	}*/
+	try{
+		logger = ApplicationLogWinstonInterface.initWinstonLogger( 'debug.log', EnvironmentPaths.log );
+		setLogger( logger );
+	} catch(error){
+		return_error = new Error(`ApplicationLogWinstonInterface.initWinstonLogger threw an error: ${error}`);
+		throw return_error;
 	}
 	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});
 	//Options
