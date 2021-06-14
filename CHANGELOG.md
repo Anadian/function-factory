@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.2](https://github.com/Anadian/function-factory/compare/v2.2.1...v2.2.2) (2021-06-14)
+
+
+### Chores
+
+* **deps:** Updated dependencies. ([d74a8a3](https://github.com/Anadian/function-factory/commit/d74a8a30c5ace72ab0b9d82d1de5e28b607bc5d0))
+
 ### [2.2.1](https://github.com/Anadian/function-factory/compare/v2.2.0...v2.2.1) (2021-05-13)
 
 
