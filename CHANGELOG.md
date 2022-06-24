@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/Anadian/function-factory/compare/v3.0.0...v4.0.0) (2022-06-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** Reverted a premature breaking update to Inquirer.
+
+### Chores
+
+* **deps:** Reverted a premature breaking update to Inquirer. ([29fd8ed](https://github.com/Anadian/function-factory/commit/29fd8ed0e01dfcfbee0bbb7b117212255b304c95))
+
 ## 3.0.0 (2022-06-23)
 
 
