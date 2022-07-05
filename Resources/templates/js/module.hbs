@@ -195,7 +195,11 @@ function {{modulename}}( options ){
 		modulename: '{{modulename}}'
 	} );
 	this.config = ( this.config || options.config ) ?? ( {} );
-	this.logger = ( this.logger || options.logger ) ?? ( {} );
+	this.logger = ( this.logger || options.logger ) ?? ( {
+		log: () => {
+			return null;
+		}
+	} );
 	return this;
 }
 
