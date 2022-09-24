@@ -60,6 +60,32 @@ function FunctionFactory( options ){
 	//Return output string
 	return this;
 }
+
+FunctionFactory.prototype.transform = function( input: string | Promise<string>, options = {} ){
+	try{
+		input_context_object = HJSON.parse(input_string);
+	} catch(error){
+		return_error = new Error(`HJSON.parse threw an error: ${error}`);
+	}
+	try{
+		template_function = getTemplateFunctionFromInputContextObject( input_context_object, options );
+	} catch(error){
+		return_error = new Error(`getTemplateFunctionFromInputContextObject threw an error: ${error}`);
+	}
+	if( template_function != null && typeof(template_function) === 'function' ){
+		try{
+			output_string = template_function( input_context_object );
+			if( input_context_object.post_re != undefined && Array.isArray( input_context_object.post_re ) === true ){
+				for( var i = 0; i < input_context_object.post_re.length; i++ ){
+					var regex = new RegExp( input_context_object.post_re[i].search, input_context_object.post_re[i].flags );
+					output_string = output_string.replace( regex, input_context_object.post_re[i].replace );
+				}
+			}
+			Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `output_string: ${output_string}`});
+		} catch(error){
+			return_error = new Error(`template_function threw an error: ${error}`);
+		}
+	}
 /**
 ### getNameLiteralFromGenericName
 > Ensures the given input_string is a generic name and returns a string guaranteed to be a name literal.

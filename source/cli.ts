@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 //Dependencies
 	//Internal
-	import ConfigObject from './source/config.js';
+	//import ConfigObject from './source/config.js';
 	import FunctionFactory from './source/lib.js';
 	//Standard
-	import * as PathNS from 'node:path';
+	//import * as PathNS from 'node:path';
 	import * as FSNS from 'node:fs';
 	//External
 	import getPackageMeta from 'simple-package-meta';
@@ -21,7 +21,7 @@ function CLI( options ){
 	}
 	this.packageMeta = null;
 	this.logger = ApplicationLogWinstonInterface.nullLogger;
-	this.configObject = new ConfigObject();
+	//this.configObject = new ConfigObject();
 	this.OptionDefinitions = [
 		//UI
 		{ name: 'help', alias: 'h', type: Boolean, description: 'Writes this help text to STDOUT.' },
@@ -50,11 +50,12 @@ function CLI( options ){
 	return this;
 }
 
-CLI.run = function( options = {} ){
+CLI.run = function( options = {} ): Promise{
 	var return_error = null;
 	var cli = new CLI( options );
-	var packageMeta_promise = getPackageMeta( import.meta );
-	cli.packageMeta = await packageMeta_promise;
+	//Init
+	var packageMeta = getPackageMeta( import.meta );
+	cli.packageMeta = await packageMeta;
 	var mkDir_promise = FSNS.promises.mkdir( packageMetaObject.paths.log, { recursive: true } );
 	mkDir_promise.then(
 		() => {
@@ -71,31 +72,31 @@ CLI.run = function( options = {} ){
 		}
 	);
 	cli.options = CommandLineArgs( cli.OptionDefinitions );
-	var config_promise = null;
-	try{
-		cli.configObject.template_directories.push( PathNS.join( EnvironmentPaths.data, 'templates' ) );
-		cli.configObject.defaults_directories.push( PathNS.join( EnvironmentPaths.data, 'defaults' ) );
-		cli.configObject.helper_scripts.push( PathNS.join( EnvironmentPaths.data,	'helpers' ) );	
-		cli.configObject.partial_scripts.push( PathNS.join( EnvironmentPaths.data, 'partials' ) );
-		if( cli.options['config-file'] != null && typeof(cli.options['config-file']) === 'string' ){
-			config_filepath = cli.options['config-file'];
-		} else{
-			config_filepath = PathNS.join( packageMeta.paths.config, 'config.json' );
-		}
-		config_promise = cli.configObject.loadFilePath( config_filepath );
-		config_promise.catch(
-			( error ) => {
-				if( error.code === 'ENOENT' ){
-					//create config
-				} else{
-					return_error = new Error(`Error: cli.configObject.loadFilePath threw an error: ${error}`);
-					throw return_error;
-				}
-			}
-		);
-	} catch(error){
-		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `Caught an unhandled error while setting config: ${error}`});
-	}
+//	var config_promise = null;
+//	try{
+//		cli.configObject.template_directories.push( PathNS.join( EnvironmentPaths.data, 'templates' ) );
+//		cli.configObject.defaults_directories.push( PathNS.join( EnvironmentPaths.data, 'defaults' ) );
+//		cli.configObject.helper_scripts.push( PathNS.join( EnvironmentPaths.data,	'helpers' ) );	
+//		cli.configObject.partial_scripts.push( PathNS.join( EnvironmentPaths.data, 'partials' ) );
+//		if( cli.options['config-file'] != null && typeof(cli.options['config-file']) === 'string' ){
+//			config_filepath = cli.options['config-file'];
+//		} else{
+//			config_filepath = PathNS.join( packageMeta.paths.config, 'config.json' );
+//		}
+//		config_promise = cli.configObject.loadFilePath( config_filepath );
+//		config_promise.catch(
+//			( error ) => {
+//				if( error.code === 'ENOENT' ){
+//					//create config
+//				} else{
+//					return_error = new Error(`Error: cli.configObject.loadFilePath threw an error: ${error}`);
+//					throw return_error;
+//				}
+//			}
+//		);
+//	} catch(error){
+//		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `Caught an unhandled error while setting config: ${error}`});
+//	}
 	var quick_exit = false;
 	if( cli.options.version === true ){
 		console.log(cli.packageMeta.version);
@@ -122,67 +123,84 @@ CLI.run = function( options = {} ){
 		quick_exit = true;
 	}
 	if( quick_exit === false || cli.options['no-quick-exit'] === true ){
-		FunctionFactory.load( cli.options ).then(
+		run_promise = FunctionFactory.load( cli.options ).then(
 			( functionFactory ) => {
-			}
-		);
-		//Receive Input
-		if( cli.options.stdin === true ){
-			Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'Reading input from STDIN.'});
-			input_string_promise = GetStream( process.stdin, 'utf8' ).catch(
-				( error ) => {
-					return_error = new Error(`GetStream threw an error: ${error}`);
-					Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});
-				}
-			);
-		} else if( cli.options.input != null ){
-			Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'Reading input from a file.'});
-			if( typeof(cli.options.input) === 'string' ){
-				Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `cli.options.input: '${cli.options.input}'`});
-				input_string_promise = FSNS.promises.readFile( cli.options.input, 'utf8' ).catch(
-					( error ) => {
-						return_error = new Error(`FSNS.promises.readFile threw an error: ${error}`);
+				//cli.input().then( functionFactory.transform ).then( cli.output );
+				//Receive Input
+				if( cli.options.stdin === true ){
+					Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'Reading input from STDIN.'});
+					input_string_promise = GetStream( process.stdin, 'utf8' ).catch(
+						( error ) => {
+							return_error = new Error(`GetStream threw an error: ${error}`);
+							Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});
+						}
+					);
+				} else if( cli.options.input != null ){
+					Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'Reading input from a file.'});
+					if( typeof(cli.options.input) === 'string' ){
+						Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `cli.options.input: '${cli.options.input}'`});
+						input_string_promise = FSNS.promises.readFile( cli.options.input, 'utf8' ).catch(
+							( error ) => {
+								return_error = new Error(`FSNS.promises.readFile threw an error: ${error}`);
+								Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});
+							}
+						);
+					} else{
+						return_error = new Error('"cli.options.input" is not a string.');
 						Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});
 					}
-				);
-			} else{
-				return_error = new Error('"cli.options.input" is not a string.');
-				Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});
-			}
-		} else if( cli.options.edit != null ){
-			input_string_promise = getInputStringFromInquirerEditor( cli.options ).catch(
-				( error ) => {
-					return_error = new Error(`getInputStringFromInquirerEditor threw an error: ${error}`);
-					throw return_error;
-				}
-			);
-		} else{
-			return_error = new Error('No input options specified.');
-			Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});
-		}
-		//Transform
-		output_string = functionFactory.transform( await input_string_promise, cli.options );
-		//Send Output
-		if( cli.options.output != null && typeof(output_string) === 'string' ){
-			output_promise = FSNS.promises.writeFile( cli.options.output, output_string, 'utf8' ).catch(
-				( error ) => {
-					return_error = new Error(`FSNS.promises.writeFile threw an error: ${error}`);
+				} else if( cli.options.edit != null ){
+					input_string_promise = getInputStringFromInquirerEditor( cli.options ).catch(
+						( error ) => {
+							return_error = new Error(`getInputStringFromInquirerEditor threw an error: ${error}`);
+							throw return_error;
+						}
+					);
+				} else{
+					return_error = new Error('No input options specified.');
 					Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});
 				}
-			);
-		} else if( cli.options.pasteboard === true ){
-			output_promise = Clipboardy.write( output_string ).catch(
-				( error ) => {
-					return_error = new Error(`Clipboardy.write threw an error: '${error}' when trying to write '${output_string}'`);
+				//Transform
+				output = functionFactory.transform( input, cli.options );
+				//Send Output
+				if( cli.options.output != null && typeof(output_string) === 'string' ){
+					output_promise = FSNS.promises.writeFile( cli.options.output, output, 'utf8' ).catch(
+						( error ) => {
+							return_error = new Error(`FSNS.promises.writeFile threw an error: ${error}`);
+							Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});
+						}
+					);
+				} else if( cli.options.pasteboard === true ){
+					output_promise = Clipboardy.write( output_string ).catch(
+						( error ) => {
+							return_error = new Error(`Clipboardy.write threw an error: '${error}' when trying to write '${output_string}'`);
+						}
+					);
+				} else{
+					if( cli.options.stdout !== true ){
+						Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'warn', message: 'No output options specified; defaulting to STDOUT.'});
+					}
+					
+					try{
+						console.log(await output);
+						output_promise = Promise.resolve();
+					} catch(error){
+						return_error = new Error(`console.log threw an error: ${error}`);
+						throw return_error;
+					}
 				}
-			);
-		} else{
-			if( cli.options.stdout !== true ){
-				Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'warn', message: 'No output options specified; defaulting to STDOUT.'});
 			}
-			console.log(output_string);
-		}
+		);
 	}
+	run.then(
+		() => {
+			process.exitCode = 0;
+		},
+		( error ) => {
+			process.exitCode = -1;
+			throw error;
+		}
+	);
 }
 
 
@@ -262,17 +280,6 @@ function getInputStringFromInquirerEditor( options = {} ){
 			throw return_error;
 		}
 	);
-
-//		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `inquirer_answer: ${inquirer_answer}`});
-//	if( inquirer_answer.editor_input != '' && typeof(inquirer_answer.editor_input) === 'string' ){
-//		_return = inquirer_answer.editor_input;
-//	} else{
-//		return_error = new TypeError(`'inquirer_answer.editor_input' is either null or not a string. 'editor_input': ${inquirer_answer.editor_input} 'inquirer_answer': ${inquirer_answer}`);
-//		return_error.code = 'ERR_INVALID_RETURN_VALUE';
-//		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error});
-//		throw return_error;
-//	}
-
 	//Return
 	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
 	return _return;
