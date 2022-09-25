@@ -4,13 +4,23 @@
 	import * as PathNS from 'node:path';
 	import * as FSNS from 'node:fs';
 	//External
+	import * as ApplicationLogWinstonInterface from 'application-log-winston-interface';
 	import * as HandleBars from 'handlebars';
+	import * as HJSON from 'hjson';
+
+var Logger = ApplicationLogWinstonInterface.nullLogger;
 
 function FunctionFactory( options ){
 	if( !( this instanceof FunctionFactory ) ){
 		return ( new FunctionFactory( options ) );
 	}
+	this.logger = ( this.logger || options.logger ) ?? ( ApplicationLogWinstonInterface.nullLogger );
 	this.templateCache = ( this.templateCache || options.templateCache ) ?? ( {} );
+	return this;
+}
+FunctionFactory.load = function( options = {} ){
+	const FUNCTION_NAME = 'FunctionFactory.load';
+	var functionFactory = new FunctionFactory( options );
 	//Load and register helpers
 	for( const path of this.helperPaths ){
 		import( path ).then(
@@ -58,7 +68,42 @@ function FunctionFactory( options ){
 		//Load template
 	//Perform transform
 	//Return output string
-	return this;
+	return Promise.resolve( functionFactory );
+}
+
+FunctionFactory.prototype.transform = function( input_string, options = {} ){
+	var return_error = null;
+	var _return = null;
+	var input_context_object = {};
+	var template_function = null;
+	var output_string = '';
+
+	try{
+		input_context_object = HJSON.parse(input_string);
+	} catch(error){
+		return_error = new Error(`HJSON.parse threw an error: ${error}`);
+	}
+	try{
+		template_function = getTemplateFunctionFromInputContextObject( input_context_object, options );
+	} catch(error){
+		return_error = new Error(`getTemplateFunctionFromInputContextObject threw an error: ${error}`);
+	}
+	if( template_function != null && typeof(template_function) === 'function' ){
+		try{
+			output_string = template_function( input_context_object );
+			if( input_context_object.post_re != undefined && Array.isArray( input_context_object.post_re ) === true ){
+				for( var i = 0; i < input_context_object.post_re.length; i++ ){
+					var regex = new RegExp( input_context_object.post_re[i].search, input_context_object.post_re[i].flags );
+					output_string = output_string.replace( regex, input_context_object.post_re[i].replace );
+				}
+			}
+			//Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `output_string: ${output_string}`});
+		} catch(error){
+			return_error = new Error(`template_function threw an error: ${error}`);
+		}
+		_return = output_string;
+	}
+	return _return;
 }
 /**
 ### getNameLiteralFromGenericName
@@ -654,3 +699,5 @@ function getDefaultInputStringFromGenericName( template_generic_name, options = 
 	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
 	return _return;
 }
+
+export default FunctionFactory;

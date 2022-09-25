@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 //Dependencies
 	//Internal
-	import ConfigObject from './source/config.js';
-	import FunctionFactory from './source/lib.js';
+	//import ConfigObject from './source/config.js';
+	import FunctionFactory from './lib.js';
 	//Standard
-	import * as PathNS from 'node:path';
+	//import * as PathNS from 'node:path';
 	import * as FSNS from 'node:fs';
 	//External
 	import getPackageMeta from 'simple-package-meta';
@@ -12,8 +12,12 @@
 	import * as Inquirer from 'inquirer';
 	import * as GetStream from 'get-stream';
 	import * as Clipboardy from 'clipboardy';
-	import * as CommandLineArgs from 'command-line-args';
-	import * as CommandLineUsage from 'command-line-usage';
+	import CommandLineArgs from 'command-line-args';
+	import CommandLineUsage from 'command-line-usage';
+
+const PROCESS_NAME = 'function-factory';
+const MODULE_NAME = 'CLI';
+const FILENAME = 'cli.js';
 
 function CLI( options ){
 	if( !( this instanceof CLI ) ){
@@ -21,7 +25,7 @@ function CLI( options ){
 	}
 	this.packageMeta = null;
 	this.logger = ApplicationLogWinstonInterface.nullLogger;
-	this.configObject = new ConfigObject();
+	//this.configObject = new ConfigObject();
 	this.OptionDefinitions = [
 		//UI
 		{ name: 'help', alias: 'h', type: Boolean, description: 'Writes this help text to STDOUT.' },
@@ -50,12 +54,18 @@ function CLI( options ){
 	return this;
 }
 
-CLI.run = function( options = {} ){
+CLI.run = async function( options = {} ){
+	const FUNCTION_NAME = 'CLI.run';
 	var return_error = null;
 	var cli = new CLI( options );
-	var packageMeta_promise = getPackageMeta( import.meta );
-	cli.packageMeta = await packageMeta_promise;
-	var mkDir_promise = FSNS.promises.mkdir( packageMetaObject.paths.log, { recursive: true } );
+	var run_promise;
+	var input_string_promise;
+	var output_string;
+	var output_promise;
+	//Init
+	var packageMeta = getPackageMeta( import.meta );
+	cli.packageMeta = await packageMeta;
+	var mkDir_promise = FSNS.promises.mkdir( cli.packageMeta.paths.log, { recursive: true } );
 	mkDir_promise.then(
 		() => {
 			try{
@@ -71,31 +81,35 @@ CLI.run = function( options = {} ){
 		}
 	);
 	cli.options = CommandLineArgs( cli.OptionDefinitions );
-	var config_promise = null;
-	try{
-		cli.configObject.template_directories.push( PathNS.join( EnvironmentPaths.data, 'templates' ) );
-		cli.configObject.defaults_directories.push( PathNS.join( EnvironmentPaths.data, 'defaults' ) );
-		cli.configObject.helper_scripts.push( PathNS.join( EnvironmentPaths.data,	'helpers' ) );	
-		cli.configObject.partial_scripts.push( PathNS.join( EnvironmentPaths.data, 'partials' ) );
-		if( cli.options['config-file'] != null && typeof(cli.options['config-file']) === 'string' ){
-			config_filepath = cli.options['config-file'];
-		} else{
-			config_filepath = PathNS.join( packageMeta.paths.config, 'config.json' );
-		}
-		config_promise = cli.configObject.loadFilePath( config_filepath );
-		config_promise.catch(
-			( error ) => {
-				if( error.code === 'ENOENT' ){
-					//create config
-				} else{
-					return_error = new Error(`Error: cli.configObject.loadFilePath threw an error: ${error}`);
-					throw return_error;
-				}
-			}
-		);
-	} catch(error){
-		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `Caught an unhandled error while setting config: ${error}`});
+	if( cli.options.verbose === true ){
+		cli.logger.real_transports.console_stderr.level = 'debug';
+		cli.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'note', message: `Logger: console_stderr transport log level set to: ${cli.logger.real_transports.console_stderr.level}`});
 	}
+//	var config_promise = null;
+//	try{
+//		cli.configObject.template_directories.push( PathNS.join( EnvironmentPaths.data, 'templates' ) );
+//		cli.configObject.defaults_directories.push( PathNS.join( EnvironmentPaths.data, 'defaults' ) );
+//		cli.configObject.helper_scripts.push( PathNS.join( EnvironmentPaths.data,	'helpers' ) );	
+//		cli.configObject.partial_scripts.push( PathNS.join( EnvironmentPaths.data, 'partials' ) );
+//		if( cli.options['config-file'] != null && typeof(cli.options['config-file']) === 'string' ){
+//			config_filepath = cli.options['config-file'];
+//		} else{
+//			config_filepath = PathNS.join( packageMeta.paths.config, 'config.json' );
+//		}
+//		config_promise = cli.configObject.loadFilePath( config_filepath );
+//		config_promise.catch(
+//			( error ) => {
+//				if( error.code === 'ENOENT' ){
+//					//create config
+//				} else{
+//					return_error = new Error(`Error: cli.configObject.loadFilePath threw an error: ${error}`);
+//					throw return_error;
+//				}
+//			}
+//		);
+//	} catch(error){
+//		cli.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `Caught an unhandled error while setting config: ${error}`});
+//	}
 	var quick_exit = false;
 	if( cli.options.version === true ){
 		console.log(cli.packageMeta.version);
@@ -122,72 +136,94 @@ CLI.run = function( options = {} ){
 		quick_exit = true;
 	}
 	if( quick_exit === false || cli.options['no-quick-exit'] === true ){
-		FunctionFactory.load( cli.options ).then(
-			( functionFactory ) => {
+		run_promise = FunctionFactory.load( cli.options ).then(
+			async ( functionFactory ) => {
+				//cli.input().then( functionFactory.transform ).then( cli.output );
+				//Receive Input
+				if( cli.options.stdin === true ){
+					cli.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'Reading input from STDIN.'});
+					input_string_promise = GetStream( process.stdin, 'utf8' ).catch(
+						( error ) => {
+							return_error = new Error(`GetStream threw an error: ${error}`);
+							cli.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});
+						}
+					);
+				} else if( cli.options.input != null ){
+					cli.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'Reading input from a file.'});
+					if( typeof(cli.options.input) === 'string' ){
+						cli.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `cli.options.input: '${cli.options.input}'`});
+						input_string_promise = FSNS.promises.readFile( cli.options.input, 'utf8' ).catch(
+							( error ) => {
+								return_error = new Error(`FSNS.promises.readFile threw an error: ${error}`);
+								cli.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});
+							}
+						);
+					} else{
+						return_error = new Error('"cli.options.input" is not a string.');
+						cli.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});
+					}
+				} else if( cli.options.edit != null ){
+					input_string_promise = getInputStringFromInquirerEditor( cli.options ).catch(
+						( error ) => {
+							return_error = new Error(`getInputStringFromInquirerEditor threw an error: ${error}`);
+							throw return_error;
+						}
+					);
+				} else{
+					return_error = new Error('No input options specified.');
+					cli.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});
+				}
+				//Transform
+				output_string = functionFactory.transform( await input_string_promise, cli.options );
+				//Send Output
+				if( cli.options.output != null && typeof(output_string) === 'string' ){
+					output_promise = FSNS.promises.writeFile( cli.options.output, output_string, 'utf8' ).catch(
+						( error ) => {
+							return_error = new Error(`FSNS.promises.writeFile threw an error: ${error}`);
+							cli.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});
+						}
+					);
+				} else if( cli.options.pasteboard === true ){
+					output_promise = Clipboardy.write( output_string ).catch(
+						( error ) => {
+							return_error = new Error(`Clipboardy.write threw an error: '${error}' when trying to write '${output_string}'`);
+						}
+					);
+				} else{
+					if( cli.options.stdout !== true ){
+						cli.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'warn', message: 'No output options specified; defaulting to STDOUT.'});
+					}
+					
+					try{
+						console.log(output_string);
+						output_promise = Promise.resolve();
+					} catch(error){
+						return_error = new Error(`console.log threw an error: ${error}`);
+						throw return_error;
+					}
+				}
+				return Promise.resolve();
+			},
+			( error ) => {
+				return_error = new Error(`FunctionFactory threw an error: ${error}`);
+				throw return_error;
 			}
 		);
-		//Receive Input
-		if( cli.options.stdin === true ){
-			Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'Reading input from STDIN.'});
-			input_string_promise = GetStream( process.stdin, 'utf8' ).catch(
-				( error ) => {
-					return_error = new Error(`GetStream threw an error: ${error}`);
-					Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});
-				}
-			);
-		} else if( cli.options.input != null ){
-			Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: 'Reading input from a file.'});
-			if( typeof(cli.options.input) === 'string' ){
-				Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `cli.options.input: '${cli.options.input}'`});
-				input_string_promise = FSNS.promises.readFile( cli.options.input, 'utf8' ).catch(
-					( error ) => {
-						return_error = new Error(`FSNS.promises.readFile threw an error: ${error}`);
-						Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});
-					}
-				);
-			} else{
-				return_error = new Error('"cli.options.input" is not a string.');
-				Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});
-			}
-		} else if( cli.options.edit != null ){
-			input_string_promise = getInputStringFromInquirerEditor( cli.options ).catch(
-				( error ) => {
-					return_error = new Error(`getInputStringFromInquirerEditor threw an error: ${error}`);
-					throw return_error;
-				}
-			);
-		} else{
-			return_error = new Error('No input options specified.');
-			Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});
-		}
-		//Transform
-		output_string = functionFactory.transform( await input_string_promise, cli.options );
-		//Send Output
-		if( cli.options.output != null && typeof(output_string) === 'string' ){
-			output_promise = FSNS.promises.writeFile( cli.options.output, output_string, 'utf8' ).catch(
-				( error ) => {
-					return_error = new Error(`FSNS.promises.writeFile threw an error: ${error}`);
-					Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});
-				}
-			);
-		} else if( cli.options.pasteboard === true ){
-			output_promise = Clipboardy.write( output_string ).catch(
-				( error ) => {
-					return_error = new Error(`Clipboardy.write threw an error: '${error}' when trying to write '${output_string}'`);
-				}
-			);
-		} else{
-			if( cli.options.stdout !== true ){
-				Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'warn', message: 'No output options specified; defaulting to STDOUT.'});
-			}
-			console.log(output_string);
-		}
 	}
+	run_promise.then(
+		() => {
+			process.exitCode = 0;
+		},
+		( error ) => {
+			process.exitCode = -1;
+			throw error;
+		}
+	);
 }
 
 
 //Global Constants
-Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});
+//Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'Start of execution block.'});
 //Options
 //Config
 /**
@@ -220,7 +256,7 @@ function getInputStringFromInquirerEditor( options = {} ){
 	var _return;
 	var return_error;
 	const FUNCTION_NAME = 'getInputStringFromInquirerEditor';
-	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
+	//Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
 	//Variables
 	var template_generic_name = '';
 	var default_input_string = '';
@@ -242,7 +278,7 @@ function getInputStringFromInquirerEditor( options = {} ){
 	try{
 		default_input_string = getDefaultInputStringFromGenericName( template_generic_name, options );
 	} catch(error){
-		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'warn', message: `getDefaultInputStringFromGenericName threw an error: ${error}`});
+		//Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'warn', message: `getDefaultInputStringFromGenericName threw an error: ${error}`});
 		default_input_string = '';
 	}
 	inquirer_questions = [
@@ -262,19 +298,8 @@ function getInputStringFromInquirerEditor( options = {} ){
 			throw return_error;
 		}
 	);
-
-//		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `inquirer_answer: ${inquirer_answer}`});
-//	if( inquirer_answer.editor_input != '' && typeof(inquirer_answer.editor_input) === 'string' ){
-//		_return = inquirer_answer.editor_input;
-//	} else{
-//		return_error = new TypeError(`'inquirer_answer.editor_input' is either null or not a string. 'editor_input': ${inquirer_answer.editor_input} 'inquirer_answer': ${inquirer_answer}`);
-//		return_error.code = 'ERR_INVALID_RETURN_VALUE';
-//		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error});
-//		throw return_error;
-//	}
-
 	//Return
-	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
+	//Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
 	return _return;
 }
 
@@ -292,7 +317,7 @@ Status:
 | --- | --- |
 | 0.0.1 | Introduced |
 */
-/* istanbul ignore next */
+/* istanbul ignore next 
 async function main_Async( options = {} ){
 	var arguments_array = Array.from(arguments);
 	var return_error = null;
@@ -395,7 +420,7 @@ async function main_Async( options = {} ){
 			} catch(error){
 				return_error = new Error(`ParseJSON threw an error: ${error}`);
 				Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error});
-			}*/
+			}*
 			try{
 				input_context_object = HJSON.parse(input_string);
 			} catch(error){
@@ -458,48 +483,7 @@ async function main_Async( options = {} ){
 		process.exitCode = 1;
 		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'crit', message: return_error.message});
 	}
-}
-
-//#Exports and Execution
-var _return = [1,null];
-const FUNCTION_NAME = 'MainExecutionFunction';
-//##Dependencies
-	//###Internal
-	//###Standard
-	const Path = require('path');
-	//###External
-//Constants
-
-//Variables
-var function_return = [1,null];
-var logger = null;
-var return_error = null;
-var quick_exit = false;
-var config_filepath = '';
-var source_dirname = '';
-var parent_dirname = '';
-var package_path = '';
+}*/
 //Logger
 /* istanbul ignore next */
-if( Options.verbose === true ){
-	Logger.real_transports.console_stderr.level = 'debug';
-	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'note', message: `Logger: console_stderr transport log level set to: ${Logger.real_transports.console_stderr.level}`});
-}
-///Load package.json
-try{
-	source_dirname = Path.dirname( module.filename );
-	package_path = Path.join( source_dirname, 'package.json' );
-	PACKAGE_JSON = require(package_path);
-} catch(error)/*istanbul ignore next*/{
-	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `Soft error: ${error}`});
-	try{
-		parent_dirname = Path.dirname( source_dirname );
-		package_path = Path.join( parent_dirname, 'package.json' );
-		PACKAGE_JSON = require(package_path);
-	} catch(error){
-		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `Soft error: ${error}`});
-	}
-}
-//Main
-/* istanbul ignore next */
-Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: 'End of execution block.'});
+CLI.run();
