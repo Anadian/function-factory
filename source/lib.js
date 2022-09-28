@@ -8,21 +8,24 @@
 	import * as HandleBars from 'handlebars';
 	import * as HJSON from 'hjson';
 
-var Logger = ApplicationLogWinstonInterface.nullLogger;
+//var Logger = ApplicationLogWinstonInterface.nullLogger;
 
 function FunctionFactory( options ){
 	if( !( this instanceof FunctionFactory ) ){
 		return ( new FunctionFactory( options ) );
 	}
 	this.logger = ( this.logger || options.logger ) ?? ( ApplicationLogWinstonInterface.nullLogger );
+	this.config = ( this.config || options.config ) ?? ( {} );
 	this.templateCache = ( this.templateCache || options.templateCache ) ?? ( {} );
+	this.helperPaths = ( this.helperPaths || options.helperPaths ) ?? ( [] );
+	this.partialPaths = ( this.partialPaths || options.partialPaths ) ?? ( [] );
 	return this;
 }
 FunctionFactory.load = function( options = {} ){
 	const FUNCTION_NAME = 'FunctionFactory.load';
 	var functionFactory = new FunctionFactory( options );
 	//Load and register helpers
-	for( const path of this.helperPaths ){
+	for( const path of functionFactory.helperPaths ){
 		import( path ).then(
 			( helperModule ) => {
 				try{
@@ -39,7 +42,7 @@ FunctionFactory.load = function( options = {} ){
 		);
 	}
 	//Load and register partials
-	for( const path of this.partialPaths ){
+	for( const path of functionFactory.partialPaths ){
 		FSNS.promises.readFile( path, 'utf8' ).then(
 			( file_string ) => {
 				var name = '';
@@ -68,7 +71,8 @@ FunctionFactory.load = function( options = {} ){
 		//Load template
 	//Perform transform
 	//Return output string
-	return Promise.resolve( functionFactory );
+	//return new Promise( Promise.resolve( functionFactory ) );
+	return Promise.resolve();
 }
 
 FunctionFactory.prototype.transform = function( input_string, options = {} ){
@@ -84,7 +88,7 @@ FunctionFactory.prototype.transform = function( input_string, options = {} ){
 		return_error = new Error(`HJSON.parse threw an error: ${error}`);
 	}
 	try{
-		template_function = getTemplateFunctionFromInputContextObject( input_context_object, options );
+		template_function = this.getTemplateFunctionFromInputContextObject( input_context_object, options );
 	} catch(error){
 		return_error = new Error(`getTemplateFunctionFromInputContextObject threw an error: ${error}`);
 	}
@@ -131,12 +135,12 @@ Status:
 | --- | --- |
 | 1.9.0 | Introduced |
 */
-function getNameLiteralFromGenericName( input_string, extension_string = '', options = {} ){
+FunctionFactory.prototype.getNameLiteralFromGenericName = function( input_string, extension_string = '', options = {} ){
 	var arguments_array = Array.from(arguments);
 	var _return;
 	var return_error;
 	const FUNCTION_NAME = 'getNameLiteralFromGenericName';
-	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
+	this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
 	//Variables
 	var new_name = '';
 	var name_parts_array = [];
@@ -168,12 +172,12 @@ function getNameLiteralFromGenericName( input_string, extension_string = '', opt
 		}
 		_return = properly_seperated_name;
 	} catch(error)/* istanbul ignore next */{
-		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `Caught an unhandled error: ${error}`});
+		this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `Caught an unhandled error: ${error}`});
 		throw error;
 	}
 
 	//Return
-	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
+	this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
 	return _return;
 }
 
@@ -203,12 +207,12 @@ Status:
 | 5.0.0 | Massive rebuild |
 | 1.9.0 | Introduced |
 */
-function getTemplateFunctionFromFilePath( file_path, options = {} ){
+FunctionFactory.prototype.getTemplateFunctionFromFilePath = function( file_path, options = {} ){
 	var arguments_array = Array.from(arguments);
 	var _return = null;
 	var return_error;
 	const FUNCTION_NAME = 'getTemplateFunctionFromFilePath';
-	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
+	this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
 	//Variables
 	var template_function = null;
 	//Parametre checks
@@ -235,12 +239,12 @@ function getTemplateFunctionFromFilePath( file_path, options = {} ){
 		}
 	);
 	//Return
-	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
+	this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
 	return _return;
 }
 /**
 ### getTemplateFunctionFromNameLiteral (private)
-> Returns the template function from the given name literal string or `null` if none are found.
+> Returns the template FunctionFactory.prototype.from = function the given name literal string or `null` if none are found.
 
 Parametres:
 | name | type | description |
@@ -251,7 +255,7 @@ Parametres:
 Returns:
 | type | description |
 | --- | --- |
-| {?Function} | The found template function or `null` otherwise. |
+| {?Function} | The found template FunctionFactory.prototype.or = function `null` otherwise. |
 
 Throws:
 | code | type | condition |
@@ -263,12 +267,12 @@ Status:
 | --- | --- |
 | 1.9.0 | Introduced |
 */
-function getTemplateFunctionFromNameLiteral( name_literal_string, options = {} ){
+FunctionFactory.prototype.getTemplateFunctionFromNameLiteral = function( name_literal_string, options = {} ){
 	var arguments_array = Array.from(arguments);
 	var _return;
 	var return_error;
 	const FUNCTION_NAME = 'getTemplateFunctionFromNameLiteral';
-	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
+	this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
 	//Variables
 	var template_function = null;
 	var potential_path = '';
@@ -282,7 +286,7 @@ function getTemplateFunctionFromNameLiteral( name_literal_string, options = {} )
 
 	//Function
 	try{
-		template_function = getTemplateFunctionFromFilePath( name_literal_string, options );
+		template_function = this.getTemplateFunctionFromFilePath( name_literal_string, options );
 	} catch(error){
 		return_error = new Error(`getTemplateFunctionFromFilePath threw an error: ${error}`);
 		throw return_error;
@@ -290,22 +294,22 @@ function getTemplateFunctionFromNameLiteral( name_literal_string, options = {} )
 	if( template_function != null && typeof(template_function) === 'string' ){
 		_return = template_function;
 	} else{
-		for( var i = 0; i < ConfigObject.template_directories.length; i++ ){
+		for( var i = 0; i < this.config.template_directories.length; i++ ){
 			try{
-				potential_path = PathNS.join( ConfigObject.template_directories[i], name_literal_string );
+				potential_path = PathNS.join( this.config.template_directories[i], name_literal_string );
 			} catch(error){
-				Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `For loop index: ${i}: PathNS.join threw an error: ${error}`});
+				this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `For loop index: ${i}: PathNS.join threw an error: ${error}`});
 			}
 			if( potential_path != '' && typeof(potential_path) === 'string' ){
 				try{
-					template_function = getTemplateFunctionFromFilePath( potential_path, options );
+					template_function = this.getTemplateFunctionFromFilePath( potential_path, options );
 				} catch(error){
-					Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `For loop index: ${i}: getTemplateFunctionFromFilePath threw an error: ${error}`});
+					this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `For loop index: ${i}: getTemplateFunctionFromFilePath threw an error: ${error}`});
 				}
 			}
 			if( template_function != null && typeof(template_function) === 'function' ){
 				success = true;
-				i = ConfigObject.template_directories.length;
+				i = this.config.template_directories.length;
 			}
 		}
 		if( success === true ){
@@ -316,13 +320,13 @@ function getTemplateFunctionFromNameLiteral( name_literal_string, options = {} )
 	}
 
 	//Return
-	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
+	this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
 	return _return;
 }
 
 /**
 ### getTemplateFunctionfromGenericName
-> Returns the template function matching the given generic name or `null` if none are found.
+> Returns the template FunctionFactory.prototype.matching = function the given generic name or `null` if none are found.
 
 Parametres:
 | name | type | description |
@@ -333,7 +337,7 @@ Parametres:
 Returns:
 | type | description |
 | --- | --- |
-| {?Function} | The template function if found or `null` otherwise. |
+| {?Function} | The template FunctionFactory.prototype.if = function found or `null` otherwise. |
 
 Throws:
 | code | type | condition |
@@ -346,12 +350,12 @@ Status:
 | 1.9.0 | Introduced |
 */
 /* istanbul ignore next */
-function getTemplateFunctionFromGenericName( generic_name_string, options = {} ){
+FunctionFactory.prototype.getTemplateFunctionFromGenericName = function( generic_name_string, options = {} ){
 	var arguments_array = Array.from(arguments);
 	var _return;
 	var return_error;
 	const FUNCTION_NAME = 'getTemplateFunctionfromGenericName';
-	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
+	this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
 	//Variables
 	var name_literal = '';
 	var template_function = null;
@@ -364,14 +368,14 @@ function getTemplateFunctionFromGenericName( generic_name_string, options = {} )
 
 	//Function
 	try{
-		name_literal = getNameLiteralFromGenericName( generic_name_string, '.hbs', options );
+		name_literal = this.getNameLiteralFromGenericName( generic_name_string, '.hbs', options );
 	} catch(error){
 		return_error = new Error(`getNameLiteralFromGenericName threw an error: ${error}`);
 		throw return_error;
 	}
 	if( name_literal != '' && typeof(name_literal) === 'string' ){
 		try{
-			template_function = getTemplateFunctionFromNameLiteral( name_literal, options );
+			template_function = this.getTemplateFunctionFromNameLiteral( name_literal, options );
 		} catch(error){
 			return_error = new Error(`getTemplateFunctionFromNameLiteral threw an error: ${error}`);
 			throw return_error;
@@ -384,44 +388,43 @@ function getTemplateFunctionFromGenericName( generic_name_string, options = {} )
 	}
 
 	//Return
-	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
+	this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
 	return _return;
 }
 
 /**
 ### getTemplateFunctionFromInputContextObject
-> Returns the template function derived from either the given input context object or the run-time options object.
+> Returns the template FunctionFactory.prototype.derived = function from either the given input context object or the run-time options object.
 
 Parametres:
 | name | type | description |
 | --- | --- | --- |
 | input_context_object | {Object} | The input context object.  |
-| options | {?Object} | Additional run-time options. If a property `template-override` is specified, its value will be used to lookup the template function instead of the input context object. \[default: {}\] |
+| options | {?Object} | Additional run-time options. If a property `template-override` is specified, its value will be used to lookup the template FunctionFactory.prototype.instead = function of the input context object. \[default: {}\] |
 
 Returns:
 | type | description |
 | --- | --- |
-| {?Function} | The template function if found, or `null` otherwise. |
+| {?Function} | The template FunctionFactory.prototype.if = function found, or `null` otherwise. |
 
 Throws:
 | code | type | condition |
 | --- | --- | --- |
 | 'ERR_INVALID_ARG_TYPE' | {TypeError} | Thrown if a given argument isn't of the correct type. |
 | 'ERR_INVALID_ARG_VALUE' | {Error} | Thrown if no options or properties in the given objects specify a template to lookup. |
-| 'ERR_INVALID_RETURN_VALUE' | {Error} | Thrown if this function receives an invalid return value from `getTemplateFunctionFromGenericName` or `getTemplateFunctionFromFilePath`. |
+| 'ERR_INVALID_RETURN_VALUE' | {Error} | Thrown if this FunctionFactory.prototype.receives = function an invalid return value from `getTemplateFunctionFromGenericName` or `getTemplateFunctionFromFilePath`. |
 
 Status:
 | version | change |
 | --- | --- |
 | 1.9.0 | Introduced |
 */
-/* istanbul ignore next */
-function getTemplateFunctionFromInputContextObject( input_context_object, options = {} ){
+FunctionFactory.prototype.getTemplateFunctionFromInputContextObject = function( input_context_object, options = {} ){
 	var arguments_array = Array.from(arguments);
 	var _return;
 	var return_error;
 	const FUNCTION_NAME = 'getTemplateFunctionFromInputContextObject';
-	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
+	this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
 	//Variables
 	var template_generic_name = '';
 	var template_file_path = '';
@@ -435,33 +438,33 @@ function getTemplateFunctionFromInputContextObject( input_context_object, option
 	//Function
 	if( options['template-override'] != null && typeof(options['template-override']) === 'string' ){
 		template_generic_name = options['template-override'];
-		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: `Using template generic name from 'template-override' option: ${template_generic_name}`});
+		this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: `Using template generic name from 'template-override' option: ${template_generic_name}`});
 	} else if( options['edit'] != null && typeof(options['edit']) === 'string' ){
 		template_generic_name = options.edit;
-		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: `Using template generic name from 'edit' option: ${template_generic_name}`});
+		this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: `Using template generic name from 'edit' option: ${template_generic_name}`});
 	} else if( input_context_object.template != null && typeof(input_context_object.template) === 'string' ){
 		template_generic_name = input_context_object.template;
-		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: `Using template generic name from 'template' property in the input context object: ${template_generic_name}`});
+		this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'info', message: `Using template generic name from 'template' property in the input context object: ${template_generic_name}`});
 	} else if( input_context_object.templatename != null && typeof(input_context_object.templatename) === 'string' ){
 		template_file_path = input_context_object.templatename;
-		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'warn', message: `Using template file path literal from the 'templatename' property in the input context object: '${template_file_path}' This property is deprecated and it's recommended you use the 'template' generic name property instead.`});
+		this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'warn', message: `Using template file path literal from the 'templatename' property in the input context object: '${template_file_path}' This property is deprecated and it's recommended you use the 'template' generic name property instead.`});
 	} else{
 		return_error = new Error(`No template-specifying options were found in the run-time options and no template-specifying properties were found in the input_context object. input_context_object: ${input_context_object} options: ${options}`);
-		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error});
+		this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error});
 		return_error.code = 'ERR_INVALID_ARG_VALUE';
 		throw return_error;
 	}
 	if( template_file_path != '' && typeof(template_file_path) === 'string' ){
 		try{
-			template_function = getTemplateFunctionFromFilePath( template_file_path, options );
+			template_function = this.getTemplateFunctionFromFilePath( template_file_path, options );
 		} catch(error){
 			return_error = new Error(`getTemplateFunctionFromFilePath threw an error: ${error}`);
 			throw return_error;
 		}
 	} else if( template_generic_name != '' && typeof(template_generic_name) === 'string' ){
 		try{
-			Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `Calling getTemplateFunctionFromGenericName with ${template_generic_name}`});
-			template_function = getTemplateFunctionFromGenericName( template_generic_name, options );
+			this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `Calling getTemplateFunctionFromGenericName with ${template_generic_name}`});
+			template_function = this.getTemplateFunctionFromGenericName( template_generic_name, options );
 		} catch(error){
 			return_error = new Error(`getTemplateFunctionFromGenericName threw an error: ${error}`);
 			throw return_error;
@@ -473,17 +476,17 @@ function getTemplateFunctionFromInputContextObject( input_context_object, option
 	if( template_function != null && typeof(template_function) === 'function' ){
 		_return = template_function;
 	} else if( template_function === null ){
-		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'warn', message: `No template function was found for the lookup string. template_generic_name: ${template_generic_name} template_file_path: ${template_file_path}`});
+		this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'warn', message: `No template FunctionFactory.prototype.was = function found for the lookup string. template_generic_name: ${template_generic_name} template_file_path: ${template_file_path}`});
 		_return = null;
 	} else{
-		return_error = new Error(`Received an unexpected non-function return value: ${template_function}`);
-		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error});
+		return_error = new Error(`Received an unexpected non-FunctionFactory.prototype.return = function value: ${template_function}`);
+		this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error});
 		return_error.code = 'ERR_INVALID_RETURN_VALUE';
 		throw return_error;
 	}
 
 	//Return
-	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
+	this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
 	return _return;
 }
 
@@ -514,12 +517,12 @@ Status:
 | 1.9.0 | Introduced |
 */
 /* istanbul ignore next */
-function getDefaultInputStringFromFilePath( file_path, options = {} ){
+FunctionFactory.prototype.getDefaultInputStringFromFilePath = function( file_path, options = {} ){
 	var arguments_array = Array.from(arguments);
 	var _return;
 	var return_error;
 	const FUNCTION_NAME = 'getDefaultInputStringFromFilePath';
-	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
+	this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
 	//Variables
 	var default_input_object = {};
 	var json_string = '';
@@ -539,7 +542,7 @@ function getDefaultInputStringFromFilePath( file_path, options = {} ){
 					json_string = JSON.stringify( default_input_object, null, '\t' );
 				} catch(error){
 					return_error = new Error(`JSON.stringify threw an error: ${error}`);
-					Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `JSON.stringify threw: ${error}`});
+					this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `JSON.stringify threw: ${error}`});
 					throw error;
 				}
 				return json_string;
@@ -554,7 +557,7 @@ function getDefaultInputStringFromFilePath( file_path, options = {} ){
 		}
 	);
 	//Return
-	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
+	this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
 	return _return;
 }
 
@@ -584,12 +587,12 @@ Status:
 | 1.9.0 | Introduced |
 */
 /* istanbul ignore next */
-function getDefaultInputStringFromNameLiteral( name_literal, options = {} ){
+FunctionFactory.prototype.getDefaultInputStringFromNameLiteral = function( name_literal, options = {} ){
 	var arguments_array = Array.from(arguments);
 	var _return;
 	var return_error;
 	const FUNCTION_NAME = 'getDefaultInputStringFromNameLiteral';
-	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
+	this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
 	//Variables
 	var default_input_string = '';
 	var potential_path = '';
@@ -602,40 +605,40 @@ function getDefaultInputStringFromNameLiteral( name_literal, options = {} ){
 
 	//Function
 	try{
-		default_input_string = getDefaultInputStringFromFilePath( name_literal, options );
+		default_input_string = this.getDefaultInputStringFromFilePath( name_literal, options );
 	} catch(error){
-		Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `getDefaultInputStringFromFilePath threw an error: ${error}`});
+		this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `getDefaultInputStringFromFilePath threw an error: ${error}`});
 		default_input_string = null;
 	}
 	if( default_input_string != '' && typeof(default_input_string) === 'string' ){
 		_return = default_input_string;
 	} else{
-		for( var i = 0; i < ConfigObject.defaults_directories.length; i++ ){
+		for( var i = 0; i < this.config.defaults_directories.length; i++ ){
 			try{
-				potential_path = PathNS.join( ConfigObject.defaults_directories[i], name_literal );
+				potential_path = PathNS.join( this.config.defaults_directories[i], name_literal );
 			} catch(error){
-				Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `For loop index: ${i}: PathNS.join threw an error: ${error} PathNS.join received: ${ConfigObject.defaults_directories[i]}, ${name_literal}`});
+				this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `For loop index: ${i}: PathNS.join threw an error: ${error} PathNS.join received: ${this.config.defaults_directories[i]}, ${name_literal}`});
 				throw error;
 			}
 			try{
-				default_input_string = getDefaultInputStringFromFilePath( potential_path, options );
+				default_input_string = this.getDefaultInputStringFromFilePath( potential_path, options );
 			} catch(error){
-				Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `For loop index: ${i} getDefaultInputStringFromFilePath threw an error: ${error} getDefaultInputStringFromFilePath received: ${potential_path}, ${options}`});
+				this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `For loop index: ${i} getDefaultInputStringFromFilePath threw an error: ${error} getDefaultInputStringFromFilePath received: ${potential_path}, ${options}`});
 				default_input_string = null;
 			}
 			if( default_input_string != '' && typeof(default_input_string) === 'string' ){
-				i = ConfigObject.defaults_directories.length;
+				i = this.config.defaults_directories.length;
 				_return = default_input_string;
 			} 
 		}
 		if( default_input_string === null ){
-			Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'warn', message: `No default input file could be found for name literal: ${name_literal}`});
+			this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'warn', message: `No default input file could be found for name literal: ${name_literal}`});
 			_return = null;
 		}
 	}
 
 	//Return
-	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
+	this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
 	return _return;
 }
 
@@ -664,12 +667,12 @@ Status:
 | --- | --- |
 | 1.9.0 | Introduced |
 */
-function getDefaultInputStringFromGenericName( template_generic_name, options = {} ){
+FunctionFactory.prototype.getDefaultInputStringFromGenericName = function( template_generic_name, options = {} ){
 	var arguments_array = Array.from(arguments);
 	var _return;
 	var return_error;
 	const FUNCTION_NAME = 'getDefaultInputStringFromGenericName';
-	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
+	this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
 	//Variables
 	var properly_seperated_name = '';
 	var default_input_string = '';
@@ -682,13 +685,13 @@ function getDefaultInputStringFromGenericName( template_generic_name, options = 
 
 	//Function
 	try{
-		properly_seperated_name = getNameLiteralFromGenericName( template_generic_name, '.json', options );
+		properly_seperated_name = this.getNameLiteralFromGenericName( template_generic_name, '.json', options );
 	} catch(error){
 		return_error = new Error(`getNameLiteralFromGenericName threw an error: ${error}`);
 		throw return_error;
 	}
 	try{
-		default_input_string = getDefaultInputStringFromNameLiteral( properly_seperated_name, options );
+		default_input_string = this.getDefaultInputStringFromNameLiteral( properly_seperated_name, options );
 		_return = default_input_string;
 	} catch(error){
 		return_error = new Error(`getDefaultInputStringFromNameLiteral threw an error: ${error}`);
@@ -696,7 +699,7 @@ function getDefaultInputStringFromGenericName( template_generic_name, options = 
 	}
 
 	//Return
-	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
+	this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
 	return _return;
 }
 

@@ -9,9 +9,9 @@
 	//External
 	import getPackageMeta from 'simple-package-meta';
 	import * as ApplicationLogWinstonInterface from 'application-log-winston-interface';
-	import * as Inquirer from 'inquirer';
+	import Inquirer from 'inquirer';
 	import * as GetStream from 'get-stream';
-	import * as Clipboardy from 'clipboardy';
+	import Clipboardy from 'clipboardy';
 	import CommandLineArgs from 'command-line-args';
 	import CommandLineUsage from 'command-line-usage';
 
@@ -66,7 +66,7 @@ CLI.run = async function( options = {} ){
 	var packageMeta = getPackageMeta( import.meta );
 	cli.packageMeta = await packageMeta;
 	var mkDir_promise = FSNS.promises.mkdir( cli.packageMeta.paths.log, { recursive: true } );
-	mkDir_promise.then(
+	await mkDir_promise.then(
 		() => {
 			try{
 				cli.logger = ApplicationLogWinstonInterface.initWinstonLogger( 'debug.log', cli.packageMeta.paths.log );
@@ -82,8 +82,8 @@ CLI.run = async function( options = {} ){
 	);
 	cli.options = CommandLineArgs( cli.OptionDefinitions );
 	if( cli.options.verbose === true ){
-		cli.logger.real_transports.console_stderr.level = 'debug';
-		cli.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'note', message: `Logger: console_stderr transport log level set to: ${cli.logger.real_transports.console_stderr.level}`});
+		cli.logger.setConsoleLogLevel('debug');
+		cli.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'note', message: `Logger: console_stderr transport log level set to: ${cli.logger?.real_transports?.console_stderr?.level}`});
 	}
 //	var config_promise = null;
 //	try{
@@ -136,8 +136,9 @@ CLI.run = async function( options = {} ){
 		quick_exit = true;
 	}
 	if( quick_exit === false || cli.options['no-quick-exit'] === true ){
-		run_promise = FunctionFactory.load( cli.options ).then(
+		run_promise = FunctionFactory.load( { logger: cli.logger, ...cli.options } ).then(
 			async ( functionFactory ) => {
+				cli.functionFactory = functionFactory;
 				//cli.input().then( functionFactory.transform ).then( cli.output );
 				//Receive Input
 				if( cli.options.stdin === true ){
@@ -163,7 +164,11 @@ CLI.run = async function( options = {} ){
 						cli.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});
 					}
 				} else if( cli.options.edit != null ){
-					input_string_promise = getInputStringFromInquirerEditor( cli.options ).catch(
+					input_string_promise = cli.getInputStringFromInquirerEditor( cli.options ).then(
+						( input_string ) => {
+							cli.logger.log({level: 'debug', message: `input_string: ${input_string}`});
+							return input_string;
+						},
 						( error ) => {
 							return_error = new Error(`getInputStringFromInquirerEditor threw an error: ${error}`);
 							throw return_error;
@@ -202,6 +207,7 @@ CLI.run = async function( options = {} ){
 						throw return_error;
 					}
 				}
+				//return new Promise( () => { return Promise.resolve(); } );
 				return Promise.resolve();
 			},
 			( error ) => {
@@ -209,8 +215,10 @@ CLI.run = async function( options = {} ){
 				throw return_error;
 			}
 		);
+	} else{
+		run_promise = Promise.resolve();
 	}
-	run_promise.then(
+	await run_promise.then(
 		() => {
 			process.exitCode = 0;
 		},
@@ -251,12 +259,12 @@ Status:
 | --- | --- |
 | 1.9.0 | Experimental |
 */
-function getInputStringFromInquirerEditor( options = {} ){
+CLI.prototype.getInputStringFromInquirerEditor = async function( options = {} ){
 	var arguments_array = Array.from(arguments);
 	var _return;
 	var return_error;
 	const FUNCTION_NAME = 'getInputStringFromInquirerEditor';
-	//Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
+	this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
 	//Variables
 	var template_generic_name = '';
 	var default_input_string = '';
@@ -276,9 +284,9 @@ function getInputStringFromInquirerEditor( options = {} ){
 		template_generic_name = options.edit;
 	}
 	try{
-		default_input_string = getDefaultInputStringFromGenericName( template_generic_name, options );
+		default_input_string = this.functionFactory.getDefaultInputStringFromGenericName( template_generic_name, options );
 	} catch(error){
-		//Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'warn', message: `getDefaultInputStringFromGenericName threw an error: ${error}`});
+		this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'warn', message: `getDefaultInputStringFromGenericName threw an error: ${error}`});
 		default_input_string = '';
 	}
 	inquirer_questions = [
@@ -289,8 +297,9 @@ function getInputStringFromInquirerEditor( options = {} ){
 			default: default_input_string
 		}
 	];
-	_return = Inquirer.prompt( inquirer_questions ).then(
+	_return = await Inquirer.prompt( inquirer_questions ).then(
 		( inquirer_answer ) => {
+			this.logger.log({ level: 'debug', message: `Received inquirer_answer: ${inquirer_answer}` });
 			return inquirer_answer.editor_input;
 		},
 		( error ) => {
@@ -299,7 +308,7 @@ function getInputStringFromInquirerEditor( options = {} ){
 		}
 	);
 	//Return
-	//Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
+	this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
 	return _return;
 }
 
