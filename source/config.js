@@ -3,30 +3,57 @@
 import * as PathNS from 'node:path';
 import * as FSNS from 'node:fs';
 
+import * as ApplicationLogWinstonInterface from 'application-log-winston-interface';
 import * as HJSON from 'hjson';
+import * as Utility from 'node:util';
 
-function ConfigObject( options ){
+const FILENAME = 'config.js';
+
+function ConfigObject( options = {} ){
 	if( !( this instanceof ConfigObject ) ){
 		return ( new ConfigObject( options ) );
 	}
-	this.template_directories = ( this.template_directories || options.template_directories ) ?? ( PathNS.join( '.', 'Resources', 'templates' ) );
-	this.defaults_directories = ( this.defaults_directories || options.defaults_directories ) ?? (  PathNSjoin( '.', 'Resources', 'defaults' ) );
-	this.helpers_directories = ( this.helpers_directories || options.helpers_directories ) ?? (  PathNSjoin( '.', 'Resources', 'helpers' ) );
-	this.partials_directories = ( this.partials_directories || options.partials_directories ) ?? (  PathNSjoin( '.', 'Resources', 'partials' ) );
+	const FUNCTION_NAME = 'ConfigObject';
+	this.packageMeta = ( this.packageMeta || options.packageMeta ) ?? ( null );
+	this.logger = ( this.logger || options.logger ) ?? ( ApplicationLogWinstonInterface.nullLogger );
+	this.logger.log({ function: FUNCTION_NAME, level: 'debug', message: `options: ${options.toString()}`});
+	var default_template_directories = [];
+	var default_defaults_directories = [];
+	var basedirs = [
+		PathNS.join( process.cwd(), 'Resources' )
+	];
+	if( this.packageMeta != null ){
+		basedirs.push( PathNS.join( this.packageMeta.paths.packageDirectory, 'Resources' ) );
+		basedirs.push( this.packageMeta.paths.data );
+	}
+	for( const basedir of basedirs ){
+		if( basedir != null ){
+			var path = PathNS.join( basedir, 'templates' );
+			default_template_directories.push(path);
+			path = PathNS.join( basedir, 'defaults' );
+			default_defaults_directories.push(path);
+		}
+	}
+	this.template_directories = ( this.template_directories || options.template_directories ) ?? ( default_template_directories );
+	this.defaults_directories = ( this.defaults_directories || options.defaults_directories ) ?? ( default_defaults_directories );
+	this.logger?.log({ function: FUNCTION_NAME, level: 'debug', message: `template_directories: ${this.template_directories.toString()} defaults_directories: ${this.defaults_directories.toString()}` });
 	return this;
 }
 
 ConfigObject.prototype.loadFilePath = function( filepath_string, options = {} ){
+	const FUNCTION_NAME = 'loadFilePath';
 	var return_error = null;
 	var _return = null;
+	this.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${filepath_string}`});
 	var config_object = {};
-	if( filepath_string != '' && typeof(filepath_string) === typeof('') ){
+	if( filepath_string == '' || typeof(filepath_string) !== 'string' ){
 		return_error = new TypeError('Parametre "filepath_string" is either empty or not a string.');
 		return_error.code = 'ERR_INVALID_ARG_TYPE';
 		throw return_error;
 	}
 	_return = FSNS.promises.readFile( filepath_string, 'utf8' ).then( 
 		( file_string ) => {
+			this.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `file_string: ${file_string}`});
 			try{
 				config_object = HJSON.parse( file_string );
 			} catch(error){
@@ -39,6 +66,7 @@ ConfigObject.prototype.loadFilePath = function( filepath_string, options = {} ){
 				return_error = new Error(`new ConfigObject threw an error: ${error}`);
 				throw return_error;
 			}*/
+			this.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${Utility.inspect(_return)}`});
 			return _return;
 		},
 		( error ) => {
@@ -55,17 +83,21 @@ ConfigObject.prototype.loadFilePath = function( filepath_string, options = {} ){
 ConfigObject.prototype.saveFilePath = function( filepath_string, options = {} ){
 	var return_error = null;
 	var _return = null;
-	if( filepath_string != '' && typeof(filepath_string) === typeof('') ){
+	if( filepath_string == '' && typeof(filepath_string) !== typeof('') ){
 		return_error = new TypeError('Parametre "filepath_string" is either empty or not a string.');
 		return_error.code = 'ERR_INVALID_ARG_TYPE';
 		throw return_error;
 	}
-	var json_string = JSON.stringify( this, null, '\t' );
+	var config_object = {
+		template_directories: this.template_directories,
+		defaults_directories: this.defaults_directories
+	};
+	var json_string = JSON.stringify( config_object, null, '\t' );
 	_return = FSNS.promises.writeFile( filepath_string, json_string, 'utf8' );
 	return _return;
 }
 
-export { ConfigObject };
+export default ConfigObject;
 ///**
 //### loadConfigObjectFromFilePath
 //> Reads the given filepath and sets the global configuration object to the contained JSON value.

@@ -3,19 +3,26 @@
 	//Standard
 	import * as PathNS from 'node:path';
 	import * as FSNS from 'node:fs';
+	import * as Utility from 'node:util';
 	//External
 	import * as ApplicationLogWinstonInterface from 'application-log-winston-interface';
 	import * as HandleBars from 'handlebars';
 	import * as HJSON from 'hjson';
 
 //var Logger = ApplicationLogWinstonInterface.nullLogger;
+const PROCESS_NAME = 'function-factory';
+const MODULE_NAME = 'function-factory-lib';
+const FILENAME = 'lib.js';
 
-function FunctionFactory( options ){
+function FunctionFactory( options = {} ){
 	if( !( this instanceof FunctionFactory ) ){
 		return ( new FunctionFactory( options ) );
 	}
+	const FUNCTION_NAME = 'FunctionFactory';
 	this.logger = ( this.logger || options.logger ) ?? ( ApplicationLogWinstonInterface.nullLogger );
 	this.config = ( this.config || options.config ) ?? ( {} );
+	this.options = ( this.options || options.options ) ?? ( {} );
+	this.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `this.config: ${Utility.inspect(this.config)} this.options: ${this.options}`});
 	this.templateCache = ( this.templateCache || options.templateCache ) ?? ( {} );
 	this.helperPaths = ( this.helperPaths || options.helperPaths ) ?? ( [] );
 	this.partialPaths = ( this.partialPaths || options.partialPaths ) ?? ( [] );
@@ -23,10 +30,14 @@ function FunctionFactory( options ){
 }
 FunctionFactory.load = function( options = {} ){
 	const FUNCTION_NAME = 'FunctionFactory.load';
+	var return_error = null;
+	var _return = null;
 	var functionFactory = new FunctionFactory( options );
+	var promises = [];
+	var promise = null;
 	//Load and register helpers
 	for( const path of functionFactory.helperPaths ){
-		import( path ).then(
+		promise = import( path ).then(
 			( helperModule ) => {
 				try{
 					HandleBars.registerHelper( helperModule.helperName, helperModule.helperFunction );
@@ -40,10 +51,11 @@ FunctionFactory.load = function( options = {} ){
 				throw return_error;
 			}
 		);
+		promises.push(promise);
 	}
 	//Load and register partials
 	for( const path of functionFactory.partialPaths ){
-		FSNS.promises.readFile( path, 'utf8' ).then(
+		promise = FSNS.promises.readFile( path, 'utf8' ).then(
 			( file_string ) => {
 				var name = '';
 				try{
@@ -64,6 +76,7 @@ FunctionFactory.load = function( options = {} ){
 				throw return_error;
 			}
 		);
+		promises.push(promise);
 	}
 	//Load PostREs
 	//for( const postre of this.postREs );
@@ -71,11 +84,23 @@ FunctionFactory.load = function( options = {} ){
 		//Load template
 	//Perform transform
 	//Return output string
+	_return = Promise.all( promises ).then(
+		() => {
+			return functionFactory;
+		},
+		( error ) => {
+			return_error = new Error(`A promise threw an error: ${error}`);
+			throw return_error;
+		}
+	);
 	//return new Promise( Promise.resolve( functionFactory ) );
-	return Promise.resolve();
+	return _return;
 }
 
 FunctionFactory.prototype.transform = function( input_string, options = {} ){
+	const FUNCTION_NAME = 'transform';
+	var arguments_array = Array.from(arguments);
+	this.logger.log({function: FUNCTION_NAME, level: 'debug', message: `Received: ${arguments_array.toString()}`});
 	var return_error = null;
 	var _return = null;
 	var input_context_object = {};
@@ -86,11 +111,13 @@ FunctionFactory.prototype.transform = function( input_string, options = {} ){
 		input_context_object = HJSON.parse(input_string);
 	} catch(error){
 		return_error = new Error(`HJSON.parse threw an error: ${error}`);
+		throw return_error;
 	}
 	try{
 		template_function = this.getTemplateFunctionFromInputContextObject( input_context_object, options );
 	} catch(error){
 		return_error = new Error(`getTemplateFunctionFromInputContextObject threw an error: ${error}`);
+		throw return_error;
 	}
 	if( template_function != null && typeof(template_function) === 'function' ){
 		try{
@@ -104,9 +131,11 @@ FunctionFactory.prototype.transform = function( input_string, options = {} ){
 			//Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `output_string: ${output_string}`});
 		} catch(error){
 			return_error = new Error(`template_function threw an error: ${error}`);
+			throw return_error;
 		}
 		_return = output_string;
 	}
+	this.logger.log({function: FUNCTION_NAME, level: 'debug', message: `Returned: ${_return}`});
 	return _return;
 }
 /**
@@ -294,6 +323,7 @@ FunctionFactory.prototype.getTemplateFunctionFromNameLiteral = function( name_li
 	if( template_function != null && typeof(template_function) === 'string' ){
 		_return = template_function;
 	} else{
+		this.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `this.config.template_directories: ${this.config.template_directories}`});
 		for( var i = 0; i < this.config.template_directories.length; i++ ){
 			try{
 				potential_path = PathNS.join( this.config.template_directories[i], name_literal_string );
