@@ -15,6 +15,7 @@
 	import Clipboardy from 'clipboardy';
 	import CommandLineArgs from 'command-line-args';
 	import CommandLineUsage from 'command-line-usage';
+import ConfigManager from './config.js';
 
 const PROCESS_NAME = 'function-factory';
 const MODULE_NAME = 'CLI';
@@ -89,7 +90,29 @@ CLI.run = async function( options = {} ){
 	try{
 		var config_promise = null;
 		var config_filepath = '';
-		var configObject = new ConfigObject( { packageMeta: cli.packageMeta, logger: cli.logger } );
+		var configObject = new ConfigManager( { packageMeta: cli.packageMeta, logger: cli.logger, defaultContructor: function(){
+			var default_template_directories = [];
+			var default_defaults_directories = [];
+			var basedirs = [
+				PathNS.join( process.cwd(), 'Resources' )
+			];
+			if( this.packageMeta != null ){
+				basedirs.push( PathNS.join( this.packageMeta.paths.packageDirectory, 'Resources' ) );
+				basedirs.push( this.packageMeta.paths.data );
+			}
+			for( const basedir of basedirs ){
+				if( basedir != null ){
+					var path = PathNS.join( basedir, 'templates' );
+					default_template_directories.push(path);
+					path = PathNS.join( basedir, 'defaults' );
+					default_defaults_directories.push(path);
+				}
+			}
+			this.configObject.template_directories = ( this.configObject.template_directories || options.configObject.template_directories ) ?? ( default_template_directories );
+			this.configObject.defaults_directories = ( this.configObject.defaults_directories || options.configObject.defaults_directories ) ?? ( default_defaults_directories );
+			this.logger?.log({ function: FUNCTION_NAME, level: 'debug', message: `template_directories: ${this.template_directories.toString()} defaults_directories: ${this.defaults_directories.toString()}` });
+		}
+		} );
 		if( cli.options['config-file'] != null && typeof(cli.options['config-file']) === 'string' ){
 			config_filepath = cli.options['config-file'];
 		} else{
@@ -99,7 +122,7 @@ CLI.run = async function( options = {} ){
 		config_promise.then(
 			( configObject ) => {
 				cli.config = configObject;
-				cli.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `cli.config: ${Utility.inspect(cli.config)}`});
+				cli.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `cli.config: ${cli.config.toString()}`});
 			},
 			async ( error ) => {
 				cli.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `error: ${error}`});
