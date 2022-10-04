@@ -90,45 +90,46 @@ CLI.run = async function( options = {} ){
 	try{
 		var config_promise = null;
 		var config_filepath = '';
-		var configObject = new ConfigManager( { packageMeta: cli.packageMeta, logger: cli.logger, defaultContructor: function(){
-			var default_template_directories = [];
-			var default_defaults_directories = [];
-			var basedirs = [
-				PathNS.join( process.cwd(), 'Resources' )
-			];
-			if( this.packageMeta != null ){
-				basedirs.push( PathNS.join( this.packageMeta.paths.packageDirectory, 'Resources' ) );
-				basedirs.push( this.packageMeta.paths.data );
-			}
-			for( const basedir of basedirs ){
-				if( basedir != null ){
-					var path = PathNS.join( basedir, 'templates' );
-					default_template_directories.push(path);
-					path = PathNS.join( basedir, 'defaults' );
-					default_defaults_directories.push(path);
+		var configManager = new ConfigManager( { packageMeta: cli.packageMeta, logger: cli.logger,
+			defaultContructor: function( options = {} ){
+				var default_template_directories = [];
+				var default_defaults_directories = [];
+				var basedirs = [
+					PathNS.join( process.cwd(), 'Resources' )
+				];
+				if( this.packageMeta != null ){
+					basedirs.push( PathNS.join( this.packageMeta.paths.packageDirectory, 'Resources' ) );
+					basedirs.push( this.packageMeta.paths.data );
 				}
+				for( const basedir of basedirs ){
+					if( basedir != null ){
+						var path = PathNS.join( basedir, 'templates' );
+						default_template_directories.push(path);
+						path = PathNS.join( basedir, 'defaults' );
+						default_defaults_directories.push(path);
+					}
+				}
+				this.configObject.template_directories = ( this.configObject.template_directories || options.template_directories ) ?? ( default_template_directories );
+				this.configObject.defaults_directories = ( this.configObject.defaults_directories || options.defaults_directories ) ?? ( default_defaults_directories );
+				this.logger?.log({ function: FUNCTION_NAME, level: 'debug', message: `template_directories: ${this.configObject.template_directories.toString()} defaults_directories: ${this.configObject.defaults_directories.toString()}` });
 			}
-			this.configObject.template_directories = ( this.configObject.template_directories || options.configObject.template_directories ) ?? ( default_template_directories );
-			this.configObject.defaults_directories = ( this.configObject.defaults_directories || options.configObject.defaults_directories ) ?? ( default_defaults_directories );
-			this.logger?.log({ function: FUNCTION_NAME, level: 'debug', message: `template_directories: ${this.template_directories.toString()} defaults_directories: ${this.defaults_directories.toString()}` });
-		}
 		} );
 		if( cli.options['config-file'] != null && typeof(cli.options['config-file']) === 'string' ){
 			config_filepath = cli.options['config-file'];
 		} else{
 			config_filepath = PathNS.join( cli.packageMeta.paths.config, 'config.json' );
 		}
-		config_promise = configObject.loadFilePath( config_filepath );
+		config_promise = configManager.loadFilePath( config_filepath );
 		config_promise.then(
-			( configObject ) => {
-				cli.config = configObject;
-				cli.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `cli.config: ${cli.config.toString()}`});
+			() => {
+				cli.config = configManager.configObject;
+				//cli.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `cli.config: ${Utility.inspect(cli.config)}`});
 			},
 			async ( error ) => {
 				cli.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `error: ${error}`});
 				if( error.code === 'ENOENT' ){
-					await configObject.saveFilePath( config_filepath );
-					cli.config = configObject;
+					await configManager.saveFilePath( config_filepath );
+					cli.config = configManager.configObject;
 				} else{
 					return_error = new Error(`Error: cli.configObject.loadFilePath threw an error: ${error}`);
 					throw return_error;
@@ -138,7 +139,8 @@ CLI.run = async function( options = {} ){
 	} catch(error){
 		cli.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `Caught an unhandled error while setting config: ${error}`});
 	}
-	cli.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `cli.config: ${cli.config}`});
+	await config_promise;
+	//cli.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `cli.config: ${Utility.inspect(cli.config)}`});
 	var quick_exit = false;
 	if( cli.options.version === true ){
 		console.log(cli.packageMeta.version);

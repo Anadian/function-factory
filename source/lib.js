@@ -263,8 +263,12 @@ FunctionFactory.prototype.getTemplateFunctionFromFilePath = function( file_path,
 			return template_function;
 		},
 		( error ) => {
-			return_error = new Error(`FSNS.promises.readFile threw an error: ${error}`);
-			throw return_error;
+			if( error.code === 'ENOENT' ){
+				throw error;
+			} else{
+				return_error = new Error(`FSNS.promises.readFile threw an error: ${error}`);
+				throw return_error;
+			}
 		}
 	);
 	//Return
@@ -317,36 +321,40 @@ FunctionFactory.prototype.getTemplateFunctionFromNameLiteral = function( name_li
 	try{
 		template_function = this.getTemplateFunctionFromFilePath( name_literal_string, options );
 	} catch(error){
-		return_error = new Error(`getTemplateFunctionFromFilePath threw an error: ${error}`);
-		throw return_error;
-	}
-	if( template_function != null && typeof(template_function) === 'string' ){
-		_return = template_function;
-	} else{
-		this.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `this.config.template_directories: ${this.config.template_directories}`});
-		for( var i = 0; i < this.config.template_directories.length; i++ ){
-			try{
-				potential_path = PathNS.join( this.config.template_directories[i], name_literal_string );
-			} catch(error){
-				this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `For loop index: ${i}: PathNS.join threw an error: ${error}`});
-			}
-			if( potential_path != '' && typeof(potential_path) === 'string' ){
+		if( error.code === 'ENOENT' ){
+			this.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `this.config.template_directories: ${this.config.template_directories}`});
+			for( var i = 0; i < this.config.template_directories.length; i++ ){
 				try{
-					template_function = this.getTemplateFunctionFromFilePath( potential_path, options );
+					potential_path = PathNS.join( this.config.template_directories[i], name_literal_string );
 				} catch(error){
-					this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `For loop index: ${i}: getTemplateFunctionFromFilePath threw an error: ${error}`});
+					this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `For loop index: ${i}: PathNS.join threw an error: ${error}`});
+				}
+				if( potential_path != '' && typeof(potential_path) === 'string' ){
+					try{
+						template_function = this.getTemplateFunctionFromFilePath( potential_path, options );
+					} catch(error){
+						if( error.code === 'ENOENT' ){
+							this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: `For loop index: ${i}: getTemplateFunctionFromFilePath threw an error: ${error}`});
+						} else{
+							return_error = new Error(`this.getTemplateFunctionFromFilePath threw an error: ${error}`);
+							throw return_error;
+						}
+					}
+				}
+				if( template_function != null && typeof(template_function) === 'function' ){
+					success = true;
+					i = this.config.template_directories.length;
 				}
 			}
-			if( template_function != null && typeof(template_function) === 'function' ){
-				success = true;
-				i = this.config.template_directories.length;
-			}
-		}
-		if( success === true ){
-			_return = template_function;
 		} else{
-			_return = null;
+			return_error = new Error(`getTemplateFunctionFromFilePath threw an error: ${error}`);
+			throw return_error;
 		}
+	}
+	if( template_function != null && typeof(template_function) === 'function' ){
+		_return = template_function;
+	} else{
+		_return = null;
 	}
 
 	//Return

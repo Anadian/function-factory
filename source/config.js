@@ -5,7 +5,7 @@ import * as FSNS from 'node:fs';
 
 import * as ApplicationLogWinstonInterface from 'application-log-winston-interface';
 import * as HJSON from 'hjson';
-import * as Utility from 'node:util';
+//import * as Utility from 'node:util';
 
 const FILENAME = 'config.js';
 
@@ -16,33 +16,35 @@ function ConfigManager( options = {} ){
 	const FUNCTION_NAME = 'ConfigManager';
 	this.packageMeta = ( this.packageMeta || options.packageMeta ) ?? ( null );
 	this.logger = ( this.logger || options.logger ) ?? ( ApplicationLogWinstonInterface.nullLogger );
-	this.logger.log({ function: FUNCTION_NAME, level: 'debug', message: `options: ${options.toString()}`});
-	this.defaultConstructor = ( this.defaultConstructor || options.defaultConstructor ) ?? ( () => {} );
+	this.logger?.log({ function: FUNCTION_NAME, level: 'debug', message: `options: ${options.toString()}`});
 	this.configObject = ( this.configObject || options.configObject ) ?? ( {} );
-	var default_template_directories = [];
-	var default_defaults_directories = [];
-	var basedirs = [
-		PathNS.join( process.cwd(), 'Resources' )
-	];
-	if( this.packageMeta != null ){
-		basedirs.push( PathNS.join( this.packageMeta.paths.packageDirectory, 'Resources' ) );
-		basedirs.push( this.packageMeta.paths.data );
-	}
-	for( const basedir of basedirs ){
-		if( basedir != null ){
-			var path = PathNS.join( basedir, 'templates' );
-			default_template_directories.push(path);
-			path = PathNS.join( basedir, 'defaults' );
-			default_defaults_directories.push(path);
+	this.defaultConstructor = ( this.defaultConstructor || options.defaultConstructor ) ?? ( ( options = {} ) => {
+		var default_template_directories = [];
+		var default_defaults_directories = [];
+		var basedirs = [
+			PathNS.join( process.cwd(), 'Resources' )
+		];
+		if( this.packageMeta != null ){
+			basedirs.push( PathNS.join( this.packageMeta.paths.packageDirectory, 'Resources' ) );
+			basedirs.push( this.packageMeta.paths.data );
 		}
-	}
-	this.template_directories = ( this.template_directories || options.template_directories ) ?? ( default_template_directories );
-	this.defaults_directories = ( this.defaults_directories || options.defaults_directories ) ?? ( default_defaults_directories );
-	this.logger?.log({ function: FUNCTION_NAME, level: 'debug', message: `template_directories: ${this.template_directories.toString()} defaults_directories: ${this.defaults_directories.toString()}` });
+		for( const basedir of basedirs ){
+			if( basedir != null ){
+				var path = PathNS.join( basedir, 'templates' );
+				default_template_directories.push(path);
+				path = PathNS.join( basedir, 'defaults' );
+				default_defaults_directories.push(path);
+			}
+		}
+		this.configObject.template_directories = ( this.configObject.template_directories || options.template_directories ) ?? ( default_template_directories );
+		this.configObject.defaults_directories = ( this.configObject.defaults_directories || options.defaults_directories ) ?? ( default_defaults_directories );
+	} );
+	this.defaultConstructor();
+	this.logger?.log({ function: FUNCTION_NAME, level: 'debug', message: `template_directories: ${this.configObject.template_directories.toString()} defaults_directories: ${this.configObject.defaults_directories.toString()}` });
 	return this;
 }
 
-ConfigManager.prototype.toJSON = function( options = {} ){
+/*ConfigManager.prototype.toJSON = function( options = {} ){
 	const FUNCTION_NAME = 'toJSON';
 	var config_object = {
 		template_directories: this.template_directories,
@@ -57,7 +59,7 @@ ConfigManager.prototype.toString = function( options = {} ){
 	var string = JSON.stringify( object );
 	console.log(`${FUNCTION_NAME}: object: ${object} string: ${string}`);
 	return string;
-}
+}*/
 
 ConfigManager.prototype.loadFilePath = function( filepath_string, options = {} ){
 	const FUNCTION_NAME = 'loadFilePath';
