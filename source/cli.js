@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 //Dependencies
 	//Internal
-	import ConfigObject from './config.js';
+	import ConfigManager from './config.js';
 	import FunctionFactory from './lib.js';
 	//Standard
 	import * as PathNS from 'node:path';
@@ -15,7 +15,6 @@
 	import Clipboardy from 'clipboardy';
 	import CommandLineArgs from 'command-line-args';
 	import CommandLineUsage from 'command-line-usage';
-import ConfigManager from './config.js';
 
 const PROCESS_NAME = 'function-factory';
 const MODULE_NAME = 'CLI';
@@ -90,13 +89,14 @@ CLI.run = async function( options = {} ){
 	try{
 		var config_promise = null;
 		var config_filepath = '';
-		var configManager = new ConfigManager( { packageMeta: cli.packageMeta, logger: cli.logger,
+		var configManager = await ConfigManager.prepare( { packageMeta: cli.packageMeta, logger: cli.logger,
 			defaultContructor: function( options = {} ){
 				var default_template_directories = [];
 				var default_defaults_directories = [];
 				var basedirs = [
 					PathNS.join( process.cwd(), 'Resources' )
 				];
+				var helper_path = '';
 				if( this.packageMeta != null ){
 					basedirs.push( PathNS.join( this.packageMeta.paths.packageDirectory, 'Resources' ) );
 					basedirs.push( this.packageMeta.paths.data );
@@ -111,6 +111,22 @@ CLI.run = async function( options = {} ){
 				}
 				this.configObject.template_directories = ( this.configObject.template_directories || options.template_directories ) ?? ( default_template_directories );
 				this.configObject.defaults_directories = ( this.configObject.defaults_directories || options.defaults_directories ) ?? ( default_defaults_directories );
+				this.configObject.helper_paths = ( this.configObject.helper_paths || options.helper_paths ) ?? ( [] );
+				const HELPER_NAMES = [
+					'check-type.mjs',
+					'check-not-type.mjs',
+					'upper-first.mjs',
+					'lower-first.mjs'
+				];
+				for( const helper_name of HELPER_NAMES ){
+					try{
+						helper_path = PathNS.join( basedirs[1], 'helpers', helper_name );
+					} catch(error){
+						return_error = new Error(`PathNS.join threw an error: ${error}`);
+						throw return_error;
+					}
+					this.configObject.helper_paths.push( helper_path );
+				}
 				this.logger?.log({ function: FUNCTION_NAME, level: 'debug', message: `template_directories: ${this.configObject.template_directories.toString()} defaults_directories: ${this.configObject.defaults_directories.toString()}` });
 			}
 		} );
@@ -210,7 +226,7 @@ CLI.run = async function( options = {} ){
 					cli.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error.message});
 				}
 				//Transform
-				output_string = functionFactory.transform( await input_string_promise, cli.options );
+				output_string = await functionFactory.transform( await input_string_promise, cli.options );
 				//Send Output
 				if( cli.options.output != null && typeof(output_string) === 'string' ){
 					output_promise = FSNS.promises.writeFile( cli.options.output, output_string, 'utf8' ).catch(

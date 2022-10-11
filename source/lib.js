@@ -6,7 +6,7 @@
 	import * as Utility from 'node:util';
 	//External
 	import * as ApplicationLogWinstonInterface from 'application-log-winston-interface';
-	import * as HandleBars from 'handlebars';
+	import HandleBars from 'handlebars';
 	import * as HJSON from 'hjson';
 
 //var Logger = ApplicationLogWinstonInterface.nullLogger;
@@ -19,13 +19,12 @@ function FunctionFactory( options = {} ){
 		return ( new FunctionFactory( options ) );
 	}
 	const FUNCTION_NAME = 'FunctionFactory';
+	this.packageMeta = ( this.packageMeta || options.packageMeta ) ?? ( {} );
 	this.logger = ( this.logger || options.logger ) ?? ( ApplicationLogWinstonInterface.nullLogger );
 	this.config = ( this.config || options.config ) ?? ( {} );
 	this.options = ( this.options || options.options ) ?? ( {} );
 	this.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `this.config: ${Utility.inspect(this.config)} this.options: ${this.options}`});
 	this.templateCache = ( this.templateCache || options.templateCache ) ?? ( {} );
-	this.helperPaths = ( this.helperPaths || options.helperPaths ) ?? ( [] );
-	this.partialPaths = ( this.partialPaths || options.partialPaths ) ?? ( [] );
 	return this;
 }
 FunctionFactory.load = function( options = {} ){
@@ -36,7 +35,7 @@ FunctionFactory.load = function( options = {} ){
 	var promises = [];
 	var promise = null;
 	//Load and register helpers
-	for( const path of functionFactory.helperPaths ){
+	for( const path of functionFactory.config?.helper_paths ){
 		promise = import( path ).then(
 			( helperModule ) => {
 				try{
@@ -54,7 +53,7 @@ FunctionFactory.load = function( options = {} ){
 		promises.push(promise);
 	}
 	//Load and register partials
-	for( const path of functionFactory.partialPaths ){
+	for( const path of functionFactory.config?.partial_paths ){
 		promise = FSNS.promises.readFile( path, 'utf8' ).then(
 			( file_string ) => {
 				var name = '';
@@ -242,7 +241,6 @@ FunctionFactory.prototype.getTemplateFunctionFromFilePath = function( file_path,
 	const FUNCTION_NAME = 'getTemplateFunctionFromFilePath';
 	this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
 	//Variables
-	var template_function = null;
 	//Parametre checks
 	if( typeof(file_path) !== 'string' ){
 		return_error = new TypeError('Param "file_path" is not string.');
@@ -253,6 +251,7 @@ FunctionFactory.prototype.getTemplateFunctionFromFilePath = function( file_path,
 	//Function
 	_return = FSNS.promises.readFile( file_path, 'utf8' ).then(
 		( file_string ) => {
+			var template_function = null;
 			try{
 				template_function = HandleBars.compile( file_string );
 			} catch(error){
@@ -307,6 +306,7 @@ FunctionFactory.prototype.getTemplateFunctionFromNameLiteral = function( name_li
 	this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
 	//Variables
 	var potential_path = '';
+	var template_function = null;
 	var success = false;
 	//Parametre checks
 	if( typeof(name_literal_string) !== 'string' ){
@@ -454,6 +454,7 @@ FunctionFactory.prototype.getTemplateFunctionFromInputContextObject = function( 
 	//Variables
 	var template_generic_name = '';
 	var template_file_path = '';
+	var template_promise = null;
 	//Parametre checks
 	if( typeof(input_context_object) !== 'object' ){
 		return_error = new TypeError('Param "input_context_object" is not Object.');
@@ -480,15 +481,15 @@ FunctionFactory.prototype.getTemplateFunctionFromInputContextObject = function( 
 		throw return_error;
 	}
 	if( template_file_path != '' && typeof(template_file_path) === 'string' ){
-		try{
-			template_function = this.getTemplateFunctionFromFilePath( template_file_path, options );
-		} catch(error){
-			return_error = new Error(`getTemplateFunctionFromFilePath threw an error: ${error}`);
-			throw return_error;
-		}
+		template_promise = this.getTemplateFunctionFromFilePath( template_file_path, options ).catch(
+			( error ) => {
+				return_error = new Error(`getTemplateFunctionFromFilePath threw an error: ${error}`);
+				throw return_error;
+			}
+		);
 	} else if( template_generic_name != '' && typeof(template_generic_name) === 'string' ){
 		this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `Calling getTemplateFunctionFromGenericName with ${template_generic_name}`});
-		_return = this.getTemplateFunctionFromGenericName( template_generic_name, options ).catch(
+		template_promise = this.getTemplateFunctionFromGenericName( template_generic_name, options ).catch(
 			( error ) => {
 				return_error = new Error(`getTemplateFunctionFromGenericName threw an error: ${error}`);
 				throw return_error;
@@ -498,9 +499,8 @@ FunctionFactory.prototype.getTemplateFunctionFromInputContextObject = function( 
 		return_error = new Error(`No template file path or generic name to work with.`);
 		throw return_error;
 	}
-	if( template_function != null && typeof(template_function) === 'function' ){
-		_return = template_function;
-	} else if( template_function === null ){
+	_return = template_promise;
+	/*} else if( template_function === null ){
 		this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'warn', message: `No template FunctionFactory.prototype.was = function found for the lookup string. template_generic_name: ${template_generic_name} template_file_path: ${template_file_path}`});
 		_return = null;
 	} else{
@@ -508,7 +508,7 @@ FunctionFactory.prototype.getTemplateFunctionFromInputContextObject = function( 
 		this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'error', message: return_error});
 		return_error.code = 'ERR_INVALID_RETURN_VALUE';
 		throw return_error;
-	}
+	}*/
 
 	//Return
 	this.logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});

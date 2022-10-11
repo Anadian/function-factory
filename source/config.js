@@ -5,6 +5,7 @@ import * as FSNS from 'node:fs';
 
 import * as ApplicationLogWinstonInterface from 'application-log-winston-interface';
 import * as HJSON from 'hjson';
+import AJV from 'ajv';
 //import * as Utility from 'node:util';
 
 const FILENAME = 'config.js';
@@ -17,31 +18,56 @@ function ConfigManager( options = {} ){
 	this.packageMeta = ( this.packageMeta || options.packageMeta ) ?? ( null );
 	this.logger = ( this.logger || options.logger ) ?? ( ApplicationLogWinstonInterface.nullLogger );
 	this.logger?.log({ function: FUNCTION_NAME, level: 'debug', message: `options: ${options.toString()}`});
+	this.ajv = ( this.ajv || options.ajv ) ?? ( new AJV() );
 	this.configObject = ( this.configObject || options.configObject ) ?? ( {} );
-	this.defaultConstructor = ( this.defaultConstructor || options.defaultConstructor ) ?? ( ( options = {} ) => {
-		var default_template_directories = [];
-		var default_defaults_directories = [];
-		var basedirs = [
-			PathNS.join( process.cwd(), 'Resources' )
-		];
-		if( this.packageMeta != null ){
-			basedirs.push( PathNS.join( this.packageMeta.paths.packageDirectory, 'Resources' ) );
-			basedirs.push( this.packageMeta.paths.data );
-		}
-		for( const basedir of basedirs ){
-			if( basedir != null ){
-				var path = PathNS.join( basedir, 'templates' );
-				default_template_directories.push(path);
-				path = PathNS.join( basedir, 'defaults' );
-				default_defaults_directories.push(path);
+	this.schemaPath = ( this.schemaPath || options.schemaPath ) ?? ( '' );
+	this.schemaString = ( this.schemaString || options.schemaString ) ?? ( '' );
+	this.schemaJSON = ( this.schemaJSON || options.schemaJSON ) ?? ( {} );
+	this.validator = ( this.validator || options.validator ) ?? ( null );
+	this.defaultConstructor = ( this.defaultConstructor || options.defaultConstructor ) ?? ( ( options = {} ) => {} );
+	//this.logger?.log({ function: FUNCTION_NAME, level: 'debug', message: `template_directories: ${this.configObject.template_directories.toString()} defaults_directories: ${this.configObject.defaults_directories.toString()}` });
+	return this;
+}
+
+ConfigManager.prepare = async function( options = {} ){
+	const FUNCTION_NAME = 'ConfigManager.prepare';
+	var return_error = null;
+	var configManager = new ConfigManager( options );
+	var schemaString_promise = Promise.resolve();
+	//Function
+	configManager.defaultConstructor();
+	if( configManager.validator === null ){
+		if( configManager.schemaJSON === {} ){
+			if( configManager.schemaString === '' ){
+				if( configManager.schemaPath === '' ){
+					try{
+						configManager.schemaPath = PathNS.join(configManager.packageMeta.paths.packageDirectory, 'Resources', 'schema', 'config.schema.json');
+					} catch(error){
+						return_error = new Error(`PathNS.join threw an error: ${error}`);
+						throw return_error;
+					}
+				}
+				schemaString_promise = FSNS.promises.readFile( configManager.schemaPath, 'utf8' ).then(
+					( file_string ) => {
+						configManager.schemaString = file_string;
+					},
+					( error ) => {
+						return_error = new Error(`FSNS.promises.readFile threw an error: ${error}`);
+						throw return_error;
+					}
+				);
+			}
+			await schemaString_promise;
+			try{
+				configManager.schemaJSON = HJSON.parse( configManager.schemaString );
+			} catch(error){
+				return_error = new Error(`HJSON.parse threw an error: ${error}`);
+				throw return_error;
 			}
 		}
-		this.configObject.template_directories = ( this.configObject.template_directories || options.template_directories ) ?? ( default_template_directories );
-		this.configObject.defaults_directories = ( this.configObject.defaults_directories || options.defaults_directories ) ?? ( default_defaults_directories );
-	} );
-	this.defaultConstructor();
-	this.logger?.log({ function: FUNCTION_NAME, level: 'debug', message: `template_directories: ${this.configObject.template_directories.toString()} defaults_directories: ${this.configObject.defaults_directories.toString()}` });
-	return this;
+		configManager.validator = configManager.ajv.compile( configManager.schemaJSON );
+	}
+	return configManager;
 }
 
 /*ConfigManager.prototype.toJSON = function( options = {} ){

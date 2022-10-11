@@ -1,0 +1,29 @@
+{
+	"$id": 'function-factory/config',
+	title: 'function-factory/config',
+	description: 'The config file used by function-factory's CLI.',
+	type: 'object',
+	properties: {
+		template_directories: {
+			type: 'array',
+			description: 'An array of directories, in which, to search for templates.'
+		}.
+		defaults_directories: {
+			type: 'array',
+			description: 'An array of directories, in which, to search for defaults JSON files.'
+		},
+		helper_paths: {
+			type: 'array',
+			description: 'An array of paths to Javascript modules defining a helper.'
+		},
+		partial_paths: {
+			type: 'array',
+			description: 'An array of paths to HandleBars templates defining a partial.'
+		}
+	},
+	required: [
+		'template_directories',
+		'defaults_directories'
+	],
+	"$defs": null
+}
