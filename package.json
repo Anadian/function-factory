@@ -70,7 +70,7 @@
 		"simple-package-meta": "^0.0.3"
 	},
 	"bin": {
-		"function-factory": "./source/main.js"
+		"function-factory": "./source/cli.js"
 	},
 	"engines": {
 		"node": ">=14.8.0"
@@ -152,5 +152,5 @@
 		]
 	},
 	"type": "module",
-	"exports": "./source/main.js"
+	"exports": "./source/lib.js"
 }

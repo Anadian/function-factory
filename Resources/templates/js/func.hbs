@@ -2,16 +2,16 @@
 ### {{name}}
 > {{&description}}
 
-{{#parametres}}Parametres:
+{{#parametres}}#### Parametres
 | name | type | description |
 | --- | --- | --- |
-{{#params}}| {{name}} | { {{~&type~}} } | {{&description}} {{#default}}\[default: {{&value}}\]{{/default}} |
+{{#params}}| {{name}} | {{~&type~}} | {{&description}} {{#default}}\[default: {{&value}}\]{{/default}} |
 {{/params}}
 
 {{/parametres}}{{#return}}Returns:
 | type | description |
 | --- | --- |
-| { {{~&type~}} } | {{&description}} |
+| {{~&type~}} | {{&description}} |
 
 {{/return}}
 {{#throw}}Throws:
@@ -29,9 +29,9 @@ History:
 {{#asynchronous}}async {{/asynchronous}}function {{name}}({{#parametres}}{{#params}} {{name}}{{#default}} = {{&value}}{{/default}},{{/params}}{{/parametres}}){
 	var arguments_array = Array.from(arguments);
 {{#return}}	var _return;
-{{/return}}{{#throw}}	var return_error;
+{{/return}}{{#throw}}	var return_error = null;
 {{/throw}}	const FUNCTION_NAME = '{{name}}';
-	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
+	this.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
 	//Variables
 {{#parametres}}	//Parametre checks
 {{#params}}
@@ -44,6 +44,6 @@ History:
 	//Function
 
 {{#return}}	//Return
-	Logger.log({process: PROCESS_NAME, module: MODULE_NAME, file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
+	this.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
 	return _return;
 {{/return ~}} }
