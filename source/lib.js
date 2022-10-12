@@ -53,29 +53,31 @@ FunctionFactory.load = function( options = {} ){
 		promises.push(promise);
 	}
 	//Load and register partials
-	for( const path of functionFactory.config?.partial_paths ){
-		promise = FSNS.promises.readFile( path, 'utf8' ).then(
-			( file_string ) => {
-				var name = '';
-				try{
-					name = PathNS.basename( path );
-				} catch(error){
-					return_error = new Error(`PathNS.basename threw an error: ${error}`);
+	if( functionFactory.config.partial_paths != null ){
+		for( const path of functionFactory.config?.partial_paths ){
+			promise = FSNS.promises.readFile( path, 'utf8' ).then(
+				( file_string ) => {
+					var name = '';
+					try{
+						name = PathNS.basename( path );
+					} catch(error){
+						return_error = new Error(`PathNS.basename threw an error: ${error}`);
+						throw return_error;
+					}
+					try{
+						HandleBars.registerPartial( name, file_string );
+					} catch(error){
+						return_error = new Error(`HandleBars.registerPartial threw an error: ${error}`);
+						throw return_error;
+					}
+				},
+				( error ) => {
+					return_error = new Error(`FSNS.promises.readFile threw an error: ${error}`);
 					throw return_error;
 				}
-				try{
-					HandleBars.registerPartial( name, file_string );
-				} catch(error){
-					return_error = new Error(`HandleBars.registerPartial threw an error: ${error}`);
-					throw return_error;
-				}
-			},
-			( error ) => {
-				return_error = new Error(`FSNS.promises.readFile threw an error: ${error}`);
-				throw return_error;
-			}
-		);
-		promises.push(promise);
+			);
+			promises.push(promise);
+		}
 	}
 	//Load PostREs
 	//for( const postre of this.postREs );

@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+import insp from './insp.js';
+
 import * as PathNS from 'node:path';
 import * as FSNS from 'node:fs';
 
@@ -17,14 +19,15 @@ function ConfigManager( options = {} ){
 	const FUNCTION_NAME = 'ConfigManager';
 	this.packageMeta = ( this.packageMeta || options.packageMeta ) ?? ( null );
 	this.logger = ( this.logger || options.logger ) ?? ( ApplicationLogWinstonInterface.nullLogger );
-	this.logger?.log({ function: FUNCTION_NAME, level: 'debug', message: `options: ${options.toString()}`});
+	this.logger?.log({ function: FUNCTION_NAME, level: 'debug', message: `options: ${insp(options, 1)}`});
 	this.ajv = ( this.ajv || options.ajv ) ?? ( new AJV() );
 	this.configObject = ( this.configObject || options.configObject ) ?? ( {} );
 	this.schemaPath = ( this.schemaPath || options.schemaPath ) ?? ( '' );
 	this.schemaString = ( this.schemaString || options.schemaString ) ?? ( '' );
 	this.schemaJSON = ( this.schemaJSON || options.schemaJSON ) ?? ( {} );
 	this.validator = ( this.validator || options.validator ) ?? ( null );
-	this.defaultConstructor = ( this.defaultConstructor || options.defaultConstructor ) ?? ( ( options = {} ) => {} );
+	this.defaultConstructor = ( this.defaultConstructor || options.defaultConstructor ) ?? ( ( options = {} ) => { throw new Error('defaultConstructor not specified.') } );
+	//this.defaultConstructor.call( this );
 	//this.logger?.log({ function: FUNCTION_NAME, level: 'debug', message: `template_directories: ${this.configObject.template_directories.toString()} defaults_directories: ${this.configObject.defaults_directories.toString()}` });
 	return this;
 }
@@ -35,7 +38,8 @@ ConfigManager.prepare = async function( options = {} ){
 	var configManager = new ConfigManager( options );
 	var schemaString_promise = Promise.resolve();
 	//Function
-	configManager.defaultConstructor();
+	configManager.defaultConstructor.call( configManager );
+	configManager.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `configObject: ${insp(configManager.configObject)}`});
 	if( configManager.validator === null ){
 		if( configManager.schemaJSON === {} ){
 			if( configManager.schemaString === '' ){
@@ -67,6 +71,7 @@ ConfigManager.prepare = async function( options = {} ){
 		}
 		configManager.validator = configManager.ajv.compile( configManager.schemaJSON );
 	}
+	configManager.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `configManager: ${insp(configManager,1)}`});
 	return configManager;
 }
 
@@ -101,35 +106,54 @@ ConfigManager.prototype.loadFilePath = function( filepath_string, options = {} )
 	_return = FSNS.promises.readFile( filepath_string, 'utf8' ).then( 
 		( file_string ) => {
 			this.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `file_string: ${file_string}`});
-			try{
-				config_object = HJSON.parse( file_string );
-			} catch(error){
-				return_error = new Error(`HJSON.parse threw an error: ${error}`);
-				throw return_error;
+			if( file_string != null ){
+				try{
+					config_object = HJSON.parse( file_string );
+				} catch(error){
+					return_error = new Error(`HJSON.parse threw an error: ${error}`);
+					throw return_error;
+				}
+				this.configObject = { ...this.configObject, ...config_object };
+			} else{
+				this.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `About to call defaultConstructor from ${FUNCTION_NAME}`});
+				this.defaultConstructor.call( this );
 			}
-			this.configObject = { ...this.configObject, ...config_object };
 		},
 		( error ) => {
+			var _return = null;
 			if( error.code === 'ENOENT' ){
 				throw error;
 			} else{
 				return_error = new Error(`FSNS.promises.readFile threw an error: ${error}`);
 				throw return_error;
 			}
+			return _return;
 		}
 	);
 	return _return;
 }
 ConfigManager.prototype.saveFilePath = function( filepath_string, options = {} ){
+	const FUNCTION_NAME = 'saveFilePath';
 	var return_error = null;
 	var _return = null;
+	this.logger?.log({ function: FUNCTION_NAME, level: 'debug', message: `Received filepath_string: ${filepath_string}` });
 	if( filepath_string == '' && typeof(filepath_string) !== typeof('') ){
 		return_error = new TypeError('Parametre "filepath_string" is either empty or not a string.');
 		return_error.code = 'ERR_INVALID_ARG_TYPE';
 		throw return_error;
 	}
 	var json_string = JSON.stringify( this.configObject, null, '\t' );
-	_return = FSNS.promises.writeFile( filepath_string, json_string, 'utf8' );
+	this.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `json_string: ${json_string}`});
+	_return = FSNS.promises.writeFile( filepath_string, json_string, 'utf8' ).then(
+		() => {
+			this.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `File written successfully.`});
+			return Promise.resolve();
+		},
+		( error ) => {
+			this.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `Caught this error in ${FUNCTION_NAME}: ${error}`});
+			throw error;
+		}
+	);
 	return _return;
 }
 
