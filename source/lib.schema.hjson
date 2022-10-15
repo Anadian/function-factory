@@ -177,6 +177,21 @@
 			}
 			required: [ 'jsFunction' ]
 		},
+		jsExport: {
+			description: 'An exported name from a file.',
+			type: 'object',
+			properties: {
+				jsName: {
+					jsc\ref(jsName)
+				},
+				jsValue: {
+					jsc\ref(jsValue)
+				},
+				jsDesc: {
+					jsc\ref(jsDesc)
+				}
+			}
+		},
 		jsFile: {
 			description: 'Represent the file itself.',
 			type: 'object',
@@ -218,6 +233,6 @@
 				}
 			},
 			required: [ 'jsFilename', 'jsDesc' ]
-		},
+		}
 	}	
 }
