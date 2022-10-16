@@ -1,19 +1,77 @@
 #!/usr/bin/env node
+/**
+# [lib.js](source/lib.js)
+> The backend of function-factory.
 
-	//Standard
+Author: Anadian
+
+Code license: MIT
+```
+	Copyright 2022 Anadian
+	Permission is hereby granted, free of charge, to any person obtaining a copy of this 
+software and associated documentation files (the "Software"), to deal in the Software 
+without restriction, including without limitation the rights to use, copy, modify, 
+merge, publish, distribute, sublicense, and/or sell copies of the Software, and to 
+permit persons to whom the Software is furnished to do so, subject to the following 
+conditions:
+	The above copyright notice and this permission notice shall be included in all copies 
+or substantial portions of the Software.
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT 
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF 
+CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE 
+OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
+Documentation License: [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
+> The source-code comments and documentation are written in [GitHub Flavored Markdown](https://github.github.com/gfm/).
+
+*/
+
+//# Dependencies
+	//## Internal
+	//## Standard
 	import * as PathNS from 'node:path';
 	import * as FSNS from 'node:fs';
 	import * as Utility from 'node:util';
-	//External
+	//## External
 	import * as ApplicationLogWinstonInterface from 'application-log-winston-interface';
 	import HandleBars from 'handlebars';
 	import * as HJSON from 'hjson';
-
-//var Logger = ApplicationLogWinstonInterface.nullLogger;
+//# Constants
 const PROCESS_NAME = 'function-factory';
 const MODULE_NAME = 'function-factory-lib';
 const FILENAME = 'lib.js';
+//## Errors
 
+//# Global Variables
+/**## Functions*/
+/**
+### FunctionFactory
+> Constructor.
+#### Parametres
+| name | type | description |
+| --- | --- | --- |
+| options | object? | Additional options to pass to the smart constructor. |
+
+##### Options Properties
+| name | type | description |
+| --- | --- | --- |
+| packageMeta | PackageMeta? | An instance of [simple-package-meta](https://github.com/Anadian/simple-package-meta) to be used by this instance and any subclasses initialised along with it. |
+| logger | object? | The logger to be used by this instance. |
+| config | ConfigManager? | The [cno-config-manager] instance to be used by the created instance. |
+| options | object? | The command-line options. |
+
+#### Throws
+| code | type | condition |
+| --- | --- | --- |
+| 'ERR_INVALID_ARG_TYPE' | TypeError | Thrown if `options` is neither an object nor `null` |
+
+#### History
+| version | change |
+| --- | --- |
+| 5.0.0 | Introduced |
+*/
 function FunctionFactory( options = {} ){
 	if( !( this instanceof FunctionFactory ) ){
 		return ( new FunctionFactory( options ) );
@@ -27,6 +85,30 @@ function FunctionFactory( options = {} ){
 	this.templateCache = ( this.templateCache || options.templateCache ) ?? ( {} );
 	return this;
 }
+/**
+### FunctionFactory.load
+> A static method for initialising a FunctionFactory instance asynchronously while also loading helpers and partials.
+
+#### Parametres
+| name | type | description |
+| --- | --- | --- |
+| options | object? | Options; the same as for the FunctionFactory constructor above. \[default: {}\] |
+
+#### Returns
+| type | description |
+| --- | --- |
+| Promise | A promise that resolve to a FunctionFactory instance. |
+
+#### Throws
+| code | type | condition |
+| --- | --- | --- |
+| 'ERR_INVALID_ARG_TYPE' | TypeError | Thrown if a given argument isn't of the correct type. |
+
+#### History
+| version | change |
+| --- | --- |
+| 5.0.0 | Introduced |
+*/
 FunctionFactory.load = function( options = {} ){
 	const FUNCTION_NAME = 'FunctionFactory.load';
 	var return_error = null;
@@ -98,6 +180,31 @@ FunctionFactory.load = function( options = {} ){
 	return _return;
 }
 
+/**
+### FunctionFactory.prototype.transform
+> Transform a given input context into an output string.
+
+#### Parametres
+| name | type | description |
+| --- | --- | --- |
+| input_string | string | The input string to transform.  |
+| options | object? | [Reserved] Additional run-time options. \[default: {}\] |
+
+#### Returns
+| type | description |
+| --- | --- |
+| Promise | A promise which resolves to the output string. |
+
+#### Throws
+| code | type | condition |
+| --- | --- | --- |
+| 'ERR_INVALID_ARG_TYPE' | TypeError | Thrown if a given argument isn't of the correct type. |
+
+#### History
+| version | change |
+| --- | --- |
+| 5.0.0 | Completely rewritten. |
+*/
 FunctionFactory.prototype.transform = function( input_string, options = {} ){
 	const FUNCTION_NAME = 'transform';
 	var arguments_array = Array.from(arguments);

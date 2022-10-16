@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
-# [{{filename}}](source/{{filename}})
-> {{&description}}
+# [generate-docs.js](scripts/generate-docs.js)
+> Generates this project's docs.
 
 Author: Anadian
 
@@ -31,46 +31,21 @@ Documentation License: [![Creative Commons License](https://i.creativecommons.or
 //# Dependencies
 	//## Internal
 	//## Standard
+	import * as PathNS from 'node:path';
 	//## External
+	import Sh from 'shelljs';
 //# Constants
-const FILENAME = '{{filename}}';
+const FILENAME = 'generate-docs.js';
 //## Errors
 
 //# Global Variables
 /**## Functions*/
-{{#with class}}/**
-### {{name}}
-> {{description}}
-#### Parametres
-| name | type | description |
-| --- | --- | --- |
-| options | object? | Additional options to pass to the smart constructor. |
-
-##### Options Properties
-| name | type | description |
-| --- | --- | --- |
-| packageMeta | PackageMeta? | An instance of [simple-package-meta](https://github.com/Anadian/simple-package-meta) to be used by this instance and any subclasses initialised along with it. |
-| logger | object? | The logger to be used by this instance. |
-| config | ConfigManager? | The [cno-config-manager] instance to be used by the created instance. |
-
-#### Throws
-| code | type | condition |
-| --- | --- | --- |
-| 'ERR_INVALID_ARG_TYPE' | TypeError | Thrown if `options` is neither an object nor `null` |
-
-#### History
-| version | change |
-| --- | --- |
-| 0.0.0 | Introduced |
-*/
-{{#defaultExport}}export default {{/defaultExport}}function {{name}}( options = {} ){
-	if( !( this instanceof {{name}} ) ){
-		return new {{name}}( options );
+Sh.exec( 'pnpm extract-documentation-comments -I source/cli.js source/lib.js -O docs' );
+Sh.ls('docs/source/*').forEach(
+	( path ) => {
+		console.log( path );
+		var basename = PathNS.basename( path, '.js' );
+		Sh.mv( path, PathNS.join( 'docs', basename+'.md' ) );
 	}
-	const FUNCTION_NAME = '{{name}}';
-	js\pd(packageMeta,null)
-	js\pd(logger,ApplicationLogWinstonInterface.nullLogger)
-	js\pd(config,null)
-	return this;
-}
-{{/with}}
+);
+Sh.rm('-rf', 'docs/source');

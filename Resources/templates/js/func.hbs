@@ -1,38 +1,39 @@
-/**
-### {{name}}
+{{#doc}}/**
+### {{&name}}
 > {{&description}}
 
 {{#parametres}}#### Parametres
 | name | type | description |
 | --- | --- | --- |
-{{#params}}| {{name}} | {{~&type~}} | {{&description}} {{#default}}\[default: {{&value}}\]{{/default}} |
+{{#params}}| {{name}} | {{&type}} | {{&description}} {{#default}}\[default: {{&value}}\]{{/default}} |
 {{/params}}
 
-{{/parametres}}{{#return}}Returns:
+{{/parametres}}{{#return}}#### Returns
 | type | description |
 | --- | --- |
-| {{~&type~}} | {{&description}} |
+| {{&type}} | {{&description}} |
 
 {{/return}}
-{{#throw}}Throws:
+{{#throw}}#### Throws
 | code | type | condition |
 | --- | --- | --- |
-{{#throws}}| '{{code}}' | { {{~&type~}} } | {{&description}} |
+{{#throws}}| '{{code}}' | {{&type}} | {{&description}} |
 {{/throws}}
 
 {{/throw}}
-History:
+#### History
 | version | change |
 | --- | --- |
 | 0.0.1 | WIP |
-*/
-{{#asynchronous}}async {{/asynchronous}}function {{name}}({{#parametres}}{{#params}} {{name}}{{#default}} = {{&value}}{{/default}},{{/params}}{{/parametres}}){
+*/{{/doc}}
+{{#func}}{{#asynchronous}}async {{/asynchronous}}function {{&name}}({{#parametres}}{{#params}} {{name}}{{#default}} = {{&value}}{{/default}},{{/params}}{{/parametres}}){
+	const FUNCTION_NAME = '{{name}}';
+	//Variables
 	var arguments_array = Array.from(arguments);
 {{#return}}	var _return;
 {{/return}}{{#throw}}	var return_error = null;
-{{/throw}}	const FUNCTION_NAME = '{{name}}';
+{{/throw}}
 	this.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
-	//Variables
 {{#parametres}}	//Parametre checks
 {{#params}}
 	if( {{& CheckNotType type name}} ){
@@ -46,4 +47,4 @@ History:
 {{#return}}	//Return
 	this.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
 	return _return;
-{{/return ~}} }
+{{/return ~}} }{{/func}}

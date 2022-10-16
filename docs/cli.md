@@ -1,7 +1,6 @@
-#!/usr/bin/env node
-/**
-# [{{filename}}](source/{{filename}})
-> {{&description}}
+
+# [cli.js](source/cli.js)
+> The frontend CLI of function-factory.
 
 Author: Anadian
 
@@ -26,21 +25,11 @@ OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 Documentation License: [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 > The source-code comments and documentation are written in [GitHub Flavored Markdown](https://github.github.com/gfm/).
 
-*/
 
-//# Dependencies
-	//## Internal
-	//## Standard
-	//## External
-//# Constants
-const FILENAME = '{{filename}}';
-//## Errors
+## Functions
 
-//# Global Variables
-/**## Functions*/
-{{#with class}}/**
-### {{name}}
-> {{description}}
+### CLI
+> CLI constructor.
 #### Parametres
 | name | type | description |
 | --- | --- | --- |
@@ -61,16 +50,54 @@ const FILENAME = '{{filename}}';
 #### History
 | version | change |
 | --- | --- |
-| 0.0.0 | Introduced |
-*/
-{{#defaultExport}}export default {{/defaultExport}}function {{name}}( options = {} ){
-	if( !( this instanceof {{name}} ) ){
-		return new {{name}}( options );
-	}
-	const FUNCTION_NAME = '{{name}}';
-	js\pd(packageMeta,null)
-	js\pd(logger,ApplicationLogWinstonInterface.nullLogger)
-	js\pd(config,null)
-	return this;
-}
-{{/with}}
+| 5.0.0 | Introduced |
+
+
+### CLI.run
+> Initialise a CLI instance asynchronously with good defaults.
+
+#### Parametres
+| name | type | description |
+| --- | --- | --- |
+| options | object? | Additional run-time options. \[default: {}\] |
+
+#### Returns
+| type | description |
+| --- | --- |
+| Promise | A promise which represents a CLI process run. |
+
+#### Throws
+| code | type | condition |
+| --- | --- | --- |
+| 'ERR_INVALID_ARG_TYPE' | TypeError | Thrown if a given argument isn't of the correct type. |
+
+#### History
+| version | change |
+| --- | --- |
+| 0.0.1 | WIP |
+
+
+### getInputStringFromInquirerEditor
+> Prompts the user to edit the input with $EDITOR, optionally loading default input data beforehand, and then returns the final input string.
+
+Parametres:
+| name | type | description |
+| --- | --- | --- |
+| options | {Object} | Run-time options. \[default: {}\] |
+
+Returns:
+| type | description |
+| --- | --- |
+| {string} | The input string obtained from the editor. |
+
+Throws:
+| code | type | condition |
+| --- | --- | --- |
+| 'ERR_INVALID_ARG_TYPE' | {TypeError} | Thrown if a given argument isn't of the correct type. |
+| 'ERR_INVALID_RETURN_VALUE' | {TypeError} | Thrown if Inquirer.prompt returns an invalid `inquirer_answer` object, missing a string `editor_input` property or otherwise malformatted. |
+
+Status:
+| version | change |
+| --- | --- |
+| 1.9.0 | Experimental |
+

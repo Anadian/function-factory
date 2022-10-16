@@ -19,6 +19,8 @@
 		]
 	},
 	"asynchronous": false,
+	"doc": true,
+	"func": true,
 	"post_re": [
 		{"search": ",\\)", "replace": " )", "flags": "gm"}
 	]
