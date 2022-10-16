@@ -4,7 +4,6 @@
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat-square)](https://conventionalcommits.org)
 [![License](https://img.shields.io/github/license/Anadian/function-factory)](https://github.com/Anadian/function-factory/blob/master/LICENSE)
 [![npm](https://img.shields.io/npm/v/function-factory)](https://www.npmjs.com/package/function-factory)
-![David](https://david-dm.org/Anadian/function-factory.svg)
 
 > Simple, minimalist templating from the command line.
 # Table of Contents
@@ -16,20 +15,17 @@
 - [License](#License)
 # Background
 # Install
-To use it as a dependency in a NodeJS project, run:
+Example using [pnpm](https://pnpm.io/cli/add):
 ```sh
-npm install --save function-factory
+pnpm add --save function-factory
 ```
-To use it as a global command-line app, run:
-```sh
-npm install --global function-factory
-```
+It can, of course, also be installed by [npm](https://docs.npmjs.com/cli/v8/commands/npm-install) or [Yarn](https://yarnpkg.com/getting-started/usage) using the normal methods.
 # Usage
 To use the command-line interface:
 ```sh
-[npx] function-factory [options]
+[pnpm] function-factory [options]
 ```
-Remember to prepend `npx` to the command when you haven't installed it globally.
+Remember to prepend `pnpm` to the command when you haven't installed it globally.
 ## CLI
 ```
 function-factory
@@ -51,7 +47,7 @@ Options
   -a, --ask string                 [Reserved] Interactively prompt for input properties, optionally specifying a 
                                    file in the "defaults" directory to use as a base.                            
   -D, --do string                  [Reserved] Select a default input file and an output template based on a      
-                                   signle string.                                                                
+                                   single string.                                                                
   -o, --stdout                     Write output to STDOUT.                                                       
   -O, --output string              The name of the file to write output to.                                      
   -p, --pasteboard                 Copy output to pasteboard (clipboard).                                        
@@ -59,17 +55,19 @@ Options
   -C, --config-file string         Use the given config file instead of the default.                             
   -d, --defaults                   [Reserved] Print a list of the "defaults" files.                              
   -l, --templates                  [Reserved] Print a list of available templates to stdout.                     
-  -T, --template-override string   Override the template to the file specified.                                  
+  -T, --template-override string   Override the template to the file specified.
 ```
 # API
 ```js
-const FunctionFactory = require('function-factory');
+import FunctionFactory from 'function-factory';
+
+FunctionFactory.load( options );
 ```
-See [API.md](API.md) for full API.
+See [docs/lib.md](docs/lib.md) for full API.
 # Contributing
 Changes are tracked in [CHANGELOG.md](CHANGELOG.md).
 # License
-MIT ©2020 Anadian
+MIT ©2020-2022 Anadian
 
 SEE LICENSE IN [LICENSE](LICENSE)
 
