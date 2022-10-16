@@ -1,6 +1,6 @@
 {
 	"name": "function-factory",
-	"version": "2.2.2",
+	"version": "4.9.0",
 	"description": "Simple, minimalist templating from the command line.",
 	"main": "source/main.js",
 	"scripts": {
