@@ -3,12 +3,9 @@
 	"template": "js source",
 	"filename": "filename.js",
 	"description": "Brief description.",
-	"modulename": "ModuleName",
-	"processname": "process-name",
-	"strict": true,
-	"node": true,
-	"main": true,
-	"logger": true,
-	"config": true,
-	"paths": true
+	"class": {
+		"name": "SomeClass",
+		"description": "Class description",
+		"defaultExport": true
+	}
 }

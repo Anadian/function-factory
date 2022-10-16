@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
-# [{{filename}}](source/{{filename}})
-> {{&description}}
+# [install-resources.js](scripts/install-resources.js)
+> Install the local resources (<PackageDirectory>/Resources/**) to their system default locations.
 
 Author: Anadian
 
@@ -32,45 +32,37 @@ Documentation License: [![Creative Commons License](https://i.creativecommons.or
 	//## Internal
 	//## Standard
 	//## External
+	import getPackageMeta from 'simple-package-meta';
+	import cpy from 'cpy';
+	
 //# Constants
-const FILENAME = '{{filename}}';
+const FILENAME = 'install-resources.js';
 //## Errors
 
 //# Global Variables
 /**## Functions*/
-{{#with class}}/**
-### {{name}}
-> {{description}}
-#### Parametres
-| name | type | description |
-| --- | --- | --- |
-| options | object? | Additional options to pass to the smart constructor. |
 
-##### Options Properties
-| name | type | description |
-| --- | --- | --- |
-| packageMeta | PackageMeta? | An instance of [simple-package-meta](https://github.com/Anadian/simple-package-meta) to be used by this instance and any subclasses initialised along with it. |
-| logger | object? | The logger to be used by this instance. |
-| config | ConfigManager? | The [cno-config-manager] instance to be used by the created instance. |
-
-#### Throws
-| code | type | condition |
-| --- | --- | --- |
-| 'ERR_INVALID_ARG_TYPE' | TypeError | Thrown if `options` is neither an object nor `null` |
-
-#### History
-| version | change |
-| --- | --- |
-| 0.0.0 | Introduced |
-*/
-{{#defaultExport}}export default {{/defaultExport}}function {{name}}( options = {} ){
-	if( !( this instanceof {{name}} ) ){
-		return new {{name}}( options );
+var pm_promise = getPackageMeta( import.meta ).then(
+	( package_meta ) => {
+		var cpy_promise = cpy( package_meta.paths.packageDirectory+'/Resources/**', package_meta.paths.data ).then(
+			( destination_path ) => {
+				console.log(`Installed to ${destination_path}`);
+				return destination_path;
+			},
+			( error ) => {
+				console.error(`cpy threw an error: ${error}`);
+				if( error.code === 'EEXIST' ){
+					return null;
+				} else{
+					throw error;
+				}
+			}
+		);
+		return cpy_promise;
+	},
+	( error ) => {
+		console.error(`getPackageMeta threw an error: ${error}`);
+		throw error;
 	}
-	const FUNCTION_NAME = '{{name}}';
-	js\pd(packageMeta,null)
-	js\pd(logger,ApplicationLogWinstonInterface.nullLogger)
-	js\pd(config,null)
-	return this;
-}
-{{/with}}
+);
+await pm_promise;

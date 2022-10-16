@@ -1,0 +1,238 @@
+{
+	title: 'javascript',
+	description: 'A schema for metadata pertaining to a Javascript file.',
+	type: 'object',
+	"$defs": {
+		jsFilename: {
+			description: 'The filename',
+			type: 'string',
+			pattern: '[A-Za-z0-9_-]+\\.m?js'
+		},
+		jsDesc: {
+			description: 'A description for a Javascript thing.',
+			type: 'string'
+		},
+		jsValue: {
+			description: 'A literal value.',
+			type: 'string'
+		},
+		jsName: {
+			description: 'The name of a variable.',
+			type: 'string',
+			pattern: '[A-Za-z_$][A-Za-z0-9_$]*'
+		},
+		jsType: {
+			description: 'A Javascript type.',
+			$ref: '#/$defs/jsValue'
+		},
+		jsIdentifier: {
+			description: 'The name of a property.',
+			type: 'string',
+			pattern: '[A-Za-z_$][A-Za-z0-9_$.\\[\\]]*'
+		},
+		jsException: {
+			description: 'A thrown exception.',
+			type: 'object',
+			properties: {
+				jsValue: {
+					jsc\ref(jsValue)
+				},
+				jsDesc: {
+					jsc\ref(jsDesc)
+				}
+			},
+			required: [ 'jsValue', 'jsDesc' ]
+		}
+		jsVariable: {
+			description: 'A Javascript variable.'
+			type: 'object',
+			properties: {
+				jsName: {
+					"$ref": '#/$defs/jsName'
+				},
+				jsType: {
+					"$ref": '#/$defs/jsType'
+				},
+				jsValue: {
+					"$ref": "#/$defs/jsValue"
+				},
+				jsDesc: {
+					"$ref": "#/$defs/jsDesc"
+				}
+			}
+			required: [ 'jsName', 'jsValue' ]
+		},
+		jsConstant: {
+			"$ref": "#/$defs/jsVariable"
+			description: 'A Javascript constant.'
+		},
+		jsProperty: {
+			description: 'A Javascript property.',
+			type: 'object',
+			properties: {
+				jsIdentifier: {
+					"$ref": '#/$defs/jsIdentifier'
+				},
+				jsVariable: {
+					"$ref": "#/$defs/jsVariable"
+				}
+			}
+			required: [ 'jsIdentifier', 'jsVariable' ]
+		},
+		jsParametre: {
+			"$ref": "#/$defs/jsVariable"
+			description: 'A Javascript parametre.',
+		},
+		jsFunction: {
+			description: 'A Javascript function.',
+			type: 'object',
+			properties: {
+				jsIdentifier: {
+					jsc\ref(jsIdentifier),
+					description: 'The name of the function.',
+				},
+				jsDesc: {
+					jsc\ref(jsDesc),
+					description: 'A description of the function.
+				},
+				async: {
+					description: 'Whether function is an async function.',
+					type: 'bool'
+				},
+				parametres: {
+					description: 'Function parametres.',
+					type: 'array',
+					items: {
+						jsc\ref(jsParametre)
+					}
+				},
+				exceptions: {
+					description: 'Function exceptions.',
+					type: 'array',
+					items: {
+						jsc\ref(jsException)
+					}
+				},
+				return: {
+					description: 'Function return.',
+					type: 'object',
+					properties: {
+						jsType: {
+							$ref: '#/$defs/jsType'
+						}
+						jsDesc: {
+							jsc\ref(jsDesc)
+						}
+					}
+					required: [ 'jsType', 'jsDesc' ]
+				}
+			},
+			required: [ 'jsIdentifier', 'jsDesc' ]
+		},
+		jsMethod: {
+			description: 'A Javascript method.',
+			type: 'object',
+			properties: {
+				jsIdentifier: {
+					jsc\ref(jsIdentifier)
+				},
+				jsFunction: {
+					jsc\ref(jsFunction)
+				}
+			}
+			required: [ 'jsIdentifier', 'jsFunction' ]
+		},
+		jsStaticMethod: {
+			jsc\ref(jsMethod),
+			description: 'A Javascript static method.'
+		},
+		jsClass: {
+			description: 'A Javascript class.',
+			type: 'object',
+			properties: {
+				jsFunction: {
+					jsc\ref(jsFunction)
+				},
+				members: {
+					description: 'The class's members.',
+					type: 'array',
+					items: {
+						"$ref": "#/$defs/member"
+					}
+				},
+				methods: {
+					description: 'The class\'s methods.',
+					type: 'array',
+					items: {
+						jsc\ref(jsMethod)
+					}
+				},
+				staticMethods: {
+					description: 'The class's static methods.',
+					type: 'array',
+					items: {
+						jsc\ref(jsStaticMethod)
+					}
+				}
+			}
+			required: [ 'jsFunction' ]
+		},
+		jsExport: {
+			description: 'An exported name from a file.',
+			type: 'object',
+			properties: {
+				jsName: {
+					jsc\ref(jsName)
+				},
+				jsValue: {
+					jsc\ref(jsValue)
+				},
+				jsDesc: {
+					jsc\ref(jsDesc)
+				}
+			}
+		},
+		jsFile: {
+			description: 'Represent the file itself.',
+			type: 'object',
+			properties: {
+				name: {
+					jsc\ref(jsFilename)
+				},
+				jsDesc: {
+					jsc\ref(jsDesc)
+					description: 'File\'s description.',
+				},
+				variables: {
+					description: 'Global variables.',
+					type: 'array',
+					items: {
+						jsc\ref(jsVariable)
+					}
+				},
+				classes: {
+					description: 'Class defined in this file.',
+					type: 'array',
+					items: {
+						jsc\ref(jsClass)
+					}
+				},
+				functions: {
+					description: 'Global functions defined by this file.',
+					type: 'array',
+					items: {
+						jsc\ref(jsFunction)
+					}
+				},
+				exports: {
+					description: 'File's exports.',
+					type: 'array',
+					items: {
+						jsc\ref(jsExport)
+					}
+				}
+			},
+			required: [ 'jsFilename', 'jsDesc' ]
+		}
+	}	
+}

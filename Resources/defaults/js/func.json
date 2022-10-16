@@ -6,7 +6,7 @@
 	"parametres": {
 		"params": [
 				{"type": "ArgumentType", "name": "parametre_name", "default": null, "description": "Brief parametre description."},
-				{"type": "?Object", "name": "options", "default": { "value": "{}" }, "description": "[Reserved] Additional run-time options."}
+				{"type": "object?", "name": "options", "default": { "value": "{}" }, "description": "[Reserved] Additional run-time options."}
 		]
 	},
 	"return": { 
@@ -19,6 +19,8 @@
 		]
 	},
 	"asynchronous": false,
+	"doc": true,
+	"func": true,
 	"post_re": [
 		{"search": ",\\)", "replace": " )", "flags": "gm"}
 	]
