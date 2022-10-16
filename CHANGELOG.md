@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.0.0](https://github.com/Anadian/function-factory/compare/v2.2.2...v5.0.0) (2022-10-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* Massive improvements, new scripts, and better documentation.
+
+### Features
+
+* Almost ready for next release. ([e242295](https://github.com/Anadian/function-factory/commit/e242295e95a2c94eb941442b52f379962e7c22cd))
+* Massive improvements, new scripts, and better documentation. ([f8032d4](https://github.com/Anadian/function-factory/commit/f8032d4b6ee8e24426bc9c2900cf64f3bb4dae87))
+
+
+### Refactoring
+
+* Major refactoring to ECMAscript modules. ([99d55be](https://github.com/Anadian/function-factory/commit/99d55bec0e08ceb45bcb9e196fbddf379ccd1a4d))
+
+
+### Chores
+
+* Cleaning. ([345b162](https://github.com/Anadian/function-factory/commit/345b162eb3f43decc02fe67464ec948e3129057f))
+* **deps:** Updated deps. ([c1a9dd9](https://github.com/Anadian/function-factory/commit/c1a9dd92c2f961cb8a76aaf9e910782327452a27))
+* **deps:** Updated. ([a1a1362](https://github.com/Anadian/function-factory/commit/a1a13623568654de9e47398870642c19e5295719))
+
 ### [2.2.2](https://github.com/Anadian/function-factory/compare/v2.2.1...v2.2.2) (2021-06-14)
 
 
