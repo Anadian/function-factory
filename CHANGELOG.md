@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.0.1](https://github.com/Anadian/function-factory/compare/v5.0.0...v5.0.1) (2022-10-16)
+
+
+### Documentation
+
+* Updated README.md ([e9e5ad1](https://github.com/Anadian/function-factory/commit/e9e5ad10b613ec7d0da670c18d2e991f8dc54f67))
+
+### [2.2.4](https://github.com/Anadian/function-factory/compare/v2.2.3...v2.2.4) (2021-09-25)
+
+
+### Chores
+
+* **release:** 2.2.4 ([ad073f1](https://github.com/Anadian/function-factory/commit/ad073f1f173887d2f0395c4dbf74dadee5304d4b))
+
+### [2.2.3](https://github.com/Anadian/function-factory/compare/v2.2.2...v2.2.3) (2021-09-15)
+
+
+### Chores
+
+* **release:** 2.2.3 ([eda2e4d](https://github.com/Anadian/function-factory/commit/eda2e4d2bef88ee056de840c4a6dfd847ed25f32))
+
 ## [5.0.0](https://github.com/Anadian/function-factory/compare/v2.2.2...v5.0.0) (2022-10-16)
 
 
