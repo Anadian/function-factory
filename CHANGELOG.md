@@ -2,6 +2,40 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.0.0](https://github.com/Anadian/function-factory/compare/v5.0.1...v6.0.0) (2023-02-20)
+
+
+### Chores
+
+* Updated deps. ([ccc07fd](https://github.com/Anadian/function-factory/commit/ccc07fd1a023bb333daefa9a51f63720501f235c))
+
+## [4.0.0](https://github.com/Anadian/function-factory/compare/v3.0.0...v4.0.0) (2022-06-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** Reverted a premature breaking update to Inquirer.
+
+### Chores
+
+* **deps:** Reverted a premature breaking update to Inquirer. ([29fd8ed](https://github.com/Anadian/function-factory/commit/29fd8ed0e01dfcfbee0bbb7b117212255b304c95))
+* **release:** 4.0.0 ([657b753](https://github.com/Anadian/function-factory/commit/657b75311dd4a332d877251e91b4a71ab5932bff))
+
+## [3.0.0](https://github.com/Anadian/function-factory/compare/v2.2.4...v3.0.0) (2022-06-23)
+
+
+### Bug Fixes
+
+* shbang ([d43645f](https://github.com/Anadian/function-factory/commit/d43645fce349359df46c09030d98397a6908c142))
+* shbang. ([89832a4](https://github.com/Anadian/function-factory/commit/89832a4daa99da16a1d7f082270d638f5eb6fa2e))
+
+
+### Chores
+
+* **deps:** Updated deps and improved .gitignore ([66f27a7](https://github.com/Anadian/function-factory/commit/66f27a748f5dd3e0df912bb380169857272024fc))
+* **deps:** Updated deps. ([17dcdda](https://github.com/Anadian/function-factory/commit/17dcdda245e39db98fcb7791982387b4e5f06fff))
+* **release:** 3.0.0 ([6903da8](https://github.com/Anadian/function-factory/commit/6903da84651dc3e4f4258c750ba286b451205dd3))
+
 ### [5.0.1](https://github.com/Anadian/function-factory/compare/v5.0.0...v5.0.1) (2022-10-16)
 
 
