@@ -232,7 +232,7 @@ CLI.run = async function( options = {} ){
 				var new_config_promise = Promise.resolve();
 				cli.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `error: ${error}`});
 				if( error.code === 'ENOENT' ){
-					new_config_promise = configManager.saveFilePath( config_filepath ).then(
+					new_config_promise = configManager.saveFilePath( config_filepath, { safe: true } ).then(
 						() => {
 							cli.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `Setting cli.config`});
 							cli.config = configManager.configObject;
