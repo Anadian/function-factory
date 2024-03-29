@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 /**
-# [{{filename}}](source/{{filename}})
+# [{{filename}}](src/{{filename}})
 > {{&description}}
 
 Author: Anadian
 
 Code license: MIT
 ```
-	Copyright 2022 Anadian
+	Copyright 2024 Anadian
 	Permission is hereby granted, free of charge, to any person obtaining a copy of this 
 software and associated documentation files (the "Software"), to deal in the Software 
 without restriction, including without limitation the rights to use, copy, modify, 
@@ -44,13 +44,13 @@ const FILENAME = '{{filename}}';
 #### Parametres
 | name | type | description |
 | --- | --- | --- |
-| options | object? | Additional options to pass to the smart constructor. |
+| options | object | Additional options to pass to the smart constructor. |
 
 ##### Options Properties
 | name | type | description |
 | --- | --- | --- |
-| packageMeta | PackageMeta? | An instance of [simple-package-meta](https://github.com/Anadian/simple-package-meta) to be used by this instance and any subclasses initialised along with it. |
-| logger | object? | The logger to be used by this instance. |
+| packageMeta | PackageMeta | An instance of [cno-package-meta](https://github.com/Anadian/cno-package-meta) to be used by this instance and any subclasses initialised along with it. |
+| logger | object | The logger to be used by this instance. |
 | config | ConfigManager? | The [cno-config-manager] instance to be used by the created instance. |
 
 #### Throws
@@ -69,8 +69,11 @@ const FILENAME = '{{filename}}';
 	}
 	const FUNCTION_NAME = '{{name}}';
 	js\pd(packageMeta,null)
-	js\pd(logger,ApplicationLogWinstonInterface.nullLogger)
+	js\pd(logger,CNOLogger.nullLogger)
 	js\pd(config,null)
 	return this;
 }
 {{/with}}
+
+// {{filename}} EOF
+

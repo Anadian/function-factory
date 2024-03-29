@@ -1,5 +1,5 @@
 {{#doc}}/**
-### {{&name}}
+### {{#if class}}{{&class}}.{{^static}}prototype.{{/static}}{{/if}}{{&name}}
 > {{&description}}
 
 {{#parametres}}#### Parametres
@@ -8,7 +8,12 @@
 {{#params}}| {{name}} | {{&type}} | {{&description}} {{#default}}\[default: {{&value}}\]{{/default}} |
 {{/params}}
 
-{{/parametres}}{{#return}}#### Returns
+{{/parametres}}{{#options}}##### `options` Properties
+| name | type | default | description |
+{{#opts}}| {{name}} | {{&type}} | {{&default}} | {{&description}} |
+{{/opts}}
+
+{{/options}}{{#return}}#### Returns
 | type | description |
 | --- | --- |
 | {{&type}} | {{&description}} |
@@ -26,8 +31,11 @@
 | --- | --- |
 | 0.0.1 | WIP |
 */{{/doc}}
-{{#func}}{{#asynchronous}}async {{/asynchronous}}function {{&name}}({{#parametres}}{{#params}} {{name}}{{#default}} = {{&value}}{{/default}},{{/params}}{{/parametres}}){
-	const FUNCTION_NAME = '{{name}}';
+{{#func}}{{#if class}}{{&class}}.{{^static}}prototype.{{/static}}{{else}}{{#asynchronous}}async {{/asynchronous}}function {{/if}}{{&name}}{{#if class}} = {{#asynchronous}}async {{/asynchronous}}function{{/if}}({{#parametres}}{{#params}} {{name}}{{#default}} = {{&value}}{{/default}},{{/params}}{{/parametres}}){
+	const FUNCTION_NAME = '{{#if class}}{{&class}}.{{^static}}prototype.{{/static}}{{/if}}{{&name}}';
+	{{#options}}const DEFAULT_OPTIONS = { {{~ #opts }}
+		{{name}}: {{&default}}, // {{&description}}
+	{{/opts ~}} };{{/options ~}}
 	//Variables
 	var arguments_array = Array.from(arguments);
 {{#return}}	var _return;
@@ -37,14 +45,24 @@
 {{#parametres}}	//Parametre checks
 {{#params}}
 	if( {{& CheckNotType type name}} ){
-		return_error = new TypeError('Param "{{name}}" is not {{type}}.');
+		return_error = new TypeError('Param "{{name}}" is not of type {{type}}.');
 		return_error.code = 'ERR_INVALID_ARG_TYPE';
 		throw return_error;
 	}
 {{/params}}{{/parametres}}
-	//Function
-
+{{#options}}	// Options
+	if( input_options.noDefaults !== true ){
+		options = Object.assign( options, DEFAULT_OPTIONS, input_options );
+	} else{
+		options = Object.assign( options, input_options );
+	}
+	if( options.noop !== true ){
+		// Function
+	} // noop
+{{/options}}{{^options}}	// Function
+{{/options}}
 {{#return}}	//Return
 	this.logger.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
 	return _return;
-{{/return ~}} }{{/func}}
+{{/return ~}} }{{/func}} // {{#if class}}{{&class}}.{{^static}}prototype.{{/static}}{{/if}}{{&name}}
+

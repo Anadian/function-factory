@@ -2,11 +2,18 @@
 	//"templatename": "Resources/templates/jsfunc.hbs",
 	"template": "js func",
 	"name": "FunctionName",
+	"class": "CLI",
 	"description": "Brief description.",
 	"parametres": {
 		"params": [
-				{"type": "ArgumentType", "name": "parametre_name", "default": null, "description": "Brief parametre description."},
-				{"type": "object?", "name": "options", "default": { "value": "{}" }, "description": "[Reserved] Additional run-time options."}
+				{"type": "object", "name": "input_options", "default": { "value": "{}" }, "description": "Run-time options."}
+		]
+	},
+	"options": {
+		"opts": [
+			{"type": "boolean", "name": "noop", "default": "false", "description": "Skip primary functionality." }, 
+			{"type": "boolean", "name": "noDefaults", "default": "false", "description": "Don't apply static default options." }, 
+			{"type": "boolean", "name": "noDynamic", "default": "false", "description": "Don't apply dynamic default options." }
 		]
 	},
 	"return": { 
@@ -19,6 +26,7 @@
 		]
 	},
 	"asynchronous": false,
+	"static": false,
 	"doc": true,
 	"func": true,
 	"post_re": [
