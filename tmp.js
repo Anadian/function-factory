@@ -37,7 +37,6 @@
 {{#smartConstructor}}	if( !new.target ){
 		return new {{&name}}({{#parametres}}{{#params}}{{name}}, {{/params}}{{/parametres}});
 	}{{/smartConstructor}}
-	// Constants
 	const FUNCTION_NAME = '{{#if class}}{{&class}}.{{^static}}prototype.{{/static}}{{/if}}{{&name}}';
 	{{#options}}const DEFAULT_OPTIONS = {
 {{#opts}}		{{name}}: {{&default}}, // {{&description}}
@@ -48,12 +47,9 @@
 	this?.logger?.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `received: ${arguments_array}`});
 {{/argumentsArray}}{{#return}}	var _return = null;
 {{/return}}{{#throw}}	var return_error = null;
-{{/throw}}{{#smartConstructor}}		// Private Properties
-	
-	// Public Properties
-	Object.defineProperties( this, {
-	} );
-{{/smartConstructor}}{{#parametres}}	// Parametre checks
+{{/throw}}{{#options}}	var options = {};
+{{/options}}
+{{#parametres}}	// Parametre checks
 {{#params}}
 	if( {{& CheckNotType type name}} ){
 		return_error = new TypeError('Param "{{name}}" is not of type {{type}}.');
@@ -61,7 +57,7 @@
 		throw return_error;
 	}
 {{/params}}{{/parametres}}
-{{#if options}}	// Options
+{{#options}}	// Options
 {{^bedrock}}	if( input_options.noDefaults !== true ){
 		if( input_options.noDynamic !== true ){
 			var dynamic_defaults = {};
@@ -72,18 +68,13 @@
 	} else{
 		options = Object.assign( {}, input_options );
 	} // noDefaults
-	if( options.noop !== true ){
+{{/bedrock}}{{#bedrock}}	var { options, log_function ?? this?.logger?.log, validation_function } = Bedrock.deriveOptions( input_options, DEFAULT_OPTIONS );
+		if( validation_function( input_options
+{{/bedrock}}	if( options.noop !== true ){
 		// Function
 	} // noop
-{{/bedrock}}{{#bedrock}}	var { options, log_function, validation_function } = Bedrock.deriveOptions.call( this, input_options, DEFAULT_OPTIONS );
-{{#standardOptions}}	if( validation_function( options ) === true ){
-		if( options.noop !== true ){
-			// Function
-		} // noop
-	} // validation_function
-{{/standardOptions}}{{^standardOptions}}	// Function
-{{/standardOptions}}{{/bedrock}}{{else}}	// Function
-{{/if}}
+{{/bedrock}}{{/options}}{{^options}}	// Function
+{{/options}}
 {{#return}}	// Return
 	this?.logger?.log({file: FILENAME, function: FUNCTION_NAME, level: 'debug', message: `returned: ${_return}`});
 {{^smartConstructor}}	return _return;

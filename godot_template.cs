@@ -1,0 +1,56 @@
+using Godot;
+using System;
+using CNO;
+
+public partial class InputComponentVBoxContainer : VBoxContainer
+{
+	// Meta
+	private NodeMeta _meta;
+
+	// Static Properties
+
+	// Exported Properties
+
+	// Public Properties
+
+	// Private Properties
+
+	// Override Methods
+	// Called when the node enters the scene tree for the first time.
+	public override void _Ready(){
+		const string fname = "_Ready";
+		_meta = new NodeMeta( Name );
+		Init();
+		_meta.ReadyTime = NodeMeta.GetNow();
+	}
+	// Called every frame. 'delta' is the elapsed time since the previous frame.
+	public override void _Process(double delta){
+		const string fname = "_Process";
+		Update( delta );
+	}
+	// Event Callbacks
+	
+	// Standard Methods
+	public void Enable(){
+		const string fname = "Enable";
+		Visible = true;
+		ProcessMode = ProcessModeEnum.Inherit;
+	}
+	public void Disable(){
+		const string fname = "Disable";
+		Visible = false;
+		ProcessMode = ProcessModeEnum.Disabled;
+	}
+	public void Init(){
+		const string fname = "Init";
+		_meta.InitTime = NodeMeta.GetNow();
+	}
+	public void Update( double delta ){
+		const string fname = "Update";
+		_meta.Iteration++;
+	}
+
+	// Public Methods
+
+	// Private Methods
+}

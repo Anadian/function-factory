@@ -40,13 +40,13 @@ const FILENAME = '{{filename}}';
 /**## Functions*/
 {{#with class}}/**
 ### {{name}}
-> {{description}}
+> {{&description}}
 #### Parametres
 | name | type | description |
 | --- | --- | --- |
 | options | object | Additional options to pass to the smart constructor. |
 
-##### Options Properties
+##### `options` Properties
 | name | type | description |
 | --- | --- | --- |
 | packageMeta | PackageMeta | An instance of [cno-package-meta](https://github.com/Anadian/cno-package-meta) to be used by this instance and any subclasses initialised along with it. |

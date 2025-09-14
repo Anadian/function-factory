@@ -1,0 +1,31 @@
+using Godot;
+using System;
+using CNO;
+using CNO.NodeMeta;
+
+public partial class RgbGuesserSceneOrigin : Control{
+	//Meta
+	private NodeMeta _meta;
+
+	// Called when the node enters the scene tree for the first time.
+	public override void _Ready(){
+		_meta = new NodeMeta( Name );
+		Init();
+		_meta.ReadyTime = NodeMeta.GetNow();
+	}
+	
+	public void Init(){
+		const string fname="Init";
+		_meta.InitTime = NodeMeta.GetNow();
+	}
+
+	// Called every frame. 'delta' is the elapsed time since the previous frame.
+	public override void _Process( double delta ){
+		_meta.Iteration++;
+		Update( delta );
+	}
+
+	public void Update( double delta ){
+		const string fname = "Update";
+	}
+}
