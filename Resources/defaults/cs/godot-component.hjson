@@ -1,0 +1,5 @@
+{
+	"template": "cs godot-component",
+	"classname": "ClassName",
+	"inheritedclass": "InheritedClass"
+}
